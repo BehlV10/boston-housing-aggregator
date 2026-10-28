@@ -10,7 +10,9 @@
     "lat": 42.3535008718593,
     "lng": -71.1329027754842,
     "bedrooms": 3,
-    "bathrooms": 1,
+    "bathrooms": 1.0,
+    "sqft": null,
+    "address": "Allston",
     "images": [
       "https://images.craigslist.org/00t0t_aqduIuaWVa5_0CI0t2_600x450.jpg",
       "https://images.craigslist.org/00j0j_5eQOBrfNyNd_0CI0t2_600x450.jpg",
@@ -24,8 +26,7 @@
     "description": "NO FEE, Rooms for rent (2 AVAILABLE) . 56 Park Vale Ave, right off of Brighton Ave. Steps to Allston's best shops and restaurants. Great access to public transit via the green line, and multiple bus lines. Heat/ hot water included, electricity is the responsibility of tenants. Landlord is looking for responsible, respectful tenants. Lease now through 8/31/27. First, last, security deposit are due at lease signing. Available for immediate move in. Great for BU and Longwood area! 1 ROOM IS RENTED, 2 ARE AVAILABLE",
     "has_broker_fee": false,
     "fee_badge": "No Broker Fee",
-    "fee_details": "Owner pays fee or no broker fee required",
-    "address": "Allston"
+    "fee_details": "Owner pays fee or no broker fee required"
   },
   {
     "id": "cl-esWgqpVkvLQsFeSF",
@@ -38,7 +39,9 @@
     "lat": 42.3170011684802,
     "lng": -71.1134090324215,
     "bedrooms": 1,
-    "bathrooms": 1,
+    "bathrooms": 1.0,
+    "sqft": 624,
+    "address": "Jamaica Plain",
     "images": [
       "https://images.craigslist.org/00o0o_dbBzsanEenk_0fn08R_600x450.jpg",
       "https://images.craigslist.org/00H0H_6KCuEPD9i7j_0t20CI_600x450.jpg",
@@ -52,8 +55,7 @@
     "description": "\ud83c\udfe1 NEWLY RENOVATED 1-BEDROOM APARTMENT \u2014 JAMAICA PLAIN, MA \u2728 \ud83d\udcb0 Rent: $964/month \ud83d\udecf\ufe0f 1 Bedroom \ud83d\udca1 ALL UTILITIES INCLUDED \u2014 Heat, water, electricity &amp; trash \u26a0\ufe0f IMPORTANT ELIGIBILITY REQUIREMENTS Applicants must be 55 years of age or older. Household income requirements: \ud83d\udc64 1-Person Household: Annual income limit - $36,000 \ud83d\udc65 2-Person Household: Annual income limit - $41,150 \ud83d\udccc Income and other eligibility requirements apply. Please contact us for complete eligibility information. \u2728 Apartment Features Beautifully newly renovated apartment Bright, open layout Convenient on-site laundry Quiet, well-m...",
     "has_broker_fee": null,
     "fee_badge": "Fee Unspecified",
-    "fee_details": "Contact lister for fee status",
-    "address": "Jamaica Plain"
+    "fee_details": "Contact lister for fee status"
   },
   {
     "id": "cl-yss6eALaBgwxcwvE",
@@ -66,15 +68,16 @@
     "lat": 42.3872286054256,
     "lng": -71.1167149988992,
     "bedrooms": 4,
-    "bathrooms": 2,
+    "bathrooms": 2.0,
+    "sqft": null,
+    "address": "boston/cambridge/brookline",
     "images": [
       "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80"
     ],
     "description": "This 1300 square foot apartment home has 4 bedrooms and 2.0 bathrooms. This home is located at 771 Somerville Ave, Somerville, MA 02143. *It has 2 single furnished rooms are available for rent. *INCLUDED: Heat, Hot water, Electricity and Cable!!! *Reasonably priced and available immediately. One room is $1300 and $2,600 for 2 rooms with one bathroom each month. *Laundry (In-Building: Coin) in Basement *Unit has great shared living space of Living Room, Dining Room and Kitchen ! *Available Now or February 1st ! ~ ROOMMATE SITUATION !! * Moving in cost: the 1st Month rent; the last month rent an...",
     "has_broker_fee": null,
     "fee_badge": "Fee Unspecified",
-    "fee_details": "Contact lister for fee status",
-    "address": "boston/cambridge/brookline"
+    "fee_details": "Contact lister for fee status"
   },
   {
     "id": "cl-PkuFK862JzpXYtGX",
@@ -116,9 +119,9 @@
     "lng": -71.119,
     "bedrooms": 1,
     "bathrooms": 1,
+    "sqft": 350,
     "images": [
-      "https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1507089947368-19c1da9775ae?auto=format&fit=crop&w=800&q=80"
+      "https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?auto=format&fit=crop&w=800&q=80"
     ],
     "description": "Sublet/roommate wanted for modern Cambridge apartment. Steps to Harvard Red Line T station, Trader Joes, and cafes. Utilities split evenly.",
     "has_broker_fee": false,
@@ -136,8 +139,10 @@
     "url": "https://www.craigslist.org/view/d/chelsea-chelsea-boston-studio-no-broker/a9zkzW2EWcftqZ8nkrWR26",
     "lat": 42.396298527322,
     "lng": -71.032499943302,
-    "bedrooms": null,
-    "bathrooms": 1,
+    "bedrooms": 0,
+    "bathrooms": 1.0,
+    "sqft": null,
+    "address": "boston/cambridge/brookline",
     "images": [
       "https://images.craigslist.org/00Q0Q_kSgvXCWUENY_0t20CI_600x450.jpg",
       "https://images.craigslist.org/00P0P_eCQuoeY79dg_0t20CI_600x450.jpg",
@@ -151,8 +156,7 @@
     "description": "CHELSEA/BOSTON NO BROKER OR RENTAL FEES !!! ULTRA MODERN LIVING AT LUX 16 5TH. FULLY FURNISHED BRAND NEW STUDIO. Conveniently located to commute into all of Boston, Logan Airport, Universities, Seaport , Waterfront, Medical District and all points North within minutes utilizing Chelsea's new Silver Line located steps from your front door. Property is also eligible for the City\u2019s parking program. Unit features high end finishes throughout including hardwood flooring, granite countertops, custom cabinetry, and stainless appliances, custom closets and complete with a Murphy bed system to optimize...",
     "has_broker_fee": null,
     "fee_badge": "Fee Unspecified",
-    "fee_details": "Contact lister for fee status",
-    "address": "boston/cambridge/brookline"
+    "fee_details": "Contact lister for fee status"
   },
   {
     "id": "cl-YLi1M7NE2oFMWxfg",
@@ -193,7 +197,9 @@
     "lat": 42.2822008579214,
     "lng": -71.4339021424354,
     "bedrooms": 1,
-    "bathrooms": 1,
+    "bathrooms": 1.0,
+    "sqft": null,
+    "address": "Framingham",
     "images": [
       "https://images.craigslist.org/00V0V_3nNs1H74ODF_0t20CI_600x450.jpg",
       "https://images.craigslist.org/00303_hDA4iJbjZXW_0t20CI_600x450.jpg",
@@ -205,8 +211,7 @@
     "description": "Spacious 1 bedroom with large closet Full bathroom Bright living room with great natural light Kitchen with ample cabinet space Hardwood Flooring throughout Clean and professionally managed building Call now to schedule a tour or for more details. 508-202-9372",
     "has_broker_fee": null,
     "fee_badge": "Fee Unspecified",
-    "fee_details": "Contact lister for fee status",
-    "address": "Framingham"
+    "fee_details": "Contact lister for fee status"
   },
   {
     "id": "cl-n7qiRaJ2i4tY6NtJ",
@@ -247,7 +252,9 @@
     "lat": 42.4138012420468,
     "lng": -71.0051985043655,
     "bedrooms": 1,
-    "bathrooms": 1,
+    "bathrooms": 1.0,
+    "sqft": 1250,
+    "address": "Revere",
     "images": [
       "https://images.craigslist.org/01010_5QHVy2TSsnf_06H0bV_600x450.jpg",
       "https://images.craigslist.org/00x0x_iS4QdWxaoau_09D05p_600x450.jpg",
@@ -261,8 +268,7 @@
     "description": "- An Economical &amp; Private Alternative To Living On The Beach ! - Please Call &amp; Leave A Voice Message. We Will Get Back To You With Details &amp; Appointment Information ! - Nice Area ! - 1 Block To Revere Beach ! - 1 Block To Kelly's Roast Beef ! - Close To Blue Line &amp; All Public Transportation ! - 1st Floor Of A Young 2 Unit Property ! - Private Driveway &amp; Garage ! - Private Front &amp; Rear Entrances ! - Private Yard ! - Private Outdoor Storage Area ! - Private Indoor Storage Area ! - Large 1 Bedroom ! - Large Eat In Kitchen ! - Large Full Bathroom ! - Large Closets ! - Priva...",
     "has_broker_fee": null,
     "fee_badge": "Fee Unspecified",
-    "fee_details": "Contact lister for fee status",
-    "address": "Revere"
+    "fee_details": "Contact lister for fee status"
   },
   {
     "id": "cl-UENPdNgnWi4cHwF3",
@@ -275,7 +281,9 @@
     "lat": 42.2795744193887,
     "lng": -71.4172090170751,
     "bedrooms": 1,
-    "bathrooms": 1,
+    "bathrooms": 1.0,
+    "sqft": null,
+    "address": "Framingham, MA",
     "images": [
       "https://images.craigslist.org/00000_cTxb9DKhjz2_0co0gw_600x450.jpg",
       "https://images.craigslist.org/00E0E_j28EfefeKLn_0co0gw_600x450.jpg",
@@ -286,8 +294,51 @@
     "description": "Newly renovated throughout Spacious 1-bedroom layout Laundry facilities in the building Off-street parking included Bright and comfortable living space Convenient location close to shopping, dining, and transportation Call now for more details or to schedule a tour. (508)202-9372",
     "has_broker_fee": null,
     "fee_badge": "Fee Unspecified",
-    "fee_details": "Contact lister for fee status",
-    "address": "Framingham, MA"
+    "fee_details": "Contact lister for fee status"
+  },
+  {
+    "id": "bp-8178064",
+    "source": "bostonpads",
+    "source_label": "Boston Pads",
+    "title": "Studio Apartment in Allston",
+    "price": 1900,
+    "neighborhood": "Allston",
+    "url": "https://bostonpads.com/boston-apartments/?ad_id=8178064",
+    "lat": 42.3517143,
+    "lng": -71.1243485,
+    "bedrooms": 0,
+    "bathrooms": 1.0,
+    "sqft": null,
+    "images": [
+      "https://m.bostonpads.com/media/v2/listings/unit/photos/10-26/1792857801-img-2457.jpeg"
+    ],
+    "description": "Verified Boston rental in Allston. Features: Laundry: Common Area, Dishwasher included, Pets: Cat OK, Heat included, Hot water included. Available: Now.",
+    "has_broker_fee": false,
+    "fee_badge": "No Broker Fee",
+    "fee_details": "No Fee",
+    "address": "Allston, Boston, MA"
+  },
+  {
+    "id": "bp-8178037",
+    "source": "bostonpads",
+    "source_label": "Boston Pads",
+    "title": "Studio Apartment in Allston",
+    "price": 1950,
+    "neighborhood": "Allston",
+    "url": "https://bostonpads.com/boston-apartments/?ad_id=8178037",
+    "lat": 42.3511517,
+    "lng": -71.1267581,
+    "bedrooms": 0,
+    "bathrooms": 1.0,
+    "sqft": null,
+    "images": [
+      "https://m.bostonpads.com/media/v2/listings/unit/photos/09-24/1726769429-7c6bbffd0775bf3270ba563e8876ccad-full.jpg"
+    ],
+    "description": "Verified Boston rental in Allston. Features: Hot water included. Available: 11-03-2026.",
+    "has_broker_fee": false,
+    "fee_badge": "No Broker Fee",
+    "fee_details": "No Fee",
+    "address": "Allston, Boston, MA"
   },
   {
     "id": "cl-VuBX6qFpVPseAKsP",
@@ -300,7 +351,9 @@
     "lat": 42.3907018755795,
     "lng": -71.0928982892725,
     "bedrooms": 2,
-    "bathrooms": 1,
+    "bathrooms": 1.0,
+    "sqft": null,
+    "address": "boston/cambridge/brookline",
     "images": [
       "https://images.craigslist.org/00101_aOI2hkcJgX8_0oo0ww_600x450.jpg",
       "https://images.craigslist.org/00202_92wPHkfWe4A_0oo0ww_600x450.jpg",
@@ -312,8 +365,7 @@
     "description": "PROPERTY INFO ID: 449211696 Rent: $2,100 / Month Beds: 2 Bath: 1 Available Date: 11/15/2026 Pet: Cats Only Rent Includes:: Heat, Hot Water Parking:: off-street parking Lovely renovated garden level 2 bed/1 bath apartment in a multi-family house close to Magoun Square. Apartment has carpets in the living room and bedroom, tiled kitchen and bathroom. Open floor plan living room/ kitchen. Large spacious bedrooms with generous closet space. Heat, hot water and one parking space is included in the rent. Cats are OK !! FEATURES 1 Parking Included A/C Carpet Dishwasher Heat &amp; Hot Water Incl Laund...",
     "has_broker_fee": null,
     "fee_badge": "Fee Unspecified",
-    "fee_details": "Contact lister for fee status",
-    "address": "boston/cambridge/brookline"
+    "fee_details": "Contact lister for fee status"
   },
   {
     "id": "cl-UidonxP9YxaK47vx",
@@ -325,8 +377,10 @@
     "url": "https://www.craigslist.org/view/d/cambridge-sunny-spacious-studio-steps/b6PYrjUidonxP9YxaK47vx",
     "lat": 42.395465446688,
     "lng": -71.1254508864011,
-    "bedrooms": null,
-    "bathrooms": 1,
+    "bedrooms": 0,
+    "bathrooms": 1.0,
+    "sqft": null,
+    "address": "Somerville - Davis Square",
     "images": [
       "https://images.craigslist.org/00l0l_kKroB2sSZ9A_0gw0co_600x450.jpg",
       "https://images.craigslist.org/00O0O_hptFvsOCRjH_0gw0co_600x450.jpg",
@@ -340,8 +394,7 @@
     "description": "Sunny Davis Square Studio | Heat &amp; Hot Water Included 49 Dover St #35, Somerville, MA 02144 $2,100/month | Available December 1, 2026 (or earlier) Welcome to this bright, spacious studio in a professionally managed pre-war building, just steps from Davis Square and the Red Line. Sunlight, high ceilings, and hardwood floors give the space an open, airy feel, while the separate eat-in kitchen and plentiful closet space make everyday living easy. Heat and hot water are included , and laundry is on the premises. Outside your door, Davis Square offers a lively mix of restaurants, caf\u00e9s, shops, ...",
     "has_broker_fee": null,
     "fee_badge": "Fee Unspecified",
-    "fee_details": "Contact lister for fee status",
-    "address": "Somerville - Davis Square"
+    "fee_details": "Contact lister for fee status"
   },
   {
     "id": "cl-2vs6t5apgqxNEFTz",
@@ -354,7 +407,9 @@
     "lat": 42.5611694246933,
     "lng": -71.5873562827814,
     "bedrooms": 2,
-    "bathrooms": 1,
+    "bathrooms": 1.0,
+    "sqft": null,
+    "address": "metro west",
     "images": [
       "https://images.craigslist.org/00A0A_bAwpUXGQkX8_0t20CI_600x450.jpg",
       "https://images.craigslist.org/00k0k_jGGslw6pXSU_0t20CI_600x450.jpg",
@@ -368,8 +423,7 @@
     "description": "Ayer, MA- Victorian home has been remodeled/updated with 5 units yet still has original charm with 9ft ceilings. Spacious 2 bedroom apartment available immediately. Freshly painted top to bottom and new flooring throughout. This 2nd floor apartment has a large open kitchen &amp; living room with 2 bedrooms and 1 bath. Easy access to on-site laundry room. Plenty of off-street parking and a one minute walk to downtown and commuter rail. Convenient to routes 495, 2, 2A, 111. No smoking no Pets. Snow removal provided for winter months. $2100 per month. Owner pays for water. First, last and securit...",
     "has_broker_fee": null,
     "fee_badge": "Fee Unspecified",
-    "fee_details": "Contact lister for fee status",
-    "address": "metro west"
+    "fee_details": "Contact lister for fee status"
   },
   {
     "id": "cl-9QGNxwQtk6kfaMYS",
@@ -400,6 +454,28 @@
     "address": "Lynn"
   },
   {
+    "id": "bp-8171313",
+    "source": "bostonpads",
+    "source_label": "Boston Pads",
+    "title": "1 Bed Apartment in Brighton- Washington St./ Allston St.",
+    "price": 2150,
+    "neighborhood": "Brighton- Washington St./ Allston St.",
+    "url": "https://bostonpads.com/boston-apartments/?ad_id=8171313",
+    "lat": 42.349780100000004,
+    "lng": -71.13633770000001,
+    "bedrooms": 1,
+    "bathrooms": 1.0,
+    "sqft": null,
+    "images": [
+      "https://m.bostonpads.com/media/v2/listings/unit/photos/10-24/1728418937-img-2557.jpeg"
+    ],
+    "description": "Verified Boston rental in Brighton- Washington St./ Allston St.. Features: Heat included, Hot water included. Available: Now.",
+    "has_broker_fee": false,
+    "fee_badge": "No Broker Fee",
+    "fee_details": "No Fee",
+    "address": "Brighton- Washington St./ Allston St., Boston, MA"
+  },
+  {
     "id": "cl-B8Qchiy6hSor8rtn",
     "source": "craigslist",
     "source_label": "Craigslist",
@@ -410,7 +486,9 @@
     "lat": 42.4697986991931,
     "lng": -70.9419989677348,
     "bedrooms": 3,
-    "bathrooms": 2,
+    "bathrooms": 2.0,
+    "sqft": 1275,
+    "address": "Lynn",
     "images": [
       "https://images.craigslist.org/01616_dzLFE3mhjtI_0CI0t2_600x450.jpg",
       "https://images.craigslist.org/00f0f_5wI9FyxQgLz_0870aO_600x450.jpg",
@@ -424,8 +502,7 @@
     "description": "Small &amp; Quiet 1 Way Street In Lynn. - Private Parking In Driveway For 1 Car. - No Yard Or Outdoor Leisure Area. - 1st Floor Of A Quiet &amp; Well Kept 3 Unit Property. - Apartment's 2 &amp; 3 - Very Nice Quiet Residents. - Fresh Paint, New Floors, New Bathrooms, New Fridge, Etc. - 6 Large Rooms. - 3 Bedrooms. - 2 Bathrooms. - Only $500 For Security Deposit. - Small Pets Ok. - No Extra Security $ For Pet. - No Application Fees. - No Broker Fees. - No Credit Checks. - No Rent Increases. - No Time Requirements. Stay Short Or Long Term. - Rent Is Below Market. - 7th Month Of Your 1st Year Is R...",
     "has_broker_fee": null,
     "fee_badge": "Fee Unspecified",
-    "fee_details": "Contact lister for fee status",
-    "address": "Lynn"
+    "fee_details": "Contact lister for fee status"
   },
   {
     "id": "cl-4xShWqwZ7Xwu7TWu",
@@ -438,7 +515,9 @@
     "lat": 42.3865490774806,
     "lng": -71.0814918454876,
     "bedrooms": 1,
-    "bathrooms": 1,
+    "bathrooms": 1.0,
+    "sqft": null,
+    "address": "Somerville \\ Sullivan Sq. \\ E. Somervill",
     "images": [
       "https://images.craigslist.org/00t0t_4HDDOnhDe4m_0lM0t2_600x450.jpg",
       "https://images.craigslist.org/01111_czlYcndpLPJ_0lM0t2_600x450.jpg",
@@ -452,8 +531,73 @@
     "description": "Apartment Rental Experts - Davis Square Sullivan Sq - 1+ Bed with new kitchen - 5 Min. to T - Heat Included Somerville / Sullivan Square / East Somerville Available: 10/28/2026 || Fee: No Fee || Reference: #181953 Apartment Summary 1+ bedroom apartment just a 5 minute walk to Sullivan Square with easy bus access to Central and Harvard and around the corner from I-93. Has a modern eat-in kitchen with dishwasher, disposal and microwave. Heat and not water is included. (Reference #181953) Apartment Details Location: Somerville/Sullivan Square Bath: 1 Kitchen: Eat in Kitchen. Appliances include: R...",
     "has_broker_fee": false,
     "fee_badge": "No Broker Fee",
-    "fee_details": "Owner pays fee or no broker fee required",
-    "address": "Somerville \\ Sullivan Sq. \\ E. Somervill"
+    "fee_details": "Owner pays fee or no broker fee required"
+  },
+  {
+    "id": "bp-8177261",
+    "source": "bostonpads",
+    "source_label": "Boston Pads",
+    "title": "2 Bed Apartment in Dorchester/South Boston Border",
+    "price": 2200,
+    "neighborhood": "Dorchester/South Boston Border",
+    "url": "https://bostonpads.com/boston-apartments/?ad_id=8177261",
+    "lat": 42.322362999999996,
+    "lng": -71.05550099999999,
+    "bedrooms": 2,
+    "bathrooms": 1.0,
+    "sqft": null,
+    "images": [
+      "https://m.bostonpads.com/media/v2/listings/ad/photos/09-26/1789685028-img-8644.jpeg"
+    ],
+    "description": "Verified Boston rental in Dorchester/South Boston Border. Features: Pets: Pet OK, Hot water included. Available: Now.",
+    "has_broker_fee": false,
+    "fee_badge": "No Broker Fee",
+    "fee_details": "No Fee",
+    "address": "Dorchester/South Boston Border, Boston, MA"
+  },
+  {
+    "id": "bp-8130432",
+    "source": "bostonpads",
+    "source_label": "Boston Pads",
+    "title": "Studio Apartment in Northeastern/Symphony",
+    "price": 2200,
+    "neighborhood": "Northeastern/Symphony",
+    "url": "https://bostonpads.com/boston-apartments/?ad_id=8130432",
+    "lat": 42.3447308,
+    "lng": -71.0883838,
+    "bedrooms": 0,
+    "bathrooms": 1.0,
+    "sqft": null,
+    "images": [
+      "https://m.bostonpads.com/media/v2/listings/unit/photos/05-26/1779397053-785o6a047eb220de0.jpg"
+    ],
+    "description": "Verified Boston rental in Northeastern/Symphony. Features: Laundry: Common Area, Heat included, Hot water included. Available: Now.",
+    "has_broker_fee": false,
+    "fee_badge": "No Broker Fee",
+    "fee_details": "No Fee",
+    "address": "Northeastern/Symphony, Boston, MA"
+  },
+  {
+    "id": "bp-8102190",
+    "source": "bostonpads",
+    "source_label": "Boston Pads",
+    "title": "Studio Apartment in South Boston - East Side",
+    "price": 2200,
+    "neighborhood": "South Boston - East Side",
+    "url": "https://bostonpads.com/boston-apartments/?ad_id=8102190",
+    "lat": 42.337592,
+    "lng": -71.034902,
+    "bedrooms": 0,
+    "bathrooms": 1.0,
+    "sqft": null,
+    "images": [
+      "https://m.bostonpads.com/media/v2/listings/unit/photos/04-26/1776801800-11843o5eab080480bac.jpg"
+    ],
+    "description": "Verified Boston rental in South Boston - East Side. Features: Laundry: Basement, Dishwasher included, Hot water included. Available: Now.",
+    "has_broker_fee": false,
+    "fee_badge": "No Broker Fee",
+    "fee_details": "No Fee",
+    "address": "South Boston - East Side, Boston, MA"
   },
   {
     "id": "cl-qnaWYM75UqJ2zgCY",
@@ -465,8 +609,10 @@
     "url": "https://www.craigslist.org/view/d/cambridge-updated-studio-all-utilties/8BCtzsqnaWYM75UqJ2zgCY",
     "lat": 42.3847459792994,
     "lng": -71.1199046549445,
-    "bedrooms": null,
-    "bathrooms": 1,
+    "bedrooms": 0,
+    "bathrooms": 1.0,
+    "sqft": null,
+    "address": "Cambridge \\ Porter Sq. \\ Harvard Sq.",
     "images": [
       "https://images.craigslist.org/00P0P_ba2VNdEAqz2_0ww0oo_600x450.jpg",
       "https://images.craigslist.org/01717_6qo5NG6fiP6_0ww0oo_600x450.jpg",
@@ -480,8 +626,7 @@
     "description": "Apartment Rental Experts Studio Bedroom and 1 Bath in Cambridge / Porter Square $2,300 Cambridge / Porter Square / Harvard Square Available: 11/01/2026 || Fee: No Fee || Reference: #181932 Apartment Summary Studio, 1 bathroom apartment offers the perfect blend of modern amenities and classic charm. Located on the ground floor of a charming pre-war brick building, it boasts an open layout and a prime location near Porter Square and Harvard Square. App-based laundry is in the basement (Reference #181932) Apartment Details Bedrooms: Studio Fee: No Fee Location: Cambridge/Porter Square Available: ...",
     "has_broker_fee": false,
     "fee_badge": "No Broker Fee",
-    "fee_details": "Owner pays fee or no broker fee required",
-    "address": "Cambridge \\ Porter Sq. \\ Harvard Sq."
+    "fee_details": "Owner pays fee or no broker fee required"
   },
   {
     "id": "cl-wniBiCGpat1gCCL6",
@@ -494,7 +639,9 @@
     "lat": 42.4194019044939,
     "lng": -71.0558766213421,
     "bedrooms": 2,
-    "bathrooms": 1,
+    "bathrooms": 1.0,
+    "sqft": null,
+    "address": "Malden",
     "images": [
       "https://images.craigslist.org/01717_fBVwLepgTob_0gw0co_600x450.jpg",
       "https://images.craigslist.org/00b0b_9YloZuIx1XW_0gw0co_600x450.jpg",
@@ -508,8 +655,7 @@
     "description": "Beautiful Sunny 2-Bedroom in Malden \u2014 Modern Renovation, Heat &amp; Parking Included, Cat Friendly! $2,300/month | 240 Belmont St, Malden, MA 02148 Available Now or 11/15/2026. Bright, spacious, and beautifully updated \u2014 this modern 2-bedroom, 1-bath apartment is ready to impress. The open-concept living room and eat-in kitchen create an inviting flow, complete with stainless steel appliances, a dishwasher, and a built-in microwave. Hardwood floors add warmth to the living space, and the generously sized bedroom pairs with a modern bathroom. Features &amp; Amenities: 2 bedrooms, 1 bathroom Ope...",
     "has_broker_fee": null,
     "fee_badge": "Fee Unspecified",
-    "fee_details": "Contact lister for fee status",
-    "address": "Malden"
+    "fee_details": "Contact lister for fee status"
   },
   {
     "id": "cl-rrj9mJb6Pnfs7LQN",
@@ -522,7 +668,9 @@
     "lat": 42.394878164948,
     "lng": -71.1247954226835,
     "bedrooms": 1,
-    "bathrooms": 1,
+    "bathrooms": 1.0,
+    "sqft": null,
+    "address": "Somerville - Davis Square",
     "images": [
       "https://images.craigslist.org/00303_ertC2SeTdPQ_0gw09j_600x450.jpg",
       "https://images.craigslist.org/00J0J_6CWS203gDee_0gw09j_600x450.jpg",
@@ -536,8 +684,29 @@
     "description": "Top-Floor 1 Bedroom Steps from Davis Square | Heat &amp; Hot Water Included 18 Day St, #403, Somerville (Davis Square) | $2,300/month | Available 1/1/2027 Welcome home to this sun-drenched, top-floor one-bedroom, perfectly situated just steps from the heart of Davis Square! Located in a professionally managed, beautifully maintained pre-war building, this spacious apartment pairs classic architectural charm with the modern comforts you\u2019re looking for. Picture yourself starting the new year in a bright, inviting space with the best of Somerville right outside your door, from beloved restaurants...",
     "has_broker_fee": null,
     "fee_badge": "Fee Unspecified",
-    "fee_details": "Contact lister for fee status",
-    "address": "Somerville - Davis Square"
+    "fee_details": "Contact lister for fee status"
+  },
+  {
+    "id": "bp-8169266",
+    "source": "bostonpads",
+    "source_label": "Boston Pads",
+    "title": "Studio Apartment in Back Bay",
+    "price": 2300,
+    "neighborhood": "Back Bay",
+    "url": "https://bostonpads.com/boston-apartments/?ad_id=8169266",
+    "lat": 42.3505478,
+    "lng": -71.09058750000001,
+    "bedrooms": 0,
+    "bathrooms": 1.0,
+    "sqft": null,
+    "images": [
+      "https://m.bostonpads.com/media/v2/listings/unit/photos/09-26/1788984797-img-0367.jpeg"
+    ],
+    "description": "Verified Boston rental in Back Bay. Features: Hot water included. Available: Now.",
+    "has_broker_fee": false,
+    "fee_badge": "No Broker Fee",
+    "fee_details": "No Fee",
+    "address": "Back Bay, Boston, MA"
   },
   {
     "id": "cl-4YXN7QCmFRx2roQY",
@@ -550,7 +719,9 @@
     "lat": 42.3119425241073,
     "lng": -71.1100623859403,
     "bedrooms": 1,
-    "bathrooms": 1,
+    "bathrooms": 1.0,
+    "sqft": 890,
+    "address": "JAMAICA PLAIN, BOSTON",
     "images": [
       "https://images.craigslist.org/01717_6VcRFOdgjk1_0ww0oo_600x450.jpg",
       "https://images.craigslist.org/00P0P_hq1mGtewmHQ_0ww0oo_600x450.jpg",
@@ -564,8 +735,7 @@
     "description": "Now-11/1 Jamaica Plain great location by Green St train, uptown JP Center, shops, restaurants and Pond! Nice 4 rooms-1 bed with den, living room, vintage kitchen, nice yard! Clawfoot tub bathroom; Basement coin Laundry. Parking on street with sticker. Has wood floors, high ceilings too. Gas heat/hw, electric paid by tenant. Maybe a cat is OK. Fresh paint, ready to go! First Month and Security Deposit. CALL FAYE SIMON REAL ESTATE.com 617 524 0243, EMAIL; GO TO WEBSITE",
     "has_broker_fee": null,
     "fee_badge": "Fee Unspecified",
-    "fee_details": "Contact lister for fee status",
-    "address": "JAMAICA PLAIN, BOSTON"
+    "fee_details": "Contact lister for fee status"
   },
   {
     "id": "cl-qEo1jDK8YXxu8jai",
@@ -593,6 +763,28 @@
     "address": "Quincy"
   },
   {
+    "id": "bp-8068150",
+    "source": "bostonpads",
+    "source_label": "Boston Pads",
+    "title": "2 Bed Apartment in East Boston - Orient Heights",
+    "price": 2400,
+    "neighborhood": "East Boston - Orient Heights",
+    "url": "https://bostonpads.com/boston-apartments/?ad_id=8068150",
+    "lat": 42.389441,
+    "lng": -71.007028,
+    "bedrooms": 2,
+    "bathrooms": 1.0,
+    "sqft": null,
+    "images": [
+      "https://m.bostonpads.com/media/v2/listings/unit/photos/05-26/1778716730-img-0676.jpeg"
+    ],
+    "description": "Verified Boston rental in East Boston - Orient Heights. Features: Laundry: Unit, Dishwasher included, Pets: Pet OK, Hot water included. Available: Now.",
+    "has_broker_fee": false,
+    "fee_badge": "No Broker Fee",
+    "fee_details": "No Fee",
+    "address": "East Boston - Orient Heights, Boston, MA"
+  },
+  {
     "id": "cl-tmzurY9PBMzSZMCZ",
     "source": "craigslist",
     "source_label": "Craigslist",
@@ -603,7 +795,9 @@
     "lat": 42.2864522047611,
     "lng": -71.1204306302004,
     "bedrooms": 2,
-    "bathrooms": 1,
+    "bathrooms": 1.0,
+    "sqft": 800,
+    "address": "ROSLINDALE, BOSTON",
     "images": [
       "https://images.craigslist.org/00V0V_1kp537cMBKE_0ww0oo_600x450.jpg",
       "https://images.craigslist.org/00a0a_fWZMvPtG0W9_0ww0oo_600x450.jpg",
@@ -617,8 +811,7 @@
     "description": "Now-11/1 first floor is a 2 bed for $2500 its the corner or Florence St near Roslindale Square-First floor 4 rooms, has 2 bedrooms living room; and eat in kitchen with dishwasher! SS appliances, Fridge, microwave stove- Hardwood floors, tiled bathroom, Brand new back porches. Tenant pays utilities for fuel oil heat/HW, gas stove and electric- Join Green energy Consumer Alliance for oil discounts- Coin Laundry No Fee-Move in costs-First month, and Security deposit-Sorry NO Dogs, no reptiles! Cats are OK CALL FAYE SIMON REAL ESTATE.com 617 524 0243, EMAIL; GO TO WEBSITE",
     "has_broker_fee": false,
     "fee_badge": "No Broker Fee",
-    "fee_details": "Owner pays fee or no broker fee required",
-    "address": "ROSLINDALE, BOSTON"
+    "fee_details": "Owner pays fee or no broker fee required"
   },
   {
     "id": "cl-rVsN77nBykHkvuyx",
@@ -631,7 +824,9 @@
     "lat": 42.3944856888584,
     "lng": -71.0931647146472,
     "bedrooms": 2,
-    "bathrooms": 1,
+    "bathrooms": 1.0,
+    "sqft": 700,
+    "address": "East Somerville, Sullivan Sq, Assembly",
     "images": [
       "https://images.craigslist.org/00z0z_b0WTUwQzSdR_0oM0x2_600x450.jpg",
       "https://images.craigslist.org/00b0b_hv30qWbXFlH_0oM0x2_600x450.jpg",
@@ -645,8 +840,7 @@
     "description": "PROPERTY INFO ID: 251459958 Rent: $2,500 / Month Beds: 2 Bath: 1 Available Date: 01/01/2027 Pet: No Pets Parking:: no parking Gorgeous, Renovated 2 BR 1 BA in prime Somerville location -Available January 1, 2027 -Beautiful, Spacious unit -New Cabinets -Stainless Steel Appliances -Lots of Closet Space -Coin op Laundry in basement -Close to Orange Line at Sullivan Square &amp; Green Line at Washington St. -No Smoking Date Available: 1/1 FEATURES Eat-In Kitchen Laundry in Building Oven/Range Refrigerator Storage",
     "has_broker_fee": null,
     "fee_badge": "Fee Unspecified",
-    "fee_details": "Contact lister for fee status",
-    "address": "East Somerville, Sullivan Sq, Assembly"
+    "fee_details": "Contact lister for fee status"
   },
   {
     "id": "cl-yUxsWZ3hgNFpqweh",
@@ -659,7 +853,9 @@
     "lat": 42.566698467416,
     "lng": -70.8881976578171,
     "bedrooms": 2,
-    "bathrooms": 1,
+    "bathrooms": 1.0,
+    "sqft": 750,
+    "address": "Beverly",
     "images": [
       "https://images.craigslist.org/00T0T_jtwnyxWV3CC_0t20CI_600x450.jpg",
       "https://images.craigslist.org/00E0E_b1xjbAbyRSw_0t20CI_600x450.jpg",
@@ -673,8 +869,7 @@
     "description": "Beautiful 2-bedroom apartment available DEC 1 in the heart of downtown Beverly near beach Enjoy everything downtown has to offer right outside your door \u2014 restaurants, caf\u00e9s, shops, nightlife and more. The Beverly commuter rail is approximately a 10-minute walk, making this a great location for commuters as well as anyone looking for a truly walkable downtown lifestyle. \u2022 2 bedroom \u2022 Heat &amp; hot water included \u2022 Prime downtown Beverly location \u2022 Approximately 10-minute walk to the commuter rail \u2022 Steps from restaurants, caf\u00e9s, shops and nightlife \u2022 Available Dec.1st \u2022 No smoking, NO pets $2...",
     "has_broker_fee": false,
     "fee_badge": "No Broker Fee",
-    "fee_details": "Owner pays fee or no broker fee required",
-    "address": "Beverly"
+    "fee_details": "Owner pays fee or no broker fee required"
   },
   {
     "id": "cl-pbRLQBrmHk3vRJ96",
@@ -687,7 +882,9 @@
     "lat": 42.2784714756331,
     "lng": -71.4167655477417,
     "bedrooms": 2,
-    "bathrooms": 1,
+    "bathrooms": 1.0,
+    "sqft": null,
+    "address": "Framingham",
     "images": [
       "https://images.craigslist.org/00S0S_8ksX1pTs4vV_0lM0t2_600x450.jpg",
       "https://images.craigslist.org/00G0G_flGVP6K0LKy_0lM0t2_600x450.jpg",
@@ -700,8 +897,7 @@
     "description": "2 bedrooms 1 full bathroom Spacious open living/dining area Modern kitchen with granite countertops Plenty of cabinet/storage space Large windows with lots of natural light Elevator in building Laundry room on-site Off-street parking Well-maintained building Conveniently located in Downtown Framingham, close to the Framingham MBTA Commuter Rail Station, restaurants, shopping, cafes, and other local amenities. Call now for more details/to schedule a tour (508) 202-9372",
     "has_broker_fee": null,
     "fee_badge": "Fee Unspecified",
-    "fee_details": "Contact lister for fee status",
-    "address": "Framingham"
+    "fee_details": "Contact lister for fee status"
   },
   {
     "id": "cl-NYFPwjTv4LGcH1RC",
@@ -714,7 +910,9 @@
     "lat": 42.4693993476099,
     "lng": -70.9728028976728,
     "bedrooms": 2,
-    "bathrooms": 1,
+    "bathrooms": 1.0,
+    "sqft": null,
+    "address": "Lynn, MA",
     "images": [
       "https://images.craigslist.org/00Q0Q_9WoqG775MVS_0hr0CI_600x450.jpg",
       "https://images.craigslist.org/00y0y_atJHeUkqNRQ_0hr0CI_600x450.jpg",
@@ -728,8 +926,7 @@
     "description": "Newly renovated two-bedroom apartment for rent. The apartment is located in a nice quiet neighborhood near shopping plaza, schools, and bus line. No utilities included. Please text Nerly at (617) 459-8558.",
     "has_broker_fee": null,
     "fee_badge": "Fee Unspecified",
-    "fee_details": "Contact lister for fee status",
-    "address": "Lynn, MA"
+    "fee_details": "Contact lister for fee status"
   },
   {
     "id": "cl-VPghjWSzJRSJ9jXZ",
@@ -741,8 +938,10 @@
     "url": "https://www.craigslist.org/view/d/somerville-studio-in-porter-sq-all/cXS31YVPghjWSzJRSJ9jXZ",
     "lat": 42.3862179078751,
     "lng": -71.1148230922598,
-    "bedrooms": null,
-    "bathrooms": 1,
+    "bedrooms": 0,
+    "bathrooms": 1.0,
+    "sqft": null,
+    "address": "Somerville",
     "images": [
       "https://images.craigslist.org/01010_1LcrgwMt73h_0CI0t2_600x450.jpg",
       "https://images.craigslist.org/00T0T_c4OxsxCKRJ1_0CI0t2_600x450.jpg",
@@ -756,8 +955,51 @@
     "description": "AVAILABLE NOVEMBER 1ST (or sooner!) Located in Porter Square, this studio / 1-bath first-floor apartment offers simplicity, convenience, and a prime location. This well-maintained unit features hardwood floors and central air conditioning for year-round comfort. A major highlight is that the landlord pays for all utilities \u2014 heat, hot water, gas, and electricity, helping keep monthly expenses predictable. Enjoy the free use of in-unit laundry machines, adding everyday convenience rarely found in studio apartments. Parking options are ample street parking with City permit Pet Policy: Pets are w...",
     "has_broker_fee": false,
     "fee_badge": "No Broker Fee",
-    "fee_details": "Owner pays fee or no broker fee required",
-    "address": "Somerville"
+    "fee_details": "Owner pays fee or no broker fee required"
+  },
+  {
+    "id": "bp-8164599",
+    "source": "bostonpads",
+    "source_label": "Boston Pads",
+    "title": "3 Bed Apartment in Roxbury",
+    "price": 2500,
+    "neighborhood": "Roxbury",
+    "url": "https://bostonpads.com/boston-apartments/?ad_id=8164599",
+    "lat": 42.332424,
+    "lng": -71.082433,
+    "bedrooms": 3,
+    "bathrooms": 1.0,
+    "sqft": null,
+    "images": [
+      "https://m.bostonpads.com/media/v2/listings/unit/photos/09-26/1789150712-img-5622.jpeg"
+    ],
+    "description": "Verified Boston rental in Roxbury. Features: Laundry: Common Area, A/C: Central, Hot water included. Available: Now.",
+    "has_broker_fee": false,
+    "fee_badge": "No Broker Fee",
+    "fee_details": "No Fee",
+    "address": "Roxbury, Boston, MA"
+  },
+  {
+    "id": "bp-8012832",
+    "source": "bostonpads",
+    "source_label": "Boston Pads",
+    "title": "1 Bed Apartment in North End",
+    "price": 2525,
+    "neighborhood": "North End",
+    "url": "https://bostonpads.com/boston-apartments/?ad_id=8012832",
+    "lat": 42.3648375,
+    "lng": -71.0523467,
+    "bedrooms": 1,
+    "bathrooms": 1.0,
+    "sqft": null,
+    "images": [
+      "https://m.bostonpads.com/media/v2/listings/unit/photos/09-26/1789790976-28-fleet-st-9-boston-north-end-shared-unit-photo-2.jpg"
+    ],
+    "description": "Verified Boston rental in North End. Features: Laundry: Common Area, Pets: NO PETS, Hot water included. Available: 12-01-2026.",
+    "has_broker_fee": false,
+    "fee_badge": "No Broker Fee",
+    "fee_details": "No Fee",
+    "address": "North End, Boston, MA"
   },
   {
     "id": "cl-NF12tZ271XP59reC",
@@ -786,6 +1028,50 @@
     "fee_badge": "Fee Unspecified",
     "fee_details": "Contact lister for fee status",
     "address": "East Walpole"
+  },
+  {
+    "id": "bp-8150100",
+    "source": "bostonpads",
+    "source_label": "Boston Pads",
+    "title": "2 Bed Apartment in Fenway/Kenmore",
+    "price": 2545,
+    "neighborhood": "Fenway/Kenmore",
+    "url": "https://bostonpads.com/boston-apartments/?ad_id=8150100",
+    "lat": 42.346841000000005,
+    "lng": -71.093237,
+    "bedrooms": 2,
+    "bathrooms": 1.0,
+    "sqft": null,
+    "images": [
+      "https://m.bostonpads.com/media/v2/listings/unit/photos/11-23/1698961846-img-4158.jpeg"
+    ],
+    "description": "Verified Boston rental in Fenway/Kenmore. Features: Pets: NO PETS, Hot water included. Available: Now.",
+    "has_broker_fee": false,
+    "fee_badge": "No Broker Fee",
+    "fee_details": "No Fee",
+    "address": "Fenway/Kenmore, Boston, MA"
+  },
+  {
+    "id": "bp-8165546",
+    "source": "bostonpads",
+    "source_label": "Boston Pads",
+    "title": "3 Bed Apartment in Fort Hill",
+    "price": 2550,
+    "neighborhood": "Fort Hill",
+    "url": "https://bostonpads.com/boston-apartments/?ad_id=8165546",
+    "lat": 42.3265091,
+    "lng": -71.0962867,
+    "bedrooms": 3,
+    "bathrooms": 1.0,
+    "sqft": null,
+    "images": [
+      "https://m.bostonpads.com/media/v2/listings/ad/photos/10-26/1792176613-img-0575.jpeg"
+    ],
+    "description": "Verified Boston rental in Fort Hill. Features: Laundry: Common Area, Dishwasher included, Pets: Pet OK, Hot water included. Available: Now.",
+    "has_broker_fee": false,
+    "fee_badge": "No Broker Fee",
+    "fee_details": "No Fee",
+    "address": "Fort Hill, Boston, MA"
   },
   {
     "id": "cl-njeZKthod47zQF74",
@@ -826,7 +1112,9 @@
     "lat": 42.4753787351596,
     "lng": -71.1821209959988,
     "bedrooms": 2,
-    "bathrooms": 1,
+    "bathrooms": 1.0,
+    "sqft": null,
+    "address": "WOBURN (Burlington Line)",
     "images": [
       "https://images.craigslist.org/01616_8FdSlfPoXTr_0lM0t2_600x450.jpg",
       "https://images.craigslist.org/00W0W_dYhttmdgrlj_0lM0t2_600x450.jpg",
@@ -840,8 +1128,7 @@
     "description": "Nicely updated corner unit--All new eat-in kitchen with granite counters, new appliances including dishwasher--Eat-in Kitchen-2 bedroom 1 bath corner unit located in Woburn on the Burlington line. All new windows, great closet space, hardwood floor. parking and coin up laundry in the building. Close to shops and restaurants. 5 minutes to 95/128. HEAT &amp; HOT WATER INCLUDED. No pets. 1 car parking included, 2nd spot $50 or street parking on Locust st available. Building is close to Burlington Mall, Lahey Clinic, Four Corners shopping &amp; restaurants. Rt 128/93 Terms: 12 month lease Good cre...",
     "has_broker_fee": null,
     "fee_badge": "Fee Unspecified",
-    "fee_details": "Contact lister for fee status",
-    "address": "WOBURN (Burlington Line)"
+    "fee_details": "Contact lister for fee status"
   },
   {
     "id": "cl-JdvApYcrFpbMQsAG",
@@ -854,7 +1141,9 @@
     "lat": 42.4632996389232,
     "lng": -71.011099969655,
     "bedrooms": 2,
-    "bathrooms": 1,
+    "bathrooms": 1.0,
+    "sqft": null,
+    "address": "north shore",
     "images": [
       "https://images.craigslist.org/00303_1Hr0bqiQjeK_042039_600x450.jpg",
       "https://images.craigslist.org/00j0j_26JbGBdeuMc_0lM0t2_600x450.jpg",
@@ -868,8 +1157,7 @@
     "description": "SAUGUS/ TOP CLIFTONDALE AREA NO BROKER COMMISIONS OR FEES ! Top commuter location!!! ULTRA Modern and fully renovated 2 BEDROOM UNIT. Features include oversized living room, eat-in kitchen, fridge, washer/dryer hook-up, ceramic tile floor. Ceramic tile bathroom. Central Air Conditioning , OFF STREET PRIVATE PARKING AVAILABLE. Walking distance to schools, shopping, banks and houses of worship. A quick ride by public transportation to Boston, all universities and all points North. Rarely available.",
     "has_broker_fee": null,
     "fee_badge": "Fee Unspecified",
-    "fee_details": "Contact lister for fee status",
-    "address": "north shore"
+    "fee_details": "Contact lister for fee status"
   },
   {
     "id": "cl-iuDtGGcDFTGXkXZ3",
@@ -882,7 +1170,9 @@
     "lat": 42.4059706278611,
     "lng": -71.1316525815753,
     "bedrooms": 1,
-    "bathrooms": 1,
+    "bathrooms": 1.0,
+    "sqft": null,
+    "address": "Davis Sq/Teele Sq",
     "images": [
       "https://images.craigslist.org/00o0o_hnEemNrLvM0_08g06c_600x450.jpg",
       "https://images.craigslist.org/00J0J_cwdQix93UuE_08g06c_600x450.jpg",
@@ -896,8 +1186,7 @@
     "description": "WEST SOMERVILLE, TUFTS UNIVERSITY 1.5 Bed, 1 Bath \u22c5 $2600 \u22c5 No Fee Available Now \u2023 Laundry (In-Building: Coin) \u2023 Municipal Water Included \u2023 Hardwood Floors \u2023 Dishwasher \u2023 Granite Countertops \u2023 Stainless Steel Appliances \u2023 Cats and Dogs Allowed PLEASE CALL EDDIE WITH MAVEN REALTY AT 617-319-4612",
     "has_broker_fee": false,
     "fee_badge": "No Broker Fee",
-    "fee_details": "Owner pays fee or no broker fee required",
-    "address": "Davis Sq/Teele Sq"
+    "fee_details": "Owner pays fee or no broker fee required"
   },
   {
     "id": "cl-VoiPT5ZxM8eJJMR3",
@@ -910,7 +1199,9 @@
     "lat": 42.3944856888584,
     "lng": -71.0931647146472,
     "bedrooms": 2,
-    "bathrooms": 1,
+    "bathrooms": 1.0,
+    "sqft": 900,
+    "address": "East Somerville, Sullivan Sq, Assembly",
     "images": [
       "https://images.craigslist.org/00u0u_dbcKGHE5W3u_0lM0t2_600x450.jpg",
       "https://images.craigslist.org/00s0s_4HyCbivZEXu_0lM0t2_600x450.jpg",
@@ -924,8 +1215,7 @@
     "description": "PROPERTY INFO ID: 251459958 Rent: $2,600 / Month Beds: 2 Bath: 1 Available Date: 12/01/2026 Pet: No Pets Parking:: no parking Gorgeous, Renovated 2 BR 1 BA in prime Somerville location -Available December -Beautiful, Spacious unit -Eat in Kitchen -Large bedrooms -Lots of Closet Space -Free Laundry in basement -Close to Orange Line at Sullivan Square &amp; Green Line at Washington St. -No Smoking Date Available: 12/1 FEATURES Eat-In Kitchen Laundry in Building Oven/Range Refrigerator Storage",
     "has_broker_fee": null,
     "fee_badge": "Fee Unspecified",
-    "fee_details": "Contact lister for fee status",
-    "address": "East Somerville, Sullivan Sq, Assembly"
+    "fee_details": "Contact lister for fee status"
   },
   {
     "id": "cl-TFgNcJxbwAo3YirK",
@@ -938,7 +1228,9 @@
     "lat": 42.3977469646281,
     "lng": -71.1037993842821,
     "bedrooms": 2,
-    "bathrooms": 1,
+    "bathrooms": 1.0,
+    "sqft": null,
+    "address": "medford",
     "images": [
       "https://images.craigslist.org/00D0D_6uWJhjuW6M4_0oM0gw_600x450.jpg",
       "https://images.craigslist.org/00505_dd1HjzqKSF2_0nf0hC_600x450.jpg",
@@ -949,8 +1241,7 @@
     "description": "Nice updated house in medford 2 bed 1 bath 5 minute walk from new green line branch 1 minute walk from local bus stops - routes 89, 80 and 101 Convenient stores all within walking or driving distance including CVS, Walgreens, stop and shop and market Basket",
     "has_broker_fee": null,
     "fee_badge": "Fee Unspecified",
-    "fee_details": "Contact lister for fee status",
-    "address": "medford"
+    "fee_details": "Contact lister for fee status"
   },
   {
     "id": "zw-boston-03",
@@ -964,10 +1255,11 @@
     "lng": -71.1002,
     "bedrooms": 1,
     "bathrooms": 1,
+    "sqft": 680,
     "images": [
       "https://images.unsplash.com/photo-1502005229762-ee1b2b8ab98f?auto=format&fit=crop&w=800&q=80"
     ],
-    "description": "Sunny Fenway 1-bed with heat and hot water included! Cat friendly, elevator building with card-op laundry in basement. Walk to Longwood Medical Area.",
+    "description": "Sunny Fenway 1-bed (680 sq ft) with heat and hot water included! Cat friendly, elevator building with card-op laundry in basement. Walk to Longwood Medical Area.",
     "has_broker_fee": false,
     "fee_badge": "No Broker Fee",
     "fee_details": "No broker fee promo for leases beginning this month",
@@ -984,7 +1276,9 @@
     "lat": 42.5150996072627,
     "lng": -70.9003008182808,
     "bedrooms": 2,
-    "bathrooms": 2,
+    "bathrooms": 1.5,
+    "sqft": 850,
+    "address": "Salem",
     "images": [
       "https://images.craigslist.org/00E0E_d7GvFZ2IVlE_07K0ak_600x450.jpg",
       "https://images.craigslist.org/00P0P_aYPDRTSOxcT_07K0ak_600x450.jpg",
@@ -998,8 +1292,7 @@
     "description": "Available Now! Updated multi-level, 2- bedroom apartment located in Salem's Pickering Wharf. Updated/ fully applianced kitchen complete with granite countertops, 1 1/2 baths, and an open concept living and dining room area. Walking distance to shopping, restaurants, downtown Salem, public transportation, and Salem State University. -Available NOW -No smoking -No pets -Utilities not included -Washer/ Dryer hook-up in unit 12 month lease For additional questions or showings please call Samantha at (978) 740- 6990",
     "has_broker_fee": null,
     "fee_badge": "Fee Unspecified",
-    "fee_details": "Contact lister for fee status",
-    "address": "Salem"
+    "fee_details": "Contact lister for fee status"
   },
   {
     "id": "cl-aJYt295xyyn8xhVX",
@@ -1012,7 +1305,9 @@
     "lat": 42.396298527322,
     "lng": -71.032499943302,
     "bedrooms": 3,
-    "bathrooms": 1,
+    "bathrooms": 1.0,
+    "sqft": null,
+    "address": "boston/cambridge/brookline",
     "images": [
       "https://images.craigslist.org/00S0S_kShjdR2E93D_0lM0t2_600x450.jpg",
       "https://images.craigslist.org/00w0w_dsSbD1v9dz0_0lM0t2_600x450.jpg",
@@ -1026,8 +1321,7 @@
     "description": "CHELSEA/BOSTON NEWLY RENOVATED Spacious and updated 3-bedroom apartment located in a convenient Chelsea neighborhood. This bright unit features a functional floor plan with 3 large bedrooms, full kitchen, full living room, hardwood floors, an updated kitchen, and ample natural light throughout. Enjoy generous living space, modern finishes, and easy access to public transportation, shopping, restaurants, and major commuter routes into Boston. Professionally managed property. CONTACT CAYLA NOW AT 617-992-8660.",
     "has_broker_fee": null,
     "fee_badge": "Fee Unspecified",
-    "fee_details": "Contact lister for fee status",
-    "address": "boston/cambridge/brookline"
+    "fee_details": "Contact lister for fee status"
   },
   {
     "id": "cl-LuSQcW48xk7EwmWP",
@@ -1040,7 +1334,9 @@
     "lat": 42.3692617948869,
     "lng": -71.0931647146472,
     "bedrooms": 2,
-    "bathrooms": 1,
+    "bathrooms": 1.0,
+    "sqft": null,
+    "address": "Cambridge",
     "images": [
       "https://images.craigslist.org/00202_yla7RpDP5y_0nm0hw_600x450.jpg",
       "https://images.craigslist.org/00q0q_8miM7KmIJ0y_0nm0hw_600x450.jpg",
@@ -1053,8 +1349,7 @@
     "description": "Updated and spacious 2-bedroom with office for rent by Kendall Square and MIT. Includes in-unit washer! JUST PAY FIRST MONTH'S RENT TO MOVE-IN! Available : Now. Spacious 2-bedroom with office on a lovely side-street by a park, and close to Kendall Square and MIT. This unit has been entirely updated. The unit features genuine hardwood flooring, not that fake vinyl laminate you see being put down in many apartments nowadays. There is an extra room that can be used as an office or a huge walk-in closet. The kitchen has been beautifully updated with brand new stainless steel appliances. The unit c...",
     "has_broker_fee": null,
     "fee_badge": "Fee Unspecified",
-    "fee_details": "Contact lister for fee status",
-    "address": "Cambridge"
+    "fee_details": "Contact lister for fee status"
   },
   {
     "id": "cl-y6M21yc55jeJWVbk",
@@ -1067,7 +1362,9 @@
     "lat": 42.4015582798811,
     "lng": -71.1226302151758,
     "bedrooms": 2,
-    "bathrooms": 1,
+    "bathrooms": 1.0,
+    "sqft": null,
+    "address": "Davis Sq/Ball Sq/Tufts",
     "images": [
       "https://images.craigslist.org/00101_7sVNgYUwIAv_08g06c_600x450.jpg",
       "https://images.craigslist.org/00F0F_fQCXWGgB0cf_08g06c_600x450.jpg",
@@ -1081,8 +1378,7 @@
     "description": "TUFTS UNIVERSITY, DAVIS SQUARE [T], WEST... 2 Bed, 1 Bath \u22c5 $2700 \u22c5 No Fee Available November 1, 2026 \u2023 8-Minute Walk To Davis Square [T] \u2023 Laundry (In-Unit: Free) \u2023 Municipal Water Included \u2023 Hardwood Floors \u2023 Dishwasher \u2023 Cats and Dogs Negotiable PLEASE CALL EDDIE WITH MAVEN REALTY AT 617-319-4612",
     "has_broker_fee": false,
     "fee_badge": "No Broker Fee",
-    "fee_details": "Owner pays fee or no broker fee required",
-    "address": "Davis Sq/Ball Sq/Tufts"
+    "fee_details": "Owner pays fee or no broker fee required"
   },
   {
     "id": "cl-bzQpFq4WevQm6JEm",
@@ -1095,7 +1391,9 @@
     "lat": 42.3955989458542,
     "lng": -71.0890869740195,
     "bedrooms": 3,
-    "bathrooms": 1,
+    "bathrooms": 1.0,
+    "sqft": null,
+    "address": "Somerville \\ Ten Hills \\ E. Somerville",
     "images": [
       "https://images.craigslist.org/00707_aOHOJb56bd8_0x20oM_600x450.jpg",
       "https://images.craigslist.org/00j0j_5DxNhiou6dz_0x20oM_600x450.jpg",
@@ -1109,8 +1407,117 @@
     "description": "Apartment Rental Experts - Davis Square Sunny 3 bed * Laundry in Unit * Great space for the $ Somerville / Ten Hills / East Somerville Available: 11/1/2026 || Fee: No Fee || Reference: #127526 Apartment Details Bath: 1 Kitchen: Eat in Kitchen. Separate dining room. Appliances include: Refrigerator, Natural Gas Stove. Bedrooms: 3 Fee: No Fee Location: Somerville/Ten Hills Reference: #127526 Available: November 1, 2026 Apartment Summary Located in the Ten Hills area of Somerville. Sunny 3 bed. Very clean kitchen and bathroom. 1 shared parking space is included, and very easy street parking is av...",
     "has_broker_fee": false,
     "fee_badge": "No Broker Fee",
-    "fee_details": "Owner pays fee or no broker fee required",
-    "address": "Somerville \\ Ten Hills \\ E. Somerville"
+    "fee_details": "Owner pays fee or no broker fee required"
+  },
+  {
+    "id": "bp-8175283",
+    "source": "bostonpads",
+    "source_label": "Boston Pads",
+    "title": "2 Bed Apartment in Dorchester/South Boston Border",
+    "price": 2700,
+    "neighborhood": "Dorchester/South Boston Border",
+    "url": "https://bostonpads.com/boston-apartments/?ad_id=8175283",
+    "lat": 42.323146,
+    "lng": -71.055345,
+    "bedrooms": 2,
+    "bathrooms": 1.0,
+    "sqft": null,
+    "images": [
+      "https://m.bostonpads.com/media/v2/listings/ad/photos/12-22/1671123702-aa.PNG"
+    ],
+    "description": "Verified Boston rental in Dorchester/South Boston Border. Features: Laundry: Unit, A/C: Central, Dishwasher included, Pets: Cat OK, Hot water included. Available: Now.",
+    "has_broker_fee": false,
+    "fee_badge": "No Broker Fee",
+    "fee_details": "No Fee",
+    "address": "Dorchester/South Boston Border, Boston, MA"
+  },
+  {
+    "id": "bp-8177797",
+    "source": "bostonpads",
+    "source_label": "Boston Pads",
+    "title": "3 Bed Apartment in Dorchester - Uphams Corner",
+    "price": 2700,
+    "neighborhood": "Dorchester - Uphams Corner",
+    "url": "https://bostonpads.com/boston-apartments/?ad_id=8177797",
+    "lat": 42.322929,
+    "lng": -71.055476,
+    "bedrooms": 3,
+    "bathrooms": 1.0,
+    "sqft": null,
+    "images": [
+      "https://m.bostonpads.com/media/v2/listings/unit/photos/08-21/1630449958-549ab663-e2b7-46ec-9b5e-21e493a42463.jpeg"
+    ],
+    "description": "Verified Boston rental in Dorchester - Uphams Corner. Features: Laundry: Unit, Dishwasher included, Pets: Dog OK, Hot water included. Available: Now.",
+    "has_broker_fee": false,
+    "fee_badge": "No Broker Fee",
+    "fee_details": "No Fee",
+    "address": "Dorchester - Uphams Corner, Boston, MA"
+  },
+  {
+    "id": "bp-8178003",
+    "source": "bostonpads",
+    "source_label": "Boston Pads",
+    "title": "Studio Apartment in Northeastern/Symphony",
+    "price": 2700,
+    "neighborhood": "Northeastern/Symphony",
+    "url": "https://bostonpads.com/boston-apartments/?ad_id=8178003",
+    "lat": 42.345084299999996,
+    "lng": -71.0879178,
+    "bedrooms": 0,
+    "bathrooms": 1.0,
+    "sqft": null,
+    "images": [
+      "https://m.bostonpads.com/media/v2/listings/unit/photos/09-26/1789508106-55-burbank-st-12-boston-ma-02115-fenway-4.jpeg"
+    ],
+    "description": "Verified Boston rental in Northeastern/Symphony. Features: Pets: Cat OK, Heat included, Hot water included. Available: Now.",
+    "has_broker_fee": false,
+    "fee_badge": "No Broker Fee",
+    "fee_details": "No Fee",
+    "address": "Northeastern/Symphony, Boston, MA"
+  },
+  {
+    "id": "bp-8117287",
+    "source": "bostonpads",
+    "source_label": "Boston Pads",
+    "title": "2 Bed Apartment in Roxbury",
+    "price": 2750,
+    "neighborhood": "Roxbury",
+    "url": "https://bostonpads.com/boston-apartments/?ad_id=8117287",
+    "lat": 42.314935000000006,
+    "lng": -71.09786600000001,
+    "bedrooms": 2,
+    "bathrooms": 1.0,
+    "sqft": null,
+    "images": [
+      "https://m.bostonpads.com/media/v2/listings/unit/photos/02-21/1613242776-12474o5feb3bbda505a.jpg"
+    ],
+    "description": "Verified Boston rental in Roxbury. Features: Laundry: Basement, Pets: Negotiable, Hot water included. Available: Now.",
+    "has_broker_fee": false,
+    "fee_badge": "No Broker Fee",
+    "fee_details": "No Fee",
+    "address": "Roxbury, Boston, MA"
+  },
+  {
+    "id": "bp-8174958",
+    "source": "bostonpads",
+    "source_label": "Boston Pads",
+    "title": "2 Bed Apartment in Brighton - Cleveland Circle",
+    "price": 2780,
+    "neighborhood": "Brighton - Cleveland Circle",
+    "url": "https://bostonpads.com/boston-apartments/?ad_id=8174958",
+    "lat": 42.340171000000005,
+    "lng": -71.149365,
+    "bedrooms": 2,
+    "bathrooms": 1.0,
+    "sqft": null,
+    "images": [
+      "https://m.bostonpads.com/media/v2/listings/unit/photos/04-21/1618880981-533o5ea0955cc6cb7.jpg"
+    ],
+    "description": "Verified Boston rental in Brighton - Cleveland Circle. Features: Laundry: Common Area, Pets: NO PETS, Heat included, Hot water included. Available: 12-01-2026.",
+    "has_broker_fee": false,
+    "fee_badge": "No Broker Fee",
+    "fee_details": "No Fee",
+    "address": "Brighton - Cleveland Circle, Boston, MA"
   },
   {
     "id": "cl-preTWnPZkQ4gJ4o8",
@@ -1151,7 +1558,9 @@
     "lat": 42.3054984677858,
     "lng": -71.1130406205592,
     "bedrooms": 2,
-    "bathrooms": 1,
+    "bathrooms": 1.0,
+    "sqft": 850,
+    "address": "JAMAICA PLAIN, BOSTON",
     "images": [
       "https://images.craigslist.org/00n0n_9KAJJsQcqEA_0ww0oo_600x450.jpg",
       "https://images.craigslist.org/01515_gWwaI1kkVEZ_0ww0oo_600x450.jpg",
@@ -1165,8 +1574,7 @@
     "description": "Now, 11/1 or later JAMAICA PLAIN Updated apartment with white cabinets; SS appliances; Tile bathroom- Close to train and Park- 2nd flr unit In classic 6-family apt house on side street off South St- Has entry hall-Large 4 rms, 1-2 bed plus( front living room can be a bedroom) with middle room can be a living room; kitchen, bath, wood floors-open concept for kitchen-has island! .by ARBORETUM, FOREST HILLS TRAIN-39 BUSLINE, UPTOWN MONUMENT AREA AND JAMAICA POND!, Southwest Corridor Park., has street parking. off street driveway area use might be negotiable-Tenant pays all utilities, has fuel oil...",
     "has_broker_fee": null,
     "fee_badge": "Fee Unspecified",
-    "fee_details": "Contact lister for fee status",
-    "address": "JAMAICA PLAIN, BOSTON"
+    "fee_details": "Contact lister for fee status"
   },
   {
     "id": "cl-5eH7SnLtnJNYqmxM",
@@ -1179,7 +1587,9 @@
     "lat": 42.3705354800654,
     "lng": -71.0816597221216,
     "bedrooms": 2,
-    "bathrooms": 1,
+    "bathrooms": 1.0,
+    "sqft": 650,
+    "address": "East Cambridge, Kendall, MIT, Lechmere",
     "images": [
       "https://images.craigslist.org/00P0P_6IZyktNtXNg_0nm0hw_600x450.jpg",
       "https://images.craigslist.org/00p0p_iCLWFNjiTCq_0nm0hw_600x450.jpg",
@@ -1189,8 +1599,7 @@
     "description": "PROPERTY INFO ID: 295726471 Rent: $2,800 / Month Beds: 2 Bath: 1 Available Date: 12/01/2026 Pet: Pet Friendly Parking:: no parking Gorgeous, spacious 2 Bedroom, 1 Bathroom in East Cambridge walking distance to Lechmere, Kendall Sq, MIT -Available January 1 or Sooner -Large eat-in Kitchen -Hardwood Floors -Laundry in Basement -No Smoking Date Available: 11/1 Cambridge Photos are virtually staged",
     "has_broker_fee": null,
     "fee_badge": "Fee Unspecified",
-    "fee_details": "Contact lister for fee status",
-    "address": "East Cambridge, Kendall, MIT, Lechmere"
+    "fee_details": "Contact lister for fee status"
   },
   {
     "id": "cl-S3rs7y124pec4J3D",
@@ -1221,6 +1630,50 @@
     "address": "Cambridge"
   },
   {
+    "id": "bp-8174967",
+    "source": "bostonpads",
+    "source_label": "Boston Pads",
+    "title": "2 Bed Apartment in Brighton - Cleveland Circle",
+    "price": 2820,
+    "neighborhood": "Brighton - Cleveland Circle",
+    "url": "https://bostonpads.com/boston-apartments/?ad_id=8174967",
+    "lat": 42.3401515,
+    "lng": -71.1481393,
+    "bedrooms": 2,
+    "bathrooms": 1.0,
+    "sqft": null,
+    "images": [
+      "https://m.bostonpads.com/media/v2/listings/unit/photos/09-26/1788887907-img-2400.jpeg"
+    ],
+    "description": "Verified Boston rental in Brighton - Cleveland Circle. Features: Laundry: Common Area, Dishwasher included, Heat included, Hot water included. Available: Now.",
+    "has_broker_fee": false,
+    "fee_badge": "No Broker Fee",
+    "fee_details": "No Fee",
+    "address": "Brighton - Cleveland Circle, Boston, MA"
+  },
+  {
+    "id": "bp-8174965",
+    "source": "bostonpads",
+    "source_label": "Boston Pads",
+    "title": "2 Bed Apartment in Brighton - Cleveland Circle",
+    "price": 2840,
+    "neighborhood": "Brighton - Cleveland Circle",
+    "url": "https://bostonpads.com/boston-apartments/?ad_id=8174965",
+    "lat": 42.3401295,
+    "lng": -71.14944799999999,
+    "bedrooms": 2,
+    "bathrooms": 1.0,
+    "sqft": null,
+    "images": [
+      "https://m.bostonpads.com/media/v2/listings/unit/photos/12-23/1702664709-landlord-unit-photo-57234838-5.jpg"
+    ],
+    "description": "Verified Boston rental in Brighton - Cleveland Circle. Features: Laundry: Common Area, Pets: Cat OK, Heat included, Hot water included. Available: 11-01-2026.",
+    "has_broker_fee": false,
+    "fee_badge": "No Broker Fee",
+    "fee_details": "No Fee",
+    "address": "Brighton - Cleveland Circle, Boston, MA"
+  },
+  {
     "id": "cl-Arhakz451oewPeV9",
     "source": "craigslist",
     "source_label": "Craigslist",
@@ -1231,7 +1684,9 @@
     "lat": 42.4005384150058,
     "lng": -71.1103076118766,
     "bedrooms": 2,
-    "bathrooms": 1,
+    "bathrooms": 1.0,
+    "sqft": null,
+    "address": "Davis Square/Ball Square/Magoun Square",
     "images": [
       "https://images.craigslist.org/00y0y_bRF2RwxyvoS_08g06c_600x450.jpg",
       "https://images.craigslist.org/00z0z_cdvhepeXgpy_08g06c_600x450.jpg",
@@ -1245,8 +1700,51 @@
     "description": "BALL SQUARE 2 Bed, 1 Bath \u22c5 $2850 \u22c5 Fee Neg. Available November 1, 2026 \u2023 14-Minute Walk To Davis Square [T] \u2023 Laundry (In-Building: Coin) \u2023 Municipal Water Included \u2023 Hardwood Floors \u2023 Dishwasher \u2023 Granite Countertops \u2023 Stainless Steel Appliances PLEASE CALL EDDIE WITH MAVEN REALTY AT 617-319-4612",
     "has_broker_fee": null,
     "fee_badge": "Fee Unspecified",
-    "fee_details": "Contact lister for fee status",
-    "address": "Davis Square/Ball Square/Magoun Square"
+    "fee_details": "Contact lister for fee status"
+  },
+  {
+    "id": "bp-8176187",
+    "source": "bostonpads",
+    "source_label": "Boston Pads",
+    "title": "2 Bed Apartment in Brighton - Boston College",
+    "price": 2850,
+    "neighborhood": "Brighton - Boston College",
+    "url": "https://bostonpads.com/boston-apartments/?ad_id=8176187",
+    "lat": 42.340602999999994,
+    "lng": -71.1490013,
+    "bedrooms": 2,
+    "bathrooms": 1.0,
+    "sqft": null,
+    "images": [
+      "https://m.bostonpads.com/media/v2/listings/unit/photos/09-26/1788888496-img-2449.jpeg"
+    ],
+    "description": "Verified Boston rental in Brighton - Boston College. Features: Laundry: Common Area, Dishwasher included, Pets: Cat OK, Heat included, Hot water included. Available: 11-01-2026.",
+    "has_broker_fee": false,
+    "fee_badge": "No Broker Fee",
+    "fee_details": "No Fee",
+    "address": "Brighton - Boston College, Boston, MA"
+  },
+  {
+    "id": "bp-8017674",
+    "source": "bostonpads",
+    "source_label": "Boston Pads",
+    "title": "2 Bed Apartment in North End",
+    "price": 2870,
+    "neighborhood": "North End",
+    "url": "https://bostonpads.com/boston-apartments/?ad_id=8017674",
+    "lat": 42.363314200000005,
+    "lng": -71.0549684,
+    "bedrooms": 2,
+    "bathrooms": 1.0,
+    "sqft": null,
+    "images": [
+      "https://m.bostonpads.com/media/v2/listings/unit/photos/09-26/1790612348-220-hanover-st-27-boston-north-end-shared-unit-photo-7.jpeg"
+    ],
+    "description": "Verified Boston rental in North End. Features: Laundry: Common Area, Dishwasher included, Pets: Negotiable, Heat included, Hot water included. Available: Now.",
+    "has_broker_fee": false,
+    "fee_badge": "No Broker Fee",
+    "fee_details": "No Fee",
+    "address": "North End, Boston, MA"
   },
   {
     "id": "cl-e7rHfpeK3et699pC",
@@ -1259,7 +1757,9 @@
     "lat": 42.3170011684802,
     "lng": -71.1134090324215,
     "bedrooms": 2,
-    "bathrooms": 1,
+    "bathrooms": 1.0,
+    "sqft": 936,
+    "address": "Jamaica Plain",
     "images": [
       "https://images.craigslist.org/00W0W_hBNL0KiVCXW_0hN0dC_600x450.jpg",
       "https://images.craigslist.org/00T0T_cM96NaVU9NM_0t20CI_600x450.jpg",
@@ -1271,8 +1771,7 @@
     "description": "Newly Renovated 2 bedroom Apartments - $2,900/month (All Utilities Included) \ud83c\udfe1 Apartment location - Jamaica Plain, MA \ud83c\udfd9\ufe0f Rent: $2,900/month All Utilities Included (Heat, Water, Electricity, and Trash) No Security Deposit or Application Fee! \u2728 Features: Beautifully Newly Renovated Apartment Convenient On-Site Laundry Bright, open layout perfect for entertaining or relaxing Quiet, well-maintained building \ud83d\udccd Great Location! Enjoy the vibrant neighborhood of Jamaica Plain, with easy access to parks, shops, restaurants, and public transit. Short walk to the Green Street T Station Close to the Arnol...",
     "has_broker_fee": null,
     "fee_badge": "Fee Unspecified",
-    "fee_details": "Contact lister for fee status",
-    "address": "Jamaica Plain"
+    "fee_details": "Contact lister for fee status"
   },
   {
     "id": "cl-jvJANmiCi2R2JJDa",
@@ -1285,7 +1784,9 @@
     "lat": 42.3913985922584,
     "lng": -71.0956645295072,
     "bedrooms": 2,
-    "bathrooms": 1,
+    "bathrooms": 1.0,
+    "sqft": null,
+    "address": "Somerville - Gilman Sq",
     "images": [
       "https://images.craigslist.org/00O0O_5o0Jta4swOv_0gw0co_600x450.jpg",
       "https://images.craigslist.org/00H0H_i2GfJF0YQ6b_0gw0co_600x450.jpg",
@@ -1299,8 +1800,73 @@
     "description": "\u2600\ufe0f Sunny Top-Floor 2BR in Winter Hill \u2014 Steps to the Green Line! \u2600\ufe0f 220 School Street, Somerville, MA $2,900/month | Available 11/15/2026 or 12/1/2026 Bright and spacious, this top-floor 2-bedroom, 1-bath apartment sits on the third floor of a charming multifamily home in the heart of Winter Hill \u2014 just steps from the Gilman Square Green Line Extension stop. Inside, you'll find gleaming hardwood floors throughout, an oversized living room anchored by a striking curved turret window, an eat-in kitchen, and two generously sized bedrooms with plenty of natural light. Features &amp; Amenities 2 Be...",
     "has_broker_fee": null,
     "fee_badge": "Fee Unspecified",
-    "fee_details": "Contact lister for fee status",
-    "address": "Somerville - Gilman Sq"
+    "fee_details": "Contact lister for fee status"
+  },
+  {
+    "id": "bp-8178006",
+    "source": "bostonpads",
+    "source_label": "Boston Pads",
+    "title": "2 Bed Apartment in East Boston - Orient Heights",
+    "price": 2900,
+    "neighborhood": "East Boston - Orient Heights",
+    "url": "https://bostonpads.com/boston-apartments/?ad_id=8178006",
+    "lat": 42.38408200000001,
+    "lng": -71.014307,
+    "bedrooms": 2,
+    "bathrooms": 2.0,
+    "sqft": null,
+    "images": [
+      "https://m.bostonpads.com/media/v2/listings/unit/photos/11-20/1605627573-125305193-370239490969617-6876191205275573142-n.jpg"
+    ],
+    "description": "Verified Boston rental in East Boston - Orient Heights. Features: Hot water included. Available: Now.",
+    "has_broker_fee": false,
+    "fee_badge": "No Broker Fee",
+    "fee_details": "No Fee",
+    "address": "East Boston - Orient Heights, Boston, MA"
+  },
+  {
+    "id": "bp-4340669",
+    "source": "bostonpads",
+    "source_label": "Boston Pads",
+    "title": "2 Bed Apartment in East Boston - Maverick",
+    "price": 2900,
+    "neighborhood": "East Boston - Maverick",
+    "url": "https://bostonpads.com/boston-apartments/?ad_id=4340669",
+    "lat": 42.369929,
+    "lng": -71.03820800000001,
+    "bedrooms": 2,
+    "bathrooms": 2.0,
+    "sqft": null,
+    "images": [
+      "https://m.bostonpads.com/media/v2/listings/ad/photos/03-23/1679714237-l1.jpeg"
+    ],
+    "description": "Verified Boston rental in East Boston - Maverick. Features: Laundry: Unit, A/C: Central, Dishwasher included, Pets: Pet OK, Hot water included. Available: Now.",
+    "has_broker_fee": false,
+    "fee_badge": "No Broker Fee",
+    "fee_details": "No Fee",
+    "address": "East Boston - Maverick, Boston, MA"
+  },
+  {
+    "id": "rf-boston-02",
+    "source": "redfin",
+    "source_label": "Redfin",
+    "title": "Somerville 2BR near Davis Square & Red Line T",
+    "price": 2900,
+    "neighborhood": "Davis Sq / Somerville",
+    "url": "https://www.redfin.com/city/1826/MA/Boston/apartments-for-rent",
+    "lat": 42.3967,
+    "lng": -71.1223,
+    "bedrooms": 2,
+    "bathrooms": 1,
+    "sqft": 950,
+    "images": [
+      "https://images.unsplash.com/photo-1493809842364-78817add7ffb?auto=format&fit=crop&w=800&q=80"
+    ],
+    "description": "Spacious 950 sq ft two bedroom just a 5-minute walk to Davis Square Red Line station. Eat-in kitchen with stainless dishwasher, private front porch, shared yard, and basement storage.",
+    "has_broker_fee": false,
+    "fee_badge": "No Broker Fee",
+    "fee_details": "Owner pays full broker fee for 12-month lease",
+    "address": "College Ave, Somerville, MA 02144"
   },
   {
     "id": "cl-NvCFDJrsSRtKYrpF",
@@ -1313,7 +1879,9 @@
     "lat": 42.3072775017396,
     "lng": -71.112459641355,
     "bedrooms": 2,
-    "bathrooms": 1,
+    "bathrooms": 1.0,
+    "sqft": 950,
+    "address": "JAMAICA PLAIN, BOSTON",
     "images": [
       "https://images.craigslist.org/00Q0Q_buUaFpc5eTE_0uU0nb_600x450.jpg",
       "https://images.craigslist.org/00e0e_bQhaIRrXhZo_0uU0nb_600x450.jpg",
@@ -1327,8 +1895,29 @@
     "description": "Now 11/1 or later-JP CENTER BY MONUMENT-ARBORETUM 4 Rm 2bd SUNNY Spacious apt LOCATED CLOSE TO FIORE'S BAKERY-MONUMENT AREA-Papercuts Bookstore-JP CENTER 2nd floor 4 rms, 2 bed with OPEN STYLE FOR KITCHEN TO LIVING ROOM in classic 6 unit apt house. Nice side street by Monument, Southwest Corridor Park, Arboretum. All new windows, NEW EIK WITH SS APPLIANCES-DISHWASHER-MICROWAVE, GAS STOVE, FRIDGE Neutral paint and shiny wood floors, porch, yard and easy street parking . Tenant pays all utilities. FUEL oil heat. Laundry in basement coin Join Green Energy Consumer Alliance for extra savings! No F...",
     "has_broker_fee": false,
     "fee_badge": "No Broker Fee",
-    "fee_details": "Owner pays fee or no broker fee required",
-    "address": "JAMAICA PLAIN, BOSTON"
+    "fee_details": "Owner pays fee or no broker fee required"
+  },
+  {
+    "id": "bp-4384950",
+    "source": "bostonpads",
+    "source_label": "Boston Pads",
+    "title": "2 Bed Apartment in East Boston - Orient Heights",
+    "price": 2950,
+    "neighborhood": "East Boston - Orient Heights",
+    "url": "https://bostonpads.com/boston-apartments/?ad_id=4384950",
+    "lat": 42.389435,
+    "lng": -70.998813,
+    "bedrooms": 2,
+    "bathrooms": 1.5,
+    "sqft": null,
+    "images": [
+      "https://m.bostonpads.com/media/v2/listings/ad/photos/08-23/1691549724-img-0956.JPEG"
+    ],
+    "description": "Verified Boston rental in East Boston - Orient Heights. Features: Laundry: Unit, Dishwasher included, Pets: Pet OK, Hot water included. Available: Now.",
+    "has_broker_fee": false,
+    "fee_badge": "No Broker Fee",
+    "fee_details": "No Fee",
+    "address": "East Boston - Orient Heights, Boston, MA"
   },
   {
     "id": "cl-GSDn3ZKoBMUaCXST",
@@ -1341,7 +1930,9 @@
     "lat": 42.3677383001097,
     "lng": -71.0835613690435,
     "bedrooms": 2,
-    "bathrooms": 1,
+    "bathrooms": 1.0,
+    "sqft": 1000,
+    "address": "East Cambridge, Kendall, MIT, Lechmere",
     "images": [
       "https://images.craigslist.org/00Y0Y_hGQYKes4kbe_0hw0nm_600x450.jpg",
       "https://images.craigslist.org/00404_idPKuPBC7n9_0hw0nm_600x450.jpg",
@@ -1355,8 +1946,7 @@
     "description": "PROPERTY INFO ID: 258573525 Rent: $3,000 / Month Beds: 2 Bath: 1 Available Date: 1/01/2027 Pet: Pet Friendly Rent Includes:: Water Gorgeous, Huge 2+ bedroom walking distance to Kendall Sq &amp; MIT. -Could be used as a 3 bedroom split -Hardwood Floors -Large Bedrooms -Large shared outdoor space -Coin-op Laundry in Basement -No Smoking Date Available:1/1",
     "has_broker_fee": null,
     "fee_badge": "Fee Unspecified",
-    "fee_details": "Contact lister for fee status",
-    "address": "East Cambridge, Kendall, MIT, Lechmere"
+    "fee_details": "Contact lister for fee status"
   },
   {
     "id": "cl-d3XWvWEREvBDft9s",
@@ -1369,7 +1959,9 @@
     "lat": 42.4123499399518,
     "lng": -71.1284422990493,
     "bedrooms": 3,
-    "bathrooms": 2,
+    "bathrooms": 2.0,
+    "sqft": 1400,
+    "address": "Somerville \\ Tufts \\ Davis Sq.",
     "images": [
       "https://images.craigslist.org/00F0F_4c6uQUusUu4_0iS0t2_600x450.jpg",
       "https://images.craigslist.org/00n0n_3lud7sTHcXT_0x20oM_600x450.jpg",
@@ -1383,8 +1975,95 @@
     "description": "Apartment Rental Experts - Davis Square Large 3+ bedroom * Two baths * Parking * Renovated * Tufts/ Teele Somerville / Tufts / Davis Square Available: 10/28/2026 || Fee: No Fee || Reference: #128823 Apartment Summary Very modern 6 room apartment. Shiny hardwood floors throughout. Eat-in kitchen with marble floor, free, private laundry in the basement, 2 tandem off-street parking spots included in the rent. Cats are negotiable. Great, great deal with parking. Freshly renovated for 2026 -- everything shines! (Reference #128823) Features 1 MIN minute walk to Major Bus Routes. Cats are negotiable ...",
     "has_broker_fee": false,
     "fee_badge": "No Broker Fee",
-    "fee_details": "Owner pays fee or no broker fee required",
-    "address": "Somerville \\ Tufts \\ Davis Sq."
+    "fee_details": "Owner pays fee or no broker fee required"
+  },
+  {
+    "id": "bp-8159999",
+    "source": "bostonpads",
+    "source_label": "Boston Pads",
+    "title": "3 Bed Apartment in Roxbury",
+    "price": 3000,
+    "neighborhood": "Roxbury",
+    "url": "https://bostonpads.com/boston-apartments/?ad_id=8159999",
+    "lat": 42.327892,
+    "lng": -71.077734,
+    "bedrooms": 3,
+    "bathrooms": 2.0,
+    "sqft": null,
+    "images": [
+      "https://m.bostonpads.com/media/v2/listings/ad/photos/06-26/1782338944-photo.jpg"
+    ],
+    "description": "Verified Boston rental in Roxbury. Features: Laundry: Basement, A/C: Central, Dishwasher included, Pets: Negotiable, Hot water included. Available: Now.",
+    "has_broker_fee": false,
+    "fee_badge": "No Broker Fee",
+    "fee_details": "No Fee",
+    "address": "Roxbury, Boston, MA"
+  },
+  {
+    "id": "bp-8177993",
+    "source": "bostonpads",
+    "source_label": "Boston Pads",
+    "title": "Studio Apartment in Back Bay",
+    "price": 3000,
+    "neighborhood": "Back Bay",
+    "url": "https://bostonpads.com/boston-apartments/?ad_id=8177993",
+    "lat": 42.3501674,
+    "lng": -71.08460840000001,
+    "bedrooms": 0,
+    "bathrooms": 1.0,
+    "sqft": null,
+    "images": [
+      "https://m.bostonpads.com/media/v2/listings/unit/photos/03-22/1648160993-247bb74f-1dd4-4fb4-a557-981932c10a3a.jpeg"
+    ],
+    "description": "Verified Boston rental in Back Bay. Features: Laundry: Common Area, Dishwasher included, Pets: NO PETS, Heat included, Hot water included. Available: 12-01-2026.",
+    "has_broker_fee": false,
+    "fee_badge": "No Broker Fee",
+    "fee_details": "No Fee",
+    "address": "Back Bay, Boston, MA"
+  },
+  {
+    "id": "bp-8160025",
+    "source": "bostonpads",
+    "source_label": "Boston Pads",
+    "title": "3 Bed Apartment in Roxbury",
+    "price": 3000,
+    "neighborhood": "Roxbury",
+    "url": "https://bostonpads.com/boston-apartments/?ad_id=8160025",
+    "lat": 42.3302118,
+    "lng": -71.0843435,
+    "bedrooms": 3,
+    "bathrooms": 2.0,
+    "sqft": null,
+    "images": [
+      "https://m.bostonpads.com/media/v2/listings/ad/photos/06-26/1782339230-photo.jpg"
+    ],
+    "description": "Verified Boston rental in Roxbury. Features: Laundry: Basement, A/C: Central, Dishwasher included, Pets: Pet OK, Hot water included. Available: Now.",
+    "has_broker_fee": false,
+    "fee_badge": "No Broker Fee",
+    "fee_details": "No Fee",
+    "address": "Roxbury, Boston, MA"
+  },
+  {
+    "id": "bp-8160026",
+    "source": "bostonpads",
+    "source_label": "Boston Pads",
+    "title": "3 Bed Apartment in Roxbury",
+    "price": 3000,
+    "neighborhood": "Roxbury",
+    "url": "https://bostonpads.com/boston-apartments/?ad_id=8160026",
+    "lat": 42.328654,
+    "lng": -71.076972,
+    "bedrooms": 3,
+    "bathrooms": 2.0,
+    "sqft": null,
+    "images": [
+      "https://m.bostonpads.com/media/v2/listings/ad/photos/06-26/1782338150-photo.jpg"
+    ],
+    "description": "Verified Boston rental in Roxbury. Features: Laundry: Basement, A/C: Central, Dishwasher included, Pets: Negotiable, Hot water included. Available: Now.",
+    "has_broker_fee": false,
+    "fee_badge": "No Broker Fee",
+    "fee_details": "No Fee",
+    "address": "Roxbury, Boston, MA"
   },
   {
     "id": "cl-8fJTjCYCPNetUGdB",
@@ -1397,7 +2076,9 @@
     "lat": 42.4194328442148,
     "lng": -71.1720942345846,
     "bedrooms": 2,
-    "bathrooms": 1,
+    "bathrooms": 1.0,
+    "sqft": 550,
+    "address": "Arlington",
     "images": [
       "https://images.craigslist.org/00D0D_hxj7ZBtt1qO_0gw0co_600x450.jpg",
       "https://images.craigslist.org/00p0p_9MWZmieQoXI_0gw0co_600x450.jpg",
@@ -1411,8 +2092,7 @@
     "description": "20 School Street, #2, Arlington, MA (Arlington Heights) This top-floor apartment in a 2-family home offers approximately 1,550 square feet of bright, beautifully proportioned living space, with a rare variety of rooms to live, work, and entertain in. FOUR DISTINCT LIVING SPACES Great Room: Soaring ceilings, exposed beams, and skylights make this the showpiece of the apartment. Formal Living Room: A separate, light-filled room, with French doors opening to the sunroom. Sunroom: A bright retreat wrapped in windows, perfect for morning coffee, reading, or plants. Formal Dining Room: Space for rea...",
     "has_broker_fee": null,
     "fee_badge": "Fee Unspecified",
-    "fee_details": "Contact lister for fee status",
-    "address": "Arlington"
+    "fee_details": "Contact lister for fee status"
   },
   {
     "id": "zw-boston-01",
@@ -1426,15 +2106,38 @@
     "lng": -71.0428,
     "bedrooms": 0,
     "bathrooms": 1,
+    "sqft": 540,
     "images": [
       "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=800&q=80",
       "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&w=800&q=80"
     ],
-    "description": "Modern Seaport luxury studio featuring concierge, fitness center, in-unit laundry, floor-to-ceiling windows, and rooftop deck overlooking Boston Harbor.",
+    "description": "Modern Seaport luxury studio (540 sq ft) featuring 24/7 concierge, fitness center, in-unit laundry, floor-to-ceiling windows, and rooftop deck overlooking Boston Harbor.",
     "has_broker_fee": false,
     "fee_badge": "No Broker Fee",
     "fee_details": "Direct from building management. No broker fee + 1 month free special.",
     "address": "50 Northern Ave, Boston, MA 02210"
+  },
+  {
+    "id": "bp-8177406",
+    "source": "bostonpads",
+    "source_label": "Boston Pads",
+    "title": "2 Bed Apartment in Jamaica Plain - Hyde Square",
+    "price": 3195,
+    "neighborhood": "Jamaica Plain - Hyde Square",
+    "url": "https://bostonpads.com/boston-apartments/?ad_id=8177406",
+    "lat": 42.3218595,
+    "lng": -71.1041455,
+    "bedrooms": 2,
+    "bathrooms": 1.0,
+    "sqft": null,
+    "images": [
+      "https://m.bostonpads.com/media/v2/listings/unit/photos/02-24/1708097907-36-mozart-st-2-boston-shared-unit-photo-3.jpg"
+    ],
+    "description": "Verified Boston rental in Jamaica Plain - Hyde Square. Features: Pets: NO PETS, Hot water included. Available: Now.",
+    "has_broker_fee": false,
+    "fee_badge": "No Broker Fee",
+    "fee_details": "No Fee",
+    "address": "Jamaica Plain - Hyde Square, Boston, MA"
   },
   {
     "id": "cl-tModr5VK8kcJ52jx",
@@ -1447,7 +2150,9 @@
     "lat": 42.2912472885483,
     "lng": -71.1607221682674,
     "bedrooms": 3,
-    "bathrooms": 1,
+    "bathrooms": 1.0,
+    "sqft": 1300,
+    "address": "West Roxbury, BOSTON",
     "images": [
       "https://images.craigslist.org/00c0c_6N3waVKgW1y_0ww0oo_600x450.jpg",
       "https://images.craigslist.org/00l0l_7jQytugD6nT_0ww0oo_600x450.jpg",
@@ -1461,8 +2166,29 @@
     "description": "Unit 2 available 10/24, 11/1 West Roxbury- Nice second floor 6 rm 3 bed, with Garage by Roche Bros and commuter rail-Highland stop! Downtown -close to restaurants an shops-Fantastic spacious sunny 3 bed in 2 fam has hardwood floors updated Kitchen with dishwasher; tiled Bath with new vanity, in quiet 2 family home on Corey St.at junction of Weld St in West Roxbury! Great kitchen with oak cabinets and New just added LG Suite for SS gas Stove; Microwave and Fridge -,Formal dining room has hutch; hardwood floors throughout; Fresh paint throughout-Laundry hookups in basement for unit 2; Living roo...",
     "has_broker_fee": false,
     "fee_badge": "No Broker Fee",
-    "fee_details": "Owner pays fee or no broker fee required",
-    "address": "West Roxbury, BOSTON"
+    "fee_details": "Owner pays fee or no broker fee required"
+  },
+  {
+    "id": "bp-8177411",
+    "source": "bostonpads",
+    "source_label": "Boston Pads",
+    "title": "3 Bed Apartment in Jamaica Plain - Jackson Square",
+    "price": 3295,
+    "neighborhood": "Jamaica Plain - Jackson Square",
+    "url": "https://bostonpads.com/boston-apartments/?ad_id=8177411",
+    "lat": 42.3223134,
+    "lng": -71.1035593,
+    "bedrooms": 3,
+    "bathrooms": 1.0,
+    "sqft": null,
+    "images": [
+      "https://m.bostonpads.com/media/v2/listings/unit/photos/09-26/1790606076-40-mozart-3-boston-jamaica-plain-unit-photo-1.jpeg"
+    ],
+    "description": "Verified Boston rental in Jamaica Plain - Jackson Square. Features: Laundry: Common Area, Pets: Cat OK, Hot water included. Available: Now.",
+    "has_broker_fee": false,
+    "fee_badge": "No Broker Fee",
+    "fee_details": "No Fee",
+    "address": "Jamaica Plain - Jackson Square, Boston, MA"
   },
   {
     "id": "cl-MT7gd8LZ1A6MAVzJ",
@@ -1486,6 +2212,73 @@
     "address": "Powderhouse/Davis Square"
   },
   {
+    "id": "bp-8175081",
+    "source": "bostonpads",
+    "source_label": "Boston Pads",
+    "title": "3 Bed Apartment in Brighton- Washington St./ Allston St.",
+    "price": 3300,
+    "neighborhood": "Brighton- Washington St./ Allston St.",
+    "url": "https://bostonpads.com/boston-apartments/?ad_id=8175081",
+    "lat": 42.3466644,
+    "lng": -71.14022820000001,
+    "bedrooms": 3,
+    "bathrooms": 1.0,
+    "sqft": null,
+    "images": [
+      "https://m.bostonpads.com/media/v2/listings/unit/photos/09-26/1790082965-1504-commonwealth-7-boston-brighton-unit-photo-3.jpeg"
+    ],
+    "description": "Verified Boston rental in Brighton- Washington St./ Allston St.. Features: Pets: Considered, Heat included, Hot water included. Available: Now.",
+    "has_broker_fee": false,
+    "fee_badge": "No Broker Fee",
+    "fee_details": "No Fee",
+    "address": "Brighton- Washington St./ Allston St., Boston, MA"
+  },
+  {
+    "id": "rf-boston-01",
+    "source": "redfin",
+    "source_label": "Redfin",
+    "title": "Modern South End Loft with Exposed Beams & High Ceilings",
+    "price": 3300,
+    "neighborhood": "South End",
+    "url": "https://www.redfin.com/city/1826/MA/Boston/apartments-for-rent",
+    "lat": 42.3435,
+    "lng": -71.0724,
+    "bedrooms": 1,
+    "bathrooms": 1,
+    "sqft": 880,
+    "images": [
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&w=800&q=80"
+    ],
+    "description": "Stunning South End loft apartment offering 880 square feet of open concept living space. Hardwood floors, granite chef kitchen, central AC, in-unit laundry, and elevator building.",
+    "has_broker_fee": false,
+    "fee_badge": "No Broker Fee",
+    "fee_details": "Direct lease with building management. Zero broker fee.",
+    "address": "540 Harrison Ave, Boston, MA 02118"
+  },
+  {
+    "id": "bp-8177969",
+    "source": "bostonpads",
+    "source_label": "Boston Pads",
+    "title": "1 Bed Apartment in South Boston - East Side",
+    "price": 3325,
+    "neighborhood": "South Boston - East Side",
+    "url": "https://bostonpads.com/boston-apartments/?ad_id=8177969",
+    "lat": 42.331834400000005,
+    "lng": -71.0427095,
+    "bedrooms": 1,
+    "bathrooms": 1.0,
+    "sqft": null,
+    "images": [
+      "https://m.bostonpads.com/media/v2/listings/unit/photos/10-26/1791376447-screenshot-7-10-2026-83224-appyougotlistingscom.jpeg"
+    ],
+    "description": "Verified Boston rental in South Boston - East Side. Features: Laundry: Unit, Dishwasher included, Pets: Cat OK, Hot water included. Available: Now.",
+    "has_broker_fee": false,
+    "fee_badge": "No Broker Fee",
+    "fee_details": "No Fee",
+    "address": "South Boston - East Side, Boston, MA"
+  },
+  {
     "id": "cl-PUg4KX1SUQgYaLtf",
     "source": "craigslist",
     "source_label": "Craigslist",
@@ -1496,7 +2289,9 @@
     "lat": 42.4039314710684,
     "lng": -71.1109710970033,
     "bedrooms": 2,
-    "bathrooms": 1,
+    "bathrooms": 1.0,
+    "sqft": null,
+    "address": "boston/cambridge/brookline",
     "images": [
       "https://images.craigslist.org/00q0q_8WNRYZ9iKGv_0x20oM_600x450.jpg",
       "https://images.craigslist.org/00c0c_4lQdV1ucZD0_0x20oM_600x450.jpg",
@@ -1510,8 +2305,7 @@
     "description": "PROPERTY INFO ID: 447859826 Rent: $3,350 / Month Beds: 2 Bath: 1 Available Date: 12/1/2026 Pet: No Pets Rent Includes:: Electricity, Gas, Water Parking:: off-street parking *ALL UTILITIES INCLUDED* *OFF STREET PARKING INCLUDED* Medford 2 Bed 1 Bath - Available Nov. 1, Nov 15 or Dec 1 Great Location - In Unit Washer/Dryer - No Broker Fee! Located on Benton Rd in Medford - Easy access to Tufts University and the MBTA Green Line @ Ball Square - Perfect for a quick commute to Cambridge, Lechmere, Assembly or Downtown Boston! Unit Features: 1st Floor Unit w/ 2 Good Sized Bedrooms w/ Ample Closet Sp...",
     "has_broker_fee": false,
     "fee_badge": "No Broker Fee",
-    "fee_details": "Owner pays fee or no broker fee required",
-    "address": "boston/cambridge/brookline"
+    "fee_details": "Owner pays fee or no broker fee required"
   },
   {
     "id": "cl-yBXisnaX7Qc7MAM8",
@@ -1524,7 +2318,9 @@
     "lat": 42.3801113236949,
     "lng": -71.0938064273777,
     "bedrooms": 2,
-    "bathrooms": 2,
+    "bathrooms": 2.0,
+    "sqft": null,
+    "address": "Union Square",
     "images": [
       "https://images.craigslist.org/00q0q_j3oq6E2k9g3_0kE0fu_600x450.jpg",
       "https://images.craigslist.org/00W0W_aTWyS9l8kiW_0kE0fu_600x450.jpg",
@@ -1537,8 +2333,7 @@
     "description": "UNION SQUARE 2 Bed, 2 Bath \u22c5 $3400 \u22c5 No Fee Available November 1, 2026 \u2023 5-Minute Walk To Union Square [T] \u2023 Laundry (In-Building: Coin) \u2023 Municipal Water Included \u2023 Hardwood Floors \u2023 Dishwasher \u2023 Granite Countertops \u2023 Stainless Steel Appliances PLEASE CALL EDDIE WITH MAVEN REALTY AT 617-319-4612 \u2023 Pets Negotiable",
     "has_broker_fee": false,
     "fee_badge": "No Broker Fee",
-    "fee_details": "Owner pays fee or no broker fee required",
-    "address": "Union Square"
+    "fee_details": "Owner pays fee or no broker fee required"
   },
   {
     "id": "fb-boston-02",
@@ -1552,11 +2347,11 @@
     "lng": -71.1337,
     "bedrooms": 3,
     "bathrooms": 1,
+    "sqft": 1250,
     "images": [
-      "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1484154218962-a197022b5858?auto=format&fit=crop&w=800&q=80"
+      "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=800&q=80"
     ],
-    "description": "Classic Allston 3 bedroom on Harvard Ave. Big living room, front & back porches, eat-in kitchen with pantry, Green Line B train around the corner.",
+    "description": "Classic Allston 3 bedroom (1,250 sq ft) on Harvard Ave. Big living room, front & back porches, eat-in kitchen with pantry, Green Line B train around the corner.",
     "has_broker_fee": true,
     "fee_badge": "Broker Fee",
     "fee_details": "One month broker fee co-brokered",
@@ -1573,7 +2368,9 @@
     "lat": 42.3937173524551,
     "lng": -71.111285077875,
     "bedrooms": 2,
-    "bathrooms": 1,
+    "bathrooms": 1.0,
+    "sqft": null,
+    "address": "Somerville - Davis Sq",
     "images": [
       "https://images.craigslist.org/00G0G_gpRhkYiwOOu_0gw0co_600x450.jpg",
       "https://images.craigslist.org/00t0t_eK6XOMcC3Zl_0gw0co_600x450.jpg",
@@ -1587,8 +2384,95 @@
     "description": "Sunlit Corner 2BR in Somerville w/ Central A/C &amp; Parking \u2013 Available 1/1/2027 Welcome home to comfortable, low-maintenance city living at 154 Cedar Street . Situated in one of Somerville's most vibrant neighborhoods, this bright corner unit offers exceptional natural light, high ceilings, and an efficient layout designed for easy everyday living. The well-appointed kitchen features hardwood flooring, quartz countertops, a dishwasher, garbage disposal, and a built-in wine rack with ample cabinet storage. Both bedrooms offer comfortable, private retreats with generous closet space, complemen...",
     "has_broker_fee": null,
     "fee_badge": "Fee Unspecified",
-    "fee_details": "Contact lister for fee status",
-    "address": "Somerville - Davis Sq"
+    "fee_details": "Contact lister for fee status"
+  },
+  {
+    "id": "bp-8170293",
+    "source": "bostonpads",
+    "source_label": "Boston Pads",
+    "title": "1 Bed Apartment in Northeastern/Symphony",
+    "price": 3550,
+    "neighborhood": "Northeastern/Symphony",
+    "url": "https://bostonpads.com/boston-apartments/?ad_id=8170293",
+    "lat": 42.346049,
+    "lng": -71.08827600000001,
+    "bedrooms": 1,
+    "bathrooms": 1.0,
+    "sqft": null,
+    "images": [
+      "https://m.bostonpads.com/media/v2/listings/unit/photos/03-24/1711399523-74315632.jpg"
+    ],
+    "description": "Verified Boston rental in Northeastern/Symphony. Features: Laundry: Common Area, Pets: NO PETS, Hot water included. Available: 12-01-2026.",
+    "has_broker_fee": false,
+    "fee_badge": "No Broker Fee",
+    "fee_details": "No Fee",
+    "address": "Northeastern/Symphony, Boston, MA"
+  },
+  {
+    "id": "bp-8157172",
+    "source": "bostonpads",
+    "source_label": "Boston Pads",
+    "title": "4 Bed Apartment in Roxbury",
+    "price": 3600,
+    "neighborhood": "Roxbury",
+    "url": "https://bostonpads.com/boston-apartments/?ad_id=8157172",
+    "lat": 42.317229,
+    "lng": -71.07829799999999,
+    "bedrooms": 4,
+    "bathrooms": 1.0,
+    "sqft": null,
+    "images": [
+      "https://m.bostonpads.com/media/v2/listings/unit/photos/08-26/1787690826-886a4873-d3bc-4b94-a024-67550d9d4406.jpeg"
+    ],
+    "description": "Verified Boston rental in Roxbury. Features: Pets: Cat OK, Hot water included. Available: Now.",
+    "has_broker_fee": false,
+    "fee_badge": "No Broker Fee",
+    "fee_details": "No Fee",
+    "address": "Roxbury, Boston, MA"
+  },
+  {
+    "id": "bp-8177967",
+    "source": "bostonpads",
+    "source_label": "Boston Pads",
+    "title": "2 Bed Apartment in South Boston - East Side",
+    "price": 3700,
+    "neighborhood": "South Boston - East Side",
+    "url": "https://bostonpads.com/boston-apartments/?ad_id=8177967",
+    "lat": 42.331831400000006,
+    "lng": -71.04271250000001,
+    "bedrooms": 2,
+    "bathrooms": 1.0,
+    "sqft": null,
+    "images": [
+      "https://m.bostonpads.com/media/v2/listings/unit/photos/10-26/1791376658-screenshot-7-10-2026-83559-appyougotlistingscom.jpeg"
+    ],
+    "description": "Verified Boston rental in South Boston - East Side. Features: Laundry: Unit, A/C: Central, Dishwasher included, Pets: Pet OK, Heat included, Hot water included. Available: Now.",
+    "has_broker_fee": false,
+    "fee_badge": "No Broker Fee",
+    "fee_details": "No Fee",
+    "address": "South Boston - East Side, Boston, MA"
+  },
+  {
+    "id": "bp-8012858",
+    "source": "bostonpads",
+    "source_label": "Boston Pads",
+    "title": "2 Bed Apartment in Northeastern/Symphony",
+    "price": 3750,
+    "neighborhood": "Northeastern/Symphony",
+    "url": "https://bostonpads.com/boston-apartments/?ad_id=8012858",
+    "lat": 42.34552,
+    "lng": -71.089183,
+    "bedrooms": 2,
+    "bathrooms": 1.0,
+    "sqft": null,
+    "images": [
+      "https://m.bostonpads.com/media/v2/listings/unit/photos/02-26/1771708551-38-49-5.jpg"
+    ],
+    "description": "Verified Boston rental in Northeastern/Symphony. Features: Laundry: Basement, Pets: NO PETS, Heat included, Hot water included. Available: Now.",
+    "has_broker_fee": false,
+    "fee_badge": "No Broker Fee",
+    "fee_details": "No Fee",
+    "address": "Northeastern/Symphony, Boston, MA"
   },
   {
     "id": "cl-Sg5WvxgL4SfTT4Lt",
@@ -1623,15 +2507,38 @@
     "lng": -71.0825,
     "bedrooms": 2,
     "bathrooms": 1.5,
+    "sqft": 1100,
     "images": [
       "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=800&q=80",
       "https://images.unsplash.com/photo-1493809842364-78817add7ffb?auto=format&fit=crop&w=800&q=80"
     ],
-    "description": "Quintessential Back Bay brownstone 2 bedroom with exposed brick, ornamental fireplace, updated granite kitchen, dishwasher, and gleaming hardwood floors.",
+    "description": "Quintessential Back Bay brownstone 2 bedroom (1,100 sq ft) with exposed brick, ornamental fireplace, updated granite kitchen, dishwasher, and gleaming hardwood floors.",
     "has_broker_fee": true,
     "fee_badge": "Broker Fee",
     "fee_details": "Standard 1-month broker fee due at signing",
     "address": "248 Commonwealth Ave, Boston, MA 02116"
+  },
+  {
+    "id": "bp-8012860",
+    "source": "bostonpads",
+    "source_label": "Boston Pads",
+    "title": "2 Bed Apartment in Northeastern/Symphony",
+    "price": 3800,
+    "neighborhood": "Northeastern/Symphony",
+    "url": "https://bostonpads.com/boston-apartments/?ad_id=8012860",
+    "lat": 42.346103,
+    "lng": -71.0886,
+    "bedrooms": 2,
+    "bathrooms": 1.0,
+    "sqft": null,
+    "images": [
+      "https://m.bostonpads.com/media/v2/listings/ad/photos/06-21/1623613006-4.PNG"
+    ],
+    "description": "Verified Boston rental in Northeastern/Symphony. Features: Laundry: Common Area, Dishwasher included, Heat included, Hot water included. Available: Now.",
+    "has_broker_fee": false,
+    "fee_badge": "No Broker Fee",
+    "fee_details": "No Fee",
+    "address": "Northeastern/Symphony, Boston, MA"
   },
   {
     "id": "cl-1BppqemVC1wJtt2c",
@@ -1644,7 +2551,9 @@
     "lat": 42.3692858591143,
     "lng": -71.0772296124499,
     "bedrooms": 4,
-    "bathrooms": 1,
+    "bathrooms": 1.0,
+    "sqft": 1300,
+    "address": "East Cambridge, Kendall, MIT, Lechmere",
     "images": [
       "https://images.craigslist.org/00G0G_f73kDMh2ra1_0hw0nm_600x450.jpg",
       "https://images.craigslist.org/00606_gBIiKc7dlgR_0hw0nm_600x450.jpg",
@@ -1658,8 +2567,7 @@
     "description": "PROPERTY INFO ID: 235711451 Rent: $4,000 / Month Beds: 4 Bath: 1 Available Date: 1/01/2027 Pet: Pet Friendly Parking:: off-street parking Newly Updated Duplex 4BR Kendall Sq, MIT, Lechmere -Available January 1 or Earlier -Updated Kitchen -Central A/C -Dishwasher -Granite and SS Appliances - Laundry in Basement -Hardwood Floors -Lots of Closet Space -No Smoking Date Available: 1/1 Kendall Sq, Cambridge, MIT, Lechmere Pictures of unit are virtually staged",
     "has_broker_fee": null,
     "fee_badge": "Fee Unspecified",
-    "fee_details": "Contact lister for fee status",
-    "address": "East Cambridge, Kendall, MIT, Lechmere"
+    "fee_details": "Contact lister for fee status"
   },
   {
     "id": "cl-rW1yhT2He6kHt5v5",
@@ -1672,7 +2580,9 @@
     "lat": 42.3692858591143,
     "lng": -71.0772296124499,
     "bedrooms": 3,
-    "bathrooms": 1,
+    "bathrooms": 1.0,
+    "sqft": 1200,
+    "address": "Cambridge MIT Kendall Lechmere",
     "images": [
       "https://images.craigslist.org/00606_gBIiKc7dlgR_0hw0nm_600x450.jpg",
       "https://images.craigslist.org/00G0G_f73kDMh2ra1_0hw0nm_600x450.jpg",
@@ -1686,8 +2596,7 @@
     "description": "PROPERTY INFO ID: 261502470 Rent: $4,000 / Month Beds: 3 Bath: 1 Available Date: 1/01/2027 Pet: Pet Friendly Parking:: off-street parking Huge Duplex 3/4 bedroom with Central A/C- walking distance to Kendall Sq, MIT, Lechmere -Available January 1 or earlier -Updated Kitchen -Central A/C -Dishwasher -Granite and SS Appliances - Laundry in Basement -Hardwood Floors -Off Street Parking Available at Additional Cost -Lots of Closet Space -No Smoking Kendall Sq, Cambridge, MIT, Lechmere Pictures of unit are virtually staged",
     "has_broker_fee": null,
     "fee_badge": "Fee Unspecified",
-    "fee_details": "Contact lister for fee status",
-    "address": "Cambridge MIT Kendall Lechmere"
+    "fee_details": "Contact lister for fee status"
   },
   {
     "id": "cl-hcwt7ZhJt9Zpoasq",
@@ -1700,7 +2609,9 @@
     "lat": 42.3861766549138,
     "lng": -71.1309833668706,
     "bedrooms": 3,
-    "bathrooms": 2,
+    "bathrooms": 2.0,
+    "sqft": 800,
+    "address": "Cambridge - Porter Sq",
     "images": [
       "https://images.craigslist.org/00H0H_hPpFcxlD09X_0gw0co_600x450.jpg",
       "https://images.craigslist.org/00l0l_iyG1R1fN8hk_0gw0co_600x450.jpg",
@@ -1714,8 +2625,7 @@
     "description": "Light-Filled and Roomy, Steps from Porter Square $4,000/month | 1,800 sq ft | 3 Bed, 2 Bath | Move-in 11/15/2026 or 12/1/2026 Space, light, and location rarely come together like this. This oversized 1,800-square-foot apartment sits just minutes from Porter Square, putting the Red Line, coffee shops, and everyday errands within easy reach. Inside the Home The living room is huge and full of light, with a charming turreted corner that gives it real character. The open kitchen and dining area is built for both quick weeknight meals and hosting friends, with granite countertops, a breakfast bar i...",
     "has_broker_fee": null,
     "fee_badge": "Fee Unspecified",
-    "fee_details": "Contact lister for fee status",
-    "address": "Cambridge - Porter Sq"
+    "fee_details": "Contact lister for fee status"
   },
   {
     "id": "cl-h8KM8VPGYVWWPt3j",
@@ -1728,7 +2638,9 @@
     "lat": 42.4152422309014,
     "lng": -71.1278687682964,
     "bedrooms": 3,
-    "bathrooms": 2,
+    "bathrooms": 1.5,
+    "sqft": null,
+    "address": "Medford \\ Tufts",
     "images": [
       "https://images.craigslist.org/00g0g_iichSuUXPiG_0x20oM_600x450.jpg",
       "https://images.craigslist.org/00G0G_gp4tH0h2b8w_0x20oM_600x450.jpg",
@@ -1742,8 +2654,95 @@
     "description": "Apartment Rental Experts - Davis Square Medford Tufts area 3+BR, 1.5 Baths ** In Unit Laundry Medford / Tufts / Available: 11/15/2026 || Fee: No Fee || Reference: #181949 Apartment Summary Here is a great 3+ bedroom, 1.5 bathroom unit on the 2md and 3rd floors of a 2 family home in Medford near Tufts University. There's an updated eat-in kitchen with a dishwasher, microwave and disposal, hardwood floors throughout, living room and formal dining room and WASHER /DRYER in the unit. There's also a front and back porch. (Reference #181949) Features Cats allowed. 2 minute walk to Major Bus Routes. ...",
     "has_broker_fee": false,
     "fee_badge": "No Broker Fee",
-    "fee_details": "Owner pays fee or no broker fee required",
-    "address": "Medford \\ Tufts"
+    "fee_details": "Owner pays fee or no broker fee required"
+  },
+  {
+    "id": "bp-8159611",
+    "source": "bostonpads",
+    "source_label": "Boston Pads",
+    "title": "4 Bed Apartment in Roxbury",
+    "price": 4000,
+    "neighborhood": "Roxbury",
+    "url": "https://bostonpads.com/boston-apartments/?ad_id=8159611",
+    "lat": 42.323326,
+    "lng": -71.08756100000001,
+    "bedrooms": 4,
+    "bathrooms": 2.0,
+    "sqft": null,
+    "images": [
+      "https://m.bostonpads.com/media/v2/listings/ad/photos/08-26/1787696585-img-5827.jpeg"
+    ],
+    "description": "Verified Boston rental in Roxbury. Features: Laundry: Unit, A/C: Central, Dishwasher included, Pets: NO PETS, Hot water included. Available: Now.",
+    "has_broker_fee": false,
+    "fee_badge": "No Broker Fee",
+    "fee_details": "No Fee",
+    "address": "Roxbury, Boston, MA"
+  },
+  {
+    "id": "bp-8036449",
+    "source": "bostonpads",
+    "source_label": "Boston Pads",
+    "title": "2 Bed Apartment in South Boston - East Side",
+    "price": 4000,
+    "neighborhood": "South Boston - East Side",
+    "url": "https://bostonpads.com/boston-apartments/?ad_id=8036449",
+    "lat": 42.333377000000006,
+    "lng": -71.035036,
+    "bedrooms": 2,
+    "bathrooms": 1.0,
+    "sqft": null,
+    "images": [
+      "https://m.bostonpads.com/media/v2/listings/unit/photos/01-26/1768495049-210w65df432162262.jpg"
+    ],
+    "description": "Verified Boston rental in South Boston - East Side. Features: Dishwasher included, Pets: Pet OK, Hot water included. Available: 09-01-2027.",
+    "has_broker_fee": false,
+    "fee_badge": "No Broker Fee",
+    "fee_details": "No Fee",
+    "address": "South Boston - East Side, Boston, MA"
+  },
+  {
+    "id": "bp-8057405",
+    "source": "bostonpads",
+    "source_label": "Boston Pads",
+    "title": "2 Bed Apartment in South End",
+    "price": 4200,
+    "neighborhood": "South End",
+    "url": "https://bostonpads.com/boston-apartments/?ad_id=8057405",
+    "lat": 42.344431900000004,
+    "lng": -71.06412660000001,
+    "bedrooms": 2,
+    "bathrooms": 1.0,
+    "sqft": null,
+    "images": [
+      "https://m.bostonpads.com/media/v2/listings/unit/photos/12-20/1606855394-image.jpg"
+    ],
+    "description": "Verified Boston rental in South End. Features: Dishwasher included, Heat included, Hot water included. Available: Now.",
+    "has_broker_fee": false,
+    "fee_badge": "No Broker Fee",
+    "fee_details": "No Fee",
+    "address": "South End, Boston, MA"
+  },
+  {
+    "id": "bp-8178063",
+    "source": "bostonpads",
+    "source_label": "Boston Pads",
+    "title": "3 Bed Apartment in Allston",
+    "price": 4400,
+    "neighborhood": "Allston",
+    "url": "https://bostonpads.com/boston-apartments/?ad_id=8178063",
+    "lat": 42.3521103,
+    "lng": -71.1239525,
+    "bedrooms": 3,
+    "bathrooms": 2.0,
+    "sqft": null,
+    "images": [
+      "https://m.bostonpads.com/media/v2/listings/unit/photos/06-26/1780866133-img-7625.jpeg"
+    ],
+    "description": "Verified Boston rental in Allston. Features: Laundry: Unit, A/C: In Wall, Pets: Cat OK, Heat included, Hot water included. Available: Now.",
+    "has_broker_fee": false,
+    "fee_badge": "No Broker Fee",
+    "fee_details": "No Fee",
+    "address": "Allston, Boston, MA"
   },
   {
     "id": "cl-1ncJbrdDg5DYQTLe",
@@ -1772,6 +2771,50 @@
     "fee_badge": "Fee Unspecified",
     "fee_details": "Contact lister for fee status",
     "address": "Cambridge"
+  },
+  {
+    "id": "bp-8177963",
+    "source": "bostonpads",
+    "source_label": "Boston Pads",
+    "title": "2 Bed Apartment in South End",
+    "price": 4750,
+    "neighborhood": "South End",
+    "url": "https://bostonpads.com/boston-apartments/?ad_id=8177963",
+    "lat": 42.339592,
+    "lng": -71.081976,
+    "bedrooms": 2,
+    "bathrooms": 2.0,
+    "sqft": null,
+    "images": [
+      "https://m.bostonpads.com/media/v2/listings/unit/photos/10-26/1791312986-1616186043-wechat-image-20210319160038.jpg"
+    ],
+    "description": "Verified Boston rental in South End. Features: Hot water included. Available: Now.",
+    "has_broker_fee": false,
+    "fee_badge": "No Broker Fee",
+    "fee_details": "No Fee",
+    "address": "South End, Boston, MA"
+  },
+  {
+    "id": "bp-8177964",
+    "source": "bostonpads",
+    "source_label": "Boston Pads",
+    "title": "2 Bed Apartment in South End",
+    "price": 4750,
+    "neighborhood": "South End",
+    "url": "https://bostonpads.com/boston-apartments/?ad_id=8177964",
+    "lat": 42.340713,
+    "lng": -71.08033,
+    "bedrooms": 2,
+    "bathrooms": 1.0,
+    "sqft": null,
+    "images": [
+      "https://m.bostonpads.com/media/v2/listings/unit/photos/10-26/1791999532-5e9982df-1753-42c6-b162-b350e86721b3.jpg"
+    ],
+    "description": "Verified Boston rental in South End. Features: Laundry: Unit, A/C: Central, Dishwasher included, Pets: NO PETS, Hot water included. Available: 09-01-2027.",
+    "has_broker_fee": false,
+    "fee_badge": "No Broker Fee",
+    "fee_details": "No Fee",
+    "address": "South End, Boston, MA"
   },
   {
     "id": "cl-9eLgpi84uxP9hgKs",
@@ -1812,7 +2855,9 @@
     "lat": 42.3801113236949,
     "lng": -71.0938064273777,
     "bedrooms": 4,
-    "bathrooms": 2,
+    "bathrooms": 2.0,
+    "sqft": null,
+    "address": "Union Square",
     "images": [
       "https://images.craigslist.org/00G0G_ktNwun3S4Gh_0kE0fu_600x450.jpg",
       "https://images.craigslist.org/01414_ap5hF7iJTSq_0kE0fu_600x450.jpg",
@@ -1826,7 +2871,160 @@
     "description": "UNION SQUARE 4 Bed, 2 Bath \u22c5 $5000 \u22c5 No Fee Available November 1, 2026 \u2023 5-Minute Walk To Union Square [T] \u2023 Laundry (In-Building: Coin) \u2023 Municipal Water Included \u2023 Hardwood Floors \u2023 Dishwasher \u2023 Granite Countertops \u2023 Stainless Steel Appliances \u2023 Pets Negotiable PLEASE CALL EDDIE WITH MAVEN REALTY AT 617-319-4612",
     "has_broker_fee": false,
     "fee_badge": "No Broker Fee",
-    "fee_details": "Owner pays fee or no broker fee required",
-    "address": "Union Square"
+    "fee_details": "Owner pays fee or no broker fee required"
+  },
+  {
+    "id": "bp-8160693",
+    "source": "bostonpads",
+    "source_label": "Boston Pads",
+    "title": "2 Bed Apartment in Seaport/Waterfront",
+    "price": 5000,
+    "neighborhood": "Seaport/Waterfront",
+    "url": "https://bostonpads.com/boston-apartments/?ad_id=8160693",
+    "lat": 42.349055,
+    "lng": -71.048691,
+    "bedrooms": 2,
+    "bathrooms": 1.0,
+    "sqft": null,
+    "images": [
+      "https://m.bostonpads.com/media/v2/listings/unit/photos/06-26/1782323222-ca897c17-0573-4056-97c5-fe3924971c12.jpeg"
+    ],
+    "description": "Verified Boston rental in Seaport/Waterfront. Features: Laundry: Unit, A/C: Central, Dishwasher included, Pets: Pet OK, Heat included, Hot water included. Available: Now.",
+    "has_broker_fee": false,
+    "fee_badge": "No Broker Fee",
+    "fee_details": "No Fee",
+    "address": "Seaport/Waterfront, Boston, MA"
+  },
+  {
+    "id": "bp-8177960",
+    "source": "bostonpads",
+    "source_label": "Boston Pads",
+    "title": "3 Bed Apartment in South End",
+    "price": 5000,
+    "neighborhood": "South End",
+    "url": "https://bostonpads.com/boston-apartments/?ad_id=8177960",
+    "lat": 42.3442869,
+    "lng": -71.0642716,
+    "bedrooms": 3,
+    "bathrooms": 1.5,
+    "sqft": null,
+    "images": [
+      "https://m.bostonpads.com/media/v2/listings/unit/photos/04-22/1649211753-69034917.jpg"
+    ],
+    "description": "Verified Boston rental in South End. Features: Hot water included. Available: Now.",
+    "has_broker_fee": false,
+    "fee_badge": "No Broker Fee",
+    "fee_details": "No Fee",
+    "address": "South End, Boston, MA"
+  },
+  {
+    "id": "bp-8177959",
+    "source": "bostonpads",
+    "source_label": "Boston Pads",
+    "title": "3 Bed Apartment in South End",
+    "price": 5200,
+    "neighborhood": "South End",
+    "url": "https://bostonpads.com/boston-apartments/?ad_id=8177959",
+    "lat": 42.337154,
+    "lng": -71.082745,
+    "bedrooms": 3,
+    "bathrooms": 1.0,
+    "sqft": null,
+    "images": [
+      "https://m.bostonpads.com/media/v2/listings/unit/photos/12-22/1670024236-2.JPG"
+    ],
+    "description": "Verified Boston rental in South End. Features: Laundry: Common Area, Pets: Cat OK, Hot water included. Available: 09-01-2027.",
+    "has_broker_fee": false,
+    "fee_badge": "No Broker Fee",
+    "fee_details": "No Fee",
+    "address": "South End, Boston, MA"
+  },
+  {
+    "id": "bp-8177958",
+    "source": "bostonpads",
+    "source_label": "Boston Pads",
+    "title": "3 Bed Apartment in South End",
+    "price": 5950,
+    "neighborhood": "South End",
+    "url": "https://bostonpads.com/boston-apartments/?ad_id=8177958",
+    "lat": 42.340728,
+    "lng": -71.080315,
+    "bedrooms": 3,
+    "bathrooms": 1.0,
+    "sqft": null,
+    "images": [
+      "https://m.bostonpads.com/media/v2/listings/unit/photos/12-23/1701447849-img-3035.jpeg"
+    ],
+    "description": "Verified Boston rental in South End. Features: Laundry: Unit, A/C: Central, Dishwasher included, Pets: NO PETS, Hot water included. Available: 09-01-2027.",
+    "has_broker_fee": false,
+    "fee_badge": "No Broker Fee",
+    "fee_details": "No Fee",
+    "address": "South End, Boston, MA"
+  },
+  {
+    "id": "bp-8014458",
+    "source": "bostonpads",
+    "source_label": "Boston Pads",
+    "title": "3 Bed Apartment in South End",
+    "price": 5950,
+    "neighborhood": "South End",
+    "url": "https://bostonpads.com/boston-apartments/?ad_id=8014458",
+    "lat": 42.340097,
+    "lng": -71.08094600000001,
+    "bedrooms": 3,
+    "bathrooms": 1.0,
+    "sqft": null,
+    "images": [
+      "https://m.bostonpads.com/media/v2/listings/unit/photos/10-26/1792000829-6b8d4120-1cbb-4632-9dd5-74a734150c3a.jpg"
+    ],
+    "description": "Verified Boston rental in South End. Features: Laundry: Unit, Hot water included. Available: 09-01-2027.",
+    "has_broker_fee": false,
+    "fee_badge": "No Broker Fee",
+    "fee_details": "No Fee",
+    "address": "South End, Boston, MA"
+  },
+  {
+    "id": "bp-8177977",
+    "source": "bostonpads",
+    "source_label": "Boston Pads",
+    "title": "3 Bed Apartment in North End",
+    "price": 6900,
+    "neighborhood": "North End",
+    "url": "https://bostonpads.com/boston-apartments/?ad_id=8177977",
+    "lat": 42.364599500000004,
+    "lng": -71.05258470000001,
+    "bedrooms": 3,
+    "bathrooms": 2.0,
+    "sqft": null,
+    "images": [
+      "https://m.bostonpads.com/media/v2/listings/unit/photos/03-22/1648737410-56782285.jpg"
+    ],
+    "description": "Verified Boston rental in North End. Features: Laundry: Basement, Pets: NO PETS, Hot water included. Available: 12-01-2026.",
+    "has_broker_fee": false,
+    "fee_badge": "No Broker Fee",
+    "fee_details": "No Fee",
+    "address": "North End, Boston, MA"
+  },
+  {
+    "id": "bp-8167889",
+    "source": "bostonpads",
+    "source_label": "Boston Pads",
+    "title": "3 Bed Apartment in Downtown",
+    "price": 12500,
+    "neighborhood": "Downtown",
+    "url": "https://bostonpads.com/boston-apartments/?ad_id=8167889",
+    "lat": 42.356792999999996,
+    "lng": -71.05213599999999,
+    "bedrooms": 3,
+    "bathrooms": 2.0,
+    "sqft": null,
+    "images": [
+      "https://m.bostonpads.com/media/v2/listings/unit/photos/09-26/1790080168-img-3582.jpg"
+    ],
+    "description": "Verified Boston rental in Downtown. Features: Laundry: Unit, A/C: Central, Dishwasher included, Pets: Pet OK, Hot water included. Available: Now.",
+    "has_broker_fee": false,
+    "fee_badge": "No Broker Fee",
+    "fee_details": "No Fee",
+    "address": "Downtown, Boston, MA"
   }
 ]
