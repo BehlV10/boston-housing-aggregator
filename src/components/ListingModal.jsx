@@ -23,7 +23,7 @@ export default function ListingModal({ listing, onClose }) {
         </button>
 
         {/* Gallery Hero */}
-        <div className="relative h-72 md:h-96 w-full bg-gray-900 overflow-hidden">
+        <div className="relative h-80 sm:h-96 md:h-[440px] w-full bg-gray-900 overflow-hidden">
           {activeImage ? (
             <img
               src={activeImage}

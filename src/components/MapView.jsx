@@ -50,10 +50,11 @@ export default function MapView({ listings, selectedListing, onSelectListing }) 
       >
         <MapUpdater selectedListing={selectedListing} />
         
-        {/* Clean, modern CartoDB Positron base tiles */}
+        {/* Standard OpenStreetMap tiles - Free, open-source, no API key required */}
         <TileLayer
-          attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>'
-          url="https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png"
+          attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+          url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+          maxZoom={19}
         />
 
         {listings.map((listing) => {
@@ -69,27 +70,32 @@ export default function MapView({ listings, selectedListing, onSelectListing }) 
                 click: () => onSelectListing(listing)
               }}
             >
-              <Popup className="listing-map-popup">
-                <div className="w-64 max-w-xs overflow-hidden">
+              <Popup className="listing-map-popup" maxWidth={320} minWidth={280}>
+                <div className="w-72 sm:w-80 overflow-hidden">
                   {listing.images && listing.images[0] && (
-                    <div className="relative h-32 w-full overflow-hidden bg-gray-100">
+                    <div className="relative h-48 sm:h-52 w-full overflow-hidden bg-gray-900">
                       <img
                         src={listing.images[0]}
                         alt={listing.title}
                         className="w-full h-full object-cover"
                         loading="lazy"
                       />
-                      <div className="absolute top-2 left-2">
-                        <span className={`px-2 py-0.5 rounded-full text-xs font-semibold shadow ${
+                      <div className="absolute top-2.5 left-2.5">
+                        <span className={`px-2.5 py-1 rounded-full text-xs font-bold shadow-md ${
                           listing.has_broker_fee === false
                             ? 'bg-emerald-600 text-white'
                             : listing.has_broker_fee === true
                             ? 'bg-blue-600 text-white'
-                            : 'bg-gray-700 text-white'
+                            : 'bg-gray-800 text-white'
                         }`}>
                           {listing.fee_badge}
                         </span>
                       </div>
+                      {listing.images.length > 1 && (
+                        <div className="absolute bottom-2 right-2 px-2 py-0.5 rounded-md bg-black/60 text-[10px] font-semibold text-white backdrop-blur-xs">
+                          1/{listing.images.length} photos
+                        </div>
+                      )}
                     </div>
                   )}
 
