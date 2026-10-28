@@ -113,11 +113,13 @@ export default function MapView({ listings, selectedListing, onSelectListing }) 
                       </div>
                       <div className="flex items-center gap-1.5">
                         <span className={`text-[10px] font-bold px-1.5 py-0.5 rounded ${
-                          listing.rental_type === 'room'
+                          listing.rental_type === 'sublet'
+                            ? 'bg-amber-50 text-amber-700 border border-amber-200'
+                            : listing.rental_type === 'room'
                             ? 'bg-indigo-50 text-indigo-700 border border-indigo-200'
                             : 'bg-gray-100 text-gray-700'
                         }`}>
-                          {listing.rental_type === 'room' ? 'Single Room' : 'Entire Place'}
+                          {listing.rental_type === 'sublet' ? 'Sublet' : listing.rental_type === 'room' ? 'Single Room' : 'Condo / Apt'}
                         </span>
                         <span className="text-xs font-medium uppercase tracking-wide px-2 py-0.5 rounded bg-gray-100 text-gray-700">
                           {listing.source_label}

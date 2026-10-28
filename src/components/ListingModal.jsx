@@ -60,11 +60,13 @@ export default function ListingModal({ listing, onClose }) {
               </span>
             )}
             <span className={`px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wide backdrop-blur-sm shadow-lg ${
-              listing.rental_type === 'room'
+              listing.rental_type === 'sublet'
+                ? 'bg-amber-500 text-white'
+                : listing.rental_type === 'room'
                 ? 'bg-indigo-600 text-white'
                 : 'bg-white/90 text-gray-800'
             }`}>
-              {listing.rental_type === 'room' ? 'Single Room' : 'Entire Place'}
+              {listing.rental_type === 'sublet' ? 'Sublet' : listing.rental_type === 'room' ? 'Single Room' : 'Condo / Apt'}
             </span>
             <span className="px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wide bg-white/90 text-gray-800 backdrop-blur-sm shadow-lg">
               {listing.source_label}

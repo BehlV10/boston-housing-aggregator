@@ -1,17 +1,18 @@
 {
-  "city": "Boston, MA",
-  "last_updated": "2026-10-28T17:03:00.501182+00:00",
-  "total_listings": 168,
-  "no_fee_count": 99,
+  "city": "Greater Boston, MA",
+  "last_updated": "2026-10-28T17:12:37.449028+00:00",
+  "total_listings": 330,
+  "no_fee_count": 216,
   "fee_count": 3,
-  "unknown_fee_count": 66,
-  "room_count": 27,
-  "entire_count": 141,
+  "unknown_fee_count": 111,
+  "entire_count": 255,
+  "room_count": 38,
+  "sublet_count": 37,
   "sources": {
-    "craigslist": 92,
-    "facebook": 2,
-    "bostonpads": 69,
-    "zillow": 3,
+    "craigslist": 143,
+    "facebook": 3,
+    "bostonpads": 178,
+    "zillow": 4,
     "redfin": 2
   }
 }

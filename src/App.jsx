@@ -122,22 +122,30 @@ export default function App() {
             </div>
             <div>
               <div className="flex items-center gap-2">
-                <h1 className="text-lg font-extrabold text-gray-900 tracking-tight">Boston Rentals Hub</h1>
+                <h1 className="text-lg font-extrabold text-gray-900 tracking-tight">Greater Boston Rentals Hub</h1>
                 <span className="hidden sm:inline-block px-2 py-0.5 rounded-full text-[10px] font-bold bg-boston-gold/20 text-yellow-800 uppercase tracking-wider">
                   Aggregator MVP
                 </span>
               </div>
               <p className="text-xs text-gray-500">
-                Craigslist &bull; Boston Pads &bull; Zillow &bull; FB Marketplace &bull; Redfin
+                Boston &bull; Cambridge &bull; Somerville &bull; Brookline &bull; Allston
               </p>
             </div>
           </div>
 
           <div className="flex items-center gap-3">
             {metadata && (
-              <div className="hidden lg:flex items-center gap-2 text-xs text-gray-500 bg-gray-100 py-1.5 px-3 rounded-full">
-                <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
-                <span>{metadata.no_fee_count} No-Fee Rentals active</span>
+              <div className="hidden lg:flex items-center gap-2.5 text-xs text-gray-600 bg-gray-100 py-1.5 px-3.5 rounded-full border border-gray-200">
+                <span className="flex items-center gap-1.5">
+                  <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+                  <span className="font-semibold text-emerald-700">{metadata.no_fee_count} No-Fee</span>
+                </span>
+                <span className="text-gray-300">&bull;</span>
+                <span>{metadata.entire_count || 0} Condos</span>
+                <span className="text-gray-300">&bull;</span>
+                <span className="text-indigo-600 font-semibold">{metadata.room_count || 0} Rooms</span>
+                <span className="text-gray-300">&bull;</span>
+                <span className="text-amber-600 font-semibold">{metadata.sublet_count || 0} Sublets</span>
               </div>
             )}
 
