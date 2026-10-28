@@ -1,16 +1,16 @@
 {
   "city": "Boston, MA",
-  "last_updated": "2026-10-28T16:57:40.229185+00:00",
-  "total_listings": 151,
-  "no_fee_count": 82,
+  "last_updated": "2026-10-28T17:02:11.891045+00:00",
+  "total_listings": 168,
+  "no_fee_count": 99,
   "fee_count": 3,
   "unknown_fee_count": 66,
   "room_count": 27,
-  "entire_count": 124,
+  "entire_count": 141,
   "sources": {
-    "craigslist": 94,
+    "craigslist": 92,
     "facebook": 2,
-    "bostonpads": 50,
+    "bostonpads": 69,
     "zillow": 3,
     "redfin": 2
   }
