@@ -17,7 +17,8 @@ function MapUpdater({ selectedListing }) {
 }
 
 export default function MapView({ listings, selectedListing, onSelectListing }) {
-  const bostonCenter = [42.3601, -71.0589];
+  // Center between Boston, Cambridge, Somerville, and Brookline
+  const bostonCenter = [42.368, -71.095];
 
   // Helper to generate custom HTML marker with price and fee color
   const createCustomMarker = (listing, isSelected) => {
@@ -44,7 +45,7 @@ export default function MapView({ listings, selectedListing, onSelectListing }) 
     <div className="relative w-full h-full rounded-2xl overflow-hidden border border-gray-200 shadow-sm">
       <MapContainer
         center={bostonCenter}
-        zoom={13}
+        zoom={12}
         scrollWheelZoom={true}
         className="w-full h-full"
       >

@@ -519,117 +519,137 @@ def scrape_craigslist_sublets_boston(limit=35):
     return detailed_listings
 
 
-def scrape_boston_pads(per_city_limit=35):
-    print("Scraping Boston Pads API across Greater Boston (boston, cambridge, somerville, brookline, allston)...")
-    locations = ['boston', 'cambridge', 'somerville', 'brookline', 'allston']
+def scrape_boston_pads(per_city_limit=45):
+    print("Scraping Boston Pads API across Greater Boston (cambridge, somerville, boston, brookline, allston, brighton)...")
+    locations = ['cambridge', 'somerville', 'boston', 'brookline', 'allston', 'brighton', 'medford']
     
     pads_listings = []
     seen_ids = set()
 
     for loc in locations:
-        url = f"https://m.bostonpads.com/api/listings-short/?incadv=1&unique=1&location={loc}&results_per_page={per_city_limit}"
-        req = urllib.request.Request(url, headers=HEADERS)
-        try:
-            with urllib.request.urlopen(req, timeout=12) as resp:
-                data = json.loads(resp.read().decode('utf-8'))
-                items = data.get('data', [])
-                for item in items:
-                    ad_id = str(item.get('ad_id'))
-                    if ad_id in seen_ids:
-                        continue
-                    seen_ids.add(ad_id)
+        success = False
+        items = []
+        for attempt in range(3):
+            url = f"https://m.bostonpads.com/api/listings-short/?incadv=1&unique=1&location={loc}&results_per_page={per_city_limit}"
+            req = urllib.request.Request(url, headers=HEADERS)
+            try:
+                with urllib.request.urlopen(req, timeout=12) as resp:
+                    data = json.loads(resp.read().decode('utf-8'))
+                    items = data.get('data', [])
+                    success = True
+                    break
+            except Exception as e:
+                time.sleep(1.0)
+                if attempt == 2:
+                    print(f"Error scraping Boston Pads for {loc} after 3 attempts:", e)
 
-                    price = clean_price(item.get('price'))
-                    if price <= 0:
-                        continue
-                    
-                    lat = item.get('masked_lat')
-                    lng = item.get('masked_lng')
-                    if not lat or not lng:
-                        continue
-                    
-                    sub_area = item.get('sub_area_name') or item.get('city') or loc.title()
-                    clean_sub_area = re.sub(r'^Boston\s*-\s*', '', sub_area)
-                    
-                    # Bedrooms & Bathrooms
-                    raw_bed = str(item.get('bed_room', '1')).strip()
-                    bedrooms = 0 if raw_bed.lower() in ['0', 'studio', 'room'] else int(raw_bed) if raw_bed.isdigit() else 1
-                    
-                    raw_bath = str(item.get('baths', '1')).strip()
-                    try:
-                        bathrooms = float(raw_bath)
-                    except ValueError:
-                        bathrooms = 1.0
+        if not success:
+            continue
 
-                    # Fee calculation
-                    fee_val = item.get('fee')
-                    fee_text = item.get('feeText', '')
-                    has_broker_fee = False if fee_val == 0 or 'no fee' in fee_text.lower() else True
-                    fee_badge = 'No Broker Fee' if not has_broker_fee else 'Broker Fee'
-                    
-                    # Image
-                    photo = item.get('firstPhoto')
-                    images = [photo] if photo else [
-                        'https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80'
-                    ]
-                    
-                    # Amenities
-                    amenities = []
-                    if item.get('laundry_location'):
-                        amenities.append(f"Laundry: {item.get('laundry_location')}")
-                    if item.get('air_conditioning'):
-                        amenities.append(f"A/C: {item.get('air_conditioning')}")
-                    if item.get('dish_washer'):
-                        amenities.append("Dishwasher included")
-                    if item.get('pets_description'):
-                        amenities.append(f"Pets: {item.get('pets_description')}")
-                    if item.get('heat'):
-                        amenities.append("Heat included")
-                    if item.get('hot_water'):
-                        amenities.append("Hot water included")
+        loc_added = 0
+        for item in items:
+            ad_id = str(item.get('ad_id'))
+            if ad_id in seen_ids:
+                continue
+            seen_ids.add(ad_id)
 
-                    desc = f"Verified {clean_sub_area} rental. "
-                    if amenities:
-                        desc += f"Features: {', '.join(amenities)}. "
-                    if item.get('availability'):
-                        desc += f"Available: {item.get('availability')}."
+            price = clean_price(item.get('price'))
+            if price <= 0:
+                continue
+            
+            lat = item.get('masked_lat')
+            lng = item.get('masked_lng')
+            if not lat or not lng:
+                continue
+            
+            city_name = (item.get('city') or loc).title()
+            sub_area = item.get('sub_area_name') or city_name
+            clean_sub_area = re.sub(r'^Boston\s*-\s*', '', sub_area)
+            if city_name.lower() in ['cambridge', 'somerville', 'brookline', 'allston', 'brighton', 'medford']:
+                if city_name.lower() not in clean_sub_area.lower():
+                    clean_sub_area = f"{city_name} - {clean_sub_area}"
+            
+            # Bedrooms & Bathrooms
+            raw_bed = str(item.get('bed_room', '1')).strip()
+            bedrooms = 0 if raw_bed.lower() in ['0', 'studio', 'room'] else int(raw_bed) if raw_bed.isdigit() else 1
+            
+            raw_bath = str(item.get('baths', '1')).strip()
+            try:
+                bathrooms = float(raw_bath)
+            except ValueError:
+                bathrooms = 1.0
 
-                    avail_raw = item.get('availability') or item.get('date_available')
-                    availability = normalize_availability(avail_raw)
+            # Fee calculation
+            fee_val = item.get('fee')
+            fee_text = item.get('feeText', '')
+            has_broker_fee = False if fee_val == 0 or 'no fee' in fee_text.lower() else True
+            fee_badge = 'No Broker Fee' if not has_broker_fee else 'Broker Fee'
+            
+            # Image
+            photo = item.get('firstPhoto')
+            images = [photo] if photo else [
+                'https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80'
+            ]
+            
+            # Amenities
+            amenities = []
+            if item.get('laundry_location'):
+                amenities.append(f"Laundry: {item.get('laundry_location')}")
+            if item.get('air_conditioning'):
+                amenities.append(f"A/C: {item.get('air_conditioning')}")
+            if item.get('dish_washer'):
+                amenities.append("Dishwasher included")
+            if item.get('pets_description'):
+                amenities.append(f"Pets: {item.get('pets_description')}")
+            if item.get('heat'):
+                amenities.append("Heat included")
+            if item.get('hot_water'):
+                amenities.append("Hot water included")
 
-                    title = f"{'Studio' if bedrooms == 0 else f'{bedrooms} Bed'} Apartment in {clean_sub_area}"
-                    rtype, rlabel = classify_rental_type(title, desc, price=price, bedrooms=bedrooms)
+            desc = f"Verified {clean_sub_area} rental. "
+            if amenities:
+                desc += f"Features: {', '.join(amenities)}. "
+            if item.get('availability'):
+                desc += f"Available: {item.get('availability')}."
 
-                    # sqft
-                    sqft_val = None
-                    if item.get('sqft') and str(item.get('sqft')).isdigit():
-                        sqft_val = int(item.get('sqft'))
+            avail_raw = item.get('availability') or item.get('date_available')
+            availability = normalize_availability(avail_raw)
 
-                    pads_listings.append({
-                        'id': f"bp-{ad_id}",
-                        'source': 'bostonpads',
-                        'source_label': 'Boston Pads',
-                        'title': title,
-                        'price': price,
-                        'neighborhood': clean_sub_area,
-                        'url': f"https://bostonpads.com/boston-apartments/?ad_id={ad_id}",
-                        'lat': float(lat),
-                        'lng': float(lng),
-                        'bedrooms': bedrooms,
-                        'bathrooms': bathrooms,
-                        'sqft': sqft_val,
-                        'availability': availability,
-                        'rental_type': rtype,
-                        'rental_type_label': rlabel,
-                        'images': images,
-                        'description': desc,
-                        'has_broker_fee': has_broker_fee,
-                        'fee_badge': fee_badge,
-                        'fee_details': fee_text or ('No broker fee' if not has_broker_fee else 'Broker fee applies'),
-                        'address': f"{clean_sub_area}, MA"
-                    })
-        except Exception as e:
-            print(f"Error scraping Boston Pads for {loc}:", e)
+            title = f"{'Studio' if bedrooms == 0 else f'{bedrooms} Bed'} Apartment in {clean_sub_area}"
+            rtype, rlabel = classify_rental_type(title, desc, price=price, bedrooms=bedrooms)
+
+            # sqft
+            sqft_val = None
+            if item.get('sqft') and str(item.get('sqft')).isdigit():
+                sqft_val = int(item.get('sqft'))
+
+            pads_listings.append({
+                'id': f"bp-{ad_id}",
+                'source': 'bostonpads',
+                'source_label': 'Boston Pads',
+                'title': title,
+                'price': price,
+                'city': city_name,
+                'neighborhood': clean_sub_area,
+                'url': f"https://bostonpads.com/boston-apartments/?ad_id={ad_id}",
+                'lat': float(lat),
+                'lng': float(lng),
+                'bedrooms': bedrooms,
+                'bathrooms': bathrooms,
+                'sqft': sqft_val,
+                'availability': availability,
+                'rental_type': rtype,
+                'rental_type_label': rlabel,
+                'images': images,
+                'description': desc,
+                'has_broker_fee': has_broker_fee,
+                'fee_badge': fee_badge,
+                'fee_details': fee_text or ('No broker fee' if not has_broker_fee else 'Broker fee applies'),
+                'address': f"{clean_sub_area}, {city_name}, MA"
+            })
+            loc_added += 1
+
+        print(f"  -> Added {loc_added} verified listings from {loc.title()}")
 
     print(f"Discovered {len(pads_listings)} verified listings across Greater Boston on Boston Pads.")
     return pads_listings

@@ -168,8 +168,29 @@ export default function FilterBar({ filters, setFilters, totalCount, filteredCou
         </div>
       </div>
 
+      {/* Quick Location Pills: Cambridge, Somerville, Boston, Brookline, Allston */}
+      <div className="mt-2.5 pt-2.5 border-t border-gray-100 flex items-center gap-1.5 overflow-x-auto text-xs pb-1">
+        <span className="text-gray-500 font-semibold shrink-0 mr-1">Quick Area:</span>
+        {['All', 'Cambridge', 'Somerville', 'Boston', 'Brookline', 'Allston', 'Fenway'].map((area) => {
+          const isActive = area === 'All' ? filters.search === '' : filters.search.toLowerCase() === area.toLowerCase();
+          return (
+            <button
+              key={area}
+              onClick={() => setFilters((prev) => ({ ...prev, search: area === 'All' ? '' : area }))}
+              className={`px-2.5 py-1 rounded-lg font-medium shrink-0 transition-all ${
+                isActive
+                  ? 'bg-boston-brick text-white shadow-xs font-bold'
+                  : 'bg-gray-100 text-gray-600 hover:bg-gray-200 hover:text-gray-900'
+              }`}
+            >
+              {area}
+            </button>
+          );
+        })}
+      </div>
+
       {/* Second Row: Max Price Slider and Summary */}
-      <div className="mt-3 pt-3 border-t border-gray-100 flex flex-col md:flex-row md:items-center justify-between gap-3 text-xs">
+      <div className="mt-2 pt-2.5 border-t border-gray-100 flex flex-col md:flex-row md:items-center justify-between gap-3 text-xs">
         <div className="flex items-center gap-3 flex-1 max-w-md">
           <span className="font-semibold text-gray-600 shrink-0">
             Max Price: <span className="text-gray-900 font-bold">${filters.maxPrice.toLocaleString()}</span>
