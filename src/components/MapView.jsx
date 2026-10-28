@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import { MapContainer, TileLayer, Marker, Popup, useMap } from 'react-leaflet';
 import L from 'leaflet';
-import { ExternalLink, Bed, Bath, ShieldCheck, DollarSign } from 'lucide-react';
+import { ExternalLink, Bed, Bath, ShieldCheck, DollarSign, Maximize2 } from 'lucide-react';
 
 // Subcomponent to dynamically center or fly to selected listing
 function MapUpdater({ selectedListing }) {
@@ -118,7 +118,7 @@ export default function MapView({ listings, selectedListing, onSelectListing }) 
                       {listing.neighborhood || listing.address}
                     </p>
 
-                    <div className="flex items-center gap-3 text-xs text-gray-600 mb-3 border-t pt-2 border-gray-100">
+                    <div className="flex items-center gap-2.5 text-xs text-gray-600 mb-3 border-t pt-2 border-gray-100 flex-wrap">
                       <span className="flex items-center gap-1">
                         <Bed className="w-3.5 h-3.5 text-gray-400" />
                         {listing.bedrooms === 0 ? 'Studio' : `${listing.bedrooms} Bed`}
@@ -127,6 +127,12 @@ export default function MapView({ listings, selectedListing, onSelectListing }) 
                         <Bath className="w-3.5 h-3.5 text-gray-400" />
                         {listing.bathrooms} Bath
                       </span>
+                      {listing.sqft && (
+                        <span className="flex items-center gap-1 font-semibold text-gray-800">
+                          <Maximize2 className="w-3.5 h-3.5 text-gray-400" />
+                          {listing.sqft.toLocaleString()} sq ft
+                        </span>
+                      )}
                     </div>
 
                     <a

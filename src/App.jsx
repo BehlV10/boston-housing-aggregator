@@ -116,7 +116,7 @@ export default function App() {
                 </span>
               </div>
               <p className="text-xs text-gray-500">
-                Craigslist &bull; Zillow &bull; FB Marketplace in one place
+                Craigslist &bull; Boston Pads &bull; Zillow &bull; FB Marketplace &bull; Redfin
               </p>
             </div>
           </div>

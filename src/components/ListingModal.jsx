@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { X, ExternalLink, Bed, Bath, MapPin, ShieldCheck, AlertCircle, Calendar } from 'lucide-react';
+import { X, ExternalLink, Bed, Bath, MapPin, ShieldCheck, AlertCircle, Calendar, Maximize2 } from 'lucide-react';
 
 export default function ListingModal({ listing, onClose }) {
   if (!listing) return null;
@@ -103,7 +103,7 @@ export default function ListingModal({ listing, onClose }) {
           </div>
 
           {/* Quick Specs */}
-          <div className="grid grid-cols-3 gap-3 py-4 border-y border-gray-100 my-4 text-center">
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 py-4 border-y border-gray-100 my-4 text-center">
             <div className="p-3 bg-gray-50 rounded-2xl">
               <div className="text-xs text-gray-500 mb-1">Bedrooms</div>
               <div className="text-lg font-bold text-gray-800 flex items-center justify-center gap-1.5">
@@ -119,8 +119,15 @@ export default function ListingModal({ listing, onClose }) {
               </div>
             </div>
             <div className="p-3 bg-gray-50 rounded-2xl">
+              <div className="text-xs text-gray-500 mb-1">Living Area</div>
+              <div className="text-lg font-bold text-gray-800 flex items-center justify-center gap-1.5">
+                <Maximize2 className="w-4 h-4 text-gray-400" />
+                {listing.sqft ? `${listing.sqft.toLocaleString()} sq ft` : 'Unspecified'}
+              </div>
+            </div>
+            <div className="p-3 bg-gray-50 rounded-2xl">
               <div className="text-xs text-gray-500 mb-1">Fee Policy</div>
-              <div className="text-sm font-bold text-gray-800 line-clamp-1">
+              <div className="text-sm font-bold text-gray-800 line-clamp-1 mt-1">
                 {listing.fee_badge}
               </div>
             </div>

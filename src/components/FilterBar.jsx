@@ -105,8 +105,10 @@ export default function FilterBar({ filters, setFilters, totalCount, filteredCou
           >
             <option value="all">Platform: All</option>
             <option value="craigslist">Craigslist</option>
+            <option value="bostonpads">Boston Pads</option>
             <option value="zillow">Zillow</option>
             <option value="facebook">FB Marketplace</option>
+            <option value="redfin">Redfin</option>
           </select>
         </div>
       </div>

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { ChevronLeft, ChevronRight, Bed, Bath, MapPin, ExternalLink, ShieldCheck, AlertCircle } from 'lucide-react';
+import { ChevronLeft, ChevronRight, Bed, Bath, MapPin, ExternalLink, ShieldCheck, AlertCircle, Maximize2 } from 'lucide-react';
 
 export default function ListingCard({ listing, isSelected, onSelect, onOpenDetails }) {
   const [currentImgIndex, setCurrentImgIndex] = useState(0);
@@ -21,6 +21,10 @@ export default function ListingCard({ listing, isSelected, onSelect, onOpenDetai
         return 'bg-blue-50 text-blue-700 border-blue-200';
       case 'facebook':
         return 'bg-indigo-50 text-indigo-700 border-indigo-200';
+      case 'bostonpads':
+        return 'bg-teal-50 text-teal-800 border-teal-200';
+      case 'redfin':
+        return 'bg-rose-50 text-rose-700 border-rose-200';
       default:
         return 'bg-purple-50 text-purple-700 border-purple-200';
     }
@@ -121,7 +125,7 @@ export default function ListingCard({ listing, isSelected, onSelect, onOpenDetai
           </div>
 
           {/* Details specs */}
-          <div className="flex items-center gap-4 text-xs font-medium text-gray-700 py-2 border-y border-gray-100 mb-3">
+          <div className="flex items-center gap-3 text-xs font-medium text-gray-700 py-2 border-y border-gray-100 mb-3 flex-wrap">
             <div className="flex items-center gap-1.5">
               <Bed className="w-4 h-4 text-gray-400" />
               <span>{listing.bedrooms === 0 ? 'Studio' : `${listing.bedrooms} Bed`}</span>
@@ -130,8 +134,14 @@ export default function ListingCard({ listing, isSelected, onSelect, onOpenDetai
               <Bath className="w-4 h-4 text-gray-400" />
               <span>{listing.bathrooms} Bath</span>
             </div>
-            {listing.fee_details && (
-              <div className="text-[11px] text-gray-500 line-clamp-1 italic ml-auto max-w-[140px]">
+            {listing.sqft && (
+              <div className="flex items-center gap-1.5 font-semibold text-gray-800">
+                <Maximize2 className="w-3.5 h-3.5 text-gray-400" />
+                <span>{listing.sqft.toLocaleString()} sq ft</span>
+              </div>
+            )}
+            {listing.fee_details && !listing.sqft && (
+              <div className="text-[11px] text-gray-500 line-clamp-1 italic ml-auto max-w-[130px]">
                 {listing.fee_details}
               </div>
             )}
