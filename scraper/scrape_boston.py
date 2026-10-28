@@ -62,6 +62,33 @@ def normalize_availability(text):
     return f"Available {clean.title()}"
 
 
+ROOM_PATTERNS = [
+    r'\b(?:private|single|furnished|master)?\s*rooms?\s+(?:for\s+rent|available)\b',
+    r'\bprivate\s+(?:bed)?room\b',
+    r'\bsingle\s+room\b',
+    r'\broom\s+in\s+(?:a\s+)?(?:shared|\d+\s*(?:bed|br|bdr|bedroom)|house|apartment|condo)\b',
+    r'\broommate(?:s)?\b',
+    r'\bshared\s+(?:apartment|apt|house|room|living)\b',
+    r'\broom\s+available\b',
+    r'\bsublet\s+(?:room|available)\b',
+]
+
+
+def classify_rental_type(title, body, price=0, bedrooms=1, default_type='entire_unit'):
+    if default_type == 'room':
+        return 'room', 'Single Room'
+
+    text = f"{title} {body}".lower()
+    for pat in ROOM_PATTERNS:
+        if re.search(pat, text):
+            return 'room', 'Single Room'
+
+    if 0 < price < 1300 and bedrooms >= 3:
+        return 'room', 'Single Room'
+
+    return 'entire_unit', 'Entire Place'
+
+
 def analyze_fees(title, body, explicit_fee_text=None):
     if explicit_fee_text:
         low = explicit_fee_text.lower()
@@ -177,12 +204,23 @@ def fetch_craigslist_detail_page(listing):
                     avail_text = avail_m.group(1).strip()
             availability = normalize_availability(avail_text)
 
+            # Rental Type (Entire Place vs Single Room)
+            rental_type, rental_label = classify_rental_type(
+                listing['title'],
+                body,
+                price=listing.get('price', 0),
+                bedrooms=beds,
+                default_type=listing.get('rental_type', 'entire_unit')
+            )
+
             return {
                 **listing,
                 'bedrooms': beds,
                 'bathrooms': baths,
                 'sqft': sqft,
                 'availability': availability,
+                'rental_type': rental_type,
+                'rental_type_label': rental_label,
                 'images': images[:8] if images else [
                     'https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80'
                 ],
@@ -193,8 +231,17 @@ def fetch_craigslist_detail_page(listing):
             }
     except Exception as e:
         fee_info = analyze_fees(listing['title'], '')
+        rental_type, rental_label = classify_rental_type(
+            listing['title'],
+            '',
+            price=listing.get('price', 0),
+            bedrooms=listing.get('bedrooms', 1),
+            default_type=listing.get('rental_type', 'entire_unit')
+        )
         return {
             **listing,
+            'rental_type': rental_type,
+            'rental_type_label': rental_label,
             'images': [
                 'https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80'
             ],
@@ -279,6 +326,81 @@ def scrape_craigslist_boston(limit=50):
     return detailed_listings
 
 
+def scrape_craigslist_rooms_boston(limit=25):
+    print("Scraping Craigslist Boston Rooms & Shares (boston.craigslist.org/search/roo)...")
+    url = "https://boston.craigslist.org/search/roo"
+    req = urllib.request.Request(url, headers=HEADERS)
+    
+    with urllib.request.urlopen(req, timeout=15) as resp:
+        html = resp.read().decode('utf-8', errors='ignore')
+        
+    schema_map = {}
+    ld_match = re.search(r'<script\b[^>]*id="ld_searchpage_results"[^>]*>(.*?)</script>', html, re.DOTALL)
+    if ld_match:
+        try:
+            data = json.loads(ld_match.group(1))
+            items = data.get('itemListElement', [])
+            for item_wrap in items:
+                pos = str(item_wrap.get('position', ''))
+                it = item_wrap.get('item', {})
+                schema_map[pos] = {
+                    'lat': it.get('latitude'),
+                    'lng': it.get('longitude'),
+                    'bedrooms': 1,
+                    'bathrooms': 1,
+                    'locality': it.get('address', {}).get('addressLocality', 'Boston')
+                }
+        except Exception:
+            pass
+
+    pattern = (
+        r'<li class="cl-static-search-result"[^>]*>\s*'
+        r'<a href="([^"]+)">\s*'
+        r'<div class="title">([^<]+)</div>\s*'
+        r'<div class="details">\s*'
+        r'<div class="price">([^<]+)</div>\s*'
+        r'<div class="location">\s*([^<]+)</div>'
+    )
+    
+    matches = re.findall(pattern, html)
+    print(f"Discovered {len(matches)} rooms on Craigslist Boston.")
+    
+    raw_listings = []
+    for idx, (post_url, title, price_str, location) in enumerate(matches[:limit]):
+        clean_title = html_parser.unescape(title.strip())
+        clean_loc = html_parser.unescape(location.strip())
+        schema_info = schema_map.get(str(idx), {})
+        
+        lat = schema_info.get('lat')
+        lng = schema_info.get('lng')
+        if not lat or not lng:
+            lat = 42.3601 + ((idx % 10) - 5) * 0.008
+            lng = -71.0589 + ((idx % 7) - 3) * 0.008
+            
+        raw_listings.append({
+            'id': f"cl-roo-{re.sub(r'[^a-zA-Z0-9]', '', post_url)[-16:]}",
+            'source': 'craigslist',
+            'source_label': 'Craigslist',
+            'title': clean_title,
+            'price': clean_price(price_str),
+            'neighborhood': clean_loc,
+            'url': post_url.strip(),
+            'lat': float(lat),
+            'lng': float(lng),
+            'bedrooms': 1,
+            'bathrooms': 1,
+            'rental_type': 'room',
+            'rental_type_label': 'Single Room',
+            'sqft': None,
+            'address': clean_loc
+        })
+
+    with ThreadPoolExecutor(max_workers=5) as executor:
+        detailed_listings = list(executor.map(fetch_craigslist_detail_page, raw_listings))
+
+    return detailed_listings
+
+
 def scrape_boston_pads(limit=50):
     print("Scraping Boston Pads API (bostonpads.com)...")
     url = f"https://m.bostonpads.com/api/listings-short/?incadv=1&unique=1&location=boston&results_per_page={limit}"
@@ -351,11 +473,14 @@ def scrape_boston_pads(limit=50):
                 avail_raw = item.get('availability') or item.get('date_available')
                 availability = normalize_availability(avail_raw)
 
+                title = f"{'Studio' if bedrooms == 0 else f'{bedrooms} Bed'} Apartment in {clean_sub_area}"
+                rtype, rlabel = classify_rental_type(title, desc, price=price, bedrooms=bedrooms)
+
                 pads_listings.append({
                     'id': f"bp-{ad_id}",
                     'source': 'bostonpads',
                     'source_label': 'Boston Pads',
-                    'title': f"{'Studio' if bedrooms == 0 else f'{bedrooms} Bed'} Apartment in {clean_sub_area}",
+                    'title': title,
                     'price': price,
                     'neighborhood': clean_sub_area,
                     'url': f"https://bostonpads.com/boston-apartments/?ad_id={ad_id}",
@@ -365,6 +490,8 @@ def scrape_boston_pads(limit=50):
                     'bathrooms': bathrooms,
                     'sqft': None,
                     'availability': availability,
+                    'rental_type': rtype,
+                    'rental_type_label': rlabel,
                     'images': images,
                     'description': desc,
                     'has_broker_fee': has_broker_fee,
@@ -406,6 +533,8 @@ def get_additional_boston_aggregations():
             'has_broker_fee': False,
             'fee_badge': 'No Broker Fee',
             'fee_details': 'Direct lease with building management. Zero broker fee.',
+            'rental_type': 'entire_unit',
+            'rental_type_label': 'Entire Place',
             'address': '540 Harrison Ave, Boston, MA 02118'
         },
         {
@@ -422,6 +551,8 @@ def get_additional_boston_aggregations():
             'bathrooms': 1,
             'sqft': 950,
             'availability': 'Available Nov 1',
+            'rental_type': 'entire_unit',
+            'rental_type_label': 'Entire Place',
             'images': [
                 'https://images.unsplash.com/photo-1493809842364-78817add7ffb?auto=format&fit=crop&w=800&q=80'
             ],
@@ -445,6 +576,8 @@ def get_additional_boston_aggregations():
             'bathrooms': 1,
             'sqft': 540,
             'availability': 'Available Now',
+            'rental_type': 'entire_unit',
+            'rental_type_label': 'Entire Place',
             'images': [
                 'https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=800&q=80',
                 'https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&w=800&q=80'
@@ -469,6 +602,8 @@ def get_additional_boston_aggregations():
             'bathrooms': 1.5,
             'sqft': 1100,
             'availability': 'Available Nov 1',
+            'rental_type': 'entire_unit',
+            'rental_type_label': 'Entire Place',
             'images': [
                 'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=800&q=80',
                 'https://images.unsplash.com/photo-1493809842364-78817add7ffb?auto=format&fit=crop&w=800&q=80'
@@ -493,6 +628,8 @@ def get_additional_boston_aggregations():
             'bathrooms': 1,
             'sqft': 350,
             'availability': 'Available Now',
+            'rental_type': 'room',
+            'rental_type_label': 'Single Room',
             'images': [
                 'https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?auto=format&fit=crop&w=800&q=80'
             ],
@@ -516,6 +653,8 @@ def get_additional_boston_aggregations():
             'bathrooms': 1,
             'sqft': 1250,
             'availability': 'Available Sep 1',
+            'rental_type': 'entire_unit',
+            'rental_type_label': 'Entire Place',
             'images': [
                 'https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=800&q=80'
             ],
@@ -539,6 +678,8 @@ def get_additional_boston_aggregations():
             'bathrooms': 1,
             'sqft': 680,
             'availability': 'Available Now',
+            'rental_type': 'entire_unit',
+            'rental_type_label': 'Entire Place',
             'images': [
                 'https://images.unsplash.com/photo-1502005229762-ee1b2b8ab98f?auto=format&fit=crop&w=800&q=80'
             ],
@@ -554,14 +695,21 @@ def get_additional_boston_aggregations():
 def main():
     os.makedirs(OUTPUT_DIR, exist_ok=True)
     
-    # 1. Scrape Craigslist Boston
+    # 1. Scrape Craigslist Boston Apartments
     craigslist_listings = []
     try:
         craigslist_listings = scrape_craigslist_boston(limit=50)
     except Exception as e:
         print("Warning: Live Craigslist scrape encountered error:", e)
 
-    # 2. Scrape Boston Pads
+    # 2. Scrape Craigslist Boston Rooms & Shares
+    craigslist_rooms = []
+    try:
+        craigslist_rooms = scrape_craigslist_rooms_boston(limit=25)
+    except Exception as e:
+        print("Warning: Craigslist Rooms scrape encountered error:", e)
+
+    # 3. Scrape Boston Pads
     boston_pads_listings = []
     try:
         boston_pads_listings = scrape_boston_pads(limit=50)
@@ -579,8 +727,12 @@ def main():
         except Exception:
             pass
 
-    # Merge Craigslist
+    # Merge Craigslist Apartments
     for item in craigslist_listings:
+        existing_map[item['id']] = item
+
+    # Merge Craigslist Rooms
+    for item in craigslist_rooms:
         existing_map[item['id']] = item
 
     # Merge Boston Pads
@@ -605,6 +757,9 @@ def main():
     fee_count = sum(1 for x in all_listings if x.get('has_broker_fee') is True)
     unknown_count = len(all_listings) - no_fee_count - fee_count
 
+    room_count = sum(1 for x in all_listings if x.get('rental_type') == 'room')
+    entire_count = len(all_listings) - room_count
+
     sources_count = {}
     for item in all_listings:
         s = item.get('source', 'unknown')
@@ -617,6 +772,8 @@ def main():
         'no_fee_count': no_fee_count,
         'fee_count': fee_count,
         'unknown_fee_count': unknown_count,
+        'room_count': room_count,
+        'entire_count': entire_count,
         'sources': sources_count
     }
 

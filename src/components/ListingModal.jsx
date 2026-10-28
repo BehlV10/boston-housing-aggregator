@@ -59,6 +59,13 @@ export default function ListingModal({ listing, onClose }) {
                 {listing.availability}
               </span>
             )}
+            <span className={`px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wide backdrop-blur-sm shadow-lg ${
+              listing.rental_type === 'room'
+                ? 'bg-indigo-600 text-white'
+                : 'bg-white/90 text-gray-800'
+            }`}>
+              {listing.rental_type === 'room' ? 'Single Room' : 'Entire Place'}
+            </span>
             <span className="px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wide bg-white/90 text-gray-800 backdrop-blur-sm shadow-lg">
               {listing.source_label}
             </span>

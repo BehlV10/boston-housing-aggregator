@@ -20,6 +20,7 @@ export default function App() {
     fee: 'all', // 'all' | 'no-fee' | 'fee'
     source: 'all', // 'all' | 'craigslist' | 'zillow' | 'facebook' | 'bostonpads' | 'redfin'
     bedrooms: 'all',
+    rentalType: 'all', // 'all' | 'entire_unit' | 'room'
     availableNow: false,
     maxPrice: 6000,
   });
@@ -84,6 +85,11 @@ export default function App() {
 
         // Available Now filter
         if (filters.availableNow && item.availability !== 'Available Now') {
+          return false;
+        }
+
+        // Rental Type filter (Entire Unit vs Single Room)
+        if (filters.rentalType !== 'all' && item.rental_type !== filters.rentalType) {
           return false;
         }
 

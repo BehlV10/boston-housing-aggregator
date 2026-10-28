@@ -1,5 +1,5 @@
 import React from 'react';
-import { Search, RotateCcw, Filter, ShieldCheck, DollarSign, Calendar } from 'lucide-react';
+import { Search, RotateCcw, Filter, ShieldCheck, DollarSign, Calendar, Home, DoorClosed } from 'lucide-react';
 
 export default function FilterBar({ filters, setFilters, totalCount, filteredCount }) {
   const handleFeeChange = (val) => {
@@ -14,12 +14,17 @@ export default function FilterBar({ filters, setFilters, totalCount, filteredCou
     setFilters((prev) => ({ ...prev, bedrooms: val }));
   };
 
+  const handleRentalTypeChange = (val) => {
+    setFilters((prev) => ({ ...prev, rentalType: val }));
+  };
+
   const handleReset = () => {
     setFilters({
       search: '',
       fee: 'all',
       source: 'all',
       bedrooms: 'all',
+      rentalType: 'all',
       availableNow: false,
       maxPrice: 6000,
     });
@@ -30,26 +35,63 @@ export default function FilterBar({ filters, setFilters, totalCount, filteredCou
     filters.fee !== 'all' ||
     filters.source !== 'all' ||
     filters.bedrooms !== 'all' ||
+    filters.rentalType !== 'all' ||
     filters.availableNow ||
     filters.maxPrice < 6000;
 
   return (
     <div className="bg-white rounded-2xl border border-gray-200 p-4 shadow-sm mb-4">
-      <div className="grid grid-cols-1 md:grid-cols-12 gap-3 items-center">
+      <div className="grid grid-cols-1 md:grid-cols-12 gap-2.5 items-center">
         {/* Search Input */}
-        <div className="md:col-span-4 relative">
+        <div className="md:col-span-3 relative">
           <Search className="w-4 h-4 absolute left-3.5 top-1/2 -translate-y-1/2 text-gray-400" />
           <input
             type="text"
-            placeholder="Search Back Bay, Fenway, Harvard..."
+            placeholder="Search Back Bay, Harvard..."
             value={filters.search}
             onChange={(e) => setFilters((prev) => ({ ...prev, search: e.target.value }))}
-            className="w-full pl-9 pr-4 py-2 bg-gray-50 border border-gray-200 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-boston-brick focus:border-transparent transition-all"
+            className="w-full pl-9 pr-3 py-2 bg-gray-50 border border-gray-200 rounded-xl text-xs sm:text-sm focus:outline-none focus:ring-2 focus:ring-boston-brick focus:border-transparent transition-all"
           />
         </div>
 
+        {/* Place Type: Entire Unit vs Single Room */}
+        <div className="md:col-span-3 flex items-center bg-gray-100 p-1 rounded-xl">
+          <button
+            onClick={() => handleRentalTypeChange('all')}
+            className={`flex-1 py-1.5 text-xs font-semibold rounded-lg transition-all ${
+              filters.rentalType === 'all'
+                ? 'bg-white text-gray-900 shadow-sm'
+                : 'text-gray-600 hover:text-gray-900'
+            }`}
+          >
+            All Types
+          </button>
+          <button
+            onClick={() => handleRentalTypeChange('entire_unit')}
+            className={`flex-1 py-1.5 text-xs font-semibold rounded-lg flex items-center justify-center gap-1 transition-all ${
+              filters.rentalType === 'entire_unit'
+                ? 'bg-white text-boston-navy shadow-sm'
+                : 'text-gray-600 hover:text-gray-900'
+            }`}
+          >
+            <Home className="w-3.5 h-3.5" />
+            Entire
+          </button>
+          <button
+            onClick={() => handleRentalTypeChange('room')}
+            className={`flex-1 py-1.5 text-xs font-semibold rounded-lg flex items-center justify-center gap-1 transition-all ${
+              filters.rentalType === 'room'
+                ? 'bg-indigo-600 text-white shadow-sm'
+                : 'text-gray-600 hover:text-indigo-700'
+            }`}
+          >
+            <DoorClosed className="w-3.5 h-3.5" />
+            Room
+          </button>
+        </div>
+
         {/* Fee Filter Buttons */}
-        <div className="md:col-span-4 flex items-center bg-gray-100 p-1 rounded-xl">
+        <div className="md:col-span-3 flex items-center bg-gray-100 p-1 rounded-xl">
           <button
             onClick={() => handleFeeChange('all')}
             className={`flex-1 py-1.5 text-xs font-semibold rounded-lg transition-all ${
@@ -58,7 +100,7 @@ export default function FilterBar({ filters, setFilters, totalCount, filteredCou
                 : 'text-gray-600 hover:text-gray-900'
             }`}
           >
-            All Listings
+            All Fees
           </button>
           <button
             onClick={() => handleFeeChange('no-fee')}
@@ -84,28 +126,28 @@ export default function FilterBar({ filters, setFilters, totalCount, filteredCou
         </div>
 
         {/* Bedroom Select */}
-        <div className="md:col-span-2">
+        <div className="md:col-span-1.5 col-span-6">
           <select
             value={filters.bedrooms}
             onChange={(e) => handleBedroomsChange(e.target.value)}
-            className="w-full py-2 px-3 bg-gray-50 border border-gray-200 rounded-xl text-xs font-semibold text-gray-700 focus:outline-none focus:ring-2 focus:ring-boston-brick"
+            className="w-full py-2 px-2 bg-gray-50 border border-gray-200 rounded-xl text-xs font-semibold text-gray-700 focus:outline-none focus:ring-2 focus:ring-boston-brick"
           >
             <option value="all">Beds: Any</option>
             <option value="0">Studio</option>
-            <option value="1">1 Bedroom</option>
-            <option value="2">2 Bedrooms</option>
-            <option value="3">3+ Bedrooms</option>
+            <option value="1">1 Bed</option>
+            <option value="2">2 Beds</option>
+            <option value="3">3+ Beds</option>
           </select>
         </div>
 
         {/* Source Select */}
-        <div className="md:col-span-2">
+        <div className="md:col-span-1.5 col-span-6">
           <select
             value={filters.source}
             onChange={(e) => handleSourceChange(e.target.value)}
-            className="w-full py-2 px-3 bg-gray-50 border border-gray-200 rounded-xl text-xs font-semibold text-gray-700 focus:outline-none focus:ring-2 focus:ring-boston-brick"
+            className="w-full py-2 px-2 bg-gray-50 border border-gray-200 rounded-xl text-xs font-semibold text-gray-700 focus:outline-none focus:ring-2 focus:ring-boston-brick"
           >
-            <option value="all">Platform: All</option>
+            <option value="all">Source: All</option>
             <option value="craigslist">Craigslist</option>
             <option value="bostonpads">Boston Pads</option>
             <option value="zillow">Zillow</option>

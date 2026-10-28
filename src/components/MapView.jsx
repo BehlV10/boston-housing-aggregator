@@ -111,9 +111,18 @@ export default function MapView({ listings, selectedListing, onSelectListing }) 
                         ${listing.price?.toLocaleString()}
                         <span className="text-xs font-normal text-gray-500">/mo</span>
                       </div>
-                      <span className="text-xs font-medium uppercase tracking-wide px-2 py-0.5 rounded bg-gray-100 text-gray-700">
-                        {listing.source_label}
-                      </span>
+                      <div className="flex items-center gap-1.5">
+                        <span className={`text-[10px] font-bold px-1.5 py-0.5 rounded ${
+                          listing.rental_type === 'room'
+                            ? 'bg-indigo-50 text-indigo-700 border border-indigo-200'
+                            : 'bg-gray-100 text-gray-700'
+                        }`}>
+                          {listing.rental_type === 'room' ? 'Single Room' : 'Entire Place'}
+                        </span>
+                        <span className="text-xs font-medium uppercase tracking-wide px-2 py-0.5 rounded bg-gray-100 text-gray-700">
+                          {listing.source_label}
+                        </span>
+                      </div>
                     </div>
 
                     <h4 className="font-semibold text-sm text-gray-800 line-clamp-1 mb-1">

@@ -1,5 +1,207 @@
 [
   {
+    "id": "cl-roo-Y7PPUrvuz7fiwTr3",
+    "source": "craigslist",
+    "source_label": "Craigslist",
+    "title": "RENOVATED FURNISHED ROOMS CLOSE TO HARVARD AND UNION SQUARE",
+    "price": 170,
+    "neighborhood": "Somerville, MA",
+    "url": "https://www.craigslist.org/view/d/somerville-renovated-furnished-rooms/7yqV62Y7PPUrvuz7fiwTr3",
+    "lat": 42.3773044034567,
+    "lng": -71.1051928176397,
+    "bedrooms": 2,
+    "bathrooms": 1.0,
+    "rental_type": "room",
+    "rental_type_label": "Single Room",
+    "sqft": null,
+    "address": "Somerville, MA",
+    "availability": "Contact Lister",
+    "images": [
+      "https://images.craigslist.org/00202_1eMIcHyFfxo_0a30dp_600x450.jpg",
+      "https://images.craigslist.org/00A0A_hJXnenHO02v_0aT0ew_600x450.jpg",
+      "https://images.craigslist.org/00V0V_hv5rSbEqJA1_0aT0ew_600x450.jpg",
+      "https://images.craigslist.org/00202_hc3tHRq1Vrz_0aT0ew_600x450.jpg",
+      "https://images.craigslist.org/00e0e_awjKcLAivFT_0a30dp_600x450.jpg",
+      "https://images.craigslist.org/00z0z_7ncIptFPIQx_0aT0ew_600x450.jpg",
+      "https://images.craigslist.org/01212_2s7UQyGTtn9_0aT0ew_600x450.jpg"
+    ],
+    "description": "DISCOVER TWO FURNISHED ROOMS IN A RENOVATED 2-BEDROOM, 1-BATH APARTMENT LOCATED ON THE CAMBRIDGE/SOMERVILLE LINE. THE PROPERTY IS CLOSE TO HARVARD SQUARE, UNION SQUARE, AND INMAN SQUARE, WITH HARVARD SQUARE RED LINE SUBWAY AND THE GREEN LINE EXTENSION AT UNION SQUARE WITHIN WALKING DISTANCE. CENTRAL SQUARE, PORTER SQUARE, INMAN SQUARE, AND UNION SQUARE ARE ALSO NEARBY. ENJOY A BUS STOP IN FRONT OF THE BUILDING AND WHOLE FOODS JUST 2\u20135 MINUTES AWAY. THE MIDRISE BUILDING IS PROFESSIONALLY MANAGED AND OFFERS TWO ELEVATORS, ONSITE SUPERINTENDENT, HARDWOOD FLOORS, BIKE STORAGE, LAUNDRY, A/C, AND PA...",
+    "has_broker_fee": null,
+    "fee_badge": "Fee Unspecified",
+    "fee_details": "Contact lister for fee status"
+  },
+  {
+    "id": "cl-roo-o122DVyvmRwbUn29",
+    "source": "craigslist",
+    "source_label": "Craigslist",
+    "title": "RENOVATED FURNISHED ROOMS CLOSE TO HARVARD AND UNION SQUARE",
+    "price": 170,
+    "neighborhood": "Somerville, MA",
+    "url": "https://www.craigslist.org/view/d/somerville-renovated-furnished-rooms/s3iYxKo122DVyvmRwbUn29",
+    "lat": 42.3773044034567,
+    "lng": -71.1051928176397,
+    "bedrooms": 2,
+    "bathrooms": 1.0,
+    "rental_type": "room",
+    "rental_type_label": "Single Room",
+    "sqft": null,
+    "address": "Somerville, MA",
+    "availability": "Contact Lister",
+    "images": [
+      "https://images.craigslist.org/00e0e_awjKcLAivFT_0a30dp_600x450.jpg",
+      "https://images.craigslist.org/00202_1eMIcHyFfxo_0a30dp_600x450.jpg",
+      "https://images.craigslist.org/00V0V_hv5rSbEqJA1_0aT0ew_600x450.jpg",
+      "https://images.craigslist.org/00A0A_hJXnenHO02v_0aT0ew_600x450.jpg",
+      "https://images.craigslist.org/01212_2s7UQyGTtn9_0aT0ew_600x450.jpg",
+      "https://images.craigslist.org/00z0z_7ncIptFPIQx_0aT0ew_600x450.jpg",
+      "https://images.craigslist.org/00202_hc3tHRq1Vrz_0aT0ew_600x450.jpg"
+    ],
+    "description": "DISCOVER TWO FURNISHED ROOMS IN A RENOVATED 2-BEDROOM, 1-BATH APARTMENT LOCATED ON THE CAMBRIDGE/SOMERVILLE LINE. THE PROPERTY IS CLOSE TO HARVARD SQUARE, UNION SQUARE, AND INMAN SQUARE, WITH HARVARD SQUARE RED LINE SUBWAY AND THE GREEN LINE EXTENSION AT UNION SQUARE WITHIN WALKING DISTANCE. CENTRAL SQUARE, PORTER SQUARE, INMAN SQUARE, AND UNION SQUARE ARE ALSO NEARBY. ENJOY A BUS STOP IN FRONT OF THE BUILDING AND WHOLE FOODS JUST 2\u20135 MINUTES AWAY. THE MIDRISE BUILDING IS PROFESSIONALLY MANAGED AND OFFERS TWO ELEVATORS, ONSITE SUPERINTENDENT, HARDWOOD FLOORS, BIKE STORAGE, LAUNDRY, A/C, AND PA...",
+    "has_broker_fee": null,
+    "fee_badge": "Fee Unspecified",
+    "fee_details": "Contact lister for fee status"
+  },
+  {
+    "id": "cl-roo-jmEnoTEyvJTQ1Yhd",
+    "source": "craigslist",
+    "source_label": "Craigslist",
+    "title": "Cuarto en la renta",
+    "price": 250,
+    "neighborhood": "boston/cambridge/brookline",
+    "url": "https://www.craigslist.org/view/d/roslindale-cuarto-en-la-renta/rixbmvjmEnoTEyvJTQ1Yhd",
+    "lat": 42.2836005938149,
+    "lng": -71.1295016980124,
+    "bedrooms": 1,
+    "bathrooms": 1,
+    "rental_type": "room",
+    "rental_type_label": "Single Room",
+    "sqft": null,
+    "address": "boston/cambridge/brookline",
+    "availability": "Contact Lister",
+    "images": [
+      "https://images.craigslist.org/00r0r_lRcvttVslnl_0CI0t2_600x450.jpg",
+      "https://images.craigslist.org/00t0t_l3NkJIz1bV4_0t20CI_600x450.jpg",
+      "https://images.craigslist.org/00q0q_bQrmGZRxrbI_0t20CI_600x450.jpg"
+    ],
+    "description": "Cuarto a la renta en Roslindale cerca de la estaci\u00f3n de bus y a dos millas de Forest Hill. Utilidades incluida. Ba\u00f1o y cocina compartida; pagos semanales !",
+    "has_broker_fee": null,
+    "fee_badge": "Fee Unspecified",
+    "fee_details": "Contact lister for fee status"
+  },
+  {
+    "id": "cl-roo-mcwfd5X7n5ffbSqw",
+    "source": "craigslist",
+    "source_label": "Craigslist",
+    "title": "Looking for roommate",
+    "price": 600,
+    "neighborhood": "Quincy (Wollaston)",
+    "url": "https://www.craigslist.org/view/d/quincy-looking-for-roommate/iKsYvzmcwfd5X7n5ffbSqw",
+    "lat": 42.267099409316,
+    "lng": -71.0185994142351,
+    "bedrooms": 1,
+    "bathrooms": 1,
+    "rental_type": "room",
+    "rental_type_label": "Single Room",
+    "sqft": null,
+    "address": "Quincy (Wollaston)",
+    "availability": "Available Nov 8",
+    "images": [
+      "https://images.craigslist.org/00f0f_cxOeJHhZVfE_0CI0t2_600x450.jpg",
+      "https://images.craigslist.org/00l0l_eJ6ndNMA8fs_05r07g_600x450.jpg",
+      "https://images.craigslist.org/00k0k_cYzjfwbv1XT_09G07g_600x450.jpg",
+      "https://images.craigslist.org/00909_2fkOW9sSEuV_09G07g_600x450.jpg",
+      "https://images.craigslist.org/00U0U_2xNyObdubFU_09G07g_600x450.jpg",
+      "https://images.craigslist.org/00I0I_gznORDhfmvU_0CI0t2_600x450.jpg",
+      "https://images.craigslist.org/01313_7HkCf4406NZ_0CI0t2_600x450.jpg",
+      "https://images.craigslist.org/00N0N_apfqsKW8Nq7_0CI0t2_600x450.jpg"
+    ],
+    "description": "Looking for a roommate to share a single house with working professional females. Single house has 4 bedrooms, 2 full baths, living room, dinning room, sun room, front porch and kitchen. Walk to T station (either North Quincy or Wollaston) within 5 minutes. Free on street parking or driveway parking. Walk to Stop and Shop, 99 restaurant, Marshall, Dunkin Donut....etc. WI FI internet is available. Washer and dryer at basement (no coin needed). First month, last month and security deposit upon move-in. ALL utilities are equally shared with other tenants. No pet Email me if interested",
+    "has_broker_fee": null,
+    "fee_badge": "Fee Unspecified",
+    "fee_details": "Contact lister for fee status"
+  },
+  {
+    "id": "cl-roo-ySWdadzd99JmWEjp",
+    "source": "craigslist",
+    "source_label": "Craigslist",
+    "title": "LUXURY MODERN BEDROOM WITH ENSUITE & STUNNING BOSTON SEAPORT VIEWS",
+    "price": 650,
+    "neighborhood": "Boston",
+    "url": "https://www.craigslist.org/view/d/boston-luxury-modern-bedroom-with/3spnoGySWdadzd99JmWEjp",
+    "lat": 42.3489011666802,
+    "lng": -71.0465007399831,
+    "bedrooms": 1,
+    "bathrooms": 2.0,
+    "rental_type": "room",
+    "rental_type_label": "Single Room",
+    "sqft": 1200,
+    "address": "Boston",
+    "availability": "Contact Lister",
+    "images": [
+      "https://images.craigslist.org/00T0T_1yX347bw8og_0es08g_600x450.jpg"
+    ],
+    "description": "Beautiful upscale modern bedroom with ensuite. Closet space and cabinet space. Ensuite has a modern tiled shower. Large floor to ceiling windows with beautiful views of Boston Seaport. Living room and kitchen area are nicely decorated with views of the water and seaport sky scape. Building has lots of amenities including quiet workspace, gym, wading pool, game room, creative workspace and movie theater. Building is secure with a front desk host and keyed elevator entry. Steps away from restaurants and shops.",
+    "has_broker_fee": null,
+    "fee_badge": "Fee Unspecified",
+    "fee_details": "Contact lister for fee status"
+  },
+  {
+    "id": "cl-roo-UfGUahFF1k9CDXFs",
+    "source": "craigslist",
+    "source_label": "Craigslist",
+    "title": "Private Room in an XL 4 bed 2 bath with Huge kitchen~LAUNDRY",
+    "price": 750,
+    "neighborhood": "Waltham",
+    "url": "https://www.craigslist.org/view/d/waltham-private-room-in-an-xl-bed-bath/1tc2k6UfGUahFF1k9CDXFs",
+    "lat": 42.3986006717428,
+    "lng": -71.2451022357096,
+    "bedrooms": 4,
+    "bathrooms": 2.0,
+    "rental_type": "room",
+    "rental_type_label": "Single Room",
+    "sqft": null,
+    "address": "Waltham",
+    "availability": "Available Now",
+    "images": [
+      "https://images.craigslist.org/00101_dkR5wgGzytR_0CI0t2_600x450.jpg",
+      "https://images.craigslist.org/00S0S_lmoZ1IRBfOI_0x20oM_600x450.jpg",
+      "https://images.craigslist.org/01313_92IoO4987m5_0x20oM_600x450.jpg",
+      "https://images.craigslist.org/00g0g_iDmcEYW3dcT_0x20oM_600x450.jpg",
+      "https://images.craigslist.org/00T0T_VAGswCwLs_0x20oM_600x450.jpg",
+      "https://images.craigslist.org/00a0a_497YjGNKkPj_0x20oM_600x450.jpg",
+      "https://images.craigslist.org/00J0J_6sQu4Ku5rE7_0oM0x2_600x450.jpg"
+    ],
+    "description": "PROPERTY INFO ID: 448349529 Rent: $850 / Month Beds: 4 Bath: 2 Available Date: 10/01/2026 Pet: No Pets Parking:: no parking Private bedroom in a 4 bed 2 bath Laundry on site Easy commutes to 90/95/128/16/20/30/60/9 and Newtonville, Harvard Square, Boston University, MIT, West Newton, Chestnut Hill, Auburndale, Cambridge, Watertown Square, Waltham, Belmont, Arlington, Wellesley, Needham, Brookline, Harvard, MIT, Boston College, Back Bay, Copley, Allston, Brighton, Oak Square, etc FEATURES Carpet gas heat Enclosed sunroom Laundry on site Greg Herot show contact info Club Realty",
+    "has_broker_fee": null,
+    "fee_badge": "Fee Unspecified",
+    "fee_details": "Contact lister for fee status"
+  },
+  {
+    "id": "cl-roo-DErPeuZtt2GvSLNi",
+    "source": "craigslist",
+    "source_label": "Craigslist",
+    "title": "Move-In Ready Furnished Room \u2013 $895/mo \u2013 All Utilities Included \ud83c\udfe1",
+    "price": 895,
+    "neighborhood": "Lynn, Ma",
+    "url": "https://www.craigslist.org/view/d/lynn-move-in-ready-furnished-room-895/w8sA7ADErPeuZtt2GvSLNi",
+    "lat": 42.4611991756464,
+    "lng": -70.9466977946124,
+    "bedrooms": 1,
+    "bathrooms": 1,
+    "rental_type": "room",
+    "rental_type_label": "Single Room",
+    "sqft": null,
+    "address": "Lynn, Ma",
+    "availability": "Contact Lister",
+    "images": [
+      "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80"
+    ],
+    "description": "LYNN / BOSTON - LOW MOVE IN COSTS! WHY PAY HIGHER RENT FOR FULL SERVICE BUILDING AMENITIES YOU WILL NEVER USE?! NOW LEASING THE AREAS NEWEST LUXURY DEVELOPMENT! NO BROKER FEE! BRAND NEW FULLY FURNISHED ROOMS - PRIVATE PARKING SPOT AVAILABLE! ALL UTILITIES INCLUDED- HEAT, AIR CONDITIONING , HOT WATER AND ELECTRIC INCLUDED. WIFI READY! NO PETS AND NO SMOKING. BRAND NEW SHARED FULL AND HALF BATHROOMS WITH OVERSIZED FULLY TILED SHOWERS READY FOR USE. NEWLY ADDED COMMON KITCHENS WITH CUSTOM CABINETS AND GRANITE COUNTERTOPS, STAINLESS APPLIANCES WITH MICROWAVES. BEDS , MATTRESSES AND LINENS PROVIDED...",
+    "has_broker_fee": false,
+    "fee_badge": "No Broker Fee",
+    "fee_details": "Owner pays fee or no broker fee required"
+  },
+  {
     "id": "cl-98LVmSHUAa2c888S",
     "source": "craigslist",
     "source_label": "Craigslist",
@@ -30,6 +232,99 @@
     "fee_details": "Owner pays fee or no broker fee required"
   },
   {
+    "id": "cl-roo-dh1aRXips7L4MQfH",
+    "source": "craigslist",
+    "source_label": "Craigslist",
+    "title": "**No Fee/Beautiful Bedroom in 3 BR/1BA.** Avail Now",
+    "price": 900,
+    "neighborhood": "Medford/Somerville/Cambridge",
+    "url": "https://www.craigslist.org/view/d/medford-no-fee-beautiful-bedroom-in-br/wMR6mHdh1aRXips7L4MQfH",
+    "lat": 42.4172985764281,
+    "lng": -71.1087033300503,
+    "bedrooms": 3,
+    "bathrooms": 1.0,
+    "rental_type": "room",
+    "rental_type_label": "Single Room",
+    "sqft": null,
+    "address": "Medford/Somerville/Cambridge",
+    "availability": "Contact Lister",
+    "images": [
+      "https://images.craigslist.org/00J0J_3azIkovC0oq_08S06A_600x450.jpg",
+      "https://images.craigslist.org/00J0J_3i2IQcCKfmH_0co09c_600x450.jpg",
+      "https://images.craigslist.org/00606_bZvo1oqEOAT_0co09c_600x450.jpg",
+      "https://images.craigslist.org/00K0K_3V47Br9xiYj_0co09c_600x450.jpg",
+      "https://images.craigslist.org/00707_csFPSZeBgeD_08g06s_600x450.jpg",
+      "https://images.craigslist.org/01717_dcdrQKW3UIb_08g06s_600x450.jpg",
+      "https://images.craigslist.org/00P0P_6Yrgcg2180h_08g06s_600x450.jpg",
+      "https://images.craigslist.org/00R0R_gGGi27fAALw_08g06s_600x450.jpg"
+    ],
+    "description": "Gorgeous bedroom w/in walking distance to Starbucks, Whole Foods, Tufts, Packies, public transportation and proximity to Commuter Rail with only one stop to Boston's North Station. Living room, dining room, excellent kitchen with granite counter tops, stainless steel appliances, and bonus sun room. Hardwood floors and with 20 windows to provide excellent sunlight. Relax in the cool breeze on the balcony or visit one of the nearby gyms. Easy access to route 2/route 16 and I-93. Washer and dryer in building. With 2 dedicated off-street parking spots (one is a carport) and basement storage space ...",
+    "has_broker_fee": false,
+    "fee_badge": "No Broker Fee",
+    "fee_details": "Owner pays fee or no broker fee required"
+  },
+  {
+    "id": "cl-roo-HoQbUhPinmHte9aX",
+    "source": "craigslist",
+    "source_label": "Craigslist",
+    "title": "Private Room w Private Bathroom a 4 bed 2 bath w Huge kitchen~LAUNDRY",
+    "price": 950,
+    "neighborhood": "Waltham",
+    "url": "https://www.craigslist.org/view/d/waltham-private-room-private-bathroom-4/iuLXy7HoQbUhPinmHte9aX",
+    "lat": 42.3653994863901,
+    "lng": -71.23170132584,
+    "bedrooms": 4,
+    "bathrooms": 2.0,
+    "rental_type": "room",
+    "rental_type_label": "Single Room",
+    "sqft": null,
+    "address": "Waltham",
+    "availability": "Available Now",
+    "images": [
+      "https://images.craigslist.org/00j0j_2hlyM4ZdJsY_0co0gw_600x450.jpg",
+      "https://images.craigslist.org/00O0O_rb9oMMIIqn_0CI0t2_600x450.jpg",
+      "https://images.craigslist.org/00e0e_bw8QHSVcmAc_0CI0t2_600x450.jpg",
+      "https://images.craigslist.org/00i0i_bw5kstHHayQ_0CI0t2_600x450.jpg",
+      "https://images.craigslist.org/01313_3hLx3XJTn83_0CI0lM_600x450.jpg"
+    ],
+    "description": "Private bedroom with a private bathroom in an oversized 4 bed 2 bath on the second floor of a multi family. Laundry on site We are currently lining up roommates. The apartments is huge and has an eat in kitchen and an enclosed porch and large living room. It's currently being repainted in fall 2026. Located off Main st right near downtown Waltham and close to I-95 and local shops, and more. Easy commutes to 90/95/128/16/20/30/60/9 and Newtonville, Harvard Square, Boston University, MIT, West Newton, Chestnut Hill, Auburndale, Cambridge, Watertown Square, Waltham, Belmont, Arlington, Wellesley,...",
+    "has_broker_fee": true,
+    "fee_badge": "Broker Fee",
+    "fee_details": "Broker fee mentioned ('broker fee')"
+  },
+  {
+    "id": "cl-roo-mQmf3HFVUszZuatB",
+    "source": "craigslist",
+    "source_label": "Craigslist",
+    "title": "- One Room Available in 4 Bed/2 Bath Apartment",
+    "price": 950,
+    "neighborhood": "East Somerville",
+    "url": "https://www.craigslist.org/view/d/somerville-one-room-available-in-bed/t8DQ5JmQmf3HFVUszZuatB",
+    "lat": 42.3907018755795,
+    "lng": -71.0928982892725,
+    "bedrooms": 1,
+    "bathrooms": 1,
+    "rental_type": "room",
+    "rental_type_label": "Single Room",
+    "sqft": null,
+    "address": "East Somerville",
+    "availability": "Available Dec 1",
+    "images": [
+      "https://images.craigslist.org/00808_fJlcKpGWwQJ_0pO0jm_600x450.jpg",
+      "https://images.craigslist.org/01111_5ET2C78m7LS_0pO0jm_600x450.jpg",
+      "https://images.craigslist.org/00808_3CKrEeYmBW5_0lM0t2_600x450.jpg",
+      "https://images.craigslist.org/00e0e_aBX16g6fZrP_0co0gw_600x450.jpg",
+      "https://images.craigslist.org/00b0b_7cxIwT7YPQP_0co0gw_600x450.jpg",
+      "https://images.craigslist.org/00V0V_6RAd16v4NEM_0uY0hq_600x450.jpg",
+      "https://images.craigslist.org/00V0V_8yM7nipgItc_0co0gw_600x450.jpg",
+      "https://images.craigslist.org/00404_CTSpgBd2n6_0co0gw_600x450.jpg"
+    ],
+    "description": "Hello! We are looking for one (1) roommate to join us in our sunny and spacious four bedroom/two bathroom apartment in East Somerville by December 1st! The room (picture included) will not be furnished. It is located on the top floor of a three floor building and is spacious despite being a converted attic space. There is a closet in the room that goes very deep into the wall it is set into, so there is that extra space as well. The rest of the apartment has been kept pretty modern, with a dishwasher and garbage disposal in the kitchen on top of the usual fridge and stove top oven. We have our...",
+    "has_broker_fee": null,
+    "fee_badge": "Fee Unspecified",
+    "fee_details": "Contact lister for fee status"
+  },
+  {
     "id": "cl-esWgqpVkvLQsFeSF",
     "source": "craigslist",
     "source_label": "Craigslist",
@@ -44,6 +339,8 @@
     "sqft": 624,
     "address": "Jamaica Plain",
     "availability": "Contact Lister",
+    "rental_type": "entire_unit",
+    "rental_type_label": "Entire Place",
     "images": [
       "https://images.craigslist.org/00o0o_dbBzsanEenk_0fn08R_600x450.jpg",
       "https://images.craigslist.org/00H0H_6KCuEPD9i7j_0t20CI_600x450.jpg",
@@ -55,6 +352,300 @@
       "https://images.craigslist.org/00M0M_desFMuoEMhX_0t20CI_600x450.jpg"
     ],
     "description": "\ud83c\udfe1 NEWLY RENOVATED 1-BEDROOM APARTMENT \u2014 JAMAICA PLAIN, MA \u2728 \ud83d\udcb0 Rent: $964/month \ud83d\udecf\ufe0f 1 Bedroom \ud83d\udca1 ALL UTILITIES INCLUDED \u2014 Heat, water, electricity &amp; trash \u26a0\ufe0f IMPORTANT ELIGIBILITY REQUIREMENTS Applicants must be 55 years of age or older. Household income requirements: \ud83d\udc64 1-Person Household: Annual income limit - $36,000 \ud83d\udc65 2-Person Household: Annual income limit - $41,150 \ud83d\udccc Income and other eligibility requirements apply. Please contact us for complete eligibility information. \u2728 Apartment Features Beautifully newly renovated apartment Bright, open layout Convenient on-site laundry Quiet, well-m...",
+    "has_broker_fee": null,
+    "fee_badge": "Fee Unspecified",
+    "fee_details": "Contact lister for fee status"
+  },
+  {
+    "id": "cl-roo-fP6bSVEoRMUufGCZ",
+    "source": "craigslist",
+    "source_label": "Craigslist",
+    "title": "Move-In Ready Furnished Room \u2013 $995/mo \u2013 All Utilities Included \ud83c\udfe1",
+    "price": 995,
+    "neighborhood": "Lynn, Ma",
+    "url": "https://www.craigslist.org/view/d/lynn-move-in-ready-furnished-room-995/8ak4G9fP6bSVEoRMUufGCZ",
+    "lat": 42.4611991756464,
+    "lng": -70.9466977946124,
+    "bedrooms": 1,
+    "bathrooms": 1,
+    "rental_type": "room",
+    "rental_type_label": "Single Room",
+    "sqft": null,
+    "address": "Lynn, Ma",
+    "availability": "Contact Lister",
+    "images": [
+      "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80"
+    ],
+    "description": "LYNN / BOSTON - LOW MOVE IN COSTS! WHY PAY HIGHER RENT FOR FULL SERVICE BUILDING AMENITIES YOU WILL NEVER USE?! NOW LEASING THE AREAS NEWEST LUXURY DEVELOPMENT! NO BROKER FEE! BRAND NEW FULLY FURNISHED ROOMS - PRIVATE PARKING SPOT AVAILABLE! ALL UTILITIES INCLUDED- HEAT, AIR CONDITIONING , HOT WATER AND ELECTRIC INCLUDED. WIFI READY! NO PETS AND NO SMOKING. BRAND NEW SHARED FULL AND HALF BATHROOMS WITH OVERSIZED FULLY TILED SHOWERS READY FOR USE. NEWLY ADDED COMMON KITCHENS WITH CUSTOM CABINETS AND GRANITE COUNTERTOPS, STAINLESS APPLIANCES WITH MICROWAVES. BEDS , MATTRESSES AND LINENS PROVIDED...",
+    "has_broker_fee": false,
+    "fee_badge": "No Broker Fee",
+    "fee_details": "Owner pays fee or no broker fee required"
+  },
+  {
+    "id": "cl-roo-ioTQpFD5RBRJQm5x",
+    "source": "craigslist",
+    "source_label": "Craigslist",
+    "title": "Room for rent",
+    "price": 1000,
+    "neighborhood": "Norwood",
+    "url": "https://www.craigslist.org/view/d/norwood-room-for-rent/mmdW7CioTQpFD5RBRJQm5x",
+    "lat": 42.1867999472905,
+    "lng": -71.2032986620213,
+    "bedrooms": 2,
+    "bathrooms": 1.0,
+    "rental_type": "room",
+    "rental_type_label": "Single Room",
+    "sqft": null,
+    "address": "Norwood",
+    "availability": "Contact Lister",
+    "images": [
+      "https://images.craigslist.org/01616_crl93GxquYN_0t20CI_600x450.jpg",
+      "https://images.craigslist.org/00O0O_9iqoNtw2shp_0t20CI_600x450.jpg",
+      "https://images.craigslist.org/00G0G_3NezhF34KOW_0do0t2_600x450.jpg",
+      "https://images.craigslist.org/00b0b_4eV6E1XzSNZ_0j10pt_600x450.jpg"
+    ],
+    "description": "This is a two bedroom apartment in Norwood, but am looking for a room mate to have one room to herself with shared bathroom and kitchen.",
+    "has_broker_fee": null,
+    "fee_badge": "Fee Unspecified",
+    "fee_details": "Contact lister for fee status"
+  },
+  {
+    "id": "cl-roo-uSDDYMdKEuK8sQwx",
+    "source": "craigslist",
+    "source_label": "Craigslist",
+    "title": "Near Shops, Boston College & 3 Green-line T to BU, NEU & Downtown",
+    "price": 1075,
+    "neighborhood": "Brighton - Cleveland Circle",
+    "url": "https://www.craigslist.org/view/d/brighton-near-shops-boston-college/fVgGK7uSDDYMdKEuK8sQwx",
+    "lat": 42.3396221151886,
+    "lng": -71.154526775629,
+    "bedrooms": 1,
+    "bathrooms": 1,
+    "rental_type": "room",
+    "rental_type_label": "Single Room",
+    "sqft": null,
+    "address": "Brighton - Cleveland Circle",
+    "availability": "Available Now",
+    "images": [
+      "https://images.craigslist.org/00b0b_3HJ5Z4vomcz_0rw0kE_600x450.jpg",
+      "https://images.craigslist.org/01414_cBgbHUN9Ie_0ne0hq_600x450.jpg",
+      "https://images.craigslist.org/00B0B_hZFRrnqKm47_0rw0kE_600x450.jpg",
+      "https://images.craigslist.org/00O0O_g9SX5DlAdhJ_0rw0kE_600x450.jpg",
+      "https://images.craigslist.org/00p0p_2W12puw7dWO_0rw0kE_600x450.jpg",
+      "https://images.craigslist.org/01616_h7CQJ2gvrgF_0ne0hq_600x450.jpg",
+      "https://images.craigslist.org/00f0f_2jOQpyZQmcz_0ne0hq_600x450.jpg",
+      "https://images.craigslist.org/00C0C_65dQOdXYMEs_0rw0kE_600x450.jpg"
+    ],
+    "description": "A nice good-sized room (~145sf) with 2 big windows and a deep closet available now. In a nicely renovated 3bed/1bath apartment in an elevator building. Living area open to updated kitchen with solid counter, dishwasher and disposal. A full bathroom with shower bathtub. Gleaming hardwood floors, high ceilings, nicely painted walls and newer insulated windows throughout the entire apartment. Coin-laundry on the 1st floor of the same building; Water. heat and hot water are all included in the rent. Roommates together pay electric, gas for stove and Internet. Prime location in popular Cleveland Ci...",
+    "has_broker_fee": null,
+    "fee_badge": "Fee Unspecified",
+    "fee_details": "Contact lister for fee status"
+  },
+  {
+    "id": "cl-roo-j9KQdsv1D7hDxtb4",
+    "source": "craigslist",
+    "source_label": "Craigslist",
+    "title": "Rooms for rent in Nahant",
+    "price": 1100,
+    "neighborhood": "north shore",
+    "url": "https://www.craigslist.org/view/d/nahant-rooms-for-rent-in-nahant/a9E7eJj9KQdsv1D7hDxtb4",
+    "lat": 42.4363173374786,
+    "lng": -70.9374365048124,
+    "bedrooms": 1,
+    "bathrooms": 3.0,
+    "rental_type": "room",
+    "rental_type_label": "Single Room",
+    "sqft": null,
+    "address": "north shore",
+    "availability": "Contact Lister",
+    "images": [
+      "https://images.craigslist.org/00i0i_eMt5DzsTQ2T_0t20CI_600x450.jpg",
+      "https://images.craigslist.org/01111_6vr8Taqh1jM_0t20CI_600x450.jpg",
+      "https://images.craigslist.org/00c0c_jJSdHtIzllR_0t20CI_600x450.jpg",
+      "https://images.craigslist.org/00a0a_9Q5YqGGVIdg_0t20CI_600x450.jpg",
+      "https://images.craigslist.org/00h0h_5C65yD6VRZ8_0t20CI_600x450.jpg",
+      "https://images.craigslist.org/00H0H_8o4z1z0bVYk_0t20CI_600x450.jpg",
+      "https://images.craigslist.org/00V0V_fPQznpAbrQJ_0CI0t2_600x450.jpg"
+    ],
+    "description": "Quiet community living in Nahant. Single occupancy private bedroom. Several Shared baths and kitchen area. No pets. Laundry in building. Rent and includes utilities and one off street parking spot.",
+    "has_broker_fee": null,
+    "fee_badge": "Fee Unspecified",
+    "fee_details": "Contact lister for fee status"
+  },
+  {
+    "id": "cl-roo-MN2H1pPrTm5knkE6",
+    "source": "craigslist",
+    "source_label": "Craigslist",
+    "title": "Private Bedroom in a Multi Family in Brighton w Parking & laundry",
+    "price": 1100,
+    "neighborhood": "Brighton",
+    "url": "https://www.craigslist.org/view/d/brighton-private-bedroom-in-multi/sNxAKaMN2H1pPrTm5knkE6",
+    "lat": 42.3478010877136,
+    "lng": -71.1566026017207,
+    "bedrooms": 3,
+    "bathrooms": 1.0,
+    "rental_type": "room",
+    "rental_type_label": "Single Room",
+    "sqft": null,
+    "address": "Brighton",
+    "availability": "Available Now",
+    "images": [
+      "https://images.craigslist.org/01212_gcFGqUZsHkW_0qY0fb_600x450.jpg",
+      "https://images.craigslist.org/00R0R_jVjdJ4pz291_0x20iA_600x450.jpg",
+      "https://images.craigslist.org/00p0p_FUvLt9HLzk_0qY0fa_600x450.jpg",
+      "https://images.craigslist.org/00F0F_5k5SOghnfGS_0qY0fb_600x450.jpg",
+      "https://images.craigslist.org/00g0g_HRaydZFKxZ_0qY0fb_600x450.jpg",
+      "https://images.craigslist.org/00G0G_bel4aKnIkXW_0qY0fb_600x450.jpg",
+      "https://images.craigslist.org/01313_4rX72Rxeroj_0qY0fb_600x450.jpg",
+      "https://images.craigslist.org/00x0x_hWePVdVID0W_0qY0fb_600x450.jpg"
+    ],
+    "description": "ID: 448634606 Rent: $1,100 / Month Beds: 3 Bath: 1 Available Date: 10/01/2026 Parking:: off-street parking dishwasher driveway parking 4 small cars can fit no laundry yet but might add it no pets front &amp; back porch &amp; yard Greg Herot show contact info Club Realty",
+    "has_broker_fee": null,
+    "fee_badge": "Fee Unspecified",
+    "fee_details": "Contact lister for fee status"
+  },
+  {
+    "id": "cl-roo-fa9ix1Gg8RTb2bGw",
+    "source": "craigslist",
+    "source_label": "Craigslist",
+    "title": "FURNISHED ROOM FOR RENT ASAP\ud83c\udfe1 utilities included",
+    "price": 1100,
+    "neighborhood": "Roslindale",
+    "url": "https://www.craigslist.org/view/d/roslindale-furnished-room-for-rent-asap/qS5p8Xfa9ix1Gg8RTb2bGw",
+    "lat": 42.2836005938149,
+    "lng": -71.1295016980124,
+    "bedrooms": 1,
+    "bathrooms": 1,
+    "rental_type": "room",
+    "rental_type_label": "Single Room",
+    "sqft": null,
+    "address": "Roslindale",
+    "availability": "Available Now",
+    "images": [
+      "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80"
+    ],
+    "description": "Lovely furnished room for rent in Roslindale available now! I am looking for a professional man or student roommate (clean, quiet roommate to share the space) -1 year lease ( could be less after discuss) - All utilities included( WiFi included) -A/C and Heat in the room - Laundry room in the apartment - No smoking, no pets -No couples - Good credit required ( or at least not bad credit) First and Last Month required. No broker fee. On-street parking available If you are interest you can text me to show contact info Carmen.",
+    "has_broker_fee": false,
+    "fee_badge": "No Broker Fee",
+    "fee_details": "Owner pays fee or no broker fee required"
+  },
+  {
+    "id": "cl-roo-NfvEth4QrCxJQsjp",
+    "source": "craigslist",
+    "source_label": "Craigslist",
+    "title": "Private room available!",
+    "price": 1150,
+    "neighborhood": "chelsea",
+    "url": "https://www.craigslist.org/view/d/chelsea-private-room-available/nomczjNfvEth4QrCxJQsjp",
+    "lat": 42.3898275419842,
+    "lng": -71.0249718508322,
+    "bedrooms": 3,
+    "bathrooms": 2.0,
+    "rental_type": "room",
+    "rental_type_label": "Single Room",
+    "sqft": null,
+    "address": "chelsea",
+    "availability": "Contact Lister",
+    "images": [
+      "https://images.craigslist.org/01212_f4uSqN7y4Dh_0t20CI_600x450.jpg",
+      "https://images.craigslist.org/00j0j_5bdFWZAEEYo_0t20CI_600x450.jpg",
+      "https://images.craigslist.org/00G0G_beAtYRZj6mj_0fu0ae_600x450.jpg",
+      "https://images.craigslist.org/00909_6kzNWIxPkYz_0kO0fP_600x450.jpg",
+      "https://images.craigslist.org/00l0l_5IYM1mcENXI_0kO0pZ_600x450.jpg",
+      "https://images.craigslist.org/00202_ihj8EYRAvcz_0kO0fb_600x450.jpg",
+      "https://images.craigslist.org/00S0S_aX9MUPi8Yng_0kO0f9_600x450.jpg",
+      "https://images.craigslist.org/00r0r_2CcsHRzNgEp_0kO0iJ_600x450.jpg"
+    ],
+    "description": "Please include a brief introduction about yourself if you are interested in the room and want to schedule a tour! January 1st MOVE IN I'm looking for a clean, quiet person to rent a private FURNISHED room in a 3b2ba condo in Chelsea. $1150 with PARKING SPOT but not including wifi+utilities It is a safe, gated condo with visitor parking spots, elevators, gym and an outdoor swimming pool!! - Washer/dryers are IN UNIT. -Location is a 2 minute walk to the SILVER LINE, 10 minute walk to the 111 BUS into Haymarket, 1 stop away from BLUE, Green and - Orange Lines. *Other INFO: -There will be 2 other ...",
+    "has_broker_fee": null,
+    "fee_badge": "Fee Unspecified",
+    "fee_details": "Contact lister for fee status"
+  },
+  {
+    "id": "cl-roo-jYyXb38UUPhsGTRN",
+    "source": "craigslist",
+    "source_label": "Craigslist",
+    "title": "Master-Suite nr BC Law, Boston College, Bus 52 & D-line T, Free WiFi",
+    "price": 1200,
+    "neighborhood": "Newton",
+    "url": "https://www.craigslist.org/view/d/nonantum-master-suite-nr-bc-law-boston/keH8TnjYyXb38UUPhsGTRN",
+    "lat": 42.3351753897408,
+    "lng": -71.1873595491194,
+    "bedrooms": 1,
+    "bathrooms": 1,
+    "rental_type": "room",
+    "rental_type_label": "Single Room",
+    "sqft": null,
+    "address": "Newton",
+    "availability": "Available Dec 1",
+    "images": [
+      "https://images.craigslist.org/01414_2ChDkJxzSPV_0rw0kE_600x450.jpg",
+      "https://images.craigslist.org/00404_fp2hkUlx5uA_0rw0kE_600x450.jpg",
+      "https://images.craigslist.org/01111_4H6A5OOlTv9_0rw0kE_600x450.jpg",
+      "https://images.craigslist.org/00c0c_2QE6uwGoYfQ_0rw0kE_600x450.jpg",
+      "https://images.craigslist.org/00606_cvxeNfUsZ5A_0rw0kE_600x450.jpg",
+      "https://images.craigslist.org/00M0M_7L24NHX0YHa_0rw0kE_600x450.jpg",
+      "https://images.craigslist.org/00O0O_hjPMM6hW1WT_0lA0gc_600x450.jpg",
+      "https://images.craigslist.org/00101_lFOTM0dZayI_0ne0hq_600x450.jpg"
+    ],
+    "description": "A master suite with a private en-suite full bathroom and window seat available Dec 1. This suite has a good size bedroom plus a nicely tiled private bathroom with a full size bathtub &amp; shower. In a renovated large 4bed/2bath apartment located at a small road off Commonwealth Ave in Newton Center near Chestnut Hill. 0.7 mile to BC Law-Newton Campus, 0.8 mile to the Main Campus of Boston College at Chestnut Hill. 0.3 mile to 52 Bus stop, 0.5 mile (~12min walk) to Green/D-line in Newton Center. Then 15min ride on D-line train to Longwood Medical, 30min ride to Downtown Boston. Easy access to ...",
+    "has_broker_fee": null,
+    "fee_badge": "Fee Unspecified",
+    "fee_details": "Contact lister for fee status"
+  },
+  {
+    "id": "cl-roo-b5G9q6dgazLXwcCM",
+    "source": "craigslist",
+    "source_label": "Craigslist",
+    "title": "Private Bedroom in Renovated 5 bed 2 bath in Brighton! NO FEE",
+    "price": 1200,
+    "neighborhood": "Brighton",
+    "url": "https://www.craigslist.org/view/d/brighton-private-bedroom-in-renovated/4Pxd8mb5G9q6dgazLXwcCM",
+    "lat": 42.3478010877136,
+    "lng": -71.1566026017207,
+    "bedrooms": 5,
+    "bathrooms": 2.0,
+    "rental_type": "room",
+    "rental_type_label": "Single Room",
+    "sqft": null,
+    "address": "Brighton",
+    "availability": "Available Now",
+    "images": [
+      "https://images.craigslist.org/00Z0Z_ca1hWn8ls4N_0hw0nm_600x450.jpg",
+      "https://images.craigslist.org/00A0A_lzstS0h8Bf0_0CI0pO_600x450.jpg",
+      "https://images.craigslist.org/00M0M_iNizmN4tAnp_0aZ0dD_600x450.jpg",
+      "https://images.craigslist.org/00u0u_locLvZze3GK_0CI0pO_600x450.jpg",
+      "https://images.craigslist.org/00606_euRpCAykBgS_0CI0pO_600x450.jpg",
+      "https://images.craigslist.org/00l0l_5w5br6zZZ9A_0CI0pO_600x450.jpg",
+      "https://images.craigslist.org/00S0S_hazgWlbWVav_0CI0pO_600x450.jpg",
+      "https://images.craigslist.org/00M0M_jJX1AyhUglk_0CI0pO_600x450.jpg"
+    ],
+    "description": "PROPERTY INFO ID: 286353472 Rent: $1,200 / Month Beds: 5 Bath: 2 Available Date: 10/15/2026 Pet: No Pets Parking:: off-street parking Don't miss out on this 5 bedroom, 2 bathroom townhouse style unit in Oak Square. Unit features quartz countertops, stainless steel appliances, gleaming hardwood floors, large living space, evenly sized bedrooms, in unit laundry, amazing natural light! Other perks include a full tandem driveway for 3 vehicles, a rear deck and patio, along with storage in the basement ! Greg Herot show contact info Club Realty",
+    "has_broker_fee": false,
+    "fee_badge": "No Broker Fee",
+    "fee_details": "Owner pays fee or no broker fee required"
+  },
+  {
+    "id": "cl-roo-j1JGVUkuDfRaHKzH",
+    "source": "craigslist",
+    "source_label": "Craigslist",
+    "title": "AVAILABLE ASAP Large Bedroom near Tufts and Davis Square $1,280",
+    "price": 1280,
+    "neighborhood": "Davis Square",
+    "url": "https://www.craigslist.org/view/d/somerville-available-asap-large-bedroom/7rSoLdj1JGVUkuDfRaHKzH",
+    "lat": 42.4003012104786,
+    "lng": -71.1220973644264,
+    "bedrooms": 1,
+    "bathrooms": 1,
+    "rental_type": "room",
+    "rental_type_label": "Single Room",
+    "sqft": null,
+    "address": "Davis Square",
+    "availability": "Contact Lister",
+    "images": [
+      "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80"
+    ],
+    "description": "My roommate and I are looking for another roommate to join our three bed apartment right outside of Davis Square! There is one bathroom and an open concept living room/kitchen (with a dishwasher!) I love this apartment and have been here for nine years. There is also a huge patio in the backyard but because there are so many great parks nearby, we don\u2019t use it all too often. The front porch also has a seating area. This room is the largest of the three with three large bay windows. There is also a desk from the previous tenant you are free to take. First and security deposit will be due up fro...",
     "has_broker_fee": null,
     "fee_badge": "Fee Unspecified",
     "fee_details": "Contact lister for fee status"
@@ -74,6 +665,8 @@
     "sqft": null,
     "address": "boston/cambridge/brookline",
     "availability": "Available Jan 1",
+    "rental_type": "room",
+    "rental_type_label": "Single Room",
     "images": [
       "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80"
     ],
@@ -111,6 +704,38 @@
     "address": "Brockton"
   },
   {
+    "id": "cl-roo-qxea53JE6NjEAna5",
+    "source": "craigslist",
+    "source_label": "Craigslist",
+    "title": "BEAUTIFUL, OCEANFRONT, PRIVATE BATH, LOGAN AIRPORT, PARKING, LAUNDRY",
+    "price": 1300,
+    "neighborhood": "East of Boston",
+    "url": "https://www.craigslist.org/view/d/revere-beautiful-oceanfront-private/jQG6AHqxea53JE6NjEAna5",
+    "lat": 42.4138012420468,
+    "lng": -71.0051985043655,
+    "bedrooms": 1,
+    "bathrooms": 1.0,
+    "rental_type": "room",
+    "rental_type_label": "Single Room",
+    "sqft": null,
+    "address": "East of Boston",
+    "availability": "Available Now",
+    "images": [
+      "https://images.craigslist.org/00o0o_dKAuvXh6f9e_0iA0dW_600x450.jpg",
+      "https://images.craigslist.org/00f0f_k5qW4EGKQ7G_0hl0cW_600x450.jpg",
+      "https://images.craigslist.org/00808_71nmeC7Zotd_0ak07K_600x450.jpg",
+      "https://images.craigslist.org/00l0l_ksf0sGgRxpY_0ak07K_600x450.jpg",
+      "https://images.craigslist.org/00y0y_bPEktivSlce_0iA0dW_600x450.jpg",
+      "https://images.craigslist.org/00x0x_97DCTCZx0Y7_0iA0dW_600x450.jpg",
+      "https://images.craigslist.org/00404_4uC8iFlYtUb_0iA0dW_600x450.jpg",
+      "https://images.craigslist.org/00X0X_d2LzA7rNbp7_0CI0lN_600x450.jpg"
+    ],
+    "description": "Beautiful Ocean View Room for rent with private bath and private living level. This one features a private bath, stainless steel kitchen, laundry, off street parking, and some meals are included. Room is 14x14 with private balcony. Perfect living arrangement for the frequent traveler or anyone who enjoys living by the ocean. Text show contact info for details",
+    "has_broker_fee": null,
+    "fee_badge": "Fee Unspecified",
+    "fee_details": "Contact lister for fee status"
+  },
+  {
     "id": "fb-boston-01",
     "source": "facebook",
     "source_label": "FB Marketplace",
@@ -124,6 +749,8 @@
     "bathrooms": 1,
     "sqft": 350,
     "availability": "Available Now",
+    "rental_type": "room",
+    "rental_type_label": "Single Room",
     "images": [
       "https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?auto=format&fit=crop&w=800&q=80"
     ],
@@ -132,6 +759,115 @@
     "fee_badge": "No Broker Fee",
     "fee_details": "Sublet direct from current roommate. Zero fees or application costs.",
     "address": "Mass Ave & Garden St, Cambridge, MA 02138"
+  },
+  {
+    "id": "cl-roo-kGVg88NHhmkzQYA3",
+    "source": "craigslist",
+    "source_label": "Craigslist",
+    "title": "A furnished room in a new house",
+    "price": 1400,
+    "neighborhood": "Waltham",
+    "url": "https://www.craigslist.org/view/d/waltham-furnished-room-in-new-house/kXokrpkGVg88NHhmkzQYA3",
+    "lat": 42.3653994863901,
+    "lng": -71.23170132584,
+    "bedrooms": 1,
+    "bathrooms": 1.5,
+    "rental_type": "room",
+    "rental_type_label": "Single Room",
+    "sqft": null,
+    "address": "Waltham",
+    "availability": "Available Now",
+    "images": [
+      "https://images.craigslist.org/00606_64UZrE7JG7l_0jm0ew_600x450.jpg",
+      "https://images.craigslist.org/00000_40ljykxQTwi_08v06l_600x450.jpg",
+      "https://images.craigslist.org/00101_cmSbnCHjo5u_08x06Z_600x450.jpg",
+      "https://images.craigslist.org/00u0u_ge33GFRptuh_06d03N_600x450.jpg"
+    ],
+    "description": "A furnished room in my new house located in the heart of Waltham is for rent, close to highways 90 and 95. Great Location with a 5-minute walk to well-known Moody St. (bars, shops, restaurants, and other stores). Walk to buses 170, 505, 553, and 554. Close to Brandeis and Bentley University. A big bedroom has a closet and a shared full bathroom with another tenant. It has a queen-size bed, a study desk, a wardrobe, and 2 nightstands. On-premises Laundry (washer/dryer) facility, dishwasher, double-door fridge, gas appliances, and microwave. Large kitchen and living room. \u2022 A/C \u2022 Private parking...",
+    "has_broker_fee": null,
+    "fee_badge": "Fee Unspecified",
+    "fee_details": "Contact lister for fee status"
+  },
+  {
+    "id": "cl-roo-BAJkrZVoXKqAK4XA",
+    "source": "craigslist",
+    "source_label": "Craigslist",
+    "title": "ROOM MATE WANTED ~ 5 Rooms, Sunny 2nd Floor, in Quiet Neighborhood",
+    "price": 1400,
+    "neighborhood": "WEST ROXBURY",
+    "url": "https://www.craigslist.org/view/d/west-roxbury-room-mate-wanted-rooms/dBTMf6BAJkrZVoXKqAK4XA",
+    "lat": 42.2787000857934,
+    "lng": -71.1588984436056,
+    "bedrooms": 1,
+    "bathrooms": 1,
+    "rental_type": "room",
+    "rental_type_label": "Single Room",
+    "sqft": null,
+    "address": "WEST ROXBURY",
+    "availability": "Contact Lister",
+    "images": [
+      "https://images.craigslist.org/00505_63qhAZPOmsl_0Ba0rS_600x450.jpg",
+      "https://images.craigslist.org/01111_l6hCZchF60v_0Ba0rS_600x450.jpg",
+      "https://images.craigslist.org/00202_f59gbAHvNIa_0Ba0rS_600x450.jpg",
+      "https://images.craigslist.org/00i0i_jGSR7I8qMG_0Ba0rS_600x450.jpg",
+      "https://images.craigslist.org/00A0A_iujuOYWxK6Z_0Ba0rS_600x450.jpg",
+      "https://images.craigslist.org/00T0T_etaC1e0vyhC_0Ba0rS_600x450.jpg",
+      "https://images.craigslist.org/00303_jLR1Hh7VEfZ_0CI0t2_600x450.jpg"
+    ],
+    "description": "Room mate wanted to share a beautiful, sunny, 5 room, 2nd floor apartment of 2-family house located in a very quiet section of West Roxbury. Hardwood floors and natural woodwork throughout. Large living room, dining room, eat-in kitchen and plenty of cabinet space. Two bedrooms. One bath. Front and rear porches with a yard. Quiet West Roxbury neighborhood. Plenty of parking (corner lot). On bus line. Near commuter rail. Convenient to shopping, medical facilities, churches, parks, restaurants, etc. Only minutes from downtown Boston. Utilities not included. Gas heat and hot water. Cable ready. A...",
+    "has_broker_fee": null,
+    "fee_badge": "Fee Unspecified",
+    "fee_details": "Contact lister for fee status"
+  },
+  {
+    "id": "cl-roo-7twRsfj9XsrPSHpX",
+    "source": "craigslist",
+    "source_label": "Craigslist",
+    "title": "Walpole room for rent",
+    "price": 1500,
+    "neighborhood": "Walpole",
+    "url": "https://www.craigslist.org/view/d/walpole-walpole-room-for-rent/w3Ydhf7twRsfj9XsrPSHpX",
+    "lat": 42.1444016434109,
+    "lng": -71.2543979029773,
+    "bedrooms": 1,
+    "bathrooms": 1.0,
+    "rental_type": "room",
+    "rental_type_label": "Single Room",
+    "sqft": null,
+    "address": "Walpole",
+    "availability": "Available Now",
+    "images": [
+      "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80"
+    ],
+    "description": "female room mate Walpole room for rent private bath near center of town near all transportation off street parking call show contact info NO TEXT will be answered",
+    "has_broker_fee": null,
+    "fee_badge": "Fee Unspecified",
+    "fee_details": "Contact lister for fee status"
+  },
+  {
+    "id": "cl-roo-vdqFGgrRvG598odZ",
+    "source": "craigslist",
+    "source_label": "Craigslist",
+    "title": "Norwood room for rent",
+    "price": 1500,
+    "neighborhood": "Norwood",
+    "url": "https://www.craigslist.org/view/d/norwood-norwood-room-for-rent/1EXbrSvdqFGgrRvG598odZ",
+    "lat": 42.1867999472905,
+    "lng": -71.2032986620213,
+    "bedrooms": 1,
+    "bathrooms": 1.0,
+    "rental_type": "room",
+    "rental_type_label": "Single Room",
+    "sqft": null,
+    "address": "Norwood",
+    "availability": "Available Oct 29",
+    "images": [
+      "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80"
+    ],
+    "description": "room for rent private bath near Norwood Center near all transportation call show contact info NO text",
+    "has_broker_fee": null,
+    "fee_badge": "Fee Unspecified",
+    "fee_details": "Contact lister for fee status"
   },
   {
     "id": "cl-2EWcftqZ8nkrWR26",
@@ -148,6 +884,8 @@
     "sqft": null,
     "address": "boston/cambridge/brookline",
     "availability": "Available Nov 1",
+    "rental_type": "entire_unit",
+    "rental_type_label": "Entire Place",
     "images": [
       "https://images.craigslist.org/00Q0Q_kSgvXCWUENY_0t20CI_600x450.jpg",
       "https://images.craigslist.org/00P0P_eCQuoeY79dg_0t20CI_600x450.jpg",
@@ -262,6 +1000,8 @@
     "sqft": 1250,
     "address": "Revere",
     "availability": "Available Now",
+    "rental_type": "entire_unit",
+    "rental_type_label": "Entire Place",
     "images": [
       "https://images.craigslist.org/01010_5QHVy2TSsnf_06H0bV_600x450.jpg",
       "https://images.craigslist.org/00x0x_iS4QdWxaoau_09D05p_600x450.jpg",
@@ -292,6 +1032,8 @@
     "sqft": null,
     "address": "Framingham, MA",
     "availability": "Contact Lister",
+    "rental_type": "entire_unit",
+    "rental_type_label": "Entire Place",
     "images": [
       "https://images.craigslist.org/00000_cTxb9DKhjz2_0co0gw_600x450.jpg",
       "https://images.craigslist.org/00E0E_j28EfefeKLn_0co0gw_600x450.jpg",
@@ -318,6 +1060,8 @@
     "bathrooms": 1.0,
     "sqft": null,
     "availability": "Available Now",
+    "rental_type": "entire_unit",
+    "rental_type_label": "Entire Place",
     "images": [
       "https://m.bostonpads.com/media/v2/listings/unit/photos/10-26/1792857801-img-2457.jpeg"
     ],
@@ -341,6 +1085,8 @@
     "bathrooms": 1.0,
     "sqft": null,
     "availability": "Available 11-03-2026",
+    "rental_type": "entire_unit",
+    "rental_type_label": "Entire Place",
     "images": [
       "https://m.bostonpads.com/media/v2/listings/unit/photos/09-24/1726769429-7c6bbffd0775bf3270ba563e8876ccad-full.jpg"
     ],
@@ -365,6 +1111,8 @@
     "sqft": null,
     "address": "boston/cambridge/brookline",
     "availability": "Available Nov 15",
+    "rental_type": "entire_unit",
+    "rental_type_label": "Entire Place",
     "images": [
       "https://images.craigslist.org/00101_aOI2hkcJgX8_0oo0ww_600x450.jpg",
       "https://images.craigslist.org/00202_92wPHkfWe4A_0oo0ww_600x450.jpg",
@@ -393,6 +1141,8 @@
     "sqft": null,
     "address": "Somerville - Davis Square",
     "availability": "Available December 1",
+    "rental_type": "entire_unit",
+    "rental_type_label": "Entire Place",
     "images": [
       "https://images.craigslist.org/00l0l_kKroB2sSZ9A_0gw0co_600x450.jpg",
       "https://images.craigslist.org/00O0O_hptFvsOCRjH_0gw0co_600x450.jpg",
@@ -480,6 +1230,8 @@
     "bathrooms": 1.0,
     "sqft": null,
     "availability": "Available Now",
+    "rental_type": "entire_unit",
+    "rental_type_label": "Entire Place",
     "images": [
       "https://m.bostonpads.com/media/v2/listings/unit/photos/10-24/1728418937-img-2557.jpeg"
     ],
@@ -504,6 +1256,8 @@
     "sqft": 1275,
     "address": "Lynn",
     "availability": "Available Now",
+    "rental_type": "entire_unit",
+    "rental_type_label": "Entire Place",
     "images": [
       "https://images.craigslist.org/01616_dzLFE3mhjtI_0CI0t2_600x450.jpg",
       "https://images.craigslist.org/00f0f_5wI9FyxQgLz_0870aO_600x450.jpg",
@@ -534,6 +1288,8 @@
     "sqft": null,
     "address": "Somerville \\ Sullivan Sq. \\ E. Somervill",
     "availability": "Available Now",
+    "rental_type": "entire_unit",
+    "rental_type_label": "Entire Place",
     "images": [
       "https://images.craigslist.org/00t0t_4HDDOnhDe4m_0lM0t2_600x450.jpg",
       "https://images.craigslist.org/01111_czlYcndpLPJ_0lM0t2_600x450.jpg",
@@ -563,6 +1319,8 @@
     "bathrooms": 1.0,
     "sqft": null,
     "availability": "Available Now",
+    "rental_type": "entire_unit",
+    "rental_type_label": "Entire Place",
     "images": [
       "https://m.bostonpads.com/media/v2/listings/ad/photos/09-26/1789685028-img-8644.jpeg"
     ],
@@ -586,6 +1344,8 @@
     "bathrooms": 1.0,
     "sqft": null,
     "availability": "Available Now",
+    "rental_type": "entire_unit",
+    "rental_type_label": "Entire Place",
     "images": [
       "https://m.bostonpads.com/media/v2/listings/unit/photos/05-26/1779397053-785o6a047eb220de0.jpg"
     ],
@@ -609,6 +1369,8 @@
     "bathrooms": 1.0,
     "sqft": null,
     "availability": "Available Now",
+    "rental_type": "entire_unit",
+    "rental_type_label": "Entire Place",
     "images": [
       "https://m.bostonpads.com/media/v2/listings/unit/photos/04-26/1776801800-11843o5eab080480bac.jpg"
     ],
@@ -633,6 +1395,8 @@
     "sqft": null,
     "address": "Cambridge \\ Porter Sq. \\ Harvard Sq.",
     "availability": "Available Nov 1",
+    "rental_type": "entire_unit",
+    "rental_type_label": "Entire Place",
     "images": [
       "https://images.craigslist.org/00P0P_ba2VNdEAqz2_0ww0oo_600x450.jpg",
       "https://images.craigslist.org/01717_6qo5NG6fiP6_0ww0oo_600x450.jpg",
@@ -663,6 +1427,8 @@
     "sqft": null,
     "address": "Malden",
     "availability": "Available Now",
+    "rental_type": "entire_unit",
+    "rental_type_label": "Entire Place",
     "images": [
       "https://images.craigslist.org/01717_fBVwLepgTob_0gw0co_600x450.jpg",
       "https://images.craigslist.org/00b0b_9YloZuIx1XW_0gw0co_600x450.jpg",
@@ -693,6 +1459,8 @@
     "sqft": null,
     "address": "Somerville - Davis Square",
     "availability": "Available Jan 1",
+    "rental_type": "entire_unit",
+    "rental_type_label": "Entire Place",
     "images": [
       "https://images.craigslist.org/00303_ertC2SeTdPQ_0gw09j_600x450.jpg",
       "https://images.craigslist.org/00J0J_6CWS203gDee_0gw09j_600x450.jpg",
@@ -722,6 +1490,8 @@
     "bathrooms": 1.0,
     "sqft": null,
     "availability": "Available Now",
+    "rental_type": "entire_unit",
+    "rental_type_label": "Entire Place",
     "images": [
       "https://m.bostonpads.com/media/v2/listings/unit/photos/09-26/1788984797-img-0367.jpeg"
     ],
@@ -746,6 +1516,8 @@
     "sqft": 890,
     "address": "JAMAICA PLAIN, BOSTON",
     "availability": "Available Now",
+    "rental_type": "entire_unit",
+    "rental_type_label": "Entire Place",
     "images": [
       "https://images.craigslist.org/01717_6VcRFOdgjk1_0ww0oo_600x450.jpg",
       "https://images.craigslist.org/00P0P_hq1mGtewmHQ_0ww0oo_600x450.jpg",
@@ -800,6 +1572,8 @@
     "bathrooms": 1.0,
     "sqft": null,
     "availability": "Available Now",
+    "rental_type": "entire_unit",
+    "rental_type_label": "Entire Place",
     "images": [
       "https://m.bostonpads.com/media/v2/listings/unit/photos/05-26/1778716730-img-0676.jpeg"
     ],
@@ -824,6 +1598,8 @@
     "sqft": 800,
     "address": "ROSLINDALE, BOSTON",
     "availability": "Available Now",
+    "rental_type": "entire_unit",
+    "rental_type_label": "Entire Place",
     "images": [
       "https://images.craigslist.org/00V0V_1kp537cMBKE_0ww0oo_600x450.jpg",
       "https://images.craigslist.org/00a0a_fWZMvPtG0W9_0ww0oo_600x450.jpg",
@@ -854,6 +1630,8 @@
     "sqft": 700,
     "address": "East Somerville, Sullivan Sq, Assembly",
     "availability": "Available Jan 1",
+    "rental_type": "entire_unit",
+    "rental_type_label": "Entire Place",
     "images": [
       "https://images.craigslist.org/00z0z_b0WTUwQzSdR_0oM0x2_600x450.jpg",
       "https://images.craigslist.org/00b0b_hv30qWbXFlH_0oM0x2_600x450.jpg",
@@ -884,6 +1662,8 @@
     "sqft": 750,
     "address": "Beverly",
     "availability": "Available Dec 1",
+    "rental_type": "entire_unit",
+    "rental_type_label": "Entire Place",
     "images": [
       "https://images.craigslist.org/00T0T_jtwnyxWV3CC_0t20CI_600x450.jpg",
       "https://images.craigslist.org/00E0E_b1xjbAbyRSw_0t20CI_600x450.jpg",
@@ -914,6 +1694,8 @@
     "sqft": null,
     "address": "Framingham",
     "availability": "Contact Lister",
+    "rental_type": "entire_unit",
+    "rental_type_label": "Entire Place",
     "images": [
       "https://images.craigslist.org/00S0S_8ksX1pTs4vV_0lM0t2_600x450.jpg",
       "https://images.craigslist.org/00G0G_flGVP6K0LKy_0lM0t2_600x450.jpg",
@@ -943,6 +1725,8 @@
     "sqft": null,
     "address": "Lynn, MA",
     "availability": "Available Now",
+    "rental_type": "entire_unit",
+    "rental_type_label": "Entire Place",
     "images": [
       "https://images.craigslist.org/00Q0Q_9WoqG775MVS_0hr0CI_600x450.jpg",
       "https://images.craigslist.org/00y0y_atJHeUkqNRQ_0hr0CI_600x450.jpg",
@@ -973,6 +1757,8 @@
     "sqft": null,
     "address": "Somerville",
     "availability": "Contact Lister",
+    "rental_type": "entire_unit",
+    "rental_type_label": "Entire Place",
     "images": [
       "https://images.craigslist.org/01010_1LcrgwMt73h_0CI0t2_600x450.jpg",
       "https://images.craigslist.org/00T0T_c4OxsxCKRJ1_0CI0t2_600x450.jpg",
@@ -1002,6 +1788,8 @@
     "bathrooms": 1.0,
     "sqft": null,
     "availability": "Available Now",
+    "rental_type": "entire_unit",
+    "rental_type_label": "Entire Place",
     "images": [
       "https://m.bostonpads.com/media/v2/listings/unit/photos/09-26/1789150712-img-5622.jpeg"
     ],
@@ -1025,6 +1813,8 @@
     "bathrooms": 1.0,
     "sqft": null,
     "availability": "Available 12-01-2026",
+    "rental_type": "entire_unit",
+    "rental_type_label": "Entire Place",
     "images": [
       "https://m.bostonpads.com/media/v2/listings/unit/photos/09-26/1789790976-28-fleet-st-9-boston-north-end-shared-unit-photo-2.jpg"
     ],
@@ -1076,6 +1866,8 @@
     "bathrooms": 1.0,
     "sqft": null,
     "availability": "Available Now",
+    "rental_type": "entire_unit",
+    "rental_type_label": "Entire Place",
     "images": [
       "https://m.bostonpads.com/media/v2/listings/unit/photos/11-23/1698961846-img-4158.jpeg"
     ],
@@ -1099,6 +1891,8 @@
     "bathrooms": 1.0,
     "sqft": null,
     "availability": "Available Now",
+    "rental_type": "entire_unit",
+    "rental_type_label": "Entire Place",
     "images": [
       "https://m.bostonpads.com/media/v2/listings/ad/photos/10-26/1792176613-img-0575.jpeg"
     ],
@@ -1151,6 +1945,8 @@
     "sqft": null,
     "address": "WOBURN (Burlington Line)",
     "availability": "Available Nov 1",
+    "rental_type": "entire_unit",
+    "rental_type_label": "Entire Place",
     "images": [
       "https://images.craigslist.org/01616_8FdSlfPoXTr_0lM0t2_600x450.jpg",
       "https://images.craigslist.org/00W0W_dYhttmdgrlj_0lM0t2_600x450.jpg",
@@ -1162,6 +1958,31 @@
       "https://images.craigslist.org/00v0v_jm0kMojTTQ9_0lM0t2_600x450.jpg"
     ],
     "description": "Nicely updated corner unit--All new eat-in kitchen with granite counters, new appliances including dishwasher--Eat-in Kitchen-2 bedroom 1 bath corner unit located in Woburn on the Burlington line. All new windows, great closet space, hardwood floor. parking and coin up laundry in the building. Close to shops and restaurants. 5 minutes to 95/128. HEAT &amp; HOT WATER INCLUDED. No pets. 1 car parking included, 2nd spot $50 or street parking on Locust st available. Building is close to Burlington Mall, Lahey Clinic, Four Corners shopping &amp; restaurants. Rt 128/93 Terms: 12 month lease Good cre...",
+    "has_broker_fee": null,
+    "fee_badge": "Fee Unspecified",
+    "fee_details": "Contact lister for fee status"
+  },
+  {
+    "id": "cl-ZeL94zumbipB62NB",
+    "source": "craigslist",
+    "source_label": "Craigslist",
+    "title": "*FREE LAUNDRY FOR TENANT* Great Neighborhood, Safe 2 Bedroom Apartment",
+    "price": 2595,
+    "neighborhood": "Reading, Massachusetts",
+    "url": "https://www.craigslist.org/view/d/reading-free-laundry-for-tenant-great/csiJ7iZeL94zumbipB62NB",
+    "lat": 42.5323221456256,
+    "lng": -71.1040726851503,
+    "bedrooms": 2,
+    "bathrooms": 1.0,
+    "sqft": 1000,
+    "address": "Reading, Massachusetts",
+    "availability": "Contact Lister",
+    "rental_type": "entire_unit",
+    "rental_type_label": "Entire Place",
+    "images": [
+      "https://images.craigslist.org/00b0b_calpCaxa1ZF_0ak07K_600x450.jpg"
+    ],
+    "description": "Lovely 2 Bedroom Unit, available for you now. Lovely apartment with a nice big kitchen too! Professionally cleaned and ready for you to move right in. Newer kitchen countertops and oven and bathroom vanity for you to enjoy. *FREE LAUNDRY on site for tenant. Perfect location and your exclusive entrance in this beautiful house, in a very safe neighborhood. Lovely hardwood floors. Dogs subject to landlord\u2019s approval on a case-by-case basis. Spacious 2 bedroom apartment located in a beautiful Victorian farmhouse on a lovely cul de sac in Reading, Massachusetts. Comes with 2 off-street exclusive pa...",
     "has_broker_fee": null,
     "fee_badge": "Fee Unspecified",
     "fee_details": "Contact lister for fee status"
@@ -1181,6 +2002,8 @@
     "sqft": null,
     "address": "north shore",
     "availability": "Contact Lister",
+    "rental_type": "entire_unit",
+    "rental_type_label": "Entire Place",
     "images": [
       "https://images.craigslist.org/00303_1Hr0bqiQjeK_042039_600x450.jpg",
       "https://images.craigslist.org/00j0j_26JbGBdeuMc_0lM0t2_600x450.jpg",
@@ -1211,6 +2034,8 @@
     "sqft": null,
     "address": "Davis Sq/Teele Sq",
     "availability": "Available Now",
+    "rental_type": "entire_unit",
+    "rental_type_label": "Entire Place",
     "images": [
       "https://images.craigslist.org/00o0o_hnEemNrLvM0_08g06c_600x450.jpg",
       "https://images.craigslist.org/00J0J_cwdQix93UuE_08g06c_600x450.jpg",
@@ -1241,6 +2066,8 @@
     "sqft": 900,
     "address": "East Somerville, Sullivan Sq, Assembly",
     "availability": "Available Dec 1",
+    "rental_type": "entire_unit",
+    "rental_type_label": "Entire Place",
     "images": [
       "https://images.craigslist.org/00u0u_dbcKGHE5W3u_0lM0t2_600x450.jpg",
       "https://images.craigslist.org/00s0s_4HyCbivZEXu_0lM0t2_600x450.jpg",
@@ -1271,6 +2098,8 @@
     "sqft": null,
     "address": "medford",
     "availability": "Available Nov 1",
+    "rental_type": "entire_unit",
+    "rental_type_label": "Entire Place",
     "images": [
       "https://images.craigslist.org/00D0D_6uWJhjuW6M4_0oM0gw_600x450.jpg",
       "https://images.craigslist.org/00505_dd1HjzqKSF2_0nf0hC_600x450.jpg",
@@ -1297,6 +2126,8 @@
     "bathrooms": 1,
     "sqft": 680,
     "availability": "Available Now",
+    "rental_type": "entire_unit",
+    "rental_type_label": "Entire Place",
     "images": [
       "https://images.unsplash.com/photo-1502005229762-ee1b2b8ab98f?auto=format&fit=crop&w=800&q=80"
     ],
@@ -1305,6 +2136,38 @@
     "fee_badge": "No Broker Fee",
     "fee_details": "No broker fee promo for leases beginning this month",
     "address": "Park Dr, Boston, MA 02215"
+  },
+  {
+    "id": "cl-kwzFCUmojwKtLpgH",
+    "source": "craigslist",
+    "source_label": "Craigslist",
+    "title": "Magoun Sq / Ball Square 2BR - Laundry",
+    "price": 2600,
+    "neighborhood": "Somerville \\ Magoun Sq. \\ Ball Sq.",
+    "url": "https://www.craigslist.org/view/d/somerville-magoun-sq-ball-square-2br/oUVyvpkwzFCUmojwKtLpgH",
+    "lat": 42.3907018755795,
+    "lng": -71.0928982892725,
+    "bedrooms": 2,
+    "bathrooms": 1.0,
+    "sqft": null,
+    "address": "Somerville \\ Magoun Sq. \\ Ball Sq.",
+    "availability": "Available Nov 1",
+    "rental_type": "entire_unit",
+    "rental_type_label": "Entire Place",
+    "images": [
+      "https://images.craigslist.org/00505_h1MswPg2aQM_0x20oM_600x450.jpg",
+      "https://images.craigslist.org/00s0s_hhijFlR1xWW_0x20oM_600x450.jpg",
+      "https://images.craigslist.org/00F0F_gmwGJvy2CsV_0x20oM_600x450.jpg",
+      "https://images.craigslist.org/00L0L_d25Gv4FJHRT_0x20oM_600x450.jpg",
+      "https://images.craigslist.org/00G0G_9NQn15zXhxF_0x20oM_600x450.jpg",
+      "https://images.craigslist.org/00H0H_id8kJ044OEU_0x20oM_600x450.jpg",
+      "https://images.craigslist.org/00a0a_cWb6aYMQ0P4_0x20oM_600x450.jpg",
+      "https://images.craigslist.org/00V0V_87dyzm1OskM_0x20oM_600x450.jpg"
+    ],
+    "description": "Apartment Rental Experts - Davis Square Magoun Sq / Ball Square 2BR - Laundry Somerville / Magoun Square / Ball Square Available: 11/1/2026 || Fee: No Fee || Reference: #136686 Apartment Summary 2 bedroom apartment on the 3rd floor of a Four-Family. This unit has an eat-in kitchen with gas stove, carpeted living room and gas heat. Located between Magoun and Ball Square. Just steps to the new Green Line Ball Square train stop! (Reference #136686) Apartment Details Fee: No Fee Bath: 1 Available: November 1, 2026 Kitchen: Eat in Kitchen. Appliances include: Refrigerator, Natural Gas Stove. Refere...",
+    "has_broker_fee": false,
+    "fee_badge": "No Broker Fee",
+    "fee_details": "Owner pays fee or no broker fee required"
   },
   {
     "id": "cl-ijjJcgTGD5PNKv1w",
@@ -1321,6 +2184,8 @@
     "sqft": 850,
     "address": "Salem",
     "availability": "Available Now",
+    "rental_type": "entire_unit",
+    "rental_type_label": "Entire Place",
     "images": [
       "https://images.craigslist.org/00E0E_d7GvFZ2IVlE_07K0ak_600x450.jpg",
       "https://images.craigslist.org/00P0P_aYPDRTSOxcT_07K0ak_600x450.jpg",
@@ -1351,6 +2216,8 @@
     "sqft": null,
     "address": "boston/cambridge/brookline",
     "availability": "Available Nov 1",
+    "rental_type": "entire_unit",
+    "rental_type_label": "Entire Place",
     "images": [
       "https://images.craigslist.org/00S0S_kShjdR2E93D_0lM0t2_600x450.jpg",
       "https://images.craigslist.org/00w0w_dsSbD1v9dz0_0lM0t2_600x450.jpg",
@@ -1410,6 +2277,8 @@
     "sqft": null,
     "address": "Davis Sq/Ball Sq/Tufts",
     "availability": "Available November 1",
+    "rental_type": "entire_unit",
+    "rental_type_label": "Entire Place",
     "images": [
       "https://images.craigslist.org/00101_7sVNgYUwIAv_08g06c_600x450.jpg",
       "https://images.craigslist.org/00F0F_fQCXWGgB0cf_08g06c_600x450.jpg",
@@ -1440,6 +2309,8 @@
     "sqft": null,
     "address": "Somerville \\ Ten Hills \\ E. Somerville",
     "availability": "Available Nov 1",
+    "rental_type": "entire_unit",
+    "rental_type_label": "Entire Place",
     "images": [
       "https://images.craigslist.org/00707_aOHOJb56bd8_0x20oM_600x450.jpg",
       "https://images.craigslist.org/00j0j_5DxNhiou6dz_0x20oM_600x450.jpg",
@@ -1469,6 +2340,8 @@
     "bathrooms": 1.0,
     "sqft": null,
     "availability": "Available Now",
+    "rental_type": "entire_unit",
+    "rental_type_label": "Entire Place",
     "images": [
       "https://m.bostonpads.com/media/v2/listings/ad/photos/12-22/1671123702-aa.PNG"
     ],
@@ -1492,6 +2365,8 @@
     "bathrooms": 1.0,
     "sqft": null,
     "availability": "Available Now",
+    "rental_type": "entire_unit",
+    "rental_type_label": "Entire Place",
     "images": [
       "https://m.bostonpads.com/media/v2/listings/unit/photos/08-21/1630449958-549ab663-e2b7-46ec-9b5e-21e493a42463.jpeg"
     ],
@@ -1515,6 +2390,8 @@
     "bathrooms": 1.0,
     "sqft": null,
     "availability": "Available Now",
+    "rental_type": "entire_unit",
+    "rental_type_label": "Entire Place",
     "images": [
       "https://m.bostonpads.com/media/v2/listings/unit/photos/09-26/1789508106-55-burbank-st-12-boston-ma-02115-fenway-4.jpeg"
     ],
@@ -1538,6 +2415,8 @@
     "bathrooms": 1.0,
     "sqft": null,
     "availability": "Available Now",
+    "rental_type": "entire_unit",
+    "rental_type_label": "Entire Place",
     "images": [
       "https://m.bostonpads.com/media/v2/listings/unit/photos/02-21/1613242776-12474o5feb3bbda505a.jpg"
     ],
@@ -1561,6 +2440,8 @@
     "bathrooms": 1.0,
     "sqft": null,
     "availability": "Available 12-01-2026",
+    "rental_type": "entire_unit",
+    "rental_type_label": "Entire Place",
     "images": [
       "https://m.bostonpads.com/media/v2/listings/unit/photos/04-21/1618880981-533o5ea0955cc6cb7.jpg"
     ],
@@ -1613,6 +2494,8 @@
     "sqft": 850,
     "address": "JAMAICA PLAIN, BOSTON",
     "availability": "Available Now",
+    "rental_type": "entire_unit",
+    "rental_type_label": "Entire Place",
     "images": [
       "https://images.craigslist.org/00n0n_9KAJJsQcqEA_0ww0oo_600x450.jpg",
       "https://images.craigslist.org/01515_gWwaI1kkVEZ_0ww0oo_600x450.jpg",
@@ -1643,6 +2526,8 @@
     "sqft": 650,
     "address": "East Cambridge, Kendall, MIT, Lechmere",
     "availability": "Available Jan 1",
+    "rental_type": "entire_unit",
+    "rental_type_label": "Entire Place",
     "images": [
       "https://images.craigslist.org/00P0P_6IZyktNtXNg_0nm0hw_600x450.jpg",
       "https://images.craigslist.org/00p0p_iCLWFNjiTCq_0nm0hw_600x450.jpg",
@@ -1696,6 +2581,8 @@
     "bathrooms": 1.0,
     "sqft": null,
     "availability": "Available Now",
+    "rental_type": "entire_unit",
+    "rental_type_label": "Entire Place",
     "images": [
       "https://m.bostonpads.com/media/v2/listings/unit/photos/09-26/1788887907-img-2400.jpeg"
     ],
@@ -1719,6 +2606,8 @@
     "bathrooms": 1.0,
     "sqft": null,
     "availability": "Available 11-01-2026",
+    "rental_type": "entire_unit",
+    "rental_type_label": "Entire Place",
     "images": [
       "https://m.bostonpads.com/media/v2/listings/unit/photos/12-23/1702664709-landlord-unit-photo-57234838-5.jpg"
     ],
@@ -1743,6 +2632,8 @@
     "sqft": null,
     "address": "Davis Square/Ball Square/Magoun Square",
     "availability": "Available November 1",
+    "rental_type": "entire_unit",
+    "rental_type_label": "Entire Place",
     "images": [
       "https://images.craigslist.org/00y0y_bRF2RwxyvoS_08g06c_600x450.jpg",
       "https://images.craigslist.org/00z0z_cdvhepeXgpy_08g06c_600x450.jpg",
@@ -1772,6 +2663,8 @@
     "bathrooms": 1.0,
     "sqft": null,
     "availability": "Available 11-01-2026",
+    "rental_type": "entire_unit",
+    "rental_type_label": "Entire Place",
     "images": [
       "https://m.bostonpads.com/media/v2/listings/unit/photos/09-26/1788888496-img-2449.jpeg"
     ],
@@ -1795,6 +2688,8 @@
     "bathrooms": 1.0,
     "sqft": null,
     "availability": "Available Now",
+    "rental_type": "entire_unit",
+    "rental_type_label": "Entire Place",
     "images": [
       "https://m.bostonpads.com/media/v2/listings/unit/photos/09-26/1790612348-220-hanover-st-27-boston-north-end-shared-unit-photo-7.jpeg"
     ],
@@ -1819,6 +2714,8 @@
     "sqft": 936,
     "address": "Jamaica Plain",
     "availability": "Contact Lister",
+    "rental_type": "entire_unit",
+    "rental_type_label": "Entire Place",
     "images": [
       "https://images.craigslist.org/00W0W_hBNL0KiVCXW_0hN0dC_600x450.jpg",
       "https://images.craigslist.org/00T0T_cM96NaVU9NM_0t20CI_600x450.jpg",
@@ -1847,6 +2744,8 @@
     "sqft": null,
     "address": "Somerville - Gilman Sq",
     "availability": "Available Dec 1",
+    "rental_type": "entire_unit",
+    "rental_type_label": "Entire Place",
     "images": [
       "https://images.craigslist.org/00O0O_5o0Jta4swOv_0gw0co_600x450.jpg",
       "https://images.craigslist.org/00H0H_i2GfJF0YQ6b_0gw0co_600x450.jpg",
@@ -1876,6 +2775,8 @@
     "bathrooms": 2.0,
     "sqft": null,
     "availability": "Available Now",
+    "rental_type": "entire_unit",
+    "rental_type_label": "Entire Place",
     "images": [
       "https://m.bostonpads.com/media/v2/listings/unit/photos/11-20/1605627573-125305193-370239490969617-6876191205275573142-n.jpg"
     ],
@@ -1899,6 +2800,8 @@
     "bathrooms": 2.0,
     "sqft": null,
     "availability": "Available Now",
+    "rental_type": "entire_unit",
+    "rental_type_label": "Entire Place",
     "images": [
       "https://m.bostonpads.com/media/v2/listings/ad/photos/03-23/1679714237-l1.jpeg"
     ],
@@ -1922,6 +2825,8 @@
     "bathrooms": 1,
     "sqft": 950,
     "availability": "Available Nov 1",
+    "rental_type": "entire_unit",
+    "rental_type_label": "Entire Place",
     "images": [
       "https://images.unsplash.com/photo-1493809842364-78817add7ffb?auto=format&fit=crop&w=800&q=80"
     ],
@@ -1946,6 +2851,8 @@
     "sqft": 950,
     "address": "JAMAICA PLAIN, BOSTON",
     "availability": "Available Now",
+    "rental_type": "entire_unit",
+    "rental_type_label": "Entire Place",
     "images": [
       "https://images.craigslist.org/00Q0Q_buUaFpc5eTE_0uU0nb_600x450.jpg",
       "https://images.craigslist.org/00e0e_bQhaIRrXhZo_0uU0nb_600x450.jpg",
@@ -1975,6 +2882,8 @@
     "bathrooms": 1.5,
     "sqft": null,
     "availability": "Available Now",
+    "rental_type": "entire_unit",
+    "rental_type_label": "Entire Place",
     "images": [
       "https://m.bostonpads.com/media/v2/listings/ad/photos/08-23/1691549724-img-0956.JPEG"
     ],
@@ -1999,6 +2908,8 @@
     "sqft": 1000,
     "address": "East Cambridge, Kendall, MIT, Lechmere",
     "availability": "Available Jan 1",
+    "rental_type": "entire_unit",
+    "rental_type_label": "Entire Place",
     "images": [
       "https://images.craigslist.org/00Y0Y_hGQYKes4kbe_0hw0nm_600x450.jpg",
       "https://images.craigslist.org/00404_idPKuPBC7n9_0hw0nm_600x450.jpg",
@@ -2029,6 +2940,8 @@
     "sqft": 1400,
     "address": "Somerville \\ Tufts \\ Davis Sq.",
     "availability": "Available Now",
+    "rental_type": "entire_unit",
+    "rental_type_label": "Entire Place",
     "images": [
       "https://images.craigslist.org/00F0F_4c6uQUusUu4_0iS0t2_600x450.jpg",
       "https://images.craigslist.org/00n0n_3lud7sTHcXT_0x20oM_600x450.jpg",
@@ -2058,6 +2971,8 @@
     "bathrooms": 2.0,
     "sqft": null,
     "availability": "Available Now",
+    "rental_type": "entire_unit",
+    "rental_type_label": "Entire Place",
     "images": [
       "https://m.bostonpads.com/media/v2/listings/ad/photos/06-26/1782338944-photo.jpg"
     ],
@@ -2081,6 +2996,8 @@
     "bathrooms": 1.0,
     "sqft": null,
     "availability": "Available 12-01-2026",
+    "rental_type": "entire_unit",
+    "rental_type_label": "Entire Place",
     "images": [
       "https://m.bostonpads.com/media/v2/listings/unit/photos/03-22/1648160993-247bb74f-1dd4-4fb4-a557-981932c10a3a.jpeg"
     ],
@@ -2104,6 +3021,8 @@
     "bathrooms": 2.0,
     "sqft": null,
     "availability": "Available Now",
+    "rental_type": "entire_unit",
+    "rental_type_label": "Entire Place",
     "images": [
       "https://m.bostonpads.com/media/v2/listings/ad/photos/06-26/1782339230-photo.jpg"
     ],
@@ -2127,6 +3046,8 @@
     "bathrooms": 2.0,
     "sqft": null,
     "availability": "Available Now",
+    "rental_type": "entire_unit",
+    "rental_type_label": "Entire Place",
     "images": [
       "https://m.bostonpads.com/media/v2/listings/ad/photos/06-26/1782338150-photo.jpg"
     ],
@@ -2151,6 +3072,8 @@
     "sqft": 550,
     "address": "Arlington",
     "availability": "Available Dec 1",
+    "rental_type": "entire_unit",
+    "rental_type_label": "Entire Place",
     "images": [
       "https://images.craigslist.org/00D0D_hxj7ZBtt1qO_0gw0co_600x450.jpg",
       "https://images.craigslist.org/00p0p_9MWZmieQoXI_0gw0co_600x450.jpg",
@@ -2180,6 +3103,8 @@
     "bathrooms": 1,
     "sqft": 540,
     "availability": "Available Now",
+    "rental_type": "entire_unit",
+    "rental_type_label": "Entire Place",
     "images": [
       "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=800&q=80",
       "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&w=800&q=80"
@@ -2204,6 +3129,8 @@
     "bathrooms": 1.0,
     "sqft": null,
     "availability": "Available Now",
+    "rental_type": "entire_unit",
+    "rental_type_label": "Entire Place",
     "images": [
       "https://m.bostonpads.com/media/v2/listings/unit/photos/02-24/1708097907-36-mozart-st-2-boston-shared-unit-photo-3.jpg"
     ],
@@ -2228,6 +3155,8 @@
     "sqft": 1300,
     "address": "West Roxbury, BOSTON",
     "availability": "Available Now",
+    "rental_type": "entire_unit",
+    "rental_type_label": "Entire Place",
     "images": [
       "https://images.craigslist.org/00c0c_6N3waVKgW1y_0ww0oo_600x450.jpg",
       "https://images.craigslist.org/00l0l_7jQytugD6nT_0ww0oo_600x450.jpg",
@@ -2244,6 +3173,38 @@
     "fee_details": "Owner pays fee or no broker fee required"
   },
   {
+    "id": "cl-4cbNGMuPmrGZbZxg",
+    "source": "craigslist",
+    "source_label": "Craigslist",
+    "title": "Reduced - sunny 3 BR w/ private porch",
+    "price": 3200,
+    "neighborhood": "somerville",
+    "url": "https://www.craigslist.org/view/d/somerville-reduced-sunny-br-private/fAdcuE4cbNGMuPmrGZbZxg",
+    "lat": 42.3917331996107,
+    "lng": -71.0965182366219,
+    "bedrooms": 3,
+    "bathrooms": 1.0,
+    "sqft": null,
+    "address": "somerville",
+    "availability": "Contact Lister",
+    "rental_type": "entire_unit",
+    "rental_type_label": "Entire Place",
+    "images": [
+      "https://images.craigslist.org/00Z0Z_diQOHLGSsEM_0CI0t2_600x450.jpg",
+      "https://images.craigslist.org/00I0I_ghUIfCTCyUV_0MM132_600x450.jpg",
+      "https://images.craigslist.org/00n0n_lQm8jdEYpGj_1320MM_600x450.jpg",
+      "https://images.craigslist.org/00i0i_9GVLS68nDC2_1320MM_600x450.jpg",
+      "https://images.craigslist.org/00404_irOpm7j5wOn_0MM132_600x450.jpg",
+      "https://images.craigslist.org/00808_RRdJshOmsQ_1320MM_600x450.jpg",
+      "https://images.craigslist.org/00I0I_5vMKClyzMgM_0MM132_600x450.jpg",
+      "https://images.craigslist.org/00g0g_4UG8R2KXJzt_0t20CI_600x450.jpg"
+    ],
+    "description": "Large 3 bedroom apartment, on a quiet one way street. Available 11/1. Walk in to the large living room: fresh hardwood floors throughout, with light from both sides. Eat-in-kitchen has ample counter and cabinet space with a southern view for good light. Everything has been painted and the floors are new. The two front bedrooms have morning light, and will fit queen beds and furniture. The Master BR has a huge walk-in closet, plus a private 3-season porch overlooking the rear patio and gardens. This is the full 2nd floor in a 3-fam house on a quiet one-way street. The house is minutes from the ...",
+    "has_broker_fee": null,
+    "fee_badge": "Fee Unspecified",
+    "fee_details": "Contact lister for fee status"
+  },
+  {
     "id": "bp-8177411",
     "source": "bostonpads",
     "source_label": "Boston Pads",
@@ -2257,6 +3218,8 @@
     "bathrooms": 1.0,
     "sqft": null,
     "availability": "Available Now",
+    "rental_type": "entire_unit",
+    "rental_type_label": "Entire Place",
     "images": [
       "https://m.bostonpads.com/media/v2/listings/unit/photos/09-26/1790606076-40-mozart-3-boston-jamaica-plain-unit-photo-1.jpeg"
     ],
@@ -2301,6 +3264,8 @@
     "bathrooms": 1.0,
     "sqft": null,
     "availability": "Available Now",
+    "rental_type": "entire_unit",
+    "rental_type_label": "Entire Place",
     "images": [
       "https://m.bostonpads.com/media/v2/listings/unit/photos/09-26/1790082965-1504-commonwealth-7-boston-brighton-unit-photo-3.jpeg"
     ],
@@ -2332,7 +3297,41 @@
     "has_broker_fee": false,
     "fee_badge": "No Broker Fee",
     "fee_details": "Direct lease with building management. Zero broker fee.",
+    "rental_type": "entire_unit",
+    "rental_type_label": "Entire Place",
     "address": "540 Harrison Ave, Boston, MA 02118"
+  },
+  {
+    "id": "cl-UZL9KcivvSB7akcb",
+    "source": "craigslist",
+    "source_label": "Craigslist",
+    "title": "Excellent Location 3BD!10 min to Porter/Davis SQ!I/ULaundry!Parking!",
+    "price": 3300,
+    "neighborhood": "Porter Square/Davis Square",
+    "url": "https://www.craigslist.org/view/d/somerville-excellent-location-3bd10-min/tbyuDRUZL9KcivvSB7akcb",
+    "lat": 42.3932251817091,
+    "lng": -71.1174254665651,
+    "bedrooms": 3,
+    "bathrooms": 1.0,
+    "sqft": null,
+    "address": "Porter Square/Davis Square",
+    "availability": "Available Now",
+    "rental_type": "entire_unit",
+    "rental_type_label": "Entire Place",
+    "images": [
+      "https://images.craigslist.org/00J0J_dYwaAGEiBAp_0CI0t2_600x450.jpg",
+      "https://images.craigslist.org/00q0q_hN2cxek165i_0CI0t2_600x450.jpg",
+      "https://images.craigslist.org/00p0p_ei0pEKq4byC_0CI0t2_600x450.jpg",
+      "https://images.craigslist.org/00N0N_1wJMFYUu4rS_0CI0t2_600x450.jpg",
+      "https://images.craigslist.org/00d0d_gONR11xpH3G_0CI0t2_600x450.jpg",
+      "https://images.craigslist.org/00404_4R5Uq3Ny8Il_0CI0t2_600x450.jpg",
+      "https://images.craigslist.org/00505_6snsnneRB95_0CI0t2_600x450.jpg",
+      "https://images.craigslist.org/00J0J_2nqSxyecKp9_0CI0t2_600x450.jpg"
+    ],
+    "description": "PORTER SQUARE [T] DAVIS SQUARE [T] 3 Bed, 1 Bath \u22c5 $3300 \u22c5 No Fee Available Now \u2023 Laundry (In-Unit: Free) \u2023 Off-Street Parking (1 Space) \u2023 Hardwood Floors \u2023 Dishwasher &amp; Disposal \u2023 Cats Negotiable PLEASE CALL EDDIE WITH MAVEN REALTY AT 617-319-4612",
+    "has_broker_fee": false,
+    "fee_badge": "No Broker Fee",
+    "fee_details": "Owner pays fee or no broker fee required"
   },
   {
     "id": "bp-8177969",
@@ -2348,6 +3347,8 @@
     "bathrooms": 1.0,
     "sqft": null,
     "availability": "Available Now",
+    "rental_type": "entire_unit",
+    "rental_type_label": "Entire Place",
     "images": [
       "https://m.bostonpads.com/media/v2/listings/unit/photos/10-26/1791376447-screenshot-7-10-2026-83224-appyougotlistingscom.jpeg"
     ],
@@ -2372,6 +3373,8 @@
     "sqft": null,
     "address": "boston/cambridge/brookline",
     "availability": "Available Dec 1",
+    "rental_type": "entire_unit",
+    "rental_type_label": "Entire Place",
     "images": [
       "https://images.craigslist.org/00q0q_8WNRYZ9iKGv_0x20oM_600x450.jpg",
       "https://images.craigslist.org/00c0c_4lQdV1ucZD0_0x20oM_600x450.jpg",
@@ -2402,6 +3405,8 @@
     "sqft": null,
     "address": "Union Square",
     "availability": "Available November 1",
+    "rental_type": "entire_unit",
+    "rental_type_label": "Entire Place",
     "images": [
       "https://images.craigslist.org/00q0q_j3oq6E2k9g3_0kE0fu_600x450.jpg",
       "https://images.craigslist.org/00W0W_aTWyS9l8kiW_0kE0fu_600x450.jpg",
@@ -2430,6 +3435,8 @@
     "bathrooms": 1,
     "sqft": 1250,
     "availability": "Available Sep 1",
+    "rental_type": "entire_unit",
+    "rental_type_label": "Entire Place",
     "images": [
       "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=800&q=80"
     ],
@@ -2454,6 +3461,8 @@
     "sqft": null,
     "address": "Somerville - Davis Sq",
     "availability": "Available Jan 1",
+    "rental_type": "entire_unit",
+    "rental_type_label": "Entire Place",
     "images": [
       "https://images.craigslist.org/00G0G_gpRhkYiwOOu_0gw0co_600x450.jpg",
       "https://images.craigslist.org/00t0t_eK6XOMcC3Zl_0gw0co_600x450.jpg",
@@ -2483,6 +3492,8 @@
     "bathrooms": 1.0,
     "sqft": null,
     "availability": "Available 12-01-2026",
+    "rental_type": "entire_unit",
+    "rental_type_label": "Entire Place",
     "images": [
       "https://m.bostonpads.com/media/v2/listings/unit/photos/03-24/1711399523-74315632.jpg"
     ],
@@ -2506,6 +3517,8 @@
     "bathrooms": 1.0,
     "sqft": null,
     "availability": "Available Now",
+    "rental_type": "entire_unit",
+    "rental_type_label": "Entire Place",
     "images": [
       "https://m.bostonpads.com/media/v2/listings/unit/photos/08-26/1787690826-886a4873-d3bc-4b94-a024-67550d9d4406.jpeg"
     ],
@@ -2529,6 +3542,8 @@
     "bathrooms": 1.0,
     "sqft": null,
     "availability": "Available Now",
+    "rental_type": "entire_unit",
+    "rental_type_label": "Entire Place",
     "images": [
       "https://m.bostonpads.com/media/v2/listings/unit/photos/10-26/1791376658-screenshot-7-10-2026-83559-appyougotlistingscom.jpeg"
     ],
@@ -2552,6 +3567,8 @@
     "bathrooms": 1.0,
     "sqft": null,
     "availability": "Available Now",
+    "rental_type": "entire_unit",
+    "rental_type_label": "Entire Place",
     "images": [
       "https://m.bostonpads.com/media/v2/listings/unit/photos/02-26/1771708551-38-49-5.jpg"
     ],
@@ -2596,6 +3613,8 @@
     "bathrooms": 1.5,
     "sqft": 1100,
     "availability": "Available Nov 1",
+    "rental_type": "entire_unit",
+    "rental_type_label": "Entire Place",
     "images": [
       "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=800&q=80",
       "https://images.unsplash.com/photo-1493809842364-78817add7ffb?auto=format&fit=crop&w=800&q=80"
@@ -2620,6 +3639,8 @@
     "bathrooms": 1.0,
     "sqft": null,
     "availability": "Available Now",
+    "rental_type": "entire_unit",
+    "rental_type_label": "Entire Place",
     "images": [
       "https://m.bostonpads.com/media/v2/listings/ad/photos/06-21/1623613006-4.PNG"
     ],
@@ -2644,6 +3665,8 @@
     "sqft": 1300,
     "address": "East Cambridge, Kendall, MIT, Lechmere",
     "availability": "Available Jan 1",
+    "rental_type": "entire_unit",
+    "rental_type_label": "Entire Place",
     "images": [
       "https://images.craigslist.org/00G0G_f73kDMh2ra1_0hw0nm_600x450.jpg",
       "https://images.craigslist.org/00606_gBIiKc7dlgR_0hw0nm_600x450.jpg",
@@ -2674,6 +3697,8 @@
     "sqft": 1200,
     "address": "Cambridge MIT Kendall Lechmere",
     "availability": "Available Jan 1",
+    "rental_type": "entire_unit",
+    "rental_type_label": "Entire Place",
     "images": [
       "https://images.craigslist.org/00606_gBIiKc7dlgR_0hw0nm_600x450.jpg",
       "https://images.craigslist.org/00G0G_f73kDMh2ra1_0hw0nm_600x450.jpg",
@@ -2704,6 +3729,8 @@
     "sqft": 800,
     "address": "Cambridge - Porter Sq",
     "availability": "Available Dec 1",
+    "rental_type": "entire_unit",
+    "rental_type_label": "Entire Place",
     "images": [
       "https://images.craigslist.org/00H0H_hPpFcxlD09X_0gw0co_600x450.jpg",
       "https://images.craigslist.org/00l0l_iyG1R1fN8hk_0gw0co_600x450.jpg",
@@ -2734,6 +3761,8 @@
     "sqft": null,
     "address": "Medford \\ Tufts",
     "availability": "Available Nov 15",
+    "rental_type": "entire_unit",
+    "rental_type_label": "Entire Place",
     "images": [
       "https://images.craigslist.org/00g0g_iichSuUXPiG_0x20oM_600x450.jpg",
       "https://images.craigslist.org/00G0G_gp4tH0h2b8w_0x20oM_600x450.jpg",
@@ -2763,6 +3792,8 @@
     "bathrooms": 2.0,
     "sqft": null,
     "availability": "Available Now",
+    "rental_type": "entire_unit",
+    "rental_type_label": "Entire Place",
     "images": [
       "https://m.bostonpads.com/media/v2/listings/ad/photos/08-26/1787696585-img-5827.jpeg"
     ],
@@ -2786,6 +3817,8 @@
     "bathrooms": 1.0,
     "sqft": null,
     "availability": "Available 09-01-2027",
+    "rental_type": "entire_unit",
+    "rental_type_label": "Entire Place",
     "images": [
       "https://m.bostonpads.com/media/v2/listings/unit/photos/01-26/1768495049-210w65df432162262.jpg"
     ],
@@ -2809,6 +3842,8 @@
     "bathrooms": 1.0,
     "sqft": null,
     "availability": "Available Now",
+    "rental_type": "entire_unit",
+    "rental_type_label": "Entire Place",
     "images": [
       "https://m.bostonpads.com/media/v2/listings/unit/photos/12-20/1606855394-image.jpg"
     ],
@@ -2832,6 +3867,8 @@
     "bathrooms": 2.0,
     "sqft": null,
     "availability": "Available Now",
+    "rental_type": "entire_unit",
+    "rental_type_label": "Entire Place",
     "images": [
       "https://m.bostonpads.com/media/v2/listings/unit/photos/06-26/1780866133-img-7625.jpeg"
     ],
@@ -2883,6 +3920,8 @@
     "bathrooms": 2.0,
     "sqft": null,
     "availability": "Available Now",
+    "rental_type": "entire_unit",
+    "rental_type_label": "Entire Place",
     "images": [
       "https://m.bostonpads.com/media/v2/listings/unit/photos/10-26/1791312986-1616186043-wechat-image-20210319160038.jpg"
     ],
@@ -2906,6 +3945,8 @@
     "bathrooms": 1.0,
     "sqft": null,
     "availability": "Available 09-01-2027",
+    "rental_type": "entire_unit",
+    "rental_type_label": "Entire Place",
     "images": [
       "https://m.bostonpads.com/media/v2/listings/unit/photos/10-26/1791999532-5e9982df-1753-42c6-b162-b350e86721b3.jpg"
     ],
@@ -2958,6 +3999,8 @@
     "sqft": null,
     "address": "Union Square",
     "availability": "Available November 1",
+    "rental_type": "entire_unit",
+    "rental_type_label": "Entire Place",
     "images": [
       "https://images.craigslist.org/00G0G_ktNwun3S4Gh_0kE0fu_600x450.jpg",
       "https://images.craigslist.org/01414_ap5hF7iJTSq_0kE0fu_600x450.jpg",
@@ -2987,6 +4030,8 @@
     "bathrooms": 1.0,
     "sqft": null,
     "availability": "Available Now",
+    "rental_type": "entire_unit",
+    "rental_type_label": "Entire Place",
     "images": [
       "https://m.bostonpads.com/media/v2/listings/unit/photos/06-26/1782323222-ca897c17-0573-4056-97c5-fe3924971c12.jpeg"
     ],
@@ -3010,6 +4055,8 @@
     "bathrooms": 1.5,
     "sqft": null,
     "availability": "Available Now",
+    "rental_type": "entire_unit",
+    "rental_type_label": "Entire Place",
     "images": [
       "https://m.bostonpads.com/media/v2/listings/unit/photos/04-22/1649211753-69034917.jpg"
     ],
@@ -3033,6 +4080,8 @@
     "bathrooms": 1.0,
     "sqft": null,
     "availability": "Available 09-01-2027",
+    "rental_type": "entire_unit",
+    "rental_type_label": "Entire Place",
     "images": [
       "https://m.bostonpads.com/media/v2/listings/unit/photos/12-22/1670024236-2.JPG"
     ],
@@ -3056,6 +4105,8 @@
     "bathrooms": 1.0,
     "sqft": null,
     "availability": "Available 09-01-2027",
+    "rental_type": "entire_unit",
+    "rental_type_label": "Entire Place",
     "images": [
       "https://m.bostonpads.com/media/v2/listings/unit/photos/12-23/1701447849-img-3035.jpeg"
     ],
@@ -3079,6 +4130,8 @@
     "bathrooms": 1.0,
     "sqft": null,
     "availability": "Available 09-01-2027",
+    "rental_type": "entire_unit",
+    "rental_type_label": "Entire Place",
     "images": [
       "https://m.bostonpads.com/media/v2/listings/unit/photos/10-26/1792000829-6b8d4120-1cbb-4632-9dd5-74a734150c3a.jpg"
     ],
@@ -3102,6 +4155,8 @@
     "bathrooms": 2.0,
     "sqft": null,
     "availability": "Available 12-01-2026",
+    "rental_type": "entire_unit",
+    "rental_type_label": "Entire Place",
     "images": [
       "https://m.bostonpads.com/media/v2/listings/unit/photos/03-22/1648737410-56782285.jpg"
     ],
@@ -3125,6 +4180,8 @@
     "bathrooms": 2.0,
     "sqft": null,
     "availability": "Available Now",
+    "rental_type": "entire_unit",
+    "rental_type_label": "Entire Place",
     "images": [
       "https://m.bostonpads.com/media/v2/listings/unit/photos/09-26/1790080168-img-3582.jpg"
     ],

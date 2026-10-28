@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { ChevronLeft, ChevronRight, Bed, Bath, MapPin, ExternalLink, ShieldCheck, AlertCircle, Maximize2, Calendar } from 'lucide-react';
+import { ChevronLeft, ChevronRight, Bed, Bath, MapPin, ExternalLink, ShieldCheck, AlertCircle, Maximize2, Calendar, Home, DoorClosed } from 'lucide-react';
 
 export default function ListingCard({ listing, isSelected, onSelect, onOpenDetails }) {
   const [currentImgIndex, setCurrentImgIndex] = useState(0);
@@ -103,11 +103,22 @@ export default function ListingCard({ listing, isSelected, onSelect, onOpenDetai
           )}
         </div>
 
-        {/* Source Badge */}
-        <div className="absolute top-3 right-3">
+        {/* Source & Type Badge */}
+        <div className="absolute top-3 right-3 flex flex-col gap-1 items-end">
           <span className={`px-2.5 py-1 rounded-lg text-xs font-bold uppercase tracking-wider border shadow-sm ${getSourceBadgeColor(listing.source)}`}>
             {listing.source_label}
           </span>
+          {listing.rental_type === 'room' ? (
+            <span className="flex items-center gap-1 px-2 py-0.5 rounded-md text-[10px] font-bold bg-indigo-600 text-white shadow-sm">
+              <DoorClosed className="w-3 h-3" />
+              Single Room
+            </span>
+          ) : (
+            <span className="flex items-center gap-1 px-2 py-0.5 rounded-md text-[10px] font-bold bg-black/60 text-white backdrop-blur-xs shadow-sm">
+              <Home className="w-3 h-3" />
+              Entire Place
+            </span>
+          )}
         </div>
       </div>
 
