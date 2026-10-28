@@ -1,5 +1,5 @@
 import React from 'react';
-import { Search, RotateCcw, Filter, ShieldCheck, DollarSign } from 'lucide-react';
+import { Search, RotateCcw, Filter, ShieldCheck, DollarSign, Calendar } from 'lucide-react';
 
 export default function FilterBar({ filters, setFilters, totalCount, filteredCount }) {
   const handleFeeChange = (val) => {
@@ -20,6 +20,7 @@ export default function FilterBar({ filters, setFilters, totalCount, filteredCou
       fee: 'all',
       source: 'all',
       bedrooms: 'all',
+      availableNow: false,
       maxPrice: 6000,
     });
   };
@@ -29,6 +30,7 @@ export default function FilterBar({ filters, setFilters, totalCount, filteredCou
     filters.fee !== 'all' ||
     filters.source !== 'all' ||
     filters.bedrooms !== 'all' ||
+    filters.availableNow ||
     filters.maxPrice < 6000;
 
   return (
@@ -128,6 +130,21 @@ export default function FilterBar({ filters, setFilters, totalCount, filteredCou
             onChange={(e) => setFilters((prev) => ({ ...prev, maxPrice: Number(e.target.value) }))}
             className="w-full accent-boston-brick cursor-pointer"
           />
+        </div>
+
+        {/* Move-In Now Toggle */}
+        <div className="flex items-center gap-2">
+          <button
+            onClick={() => setFilters((prev) => ({ ...prev, availableNow: !prev.availableNow }))}
+            className={`flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-semibold border transition-all ${
+              filters.availableNow
+                ? 'bg-boston-brick text-white border-boston-brick shadow-sm'
+                : 'bg-gray-50 text-gray-700 border-gray-200 hover:bg-gray-100'
+            }`}
+          >
+            <Calendar className="w-3.5 h-3.5" />
+            <span>Move-In Now Only</span>
+          </button>
         </div>
 
         <div className="flex items-center gap-3 ml-auto">

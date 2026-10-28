@@ -50,6 +50,18 @@ def clean_price(price_str):
     return int(clean) if clean else 0
 
 
+def normalize_availability(text):
+    if not text:
+        return 'Contact Lister'
+    clean = re.sub(r'<[^>]+>', '', str(text)).strip()
+    clean = re.sub(r'^(?:available|avail\.?)\s*', '', clean, flags=re.I).strip()
+    if clean.lower() in ['now', 'immediate', 'immediately']:
+        return 'Available Now'
+    if not clean:
+        return 'Available Now'
+    return f"Available {clean.title()}"
+
+
 def analyze_fees(title, body, explicit_fee_text=None):
     if explicit_fee_text:
         low = explicit_fee_text.lower()
@@ -154,12 +166,23 @@ def fetch_craigslist_detail_page(listing):
             if bb_m:
                 beds = int(bb_m.group(1))
                 baths = float(bb_m.group(2))
-                
+            # Availability date
+            avail_text = None
+            avail_m = re.search(r'class="attr[^"]*available[^"]*">([^<]+)</span>', html, re.I)
+            if avail_m:
+                avail_text = avail_m.group(1).strip()
+            else:
+                avail_m = re.search(r'\bavailable\s+([a-zA-Z]{3,9}\s+\d{1,2}|now|immediate|immediately)\b', html, re.I)
+                if avail_m:
+                    avail_text = avail_m.group(1).strip()
+            availability = normalize_availability(avail_text)
+
             return {
                 **listing,
                 'bedrooms': beds,
                 'bathrooms': baths,
                 'sqft': sqft,
+                'availability': availability,
                 'images': images[:8] if images else [
                     'https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80'
                 ],
@@ -325,6 +348,9 @@ def scrape_boston_pads(limit=50):
                 if item.get('availability'):
                     desc += f"Available: {item.get('availability')}."
 
+                avail_raw = item.get('availability') or item.get('date_available')
+                availability = normalize_availability(avail_raw)
+
                 pads_listings.append({
                     'id': f"bp-{ad_id}",
                     'source': 'bostonpads',
@@ -338,11 +364,12 @@ def scrape_boston_pads(limit=50):
                     'bedrooms': bedrooms,
                     'bathrooms': bathrooms,
                     'sqft': None,
+                    'availability': availability,
                     'images': images,
                     'description': desc,
                     'has_broker_fee': has_broker_fee,
                     'fee_badge': fee_badge,
-                    'fee_details': fee_text or ('No broker fee' if not has_fee else 'Broker fee applies'),
+                    'fee_details': fee_text or ('No broker fee' if not has_broker_fee else 'Broker fee applies'),
                     'address': f"{clean_sub_area}, Boston, MA"
                 })
     except Exception as e:
@@ -370,6 +397,7 @@ def get_additional_boston_aggregations():
             'bedrooms': 1,
             'bathrooms': 1,
             'sqft': 880,
+            'availability': 'Available Now',
             'images': [
                 'https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=800&q=80',
                 'https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&w=800&q=80'
@@ -393,6 +421,7 @@ def get_additional_boston_aggregations():
             'bedrooms': 2,
             'bathrooms': 1,
             'sqft': 950,
+            'availability': 'Available Nov 1',
             'images': [
                 'https://images.unsplash.com/photo-1493809842364-78817add7ffb?auto=format&fit=crop&w=800&q=80'
             ],
@@ -415,6 +444,7 @@ def get_additional_boston_aggregations():
             'bedrooms': 0,
             'bathrooms': 1,
             'sqft': 540,
+            'availability': 'Available Now',
             'images': [
                 'https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=800&q=80',
                 'https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&w=800&q=80'
@@ -438,6 +468,7 @@ def get_additional_boston_aggregations():
             'bedrooms': 2,
             'bathrooms': 1.5,
             'sqft': 1100,
+            'availability': 'Available Nov 1',
             'images': [
                 'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=800&q=80',
                 'https://images.unsplash.com/photo-1493809842364-78817add7ffb?auto=format&fit=crop&w=800&q=80'
@@ -461,6 +492,7 @@ def get_additional_boston_aggregations():
             'bedrooms': 1,
             'bathrooms': 1,
             'sqft': 350,
+            'availability': 'Available Now',
             'images': [
                 'https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?auto=format&fit=crop&w=800&q=80'
             ],
@@ -483,6 +515,7 @@ def get_additional_boston_aggregations():
             'bedrooms': 3,
             'bathrooms': 1,
             'sqft': 1250,
+            'availability': 'Available Sep 1',
             'images': [
                 'https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=800&q=80'
             ],
@@ -505,6 +538,7 @@ def get_additional_boston_aggregations():
             'bedrooms': 1,
             'bathrooms': 1,
             'sqft': 680,
+            'availability': 'Available Now',
             'images': [
                 'https://images.unsplash.com/photo-1502005229762-ee1b2b8ab98f?auto=format&fit=crop&w=800&q=80'
             ],

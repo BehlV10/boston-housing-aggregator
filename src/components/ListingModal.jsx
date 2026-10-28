@@ -53,6 +53,12 @@ export default function ListingModal({ listing, onClose }) {
                 Fee Unspecified
               </span>
             )}
+            {listing.availability && listing.availability !== 'Contact Lister' && (
+              <span className="flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold bg-white/95 text-gray-900 shadow-lg">
+                <Calendar className="w-4 h-4 text-boston-brick" />
+                {listing.availability}
+              </span>
+            )}
             <span className="px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wide bg-white/90 text-gray-800 backdrop-blur-sm shadow-lg">
               {listing.source_label}
             </span>

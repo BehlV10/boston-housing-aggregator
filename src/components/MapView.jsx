@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import { MapContainer, TileLayer, Marker, Popup, useMap } from 'react-leaflet';
 import L from 'leaflet';
-import { ExternalLink, Bed, Bath, ShieldCheck, DollarSign, Maximize2 } from 'lucide-react';
+import { ExternalLink, Bed, Bath, ShieldCheck, DollarSign, Maximize2, Calendar } from 'lucide-react';
 
 // Subcomponent to dynamically center or fly to selected listing
 function MapUpdater({ selectedListing }) {
@@ -80,8 +80,8 @@ export default function MapView({ listings, selectedListing, onSelectListing }) 
                         className="w-full h-full object-cover"
                         loading="lazy"
                       />
-                      <div className="absolute top-2.5 left-2.5">
-                        <span className={`px-2.5 py-1 rounded-full text-xs font-bold shadow-md ${
+                      <div className="absolute top-2.5 left-2.5 flex flex-col gap-1 items-start">
+                        <span className={`px-2.5 py-0.5 rounded-full text-[11px] font-bold shadow-md ${
                           listing.has_broker_fee === false
                             ? 'bg-emerald-600 text-white'
                             : listing.has_broker_fee === true
@@ -90,6 +90,12 @@ export default function MapView({ listings, selectedListing, onSelectListing }) 
                         }`}>
                           {listing.fee_badge}
                         </span>
+                        {listing.availability && listing.availability !== 'Contact Lister' && (
+                          <span className="flex items-center gap-1 px-2 py-0.5 rounded-full text-[10px] font-bold bg-white/95 text-gray-800 shadow-md backdrop-blur-sm border border-gray-100">
+                            <Calendar className="w-2.5 h-2.5 text-boston-brick" />
+                            {listing.availability}
+                          </span>
+                        )}
                       </div>
                       {listing.images.length > 1 && (
                         <div className="absolute bottom-2 right-2 px-2 py-0.5 rounded-md bg-black/60 text-[10px] font-semibold text-white backdrop-blur-xs">

@@ -13,6 +13,7 @@
     "bathrooms": 1.0,
     "sqft": null,
     "address": "Allston",
+    "availability": "Available Nov 1",
     "images": [
       "https://images.craigslist.org/00t0t_aqduIuaWVa5_0CI0t2_600x450.jpg",
       "https://images.craigslist.org/00j0j_5eQOBrfNyNd_0CI0t2_600x450.jpg",
@@ -42,6 +43,7 @@
     "bathrooms": 1.0,
     "sqft": 624,
     "address": "Jamaica Plain",
+    "availability": "Contact Lister",
     "images": [
       "https://images.craigslist.org/00o0o_dbBzsanEenk_0fn08R_600x450.jpg",
       "https://images.craigslist.org/00H0H_6KCuEPD9i7j_0t20CI_600x450.jpg",
@@ -71,6 +73,7 @@
     "bathrooms": 2.0,
     "sqft": null,
     "address": "boston/cambridge/brookline",
+    "availability": "Available Jan 1",
     "images": [
       "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80"
     ],
@@ -120,6 +123,7 @@
     "bedrooms": 1,
     "bathrooms": 1,
     "sqft": 350,
+    "availability": "Available Now",
     "images": [
       "https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?auto=format&fit=crop&w=800&q=80"
     ],
@@ -143,6 +147,7 @@
     "bathrooms": 1.0,
     "sqft": null,
     "address": "boston/cambridge/brookline",
+    "availability": "Available Nov 1",
     "images": [
       "https://images.craigslist.org/00Q0Q_kSgvXCWUENY_0t20CI_600x450.jpg",
       "https://images.craigslist.org/00P0P_eCQuoeY79dg_0t20CI_600x450.jpg",
@@ -200,6 +205,7 @@
     "bathrooms": 1.0,
     "sqft": null,
     "address": "Framingham",
+    "availability": "Contact Lister",
     "images": [
       "https://images.craigslist.org/00V0V_3nNs1H74ODF_0t20CI_600x450.jpg",
       "https://images.craigslist.org/00303_hDA4iJbjZXW_0t20CI_600x450.jpg",
@@ -255,6 +261,7 @@
     "bathrooms": 1.0,
     "sqft": 1250,
     "address": "Revere",
+    "availability": "Available Now",
     "images": [
       "https://images.craigslist.org/01010_5QHVy2TSsnf_06H0bV_600x450.jpg",
       "https://images.craigslist.org/00x0x_iS4QdWxaoau_09D05p_600x450.jpg",
@@ -284,6 +291,7 @@
     "bathrooms": 1.0,
     "sqft": null,
     "address": "Framingham, MA",
+    "availability": "Contact Lister",
     "images": [
       "https://images.craigslist.org/00000_cTxb9DKhjz2_0co0gw_600x450.jpg",
       "https://images.craigslist.org/00E0E_j28EfefeKLn_0co0gw_600x450.jpg",
@@ -309,6 +317,7 @@
     "bedrooms": 0,
     "bathrooms": 1.0,
     "sqft": null,
+    "availability": "Available Now",
     "images": [
       "https://m.bostonpads.com/media/v2/listings/unit/photos/10-26/1792857801-img-2457.jpeg"
     ],
@@ -331,6 +340,7 @@
     "bedrooms": 0,
     "bathrooms": 1.0,
     "sqft": null,
+    "availability": "Available 11-03-2026",
     "images": [
       "https://m.bostonpads.com/media/v2/listings/unit/photos/09-24/1726769429-7c6bbffd0775bf3270ba563e8876ccad-full.jpg"
     ],
@@ -354,6 +364,7 @@
     "bathrooms": 1.0,
     "sqft": null,
     "address": "boston/cambridge/brookline",
+    "availability": "Available Nov 15",
     "images": [
       "https://images.craigslist.org/00101_aOI2hkcJgX8_0oo0ww_600x450.jpg",
       "https://images.craigslist.org/00202_92wPHkfWe4A_0oo0ww_600x450.jpg",
@@ -381,6 +392,7 @@
     "bathrooms": 1.0,
     "sqft": null,
     "address": "Somerville - Davis Square",
+    "availability": "Available December 1",
     "images": [
       "https://images.craigslist.org/00l0l_kKroB2sSZ9A_0gw0co_600x450.jpg",
       "https://images.craigslist.org/00O0O_hptFvsOCRjH_0gw0co_600x450.jpg",
@@ -410,6 +422,7 @@
     "bathrooms": 1.0,
     "sqft": null,
     "address": "metro west",
+    "availability": "Available Now",
     "images": [
       "https://images.craigslist.org/00A0A_bAwpUXGQkX8_0t20CI_600x450.jpg",
       "https://images.craigslist.org/00k0k_jGGslw6pXSU_0t20CI_600x450.jpg",
@@ -466,6 +479,7 @@
     "bedrooms": 1,
     "bathrooms": 1.0,
     "sqft": null,
+    "availability": "Available Now",
     "images": [
       "https://m.bostonpads.com/media/v2/listings/unit/photos/10-24/1728418937-img-2557.jpeg"
     ],
@@ -489,6 +503,7 @@
     "bathrooms": 2.0,
     "sqft": 1275,
     "address": "Lynn",
+    "availability": "Available Now",
     "images": [
       "https://images.craigslist.org/01616_dzLFE3mhjtI_0CI0t2_600x450.jpg",
       "https://images.craigslist.org/00f0f_5wI9FyxQgLz_0870aO_600x450.jpg",
@@ -518,6 +533,7 @@
     "bathrooms": 1.0,
     "sqft": null,
     "address": "Somerville \\ Sullivan Sq. \\ E. Somervill",
+    "availability": "Available Now",
     "images": [
       "https://images.craigslist.org/00t0t_4HDDOnhDe4m_0lM0t2_600x450.jpg",
       "https://images.craigslist.org/01111_czlYcndpLPJ_0lM0t2_600x450.jpg",
@@ -546,6 +562,7 @@
     "bedrooms": 2,
     "bathrooms": 1.0,
     "sqft": null,
+    "availability": "Available Now",
     "images": [
       "https://m.bostonpads.com/media/v2/listings/ad/photos/09-26/1789685028-img-8644.jpeg"
     ],
@@ -568,6 +585,7 @@
     "bedrooms": 0,
     "bathrooms": 1.0,
     "sqft": null,
+    "availability": "Available Now",
     "images": [
       "https://m.bostonpads.com/media/v2/listings/unit/photos/05-26/1779397053-785o6a047eb220de0.jpg"
     ],
@@ -590,6 +608,7 @@
     "bedrooms": 0,
     "bathrooms": 1.0,
     "sqft": null,
+    "availability": "Available Now",
     "images": [
       "https://m.bostonpads.com/media/v2/listings/unit/photos/04-26/1776801800-11843o5eab080480bac.jpg"
     ],
@@ -613,6 +632,7 @@
     "bathrooms": 1.0,
     "sqft": null,
     "address": "Cambridge \\ Porter Sq. \\ Harvard Sq.",
+    "availability": "Available Nov 1",
     "images": [
       "https://images.craigslist.org/00P0P_ba2VNdEAqz2_0ww0oo_600x450.jpg",
       "https://images.craigslist.org/01717_6qo5NG6fiP6_0ww0oo_600x450.jpg",
@@ -642,6 +662,7 @@
     "bathrooms": 1.0,
     "sqft": null,
     "address": "Malden",
+    "availability": "Available Now",
     "images": [
       "https://images.craigslist.org/01717_fBVwLepgTob_0gw0co_600x450.jpg",
       "https://images.craigslist.org/00b0b_9YloZuIx1XW_0gw0co_600x450.jpg",
@@ -671,6 +692,7 @@
     "bathrooms": 1.0,
     "sqft": null,
     "address": "Somerville - Davis Square",
+    "availability": "Available Jan 1",
     "images": [
       "https://images.craigslist.org/00303_ertC2SeTdPQ_0gw09j_600x450.jpg",
       "https://images.craigslist.org/00J0J_6CWS203gDee_0gw09j_600x450.jpg",
@@ -699,6 +721,7 @@
     "bedrooms": 0,
     "bathrooms": 1.0,
     "sqft": null,
+    "availability": "Available Now",
     "images": [
       "https://m.bostonpads.com/media/v2/listings/unit/photos/09-26/1788984797-img-0367.jpeg"
     ],
@@ -722,6 +745,7 @@
     "bathrooms": 1.0,
     "sqft": 890,
     "address": "JAMAICA PLAIN, BOSTON",
+    "availability": "Available Now",
     "images": [
       "https://images.craigslist.org/01717_6VcRFOdgjk1_0ww0oo_600x450.jpg",
       "https://images.craigslist.org/00P0P_hq1mGtewmHQ_0ww0oo_600x450.jpg",
@@ -775,6 +799,7 @@
     "bedrooms": 2,
     "bathrooms": 1.0,
     "sqft": null,
+    "availability": "Available Now",
     "images": [
       "https://m.bostonpads.com/media/v2/listings/unit/photos/05-26/1778716730-img-0676.jpeg"
     ],
@@ -798,6 +823,7 @@
     "bathrooms": 1.0,
     "sqft": 800,
     "address": "ROSLINDALE, BOSTON",
+    "availability": "Available Now",
     "images": [
       "https://images.craigslist.org/00V0V_1kp537cMBKE_0ww0oo_600x450.jpg",
       "https://images.craigslist.org/00a0a_fWZMvPtG0W9_0ww0oo_600x450.jpg",
@@ -827,6 +853,7 @@
     "bathrooms": 1.0,
     "sqft": 700,
     "address": "East Somerville, Sullivan Sq, Assembly",
+    "availability": "Available Jan 1",
     "images": [
       "https://images.craigslist.org/00z0z_b0WTUwQzSdR_0oM0x2_600x450.jpg",
       "https://images.craigslist.org/00b0b_hv30qWbXFlH_0oM0x2_600x450.jpg",
@@ -856,6 +883,7 @@
     "bathrooms": 1.0,
     "sqft": 750,
     "address": "Beverly",
+    "availability": "Available Dec 1",
     "images": [
       "https://images.craigslist.org/00T0T_jtwnyxWV3CC_0t20CI_600x450.jpg",
       "https://images.craigslist.org/00E0E_b1xjbAbyRSw_0t20CI_600x450.jpg",
@@ -885,6 +913,7 @@
     "bathrooms": 1.0,
     "sqft": null,
     "address": "Framingham",
+    "availability": "Contact Lister",
     "images": [
       "https://images.craigslist.org/00S0S_8ksX1pTs4vV_0lM0t2_600x450.jpg",
       "https://images.craigslist.org/00G0G_flGVP6K0LKy_0lM0t2_600x450.jpg",
@@ -913,6 +942,7 @@
     "bathrooms": 1.0,
     "sqft": null,
     "address": "Lynn, MA",
+    "availability": "Available Now",
     "images": [
       "https://images.craigslist.org/00Q0Q_9WoqG775MVS_0hr0CI_600x450.jpg",
       "https://images.craigslist.org/00y0y_atJHeUkqNRQ_0hr0CI_600x450.jpg",
@@ -942,6 +972,7 @@
     "bathrooms": 1.0,
     "sqft": null,
     "address": "Somerville",
+    "availability": "Contact Lister",
     "images": [
       "https://images.craigslist.org/01010_1LcrgwMt73h_0CI0t2_600x450.jpg",
       "https://images.craigslist.org/00T0T_c4OxsxCKRJ1_0CI0t2_600x450.jpg",
@@ -970,6 +1001,7 @@
     "bedrooms": 3,
     "bathrooms": 1.0,
     "sqft": null,
+    "availability": "Available Now",
     "images": [
       "https://m.bostonpads.com/media/v2/listings/unit/photos/09-26/1789150712-img-5622.jpeg"
     ],
@@ -992,6 +1024,7 @@
     "bedrooms": 1,
     "bathrooms": 1.0,
     "sqft": null,
+    "availability": "Available 12-01-2026",
     "images": [
       "https://m.bostonpads.com/media/v2/listings/unit/photos/09-26/1789790976-28-fleet-st-9-boston-north-end-shared-unit-photo-2.jpg"
     ],
@@ -1042,6 +1075,7 @@
     "bedrooms": 2,
     "bathrooms": 1.0,
     "sqft": null,
+    "availability": "Available Now",
     "images": [
       "https://m.bostonpads.com/media/v2/listings/unit/photos/11-23/1698961846-img-4158.jpeg"
     ],
@@ -1064,6 +1098,7 @@
     "bedrooms": 3,
     "bathrooms": 1.0,
     "sqft": null,
+    "availability": "Available Now",
     "images": [
       "https://m.bostonpads.com/media/v2/listings/ad/photos/10-26/1792176613-img-0575.jpeg"
     ],
@@ -1115,6 +1150,7 @@
     "bathrooms": 1.0,
     "sqft": null,
     "address": "WOBURN (Burlington Line)",
+    "availability": "Available Nov 1",
     "images": [
       "https://images.craigslist.org/01616_8FdSlfPoXTr_0lM0t2_600x450.jpg",
       "https://images.craigslist.org/00W0W_dYhttmdgrlj_0lM0t2_600x450.jpg",
@@ -1144,6 +1180,7 @@
     "bathrooms": 1.0,
     "sqft": null,
     "address": "north shore",
+    "availability": "Contact Lister",
     "images": [
       "https://images.craigslist.org/00303_1Hr0bqiQjeK_042039_600x450.jpg",
       "https://images.craigslist.org/00j0j_26JbGBdeuMc_0lM0t2_600x450.jpg",
@@ -1173,6 +1210,7 @@
     "bathrooms": 1.0,
     "sqft": null,
     "address": "Davis Sq/Teele Sq",
+    "availability": "Available Now",
     "images": [
       "https://images.craigslist.org/00o0o_hnEemNrLvM0_08g06c_600x450.jpg",
       "https://images.craigslist.org/00J0J_cwdQix93UuE_08g06c_600x450.jpg",
@@ -1202,6 +1240,7 @@
     "bathrooms": 1.0,
     "sqft": 900,
     "address": "East Somerville, Sullivan Sq, Assembly",
+    "availability": "Available Dec 1",
     "images": [
       "https://images.craigslist.org/00u0u_dbcKGHE5W3u_0lM0t2_600x450.jpg",
       "https://images.craigslist.org/00s0s_4HyCbivZEXu_0lM0t2_600x450.jpg",
@@ -1231,6 +1270,7 @@
     "bathrooms": 1.0,
     "sqft": null,
     "address": "medford",
+    "availability": "Available Nov 1",
     "images": [
       "https://images.craigslist.org/00D0D_6uWJhjuW6M4_0oM0gw_600x450.jpg",
       "https://images.craigslist.org/00505_dd1HjzqKSF2_0nf0hC_600x450.jpg",
@@ -1256,6 +1296,7 @@
     "bedrooms": 1,
     "bathrooms": 1,
     "sqft": 680,
+    "availability": "Available Now",
     "images": [
       "https://images.unsplash.com/photo-1502005229762-ee1b2b8ab98f?auto=format&fit=crop&w=800&q=80"
     ],
@@ -1279,6 +1320,7 @@
     "bathrooms": 1.5,
     "sqft": 850,
     "address": "Salem",
+    "availability": "Available Now",
     "images": [
       "https://images.craigslist.org/00E0E_d7GvFZ2IVlE_07K0ak_600x450.jpg",
       "https://images.craigslist.org/00P0P_aYPDRTSOxcT_07K0ak_600x450.jpg",
@@ -1308,6 +1350,7 @@
     "bathrooms": 1.0,
     "sqft": null,
     "address": "boston/cambridge/brookline",
+    "availability": "Available Nov 1",
     "images": [
       "https://images.craigslist.org/00S0S_kShjdR2E93D_0lM0t2_600x450.jpg",
       "https://images.craigslist.org/00w0w_dsSbD1v9dz0_0lM0t2_600x450.jpg",
@@ -1337,6 +1380,7 @@
     "bathrooms": 1.0,
     "sqft": null,
     "address": "Cambridge",
+    "availability": "Available Now",
     "images": [
       "https://images.craigslist.org/00202_yla7RpDP5y_0nm0hw_600x450.jpg",
       "https://images.craigslist.org/00q0q_8miM7KmIJ0y_0nm0hw_600x450.jpg",
@@ -1365,6 +1409,7 @@
     "bathrooms": 1.0,
     "sqft": null,
     "address": "Davis Sq/Ball Sq/Tufts",
+    "availability": "Available November 1",
     "images": [
       "https://images.craigslist.org/00101_7sVNgYUwIAv_08g06c_600x450.jpg",
       "https://images.craigslist.org/00F0F_fQCXWGgB0cf_08g06c_600x450.jpg",
@@ -1394,6 +1439,7 @@
     "bathrooms": 1.0,
     "sqft": null,
     "address": "Somerville \\ Ten Hills \\ E. Somerville",
+    "availability": "Available Nov 1",
     "images": [
       "https://images.craigslist.org/00707_aOHOJb56bd8_0x20oM_600x450.jpg",
       "https://images.craigslist.org/00j0j_5DxNhiou6dz_0x20oM_600x450.jpg",
@@ -1422,6 +1468,7 @@
     "bedrooms": 2,
     "bathrooms": 1.0,
     "sqft": null,
+    "availability": "Available Now",
     "images": [
       "https://m.bostonpads.com/media/v2/listings/ad/photos/12-22/1671123702-aa.PNG"
     ],
@@ -1444,6 +1491,7 @@
     "bedrooms": 3,
     "bathrooms": 1.0,
     "sqft": null,
+    "availability": "Available Now",
     "images": [
       "https://m.bostonpads.com/media/v2/listings/unit/photos/08-21/1630449958-549ab663-e2b7-46ec-9b5e-21e493a42463.jpeg"
     ],
@@ -1466,6 +1514,7 @@
     "bedrooms": 0,
     "bathrooms": 1.0,
     "sqft": null,
+    "availability": "Available Now",
     "images": [
       "https://m.bostonpads.com/media/v2/listings/unit/photos/09-26/1789508106-55-burbank-st-12-boston-ma-02115-fenway-4.jpeg"
     ],
@@ -1488,6 +1537,7 @@
     "bedrooms": 2,
     "bathrooms": 1.0,
     "sqft": null,
+    "availability": "Available Now",
     "images": [
       "https://m.bostonpads.com/media/v2/listings/unit/photos/02-21/1613242776-12474o5feb3bbda505a.jpg"
     ],
@@ -1510,6 +1560,7 @@
     "bedrooms": 2,
     "bathrooms": 1.0,
     "sqft": null,
+    "availability": "Available 12-01-2026",
     "images": [
       "https://m.bostonpads.com/media/v2/listings/unit/photos/04-21/1618880981-533o5ea0955cc6cb7.jpg"
     ],
@@ -1561,6 +1612,7 @@
     "bathrooms": 1.0,
     "sqft": 850,
     "address": "JAMAICA PLAIN, BOSTON",
+    "availability": "Available Now",
     "images": [
       "https://images.craigslist.org/00n0n_9KAJJsQcqEA_0ww0oo_600x450.jpg",
       "https://images.craigslist.org/01515_gWwaI1kkVEZ_0ww0oo_600x450.jpg",
@@ -1590,6 +1642,7 @@
     "bathrooms": 1.0,
     "sqft": 650,
     "address": "East Cambridge, Kendall, MIT, Lechmere",
+    "availability": "Available Jan 1",
     "images": [
       "https://images.craigslist.org/00P0P_6IZyktNtXNg_0nm0hw_600x450.jpg",
       "https://images.craigslist.org/00p0p_iCLWFNjiTCq_0nm0hw_600x450.jpg",
@@ -1642,6 +1695,7 @@
     "bedrooms": 2,
     "bathrooms": 1.0,
     "sqft": null,
+    "availability": "Available Now",
     "images": [
       "https://m.bostonpads.com/media/v2/listings/unit/photos/09-26/1788887907-img-2400.jpeg"
     ],
@@ -1664,6 +1718,7 @@
     "bedrooms": 2,
     "bathrooms": 1.0,
     "sqft": null,
+    "availability": "Available 11-01-2026",
     "images": [
       "https://m.bostonpads.com/media/v2/listings/unit/photos/12-23/1702664709-landlord-unit-photo-57234838-5.jpg"
     ],
@@ -1687,6 +1742,7 @@
     "bathrooms": 1.0,
     "sqft": null,
     "address": "Davis Square/Ball Square/Magoun Square",
+    "availability": "Available November 1",
     "images": [
       "https://images.craigslist.org/00y0y_bRF2RwxyvoS_08g06c_600x450.jpg",
       "https://images.craigslist.org/00z0z_cdvhepeXgpy_08g06c_600x450.jpg",
@@ -1715,6 +1771,7 @@
     "bedrooms": 2,
     "bathrooms": 1.0,
     "sqft": null,
+    "availability": "Available 11-01-2026",
     "images": [
       "https://m.bostonpads.com/media/v2/listings/unit/photos/09-26/1788888496-img-2449.jpeg"
     ],
@@ -1737,6 +1794,7 @@
     "bedrooms": 2,
     "bathrooms": 1.0,
     "sqft": null,
+    "availability": "Available Now",
     "images": [
       "https://m.bostonpads.com/media/v2/listings/unit/photos/09-26/1790612348-220-hanover-st-27-boston-north-end-shared-unit-photo-7.jpeg"
     ],
@@ -1760,6 +1818,7 @@
     "bathrooms": 1.0,
     "sqft": 936,
     "address": "Jamaica Plain",
+    "availability": "Contact Lister",
     "images": [
       "https://images.craigslist.org/00W0W_hBNL0KiVCXW_0hN0dC_600x450.jpg",
       "https://images.craigslist.org/00T0T_cM96NaVU9NM_0t20CI_600x450.jpg",
@@ -1787,6 +1846,7 @@
     "bathrooms": 1.0,
     "sqft": null,
     "address": "Somerville - Gilman Sq",
+    "availability": "Available Dec 1",
     "images": [
       "https://images.craigslist.org/00O0O_5o0Jta4swOv_0gw0co_600x450.jpg",
       "https://images.craigslist.org/00H0H_i2GfJF0YQ6b_0gw0co_600x450.jpg",
@@ -1815,6 +1875,7 @@
     "bedrooms": 2,
     "bathrooms": 2.0,
     "sqft": null,
+    "availability": "Available Now",
     "images": [
       "https://m.bostonpads.com/media/v2/listings/unit/photos/11-20/1605627573-125305193-370239490969617-6876191205275573142-n.jpg"
     ],
@@ -1837,6 +1898,7 @@
     "bedrooms": 2,
     "bathrooms": 2.0,
     "sqft": null,
+    "availability": "Available Now",
     "images": [
       "https://m.bostonpads.com/media/v2/listings/ad/photos/03-23/1679714237-l1.jpeg"
     ],
@@ -1859,6 +1921,7 @@
     "bedrooms": 2,
     "bathrooms": 1,
     "sqft": 950,
+    "availability": "Available Nov 1",
     "images": [
       "https://images.unsplash.com/photo-1493809842364-78817add7ffb?auto=format&fit=crop&w=800&q=80"
     ],
@@ -1882,6 +1945,7 @@
     "bathrooms": 1.0,
     "sqft": 950,
     "address": "JAMAICA PLAIN, BOSTON",
+    "availability": "Available Now",
     "images": [
       "https://images.craigslist.org/00Q0Q_buUaFpc5eTE_0uU0nb_600x450.jpg",
       "https://images.craigslist.org/00e0e_bQhaIRrXhZo_0uU0nb_600x450.jpg",
@@ -1910,6 +1974,7 @@
     "bedrooms": 2,
     "bathrooms": 1.5,
     "sqft": null,
+    "availability": "Available Now",
     "images": [
       "https://m.bostonpads.com/media/v2/listings/ad/photos/08-23/1691549724-img-0956.JPEG"
     ],
@@ -1933,6 +1998,7 @@
     "bathrooms": 1.0,
     "sqft": 1000,
     "address": "East Cambridge, Kendall, MIT, Lechmere",
+    "availability": "Available Jan 1",
     "images": [
       "https://images.craigslist.org/00Y0Y_hGQYKes4kbe_0hw0nm_600x450.jpg",
       "https://images.craigslist.org/00404_idPKuPBC7n9_0hw0nm_600x450.jpg",
@@ -1962,6 +2028,7 @@
     "bathrooms": 2.0,
     "sqft": 1400,
     "address": "Somerville \\ Tufts \\ Davis Sq.",
+    "availability": "Available Now",
     "images": [
       "https://images.craigslist.org/00F0F_4c6uQUusUu4_0iS0t2_600x450.jpg",
       "https://images.craigslist.org/00n0n_3lud7sTHcXT_0x20oM_600x450.jpg",
@@ -1990,6 +2057,7 @@
     "bedrooms": 3,
     "bathrooms": 2.0,
     "sqft": null,
+    "availability": "Available Now",
     "images": [
       "https://m.bostonpads.com/media/v2/listings/ad/photos/06-26/1782338944-photo.jpg"
     ],
@@ -2012,6 +2080,7 @@
     "bedrooms": 0,
     "bathrooms": 1.0,
     "sqft": null,
+    "availability": "Available 12-01-2026",
     "images": [
       "https://m.bostonpads.com/media/v2/listings/unit/photos/03-22/1648160993-247bb74f-1dd4-4fb4-a557-981932c10a3a.jpeg"
     ],
@@ -2034,6 +2103,7 @@
     "bedrooms": 3,
     "bathrooms": 2.0,
     "sqft": null,
+    "availability": "Available Now",
     "images": [
       "https://m.bostonpads.com/media/v2/listings/ad/photos/06-26/1782339230-photo.jpg"
     ],
@@ -2056,6 +2126,7 @@
     "bedrooms": 3,
     "bathrooms": 2.0,
     "sqft": null,
+    "availability": "Available Now",
     "images": [
       "https://m.bostonpads.com/media/v2/listings/ad/photos/06-26/1782338150-photo.jpg"
     ],
@@ -2079,6 +2150,7 @@
     "bathrooms": 1.0,
     "sqft": 550,
     "address": "Arlington",
+    "availability": "Available Dec 1",
     "images": [
       "https://images.craigslist.org/00D0D_hxj7ZBtt1qO_0gw0co_600x450.jpg",
       "https://images.craigslist.org/00p0p_9MWZmieQoXI_0gw0co_600x450.jpg",
@@ -2107,6 +2179,7 @@
     "bedrooms": 0,
     "bathrooms": 1,
     "sqft": 540,
+    "availability": "Available Now",
     "images": [
       "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=800&q=80",
       "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&w=800&q=80"
@@ -2130,6 +2203,7 @@
     "bedrooms": 2,
     "bathrooms": 1.0,
     "sqft": null,
+    "availability": "Available Now",
     "images": [
       "https://m.bostonpads.com/media/v2/listings/unit/photos/02-24/1708097907-36-mozart-st-2-boston-shared-unit-photo-3.jpg"
     ],
@@ -2153,6 +2227,7 @@
     "bathrooms": 1.0,
     "sqft": 1300,
     "address": "West Roxbury, BOSTON",
+    "availability": "Available Now",
     "images": [
       "https://images.craigslist.org/00c0c_6N3waVKgW1y_0ww0oo_600x450.jpg",
       "https://images.craigslist.org/00l0l_7jQytugD6nT_0ww0oo_600x450.jpg",
@@ -2181,6 +2256,7 @@
     "bedrooms": 3,
     "bathrooms": 1.0,
     "sqft": null,
+    "availability": "Available Now",
     "images": [
       "https://m.bostonpads.com/media/v2/listings/unit/photos/09-26/1790606076-40-mozart-3-boston-jamaica-plain-unit-photo-1.jpeg"
     ],
@@ -2224,6 +2300,7 @@
     "bedrooms": 3,
     "bathrooms": 1.0,
     "sqft": null,
+    "availability": "Available Now",
     "images": [
       "https://m.bostonpads.com/media/v2/listings/unit/photos/09-26/1790082965-1504-commonwealth-7-boston-brighton-unit-photo-3.jpeg"
     ],
@@ -2246,6 +2323,7 @@
     "bedrooms": 1,
     "bathrooms": 1,
     "sqft": 880,
+    "availability": "Available Now",
     "images": [
       "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=800&q=80",
       "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&w=800&q=80"
@@ -2269,6 +2347,7 @@
     "bedrooms": 1,
     "bathrooms": 1.0,
     "sqft": null,
+    "availability": "Available Now",
     "images": [
       "https://m.bostonpads.com/media/v2/listings/unit/photos/10-26/1791376447-screenshot-7-10-2026-83224-appyougotlistingscom.jpeg"
     ],
@@ -2292,6 +2371,7 @@
     "bathrooms": 1.0,
     "sqft": null,
     "address": "boston/cambridge/brookline",
+    "availability": "Available Dec 1",
     "images": [
       "https://images.craigslist.org/00q0q_8WNRYZ9iKGv_0x20oM_600x450.jpg",
       "https://images.craigslist.org/00c0c_4lQdV1ucZD0_0x20oM_600x450.jpg",
@@ -2321,6 +2401,7 @@
     "bathrooms": 2.0,
     "sqft": null,
     "address": "Union Square",
+    "availability": "Available November 1",
     "images": [
       "https://images.craigslist.org/00q0q_j3oq6E2k9g3_0kE0fu_600x450.jpg",
       "https://images.craigslist.org/00W0W_aTWyS9l8kiW_0kE0fu_600x450.jpg",
@@ -2348,6 +2429,7 @@
     "bedrooms": 3,
     "bathrooms": 1,
     "sqft": 1250,
+    "availability": "Available Sep 1",
     "images": [
       "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=800&q=80"
     ],
@@ -2371,6 +2453,7 @@
     "bathrooms": 1.0,
     "sqft": null,
     "address": "Somerville - Davis Sq",
+    "availability": "Available Jan 1",
     "images": [
       "https://images.craigslist.org/00G0G_gpRhkYiwOOu_0gw0co_600x450.jpg",
       "https://images.craigslist.org/00t0t_eK6XOMcC3Zl_0gw0co_600x450.jpg",
@@ -2399,6 +2482,7 @@
     "bedrooms": 1,
     "bathrooms": 1.0,
     "sqft": null,
+    "availability": "Available 12-01-2026",
     "images": [
       "https://m.bostonpads.com/media/v2/listings/unit/photos/03-24/1711399523-74315632.jpg"
     ],
@@ -2421,6 +2505,7 @@
     "bedrooms": 4,
     "bathrooms": 1.0,
     "sqft": null,
+    "availability": "Available Now",
     "images": [
       "https://m.bostonpads.com/media/v2/listings/unit/photos/08-26/1787690826-886a4873-d3bc-4b94-a024-67550d9d4406.jpeg"
     ],
@@ -2443,6 +2528,7 @@
     "bedrooms": 2,
     "bathrooms": 1.0,
     "sqft": null,
+    "availability": "Available Now",
     "images": [
       "https://m.bostonpads.com/media/v2/listings/unit/photos/10-26/1791376658-screenshot-7-10-2026-83559-appyougotlistingscom.jpeg"
     ],
@@ -2465,6 +2551,7 @@
     "bedrooms": 2,
     "bathrooms": 1.0,
     "sqft": null,
+    "availability": "Available Now",
     "images": [
       "https://m.bostonpads.com/media/v2/listings/unit/photos/02-26/1771708551-38-49-5.jpg"
     ],
@@ -2508,6 +2595,7 @@
     "bedrooms": 2,
     "bathrooms": 1.5,
     "sqft": 1100,
+    "availability": "Available Nov 1",
     "images": [
       "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=800&q=80",
       "https://images.unsplash.com/photo-1493809842364-78817add7ffb?auto=format&fit=crop&w=800&q=80"
@@ -2531,6 +2619,7 @@
     "bedrooms": 2,
     "bathrooms": 1.0,
     "sqft": null,
+    "availability": "Available Now",
     "images": [
       "https://m.bostonpads.com/media/v2/listings/ad/photos/06-21/1623613006-4.PNG"
     ],
@@ -2554,6 +2643,7 @@
     "bathrooms": 1.0,
     "sqft": 1300,
     "address": "East Cambridge, Kendall, MIT, Lechmere",
+    "availability": "Available Jan 1",
     "images": [
       "https://images.craigslist.org/00G0G_f73kDMh2ra1_0hw0nm_600x450.jpg",
       "https://images.craigslist.org/00606_gBIiKc7dlgR_0hw0nm_600x450.jpg",
@@ -2583,6 +2673,7 @@
     "bathrooms": 1.0,
     "sqft": 1200,
     "address": "Cambridge MIT Kendall Lechmere",
+    "availability": "Available Jan 1",
     "images": [
       "https://images.craigslist.org/00606_gBIiKc7dlgR_0hw0nm_600x450.jpg",
       "https://images.craigslist.org/00G0G_f73kDMh2ra1_0hw0nm_600x450.jpg",
@@ -2612,6 +2703,7 @@
     "bathrooms": 2.0,
     "sqft": 800,
     "address": "Cambridge - Porter Sq",
+    "availability": "Available Dec 1",
     "images": [
       "https://images.craigslist.org/00H0H_hPpFcxlD09X_0gw0co_600x450.jpg",
       "https://images.craigslist.org/00l0l_iyG1R1fN8hk_0gw0co_600x450.jpg",
@@ -2641,6 +2733,7 @@
     "bathrooms": 1.5,
     "sqft": null,
     "address": "Medford \\ Tufts",
+    "availability": "Available Nov 15",
     "images": [
       "https://images.craigslist.org/00g0g_iichSuUXPiG_0x20oM_600x450.jpg",
       "https://images.craigslist.org/00G0G_gp4tH0h2b8w_0x20oM_600x450.jpg",
@@ -2669,6 +2762,7 @@
     "bedrooms": 4,
     "bathrooms": 2.0,
     "sqft": null,
+    "availability": "Available Now",
     "images": [
       "https://m.bostonpads.com/media/v2/listings/ad/photos/08-26/1787696585-img-5827.jpeg"
     ],
@@ -2691,6 +2785,7 @@
     "bedrooms": 2,
     "bathrooms": 1.0,
     "sqft": null,
+    "availability": "Available 09-01-2027",
     "images": [
       "https://m.bostonpads.com/media/v2/listings/unit/photos/01-26/1768495049-210w65df432162262.jpg"
     ],
@@ -2713,6 +2808,7 @@
     "bedrooms": 2,
     "bathrooms": 1.0,
     "sqft": null,
+    "availability": "Available Now",
     "images": [
       "https://m.bostonpads.com/media/v2/listings/unit/photos/12-20/1606855394-image.jpg"
     ],
@@ -2735,6 +2831,7 @@
     "bedrooms": 3,
     "bathrooms": 2.0,
     "sqft": null,
+    "availability": "Available Now",
     "images": [
       "https://m.bostonpads.com/media/v2/listings/unit/photos/06-26/1780866133-img-7625.jpeg"
     ],
@@ -2785,6 +2882,7 @@
     "bedrooms": 2,
     "bathrooms": 2.0,
     "sqft": null,
+    "availability": "Available Now",
     "images": [
       "https://m.bostonpads.com/media/v2/listings/unit/photos/10-26/1791312986-1616186043-wechat-image-20210319160038.jpg"
     ],
@@ -2807,6 +2905,7 @@
     "bedrooms": 2,
     "bathrooms": 1.0,
     "sqft": null,
+    "availability": "Available 09-01-2027",
     "images": [
       "https://m.bostonpads.com/media/v2/listings/unit/photos/10-26/1791999532-5e9982df-1753-42c6-b162-b350e86721b3.jpg"
     ],
@@ -2858,6 +2957,7 @@
     "bathrooms": 2.0,
     "sqft": null,
     "address": "Union Square",
+    "availability": "Available November 1",
     "images": [
       "https://images.craigslist.org/00G0G_ktNwun3S4Gh_0kE0fu_600x450.jpg",
       "https://images.craigslist.org/01414_ap5hF7iJTSq_0kE0fu_600x450.jpg",
@@ -2886,6 +2986,7 @@
     "bedrooms": 2,
     "bathrooms": 1.0,
     "sqft": null,
+    "availability": "Available Now",
     "images": [
       "https://m.bostonpads.com/media/v2/listings/unit/photos/06-26/1782323222-ca897c17-0573-4056-97c5-fe3924971c12.jpeg"
     ],
@@ -2908,6 +3009,7 @@
     "bedrooms": 3,
     "bathrooms": 1.5,
     "sqft": null,
+    "availability": "Available Now",
     "images": [
       "https://m.bostonpads.com/media/v2/listings/unit/photos/04-22/1649211753-69034917.jpg"
     ],
@@ -2930,6 +3032,7 @@
     "bedrooms": 3,
     "bathrooms": 1.0,
     "sqft": null,
+    "availability": "Available 09-01-2027",
     "images": [
       "https://m.bostonpads.com/media/v2/listings/unit/photos/12-22/1670024236-2.JPG"
     ],
@@ -2952,6 +3055,7 @@
     "bedrooms": 3,
     "bathrooms": 1.0,
     "sqft": null,
+    "availability": "Available 09-01-2027",
     "images": [
       "https://m.bostonpads.com/media/v2/listings/unit/photos/12-23/1701447849-img-3035.jpeg"
     ],
@@ -2974,6 +3078,7 @@
     "bedrooms": 3,
     "bathrooms": 1.0,
     "sqft": null,
+    "availability": "Available 09-01-2027",
     "images": [
       "https://m.bostonpads.com/media/v2/listings/unit/photos/10-26/1792000829-6b8d4120-1cbb-4632-9dd5-74a734150c3a.jpg"
     ],
@@ -2996,6 +3101,7 @@
     "bedrooms": 3,
     "bathrooms": 2.0,
     "sqft": null,
+    "availability": "Available 12-01-2026",
     "images": [
       "https://m.bostonpads.com/media/v2/listings/unit/photos/03-22/1648737410-56782285.jpg"
     ],
@@ -3018,6 +3124,7 @@
     "bedrooms": 3,
     "bathrooms": 2.0,
     "sqft": null,
+    "availability": "Available Now",
     "images": [
       "https://m.bostonpads.com/media/v2/listings/unit/photos/09-26/1790080168-img-3582.jpg"
     ],

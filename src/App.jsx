@@ -18,8 +18,9 @@ export default function App() {
   const [filters, setFilters] = useState({
     search: '',
     fee: 'all', // 'all' | 'no-fee' | 'fee'
-    source: 'all', // 'all' | 'craigslist' | 'zillow' | 'facebook'
+    source: 'all', // 'all' | 'craigslist' | 'zillow' | 'facebook' | 'bostonpads' | 'redfin'
     bedrooms: 'all',
+    availableNow: false,
     maxPrice: 6000,
   });
 
@@ -79,6 +80,11 @@ export default function App() {
           } else {
             if ((item.bedrooms || 0) !== bedNum) return false;
           }
+        }
+
+        // Available Now filter
+        if (filters.availableNow && item.availability !== 'Available Now') {
+          return false;
         }
 
         // Text search

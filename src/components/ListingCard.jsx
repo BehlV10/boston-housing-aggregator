@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { ChevronLeft, ChevronRight, Bed, Bath, MapPin, ExternalLink, ShieldCheck, AlertCircle, Maximize2 } from 'lucide-react';
+import { ChevronLeft, ChevronRight, Bed, Bath, MapPin, ExternalLink, ShieldCheck, AlertCircle, Maximize2, Calendar } from 'lucide-react';
 
 export default function ListingCard({ listing, isSelected, onSelect, onOpenDetails }) {
   const [currentImgIndex, setCurrentImgIndex] = useState(0);
@@ -77,8 +77,8 @@ export default function ListingCard({ listing, isSelected, onSelect, onOpenDetai
           </>
         )}
 
-        {/* Fee Badge */}
-        <div className="absolute top-3 left-3 flex flex-col gap-1 items-start">
+        {/* Fee Badge & Availability */}
+        <div className="absolute top-3 left-3 flex flex-col gap-1.5 items-start">
           {listing.has_broker_fee === false ? (
             <span className="flex items-center gap-1 px-2.5 py-1 rounded-full text-xs font-bold bg-emerald-600 text-white shadow-md">
               <ShieldCheck className="w-3.5 h-3.5" />
@@ -92,6 +92,13 @@ export default function ListingCard({ listing, isSelected, onSelect, onOpenDetai
           ) : (
             <span className="px-2.5 py-1 rounded-full text-xs font-medium bg-gray-800/80 backdrop-blur-sm text-gray-200 shadow-md">
               Fee Unspecified
+            </span>
+          )}
+
+          {listing.availability && listing.availability !== 'Contact Lister' && (
+            <span className="flex items-center gap-1 px-2.5 py-0.5 rounded-full text-[11px] font-bold bg-white/95 text-gray-800 shadow-md backdrop-blur-sm border border-gray-100">
+              <Calendar className="w-3 h-3 text-boston-brick" />
+              {listing.availability}
             </span>
           )}
         </div>
