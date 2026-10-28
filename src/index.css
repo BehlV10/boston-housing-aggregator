@@ -1,0 +1,84 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom Leaflet Map styling */
+.leaflet-container {
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  font-family: inherit;
+}
+
+/* Custom Marker Styling */
+.price-marker-pin {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px 8px;
+  border-radius: 9999px;
+  font-weight: 700;
+  font-size: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.price-marker-pin:hover {
+  transform: scale(1.15);
+  z-index: 999 !important;
+}
+
+.price-marker-no-fee {
+  background-color: #059669;
+  color: white;
+  border: 2px solid #ffffff;
+}
+
+.price-marker-fee {
+  background-color: #2563eb;
+  color: white;
+  border: 2px solid #ffffff;
+}
+
+.price-marker-unknown {
+  background-color: #4b5563;
+  color: white;
+  border: 2px solid #ffffff;
+}
+
+.price-marker-selected {
+  background-color: #e11d48 !important;
+  color: white !important;
+  transform: scale(1.2);
+  border: 3px solid #ffffff;
+  box-shadow: 0 0 0 3px #e11d48;
+}
+
+/* Leaflet Popup customization */
+.leaflet-popup-content-wrapper {
+  padding: 0;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.leaflet-popup-content {
+  margin: 0 !important;
+  line-height: 1.4;
+}
+
+.leaflet-container a.leaflet-popup-close-button {
+  top: 8px;
+  right: 8px;
+  color: white;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-shadow: none;
+}

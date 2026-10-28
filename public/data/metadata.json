@@ -1,0 +1,13 @@
+{
+  "city": "Boston, MA",
+  "last_updated": "2026-10-28T15:26:34.371200+00:00",
+  "total_listings": 55,
+  "no_fee_count": 13,
+  "fee_count": 2,
+  "unknown_fee_count": 40,
+  "sources": {
+    "craigslist": 50,
+    "zillow": 3,
+    "facebook": 2
+  }
+}
