@@ -1,12 +1,12 @@
 {
   "city": "Boston, MA",
-  "last_updated": "2026-10-28T15:42:38.669488+00:00",
-  "total_listings": 58,
-  "no_fee_count": 13,
+  "last_updated": "2026-10-28T16:36:37.528596+00:00",
+  "total_listings": 68,
+  "no_fee_count": 21,
   "fee_count": 2,
-  "unknown_fee_count": 43,
+  "unknown_fee_count": 45,
   "sources": {
-    "craigslist": 53,
+    "craigslist": 63,
     "zillow": 3,
     "facebook": 2
   }
