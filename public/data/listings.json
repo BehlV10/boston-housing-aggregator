@@ -127,6 +127,34 @@
     "address": "Mass Ave & Garden St, Cambridge, MA 02138"
   },
   {
+    "id": "cl-2EWcftqZ8nkrWR26",
+    "source": "craigslist",
+    "source_label": "Craigslist",
+    "title": "CHELSEA/BOSTON *STUDIO* NO BROKER FEES!",
+    "price": 1550,
+    "neighborhood": "boston/cambridge/brookline",
+    "url": "https://www.craigslist.org/view/d/chelsea-chelsea-boston-studio-no-broker/a9zkzW2EWcftqZ8nkrWR26",
+    "lat": 42.396298527322,
+    "lng": -71.032499943302,
+    "bedrooms": null,
+    "bathrooms": 1,
+    "images": [
+      "https://images.craigslist.org/00Q0Q_kSgvXCWUENY_0t20CI_600x450.jpg",
+      "https://images.craigslist.org/00P0P_eCQuoeY79dg_0t20CI_600x450.jpg",
+      "https://images.craigslist.org/00P0P_dxBB4vJg7ML_0t20CI_600x450.jpg",
+      "https://images.craigslist.org/00U0U_eAX0WPwzA2P_0t20CI_600x450.jpg",
+      "https://images.craigslist.org/01212_gSbMWRoAtCc_0t20CI_600x450.jpg",
+      "https://images.craigslist.org/00F0F_i8GFGEW0Zr6_0t20CI_600x450.jpg",
+      "https://images.craigslist.org/00F0F_5kdLv2suSan_0t20CI_600x450.jpg",
+      "https://images.craigslist.org/01515_7MZJn02tsJW_0t20CI_600x450.jpg"
+    ],
+    "description": "CHELSEA/BOSTON NO BROKER OR RENTAL FEES !!! ULTRA MODERN LIVING AT LUX 16 5TH. FULLY FURNISHED BRAND NEW STUDIO. Conveniently located to commute into all of Boston, Logan Airport, Universities, Seaport , Waterfront, Medical District and all points North within minutes utilizing Chelsea's new Silver Line located steps from your front door. Property is also eligible for the City\u2019s parking program. Unit features high end finishes throughout including hardwood flooring, granite countertops, custom cabinetry, and stainless appliances, custom closets and complete with a Murphy bed system to optimize...",
+    "has_broker_fee": null,
+    "fee_badge": "Fee Unspecified",
+    "fee_details": "Contact lister for fee status",
+    "address": "boston/cambridge/brookline"
+  },
+  {
     "id": "cl-YLi1M7NE2oFMWxfg",
     "source": "craigslist",
     "source_label": "Craigslist",
@@ -704,6 +732,34 @@
     "address": "Watertown"
   },
   {
+    "id": "cl-GRAidrib2vWk6Vm6",
+    "source": "craigslist",
+    "source_label": "Craigslist",
+    "title": "WOBURN--2 BED CORNER UNIT--HEAT/HW INC!!--Burl line--LAHEY",
+    "price": 2595,
+    "neighborhood": "WOBURN (Burlington Line)",
+    "url": "https://www.craigslist.org/view/d/woburn-woburn-bed-corner-unit-heat-hw/jgwCMsGRAidrib2vWk6Vm6",
+    "lat": 42.4753787351596,
+    "lng": -71.1821209959988,
+    "bedrooms": 2,
+    "bathrooms": 1,
+    "images": [
+      "https://images.craigslist.org/01616_8FdSlfPoXTr_0lM0t2_600x450.jpg",
+      "https://images.craigslist.org/00W0W_dYhttmdgrlj_0lM0t2_600x450.jpg",
+      "https://images.craigslist.org/00v0v_2tUqdCyo9BK_0lM0t2_600x450.jpg",
+      "https://images.craigslist.org/00t0t_hrBy9eVXZRC_0lM0t2_600x450.jpg",
+      "https://images.craigslist.org/00h0h_7KY0dClpiDG_0lM0t2_600x450.jpg",
+      "https://images.craigslist.org/01414_6TYdB4R5RSm_0lM0t2_600x450.jpg",
+      "https://images.craigslist.org/00y0y_fTNLKvZPhiR_0lM0t2_600x450.jpg",
+      "https://images.craigslist.org/00v0v_jm0kMojTTQ9_0lM0t2_600x450.jpg"
+    ],
+    "description": "Nicely updated corner unit--All new eat-in kitchen with granite counters, new appliances including dishwasher--Eat-in Kitchen-2 bedroom 1 bath corner unit located in Woburn on the Burlington line. All new windows, great closet space, hardwood floor. parking and coin up laundry in the building. Close to shops and restaurants. 5 minutes to 95/128. HEAT &amp; HOT WATER INCLUDED. No pets. 1 car parking included, 2nd spot $50 or street parking on Locust st available. Building is close to Burlington Mall, Lahey Clinic, Four Corners shopping &amp; restaurants. Rt 128/93 Terms: 12 month lease Good cre...",
+    "has_broker_fee": null,
+    "fee_badge": "Fee Unspecified",
+    "fee_details": "Contact lister for fee status",
+    "address": "WOBURN (Burlington Line)"
+  },
+  {
     "id": "cl-JdvApYcrFpbMQsAG",
     "source": "craigslist",
     "source_label": "Craigslist",
@@ -860,6 +916,34 @@
     "fee_badge": "Fee Unspecified",
     "fee_details": "Contact lister for fee status",
     "address": "Salem"
+  },
+  {
+    "id": "cl-aJYt295xyyn8xhVX",
+    "source": "craigslist",
+    "source_label": "Craigslist",
+    "title": "CHELSEA/BOSTON Spacious and updated 3-bedroom apartment",
+    "price": 2675,
+    "neighborhood": "boston/cambridge/brookline",
+    "url": "https://www.craigslist.org/view/d/chelsea-chelsea-boston-spacious-and/eDFzzvaJYt295xyyn8xhVX",
+    "lat": 42.396298527322,
+    "lng": -71.032499943302,
+    "bedrooms": 3,
+    "bathrooms": 1,
+    "images": [
+      "https://images.craigslist.org/00S0S_kShjdR2E93D_0lM0t2_600x450.jpg",
+      "https://images.craigslist.org/00w0w_dsSbD1v9dz0_0lM0t2_600x450.jpg",
+      "https://images.craigslist.org/00s0s_5YZjB9ko9GI_0lM0t2_600x450.jpg",
+      "https://images.craigslist.org/00b0b_fGfgdk2t1cz_0lM0t2_600x450.jpg",
+      "https://images.craigslist.org/00y0y_iP8RqMzT7ru_0lM0t2_600x450.jpg",
+      "https://images.craigslist.org/00z0z_1W62H6pOu5N_0lM0t2_600x450.jpg",
+      "https://images.craigslist.org/00O0O_joIOlkoPQlp_0lM0t2_600x450.jpg",
+      "https://images.craigslist.org/00s0s_a1i2lNVY93c_0lM0t2_600x450.jpg"
+    ],
+    "description": "CHELSEA/BOSTON NEWLY RENOVATED Spacious and updated 3-bedroom apartment located in a convenient Chelsea neighborhood. This bright unit features a functional floor plan with 3 large bedrooms, full kitchen, full living room, hardwood floors, an updated kitchen, and ample natural light throughout. Enjoy generous living space, modern finishes, and easy access to public transportation, shopping, restaurants, and major commuter routes into Boston. Professionally managed property. CONTACT CAYLA NOW AT 617-992-8660.",
+    "has_broker_fee": null,
+    "fee_badge": "Fee Unspecified",
+    "fee_details": "Contact lister for fee status",
+    "address": "boston/cambridge/brookline"
   },
   {
     "id": "cl-LuSQcW48xk7EwmWP",
