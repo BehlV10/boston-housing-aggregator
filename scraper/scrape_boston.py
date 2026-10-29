@@ -1368,8 +1368,15 @@ REDDIT_NEIGHBORHOOD_COORDS = {
     'needham': (42.2809, -71.2378, 'Needham, MA'),
     'dedham': (42.2437, -71.1684, 'Dedham, MA'),
     'milton': (42.2504, -71.0662, 'Milton, MA'),
-    'braintree': (42.2079, -71.0048, 'Braintree, MA'),
     'natick': (42.2834, -71.3468, 'Natick, MA'),
+    'west end': (42.3644, -71.0638, 'West End, Boston, MA'),
+    'northeastern': (42.3398, -71.0892, 'Fenway / Northeastern, Boston, MA'),
+    'neu': (42.3398, -71.0892, 'Fenway / Northeastern, Boston, MA'),
+    'harvard': (42.3736, -71.1190, 'Harvard Sq, Cambridge, MA'),
+    'mit': (42.3590, -71.0947, 'MIT / Kendall Sq, Cambridge, MA'),
+    'tufts': (42.4069, -71.1198, 'Tufts / Medford, MA'),
+    'boston university': (42.3505, -71.1054, 'Boston University, Boston, MA'),
+    'burlington': (42.5048, -71.1956, 'Burlington, MA'),
 }
 
 REDDIT_SEEKING_KEYWORDS = [
@@ -1488,10 +1495,12 @@ def scrape_reddit_boston_housing(existing_cache=None):
                 matched_loc = (lat_c, lng_c, loc_name)
                 break
 
-        if matched_loc:
-            base_lat, base_lng, address = matched_loc
-        else:
-            base_lat, base_lng, address = 42.3601, -71.0589, 'Greater Boston, MA'
+        if not matched_loc:
+            # Do NOT default blindly to Boston center! A listing without a recognizable location
+            # should never be falsely placed on the map.
+            continue
+
+        base_lat, base_lng, address = matched_loc
 
         # Jitter coordinates deterministically so map pins in same neighborhood don't stack
         h = abs(hash(post_id))
@@ -1753,6 +1762,22 @@ def main():
         item['price'] = norm_price
         if rate_note:
             item['original_rate_note'] = rate_note
+
+        # Re-match or purge any legacy blind-defaulted Reddit listings
+        if item.get('source') == 'reddit' and (item.get('address') == 'Greater Boston, MA' or item.get('neighborhood') == 'Greater Boston, MA'):
+            full_txt = f"{t} {d}"
+            matched = None
+            for key, (lat_c, lng_c, loc_name) in REDDIT_NEIGHBORHOOD_COORDS.items():
+                if re.search(r'\b' + re.escape(key) + r'\b', full_txt, re.I):
+                    matched = (lat_c, lng_c, loc_name)
+                    break
+            if matched:
+                item['lat'] = matched[0]
+                item['lng'] = matched[1]
+                item['address'] = matched[2]
+                item['neighborhood'] = matched[2]
+            else:
+                continue
 
         # Smart fee classification for peer-to-peer room shares & sublets
         if item.get('has_broker_fee') is None:
