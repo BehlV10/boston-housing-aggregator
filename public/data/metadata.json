@@ -12,8 +12,9 @@
     "craigslist": 802,
     "reddit": 19,
     "facebook": 3,
-    "bostonpads": 567,
-    "zillow": 126,
+    "bostonpads": 435,
+    "zillow": 127,
+    "reit_direct": 10,
     "apartments_com": 5,
     "redfin": 2
   },
@@ -26,9 +27,9 @@
     "unspecified": 301,
     "2027-09": 28,
     "2027-02": 1,
-    "2027-06": 60,
+    "2027-06": 41,
     "2027-03": 1,
-    "2027-08": 5,
+    "2027-08": 2,
     "2027-07": 1
   }
 }

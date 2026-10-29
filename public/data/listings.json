@@ -1851,14 +1851,19 @@
     "first_seen": "2026-10-29T03:28:08.646801+00:00",
     "last_seen": "2026-10-29T04:18:33.725322+00:00",
     "images": [
-      "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80"
+      "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80",
+      "https://images.craigslist.org/00W0W_9N2g7tUCzMx_0pO0jm_600x450.jpg",
+      "https://images.craigslist.org/00G0G_5HUBpA4iWwe_0CI0t2_600x450.jpg"
     ],
     "description": "Nice Bedroom in a Furnished Apartment-Utilities Included. Location: Malden Center. Visit original Craigslist posting for details and contact.",
     "has_broker_fee": false,
     "fee_badge": "No Broker Fee",
-    "fee_details": "Direct Roommate Share (No Broker Fee)",
+    "fee_details": "Direct Tenant Sublet (No Broker Fee)",
     "availability": "Available Now",
-    "move_in_period": "immediate"
+    "move_in_period": "immediate",
+    "cross_posted_sources": [
+      "Craigslist"
+    ]
   },
   {
     "id": "cl-roo-ct89yBjgAV1Hpjoi",
@@ -2001,15 +2006,15 @@
     "move_in_period": "immediate"
   },
   {
-    "id": "cl-sub-oxZoZ7TGQg2KLNNa",
+    "id": "cl-roo-CaYmecFy5VNAkqhK",
     "source": "craigslist",
     "source_label": "Craigslist",
-    "title": "Nice Bedroom in a Furnished Apartment-Utilities Included",
+    "title": "house share",
     "price": 850,
-    "neighborhood": "Malden Center",
-    "url": "https://www.craigslist.org/view/d/malden-nice-bedroom-in-furnished/xgEnjioxZoZ7TGQg2KLNNa",
-    "lat": 42.4209523282874,
-    "lng": -71.0579547392649,
+    "neighborhood": "swampscott",
+    "url": "https://www.craigslist.org/view/d/swampscott-house-share/5aHQCiCaYmecFy5VNAkqhK",
+    "lat": 42.474600085516,
+    "lng": -70.9098016044391,
     "bedrooms": 1,
     "bathrooms": 1,
     "rental_type": "sublet",
@@ -2020,13 +2025,19 @@
     "last_seen": "2026-10-29T04:18:33.725322+00:00",
     "availability": "Available Now",
     "images": [
-      "https://images.craigslist.org/00W0W_9N2g7tUCzMx_0pO0jm_600x450.jpg",
-      "https://images.craigslist.org/00G0G_5HUBpA4iWwe_0CI0t2_600x450.jpg"
+      "https://images.craigslist.org/01111_hL8gL6ehbGX_0CI0t2_600x450.jpg",
+      "https://images.craigslist.org/00i0i_g9ZYQhj7WaG_0CI0t2_600x450.jpg",
+      "https://images.craigslist.org/00y0y_aAIKhLR5ZCH_0t20CI_600x450.jpg",
+      "https://images.craigslist.org/00D0D_1lPXopaY3C1_0t20CI_600x450.jpg",
+      "https://images.craigslist.org/00i0i_5DlZ1zwKrsA_0t20CI_600x450.jpg",
+      "https://images.craigslist.org/00808_gYUaz7aHhEq_0t20CI_600x450.jpg",
+      "https://images.craigslist.org/00P0P_fM3GqmfKhen_0t20CI_600x450.jpg",
+      "https://images.craigslist.org/01616_2D34yKIORH_0t20CI_600x450.jpg"
     ],
-    "description": "One bedroom available in a newly renovated apartment. Looking for roommate to share this beautiful apartment. Current roommates works for MBTA, State government and Logan Airport. 3 Mins drive to Malden Center Subway Station Walgreen, Stop and Shop, Bank of America\u2026. Plenty of street parking just in front of the house. On a quiet street off Ferry Street and Cross St. Buses # 104, #105 are around the corner to take you to Malden Center. Very convenient to go to Boston Downtown, Prudential Back Bay area, Tufts Medical Center, Chinatown, Bunker Hill Community College, Northeastern University, Eme...",
+    "description": "One nice furnished room to rent located in a 3 BR owner occupied house. quiet neighborhood near bus, train and shopping. Ample on- street parking and shared bathroom with one other roommate. large lv room, large kitchen, deck. laundry washer / dryer in house. all utilities included. Good references, first month rent and 500 security deposit required .",
     "has_broker_fee": false,
     "fee_badge": "No Broker Fee",
-    "fee_details": "Direct Tenant Sublet (No Broker Fee)",
+    "fee_details": "Direct Roommate Share (No Broker Fee)",
     "move_in_period": "immediate"
   },
   {
@@ -6942,7 +6953,10 @@
     "has_broker_fee": false,
     "fee_badge": "No Broker Fee",
     "fee_details": "Direct Roommate Share (No Broker Fee)",
-    "move_in_period": "immediate"
+    "move_in_period": "immediate",
+    "cross_posted_sources": [
+      "Craigslist"
+    ]
   },
   {
     "id": "cl-roo-cAzCdmuNrc1EJb9p",
@@ -7012,7 +7026,10 @@
     "has_broker_fee": false,
     "fee_badge": "No Broker Fee",
     "fee_details": "Direct Tenant Sublet (No Broker Fee)",
-    "move_in_period": "immediate"
+    "move_in_period": "immediate",
+    "cross_posted_sources": [
+      "Craigslist"
+    ]
   },
   {
     "id": "cl-roo-qcTqfHTW25wxQb9Y",
@@ -10238,7 +10255,7 @@
     "fee_details": "Broker fee applies",
     "address": "SOMERVILLE, Somerville, MA",
     "first_seen": "2026-10-29T02:44:03.608907+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00",
+    "last_seen": "2026-10-29T05:19:21.844187+00:00",
     "move_in_period": "2027-01"
   },
   {
@@ -12265,7 +12282,10 @@
     "has_broker_fee": null,
     "fee_badge": "Fee Unspecified",
     "fee_details": "Contact lister for fee status",
-    "move_in_period": "unspecified"
+    "move_in_period": "unspecified",
+    "cross_posted_sources": [
+      "Craigslist"
+    ]
   },
   {
     "id": "cl-hySg2Q5rxdHSs8KW",
@@ -13396,8 +13416,12 @@
     "has_broker_fee": false,
     "fee_badge": "No Broker Fee",
     "fee_details": "Direct Roommate Share (No Broker Fee)",
-    "availability": "Available Now",
-    "move_in_period": "immediate"
+    "last_seen": "2026-10-29T05:19:21.844187+00:00",
+    "first_seen": "2026-10-29T02:44:12.174122+00:00",
+    "move_in_period": "immediate",
+    "cross_posted_sources": [
+      "Craigslist"
+    ]
   },
   {
     "id": "cl-roo-w3zWNAExRfVunR6B",
@@ -13757,7 +13781,10 @@
     "address": "Brookline - Boston University, Brookline, MA",
     "first_seen": "2026-10-29T02:44:03.608907+00:00",
     "last_seen": "2026-10-29T03:07:20.979519+00:00",
-    "move_in_period": "immediate"
+    "move_in_period": "immediate",
+    "cross_posted_sources": [
+      "Boston Pads"
+    ]
   },
   {
     "id": "cl-aT3Z1TgfrDKgqXik",
@@ -14220,35 +14247,6 @@
     "move_in_period": "unspecified"
   },
   {
-    "id": "bp-8178069",
-    "source": "bostonpads",
-    "source_label": "Boston Pads",
-    "title": "1 Bed Apartment in Medford - Medford Square",
-    "price": 1900,
-    "city": "Medford",
-    "neighborhood": "Medford - Medford Square",
-    "url": "https://bostonpads.com/boston-apartments/?ad_id=8178069",
-    "lat": 42.424636299999996,
-    "lng": -71.0887312,
-    "bedrooms": 1,
-    "bathrooms": 1.0,
-    "sqft": null,
-    "availability": "Available Nov 1, 2026",
-    "rental_type": "entire_unit",
-    "rental_type_label": "Condo / Apt",
-    "images": [
-      "https://m.bostonpads.com/media/v2/listings/unit/photos/07-26/1783034050-img-4113.jpeg"
-    ],
-    "description": "Verified Medford - Medford Square rental. Features: Heat included, Hot water included. Available: 11-01-2026.",
-    "has_broker_fee": false,
-    "fee_badge": "No Broker Fee",
-    "fee_details": "No Fee",
-    "address": "Medford - Medford Square, Medford, MA",
-    "first_seen": "2026-10-29T02:44:03.608907+00:00",
-    "last_seen": "2026-10-29T03:47:29.273970+00:00",
-    "move_in_period": "2026-11"
-  },
-  {
     "id": "cl-6EvGf33aUNjZwSdZ",
     "source": "craigslist",
     "source_label": "Craigslist",
@@ -14392,7 +14390,7 @@
     "fee_badge": "No Broker Fee",
     "fee_details": "Direct lease with building management. Zero broker fee.",
     "first_seen": "2026-10-29T03:36:39.833632+00:00",
-    "last_seen": "2026-10-29T04:06:23.870331+00:00",
+    "last_seen": "2026-10-29T05:19:21.844187+00:00",
     "move_in_period": "unspecified"
   },
   {
@@ -14467,7 +14465,8 @@
     "rental_type": "entire_unit",
     "rental_type_label": "Condo / Apt",
     "images": [
-      "https://m.bostonpads.com/media/v2/listings/unit/photos/07-21/1625735367-f826369e-16ba-44c2-8f2d-78d18000b39b.jpeg"
+      "https://m.bostonpads.com/media/v2/listings/unit/photos/07-21/1625735367-f826369e-16ba-44c2-8f2d-78d18000b39b.jpeg",
+      "https://photos.zillowstatic.com/fp/821160136a0192312cdea17c147f8be6-p_e.jpg"
     ],
     "description": "Verified Cambridge - Mt. Auburn/Brattle/ Fresh Pond rental. Features: Hot water included. Available: Now.",
     "has_broker_fee": false,
@@ -14476,7 +14475,11 @@
     "address": "Cambridge - Mt. Auburn/Brattle/ Fresh Pond, Cambridge, MA",
     "first_seen": "2026-10-29T02:44:03.608907+00:00",
     "last_seen": "2026-10-29T03:47:29.273970+00:00",
-    "move_in_period": "immediate"
+    "move_in_period": "immediate",
+    "cross_posted_sources": [
+      "Boston Pads",
+      "Zillow"
+    ]
   },
   {
     "id": "cl-LMh16fkGmGNnpFq5",
@@ -15081,7 +15084,7 @@
     "fee_details": "No Fee",
     "address": "Northeastern/Symphony, Boston, MA",
     "first_seen": "2026-10-29T03:04:39.795020+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00",
+    "last_seen": "2026-10-29T05:19:21.844187+00:00",
     "move_in_period": "immediate"
   },
   {
@@ -15111,7 +15114,10 @@
     "address": "Cambridge - Central Square/Cambridgeport, Cambridge, MA",
     "first_seen": "2026-10-29T03:04:39.795020+00:00",
     "last_seen": "2026-10-29T03:47:29.273970+00:00",
-    "move_in_period": "immediate"
+    "move_in_period": "immediate",
+    "cross_posted_sources": [
+      "Boston Pads"
+    ]
   },
   {
     "id": "bp-8043523",
@@ -15223,38 +15229,10 @@
     "fee_badge": "No Broker Fee",
     "fee_details": "No Fee",
     "address": "Allston, Boston, MA",
-    "first_seen": "2026-10-29T02:44:03.608907+00:00",
-    "last_seen": "2026-10-29T02:53:24.949933+00:00",
-    "move_in_period": "immediate"
-  },
-  {
-    "id": "bp-8177360",
-    "source": "bostonpads",
-    "source_label": "Boston Pads",
-    "title": "2 Bed Apartment in Brighton - Brighton Center",
-    "price": 2000,
-    "city": "Boston",
-    "neighborhood": "Brighton - Brighton Center",
-    "url": "https://bostonpads.com/boston-apartments/?ad_id=8177360",
-    "lat": 42.352664999999995,
-    "lng": -71.1465899,
-    "bedrooms": 2,
-    "bathrooms": 1.0,
-    "sqft": null,
-    "availability": "Available Now",
-    "rental_type": "entire_unit",
-    "rental_type_label": "Condo / Apt",
-    "images": [
-      "https://m.bostonpads.com/media/v2/listings/unit/photos/07-26/1785509506-img-1466.jpeg"
-    ],
-    "description": "Verified Brighton - Brighton Center rental. Features: Laundry: Common Area, Hot water included. Available: Now.",
-    "has_broker_fee": false,
-    "fee_badge": "No Broker Fee",
-    "fee_details": "No Fee",
-    "address": "Brighton - Brighton Center, Boston, MA",
-    "first_seen": "2026-10-29T03:04:39.795020+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00",
-    "move_in_period": "immediate"
+    "move_in_period": "immediate",
+    "cross_posted_sources": [
+      "Boston Pads"
+    ]
   },
   {
     "id": "bp-8178049",
@@ -15836,6 +15814,7 @@
     "rental_type": "entire_unit",
     "rental_type_label": "Condo / Apt",
     "images": [
+      "https://m.bostonpads.com/media/v2/listings/unit/photos/06-23/1686941293-screenshot-2023-06-16-144552.png",
       "https://m.bostonpads.com/media/v2/listings/unit/photos/10-24/1728401745-img-0038.jpeg"
     ],
     "description": "Verified Cambridge - Davis Square rental. Features: Hot water included. Available: 01-02-2027.",
@@ -15872,7 +15851,7 @@
     "fee_badge": "No Broker Fee",
     "fee_details": "Direct lease with building management. Zero broker fee.",
     "first_seen": "2026-10-29T03:36:39.833632+00:00",
-    "last_seen": "2026-10-29T04:06:23.870331+00:00",
+    "last_seen": "2026-10-29T05:19:21.844187+00:00",
     "move_in_period": "unspecified"
   },
   {
@@ -15960,8 +15939,11 @@
     "fee_details": "No Fee",
     "address": "Brighton- Washington St./ Allston St., Boston, MA",
     "first_seen": "2026-10-29T03:04:39.795020+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00",
-    "move_in_period": "immediate"
+    "last_seen": "2026-10-29T05:19:21.844187+00:00",
+    "move_in_period": "immediate",
+    "cross_posted_sources": [
+      "Boston Pads"
+    ]
   },
   {
     "id": "cl-9Mzf17nvozHwQqL8",
@@ -16031,35 +16013,6 @@
     "has_broker_fee": null,
     "fee_badge": "Fee Unspecified",
     "fee_details": "Contact lister for fee status",
-    "move_in_period": "immediate"
-  },
-  {
-    "id": "bp-8177832",
-    "source": "bostonpads",
-    "source_label": "Boston Pads",
-    "title": "1 Bed Apartment in Brighton- Washington St./ Allston St.",
-    "price": 2095,
-    "city": "Boston",
-    "neighborhood": "Brighton- Washington St./ Allston St.",
-    "url": "https://bostonpads.com/boston-apartments/?ad_id=8177832",
-    "lat": 42.345437,
-    "lng": -71.14399900000001,
-    "bedrooms": 1,
-    "bathrooms": 1.0,
-    "sqft": null,
-    "availability": "Available Now",
-    "rental_type": "entire_unit",
-    "rental_type_label": "Condo / Apt",
-    "images": [
-      "https://m.bostonpads.com/media/v2/listings/unit/photos/10-26/1791659968-img-5743.jpeg"
-    ],
-    "description": "Verified Brighton- Washington St./ Allston St. rental. Features: Hot water included. Available: Now.",
-    "has_broker_fee": false,
-    "fee_badge": "No Broker Fee",
-    "fee_details": "No Fee",
-    "address": "Brighton- Washington St./ Allston St., Boston, MA",
-    "first_seen": "2026-10-29T02:44:03.608907+00:00",
-    "last_seen": "2026-10-29T03:47:29.273970+00:00",
     "move_in_period": "immediate"
   },
   {
@@ -16583,7 +16536,8 @@
     "rental_type": "entire_unit",
     "rental_type_label": "Condo / Apt",
     "images": [
-      "https://m.bostonpads.com/media/v2/listings/ad/photos/09-21/1631821024-e1cd94c4-008e-43a5-9c09-765612d8ae58.jpeg"
+      "https://m.bostonpads.com/media/v2/listings/ad/photos/09-21/1631821024-e1cd94c4-008e-43a5-9c09-765612d8ae58.jpeg",
+      "https://m.bostonpads.com/media/v2/listings/unit/photos/09-21/1631821024-e1cd94c4-008e-43a5-9c09-765612d8ae58.jpeg"
     ],
     "description": "Verified Cambridge - Alewife rental. Features: Laundry: Common Area, Dishwasher included, Pets: Dog OK, Cat OK, Pet OK, Negotiable, Considered, Fishtank, Hot water included. Available: Now.",
     "has_broker_fee": false,
@@ -16591,8 +16545,11 @@
     "fee_details": "No Fee",
     "address": "Cambridge - Alewife, Cambridge, MA",
     "first_seen": "2026-10-29T02:44:03.608907+00:00",
-    "last_seen": "2026-10-29T02:53:24.949933+00:00",
-    "move_in_period": "immediate"
+    "last_seen": "2026-10-29T05:19:21.844187+00:00",
+    "move_in_period": "immediate",
+    "cross_posted_sources": [
+      "Boston Pads"
+    ]
   },
   {
     "id": "cl-roo-GfVemdQyVvphxyNF",
@@ -16627,35 +16584,6 @@
     "has_broker_fee": false,
     "fee_badge": "No Broker Fee",
     "fee_details": "Direct Roommate Share (No Broker Fee)",
-    "move_in_period": "immediate"
-  },
-  {
-    "id": "bp-8176860",
-    "source": "bostonpads",
-    "source_label": "Boston Pads",
-    "title": "1 Bed Apartment in Cambridge - Alewife",
-    "price": 2100,
-    "city": "Cambridge",
-    "neighborhood": "Cambridge - Alewife",
-    "url": "https://bostonpads.com/boston-apartments/?ad_id=8176860",
-    "lat": 42.397196199999996,
-    "lng": -71.1297134,
-    "bedrooms": 1,
-    "bathrooms": 1.0,
-    "sqft": null,
-    "availability": "Available Now",
-    "rental_type": "entire_unit",
-    "rental_type_label": "Condo / Apt",
-    "images": [
-      "https://m.bostonpads.com/media/v2/listings/unit/photos/09-21/1631821024-e1cd94c4-008e-43a5-9c09-765612d8ae58.jpeg"
-    ],
-    "description": "Verified Cambridge - Alewife rental. Features: Laundry: Common Area, Dishwasher included, Pets: Dog OK, Cat OK, Pet OK, Negotiable, Considered, Fishtank, Hot water included. Available: Now.",
-    "has_broker_fee": false,
-    "fee_badge": "No Broker Fee",
-    "fee_details": "No Fee",
-    "address": "Cambridge - Alewife, Cambridge, MA",
-    "first_seen": "2026-10-29T03:27:18.360570+00:00",
-    "last_seen": "2026-10-29T03:47:29.273970+00:00",
     "move_in_period": "immediate"
   },
   {
@@ -17404,8 +17332,11 @@
     "fee_details": "No Fee",
     "address": "Brookline - Brookline Village, Boston, MA",
     "first_seen": "2026-10-29T02:44:03.608907+00:00",
-    "last_seen": "2026-10-29T03:47:29.273970+00:00",
-    "move_in_period": "immediate"
+    "last_seen": "2026-10-29T05:19:21.844187+00:00",
+    "move_in_period": "immediate",
+    "cross_posted_sources": [
+      "Boston Pads"
+    ]
   },
   {
     "id": "bp-4307348",
@@ -17864,7 +17795,7 @@
     "fee_badge": "No Broker Fee",
     "fee_details": "Direct lease with building management. Zero broker fee.",
     "first_seen": "2026-10-29T03:36:39.833632+00:00",
-    "last_seen": "2026-10-29T04:06:23.870331+00:00",
+    "last_seen": "2026-10-29T05:19:21.844187+00:00",
     "move_in_period": "unspecified"
   },
   {
@@ -18585,7 +18516,7 @@
     "fee_badge": "No Broker Fee",
     "fee_details": "Direct lease with building management. Zero broker fee.",
     "first_seen": "2026-10-29T03:36:39.833632+00:00",
-    "last_seen": "2026-10-29T04:06:23.870331+00:00",
+    "last_seen": "2026-10-29T05:19:21.844187+00:00",
     "move_in_period": "unspecified"
   },
   {
@@ -18613,7 +18544,7 @@
     "fee_badge": "No Broker Fee",
     "fee_details": "Direct lease with building management. Zero broker fee.",
     "first_seen": "2026-10-29T03:36:39.833632+00:00",
-    "last_seen": "2026-10-29T04:06:23.870331+00:00",
+    "last_seen": "2026-10-29T05:19:21.844187+00:00",
     "move_in_period": "unspecified"
   },
   {
@@ -19115,36 +19046,10 @@
     "address": "Somerville - Porter Square, Somerville, MA",
     "first_seen": "2026-10-29T03:04:39.795020+00:00",
     "last_seen": "2026-10-29T03:07:20.979519+00:00",
-    "move_in_period": "immediate"
-  },
-  {
-    "id": "bp-8177835",
-    "source": "bostonpads",
-    "source_label": "Boston Pads",
-    "title": "Studio Apartment in Brighton - Cleveland Circle",
-    "price": 2300,
-    "city": "Boston",
-    "neighborhood": "Brighton - Cleveland Circle",
-    "url": "https://bostonpads.com/boston-apartments/?ad_id=8177835",
-    "lat": 42.3392129,
-    "lng": -71.152996,
-    "bedrooms": 0,
-    "bathrooms": 1.0,
-    "sqft": null,
-    "availability": "Available Now",
-    "rental_type": "entire_unit",
-    "rental_type_label": "Condo / Apt",
-    "images": [
-      "https://m.bostonpads.com/media/v2/listings/unit/photos/09-26/1789270834-20260827-120647.jpg"
-    ],
-    "description": "Verified Brighton - Cleveland Circle rental. Features: Dishwasher included, Pets: NO PETS, Hot water included. Available: Now.",
-    "has_broker_fee": false,
-    "fee_badge": "No Broker Fee",
-    "fee_details": "No Fee",
-    "address": "Brighton - Cleveland Circle, Boston, MA",
-    "first_seen": "2026-10-29T03:27:18.360570+00:00",
-    "last_seen": "2026-10-29T03:47:29.273970+00:00",
-    "move_in_period": "immediate"
+    "move_in_period": "immediate",
+    "cross_posted_sources": [
+      "Boston Pads"
+    ]
   },
   {
     "id": "cl-TTZBjvf5UM7Zsh2E",
@@ -19430,7 +19335,7 @@
     "fee_badge": "No Broker Fee",
     "fee_details": "Direct lease with building management. Zero broker fee.",
     "first_seen": "2026-10-29T03:36:39.833632+00:00",
-    "last_seen": "2026-10-29T04:06:23.870331+00:00",
+    "last_seen": "2026-10-29T05:19:21.844187+00:00",
     "move_in_period": "unspecified"
   },
   {
@@ -19458,7 +19363,7 @@
     "fee_badge": "No Broker Fee",
     "fee_details": "Direct lease with building management. Zero broker fee.",
     "first_seen": "2026-10-29T03:36:39.833632+00:00",
-    "last_seen": "2026-10-29T04:06:23.870331+00:00",
+    "last_seen": "2026-10-29T05:19:21.844187+00:00",
     "move_in_period": "unspecified"
   },
   {
@@ -19638,7 +19543,10 @@
     "fee_badge": "No Broker Fee",
     "fee_details": "No Fee",
     "address": "Brighton- Washington St./ Allston St., Boston, MA",
-    "move_in_period": "immediate"
+    "move_in_period": "immediate",
+    "cross_posted_sources": [
+      "Boston Pads"
+    ]
   },
   {
     "id": "cl-N5Ci59JxVp9kdU6j",
@@ -19827,7 +19735,7 @@
     "fee_badge": "No Broker Fee",
     "fee_details": "Direct lease with building management. Zero broker fee.",
     "first_seen": "2026-10-29T03:36:39.833632+00:00",
-    "last_seen": "2026-10-29T04:06:23.870331+00:00",
+    "last_seen": "2026-10-29T05:19:21.844187+00:00",
     "move_in_period": "unspecified"
   },
   {
@@ -19855,7 +19763,7 @@
     "fee_badge": "No Broker Fee",
     "fee_details": "Direct lease with building management. Zero broker fee.",
     "first_seen": "2026-10-29T03:36:39.833632+00:00",
-    "last_seen": "2026-10-29T04:06:23.870331+00:00",
+    "last_seen": "2026-10-29T05:19:21.844187+00:00",
     "move_in_period": "unspecified"
   },
   {
@@ -20030,7 +19938,7 @@
     "fee_details": "No Fee",
     "address": "East Boston - Orient Heights, Boston, MA",
     "first_seen": "2026-10-29T03:27:18.360570+00:00",
-    "last_seen": "2026-10-29T03:47:29.273970+00:00",
+    "last_seen": "2026-10-29T05:19:21.844187+00:00",
     "move_in_period": "immediate"
   },
   {
@@ -20117,7 +20025,7 @@
     "fee_details": "No Fee",
     "address": "Allston/Brighton Border, Boston, MA",
     "first_seen": "2026-10-29T03:04:39.795020+00:00",
-    "last_seen": "2026-10-29T03:47:29.273970+00:00",
+    "last_seen": "2026-10-29T05:19:21.844187+00:00",
     "move_in_period": "2026-11"
   },
   {
@@ -20138,7 +20046,8 @@
     "rental_type": "entire_unit",
     "rental_type_label": "Condo / Apt",
     "images": [
-      "https://m.bostonpads.com/media/v2/listings/ad/photos/09-26/1790740253-img-20260923-184541055.jpg"
+      "https://m.bostonpads.com/media/v2/listings/ad/photos/09-26/1790740253-img-20260923-184541055.jpg",
+      "https://m.bostonpads.com/media/v2/listings/unit/photos/09-26/1790740253-img-20260923-184541055.jpg"
     ],
     "description": "Verified Somerville - Spring Hill rental. Features: Laundry: Common Area, Pets: Cat OK, Heat included, Hot water included. Available: Now.",
     "has_broker_fee": false,
@@ -20183,35 +20092,6 @@
     "fee_badge": "Fee Unspecified",
     "fee_details": "Contact lister for fee status",
     "move_in_period": "2026-12"
-  },
-  {
-    "id": "bp-8177165",
-    "source": "bostonpads",
-    "source_label": "Boston Pads",
-    "title": "1 Bed Apartment in Somerville - Spring Hill",
-    "price": 2400,
-    "city": "Somerville",
-    "neighborhood": "Somerville - Spring Hill",
-    "url": "https://bostonpads.com/boston-apartments/?ad_id=8177165",
-    "lat": 42.3873229,
-    "lng": -71.104828,
-    "bedrooms": 1,
-    "bathrooms": 1.0,
-    "sqft": null,
-    "availability": "Available Now",
-    "rental_type": "entire_unit",
-    "rental_type_label": "Condo / Apt",
-    "images": [
-      "https://m.bostonpads.com/media/v2/listings/unit/photos/09-26/1790740253-img-20260923-184541055.jpg"
-    ],
-    "description": "Verified Somerville - Spring Hill rental. Features: Laundry: Common Area, Pets: Cat OK, Heat included, Hot water included. Available: Now.",
-    "has_broker_fee": false,
-    "fee_badge": "No Broker Fee",
-    "fee_details": "No Fee",
-    "address": "Somerville - Spring Hill, Somerville, MA",
-    "first_seen": "2026-10-29T02:44:03.608907+00:00",
-    "last_seen": "2026-10-29T03:47:29.273970+00:00",
-    "move_in_period": "immediate"
   },
   {
     "id": "bp-8177496",
@@ -20268,7 +20148,7 @@
     "fee_details": "No Fee",
     "address": "Brighton- Washington St./ Allston St., Boston, MA",
     "first_seen": "2026-10-29T02:44:03.608907+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00",
+    "last_seen": "2026-10-29T05:19:21.844187+00:00",
     "move_in_period": "2026-12"
   },
   {
@@ -20297,7 +20177,7 @@
     "fee_details": "No Fee",
     "address": "Brighton- Washington St./ Allston St., Boston, MA",
     "first_seen": "2026-10-29T02:44:03.608907+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00",
+    "last_seen": "2026-10-29T05:19:21.844187+00:00",
     "move_in_period": "immediate"
   },
   {
@@ -20355,7 +20235,10 @@
     "address": "Cambridge - Central Square/Cambridgeport, Cambridge, MA",
     "first_seen": "2026-10-29T03:04:39.795020+00:00",
     "last_seen": "2026-10-29T03:07:20.979519+00:00",
-    "move_in_period": "immediate"
+    "move_in_period": "immediate",
+    "cross_posted_sources": [
+      "Boston Pads"
+    ]
   },
   {
     "id": "bp-8177736",
@@ -20384,7 +20267,10 @@
     "address": "Brighton- Washington St./ Allston St., Boston, MA",
     "first_seen": "2026-10-29T03:04:39.795020+00:00",
     "last_seen": "2026-10-29T03:47:29.273970+00:00",
-    "move_in_period": "2026-11"
+    "move_in_period": "2026-11",
+    "cross_posted_sources": [
+      "Boston Pads"
+    ]
   },
   {
     "id": "cl-sub-cUjp3FUcTTMMQHPX",
@@ -20467,7 +20353,7 @@
     "fee_badge": "No Broker Fee",
     "fee_details": "Direct lease with building management. Zero broker fee.",
     "first_seen": "2026-10-29T03:36:39.833632+00:00",
-    "last_seen": "2026-10-29T04:06:23.870331+00:00",
+    "last_seen": "2026-10-29T05:19:21.844187+00:00",
     "move_in_period": "unspecified"
   },
   {
@@ -20495,28 +20381,37 @@
     "fee_badge": "No Broker Fee",
     "fee_details": "Direct lease with building management. Zero broker fee.",
     "first_seen": "2026-10-29T03:36:39.833632+00:00",
-    "last_seen": "2026-10-29T04:06:23.870331+00:00",
+    "last_seen": "2026-10-29T05:19:21.844187+00:00",
     "move_in_period": "unspecified"
   },
   {
-    "id": "bp-8177350",
-    "source": "bostonpads",
-    "source_label": "Boston Pads",
-    "title": "2 Bed Apartment in Brighton- Washington St./ Allston St.",
+    "id": "cl-iaWvsUuFPZHLEhRR",
+    "source": "craigslist",
+    "source_label": "Craigslist",
+    "title": "HUGE Renovated STUDIO-Brookline LUXURY building-C/D Trains, Avail NOW!",
     "price": 2400,
-    "city": "Boston",
-    "neighborhood": "Brighton- Washington St./ Allston St.",
-    "url": "https://bostonpads.com/boston-apartments/?ad_id=8177350",
-    "lat": 42.343958,
-    "lng": -71.14342,
-    "bedrooms": 2,
+    "neighborhood": "boston/cambridge/brookline",
+    "url": "https://www.craigslist.org/view/d/boston-huge-renovated-studio-brookline/9CqSQGiaWvsUuFPZHLEhRR",
+    "lat": 42.3444647544727,
+    "lng": -71.1106702941609,
+    "bedrooms": 0,
     "bathrooms": 1.0,
-    "sqft": null,
-    "availability": "Available Nov 1, 2026",
     "rental_type": "entire_unit",
     "rental_type_label": "Condo / Apt",
+    "sqft": null,
+    "address": "boston/cambridge/brookline",
+    "first_seen": "2026-10-29T05:19:23.667068+00:00",
+    "last_seen": "2026-10-29T05:19:21.844187+00:00",
+    "availability": "Available Now",
     "images": [
-      "https://m.bostonpads.com/media/v2/listings/unit/photos/07-25/1751474209-img-0151.jpeg"
+      "https://images.craigslist.org/00t0t_70xoKN49DfQ_0ak07K_600x450.jpg",
+      "https://images.craigslist.org/00p0p_aNc9thrXfuq_0ak07K_600x450.jpg",
+      "https://images.craigslist.org/00m0m_hRP6mSfibtQ_07K0ak_600x450.jpg",
+      "https://images.craigslist.org/00h0h_dAWRdtAcVPu_0ak07K_600x450.jpg",
+      "https://images.craigslist.org/00V0V_dV00Y3M3gez_0ak07K_600x450.jpg",
+      "https://images.craigslist.org/00m0m_aLVzjb9kgpM_0ak07K_600x450.jpg",
+      "https://images.craigslist.org/00f0f_j4OF0uuN63b_0ak07K_600x450.jpg",
+      "https://images.craigslist.org/00M0M_cdsBPQoCVSw_0ak07K_600x450.jpg"
     ],
     "description": "Verified Brighton- Washington St./ Allston St. rental. Features: Laundry: Basement, Dishwasher included, Pets: Pet OK, Heat included, Hot water included. Available: 11-01-2026.",
     "has_broker_fee": false,
@@ -20581,7 +20476,7 @@
     "fee_badge": "No Broker Fee",
     "fee_details": "Direct lease with building management. Zero broker fee.",
     "first_seen": "2026-10-29T03:36:39.833632+00:00",
-    "last_seen": "2026-10-29T04:06:23.870331+00:00",
+    "last_seen": "2026-10-29T05:19:21.844187+00:00",
     "move_in_period": "unspecified"
   },
   {
@@ -20665,7 +20560,7 @@
     "fee_badge": "No Broker Fee",
     "fee_details": "Direct lease with building management. Zero broker fee.",
     "first_seen": "2026-10-29T03:36:39.833632+00:00",
-    "last_seen": "2026-10-29T04:06:23.870331+00:00",
+    "last_seen": "2026-10-29T05:19:21.844187+00:00",
     "move_in_period": "unspecified"
   },
   {
@@ -20785,7 +20680,35 @@
     "fee_badge": "No Broker Fee",
     "fee_details": "Direct lease with building management. Zero broker fee.",
     "first_seen": "2026-10-29T03:36:39.833632+00:00",
-    "last_seen": "2026-10-29T04:06:23.870331+00:00",
+    "last_seen": "2026-10-29T05:19:21.844187+00:00",
+    "move_in_period": "unspecified"
+  },
+  {
+    "id": "reit-walden",
+    "source": "reit_direct",
+    "source_label": "Direct Management",
+    "title": "Walden Park Apartments - Porter Sq Cambridge (No Fee)",
+    "price": 2450,
+    "neighborhood": "Porter Square, Cambridge",
+    "url": "https://www.equityapartments.com/boston/porter-square/walden-park-apartments",
+    "lat": 42.3888,
+    "lng": -71.1295,
+    "bedrooms": 1,
+    "bathrooms": 1.0,
+    "sqft": 720,
+    "availability": "Contact Lister",
+    "rental_type": "entire_unit",
+    "rental_type_label": "Condo / Apt",
+    "images": [
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=800&q=80"
+    ],
+    "description": "Direct management community at 225 Walden St near Porter Square Red Line T. Landscaped grounds, fitness center, garage parking. Zero broker fee.",
+    "has_broker_fee": false,
+    "fee_badge": "No Broker Fee",
+    "fee_details": "Direct On-Site Management (Guaranteed $0 Broker Fee)",
+    "address": "225 Walden St, Cambridge, MA 02140",
+    "first_seen": "2026-10-29T05:19:21.844187+00:00",
+    "last_seen": "2026-10-29T05:19:21.844187+00:00",
     "move_in_period": "unspecified"
   },
   {
@@ -20969,6 +20892,35 @@
     "move_in_period": "immediate"
   },
   {
+    "id": "bp-8150100",
+    "source": "bostonpads",
+    "source_label": "Boston Pads",
+    "title": "2 Bed Apartment in Fenway/Kenmore",
+    "price": 2475,
+    "neighborhood": "Fenway/Kenmore",
+    "url": "https://bostonpads.com/boston-apartments/?ad_id=8150100",
+    "lat": 42.346841000000005,
+    "lng": -71.093237,
+    "bedrooms": 2,
+    "bathrooms": 1.0,
+    "sqft": null,
+    "availability": "Available Now",
+    "rental_type": "entire_unit",
+    "rental_type_label": "Condo / Apt",
+    "images": [
+      "https://m.bostonpads.com/media/v2/listings/unit/photos/11-23/1698961846-img-4158.jpeg"
+    ],
+    "description": "Verified Fenway/Kenmore rental. Features: Pets: NO PETS, Hot water included. Available: Now.",
+    "has_broker_fee": false,
+    "fee_badge": "No Broker Fee",
+    "fee_details": "No Fee",
+    "address": "Fenway/Kenmore, Boston, MA",
+    "move_in_period": "immediate",
+    "city": "Boston",
+    "first_seen": "2026-10-29T05:19:21.844187+00:00",
+    "last_seen": "2026-10-29T05:19:21.844187+00:00"
+  },
+  {
     "id": "zillow_42.35011--71.14121",
     "title": "Camelot Court",
     "price": 2479,
@@ -20993,7 +20945,7 @@
     "fee_badge": "No Broker Fee",
     "fee_details": "Direct lease with building management. Zero broker fee.",
     "first_seen": "2026-10-29T03:36:39.833632+00:00",
-    "last_seen": "2026-10-29T04:06:23.870331+00:00",
+    "last_seen": "2026-10-29T05:19:21.844187+00:00",
     "move_in_period": "unspecified"
   },
   {
@@ -21154,7 +21106,7 @@
     "fee_badge": "No Broker Fee",
     "fee_details": "Direct lease with building management. Zero broker fee.",
     "first_seen": "2026-10-29T03:36:39.833632+00:00",
-    "last_seen": "2026-10-29T04:06:23.870331+00:00",
+    "last_seen": "2026-10-29T05:19:21.844187+00:00",
     "move_in_period": "unspecified"
   },
   {
@@ -21182,7 +21134,7 @@
     "fee_badge": "No Broker Fee",
     "fee_details": "Direct lease with building management. Zero broker fee.",
     "first_seen": "2026-10-29T03:36:39.833632+00:00",
-    "last_seen": "2026-10-29T04:06:23.870331+00:00",
+    "last_seen": "2026-10-29T05:19:21.844187+00:00",
     "move_in_period": "unspecified"
   },
   {
@@ -21474,8 +21426,11 @@
     "address": "Roxbury, Boston, MA",
     "city": "Boston",
     "first_seen": "2026-10-29T02:44:03.608907+00:00",
-    "last_seen": "2026-10-29T03:47:29.273970+00:00",
-    "move_in_period": "immediate"
+    "last_seen": "2026-10-29T05:19:21.844187+00:00",
+    "move_in_period": "immediate",
+    "cross_posted_sources": [
+      "Boston Pads"
+    ]
   },
   {
     "id": "cl-E7Z7CMTWN6kP8Czi",
@@ -21602,8 +21557,11 @@
     "fee_details": "No Fee",
     "address": "Somerville - Porter Square, Somerville, MA",
     "first_seen": "2026-10-29T02:44:03.608907+00:00",
-    "last_seen": "2026-10-29T02:53:24.949933+00:00",
-    "move_in_period": "immediate"
+    "last_seen": "2026-10-29T05:19:21.844187+00:00",
+    "move_in_period": "immediate",
+    "cross_posted_sources": [
+      "Boston Pads"
+    ]
   },
   {
     "id": "bp-8177839",
@@ -21731,7 +21689,10 @@
     "address": "Cambridge - Central Square/Cambridgeport, Cambridge, MA",
     "first_seen": "2026-10-29T02:44:03.608907+00:00",
     "last_seen": "2026-10-29T02:53:24.949933+00:00",
-    "move_in_period": "immediate"
+    "move_in_period": "immediate",
+    "cross_posted_sources": [
+      "Boston Pads"
+    ]
   },
   {
     "id": "bp-8177233",
@@ -21788,7 +21749,7 @@
     "fee_details": "No Fee",
     "address": "Cambridge - Central Square/Cambridgeport, Cambridge, MA",
     "first_seen": "2026-10-29T02:44:03.608907+00:00",
-    "last_seen": "2026-10-29T02:53:24.949933+00:00",
+    "last_seen": "2026-10-29T05:19:21.844187+00:00",
     "move_in_period": "immediate"
   },
   {
@@ -22249,7 +22210,7 @@
     "fee_badge": "No Broker Fee",
     "fee_details": "Direct lease with building management. Zero broker fee.",
     "first_seen": "2026-10-29T03:36:39.833632+00:00",
-    "last_seen": "2026-10-29T04:06:23.870331+00:00",
+    "last_seen": "2026-10-29T05:19:21.844187+00:00",
     "move_in_period": "unspecified"
   },
   {
@@ -22277,7 +22238,7 @@
     "fee_badge": "No Broker Fee",
     "fee_details": "Direct lease with building management. Zero broker fee.",
     "first_seen": "2026-10-29T03:36:39.833632+00:00",
-    "last_seen": "2026-10-29T04:06:23.870331+00:00",
+    "last_seen": "2026-10-29T05:19:21.844187+00:00",
     "move_in_period": "unspecified"
   },
   {
@@ -22305,7 +22266,7 @@
     "fee_badge": "No Broker Fee",
     "fee_details": "Direct lease with building management. Zero broker fee.",
     "first_seen": "2026-10-29T03:36:39.833632+00:00",
-    "last_seen": "2026-10-29T04:06:23.870331+00:00",
+    "last_seen": "2026-10-29T05:19:21.844187+00:00",
     "move_in_period": "unspecified"
   },
   {
@@ -22397,37 +22358,11 @@
     "address": "North End, Boston, MA",
     "city": "Boston",
     "first_seen": "2026-10-29T03:04:39.795020+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00",
-    "move_in_period": "2026-12"
-  },
-  {
-    "id": "bp-8176595",
-    "source": "bostonpads",
-    "source_label": "Boston Pads",
-    "title": "1 Bed Apartment in North End",
-    "price": 2525,
-    "city": "Boston",
-    "neighborhood": "North End",
-    "url": "https://bostonpads.com/boston-apartments/?ad_id=8176595",
-    "lat": 42.3648375,
-    "lng": -71.0523467,
-    "bedrooms": 1,
-    "bathrooms": 1.0,
-    "sqft": null,
-    "availability": "Available Dec 1, 2026",
-    "rental_type": "entire_unit",
-    "rental_type_label": "Condo / Apt",
-    "images": [
-      "https://m.bostonpads.com/media/v2/listings/unit/photos/09-26/1789790976-28-fleet-st-9-boston-north-end-shared-unit-photo-2.jpg"
-    ],
-    "description": "Verified North End rental. Features: Laundry: Common Area, Pets: NO PETS, Hot water included. Available: 12-01-2026.",
-    "has_broker_fee": false,
-    "fee_badge": "No Broker Fee",
-    "fee_details": "No Fee",
-    "address": "North End, Boston, MA",
-    "first_seen": "2026-10-29T03:27:18.360570+00:00",
-    "last_seen": "2026-10-29T03:47:29.273970+00:00",
-    "move_in_period": "2026-12"
+    "last_seen": "2026-10-29T05:19:21.844187+00:00",
+    "move_in_period": "2026-12",
+    "cross_posted_sources": [
+      "Boston Pads"
+    ]
   },
   {
     "id": "bp-8178223",
@@ -22455,7 +22390,7 @@
     "fee_details": "No Fee",
     "address": "Allston/Brighton Border, Boston, MA",
     "first_seen": "2026-10-29T02:44:03.608907+00:00",
-    "last_seen": "2026-10-29T02:53:24.949933+00:00",
+    "last_seen": "2026-10-29T05:19:21.844187+00:00",
     "move_in_period": "immediate"
   },
   {
@@ -22521,32 +22456,6 @@
     "last_seen": "2026-10-29T04:18:33.725322+00:00",
     "first_seen": "2026-10-29T03:28:06.013644+00:00",
     "move_in_period": "unspecified"
-  },
-  {
-    "id": "bp-8150100",
-    "source": "bostonpads",
-    "source_label": "Boston Pads",
-    "title": "2 Bed Apartment in Fenway/Kenmore",
-    "price": 2545,
-    "neighborhood": "Fenway/Kenmore",
-    "url": "https://bostonpads.com/boston-apartments/?ad_id=8150100",
-    "lat": 42.346841000000005,
-    "lng": -71.093237,
-    "bedrooms": 2,
-    "bathrooms": 1.0,
-    "sqft": null,
-    "availability": "Available Now",
-    "rental_type": "entire_unit",
-    "rental_type_label": "Entire Place",
-    "images": [
-      "https://m.bostonpads.com/media/v2/listings/unit/photos/11-23/1698961846-img-4158.jpeg"
-    ],
-    "description": "Verified Boston rental in Fenway/Kenmore. Features: Pets: NO PETS, Hot water included. Available: Now.",
-    "has_broker_fee": false,
-    "fee_badge": "No Broker Fee",
-    "fee_details": "No Fee",
-    "address": "Fenway/Kenmore, Boston, MA",
-    "move_in_period": "immediate"
   },
   {
     "id": "bp-8172725",
@@ -22723,7 +22632,10 @@
     "address": "Brighton - Cleveland Circle, Boston, MA",
     "first_seen": "2026-10-29T03:04:39.795020+00:00",
     "last_seen": "2026-10-29T03:07:20.979519+00:00",
-    "move_in_period": "immediate"
+    "move_in_period": "immediate",
+    "cross_posted_sources": [
+      "Boston Pads"
+    ]
   },
   {
     "id": "cl-QT6vcDy12vACGcx9",
@@ -22842,7 +22754,7 @@
     "fee_badge": "No Broker Fee",
     "fee_details": "Direct lease with building management. Zero broker fee.",
     "first_seen": "2026-10-29T03:36:39.833632+00:00",
-    "last_seen": "2026-10-29T04:06:23.870331+00:00",
+    "last_seen": "2026-10-29T05:19:21.844187+00:00",
     "move_in_period": "unspecified"
   },
   {
@@ -22870,7 +22782,7 @@
     "fee_badge": "No Broker Fee",
     "fee_details": "Direct lease with building management. Zero broker fee.",
     "first_seen": "2026-10-29T03:36:39.833632+00:00",
-    "last_seen": "2026-10-29T04:06:23.870331+00:00",
+    "last_seen": "2026-10-29T05:19:21.844187+00:00",
     "move_in_period": "unspecified"
   },
   {
@@ -22898,7 +22810,7 @@
     "fee_badge": "No Broker Fee",
     "fee_details": "Direct lease with building management. Zero broker fee.",
     "first_seen": "2026-10-29T03:36:39.833632+00:00",
-    "last_seen": "2026-10-29T04:06:23.870331+00:00",
+    "last_seen": "2026-10-29T05:19:21.844187+00:00",
     "move_in_period": "unspecified"
   },
   {
@@ -22937,6 +22849,34 @@
     "move_in_period": "unspecified"
   },
   {
+    "id": "reit-avalon-cambridge",
+    "source": "reit_direct",
+    "source_label": "Direct Management",
+    "title": "Avalon Cambridge - Alewife Red Line (No Broker Fee)",
+    "price": 2580,
+    "neighborhood": "Cambridge Highlands / Alewife",
+    "url": "https://www.avaloncommunities.com/massachusetts/cambridge-apartments/avalon-cambridge/",
+    "lat": 42.3952,
+    "lng": -71.1448,
+    "bedrooms": 1,
+    "bathrooms": 1.0,
+    "sqft": 710,
+    "availability": "Contact Lister",
+    "rental_type": "entire_unit",
+    "rental_type_label": "Condo / Apt",
+    "images": [
+      "https://images.unsplash.com/photo-1493809842364-78817add7ffb?auto=format&fit=crop&w=800&q=80"
+    ],
+    "description": "165 Cambridgepark Dr directly next to Alewife MBTA station. Heated outdoor pool, fitness center, direct bike path access to Davis Sq. Zero broker fee.",
+    "has_broker_fee": false,
+    "fee_badge": "No Broker Fee",
+    "fee_details": "Direct On-Site Management (Guaranteed $0 Broker Fee)",
+    "address": "165 Cambridgepark Dr, Cambridge, MA 02140",
+    "first_seen": "2026-10-29T05:19:21.844187+00:00",
+    "last_seen": "2026-10-29T05:19:21.844187+00:00",
+    "move_in_period": "unspecified"
+  },
+  {
     "id": "zillow_42.356422--71.13574",
     "title": "Trac 75",
     "price": 2589,
@@ -22961,7 +22901,7 @@
     "fee_badge": "No Broker Fee",
     "fee_details": "Direct lease with building management. Zero broker fee.",
     "first_seen": "2026-10-29T03:36:39.833632+00:00",
-    "last_seen": "2026-10-29T04:06:23.870331+00:00",
+    "last_seen": "2026-10-29T05:19:21.844187+00:00",
     "move_in_period": "unspecified"
   },
   {
@@ -23335,12 +23275,13 @@
     "rental_type": "entire_unit",
     "rental_type_label": "Condo / Apt",
     "images": [
-      "https://m.bostonpads.com/media/v2/listings/unit/photos/10-25/1759599251-img-5007.jpeg"
+      "https://m.bostonpads.com/media/v2/listings/unit/photos/10-25/1759599251-img-5007.jpeg",
+      "https://photos.zillowstatic.com/fp/fab5c41c59af98edff494dc406feec43-p_e.jpg"
     ],
     "description": "Verified Cambridge - Harvard Square rental. Features: Laundry: Common Area, Coin-Op, A/C: Central, Pets: Pet OK, Hot water included. Available: 01-01-2027.",
     "has_broker_fee": false,
     "fee_badge": "No Broker Fee",
-    "fee_details": "No Fee",
+    "fee_details": "Direct lease with building management. Zero broker fee.",
     "address": "Cambridge - Harvard Square, Cambridge, MA",
     "first_seen": "2026-10-29T02:44:03.608907+00:00",
     "last_seen": "2026-10-29T04:18:33.725322+00:00",
@@ -23728,34 +23669,6 @@
     "move_in_period": "immediate"
   },
   {
-    "id": "zillow_42.371574--71.11519",
-    "title": "Longfellow Apartments",
-    "price": 2600,
-    "address": "1200 Massachusetts Ave, Cambridge, MA",
-    "neighborhood": "Cambridge",
-    "lat": 42.371574,
-    "lng": -71.11519,
-    "url": "https://www.zillow.com/apartments/cambridge-ma/longfellow-apartments/5Xj9xL/",
-    "source": "zillow",
-    "source_label": "Zillow",
-    "bedrooms": 0,
-    "bathrooms": 1.0,
-    "sqft": 0,
-    "availability": "Contact Lister",
-    "rental_type": "entire_unit",
-    "rental_type_label": "Condo / Apt",
-    "images": [
-      "https://photos.zillowstatic.com/fp/fab5c41c59af98edff494dc406feec43-p_e.jpg"
-    ],
-    "description": "Longfellow Apartments located at 1200 Massachusetts Ave, Cambridge, MA. Floor plans: Studio from $2,600+, 1BR from $3,000+, 2BR from $3,600+. Professionally managed rental community. View full floor plans and schedule a tour directly on Zillow.",
-    "has_broker_fee": false,
-    "fee_badge": "No Broker Fee",
-    "fee_details": "Direct lease with building management. Zero broker fee.",
-    "first_seen": "2026-10-29T03:36:39.833632+00:00",
-    "last_seen": "2026-10-29T04:06:23.870331+00:00",
-    "move_in_period": "unspecified"
-  },
-  {
     "id": "zillow_2118432533",
     "title": "38 Day St APT 34",
     "price": 2625,
@@ -23780,7 +23693,7 @@
     "fee_badge": "No Broker Fee",
     "fee_details": "Direct lease with building management. Zero broker fee.",
     "first_seen": "2026-10-29T03:36:39.833632+00:00",
-    "last_seen": "2026-10-29T04:06:23.870331+00:00",
+    "last_seen": "2026-10-29T05:19:21.844187+00:00",
     "move_in_period": "unspecified"
   },
   {
@@ -23808,7 +23721,7 @@
     "fee_badge": "No Broker Fee",
     "fee_details": "Direct lease with building management. Zero broker fee.",
     "first_seen": "2026-10-29T03:36:39.833632+00:00",
-    "last_seen": "2026-10-29T04:06:23.870331+00:00",
+    "last_seen": "2026-10-29T05:19:21.844187+00:00",
     "move_in_period": "unspecified"
   },
   {
@@ -23836,7 +23749,7 @@
     "fee_badge": "No Broker Fee",
     "fee_details": "Direct lease with building management. Zero broker fee.",
     "first_seen": "2026-10-29T03:36:39.833632+00:00",
-    "last_seen": "2026-10-29T04:06:23.870331+00:00",
+    "last_seen": "2026-10-29T05:19:21.844187+00:00",
     "move_in_period": "unspecified"
   },
   {
@@ -23864,7 +23777,7 @@
     "fee_badge": "No Broker Fee",
     "fee_details": "Direct lease with building management. Zero broker fee.",
     "first_seen": "2026-10-29T03:36:39.833632+00:00",
-    "last_seen": "2026-10-29T04:06:23.870331+00:00",
+    "last_seen": "2026-10-29T05:19:21.844187+00:00",
     "move_in_period": "unspecified"
   },
   {
@@ -23892,7 +23805,7 @@
     "fee_badge": "No Broker Fee",
     "fee_details": "Direct lease with building management. Zero broker fee.",
     "first_seen": "2026-10-29T03:36:39.833632+00:00",
-    "last_seen": "2026-10-29T04:06:23.870331+00:00",
+    "last_seen": "2026-10-29T05:19:21.844187+00:00",
     "move_in_period": "unspecified"
   },
   {
@@ -23948,7 +23861,10 @@
     "rental_type": "entire_unit",
     "rental_type_label": "Condo / Apt",
     "images": [
-      "https://m.bostonpads.com/media/v2/listings/ad/photos/08-25/1754069901-screenshot-2025-08-01-130956.jpg"
+      "https://m.bostonpads.com/media/v2/listings/ad/photos/08-25/1754069901-screenshot-2025-08-01-130956.jpg",
+      "https://m.bostonpads.com/media/v2/listings/unit/photos/08-25/1754068965-screenshot-2025-08-01-130758.jpg",
+      "https://m.bostonpads.com/media/v2/listings/ad/photos/08-25/1754068965-screenshot-2025-08-01-130758.jpg",
+      "https://m.bostonpads.com/media/v2/listings/unit/photos/08-25/1754069901-screenshot-2025-08-01-130956.jpg"
     ],
     "description": "Verified Cambridge - Harvard Square rental. Features: Hot water included. Available: 01-01-2027.",
     "has_broker_fee": false,
@@ -23957,7 +23873,10 @@
     "address": "Cambridge - Harvard Square, Cambridge, MA",
     "first_seen": "2026-10-29T02:44:03.608907+00:00",
     "last_seen": "2026-10-29T02:53:24.949933+00:00",
-    "move_in_period": "2027-01"
+    "move_in_period": "2027-01",
+    "cross_posted_sources": [
+      "Boston Pads"
+    ]
   },
   {
     "id": "bp-8177765",
@@ -24073,7 +23992,10 @@
     "address": "Brookline - Washington Square, Brookline, MA",
     "first_seen": "2026-10-29T03:04:39.795020+00:00",
     "last_seen": "2026-10-29T03:47:29.273970+00:00",
-    "move_in_period": "immediate"
+    "move_in_period": "immediate",
+    "cross_posted_sources": [
+      "Boston Pads"
+    ]
   },
   {
     "id": "fb-boston-03",
@@ -24274,7 +24196,7 @@
     "fee_badge": "No Broker Fee",
     "fee_details": "Direct lease with building management. Zero broker fee.",
     "first_seen": "2026-10-29T03:36:39.833632+00:00",
-    "last_seen": "2026-10-29T04:06:23.870331+00:00",
+    "last_seen": "2026-10-29T05:19:21.844187+00:00",
     "move_in_period": "unspecified"
   },
   {
@@ -24392,7 +24314,7 @@
     "fee_badge": "No Broker Fee",
     "fee_details": "Direct lease with building management. Zero broker fee.",
     "first_seen": "2026-10-29T03:36:39.833632+00:00",
-    "last_seen": "2026-10-29T04:06:23.870331+00:00",
+    "last_seen": "2026-10-29T05:19:21.844187+00:00",
     "move_in_period": "unspecified"
   },
   {
@@ -24420,7 +24342,35 @@
     "fee_badge": "No Broker Fee",
     "fee_details": "Direct lease with building management. Zero broker fee.",
     "first_seen": "2026-10-29T03:36:39.833632+00:00",
-    "last_seen": "2026-10-29T04:06:23.870331+00:00",
+    "last_seen": "2026-10-29T05:19:21.844187+00:00",
+    "move_in_period": "unspecified"
+  },
+  {
+    "id": "reit-longfellow",
+    "source": "reit_direct",
+    "source_label": "Direct Management",
+    "title": "Longfellow Towers - Direct On-Site Leasing (No Broker Fee)",
+    "price": 2695,
+    "neighborhood": "West End",
+    "url": "https://www.equityapartments.com/boston/west-end/longfellow-towers-apartments",
+    "lat": 42.3638,
+    "lng": -71.0682,
+    "bedrooms": 1,
+    "bathrooms": 1.0,
+    "sqft": 580,
+    "availability": "Contact Lister",
+    "rental_type": "entire_unit",
+    "rental_type_label": "Condo / Apt",
+    "images": [
+      "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=800&q=80"
+    ],
+    "description": "Modern West End high-rise at 4 Longfellow Pl. Concierge, swimming pool, tennis courts, Charles River views. Direct leasing office.",
+    "has_broker_fee": false,
+    "fee_badge": "No Broker Fee",
+    "fee_details": "Direct On-Site Management (Guaranteed $0 Broker Fee)",
+    "address": "4 Longfellow Pl, Boston, MA 02114",
+    "first_seen": "2026-10-29T05:19:21.844187+00:00",
+    "last_seen": "2026-10-29T05:19:21.844187+00:00",
     "move_in_period": "unspecified"
   },
   {
@@ -24863,7 +24813,7 @@
     "fee_details": "No Fee",
     "address": "Brighton - Brighton Center, Boston, MA",
     "first_seen": "2026-10-29T03:27:18.360570+00:00",
-    "last_seen": "2026-10-29T03:47:29.273970+00:00",
+    "last_seen": "2026-10-29T05:19:21.844187+00:00",
     "move_in_period": "immediate"
   },
   {
@@ -25038,7 +24988,7 @@
     "fee_badge": "No Broker Fee",
     "fee_details": "Direct lease with building management. Zero broker fee.",
     "first_seen": "2026-10-29T03:36:39.833632+00:00",
-    "last_seen": "2026-10-29T04:06:23.870331+00:00",
+    "last_seen": "2026-10-29T05:19:21.844187+00:00",
     "move_in_period": "unspecified"
   },
   {
@@ -25066,7 +25016,7 @@
     "fee_badge": "No Broker Fee",
     "fee_details": "Direct lease with building management. Zero broker fee.",
     "first_seen": "2026-10-29T03:36:39.833632+00:00",
-    "last_seen": "2026-10-29T04:06:23.870331+00:00",
+    "last_seen": "2026-10-29T05:19:21.844187+00:00",
     "move_in_period": "unspecified"
   },
   {
@@ -25341,7 +25291,7 @@
     "fee_details": "No Fee",
     "address": "Brighton - Cleveland Circle, Boston, MA",
     "first_seen": "2026-10-29T03:04:39.795020+00:00",
-    "last_seen": "2026-10-29T03:47:29.273970+00:00",
+    "last_seen": "2026-10-29T05:19:21.844187+00:00",
     "move_in_period": "immediate"
   },
   {
@@ -25369,7 +25319,7 @@
     "fee_badge": "No Broker Fee",
     "fee_details": "Direct lease with building management. Zero broker fee.",
     "first_seen": "2026-10-29T03:36:39.833632+00:00",
-    "last_seen": "2026-10-29T04:06:23.870331+00:00",
+    "last_seen": "2026-10-29T05:19:21.844187+00:00",
     "move_in_period": "unspecified"
   },
   {
@@ -25397,7 +25347,7 @@
     "fee_badge": "No Broker Fee",
     "fee_details": "Direct lease with building management. Zero broker fee.",
     "first_seen": "2026-10-29T03:36:39.833632+00:00",
-    "last_seen": "2026-10-29T04:06:23.870331+00:00",
+    "last_seen": "2026-10-29T05:19:21.844187+00:00",
     "move_in_period": "unspecified"
   },
   {
@@ -25454,7 +25404,7 @@
     "fee_badge": "No Broker Fee",
     "fee_details": "Direct lease with building management. Zero broker fee.",
     "first_seen": "2026-10-29T03:36:39.833632+00:00",
-    "last_seen": "2026-10-29T04:06:23.870331+00:00",
+    "last_seen": "2026-10-29T05:19:21.844187+00:00",
     "move_in_period": "unspecified"
   },
   {
@@ -25638,7 +25588,7 @@
     "fee_badge": "No Broker Fee",
     "fee_details": "Direct lease with building management. Zero broker fee.",
     "first_seen": "2026-10-29T03:36:39.833632+00:00",
-    "last_seen": "2026-10-29T04:06:23.870331+00:00",
+    "last_seen": "2026-10-29T05:19:21.844187+00:00",
     "move_in_period": "unspecified"
   },
   {
@@ -25923,35 +25873,6 @@
     "move_in_period": "unspecified"
   },
   {
-    "id": "bp-8177353",
-    "source": "bostonpads",
-    "source_label": "Boston Pads",
-    "title": "1 Bed Apartment in Cambridge - Porter Square",
-    "price": 2800,
-    "city": "Cambridge",
-    "neighborhood": "Cambridge - Porter Square",
-    "url": "https://bostonpads.com/boston-apartments/?ad_id=8177353",
-    "lat": 42.387800000000006,
-    "lng": -71.1235586,
-    "bedrooms": 1,
-    "bathrooms": 1.0,
-    "sqft": null,
-    "availability": "Available Dec 1, 2026",
-    "rental_type": "entire_unit",
-    "rental_type_label": "Condo / Apt",
-    "images": [
-      "https://m.bostonpads.com/media/v2/listings/unit/photos/10-22/1664908256-750ab5b7-7bd3-4b62-b14b-a4b84c781fda.jpeg"
-    ],
-    "description": "Verified Cambridge - Porter Square rental. Features: Heat included, Hot water included. Available: 12-01-2026.",
-    "has_broker_fee": false,
-    "fee_badge": "No Broker Fee",
-    "fee_details": "No Fee",
-    "address": "Cambridge - Porter Square, Cambridge, MA",
-    "first_seen": "2026-10-29T02:44:03.608907+00:00",
-    "last_seen": "2026-10-29T02:53:24.949933+00:00",
-    "move_in_period": "2026-12"
-  },
-  {
     "id": "bp-8170263",
     "source": "bostonpads",
     "source_label": "Boston Pads",
@@ -25978,7 +25899,10 @@
     "address": "Somerville - Spring Hill, Somerville, MA",
     "first_seen": "2026-10-29T02:44:03.608907+00:00",
     "last_seen": "2026-10-29T03:07:20.979519+00:00",
-    "move_in_period": "immediate"
+    "move_in_period": "immediate",
+    "cross_posted_sources": [
+      "Boston Pads"
+    ]
   },
   {
     "id": "bp-71670",
@@ -26433,7 +26357,7 @@
     "fee_badge": "No Broker Fee",
     "fee_details": "Direct lease with building management. Zero broker fee.",
     "first_seen": "2026-10-29T03:36:39.833632+00:00",
-    "last_seen": "2026-10-29T04:06:23.870331+00:00",
+    "last_seen": "2026-10-29T05:19:21.844187+00:00",
     "move_in_period": "unspecified"
   },
   {
@@ -26489,7 +26413,7 @@
     "fee_badge": "No Broker Fee",
     "fee_details": "Direct lease with building management. Zero broker fee.",
     "first_seen": "2026-10-29T03:36:39.833632+00:00",
-    "last_seen": "2026-10-29T04:06:23.870331+00:00",
+    "last_seen": "2026-10-29T05:19:21.844187+00:00",
     "move_in_period": "unspecified"
   },
   {
@@ -26522,6 +26446,34 @@
     "move_in_period": "immediate"
   },
   {
+    "id": "zillow_466296113",
+    "title": "36 Teele Ave #1",
+    "price": 2800,
+    "address": "36 Teele Ave #1, Somerville, MA 02144",
+    "neighborhood": "Somerville",
+    "lat": 42.405518,
+    "lng": -71.12473,
+    "url": "https://www.zillow.com/homedetails/36-Teele-Ave-1-Somerville-MA-02144/466296113_zpid/",
+    "source": "zillow",
+    "source_label": "Zillow",
+    "bedrooms": 2,
+    "bathrooms": 1.0,
+    "sqft": 0,
+    "availability": "Contact Lister",
+    "rental_type": "entire_unit",
+    "rental_type_label": "Condo / Apt",
+    "images": [
+      "https://photos.zillowstatic.com/fp/0d4589d062068e45ae8e6d856802d256-p_e.jpg"
+    ],
+    "description": "36 Teele Ave #1 located at 36 Teele Ave #1, Somerville, MA 02144. Professionally managed rental community. View full floor plans and schedule a tour directly on Zillow.",
+    "has_broker_fee": false,
+    "fee_badge": "No Broker Fee",
+    "fee_details": "Direct lease with building management. Zero broker fee.",
+    "first_seen": "2026-10-29T05:19:21.844187+00:00",
+    "last_seen": "2026-10-29T05:19:21.844187+00:00",
+    "move_in_period": "unspecified"
+  },
+  {
     "id": "zillow_42.39049--71.144394",
     "title": "The Laurent",
     "price": 2805,
@@ -26546,7 +26498,7 @@
     "fee_badge": "No Broker Fee",
     "fee_details": "Direct lease with building management. Zero broker fee.",
     "first_seen": "2026-10-29T03:36:39.833632+00:00",
-    "last_seen": "2026-10-29T04:06:23.870331+00:00",
+    "last_seen": "2026-10-29T05:19:21.844187+00:00",
     "move_in_period": "unspecified"
   },
   {
@@ -26595,7 +26547,8 @@
     "rental_type": "entire_unit",
     "rental_type_label": "Entire Place",
     "images": [
-      "https://m.bostonpads.com/media/v2/listings/unit/photos/07-22/1658233404-bf827d5f-42ff-41d8-9e8d-5e42f9b29d71.jpeg"
+      "https://m.bostonpads.com/media/v2/listings/unit/photos/07-22/1658233404-bf827d5f-42ff-41d8-9e8d-5e42f9b29d71.jpeg",
+      "https://m.bostonpads.com/media/v2/listings/ad/photos/07-22/1658233404-bf827d5f-42ff-41d8-9e8d-5e42f9b29d71.jpeg"
     ],
     "description": "Verified Boston rental in Brighton - Cleveland Circle. Features: Laundry: Basement, Pets: NO PETS, Heat included, Hot water included. Available: Now.",
     "has_broker_fee": false,
@@ -26658,7 +26611,7 @@
     "fee_badge": "No Broker Fee",
     "fee_details": "Direct lease with building management. Zero broker fee.",
     "first_seen": "2026-10-29T03:36:39.833632+00:00",
-    "last_seen": "2026-10-29T04:06:23.870331+00:00",
+    "last_seen": "2026-10-29T05:19:21.844187+00:00",
     "move_in_period": "unspecified"
   },
   {
@@ -26806,7 +26759,7 @@
     "fee_badge": "No Broker Fee",
     "fee_details": "Direct lease with building management. Zero broker fee.",
     "first_seen": "2026-10-29T03:36:39.833632+00:00",
-    "last_seen": "2026-10-29T04:06:23.870331+00:00",
+    "last_seen": "2026-10-29T05:19:21.844187+00:00",
     "move_in_period": "unspecified"
   },
   {
@@ -27111,7 +27064,7 @@
     "fee_badge": "No Broker Fee",
     "fee_details": "Direct lease with building management. Zero broker fee.",
     "first_seen": "2026-10-29T03:36:39.833632+00:00",
-    "last_seen": "2026-10-29T04:06:23.870331+00:00",
+    "last_seen": "2026-10-29T05:19:21.844187+00:00",
     "move_in_period": "unspecified"
   },
   {
@@ -27139,7 +27092,35 @@
     "fee_badge": "No Broker Fee",
     "fee_details": "Direct lease with building management. Zero broker fee.",
     "first_seen": "2026-10-29T03:36:39.833632+00:00",
-    "last_seen": "2026-10-29T04:06:23.870331+00:00",
+    "last_seen": "2026-10-29T05:19:21.844187+00:00",
+    "move_in_period": "unspecified"
+  },
+  {
+    "id": "reit-greenway",
+    "source": "reit_direct",
+    "source_label": "Direct Management",
+    "title": "One Greenway - Chinatown / Downtown Boston (No Fee)",
+    "price": 2850,
+    "neighborhood": "Chinatown / Downtown",
+    "url": "https://www.onegreenwayboston.com/",
+    "lat": 42.3508,
+    "lng": -71.0592,
+    "bedrooms": 1,
+    "bathrooms": 1.0,
+    "sqft": 640,
+    "availability": "Contact Lister",
+    "rental_type": "entire_unit",
+    "rental_type_label": "Condo / Apt",
+    "images": [
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=800&q=80"
+    ],
+    "description": "99 Kneeland St steps from the Rose Kennedy Greenway and South Station. Yoga studio, sky lounge, pet spa, Bozzuto management. Zero broker fee.",
+    "has_broker_fee": false,
+    "fee_badge": "No Broker Fee",
+    "fee_details": "Direct On-Site Management (Guaranteed $0 Broker Fee)",
+    "address": "99 Kneeland St, Boston, MA 02111",
+    "first_seen": "2026-10-29T05:19:21.844187+00:00",
+    "last_seen": "2026-10-29T05:19:21.844187+00:00",
     "move_in_period": "unspecified"
   },
   {
@@ -27167,7 +27148,7 @@
     "fee_badge": "No Broker Fee",
     "fee_details": "Direct lease with building management. Zero broker fee.",
     "first_seen": "2026-10-29T03:36:39.833632+00:00",
-    "last_seen": "2026-10-29T04:06:23.870331+00:00",
+    "last_seen": "2026-10-29T05:19:21.844187+00:00",
     "move_in_period": "unspecified"
   },
   {
@@ -27195,8 +27176,37 @@
     "fee_badge": "No Broker Fee",
     "fee_details": "Direct lease with building management. Zero broker fee.",
     "first_seen": "2026-10-29T03:36:39.833632+00:00",
-    "last_seen": "2026-10-29T04:06:23.870331+00:00",
+    "last_seen": "2026-10-29T05:19:21.844187+00:00",
     "move_in_period": "unspecified"
+  },
+  {
+    "id": "bp-8177929",
+    "source": "bostonpads",
+    "source_label": "Boston Pads",
+    "title": "1 Bed Apartment in Brighton - Cleveland Circle",
+    "price": 2860,
+    "city": "Boston",
+    "neighborhood": "Brighton - Cleveland Circle",
+    "url": "https://bostonpads.com/boston-apartments/?ad_id=8177929",
+    "lat": 42.341156,
+    "lng": -71.14507,
+    "bedrooms": 1,
+    "bathrooms": 1.0,
+    "sqft": null,
+    "availability": "Available Now",
+    "rental_type": "entire_unit",
+    "rental_type_label": "Condo / Apt",
+    "images": [
+      "https://m.bostonpads.com/media/v2/listings/unit/photos/07-23/1689612139-kitchen.webp"
+    ],
+    "description": "Verified Brighton - Cleveland Circle rental. Features: Dishwasher included, Pets: NO PETS, Heat included, Hot water included. Available: Now.",
+    "has_broker_fee": false,
+    "fee_badge": "No Broker Fee",
+    "fee_details": "No Fee",
+    "address": "Brighton - Cleveland Circle, Boston, MA",
+    "first_seen": "2026-10-29T05:19:21.844187+00:00",
+    "last_seen": "2026-10-29T05:19:21.844187+00:00",
+    "move_in_period": "immediate"
   },
   {
     "id": "zillow_42.35283--71.04665",
@@ -27223,7 +27233,35 @@
     "fee_badge": "No Broker Fee",
     "fee_details": "Direct lease with building management. Zero broker fee.",
     "first_seen": "2026-10-29T03:36:39.833632+00:00",
-    "last_seen": "2026-10-29T04:06:23.870331+00:00",
+    "last_seen": "2026-10-29T05:19:21.844187+00:00",
+    "move_in_period": "unspecified"
+  },
+  {
+    "id": "zillow_42.36379--71.10068",
+    "title": "Market Central",
+    "price": 2861,
+    "address": "425 Massachusetts Ave, Cambridge, MA",
+    "neighborhood": "Cambridge",
+    "lat": 42.36379,
+    "lng": -71.10068,
+    "url": "https://www.zillow.com/apartments/cambridge-ma/market-central/CgHpvm/",
+    "source": "zillow",
+    "source_label": "Zillow",
+    "bedrooms": 0,
+    "bathrooms": 1.0,
+    "sqft": 0,
+    "availability": "Contact Lister",
+    "rental_type": "entire_unit",
+    "rental_type_label": "Condo / Apt",
+    "images": [
+      "https://photos.zillowstatic.com/fp/4b3ecb78eef32b4a40954759a7620920-p_e.jpg"
+    ],
+    "description": "Market Central located at 425 Massachusetts Ave, Cambridge, MA. Floor plans: Studio from $2,861+, 1BR from $3,498+, 2BR from $4,076+. Professionally managed rental community. View full floor plans and schedule a tour directly on Zillow.",
+    "has_broker_fee": false,
+    "fee_badge": "No Broker Fee",
+    "fee_details": "Direct lease with building management. Zero broker fee.",
+    "first_seen": "2026-10-29T05:19:21.844187+00:00",
+    "last_seen": "2026-10-29T05:19:21.844187+00:00",
     "move_in_period": "unspecified"
   },
   {
@@ -27251,7 +27289,7 @@
     "fee_badge": "No Broker Fee",
     "fee_details": "Direct lease with building management. Zero broker fee.",
     "first_seen": "2026-10-29T03:36:39.833632+00:00",
-    "last_seen": "2026-10-29T04:06:23.870331+00:00",
+    "last_seen": "2026-10-29T05:19:21.844187+00:00",
     "move_in_period": "unspecified"
   },
   {
@@ -27279,7 +27317,7 @@
     "fee_badge": "No Broker Fee",
     "fee_details": "Direct lease with building management. Zero broker fee.",
     "first_seen": "2026-10-29T03:36:39.833632+00:00",
-    "last_seen": "2026-10-29T04:06:23.870331+00:00",
+    "last_seen": "2026-10-29T05:19:21.844187+00:00",
     "move_in_period": "unspecified"
   },
   {
@@ -27333,7 +27371,7 @@
     "fee_badge": "No Broker Fee",
     "fee_details": "Direct lease with building management. Zero broker fee.",
     "first_seen": "2026-10-29T03:36:39.833632+00:00",
-    "last_seen": "2026-10-29T04:06:23.870331+00:00",
+    "last_seen": "2026-10-29T05:19:21.844187+00:00",
     "move_in_period": "unspecified"
   },
   {
@@ -27361,7 +27399,7 @@
     "fee_badge": "No Broker Fee",
     "fee_details": "Direct lease with building management. Zero broker fee.",
     "first_seen": "2026-10-29T03:36:39.833632+00:00",
-    "last_seen": "2026-10-29T04:06:23.870331+00:00",
+    "last_seen": "2026-10-29T05:19:21.844187+00:00",
     "move_in_period": "unspecified"
   },
   {
@@ -27544,7 +27582,7 @@
     "fee_badge": "No Broker Fee",
     "fee_details": "Direct lease with building management. Zero broker fee.",
     "first_seen": "2026-10-29T03:36:39.833632+00:00",
-    "last_seen": "2026-10-29T04:06:23.870331+00:00",
+    "last_seen": "2026-10-29T05:19:21.844187+00:00",
     "move_in_period": "unspecified"
   },
   {
@@ -27572,7 +27610,7 @@
     "fee_badge": "No Broker Fee",
     "fee_details": "Direct lease with building management. Zero broker fee.",
     "first_seen": "2026-10-29T03:36:39.833632+00:00",
-    "last_seen": "2026-10-29T04:06:23.870331+00:00",
+    "last_seen": "2026-10-29T05:19:21.844187+00:00",
     "move_in_period": "unspecified"
   },
   {
@@ -27915,7 +27953,8 @@
     "rental_type": "entire_unit",
     "rental_type_label": "Condo / Apt",
     "images": [
-      "https://m.bostonpads.com/media/v2/listings/ad/photos/01-24/1706563123-533w6074659f01ce3.jpg"
+      "https://m.bostonpads.com/media/v2/listings/ad/photos/01-24/1706563123-533w6074659f01ce3.jpg",
+      "https://m.bostonpads.com/media/v2/listings/unit/photos/01-24/1706563123-533w6074659f01ce3.jpg"
     ],
     "description": "Verified Brighton - Cleveland Circle rental. Features: Laundry: Basement, Dishwasher included, Pets: NO PETS, Heat included, Hot water included. Available: Now.",
     "has_broker_fee": false,
@@ -27924,7 +27963,10 @@
     "address": "Brighton - Cleveland Circle, Boston, MA",
     "first_seen": "2026-10-29T03:27:18.360570+00:00",
     "last_seen": "2026-10-29T03:47:29.273970+00:00",
-    "move_in_period": "immediate"
+    "move_in_period": "immediate",
+    "cross_posted_sources": [
+      "Boston Pads"
+    ]
   },
   {
     "id": "bp-8176189",
@@ -28263,7 +28305,7 @@
     "fee_badge": "No Broker Fee",
     "fee_details": "Direct lease with building management. Zero broker fee.",
     "first_seen": "2026-10-29T03:36:39.833632+00:00",
-    "last_seen": "2026-10-29T04:06:23.870331+00:00",
+    "last_seen": "2026-10-29T05:19:21.844187+00:00",
     "move_in_period": "unspecified"
   },
   {
@@ -28291,7 +28333,7 @@
     "fee_badge": "No Broker Fee",
     "fee_details": "Direct lease with building management. Zero broker fee.",
     "first_seen": "2026-10-29T03:36:39.833632+00:00",
-    "last_seen": "2026-10-29T04:06:23.870331+00:00",
+    "last_seen": "2026-10-29T05:19:21.844187+00:00",
     "move_in_period": "unspecified"
   },
   {
@@ -28319,7 +28361,7 @@
     "fee_badge": "No Broker Fee",
     "fee_details": "Direct lease with building management. Zero broker fee.",
     "first_seen": "2026-10-29T03:36:39.833632+00:00",
-    "last_seen": "2026-10-29T04:06:23.870331+00:00",
+    "last_seen": "2026-10-29T05:19:21.844187+00:00",
     "move_in_period": "unspecified"
   },
   {
@@ -28376,7 +28418,7 @@
     "fee_badge": "No Broker Fee",
     "fee_details": "Direct lease with building management. Zero broker fee.",
     "first_seen": "2026-10-29T03:36:39.833632+00:00",
-    "last_seen": "2026-10-29T04:06:23.870331+00:00",
+    "last_seen": "2026-10-29T05:19:21.844187+00:00",
     "move_in_period": "unspecified"
   },
   {
@@ -28432,7 +28474,7 @@
     "fee_badge": "No Broker Fee",
     "fee_details": "Direct lease with building management. Zero broker fee.",
     "first_seen": "2026-10-29T03:36:39.833632+00:00",
-    "last_seen": "2026-10-29T04:06:23.870331+00:00",
+    "last_seen": "2026-10-29T05:19:21.844187+00:00",
     "move_in_period": "unspecified"
   },
   {
@@ -28619,7 +28661,9 @@
     "fee_badge": "No Broker Fee",
     "fee_details": "No Fee",
     "address": "Brighton- Washington St./ Allston St., Boston, MA",
-    "move_in_period": "immediate"
+    "move_in_period": "immediate",
+    "first_seen": "2026-10-29T05:19:21.844187+00:00",
+    "last_seen": "2026-10-29T05:19:21.844187+00:00"
   },
   {
     "id": "bp-8148629",
@@ -28734,7 +28778,7 @@
     "fee_details": "No Fee",
     "address": "Brighton - Oak Square, Boston, MA",
     "first_seen": "2026-10-29T03:04:39.795020+00:00",
-    "last_seen": "2026-10-29T03:47:29.273970+00:00",
+    "last_seen": "2026-10-29T05:19:21.844187+00:00",
     "move_in_period": "immediate"
   },
   {
@@ -28790,7 +28834,7 @@
     "fee_badge": "No Broker Fee",
     "fee_details": "Direct lease with building management. Zero broker fee.",
     "first_seen": "2026-10-29T03:36:39.833632+00:00",
-    "last_seen": "2026-10-29T04:06:23.870331+00:00",
+    "last_seen": "2026-10-29T05:19:21.844187+00:00",
     "move_in_period": "unspecified"
   },
   {
@@ -28846,7 +28890,7 @@
     "fee_badge": "No Broker Fee",
     "fee_details": "Direct lease with building management. Zero broker fee.",
     "first_seen": "2026-10-29T03:36:39.833632+00:00",
-    "last_seen": "2026-10-29T04:06:23.870331+00:00",
+    "last_seen": "2026-10-29T05:19:21.844187+00:00",
     "move_in_period": "unspecified"
   },
   {
@@ -29379,14 +29423,20 @@
     "rental_type": "entire_unit",
     "rental_type_label": "Condo / Apt",
     "images": [
-      "https://m.bostonpads.com/media/v2/listings/unit/photos/05-26/1780004126-img-3693.jpeg"
+      "https://m.bostonpads.com/media/v2/listings/unit/photos/05-26/1780004126-img-3693.jpeg",
+      "https://m.bostonpads.com/media/v2/listings/ad/photos/05-26/1780004124-img-3691.jpeg"
     ],
     "description": "Verified Cambridge - East Cambridge rental. Features: Laundry: Basement, Pets: NO PETS, Hot water included. Available: Now.",
     "has_broker_fee": false,
     "fee_badge": "No Broker Fee",
     "fee_details": "No Fee",
     "address": "Cambridge - East Cambridge, Cambridge, MA",
-    "move_in_period": "immediate"
+    "move_in_period": "immediate",
+    "first_seen": "2026-10-29T05:19:21.844187+00:00",
+    "last_seen": "2026-10-29T05:19:21.844187+00:00",
+    "cross_posted_sources": [
+      "Boston Pads"
+    ]
   },
   {
     "id": "bp-8176813",
@@ -29413,7 +29463,10 @@
     "fee_badge": "No Broker Fee",
     "fee_details": "No Fee",
     "address": "Somerville - West Somerville/ Teele Square, Somerville, MA",
-    "move_in_period": "immediate"
+    "move_in_period": "immediate",
+    "cross_posted_sources": [
+      "Boston Pads"
+    ]
   },
   {
     "id": "cl-WBpxmmCbSCGLo1NU",
@@ -29650,36 +29703,10 @@
     "address": "Cambridge - East Cambridge, Cambridge, MA",
     "first_seen": "2026-10-29T03:04:39.795020+00:00",
     "last_seen": "2026-10-29T03:07:20.979519+00:00",
-    "move_in_period": "immediate"
-  },
-  {
-    "id": "bp-8176947",
-    "source": "bostonpads",
-    "source_label": "Boston Pads",
-    "title": "3 Bed Apartment in Somerville - West Somerville/ Teele Square",
-    "price": 3000,
-    "city": "Somerville",
-    "neighborhood": "Somerville - West Somerville/ Teele Square",
-    "url": "https://bostonpads.com/boston-apartments/?ad_id=8176947",
-    "lat": 42.409203,
-    "lng": -71.129727,
-    "bedrooms": 3,
-    "bathrooms": 1.0,
-    "sqft": null,
-    "availability": "Available Now",
-    "rental_type": "entire_unit",
-    "rental_type_label": "Condo / Apt",
-    "images": [
-      "https://m.bostonpads.com/media/v2/listings/unit/photos/10-26/1792780450-img-2914.jpeg"
-    ],
-    "description": "Verified Somerville - West Somerville/ Teele Square rental. Features: Laundry: Basement, Free, A/C: Window Unit(s) Included, Dishwasher included, Pets: NO PETS, Hot water included. Available: Now.",
-    "has_broker_fee": false,
-    "fee_badge": "No Broker Fee",
-    "fee_details": "No Fee",
-    "address": "Somerville - West Somerville/ Teele Square, Somerville, MA",
-    "first_seen": "2026-10-29T03:04:39.795020+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00",
-    "move_in_period": "immediate"
+    "move_in_period": "immediate",
+    "cross_posted_sources": [
+      "Boston Pads"
+    ]
   },
   {
     "id": "bp-8178199",
@@ -29709,35 +29736,6 @@
     "first_seen": "2026-10-29T03:04:39.795020+00:00",
     "last_seen": "2026-10-29T03:47:29.273970+00:00",
     "move_in_period": "2027-09"
-  },
-  {
-    "id": "bp-8177182",
-    "source": "bostonpads",
-    "source_label": "Boston Pads",
-    "title": "3 Bed Apartment in Somerville - West Somerville/ Teele Square",
-    "price": 3000,
-    "city": "Somerville",
-    "neighborhood": "Somerville - West Somerville/ Teele Square",
-    "url": "https://bostonpads.com/boston-apartments/?ad_id=8177182",
-    "lat": 42.409203,
-    "lng": -71.129727,
-    "bedrooms": 3,
-    "bathrooms": 1.0,
-    "sqft": null,
-    "availability": "Available Now",
-    "rental_type": "entire_unit",
-    "rental_type_label": "Condo / Apt",
-    "images": [
-      "https://m.bostonpads.com/media/v2/listings/unit/photos/10-26/1792780450-img-2914.jpeg"
-    ],
-    "description": "Verified Somerville - West Somerville/ Teele Square rental. Features: Laundry: Basement, Free, A/C: Window Unit(s) Included, Dishwasher included, Pets: NO PETS, Hot water included. Available: Now.",
-    "has_broker_fee": false,
-    "fee_badge": "No Broker Fee",
-    "fee_details": "No Fee",
-    "address": "Somerville - West Somerville/ Teele Square, Somerville, MA",
-    "first_seen": "2026-10-29T03:27:18.360570+00:00",
-    "last_seen": "2026-10-29T03:47:29.273970+00:00",
-    "move_in_period": "immediate"
   },
   {
     "id": "cl-7s9qXHxYQYNchMsB",
@@ -30187,7 +30185,7 @@
     "fee_badge": "No Broker Fee",
     "fee_details": "Direct lease with building management. Zero broker fee.",
     "first_seen": "2026-10-29T03:36:39.833632+00:00",
-    "last_seen": "2026-10-29T04:06:23.870331+00:00",
+    "last_seen": "2026-10-29T05:19:21.844187+00:00",
     "move_in_period": "unspecified"
   },
   {
@@ -30279,7 +30277,7 @@
     "fee_badge": "No Broker Fee",
     "fee_details": "Direct lease with building management. Zero broker fee.",
     "first_seen": "2026-10-29T03:36:39.833632+00:00",
-    "last_seen": "2026-10-29T04:06:23.870331+00:00",
+    "last_seen": "2026-10-29T05:19:21.844187+00:00",
     "move_in_period": "unspecified"
   },
   {
@@ -30342,7 +30340,7 @@
     "fee_badge": "No Broker Fee",
     "fee_details": "Direct lease with building management. Zero broker fee.",
     "first_seen": "2026-10-29T03:36:39.833632+00:00",
-    "last_seen": "2026-10-29T04:06:23.870331+00:00",
+    "last_seen": "2026-10-29T05:19:21.844187+00:00",
     "move_in_period": "unspecified"
   },
   {
@@ -30370,36 +30368,10 @@
     "fee_badge": "No Broker Fee",
     "fee_details": "No Fee",
     "address": "Brookline - Washington Square, Brookline, MA",
-    "move_in_period": "immediate"
-  },
-  {
-    "id": "bp-8177992",
-    "source": "bostonpads",
-    "source_label": "Boston Pads",
-    "title": "2 Bed Apartment in Brookline - Washington Square",
-    "price": 3095,
-    "city": "Brookline",
-    "neighborhood": "Brookline - Washington Square",
-    "url": "https://bostonpads.com/boston-apartments/?ad_id=8177992",
-    "lat": 42.339952700000005,
-    "lng": -71.1336626,
-    "bedrooms": 2,
-    "bathrooms": 1.0,
-    "sqft": null,
-    "availability": "Available Now",
-    "rental_type": "entire_unit",
-    "rental_type_label": "Condo / Apt",
-    "images": [
-      "https://m.bostonpads.com/media/v2/listings/unit/photos/12-20/1607795321-jcnkro5giev4xfltc0ubyvi4t30lrd436-img-1755.JPG"
-    ],
-    "description": "Verified Brookline - Washington Square rental. Features: Hot water included. Available: Now.",
-    "has_broker_fee": false,
-    "fee_badge": "No Broker Fee",
-    "fee_details": "No Fee",
-    "address": "Brookline - Washington Square, Brookline, MA",
-    "first_seen": "2026-10-29T03:27:18.360570+00:00",
-    "last_seen": "2026-10-29T03:47:29.273970+00:00",
-    "move_in_period": "immediate"
+    "move_in_period": "immediate",
+    "cross_posted_sources": [
+      "Boston Pads"
+    ]
   },
   {
     "id": "bp-8154594",
@@ -30502,7 +30474,8 @@
     "rental_type": "entire_unit",
     "rental_type_label": "Condo / Apt",
     "images": [
-      "https://m.bostonpads.com/media/v2/listings/ad/photos/10-26/1792600597-img-5805.jpeg"
+      "https://m.bostonpads.com/media/v2/listings/ad/photos/10-26/1792600597-img-5805.jpeg",
+      "https://m.bostonpads.com/media/v2/listings/unit/photos/10-26/1792600601-img-5808.jpeg"
     ],
     "description": "Verified Somerville - Union Square rental. Features: Laundry: Basement, Dishwasher included, Pets: Cat OK, Hot water included. Available: 11-01-2026.",
     "has_broker_fee": false,
@@ -30511,7 +30484,10 @@
     "address": "Somerville - Union Square, Somerville, MA",
     "first_seen": "2026-10-29T03:04:39.795020+00:00",
     "last_seen": "2026-10-29T03:07:20.979519+00:00",
-    "move_in_period": "2026-11"
+    "move_in_period": "2026-11",
+    "cross_posted_sources": [
+      "Boston Pads"
+    ]
   },
   {
     "id": "bp-8177132",
@@ -30665,35 +30641,6 @@
     "move_in_period": "2027-01"
   },
   {
-    "id": "bp-8177234",
-    "source": "bostonpads",
-    "source_label": "Boston Pads",
-    "title": "2 Bed Apartment in Somerville - Union Square",
-    "price": 3100,
-    "city": "Somerville",
-    "neighborhood": "Somerville - Union Square",
-    "url": "https://bostonpads.com/boston-apartments/?ad_id=8177234",
-    "lat": 42.385372,
-    "lng": -71.096614,
-    "bedrooms": 2,
-    "bathrooms": 1.0,
-    "sqft": null,
-    "availability": "Available Nov 1, 2026",
-    "rental_type": "entire_unit",
-    "rental_type_label": "Condo / Apt",
-    "images": [
-      "https://m.bostonpads.com/media/v2/listings/unit/photos/10-26/1792600601-img-5808.jpeg"
-    ],
-    "description": "Verified Somerville - Union Square rental. Features: Laundry: Basement, Dishwasher included, Pets: Cat OK, Hot water included. Available: 11-01-2026.",
-    "has_broker_fee": false,
-    "fee_badge": "No Broker Fee",
-    "fee_details": "No Fee",
-    "address": "Somerville - Union Square, Somerville, MA",
-    "first_seen": "2026-10-29T02:44:03.608907+00:00",
-    "last_seen": "2026-10-29T02:53:24.949933+00:00",
-    "move_in_period": "2026-11"
-  },
-  {
     "id": "bp-8177157",
     "source": "bostonpads",
     "source_label": "Boston Pads",
@@ -30719,37 +30666,8 @@
     "fee_details": "No Fee",
     "address": "Somerville - Winter Hill, Somerville, MA",
     "first_seen": "2026-10-29T02:44:03.608907+00:00",
-    "last_seen": "2026-10-29T02:53:24.949933+00:00",
+    "last_seen": "2026-10-29T05:19:21.844187+00:00",
     "move_in_period": "immediate"
-  },
-  {
-    "id": "bp-8176573",
-    "source": "bostonpads",
-    "source_label": "Boston Pads",
-    "title": "2 Bed Apartment in Somerville - Union Square",
-    "price": 3100,
-    "city": "Somerville",
-    "neighborhood": "Somerville - Union Square",
-    "url": "https://bostonpads.com/boston-apartments/?ad_id=8176573",
-    "lat": 42.385372,
-    "lng": -71.096614,
-    "bedrooms": 2,
-    "bathrooms": 1.0,
-    "sqft": null,
-    "availability": "Available Nov 1, 2026",
-    "rental_type": "entire_unit",
-    "rental_type_label": "Condo / Apt",
-    "images": [
-      "https://m.bostonpads.com/media/v2/listings/unit/photos/10-26/1792600601-img-5808.jpeg"
-    ],
-    "description": "Verified Somerville - Union Square rental. Features: Laundry: Basement, Dishwasher included, Pets: Cat OK, Hot water included. Available: 11-01-2026.",
-    "has_broker_fee": false,
-    "fee_badge": "No Broker Fee",
-    "fee_details": "No Fee",
-    "address": "Somerville - Union Square, Somerville, MA",
-    "first_seen": "2026-10-29T03:27:18.360570+00:00",
-    "last_seen": "2026-10-29T03:47:29.273970+00:00",
-    "move_in_period": "2026-11"
   },
   {
     "id": "bp-8177156",
@@ -31009,26 +30927,28 @@
     "move_in_period": "immediate"
   },
   {
-    "id": "bp-8177258",
-    "source": "bostonpads",
-    "source_label": "Boston Pads",
-    "title": "2 Bed Apartment in Somerville - Union Square",
+    "id": "cl-nYPgzShU9qKs7VDK",
+    "source": "craigslist",
+    "source_label": "Craigslist",
+    "title": "Sunlit, North End Fully Furnished Penthouse w/ Ht&Hw & Roof Deck!",
     "price": 3100,
-    "city": "Somerville",
-    "neighborhood": "Somerville - Union Square",
-    "url": "https://bostonpads.com/boston-apartments/?ad_id=8177258",
-    "lat": 42.385372,
-    "lng": -71.096614,
-    "bedrooms": 2,
+    "neighborhood": "Boston (North End)",
+    "url": "https://www.craigslist.org/view/d/boston-sunlit-north-end-fully-furnished/6YxQavnYPgzShU9qKs7VDK",
+    "lat": 42.3660515123609,
+    "lng": -71.0549427001361,
+    "bedrooms": 1,
     "bathrooms": 1.0,
-    "sqft": null,
-    "availability": "Available Nov 1, 2026",
     "rental_type": "entire_unit",
     "rental_type_label": "Condo / Apt",
+    "sqft": null,
+    "address": "Boston (North End)",
+    "first_seen": "2026-10-29T05:19:23.672901+00:00",
+    "last_seen": "2026-10-29T05:19:21.844187+00:00",
+    "availability": "Contact Lister",
     "images": [
-      "https://m.bostonpads.com/media/v2/listings/unit/photos/10-26/1792600601-img-5808.jpeg"
+      "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80"
     ],
-    "description": "Verified Somerville - Union Square rental. Features: Laundry: Basement, Dishwasher included, Pets: Cat OK, Hot water included. Available: 11-01-2026.",
+    "description": "Incredible North End One Bedroom Apartment. The apartment gets a ton of natural lighting. There's also a roof deck with an amazing view of the city. Pet friendly. Fantastic Location, close to Downtown, Faneuil Hall, MGH, right in historic quaint North End. Fully furnished One Bedroom Apartment Top Floor Penthouse Unit, Utensils, Cook ware, Towels, Queen Bed, AC Unit, ...etc. Tons of Natural Lighting, real hardwood floors, updated kitchen, amazing roof deck views. Laundry in Basement. Bike storage that has direct access to the street. Pet friendly. No broker fee. David Tran Good News Residentia...",
     "has_broker_fee": false,
     "fee_badge": "No Broker Fee",
     "fee_details": "No Fee",
@@ -31062,7 +30982,7 @@
     "fee_badge": "No Broker Fee",
     "fee_details": "Direct lease with building management. Zero broker fee.",
     "first_seen": "2026-10-29T03:36:39.833632+00:00",
-    "last_seen": "2026-10-29T04:06:23.870331+00:00",
+    "last_seen": "2026-10-29T05:19:21.844187+00:00",
     "move_in_period": "unspecified"
   },
   {
@@ -31213,7 +31133,10 @@
     "address": "Somerville - Magoun/Ball Square, Somerville, MA",
     "first_seen": "2026-10-29T02:44:03.608907+00:00",
     "last_seen": "2026-10-29T03:47:29.273970+00:00",
-    "move_in_period": "2026-11"
+    "move_in_period": "2026-11",
+    "cross_posted_sources": [
+      "Boston Pads"
+    ]
   },
   {
     "id": "bp-8177154",
@@ -31233,7 +31156,8 @@
     "rental_type": "entire_unit",
     "rental_type_label": "Condo / Apt",
     "images": [
-      "https://m.bostonpads.com/media/v2/listings/unit/photos/12-21/1639962680-17-forest-st-23-cambridge-shared-unit-photo-2.jpg"
+      "https://m.bostonpads.com/media/v2/listings/unit/photos/12-21/1639962680-17-forest-st-23-cambridge-shared-unit-photo-2.jpg",
+      "https://m.bostonpads.com/media/v2/listings/ad/photos/12-21/1639962680-17-forest-st-23-cambridge-shared-unit-photo-2.jpg"
     ],
     "description": "Verified Cambridge - Porter Square rental. Features: Laundry: Unit, A/C: Central, Dishwasher included, Pets: Cat OK, Hot water included. Available: Now.",
     "has_broker_fee": false,
@@ -31242,7 +31166,10 @@
     "address": "Cambridge - Porter Square, Cambridge, MA",
     "first_seen": "2026-10-29T02:44:03.608907+00:00",
     "last_seen": "2026-10-29T03:07:20.979519+00:00",
-    "move_in_period": "immediate"
+    "move_in_period": "immediate",
+    "cross_posted_sources": [
+      "Boston Pads"
+    ]
   },
   {
     "id": "bp-8177159",
@@ -31270,7 +31197,7 @@
     "fee_details": "No Fee",
     "address": "Somerville - Winter Hill, Somerville, MA",
     "first_seen": "2026-10-29T02:44:03.608907+00:00",
-    "last_seen": "2026-10-29T02:53:24.949933+00:00",
+    "last_seen": "2026-10-29T05:19:21.844187+00:00",
     "move_in_period": "immediate"
   },
   {
@@ -31298,7 +31225,7 @@
     "fee_badge": "No Broker Fee",
     "fee_details": "Direct community listing on Reddit (No Broker Fee).",
     "first_seen": "2026-10-28T15:11:34+00:00",
-    "last_seen": "2026-10-29T03:41:45.797108+00:00",
+    "last_seen": "2026-10-29T05:19:21.844187+00:00",
     "move_in_period": "flexible"
   },
   {
@@ -31384,7 +31311,7 @@
     "fee_badge": "No Broker Fee",
     "fee_details": "Direct lease with building management. Zero broker fee.",
     "first_seen": "2026-10-29T03:36:39.833632+00:00",
-    "last_seen": "2026-10-29T04:06:23.870331+00:00",
+    "last_seen": "2026-10-29T05:19:21.844187+00:00",
     "move_in_period": "unspecified"
   },
   {
@@ -31412,7 +31339,7 @@
     "fee_badge": "No Broker Fee",
     "fee_details": "Direct lease with building management. Zero broker fee.",
     "first_seen": "2026-10-29T03:36:39.833632+00:00",
-    "last_seen": "2026-10-29T04:06:23.870331+00:00",
+    "last_seen": "2026-10-29T05:19:21.844187+00:00",
     "move_in_period": "unspecified"
   },
   {
@@ -31468,7 +31395,7 @@
     "fee_badge": "No Broker Fee",
     "fee_details": "Direct lease with building management. Zero broker fee.",
     "first_seen": "2026-10-29T03:36:39.833632+00:00",
-    "last_seen": "2026-10-29T04:06:23.870331+00:00",
+    "last_seen": "2026-10-29T05:19:21.844187+00:00",
     "move_in_period": "unspecified"
   },
   {
@@ -31496,7 +31423,7 @@
     "fee_badge": "No Broker Fee",
     "fee_details": "Direct lease with building management. Zero broker fee.",
     "first_seen": "2026-10-29T03:36:39.833632+00:00",
-    "last_seen": "2026-10-29T04:06:23.870331+00:00",
+    "last_seen": "2026-10-29T05:19:21.844187+00:00",
     "move_in_period": "unspecified"
   },
   {
@@ -31770,7 +31697,8 @@
     "rental_type": "entire_unit",
     "rental_type_label": "Condo / Apt",
     "images": [
-      "https://m.bostonpads.com/media/v2/listings/unit/photos/10-21/1635315057-43bea14636.jpg"
+      "https://m.bostonpads.com/media/v2/listings/unit/photos/10-21/1635315057-43bea14636.jpg",
+      "https://m.bostonpads.com/media/v2/listings/unit/photos/06-22/1655070123-img-7921.jpg"
     ],
     "description": "Verified Brookline - Coolidge Corner rental. Features: Laundry: Common Area, A/C: Central, Dishwasher included, Pets: Pet OK, Hot water included. Available: 11-01-2026.",
     "has_broker_fee": false,
@@ -31915,7 +31843,8 @@
     "rental_type": "entire_unit",
     "rental_type_label": "Condo / Apt",
     "images": [
-      "https://m.bostonpads.com/media/v2/listings/unit/photos/09-26/1790644808-img-1876.jpeg"
+      "https://m.bostonpads.com/media/v2/listings/unit/photos/09-26/1790644808-img-1876.jpeg",
+      "https://m.bostonpads.com/media/v2/listings/unit/photos/09-24/1725646178-img-1521.jpeg"
     ],
     "description": "Verified Brighton- Washington St./ Allston St. rental. Features: Laundry: Common Area, Dishwasher included, Heat included, Hot water included. Available: Now.",
     "has_broker_fee": false,
@@ -31944,7 +31873,8 @@
     "rental_type": "entire_unit",
     "rental_type_label": "Condo / Apt",
     "images": [
-      "https://m.bostonpads.com/media/v2/listings/unit/photos/09-21/1632169235-9377c4f6-8d03-4cfa-89d4-14b390fe9413.jpeg"
+      "https://m.bostonpads.com/media/v2/listings/unit/photos/09-21/1632169235-9377c4f6-8d03-4cfa-89d4-14b390fe9413.jpeg",
+      "https://m.bostonpads.com/media/v2/listings/ad/photos/09-21/1632169235-9377c4f6-8d03-4cfa-89d4-14b390fe9413.jpeg"
     ],
     "description": "Verified Medford - Magoun Square rental. Features: A/C: In Wall, Pets: Cat OK, Hot water included. Available: Now.",
     "has_broker_fee": false,
@@ -31953,7 +31883,10 @@
     "address": "Medford - Magoun Square, Medford, MA",
     "first_seen": "2026-10-29T03:04:39.795020+00:00",
     "last_seen": "2026-10-29T03:07:20.979519+00:00",
-    "move_in_period": "immediate"
+    "move_in_period": "immediate",
+    "cross_posted_sources": [
+      "Boston Pads"
+    ]
   },
   {
     "id": "cl-XBbnQka9wuPVswPD",
@@ -32397,7 +32330,7 @@
     "fee_badge": "No Broker Fee",
     "fee_details": "Direct lease with building management. Zero broker fee.",
     "first_seen": "2026-10-29T03:36:39.833632+00:00",
-    "last_seen": "2026-10-29T04:06:23.870331+00:00",
+    "last_seen": "2026-10-29T05:19:21.844187+00:00",
     "move_in_period": "unspecified"
   },
   {
@@ -32425,7 +32358,7 @@
     "fee_badge": "No Broker Fee",
     "fee_details": "Direct lease with building management. Zero broker fee.",
     "first_seen": "2026-10-29T03:36:39.833632+00:00",
-    "last_seen": "2026-10-29T04:06:23.870331+00:00",
+    "last_seen": "2026-10-29T05:19:21.844187+00:00",
     "move_in_period": "unspecified"
   },
   {
@@ -32453,7 +32386,7 @@
     "fee_badge": "No Broker Fee",
     "fee_details": "Direct lease with building management. Zero broker fee.",
     "first_seen": "2026-10-29T03:36:39.833632+00:00",
-    "last_seen": "2026-10-29T04:06:23.870331+00:00",
+    "last_seen": "2026-10-29T05:19:21.844187+00:00",
     "move_in_period": "unspecified"
   },
   {
@@ -32539,7 +32472,7 @@
     "fee_badge": "No Broker Fee",
     "fee_details": "Direct lease with building management. Zero broker fee.",
     "first_seen": "2026-10-29T03:36:39.833632+00:00",
-    "last_seen": "2026-10-29T04:06:23.870331+00:00",
+    "last_seen": "2026-10-29T05:19:21.844187+00:00",
     "move_in_period": "unspecified"
   },
   {
@@ -32567,7 +32500,7 @@
     "fee_badge": "No Broker Fee",
     "fee_details": "Direct lease with building management. Zero broker fee.",
     "first_seen": "2026-10-29T03:36:39.833632+00:00",
-    "last_seen": "2026-10-29T04:06:23.870331+00:00",
+    "last_seen": "2026-10-29T05:19:21.844187+00:00",
     "move_in_period": "unspecified"
   },
   {
@@ -32628,33 +32561,32 @@
     "move_in_period": "immediate"
   },
   {
-    "id": "bp-8177871",
-    "source": "bostonpads",
-    "source_label": "Boston Pads",
-    "title": "2 Bed Apartment in Brighton - Brighton Center",
+    "id": "reit-avalon-ns",
+    "source": "reit_direct",
+    "source_label": "Direct Management",
+    "title": "Avalon North Station - Direct Leasing (No Broker Fee)",
     "price": 3250,
-    "city": "Boston",
-    "neighborhood": "Brighton - Brighton Center",
-    "url": "https://bostonpads.com/boston-apartments/?ad_id=8177871",
-    "lat": 42.3513474,
-    "lng": -71.1486479,
-    "bedrooms": 2,
+    "neighborhood": "North Station / West End",
+    "url": "https://www.avaloncommunities.com/massachusetts/boston-apartments/avalon-north-station/",
+    "lat": 42.3662,
+    "lng": -71.0625,
+    "bedrooms": 1,
     "bathrooms": 1.0,
-    "sqft": null,
-    "availability": "Available Now",
+    "sqft": 690,
+    "availability": "Contact Lister",
     "rental_type": "entire_unit",
     "rental_type_label": "Condo / Apt",
     "images": [
-      "https://m.bostonpads.com/media/v2/listings/unit/photos/09-26/1790005520-12-elko-st-02-boston-brighton-shared-unit-photo-6.jpg"
+      "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=800&q=80"
     ],
-    "description": "Verified Brighton - Brighton Center rental. Features: Laundry: Common Area, Pets: Dog OK, Cat OK, Heat included, Hot water included. Available: Now.",
+    "description": "38-story residential tower at 1 Nashua St atop North Station. 35th-floor Sky Pavilion, gym, 24/7 concierge. Zero broker fee.",
     "has_broker_fee": false,
     "fee_badge": "No Broker Fee",
-    "fee_details": "No Fee",
-    "address": "Brighton - Brighton Center, Boston, MA",
-    "first_seen": "2026-10-29T02:44:03.608907+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00",
-    "move_in_period": "immediate"
+    "fee_details": "Direct On-Site Management (Guaranteed $0 Broker Fee)",
+    "address": "1 Nashua St, Boston, MA 02114",
+    "first_seen": "2026-10-29T05:19:21.844187+00:00",
+    "last_seen": "2026-10-29T05:19:21.844187+00:00",
+    "move_in_period": "unspecified"
   },
   {
     "id": "cl-8YcGcWHLdJwzUcPm",
@@ -32709,7 +32641,7 @@
     "fee_badge": "No Broker Fee",
     "fee_details": "Direct lease with building management. Zero broker fee.",
     "first_seen": "2026-10-29T03:36:39.833632+00:00",
-    "last_seen": "2026-10-29T04:06:23.870331+00:00",
+    "last_seen": "2026-10-29T05:19:21.844187+00:00",
     "move_in_period": "unspecified"
   },
   {
@@ -32737,7 +32669,7 @@
     "fee_badge": "No Broker Fee",
     "fee_details": "Direct lease with building management. Zero broker fee.",
     "first_seen": "2026-10-29T03:36:39.833632+00:00",
-    "last_seen": "2026-10-29T04:06:23.870331+00:00",
+    "last_seen": "2026-10-29T05:19:21.844187+00:00",
     "move_in_period": "unspecified"
   },
   {
@@ -33026,7 +32958,10 @@
     "address": "Somerville - Union Square, Somerville, MA",
     "first_seen": "2026-10-29T03:27:18.360570+00:00",
     "last_seen": "2026-10-29T03:47:29.273970+00:00",
-    "move_in_period": "immediate"
+    "move_in_period": "immediate",
+    "cross_posted_sources": [
+      "Boston Pads"
+    ]
   },
   {
     "id": "bp-8177133",
@@ -33136,35 +33071,6 @@
     "fee_badge": "No Broker Fee",
     "fee_details": "No Fee",
     "address": "Cambridge - Porter Square, Cambridge, MA",
-    "first_seen": "2026-10-29T02:44:03.608907+00:00",
-    "last_seen": "2026-10-29T02:53:24.949933+00:00",
-    "move_in_period": "immediate"
-  },
-  {
-    "id": "bp-8177235",
-    "source": "bostonpads",
-    "source_label": "Boston Pads",
-    "title": "2 Bed Apartment in Somerville - Union Square",
-    "price": 3300,
-    "city": "Somerville",
-    "neighborhood": "Somerville - Union Square",
-    "url": "https://bostonpads.com/boston-apartments/?ad_id=8177235",
-    "lat": 42.381959,
-    "lng": -71.09588600000001,
-    "bedrooms": 2,
-    "bathrooms": 1.0,
-    "sqft": null,
-    "availability": "Available Now",
-    "rental_type": "entire_unit",
-    "rental_type_label": "Condo / Apt",
-    "images": [
-      "https://m.bostonpads.com/media/v2/listings/unit/photos/09-26/1789130264-17-bow-st-12-somerville-shared-unit-photo-8.jfif"
-    ],
-    "description": "Verified Somerville - Union Square rental. Features: Laundry: Basement, A/C: Central, Dishwasher included, Hot water included. Available: Now.",
-    "has_broker_fee": false,
-    "fee_badge": "No Broker Fee",
-    "fee_details": "No Fee",
-    "address": "Somerville - Union Square, Somerville, MA",
     "first_seen": "2026-10-29T02:44:03.608907+00:00",
     "last_seen": "2026-10-29T02:53:24.949933+00:00",
     "move_in_period": "immediate"
@@ -33451,7 +33357,7 @@
     "fee_badge": "No Broker Fee",
     "fee_details": "Direct lease with building management. Zero broker fee.",
     "first_seen": "2026-10-29T03:36:39.833632+00:00",
-    "last_seen": "2026-10-29T04:06:23.870331+00:00",
+    "last_seen": "2026-10-29T05:19:21.844187+00:00",
     "move_in_period": "unspecified"
   },
   {
@@ -33533,16 +33439,19 @@
     "sqft": null,
     "availability": "Available Now",
     "rental_type": "entire_unit",
-    "rental_type_label": "Entire Place",
+    "rental_type_label": "Condo / Apt",
     "images": [
       "https://m.bostonpads.com/media/v2/listings/unit/photos/10-26/1791376447-screenshot-7-10-2026-83224-appyougotlistingscom.jpeg"
     ],
-    "description": "Verified Boston rental in South Boston - East Side. Features: Laundry: Unit, Dishwasher included, Pets: Cat OK, Hot water included. Available: Now.",
+    "description": "Verified South Boston - East Side rental. Features: Laundry: Unit, Dishwasher included, Pets: Cat OK, Hot water included. Available: Now.",
     "has_broker_fee": false,
     "fee_badge": "No Broker Fee",
     "fee_details": "No Fee",
     "address": "South Boston - East Side, Boston, MA",
-    "move_in_period": "immediate"
+    "move_in_period": "immediate",
+    "city": "Boston",
+    "first_seen": "2026-10-29T05:19:21.844187+00:00",
+    "last_seen": "2026-10-29T05:19:21.844187+00:00"
   },
   {
     "id": "zillow_2077507505",
@@ -33569,7 +33478,7 @@
     "fee_badge": "No Broker Fee",
     "fee_details": "Direct lease with building management. Zero broker fee.",
     "first_seen": "2026-10-29T03:36:39.833632+00:00",
-    "last_seen": "2026-10-29T04:06:23.870331+00:00",
+    "last_seen": "2026-10-29T05:19:21.844187+00:00",
     "move_in_period": "unspecified"
   },
   {
@@ -33605,7 +33514,10 @@
     "fee_details": "Owner pays fee or no broker fee required",
     "last_seen": "2026-10-29T04:18:33.725322+00:00",
     "first_seen": "2026-10-29T03:28:06.013412+00:00",
-    "move_in_period": "2026-12"
+    "move_in_period": "2026-12",
+    "cross_posted_sources": [
+      "Craigslist"
+    ]
   },
   {
     "id": "bp-8172328",
@@ -33752,7 +33664,7 @@
     "fee_badge": "No Broker Fee",
     "fee_details": "Direct lease with building management. Zero broker fee.",
     "first_seen": "2026-10-29T03:36:39.833632+00:00",
-    "last_seen": "2026-10-29T04:06:23.870331+00:00",
+    "last_seen": "2026-10-29T05:19:21.844187+00:00",
     "move_in_period": "unspecified"
   },
   {
@@ -33780,7 +33692,7 @@
     "fee_badge": "No Broker Fee",
     "fee_details": "Direct lease with building management. Zero broker fee.",
     "first_seen": "2026-10-29T03:36:39.833632+00:00",
-    "last_seen": "2026-10-29T04:06:23.870331+00:00",
+    "last_seen": "2026-10-29T05:19:21.844187+00:00",
     "move_in_period": "unspecified"
   },
   {
@@ -33808,7 +33720,7 @@
     "fee_badge": "No Broker Fee",
     "fee_details": "Direct lease with building management. Zero broker fee.",
     "first_seen": "2026-10-29T03:36:39.833632+00:00",
-    "last_seen": "2026-10-29T04:06:23.870331+00:00",
+    "last_seen": "2026-10-29T05:19:21.844187+00:00",
     "move_in_period": "unspecified"
   },
   {
@@ -33837,6 +33749,34 @@
     "fee_details": "Direct lease with building management. Zero broker fee.",
     "first_seen": "2026-10-29T03:36:39.833632+00:00",
     "last_seen": "2026-10-29T04:06:23.870331+00:00",
+    "move_in_period": "unspecified"
+  },
+  {
+    "id": "reit-benjamin",
+    "source": "reit_direct",
+    "source_label": "Direct Management",
+    "title": "The Benjamin & VIA - Seaport Waterfront (No Broker Fee)",
+    "price": 3390,
+    "neighborhood": "Seaport, Boston",
+    "url": "https://www.thebenjaminseaport.com/",
+    "lat": 42.3524,
+    "lng": -71.0471,
+    "bedrooms": 1,
+    "bathrooms": 1.0,
+    "sqft": 590,
+    "availability": "Contact Lister",
+    "rental_type": "entire_unit",
+    "rental_type_label": "Condo / Apt",
+    "images": [
+      "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=800&q=80"
+    ],
+    "description": "25 Northern Ave in the Seaport District. Harbor views, one-acre rooftop terrace, fitness club, direct management by Bozzuto. Zero broker fee.",
+    "has_broker_fee": false,
+    "fee_badge": "No Broker Fee",
+    "fee_details": "Direct On-Site Management (Guaranteed $0 Broker Fee)",
+    "address": "25 Northern Ave, Boston, MA 02210",
+    "first_seen": "2026-10-29T05:19:21.844187+00:00",
+    "last_seen": "2026-10-29T05:19:21.844187+00:00",
     "move_in_period": "unspecified"
   },
   {
@@ -33954,7 +33894,7 @@
     "fee_details": "No Fee",
     "address": "North End, Boston, MA",
     "first_seen": "2026-10-29T03:04:39.795020+00:00",
-    "last_seen": "2026-10-29T03:47:29.273970+00:00",
+    "last_seen": "2026-10-29T05:19:21.844187+00:00",
     "move_in_period": "immediate"
   },
   {
@@ -33975,7 +33915,10 @@
     "rental_type": "entire_unit",
     "rental_type_label": "Condo / Apt",
     "images": [
-      "https://m.bostonpads.com/media/v2/listings/unit/photos/02-23/1677017429-1.PNG"
+      "https://m.bostonpads.com/media/v2/listings/unit/photos/02-23/1677017429-1.PNG",
+      "https://m.bostonpads.com/media/v2/listings/unit/photos/06-24/1719326162-img-0734.jpeg",
+      "https://m.bostonpads.com/media/v2/listings/ad/photos/06-24/1719326162-img-0734.jpeg",
+      "https://m.bostonpads.com/media/v2/listings/ad/photos/02-23/1677017429-1.PNG"
     ],
     "description": "Verified Brookline - Boston University rental. Features: Laundry: Common Area, Hot water included. Available: Now.",
     "has_broker_fee": false,
@@ -34126,7 +34069,7 @@
     "fee_details": "No Fee",
     "address": "Dorchester - Grove Hall, Boston, MA",
     "first_seen": "2026-10-29T02:44:03.608907+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00",
+    "last_seen": "2026-10-29T05:19:21.844187+00:00",
     "move_in_period": "immediate"
   },
   {
@@ -34159,64 +34102,6 @@
     "move_in_period": "2026-11"
   },
   {
-    "id": "bp-8173098",
-    "source": "bostonpads",
-    "source_label": "Boston Pads",
-    "title": "1 Bed Apartment in Brookline - Boston University",
-    "price": 3400,
-    "city": "Boston",
-    "neighborhood": "Brookline - Boston University",
-    "url": "https://bostonpads.com/boston-apartments/?ad_id=8173098",
-    "lat": 42.352449,
-    "lng": -71.121115,
-    "bedrooms": 1,
-    "bathrooms": 1.0,
-    "sqft": null,
-    "availability": "Available Now",
-    "rental_type": "entire_unit",
-    "rental_type_label": "Condo / Apt",
-    "images": [
-      "https://m.bostonpads.com/media/v2/listings/ad/photos/06-24/1719326162-img-0734.jpeg"
-    ],
-    "description": "Verified Brookline - Boston University rental. Features: Laundry: Common Area, A/C: Central, Hot water included. Available: Now.",
-    "has_broker_fee": false,
-    "fee_badge": "No Broker Fee",
-    "fee_details": "No Fee",
-    "address": "Brookline - Boston University, Boston, MA",
-    "first_seen": "2026-10-29T02:44:03.608907+00:00",
-    "last_seen": "2026-10-29T03:47:29.273970+00:00",
-    "move_in_period": "immediate"
-  },
-  {
-    "id": "bp-8044766",
-    "source": "bostonpads",
-    "source_label": "Boston Pads",
-    "title": "1 Bed Apartment in Brookline - Boston University",
-    "price": 3400,
-    "city": "Boston",
-    "neighborhood": "Brookline - Boston University",
-    "url": "https://bostonpads.com/boston-apartments/?ad_id=8044766",
-    "lat": 42.352396999999996,
-    "lng": -71.121167,
-    "bedrooms": 1,
-    "bathrooms": 1.0,
-    "sqft": null,
-    "availability": "Available Now",
-    "rental_type": "entire_unit",
-    "rental_type_label": "Condo / Apt",
-    "images": [
-      "https://m.bostonpads.com/media/v2/listings/unit/photos/02-23/1677017429-1.PNG"
-    ],
-    "description": "Verified Brookline - Boston University rental. Features: Laundry: Common Area, Hot water included. Available: Now.",
-    "has_broker_fee": false,
-    "fee_badge": "No Broker Fee",
-    "fee_details": "No Fee",
-    "address": "Brookline - Boston University, Boston, MA",
-    "first_seen": "2026-10-29T02:44:03.608907+00:00",
-    "last_seen": "2026-10-29T02:53:24.949933+00:00",
-    "move_in_period": "immediate"
-  },
-  {
     "id": "bp-8178196",
     "source": "bostonpads",
     "source_label": "Boston Pads",
@@ -34244,64 +34129,6 @@
     "first_seen": "2026-10-29T02:44:03.608907+00:00",
     "last_seen": "2026-10-29T04:18:33.725322+00:00",
     "move_in_period": "2027-09"
-  },
-  {
-    "id": "bp-8172351",
-    "source": "bostonpads",
-    "source_label": "Boston Pads",
-    "title": "3 Bed Apartment in Somerville - Tufts",
-    "price": 3400,
-    "city": "Somerville",
-    "neighborhood": "Somerville - Tufts",
-    "url": "https://bostonpads.com/boston-apartments/?ad_id=8172351",
-    "lat": 42.406146,
-    "lng": -71.12707499999999,
-    "bedrooms": 3,
-    "bathrooms": 1.0,
-    "sqft": null,
-    "availability": "Available Now",
-    "rental_type": "entire_unit",
-    "rental_type_label": "Condo / Apt",
-    "images": [
-      "https://m.bostonpads.com/media/v2/listings/unit/photos/07-26/1783465499-img-6327.jpeg"
-    ],
-    "description": "Verified Somerville - Tufts rental. Features: Laundry: Basement, Dishwasher included, Pets: NO PETS, Hot water included. Available: Now.",
-    "has_broker_fee": false,
-    "fee_badge": "No Broker Fee",
-    "fee_details": "No Fee",
-    "address": "Somerville - Tufts, Somerville, MA",
-    "first_seen": "2026-10-29T03:04:39.795020+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00",
-    "move_in_period": "immediate"
-  },
-  {
-    "id": "bp-8173097",
-    "source": "bostonpads",
-    "source_label": "Boston Pads",
-    "title": "1 Bed Apartment in Brookline - Boston University",
-    "price": 3400,
-    "city": "Boston",
-    "neighborhood": "Brookline - Boston University",
-    "url": "https://bostonpads.com/boston-apartments/?ad_id=8173097",
-    "lat": 42.352396999999996,
-    "lng": -71.121167,
-    "bedrooms": 1,
-    "bathrooms": 1.0,
-    "sqft": null,
-    "availability": "Available Now",
-    "rental_type": "entire_unit",
-    "rental_type_label": "Condo / Apt",
-    "images": [
-      "https://m.bostonpads.com/media/v2/listings/ad/photos/02-23/1677017429-1.PNG"
-    ],
-    "description": "Verified Brookline - Boston University rental. Features: Laundry: Common Area, Hot water included. Available: Now.",
-    "has_broker_fee": false,
-    "fee_badge": "No Broker Fee",
-    "fee_details": "No Fee",
-    "address": "Brookline - Boston University, Boston, MA",
-    "first_seen": "2026-10-29T03:27:18.360570+00:00",
-    "last_seen": "2026-10-29T03:47:29.273970+00:00",
-    "move_in_period": "immediate"
   },
   {
     "id": "cl-um1FRkicMpPYY4Kh",
@@ -34384,7 +34211,7 @@
     "fee_badge": "No Broker Fee",
     "fee_details": "Direct lease with building management. Zero broker fee.",
     "first_seen": "2026-10-29T03:36:39.833632+00:00",
-    "last_seen": "2026-10-29T04:06:23.870331+00:00",
+    "last_seen": "2026-10-29T05:19:21.844187+00:00",
     "move_in_period": "unspecified"
   },
   {
@@ -34412,7 +34239,7 @@
     "fee_badge": "No Broker Fee",
     "fee_details": "Direct lease with building management. Zero broker fee.",
     "first_seen": "2026-10-29T03:36:39.833632+00:00",
-    "last_seen": "2026-10-29T04:06:23.870331+00:00",
+    "last_seen": "2026-10-29T05:19:21.844187+00:00",
     "move_in_period": "unspecified"
   },
   {
@@ -34441,6 +34268,91 @@
     "fee_details": "Direct lease with building management. Zero broker fee.",
     "first_seen": "2026-10-29T03:36:39.833632+00:00",
     "last_seen": "2026-10-29T04:06:23.870331+00:00",
+    "move_in_period": "unspecified"
+  },
+  {
+    "id": "bp-8157124",
+    "source": "bostonpads",
+    "source_label": "Boston Pads",
+    "title": "2 Bed Apartment in Somerville - East Somerville",
+    "price": 3400,
+    "city": "Somerville",
+    "neighborhood": "Somerville - East Somerville",
+    "url": "https://bostonpads.com/boston-apartments/?ad_id=8157124",
+    "lat": 42.386188000000004,
+    "lng": -71.077725,
+    "bedrooms": 2,
+    "bathrooms": 1.0,
+    "sqft": null,
+    "availability": "Available Now",
+    "rental_type": "entire_unit",
+    "rental_type_label": "Condo / Apt",
+    "images": [
+      "https://m.bostonpads.com/media/v2/listings/unit/photos/09-26/1790259312-6-mount-pleasant-st-302-somerville-unit-photo-1.jpeg"
+    ],
+    "description": "Verified Somerville - East Somerville rental. Features: Laundry: Unit, Pets: Negotiable, Hot water included. Available: Now.",
+    "has_broker_fee": false,
+    "fee_badge": "No Broker Fee",
+    "fee_details": "No Fee",
+    "address": "Somerville - East Somerville, Somerville, MA",
+    "first_seen": "2026-10-29T05:19:21.844187+00:00",
+    "last_seen": "2026-10-29T05:19:21.844187+00:00",
+    "move_in_period": "immediate"
+  },
+  {
+    "id": "reit-avalon-exeter",
+    "source": "reit_direct",
+    "source_label": "Direct Management",
+    "title": "Avalon at Prudential Center (The Exeter) - Back Bay (No Fee)",
+    "price": 3400,
+    "neighborhood": "Back Bay",
+    "url": "https://www.avaloncommunities.com/massachusetts/boston-apartments/the-exeter-residences/",
+    "lat": 42.3488,
+    "lng": -71.0805,
+    "bedrooms": 1,
+    "bathrooms": 1.0,
+    "sqft": 740,
+    "availability": "Contact Lister",
+    "rental_type": "entire_unit",
+    "rental_type_label": "Condo / Apt",
+    "images": [
+      "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80"
+    ],
+    "description": "77 Exeter St connected to Prudential Center shops. High ceilings, floor-to-ceiling windows, direct indoor access to Back Bay transit. Zero broker fee.",
+    "has_broker_fee": false,
+    "fee_badge": "No Broker Fee",
+    "fee_details": "Direct On-Site Management (Guaranteed $0 Broker Fee)",
+    "address": "77 Exeter St, Boston, MA 02116",
+    "first_seen": "2026-10-29T05:19:21.844187+00:00",
+    "last_seen": "2026-10-29T05:19:21.844187+00:00",
+    "move_in_period": "unspecified"
+  },
+  {
+    "id": "zillow_42.35681--71.10602",
+    "title": "Chroma",
+    "price": 3411,
+    "address": "240 Sidney St, Cambridge, MA",
+    "neighborhood": "Cambridge",
+    "lat": 42.35681,
+    "lng": -71.10602,
+    "url": "https://www.zillow.com/apartments/cambridge-ma/chroma/CngS7c/",
+    "source": "zillow",
+    "source_label": "Zillow",
+    "bedrooms": 0,
+    "bathrooms": 1.0,
+    "sqft": 0,
+    "availability": "Contact Lister",
+    "rental_type": "entire_unit",
+    "rental_type_label": "Condo / Apt",
+    "images": [
+      "https://photos.zillowstatic.com/fp/c84af28e05213433064081b14a15f1f4-p_e.jpg"
+    ],
+    "description": "Chroma located at 240 Sidney St, Cambridge, MA. Floor plans: Studio from $4,022+, 1BR from $3,411+, 2BR from $4,235+. Professionally managed rental community. View full floor plans and schedule a tour directly on Zillow.",
+    "has_broker_fee": false,
+    "fee_badge": "No Broker Fee",
+    "fee_details": "Direct lease with building management. Zero broker fee.",
+    "first_seen": "2026-10-29T05:19:21.844187+00:00",
+    "last_seen": "2026-10-29T05:19:21.844187+00:00",
     "move_in_period": "unspecified"
   },
   {
@@ -34496,7 +34408,7 @@
     "fee_badge": "No Broker Fee",
     "fee_details": "Direct lease with building management. Zero broker fee.",
     "first_seen": "2026-10-29T03:36:39.833632+00:00",
-    "last_seen": "2026-10-29T04:06:23.870331+00:00",
+    "last_seen": "2026-10-29T05:19:21.844187+00:00",
     "move_in_period": "unspecified"
   },
   {
@@ -34610,7 +34522,10 @@
     "fee_badge": "No Broker Fee",
     "fee_details": "No Fee",
     "address": "Allston, Boston, MA",
-    "move_in_period": "unspecified"
+    "move_in_period": "unspecified",
+    "cross_posted_sources": [
+      "Boston Pads"
+    ]
   },
   {
     "id": "bp-8176558",
@@ -34642,93 +34557,6 @@
     "move_in_period": "immediate"
   },
   {
-    "id": "bp-8176886",
-    "source": "bostonpads",
-    "source_label": "Boston Pads",
-    "title": "3 Bed Apartment in Cambridge - East Cambridge",
-    "price": 3450,
-    "city": "Cambridge",
-    "neighborhood": "Cambridge - East Cambridge",
-    "url": "https://bostonpads.com/boston-apartments/?ad_id=8176886",
-    "lat": 42.373797,
-    "lng": -71.088996,
-    "bedrooms": 3,
-    "bathrooms": 1.0,
-    "sqft": null,
-    "availability": "Available Now",
-    "rental_type": "entire_unit",
-    "rental_type_label": "Condo / Apt",
-    "images": [
-      "https://m.bostonpads.com/media/v2/listings/unit/photos/05-21/1620670440-living.jpg"
-    ],
-    "description": "Verified Cambridge - East Cambridge rental. Features: Laundry: Basement, A/C: Central, Dishwasher included, Hot water included. Available: Now.",
-    "has_broker_fee": false,
-    "fee_badge": "No Broker Fee",
-    "fee_details": "No Fee",
-    "address": "Cambridge - East Cambridge, Cambridge, MA",
-    "first_seen": "2026-10-29T02:44:03.608907+00:00",
-    "last_seen": "2026-10-29T03:47:29.273970+00:00",
-    "move_in_period": "immediate"
-  },
-  {
-    "id": "bp-8173752",
-    "source": "bostonpads",
-    "source_label": "Boston Pads",
-    "title": "2 Bed Apartment in Brookline - Longwood Area",
-    "price": 3450,
-    "city": "Brookline",
-    "neighborhood": "Brookline - Longwood Area",
-    "url": "https://bostonpads.com/boston-apartments/?ad_id=8173752",
-    "lat": 42.3380567,
-    "lng": -71.1124303,
-    "bedrooms": 2,
-    "bathrooms": 1.0,
-    "sqft": null,
-    "availability": "Available Now",
-    "rental_type": "entire_unit",
-    "rental_type_label": "Condo / Apt",
-    "images": [
-      "https://m.bostonpads.com/media/v2/listings/unit/photos/08-26/1785966453-img-2425.jpeg"
-    ],
-    "description": "Verified Brookline - Longwood Area rental. Features: Laundry: Basement, Coin-Op, A/C: In Wall, Dishwasher included, Pets: NO PETS, Heat included, Hot water included. Available: Now.",
-    "has_broker_fee": false,
-    "fee_badge": "No Broker Fee",
-    "fee_details": "No Fee",
-    "address": "Brookline - Longwood Area, Brookline, MA",
-    "first_seen": "2026-10-29T02:44:03.608907+00:00",
-    "last_seen": "2026-10-29T03:47:29.273970+00:00",
-    "move_in_period": "immediate"
-  },
-  {
-    "id": "bp-8178108",
-    "source": "bostonpads",
-    "source_label": "Boston Pads",
-    "title": "1 Bed Apartment in Allston",
-    "price": 3450,
-    "city": "Boston",
-    "neighborhood": "Allston",
-    "url": "https://bostonpads.com/boston-apartments/?ad_id=8178108",
-    "lat": 42.353517,
-    "lng": -71.126836,
-    "bedrooms": 1,
-    "bathrooms": 1.0,
-    "sqft": null,
-    "availability": "Contact Lister",
-    "rental_type": "entire_unit",
-    "rental_type_label": "Condo / Apt",
-    "images": [
-      "https://m.bostonpads.com/media/v2/listings/unit/photos/11-25/1762985385-img-4433.jpeg"
-    ],
-    "description": "Verified Allston rental. Features: Laundry: Unit, A/C: Central, Dishwasher included, Pets: Pet OK, Hot water included. Available: 01-02-2027.",
-    "has_broker_fee": false,
-    "fee_badge": "No Broker Fee",
-    "fee_details": "No Fee",
-    "address": "Allston, Boston, MA",
-    "first_seen": "2026-10-29T02:44:03.608907+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00",
-    "move_in_period": "unspecified"
-  },
-  {
     "id": "zillow_42.352844--71.12761",
     "title": "55 BRIGHTON AT PACKARD CROSSING",
     "price": 3450,
@@ -34753,7 +34581,7 @@
     "fee_badge": "No Broker Fee",
     "fee_details": "Direct lease with building management. Zero broker fee.",
     "first_seen": "2026-10-29T03:36:39.833632+00:00",
-    "last_seen": "2026-10-29T04:06:23.870331+00:00",
+    "last_seen": "2026-10-29T05:19:21.844187+00:00",
     "move_in_period": "unspecified"
   },
   {
@@ -34810,7 +34638,7 @@
     "fee_badge": "No Broker Fee",
     "fee_details": "Direct lease with building management. Zero broker fee.",
     "first_seen": "2026-10-29T03:36:39.833632+00:00",
-    "last_seen": "2026-10-29T04:06:23.870331+00:00",
+    "last_seen": "2026-10-29T05:19:21.844187+00:00",
     "move_in_period": "unspecified"
   },
   {
@@ -34838,7 +34666,7 @@
     "fee_badge": "No Broker Fee",
     "fee_details": "Direct lease with building management. Zero broker fee.",
     "first_seen": "2026-10-29T03:36:39.833632+00:00",
-    "last_seen": "2026-10-29T04:06:23.870331+00:00",
+    "last_seen": "2026-10-29T05:19:21.844187+00:00",
     "move_in_period": "unspecified"
   },
   {
@@ -34866,7 +34694,7 @@
     "fee_badge": "No Broker Fee",
     "fee_details": "Direct lease with building management. Zero broker fee.",
     "first_seen": "2026-10-29T03:36:39.833632+00:00",
-    "last_seen": "2026-10-29T04:06:23.870331+00:00",
+    "last_seen": "2026-10-29T05:19:21.844187+00:00",
     "move_in_period": "unspecified"
   },
   {
@@ -34894,7 +34722,7 @@
     "fee_badge": "No Broker Fee",
     "fee_details": "Direct lease with building management. Zero broker fee.",
     "first_seen": "2026-10-29T03:36:39.833632+00:00",
-    "last_seen": "2026-10-29T04:06:23.870331+00:00",
+    "last_seen": "2026-10-29T05:19:21.844187+00:00",
     "move_in_period": "unspecified"
   },
   {
@@ -35059,7 +34887,8 @@
     "rental_type": "entire_unit",
     "rental_type_label": "Condo / Apt",
     "images": [
-      "https://m.bostonpads.com/media/v2/listings/ad/photos/09-26/1790180775-898o6a6ce956ad0e7.jpg"
+      "https://m.bostonpads.com/media/v2/listings/ad/photos/09-26/1790180775-898o6a6ce956ad0e7.jpg",
+      "https://m.bostonpads.com/media/v2/listings/unit/photos/09-26/1790180775-898o6a6ce956ad0e7.jpg"
     ],
     "description": "Verified Somerville - Magoun/Ball Square rental. Features: Laundry: Unit, Dishwasher included, Pets: Cat OK, Hot water included. Available: Now.",
     "has_broker_fee": false,
@@ -35213,36 +35042,10 @@
     "address": "Somerville - Davis Square, Somerville, MA",
     "first_seen": "2026-10-29T03:04:39.795020+00:00",
     "last_seen": "2026-10-29T03:07:20.979519+00:00",
-    "move_in_period": "immediate"
-  },
-  {
-    "id": "bp-8172348",
-    "source": "bostonpads",
-    "source_label": "Boston Pads",
-    "title": "3 Bed Apartment in Somerville - East Somerville",
-    "price": 3500,
-    "city": "Somerville",
-    "neighborhood": "Somerville - East Somerville",
-    "url": "https://bostonpads.com/boston-apartments/?ad_id=8172348",
-    "lat": 42.385681,
-    "lng": -71.08976100000001,
-    "bedrooms": 3,
-    "bathrooms": 1.0,
-    "sqft": null,
-    "availability": "Available Now",
-    "rental_type": "entire_unit",
-    "rental_type_label": "Condo / Apt",
-    "images": [
-      "https://m.bostonpads.com/media/v2/listings/unit/photos/08-26/1786482247-fullsizerender.jpeg"
-    ],
-    "description": "Verified Somerville - East Somerville rental. Features: Laundry: Unit, A/C: In Wall, Dishwasher included, Pets: Dog OK, Hot water included. Available: Now.",
-    "has_broker_fee": false,
-    "fee_badge": "No Broker Fee",
-    "fee_details": "No Fee",
-    "address": "Somerville - East Somerville, Somerville, MA",
-    "first_seen": "2026-10-29T03:04:39.795020+00:00",
-    "last_seen": "2026-10-29T03:47:29.273970+00:00",
-    "move_in_period": "immediate"
+    "move_in_period": "immediate",
+    "cross_posted_sources": [
+      "Boston Pads"
+    ]
   },
   {
     "id": "bp-8176887",
@@ -35271,7 +35074,10 @@
     "address": "Cambridge - East Cambridge, Cambridge, MA",
     "first_seen": "2026-10-29T03:27:18.360570+00:00",
     "last_seen": "2026-10-29T03:47:29.273970+00:00",
-    "move_in_period": "immediate"
+    "move_in_period": "immediate",
+    "cross_posted_sources": [
+      "Boston Pads"
+    ]
   },
   {
     "id": "bp-8173093",
@@ -35418,7 +35224,7 @@
     "fee_badge": "No Broker Fee",
     "fee_details": "Direct lease with building management. Zero broker fee.",
     "first_seen": "2026-10-29T03:36:39.833632+00:00",
-    "last_seen": "2026-10-29T04:06:23.870331+00:00",
+    "last_seen": "2026-10-29T05:19:21.844187+00:00",
     "move_in_period": "unspecified"
   },
   {
@@ -35504,7 +35310,7 @@
     "fee_badge": "No Broker Fee",
     "fee_details": "Direct lease with building management. Zero broker fee.",
     "first_seen": "2026-10-29T03:36:39.833632+00:00",
-    "last_seen": "2026-10-29T04:06:23.870331+00:00",
+    "last_seen": "2026-10-29T05:19:21.844187+00:00",
     "move_in_period": "unspecified"
   },
   {
@@ -35554,7 +35360,8 @@
     "rental_type": "entire_unit",
     "rental_type_label": "Condo / Apt",
     "images": [
-      "https://m.bostonpads.com/media/v2/listings/ad/photos/07-23/1689355990-07b65abd-2e35-4291-ab0e-5aefc0d26fd3.webp"
+      "https://m.bostonpads.com/media/v2/listings/ad/photos/07-23/1689355990-07b65abd-2e35-4291-ab0e-5aefc0d26fd3.webp",
+      "https://m.bostonpads.com/media/v2/listings/unit/photos/07-23/1689355990-07b65abd-2e35-4291-ab0e-5aefc0d26fd3.webp"
     ],
     "description": "Verified Cambridge - East Cambridge rental. Features: Laundry: Common Area, Hot water included. Available: Now.",
     "has_broker_fee": false,
@@ -35563,7 +35370,10 @@
     "address": "Cambridge - East Cambridge, Cambridge, MA",
     "first_seen": "2026-10-29T03:04:39.795020+00:00",
     "last_seen": "2026-10-29T03:07:20.979519+00:00",
-    "move_in_period": "immediate"
+    "move_in_period": "immediate",
+    "cross_posted_sources": [
+      "Boston Pads"
+    ]
   },
   {
     "id": "bp-8176889",
@@ -35619,7 +35429,7 @@
     "fee_badge": "No Broker Fee",
     "fee_details": "Direct lease with building management. Zero broker fee.",
     "first_seen": "2026-10-29T03:36:39.833632+00:00",
-    "last_seen": "2026-10-29T04:06:23.870331+00:00",
+    "last_seen": "2026-10-29T05:19:21.844187+00:00",
     "move_in_period": "unspecified"
   },
   {
@@ -35675,7 +35485,7 @@
     "fee_badge": "No Broker Fee",
     "fee_details": "Direct lease with building management. Zero broker fee.",
     "first_seen": "2026-10-29T03:36:39.833632+00:00",
-    "last_seen": "2026-10-29T04:06:23.870331+00:00",
+    "last_seen": "2026-10-29T05:19:21.844187+00:00",
     "move_in_period": "unspecified"
   },
   {
@@ -35849,7 +35659,7 @@
     "fee_details": "No Fee",
     "address": "Somerville - Spring Hill, Somerville, MA",
     "first_seen": "2026-10-29T02:44:03.608907+00:00",
-    "last_seen": "2026-10-29T03:47:29.273970+00:00",
+    "last_seen": "2026-10-29T05:19:21.844187+00:00",
     "move_in_period": "immediate"
   },
   {
@@ -35870,7 +35680,8 @@
     "rental_type": "entire_unit",
     "rental_type_label": "Condo / Apt",
     "images": [
-      "https://m.bostonpads.com/media/v2/listings/unit/photos/09-24/1726846956-img-7510.jpeg"
+      "https://m.bostonpads.com/media/v2/listings/unit/photos/09-24/1726846956-img-7510.jpeg",
+      "https://m.bostonpads.com/media/v2/listings/unit/photos/05-23/1683646775-7.PNG"
     ],
     "description": "Verified Allston rental. Features: Laundry: Common Area, Dishwasher included, Hot water included. Available: Now.",
     "has_broker_fee": false,
@@ -36113,7 +35924,7 @@
     "fee_badge": "No Broker Fee",
     "fee_details": "Direct lease with building management. Zero broker fee.",
     "first_seen": "2026-10-29T03:36:39.833632+00:00",
-    "last_seen": "2026-10-29T04:06:23.870331+00:00",
+    "last_seen": "2026-10-29T05:19:21.844187+00:00",
     "move_in_period": "unspecified"
   },
   {
@@ -36168,7 +35979,7 @@
     "fee_badge": "No Broker Fee",
     "fee_details": "Direct lease with building management. Zero broker fee.",
     "first_seen": "2026-10-29T03:36:39.833632+00:00",
-    "last_seen": "2026-10-29T04:06:23.870331+00:00",
+    "last_seen": "2026-10-29T05:19:21.844187+00:00",
     "move_in_period": "unspecified"
   },
   {
@@ -36196,7 +36007,7 @@
     "fee_badge": "No Broker Fee",
     "fee_details": "Direct lease with building management. Zero broker fee.",
     "first_seen": "2026-10-29T03:36:39.833632+00:00",
-    "last_seen": "2026-10-29T04:06:23.870331+00:00",
+    "last_seen": "2026-10-29T05:19:21.844187+00:00",
     "move_in_period": "unspecified"
   },
   {
@@ -36316,7 +36127,7 @@
     "fee_badge": "No Broker Fee",
     "fee_details": "Direct lease with building management. Zero broker fee.",
     "first_seen": "2026-10-29T03:36:39.833632+00:00",
-    "last_seen": "2026-10-29T04:06:23.870331+00:00",
+    "last_seen": "2026-10-29T05:19:21.844187+00:00",
     "move_in_period": "unspecified"
   },
   {
@@ -36370,7 +36181,10 @@
     "fee_badge": "No Broker Fee",
     "fee_details": "No Fee",
     "address": "Cambridge - Porter Square, Cambridge, MA",
-    "move_in_period": "immediate"
+    "move_in_period": "immediate",
+    "cross_posted_sources": [
+      "Boston Pads"
+    ]
   },
   {
     "id": "bp-8018892",
@@ -36455,65 +36269,12 @@
     "fee_badge": "No Broker Fee",
     "fee_details": "No Fee",
     "address": "Somerville - Magoun/Ball Square, Somerville, MA",
-    "move_in_period": "immediate"
-  },
-  {
-    "id": "bp-8177216",
-    "source": "bostonpads",
-    "source_label": "Boston Pads",
-    "title": "2 Bed Apartment in Cambridge - Porter Square",
-    "price": 3700,
-    "city": "Cambridge",
-    "neighborhood": "Cambridge - Porter Square",
-    "url": "https://bostonpads.com/boston-apartments/?ad_id=8177216",
-    "lat": 42.385606,
-    "lng": -71.11626869999999,
-    "bedrooms": 2,
-    "bathrooms": 1.0,
-    "sqft": null,
-    "availability": "Available Now",
-    "rental_type": "entire_unit",
-    "rental_type_label": "Condo / Apt",
-    "images": [
-      "https://m.bostonpads.com/media/v2/listings/unit/photos/04-21/1617910044-capture.JPG"
-    ],
-    "description": "Verified Cambridge - Porter Square rental. Features: Laundry: Unit, A/C: Central, Dishwasher included, Pets: Cat OK, Hot water included. Available: Now.",
-    "has_broker_fee": false,
-    "fee_badge": "No Broker Fee",
-    "fee_details": "No Fee",
-    "address": "Cambridge - Porter Square, Cambridge, MA",
-    "first_seen": "2026-10-29T02:44:03.608907+00:00",
-    "last_seen": "2026-10-29T03:47:29.273970+00:00",
-    "move_in_period": "immediate"
-  },
-  {
-    "id": "bp-8177276",
-    "source": "bostonpads",
-    "source_label": "Boston Pads",
-    "title": "3 Bed Apartment in Somerville - Magoun/Ball Square",
-    "price": 3700,
-    "city": "Somerville",
-    "neighborhood": "Somerville - Magoun/Ball Square",
-    "url": "https://bostonpads.com/boston-apartments/?ad_id=8177276",
-    "lat": 42.392879,
-    "lng": -71.095887,
-    "bedrooms": 3,
-    "bathrooms": 1.0,
-    "sqft": null,
-    "availability": "Available Now",
-    "rental_type": "entire_unit",
-    "rental_type_label": "Condo / Apt",
-    "images": [
-      "https://m.bostonpads.com/media/v2/listings/unit/photos/06-21/1624308608-img-1414.JPG"
-    ],
-    "description": "Verified Somerville - Magoun/Ball Square rental. Features: Laundry: Basement, Dishwasher included, Pets: NO PETS, Hot water included. Available: Now.",
-    "has_broker_fee": false,
-    "fee_badge": "No Broker Fee",
-    "fee_details": "No Fee",
-    "address": "Somerville - Magoun/Ball Square, Somerville, MA",
-    "first_seen": "2026-10-29T02:44:03.608907+00:00",
-    "last_seen": "2026-10-29T02:53:24.949933+00:00",
-    "move_in_period": "immediate"
+    "move_in_period": "immediate",
+    "first_seen": "2026-10-29T05:19:21.844187+00:00",
+    "last_seen": "2026-10-29T05:19:21.844187+00:00",
+    "cross_posted_sources": [
+      "Boston Pads"
+    ]
   },
   {
     "id": "bp-8178183",
@@ -36542,35 +36303,6 @@
     "address": "South End, Boston, MA",
     "first_seen": "2026-10-29T02:44:03.608907+00:00",
     "last_seen": "2026-10-29T02:53:24.949933+00:00",
-    "move_in_period": "immediate"
-  },
-  {
-    "id": "bp-8177320",
-    "source": "bostonpads",
-    "source_label": "Boston Pads",
-    "title": "3 Bed Apartment in Brookline - Boston University",
-    "price": 3700,
-    "city": "Brookline",
-    "neighborhood": "Brookline - Boston University",
-    "url": "https://bostonpads.com/boston-apartments/?ad_id=8177320",
-    "lat": 42.3487606,
-    "lng": -71.122995,
-    "bedrooms": 3,
-    "bathrooms": 2.0,
-    "sqft": null,
-    "availability": "Available Now",
-    "rental_type": "entire_unit",
-    "rental_type_label": "Condo / Apt",
-    "images": [
-      "https://m.bostonpads.com/media/v2/listings/unit/photos/10-20/1603563613-21-gibbs-2.JPG"
-    ],
-    "description": "Verified Brookline - Boston University rental. Features: Laundry: Basement, Dishwasher included, Pets: Cat OK, Heat included, Hot water included. Available: Now.",
-    "has_broker_fee": false,
-    "fee_badge": "No Broker Fee",
-    "fee_details": "No Fee",
-    "address": "Brookline - Boston University, Brookline, MA",
-    "first_seen": "2026-10-29T03:04:39.795020+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00",
     "move_in_period": "immediate"
   },
   {
@@ -36654,30 +36386,30 @@
     "fee_badge": "No Broker Fee",
     "fee_details": "Direct lease with building management. Zero broker fee.",
     "first_seen": "2026-10-29T03:36:39.833632+00:00",
-    "last_seen": "2026-10-29T04:06:23.870331+00:00",
+    "last_seen": "2026-10-29T05:19:21.844187+00:00",
     "move_in_period": "unspecified"
   },
   {
-    "id": "bp-8176893",
+    "id": "bp-8178044",
     "source": "bostonpads",
     "source_label": "Boston Pads",
-    "title": "2 Bed Apartment in Cambridge - Porter Square",
+    "title": "4 Bed Apartment in Somerville - Tufts",
     "price": 3700,
-    "city": "Cambridge",
-    "neighborhood": "Cambridge - Porter Square",
-    "url": "https://bostonpads.com/boston-apartments/?ad_id=8176893",
-    "lat": 42.385606,
-    "lng": -71.11626869999999,
-    "bedrooms": 2,
+    "city": "Somerville",
+    "neighborhood": "Somerville - Tufts",
+    "url": "https://bostonpads.com/boston-apartments/?ad_id=8178044",
+    "lat": 42.409581800000005,
+    "lng": -71.1260346,
+    "bedrooms": 4,
     "bathrooms": 1.0,
     "sqft": null,
     "availability": "Available Now",
     "rental_type": "entire_unit",
     "rental_type_label": "Condo / Apt",
     "images": [
-      "https://m.bostonpads.com/media/v2/listings/unit/photos/04-21/1617910044-capture.JPG"
+      "https://m.bostonpads.com/media/v2/listings/unit/photos/09-26/1790259479-113-hillsdale-rd-2-somerville-unit-photo-2.jpeg"
     ],
-    "description": "Verified Cambridge - Porter Square rental. Features: Laundry: Unit, A/C: Central, Dishwasher included, Pets: Cat OK, Hot water included. Available: Now.",
+    "description": "Verified Somerville - Tufts rental. Features: Laundry: Basement, Dishwasher included, Hot water included. Available: Now.",
     "has_broker_fee": false,
     "fee_badge": "No Broker Fee",
     "fee_details": "No Fee",
@@ -36711,7 +36443,35 @@
     "fee_badge": "No Broker Fee",
     "fee_details": "Direct lease with building management. Zero broker fee.",
     "first_seen": "2026-10-29T03:36:39.833632+00:00",
-    "last_seen": "2026-10-29T04:06:23.870331+00:00",
+    "last_seen": "2026-10-29T05:19:21.844187+00:00",
+    "move_in_period": "unspecified"
+  },
+  {
+    "id": "reit-avenir",
+    "source": "reit_direct",
+    "source_label": "Direct Management",
+    "title": "Avenir Apartments - Direct On-Site Leasing (No Broker Fee)",
+    "price": 3715,
+    "neighborhood": "North End / West End",
+    "url": "https://www.equityapartments.com/boston/north-end/avenir-apartments",
+    "lat": 42.3644,
+    "lng": -71.0608,
+    "bedrooms": 1,
+    "bathrooms": 1.0,
+    "sqft": 750,
+    "availability": "Contact Lister",
+    "rental_type": "entire_unit",
+    "rental_type_label": "Condo / Apt",
+    "images": [
+      "https://media.equityapartments.com/images/c_crop,x_0,y_0,w_1920,h_1080/c_fill,w_1920,h_1080/q_auto,f_auto/4131-32/avenir-apartments-exterior"
+    ],
+    "description": "Direct on-site management at 101 Canal St. Steps to North Station and TD Garden. Fitness center, roof deck, in-unit laundry. Guaranteed zero broker fee.",
+    "has_broker_fee": false,
+    "fee_badge": "No Broker Fee",
+    "fee_details": "Direct On-Site Management (Guaranteed $0 Broker Fee)",
+    "address": "101 Canal St, Boston, MA 02114",
+    "first_seen": "2026-10-29T05:19:21.844187+00:00",
+    "last_seen": "2026-10-29T05:19:21.844187+00:00",
     "move_in_period": "unspecified"
   },
   {
@@ -36827,8 +36587,11 @@
     "fee_details": "No Fee",
     "address": "Cambridge - Kendall Square, Cambridge, MA",
     "first_seen": "2026-10-29T03:04:39.795020+00:00",
-    "last_seen": "2026-10-29T03:47:29.273970+00:00",
-    "move_in_period": "2026-11"
+    "last_seen": "2026-10-29T05:19:21.844187+00:00",
+    "move_in_period": "2026-11",
+    "cross_posted_sources": [
+      "Boston Pads"
+    ]
   },
   {
     "id": "bp-8176968",
@@ -36860,35 +36623,6 @@
     "move_in_period": "2027-06"
   },
   {
-    "id": "bp-8157131",
-    "source": "bostonpads",
-    "source_label": "Boston Pads",
-    "title": "3 Bed Apartment in Cambridge - Kendall Square",
-    "price": 3750,
-    "city": "Cambridge",
-    "neighborhood": "Cambridge - Kendall Square",
-    "url": "https://bostonpads.com/boston-apartments/?ad_id=8157131",
-    "lat": 42.3675506,
-    "lng": -71.0949121,
-    "bedrooms": 3,
-    "bathrooms": 1.0,
-    "sqft": null,
-    "availability": "Available Nov 1, 2026",
-    "rental_type": "entire_unit",
-    "rental_type_label": "Condo / Apt",
-    "images": [
-      "https://m.bostonpads.com/media/v2/listings/unit/photos/05-23/1684510141-img-0805.jpeg"
-    ],
-    "description": "Verified Cambridge - Kendall Square rental. Features: Laundry: Unit, Dishwasher included, Hot water included. Available: 11-01-2026.",
-    "has_broker_fee": false,
-    "fee_badge": "No Broker Fee",
-    "fee_details": "No Fee",
-    "address": "Cambridge - Kendall Square, Cambridge, MA",
-    "first_seen": "2026-10-29T02:44:03.608907+00:00",
-    "last_seen": "2026-10-29T02:53:24.949933+00:00",
-    "move_in_period": "2026-11"
-  },
-  {
     "id": "bp-8177319",
     "source": "bostonpads",
     "source_label": "Boston Pads",
@@ -36914,7 +36648,7 @@
     "fee_details": "No Fee",
     "address": "Brookline - Beaconsfield, Brookline, MA",
     "first_seen": "2026-10-29T02:44:03.608907+00:00",
-    "last_seen": "2026-10-29T03:47:29.273970+00:00",
+    "last_seen": "2026-10-29T05:19:21.844187+00:00",
     "move_in_period": "immediate"
   },
   {
@@ -37131,7 +36865,8 @@
     "rental_type": "entire_unit",
     "rental_type_label": "Condo / Apt",
     "images": [
-      "https://m.bostonpads.com/media/v2/listings/unit/photos/10-25/1759624767-img-3420.jpeg"
+      "https://m.bostonpads.com/media/v2/listings/unit/photos/10-25/1759624767-img-3420.jpeg",
+      "https://m.bostonpads.com/media/v2/listings/ad/photos/10-25/1759624767-img-3420.jpeg"
     ],
     "description": "Verified Cambridge - Harvard Square rental. Features: Laundry: Common Area, Coin-Op, A/C: Central, Hot water included. Available: 01-01-2027.",
     "has_broker_fee": false,
@@ -37169,7 +36904,10 @@
     "address": "Cambridge - Harvard Square, Cambridge, MA",
     "first_seen": "2026-10-29T02:44:03.608907+00:00",
     "last_seen": "2026-10-29T02:53:24.949933+00:00",
-    "move_in_period": "immediate"
+    "move_in_period": "immediate",
+    "cross_posted_sources": [
+      "Boston Pads"
+    ]
   },
   {
     "id": "bp-8177981",
@@ -37274,7 +37012,8 @@
     "rental_type": "entire_unit",
     "rental_type_label": "Condo / Apt",
     "images": [
-      "https://m.bostonpads.com/media/v2/listings/ad/photos/10-26/1791994703-img-5172.jpeg"
+      "https://m.bostonpads.com/media/v2/listings/ad/photos/10-26/1791994703-img-5172.jpeg",
+      "https://m.bostonpads.com/media/v2/listings/unit/photos/10-26/1791994703-img-5172.jpeg"
     ],
     "description": "Verified Brookline - Boston University rental. Features: Laundry: Basement, A/C: In Wall, Dishwasher included, Heat included, Hot water included. Available: Now.",
     "has_broker_fee": false,
@@ -37621,7 +37360,7 @@
     "images": [
       "https://m.bostonpads.com/media/v2/listings/unit/photos/10-23/1696349599-img-6614.jpeg"
     ],
-    "description": "Verified Medford - Tufts rental. Features: Laundry: Unit, Dishwasher included, Pets: NO PETS, Hot water included. Available: 06-01-2027.",
+    "description": "Verified Medford - Tufts rental. Features: Laundry: Unit, Dishwasher included, Hot water included. Available: 06-01-2027.",
     "has_broker_fee": false,
     "fee_badge": "No Broker Fee",
     "fee_details": "No Fee",
@@ -37677,7 +37416,8 @@
     "rental_type": "entire_unit",
     "rental_type_label": "Condo / Apt",
     "images": [
-      "https://m.bostonpads.com/media/v2/listings/unit/photos/09-25/1758760691-image-9-5-25-at-707-pm.jpg"
+      "https://m.bostonpads.com/media/v2/listings/unit/photos/09-25/1758760691-image-9-5-25-at-707-pm.jpg",
+      "https://m.bostonpads.com/media/v2/listings/ad/photos/09-25/1758760691-image-9-5-25-at-707-pm.jpg"
     ],
     "description": "Verified Medford - Tufts rental. Features: Laundry: Unit, Dishwasher included, Pets: NO PETS, Hot water included. Available: 06-01-2027.",
     "has_broker_fee": false,
@@ -37706,7 +37446,8 @@
     "rental_type": "entire_unit",
     "rental_type_label": "Condo / Apt",
     "images": [
-      "https://m.bostonpads.com/media/v2/listings/unit/photos/07-24/1721445997-img-2815.jpeg"
+      "https://m.bostonpads.com/media/v2/listings/unit/photos/07-24/1721445997-img-2815.jpeg",
+      "https://m.bostonpads.com/media/v2/listings/ad/photos/07-24/1721445997-img-2815.jpeg"
     ],
     "description": "Verified Medford - Magoun Square rental. Features: Dishwasher included, Pets: NO PETS, Hot water included. Available: Now.",
     "has_broker_fee": false,
@@ -37743,66 +37484,11 @@
     "fee_details": "No Fee",
     "address": "Brookline - Brookline Village, Brookline, MA",
     "first_seen": "2026-10-29T02:44:03.608907+00:00",
-    "last_seen": "2026-10-29T03:47:29.273970+00:00",
-    "move_in_period": "immediate"
-  },
-  {
-    "id": "bp-8172264",
-    "source": "bostonpads",
-    "source_label": "Boston Pads",
-    "title": "4 Bed Apartment in Medford - Magoun Square",
-    "price": 3850,
-    "city": "Medford",
-    "neighborhood": "Medford - Magoun Square",
-    "url": "https://bostonpads.com/boston-apartments/?ad_id=8172264",
-    "lat": 42.399378000000006,
-    "lng": -71.100971,
-    "bedrooms": 4,
-    "bathrooms": 2.0,
-    "sqft": null,
-    "availability": "Available Now",
-    "rental_type": "entire_unit",
-    "rental_type_label": "Condo / Apt",
-    "images": [
-      "https://m.bostonpads.com/media/v2/listings/ad/photos/07-24/1721445997-img-2815.jpeg"
-    ],
-    "description": "Verified Medford - Magoun Square rental. Features: Dishwasher included, Pets: NO PETS, Hot water included. Available: Now.",
-    "has_broker_fee": false,
-    "fee_badge": "No Broker Fee",
-    "fee_details": "No Fee",
-    "address": "Medford - Magoun Square, Medford, MA",
-    "first_seen": "2026-10-29T02:44:03.608907+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00",
-    "move_in_period": "immediate"
-  },
-  {
-    "id": "bp-4452395",
-    "source": "bostonpads",
-    "source_label": "Boston Pads",
-    "title": "3 Bed Apartment in Medford - Tufts",
-    "price": 3850,
-    "city": "Medford",
-    "neighborhood": "Medford - Tufts",
-    "url": "https://bostonpads.com/boston-apartments/?ad_id=4452395",
-    "lat": 42.4146061,
-    "lng": -71.1236968,
-    "bedrooms": 3,
-    "bathrooms": 2.0,
-    "sqft": null,
-    "availability": "Available Jun 1, 2027",
-    "rental_type": "entire_unit",
-    "rental_type_label": "Condo / Apt",
-    "images": [
-      "https://m.bostonpads.com/media/v2/listings/ad/photos/09-25/1758760691-image-9-5-25-at-707-pm.jpg"
-    ],
-    "description": "Verified Medford - Tufts rental. Features: Laundry: Unit, Dishwasher included, Pets: NO PETS, Hot water included. Available: 06-01-2027.",
-    "has_broker_fee": false,
-    "fee_badge": "No Broker Fee",
-    "fee_details": "No Fee",
-    "address": "Medford - Tufts, Medford, MA",
-    "first_seen": "2026-10-29T02:44:03.608907+00:00",
-    "last_seen": "2026-10-29T03:47:29.273970+00:00",
-    "move_in_period": "2027-06"
+    "last_seen": "2026-10-29T05:19:21.844187+00:00",
+    "move_in_period": "immediate",
+    "cross_posted_sources": [
+      "Boston Pads"
+    ]
   },
   {
     "id": "bp-8176969",
@@ -38029,7 +37715,8 @@
     "rental_type": "entire_unit",
     "rental_type_label": "Condo / Apt",
     "images": [
-      "https://m.bostonpads.com/media/v2/listings/ad/photos/05-24/1716325327-img-7924.jpeg"
+      "https://m.bostonpads.com/media/v2/listings/ad/photos/05-24/1716325327-img-7924.jpeg",
+      "https://m.bostonpads.com/media/v2/listings/unit/photos/05-24/1716325327-img-7924.jpeg"
     ],
     "description": "Verified Somerville - Winter Hill rental. Features: Laundry: Unit, Pets: Cat OK, Negotiable, Considered, Hot water included. Available: Now.",
     "has_broker_fee": false,
@@ -38094,7 +37781,10 @@
     "fee_badge": "No Broker Fee",
     "fee_details": "No Fee",
     "address": "Cambridge - Central Square/Cambridgeport, Cambridge, MA",
-    "move_in_period": "immediate"
+    "move_in_period": "immediate",
+    "cross_posted_sources": [
+      "Boston Pads"
+    ]
   },
   {
     "id": "bp-67360",
@@ -38143,33 +37833,7 @@
     "rental_type": "entire_unit",
     "rental_type_label": "Condo / Apt",
     "images": [
-      "https://m.bostonpads.com/media/v2/listings/ad/photos/10-21/1633108152-60fece3f-b1a3-46ba-9632-68feef0af86a.jpeg"
-    ],
-    "description": "Verified Cambridge - Central Square/Cambridgeport rental. Features: Laundry: Unit, Dishwasher included, Hot water included. Available: Now.",
-    "has_broker_fee": false,
-    "fee_badge": "No Broker Fee",
-    "fee_details": "No Fee",
-    "address": "Cambridge - Central Square/Cambridgeport, Cambridge, MA",
-    "move_in_period": "immediate"
-  },
-  {
-    "id": "bp-8176901",
-    "source": "bostonpads",
-    "source_label": "Boston Pads",
-    "title": "2 Bed Apartment in Cambridge - Central Square/Cambridgeport",
-    "price": 3925,
-    "city": "Cambridge",
-    "neighborhood": "Cambridge - Central Square/Cambridgeport",
-    "url": "https://bostonpads.com/boston-apartments/?ad_id=8176901",
-    "lat": 42.36643,
-    "lng": -71.107089,
-    "bedrooms": 2,
-    "bathrooms": 2.0,
-    "sqft": null,
-    "availability": "Available Now",
-    "rental_type": "entire_unit",
-    "rental_type_label": "Condo / Apt",
-    "images": [
+      "https://m.bostonpads.com/media/v2/listings/ad/photos/10-21/1633108152-60fece3f-b1a3-46ba-9632-68feef0af86a.jpeg",
       "https://m.bostonpads.com/media/v2/listings/unit/photos/10-21/1633108152-60fece3f-b1a3-46ba-9632-68feef0af86a.jpeg"
     ],
     "description": "Verified Cambridge - Central Square/Cambridgeport rental. Features: Laundry: Unit, Dishwasher included, Hot water included. Available: Now.",
@@ -38614,7 +38278,7 @@
     "address": "South Boston - East Side, Boston, MA",
     "city": "Boston",
     "first_seen": "2026-10-29T02:44:03.608907+00:00",
-    "last_seen": "2026-10-29T02:53:24.949933+00:00",
+    "last_seen": "2026-10-29T05:19:21.844187+00:00",
     "move_in_period": "2027-09"
   },
   {
@@ -38707,8 +38371,11 @@
     "fee_details": "No Fee",
     "address": "Brookline - Cleveland Circle, Brookline, MA",
     "first_seen": "2026-10-29T02:44:03.608907+00:00",
-    "last_seen": "2026-10-29T03:47:29.273970+00:00",
-    "move_in_period": "immediate"
+    "last_seen": "2026-10-29T05:19:21.844187+00:00",
+    "move_in_period": "immediate",
+    "cross_posted_sources": [
+      "Boston Pads"
+    ]
   },
   {
     "id": "bp-8159827",
@@ -38728,7 +38395,8 @@
     "rental_type": "entire_unit",
     "rental_type_label": "Condo / Apt",
     "images": [
-      "https://m.bostonpads.com/media/v2/listings/ad/photos/08-26/1786989167-img-7262-1.jpg"
+      "https://m.bostonpads.com/media/v2/listings/ad/photos/08-26/1786989167-img-7262-1.jpg",
+      "https://m.bostonpads.com/media/v2/listings/unit/photos/08-26/1786989167-img-7262-1.jpg"
     ],
     "description": "Verified Somerville - Tufts rental. Features: Laundry: Basement, Dishwasher included, Pets: NO PETS, Hot water included. Available: 06-01-2027.",
     "has_broker_fee": false,
@@ -38766,36 +38434,10 @@
     "address": "Medford - Medford Square, Medford, MA",
     "first_seen": "2026-10-29T03:27:18.360570+00:00",
     "last_seen": "2026-10-29T03:47:29.273970+00:00",
-    "move_in_period": "immediate"
-  },
-  {
-    "id": "bp-8177199",
-    "source": "bostonpads",
-    "source_label": "Boston Pads",
-    "title": "3 Bed Apartment in Somerville - Tufts",
-    "price": 4000,
-    "city": "Somerville",
-    "neighborhood": "Somerville - Tufts",
-    "url": "https://bostonpads.com/boston-apartments/?ad_id=8177199",
-    "lat": 42.409745,
-    "lng": -71.12877700000001,
-    "bedrooms": 3,
-    "bathrooms": 1.0,
-    "sqft": null,
-    "availability": "Available Jun 1, 2027",
-    "rental_type": "entire_unit",
-    "rental_type_label": "Condo / Apt",
-    "images": [
-      "https://m.bostonpads.com/media/v2/listings/unit/photos/08-26/1786989167-img-7262-1.jpg"
-    ],
-    "description": "Verified Somerville - Tufts rental. Features: Laundry: Basement, Dishwasher included, Pets: NO PETS, Hot water included. Available: 06-01-2027.",
-    "has_broker_fee": false,
-    "fee_badge": "No Broker Fee",
-    "fee_details": "No Fee",
-    "address": "Somerville - Tufts, Somerville, MA",
-    "first_seen": "2026-10-29T02:44:03.608907+00:00",
-    "last_seen": "2026-10-29T03:47:29.273970+00:00",
-    "move_in_period": "2027-06"
+    "move_in_period": "immediate",
+    "cross_posted_sources": [
+      "Boston Pads"
+    ]
   },
   {
     "id": "bp-8153187",
@@ -38909,7 +38551,7 @@
     "fee_badge": "No Broker Fee",
     "fee_details": "Direct lease with building management. Zero broker fee.",
     "first_seen": "2026-10-29T03:36:39.833632+00:00",
-    "last_seen": "2026-10-29T04:06:23.870331+00:00",
+    "last_seen": "2026-10-29T05:19:21.844187+00:00",
     "move_in_period": "unspecified"
   },
   {
@@ -38995,7 +38637,7 @@
     "fee_badge": "No Broker Fee",
     "fee_details": "Direct lease with building management. Zero broker fee.",
     "first_seen": "2026-10-29T03:36:39.833632+00:00",
-    "last_seen": "2026-10-29T04:06:23.870331+00:00",
+    "last_seen": "2026-10-29T05:19:21.844187+00:00",
     "move_in_period": "unspecified"
   },
   {
@@ -39051,7 +38693,8 @@
     "rental_type": "entire_unit",
     "rental_type_label": "Condo / Apt",
     "images": [
-      "https://m.bostonpads.com/media/v2/listings/unit/photos/07-21/1626204352-27-fairfac-9.JPG"
+      "https://m.bostonpads.com/media/v2/listings/unit/photos/07-21/1626204352-27-fairfac-9.JPG",
+      "https://m.bostonpads.com/media/v2/listings/ad/photos/07-21/1626204352-27-fairfac-9.JPG"
     ],
     "description": "Verified Somerville - Tufts rental. Features: Laundry: Basement, Free, A/C: Central, Dishwasher included, Pets: Negotiable, Hot water included. Available: Now.",
     "has_broker_fee": false,
@@ -39060,36 +38703,10 @@
     "address": "Somerville - Tufts, Somerville, MA",
     "first_seen": "2026-10-29T02:44:03.608907+00:00",
     "last_seen": "2026-10-29T02:53:24.949933+00:00",
-    "move_in_period": "immediate"
-  },
-  {
-    "id": "bp-8170188",
-    "source": "bostonpads",
-    "source_label": "Boston Pads",
-    "title": "4 Bed Apartment in Somerville - Tufts",
-    "price": 4100,
-    "city": "Somerville",
-    "neighborhood": "Somerville - Tufts",
-    "url": "https://bostonpads.com/boston-apartments/?ad_id=8170188",
-    "lat": 42.4117673,
-    "lng": -71.1284705,
-    "bedrooms": 4,
-    "bathrooms": 2.0,
-    "sqft": null,
-    "availability": "Available Now",
-    "rental_type": "entire_unit",
-    "rental_type_label": "Condo / Apt",
-    "images": [
-      "https://m.bostonpads.com/media/v2/listings/ad/photos/07-21/1626204352-27-fairfac-9.JPG"
-    ],
-    "description": "Verified Somerville - Tufts rental. Features: Laundry: Basement, Free, A/C: Central, Dishwasher included, Pets: Negotiable, Hot water included. Available: Now.",
-    "has_broker_fee": false,
-    "fee_badge": "No Broker Fee",
-    "fee_details": "No Fee",
-    "address": "Somerville - Tufts, Somerville, MA",
-    "first_seen": "2026-10-29T03:04:39.795020+00:00",
-    "last_seen": "2026-10-29T03:47:29.273970+00:00",
-    "move_in_period": "immediate"
+    "move_in_period": "immediate",
+    "cross_posted_sources": [
+      "Boston Pads"
+    ]
   },
   {
     "id": "bp-8177143",
@@ -39170,7 +38787,7 @@
     "fee_badge": "No Broker Fee",
     "fee_details": "Direct lease with building management. Zero broker fee.",
     "first_seen": "2026-10-29T03:36:39.833632+00:00",
-    "last_seen": "2026-10-29T04:06:23.870331+00:00",
+    "last_seen": "2026-10-29T05:19:21.844187+00:00",
     "move_in_period": "unspecified"
   },
   {
@@ -39427,7 +39044,7 @@
     "fee_badge": "No Broker Fee",
     "fee_details": "Direct lease with building management. Zero broker fee.",
     "first_seen": "2026-10-29T03:36:39.833632+00:00",
-    "last_seen": "2026-10-29T04:06:23.870331+00:00",
+    "last_seen": "2026-10-29T05:19:21.844187+00:00",
     "move_in_period": "unspecified"
   },
   {
@@ -39485,6 +39102,41 @@
     "first_seen": "2026-10-29T02:44:03.608907+00:00",
     "last_seen": "2026-10-29T03:07:20.979519+00:00",
     "move_in_period": "2027-09"
+  },
+  {
+    "id": "cl-AzVCfXM4Ph7FQSNE",
+    "source": "craigslist",
+    "source_label": "Craigslist",
+    "title": "LUXURY Brookline Three Bed-2 Baths, Balcony, Pool-C/D Trains-Nov 1st!",
+    "price": 4250,
+    "neighborhood": "Brookline/Coolidge Corner/St. Marys-Longwood",
+    "url": "https://www.craigslist.org/view/d/boston-luxury-brookline-three-bed-baths/ouYdrYAzVCfXM4Ph7FQSNE",
+    "lat": 42.3444647544727,
+    "lng": -71.1106702941609,
+    "bedrooms": 3,
+    "bathrooms": 2.0,
+    "rental_type": "entire_unit",
+    "rental_type_label": "Condo / Apt",
+    "sqft": null,
+    "address": "Brookline/Coolidge Corner/St. Marys-Longwood",
+    "first_seen": "2026-10-29T05:19:23.666899+00:00",
+    "last_seen": "2026-10-29T05:19:21.844187+00:00",
+    "availability": "Available Nov 1, 2026",
+    "images": [
+      "https://images.craigslist.org/00f0f_lCcNhQOSXr2_0ak07K_600x450.jpg",
+      "https://images.craigslist.org/00303_9wNLylW4hmv_0ak07K_600x450.jpg",
+      "https://images.craigslist.org/00b0b_44Y1SXL4xaj_0ak07K_600x450.jpg",
+      "https://images.craigslist.org/00E0E_KD9ggni5YX_0ak07K_600x450.jpg",
+      "https://images.craigslist.org/00A0A_aVVwDRhmfuj_0ak07K_600x450.jpg",
+      "https://images.craigslist.org/00F0F_6lS4tu6UIlw_0ak07K_600x450.jpg",
+      "https://images.craigslist.org/00909_aEExl6QN37r_0ak07K_600x450.jpg",
+      "https://images.craigslist.org/01212_bMZV9J2C60X_07K0ak_600x450.jpg"
+    ],
+    "description": "PROPERTY INFO ID: 442827437 Rent: $4,250 / Month Beds: 3 Bath: 2 Available Date: 11/1/2026 Pet: No Pets Rent Includes:: Hot Water, Heat Parking:: garage parking is available for rent Spacious three bedroom on the 5th floor of a Brookline LUXURY building just steps away from the C and D trains,, Beacon Street and the Longwood Medical Area, available November 1st! This beautiful unit features hardwood floors, a HUGE living area that has space for a full formal dining area, two full bathrooms, A/C and a PRIVATE BALCONY off the living room. This building has professional on-site management, laundr...",
+    "has_broker_fee": null,
+    "fee_badge": "Fee Unspecified",
+    "fee_details": "Contact lister for fee status",
+    "move_in_period": "2026-11"
   },
   {
     "id": "bp-8177322",
@@ -39681,7 +39333,10 @@
     "address": "Cambridge - Central Square/Cambridgeport, Cambridge, MA",
     "first_seen": "2026-10-29T03:27:18.360570+00:00",
     "last_seen": "2026-10-29T03:47:29.273970+00:00",
-    "move_in_period": "immediate"
+    "move_in_period": "immediate",
+    "cross_posted_sources": [
+      "Boston Pads"
+    ]
   },
   {
     "id": "zillow_42.388935--71.14445",
@@ -39708,7 +39363,7 @@
     "fee_badge": "No Broker Fee",
     "fee_details": "Direct lease with building management. Zero broker fee.",
     "first_seen": "2026-10-29T03:36:39.833632+00:00",
-    "last_seen": "2026-10-29T04:06:23.870331+00:00",
+    "last_seen": "2026-10-29T05:19:21.844187+00:00",
     "move_in_period": "unspecified"
   },
   {
@@ -39794,7 +39449,7 @@
     "fee_details": "No Fee",
     "address": "Allston, Boston, MA",
     "first_seen": "2026-10-29T02:44:03.608907+00:00",
-    "last_seen": "2026-10-29T03:47:29.273970+00:00",
+    "last_seen": "2026-10-29T05:19:21.844187+00:00",
     "move_in_period": "2027-09"
   },
   {
@@ -39844,7 +39499,8 @@
     "rental_type": "entire_unit",
     "rental_type_label": "Condo / Apt",
     "images": [
-      "https://m.bostonpads.com/media/v2/listings/unit/photos/10-26/1792172842-1790279909-img-7652.jpeg"
+      "https://m.bostonpads.com/media/v2/listings/unit/photos/10-26/1792172842-1790279909-img-7652.jpeg",
+      "https://m.bostonpads.com/media/v2/listings/unit/photos/10-26/1792173215-1623434265-1d4091b9-9eae-45c8-803f-213191544349.jpeg"
     ],
     "description": "Verified Allston rental. Features: Laundry: Common Area, Dishwasher included, Pets: NO PETS, Heat included, Hot water included. Available: 09-01-2027.",
     "has_broker_fee": false,
@@ -39939,8 +39595,11 @@
     "fee_details": "No Fee",
     "address": "Cambridge - Inman Square, Cambridge, MA",
     "first_seen": "2026-10-29T02:44:03.608907+00:00",
-    "last_seen": "2026-10-29T02:53:24.949933+00:00",
-    "move_in_period": "immediate"
+    "last_seen": "2026-10-29T05:19:21.844187+00:00",
+    "move_in_period": "immediate",
+    "cross_posted_sources": [
+      "Boston Pads"
+    ]
   },
   {
     "id": "bp-8012908",
@@ -40001,64 +39660,6 @@
     "move_in_period": "immediate"
   },
   {
-    "id": "bp-8177210",
-    "source": "bostonpads",
-    "source_label": "Boston Pads",
-    "title": "3 Bed Apartment in Cambridge - Inman Square",
-    "price": 4400,
-    "city": "Cambridge",
-    "neighborhood": "Cambridge - Inman Square",
-    "url": "https://bostonpads.com/boston-apartments/?ad_id=8177210",
-    "lat": 42.374746,
-    "lng": -71.097435,
-    "bedrooms": 3,
-    "bathrooms": 1.5,
-    "sqft": null,
-    "availability": "Available Now",
-    "rental_type": "entire_unit",
-    "rental_type_label": "Condo / Apt",
-    "images": [
-      "https://m.bostonpads.com/media/v2/listings/unit/photos/05-23/1683299157-980630-63.jpg"
-    ],
-    "description": "Verified Cambridge - Inman Square rental. Features: Laundry: Basement, Pets: Cat OK, Hot water included. Available: Now.",
-    "has_broker_fee": false,
-    "fee_badge": "No Broker Fee",
-    "fee_details": "No Fee",
-    "address": "Cambridge - Inman Square, Cambridge, MA",
-    "first_seen": "2026-10-29T03:04:39.795020+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00",
-    "move_in_period": "immediate"
-  },
-  {
-    "id": "bp-8176907",
-    "source": "bostonpads",
-    "source_label": "Boston Pads",
-    "title": "4 Bed Apartment in Cambridge - Inman Square",
-    "price": 4400,
-    "city": "Cambridge",
-    "neighborhood": "Cambridge - Inman Square",
-    "url": "https://bostonpads.com/boston-apartments/?ad_id=8176907",
-    "lat": 42.371708000000005,
-    "lng": -71.0897409,
-    "bedrooms": 4,
-    "bathrooms": 1.0,
-    "sqft": null,
-    "availability": "Available Now",
-    "rental_type": "entire_unit",
-    "rental_type_label": "Condo / Apt",
-    "images": [
-      "https://m.bostonpads.com/media/v2/listings/unit/photos/01-26/1767725459-12542o60a9360d8a6f3.jpg"
-    ],
-    "description": "Verified Cambridge - Inman Square rental. Features: Laundry: Common Area, Dishwasher included, Pets: Dog OK, Hot water included. Available: Now.",
-    "has_broker_fee": false,
-    "fee_badge": "No Broker Fee",
-    "fee_details": "No Fee",
-    "address": "Cambridge - Inman Square, Cambridge, MA",
-    "first_seen": "2026-10-29T03:04:39.795020+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00",
-    "move_in_period": "immediate"
-  },
-  {
     "id": "cl-HSb4J5bEReHAS77R",
     "source": "craigslist",
     "source_label": "Craigslist",
@@ -40111,7 +39712,7 @@
     "fee_badge": "No Broker Fee",
     "fee_details": "Direct lease with building management. Zero broker fee.",
     "first_seen": "2026-10-29T03:36:39.833632+00:00",
-    "last_seen": "2026-10-29T04:06:23.870331+00:00",
+    "last_seen": "2026-10-29T05:19:21.844187+00:00",
     "move_in_period": "unspecified"
   },
   {
@@ -40190,7 +39791,8 @@
     "rental_type": "entire_unit",
     "rental_type_label": "Condo / Apt",
     "images": [
-      "https://m.bostonpads.com/media/v2/listings/ad/photos/01-25/1736460394-pxl-20250109-185301714.jpg"
+      "https://m.bostonpads.com/media/v2/listings/ad/photos/01-25/1736460394-pxl-20250109-185301714.jpg",
+      "https://m.bostonpads.com/media/v2/listings/unit/photos/01-25/1736460394-pxl-20250109-185301714.jpg"
     ],
     "description": "Verified Brighton - Cleveland Circle rental. Features: Laundry: Common Area, Dishwasher included, Hot water included. Available: 09-01-2027.",
     "has_broker_fee": false,
@@ -40344,7 +39946,10 @@
     "fee_badge": "No Broker Fee",
     "fee_details": "No Fee",
     "address": "Somerville - Magoun/Ball Square, Somerville, MA",
-    "move_in_period": "immediate"
+    "move_in_period": "immediate",
+    "cross_posted_sources": [
+      "Boston Pads"
+    ]
   },
   {
     "id": "cl-roo-N59UFtZmDCo6YCy1",
@@ -40465,7 +40070,7 @@
     "fee_details": "No Fee",
     "address": "Somerville - Spring Hill, Somerville, MA",
     "first_seen": "2026-10-29T02:44:03.608907+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00",
+    "last_seen": "2026-10-29T05:19:21.844187+00:00",
     "move_in_period": "immediate"
   },
   {
@@ -40643,35 +40248,6 @@
     "move_in_period": "immediate"
   },
   {
-    "id": "bp-8176909",
-    "source": "bostonpads",
-    "source_label": "Boston Pads",
-    "title": "4 Bed Apartment in Cambridge - Harvard Square",
-    "price": 4500,
-    "city": "Cambridge",
-    "neighborhood": "Cambridge - Harvard Square",
-    "url": "https://bostonpads.com/boston-apartments/?ad_id=8176909",
-    "lat": 42.3824805,
-    "lng": -71.120611,
-    "bedrooms": 4,
-    "bathrooms": 1.0,
-    "sqft": null,
-    "availability": "Available Now",
-    "rental_type": "entire_unit",
-    "rental_type_label": "Condo / Apt",
-    "images": [
-      "https://m.bostonpads.com/media/v2/listings/unit/photos/10-26/1792675937-img-1788.jpeg"
-    ],
-    "description": "Verified Cambridge - Harvard Square rental. Features: Laundry: Unit, A/C: In Wall, Dishwasher included, Pets: NO PETS, Heat included, Hot water included. Available: Now.",
-    "has_broker_fee": false,
-    "fee_badge": "No Broker Fee",
-    "fee_details": "No Fee",
-    "address": "Cambridge - Harvard Square, Cambridge, MA",
-    "first_seen": "2026-10-29T03:27:18.360570+00:00",
-    "last_seen": "2026-10-29T03:47:29.273970+00:00",
-    "move_in_period": "immediate"
-  },
-  {
     "id": "zillow_42.34593--71.06907",
     "title": "Castle Square Apartments",
     "price": 4525,
@@ -40696,7 +40272,7 @@
     "fee_badge": "No Broker Fee",
     "fee_details": "Direct lease with building management. Zero broker fee.",
     "first_seen": "2026-10-29T03:36:39.833632+00:00",
-    "last_seen": "2026-10-29T04:06:23.870331+00:00",
+    "last_seen": "2026-10-29T05:19:21.844187+00:00",
     "move_in_period": "unspecified"
   },
   {
@@ -40717,7 +40293,8 @@
     "rental_type": "entire_unit",
     "rental_type_label": "Condo / Apt",
     "images": [
-      "https://m.bostonpads.com/media/v2/listings/unit/photos/04-20/1587662426-12997b0e-8927-4757-a1f2-97a68318919b.jpeg"
+      "https://m.bostonpads.com/media/v2/listings/unit/photos/04-20/1587662426-12997b0e-8927-4757-a1f2-97a68318919b.jpeg",
+      "https://m.bostonpads.com/media/v2/listings/ad/photos/04-20/1587662426-12997b0e-8927-4757-a1f2-97a68318919b.jpeg"
     ],
     "description": "Verified Brighton - Cleveland Circle rental. Features: Laundry: Coin-Op, Dishwasher included, Pets: NO PETS, Heat included, Hot water included. Available: 08-01-2027.",
     "has_broker_fee": false,
@@ -40811,7 +40388,7 @@
     "fee_badge": "No Broker Fee",
     "fee_details": "Direct lease with building management. Zero broker fee.",
     "first_seen": "2026-10-29T03:36:39.833632+00:00",
-    "last_seen": "2026-10-29T04:06:23.870331+00:00",
+    "last_seen": "2026-10-29T05:19:21.844187+00:00",
     "move_in_period": "unspecified"
   },
   {
@@ -40832,14 +40409,18 @@
     "rental_type": "entire_unit",
     "rental_type_label": "Condo / Apt",
     "images": [
-      "https://m.bostonpads.com/media/v2/listings/unit/photos/04-25/1743740074-img-0248.heic"
+      "https://m.bostonpads.com/media/v2/listings/unit/photos/04-25/1743740074-img-0248.heic",
+      "https://m.bostonpads.com/media/v2/listings/unit/photos/04-25/1743739231-img-0252.jpeg"
     ],
     "description": "Verified Allston rental. Features: Laundry: Unit, A/C: Central, Dishwasher included, Hot water included. Available: Now.",
     "has_broker_fee": false,
     "fee_badge": "No Broker Fee",
     "fee_details": "No Fee",
     "address": "Allston, Boston, MA",
-    "move_in_period": "immediate"
+    "move_in_period": "immediate",
+    "cross_posted_sources": [
+      "Boston Pads"
+    ]
   },
   {
     "id": "bp-8177170",
@@ -41012,7 +40593,7 @@
     "fee_details": "No Fee",
     "address": "Brookline - Boston University, Brookline, MA",
     "first_seen": "2026-10-29T02:44:03.608907+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00",
+    "last_seen": "2026-10-29T05:19:21.844187+00:00",
     "move_in_period": "immediate"
   },
   {
@@ -41229,35 +40810,6 @@
     "move_in_period": "immediate"
   },
   {
-    "id": "bp-8177167",
-    "source": "bostonpads",
-    "source_label": "Boston Pads",
-    "title": "4 Bed Apartment in Cambridge - Kendall Square",
-    "price": 4700,
-    "city": "Cambridge",
-    "neighborhood": "Cambridge - Kendall Square",
-    "url": "https://bostonpads.com/boston-apartments/?ad_id=8177167",
-    "lat": 42.3692875,
-    "lng": -71.09245829999999,
-    "bedrooms": 4,
-    "bathrooms": 3.0,
-    "sqft": null,
-    "availability": "Available Now",
-    "rental_type": "entire_unit",
-    "rental_type_label": "Condo / Apt",
-    "images": [
-      "https://m.bostonpads.com/media/v2/listings/unit/photos/02-24/1708025928-20240215-133151.jpg"
-    ],
-    "description": "Verified Cambridge - Kendall Square rental. Features: Hot water included. Available: Now.",
-    "has_broker_fee": false,
-    "fee_badge": "No Broker Fee",
-    "fee_details": "No Fee",
-    "address": "Cambridge - Kendall Square, Cambridge, MA",
-    "first_seen": "2026-10-29T03:27:18.360570+00:00",
-    "last_seen": "2026-10-29T03:47:29.273970+00:00",
-    "move_in_period": "immediate"
-  },
-  {
     "id": "cl-Pj117wwDHZfczpVA",
     "source": "craigslist",
     "source_label": "Craigslist",
@@ -41310,7 +40862,7 @@
     "fee_badge": "No Broker Fee",
     "fee_details": "Direct lease with building management. Zero broker fee.",
     "first_seen": "2026-10-29T03:36:39.833632+00:00",
-    "last_seen": "2026-10-29T04:06:23.870331+00:00",
+    "last_seen": "2026-10-29T05:19:21.844187+00:00",
     "move_in_period": "unspecified"
   },
   {
@@ -41569,7 +41121,8 @@
     "rental_type": "entire_unit",
     "rental_type_label": "Condo / Apt",
     "images": [
-      "https://m.bostonpads.com/media/v2/listings/unit/photos/07-22/1657307578-98-bristol-7.JPG"
+      "https://m.bostonpads.com/media/v2/listings/unit/photos/07-22/1657307578-98-bristol-7.JPG",
+      "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80"
     ],
     "description": "Verified Medford - Tufts rental. Features: Laundry: Unit, A/C: Central, Dishwasher included, Pets: Negotiable,Dog OK,Cat OK, Hot water included. Available: Now.",
     "has_broker_fee": false,
@@ -41778,7 +41331,7 @@
     "fee_badge": "No Broker Fee",
     "fee_details": "Direct lease with building management. Zero broker fee.",
     "first_seen": "2026-10-29T03:36:39.833632+00:00",
-    "last_seen": "2026-10-29T04:06:23.870331+00:00",
+    "last_seen": "2026-10-29T05:19:21.844187+00:00",
     "move_in_period": "unspecified"
   },
   {
@@ -42125,7 +41678,7 @@
     "fee_details": "No Fee",
     "address": "Medford - Tufts, Medford, MA",
     "first_seen": "2026-10-29T03:27:18.360570+00:00",
-    "last_seen": "2026-10-29T03:47:29.273970+00:00",
+    "last_seen": "2026-10-29T05:19:21.844187+00:00",
     "move_in_period": "2027-06"
   },
   {
@@ -42153,7 +41706,7 @@
     "fee_badge": "No Broker Fee",
     "fee_details": "Direct lease with building management. Zero broker fee.",
     "first_seen": "2026-10-29T03:36:39.833632+00:00",
-    "last_seen": "2026-10-29T04:06:23.870331+00:00",
+    "last_seen": "2026-10-29T05:19:21.844187+00:00",
     "move_in_period": "unspecified"
   },
   {
@@ -42210,7 +41763,7 @@
     "fee_badge": "No Broker Fee",
     "fee_details": "Direct lease with building management. Zero broker fee.",
     "first_seen": "2026-10-29T03:36:39.833632+00:00",
-    "last_seen": "2026-10-29T04:06:23.870331+00:00",
+    "last_seen": "2026-10-29T05:19:21.844187+00:00",
     "move_in_period": "unspecified"
   },
   {
@@ -42315,7 +41868,8 @@
     "rental_type": "entire_unit",
     "rental_type_label": "Condo / Apt",
     "images": [
-      "https://m.bostonpads.com/media/v2/listings/ad/photos/09-23/1694616960-20230911-165009.jpg"
+      "https://m.bostonpads.com/media/v2/listings/ad/photos/09-23/1694616960-20230911-165009.jpg",
+      "https://m.bostonpads.com/media/v2/listings/unit/photos/09-23/1694616960-20230911-165009.jpg"
     ],
     "description": "Verified Medford - Tufts rental. Features: Laundry: Basement, Dishwasher included, Pets: Pet OK, Hot water included. Available: 06-01-2027.",
     "has_broker_fee": false,
@@ -42344,7 +41898,8 @@
     "rental_type": "entire_unit",
     "rental_type_label": "Condo / Apt",
     "images": [
-      "https://m.bostonpads.com/media/v2/listings/unit/photos/12-20/1608067369-bac7304b-ee8e-4e18-aec2-0b6752ed138f.jpeg"
+      "https://m.bostonpads.com/media/v2/listings/unit/photos/12-20/1608067369-bac7304b-ee8e-4e18-aec2-0b6752ed138f.jpeg",
+      "https://m.bostonpads.com/media/v2/listings/unit/photos/10-22/1666639061-8ab39b2e-d8ce-4163-a8cf-4acbeae5ae64.jpeg"
     ],
     "description": "Verified Somerville - Tufts rental. Features: Laundry: Unit, Dishwasher included, Hot water included. Available: 06-01-2027.",
     "has_broker_fee": false,
@@ -42412,64 +41967,6 @@
     "first_seen": "2026-10-29T02:44:03.608907+00:00",
     "last_seen": "2026-10-29T04:18:33.725322+00:00",
     "move_in_period": "2026-12"
-  },
-  {
-    "id": "bp-8177202",
-    "source": "bostonpads",
-    "source_label": "Boston Pads",
-    "title": "4 Bed Apartment in Medford - Tufts",
-    "price": 5200,
-    "city": "Medford",
-    "neighborhood": "Medford - Tufts",
-    "url": "https://bostonpads.com/boston-apartments/?ad_id=8177202",
-    "lat": 42.408467,
-    "lng": -71.110589,
-    "bedrooms": 4,
-    "bathrooms": 1.0,
-    "sqft": null,
-    "availability": "Available Jun 1, 2027",
-    "rental_type": "entire_unit",
-    "rental_type_label": "Condo / Apt",
-    "images": [
-      "https://m.bostonpads.com/media/v2/listings/unit/photos/09-23/1694616960-20230911-165009.jpg"
-    ],
-    "description": "Verified Medford - Tufts rental. Features: Laundry: Basement, Dishwasher included, Pets: Pet OK, Hot water included. Available: 06-01-2027.",
-    "has_broker_fee": false,
-    "fee_badge": "No Broker Fee",
-    "fee_details": "No Fee",
-    "address": "Medford - Tufts, Medford, MA",
-    "first_seen": "2026-10-29T02:44:03.608907+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00",
-    "move_in_period": "2027-06"
-  },
-  {
-    "id": "bp-8172083",
-    "source": "bostonpads",
-    "source_label": "Boston Pads",
-    "title": "4 Bed Apartment in Somerville - Tufts",
-    "price": 5200,
-    "city": "Somerville",
-    "neighborhood": "Somerville - Tufts",
-    "url": "https://bostonpads.com/boston-apartments/?ad_id=8172083",
-    "lat": 42.4079458,
-    "lng": -71.1276555,
-    "bedrooms": 4,
-    "bathrooms": 1.0,
-    "sqft": null,
-    "availability": "Available Sep 1, 2027",
-    "rental_type": "entire_unit",
-    "rental_type_label": "Condo / Apt",
-    "images": [
-      "https://m.bostonpads.com/media/v2/listings/unit/photos/10-22/1666639061-8ab39b2e-d8ce-4163-a8cf-4acbeae5ae64.jpeg"
-    ],
-    "description": "Verified Somerville - Tufts rental. Features: Laundry: Unit, Dishwasher included, Hot water included. Available: 09-01-2027.",
-    "has_broker_fee": false,
-    "fee_badge": "No Broker Fee",
-    "fee_details": "No Fee",
-    "address": "Somerville - Tufts, Somerville, MA",
-    "first_seen": "2026-10-29T03:27:18.360570+00:00",
-    "last_seen": "2026-10-29T03:47:29.273970+00:00",
-    "move_in_period": "2027-09"
   },
   {
     "id": "bp-8160185",
@@ -42576,7 +42073,8 @@
     "rental_type": "entire_unit",
     "rental_type_label": "Condo / Apt",
     "images": [
-      "https://m.bostonpads.com/media/v2/listings/ad/photos/10-23/1696389605-img-4968.jpeg"
+      "https://m.bostonpads.com/media/v2/listings/ad/photos/10-23/1696389605-img-4968.jpeg",
+      "https://m.bostonpads.com/media/v2/listings/unit/photos/10-23/1696389605-img-4968.jpeg"
     ],
     "description": "Verified Somerville - Tufts rental. Features: Pets: NO PETS, Hot water included. Available: 06-01-2027.",
     "has_broker_fee": false,
@@ -42585,36 +42083,10 @@
     "address": "Somerville - Tufts, Somerville, MA",
     "first_seen": "2026-10-29T03:27:18.360570+00:00",
     "last_seen": "2026-10-29T03:47:29.273970+00:00",
-    "move_in_period": "2027-06"
-  },
-  {
-    "id": "bp-8161750",
-    "source": "bostonpads",
-    "source_label": "Boston Pads",
-    "title": "4 Bed Apartment in Somerville - Tufts",
-    "price": 5400,
-    "city": "Somerville",
-    "neighborhood": "Somerville - Tufts",
-    "url": "https://bostonpads.com/boston-apartments/?ad_id=8161750",
-    "lat": 42.410603,
-    "lng": -71.12677,
-    "bedrooms": 4,
-    "bathrooms": 1.0,
-    "sqft": null,
-    "availability": "Available Jun 1, 2027",
-    "rental_type": "entire_unit",
-    "rental_type_label": "Condo / Apt",
-    "images": [
-      "https://m.bostonpads.com/media/v2/listings/unit/photos/10-23/1696389605-img-4968.jpeg"
-    ],
-    "description": "Verified Somerville - Tufts rental. Features: Pets: NO PETS, Hot water included. Available: 06-01-2027.",
-    "has_broker_fee": false,
-    "fee_badge": "No Broker Fee",
-    "fee_details": "No Fee",
-    "address": "Somerville - Tufts, Somerville, MA",
-    "first_seen": "2026-10-29T02:44:03.608907+00:00",
-    "last_seen": "2026-10-29T02:53:24.949933+00:00",
-    "move_in_period": "2027-06"
+    "move_in_period": "2027-06",
+    "cross_posted_sources": [
+      "Boston Pads"
+    ]
   },
   {
     "id": "bp-8175439",
@@ -42727,7 +42199,7 @@
     "fee_badge": "No Broker Fee",
     "fee_details": "Direct lease with building management. Zero broker fee.",
     "first_seen": "2026-10-29T03:36:39.833632+00:00",
-    "last_seen": "2026-10-29T04:06:23.870331+00:00",
+    "last_seen": "2026-10-29T05:19:21.844187+00:00",
     "move_in_period": "unspecified"
   },
   {
@@ -42837,7 +42309,9 @@
     "fee_badge": "No Broker Fee",
     "fee_details": "No Fee",
     "address": "Brookline - Cleveland Circle, Brookline, MA",
-    "move_in_period": "immediate"
+    "move_in_period": "immediate",
+    "first_seen": "2026-10-29T05:19:21.844187+00:00",
+    "last_seen": "2026-10-29T05:19:21.844187+00:00"
   },
   {
     "id": "bp-8177171",
@@ -43046,7 +42520,10 @@
     "address": "Somerville - Tufts, Somerville, MA",
     "first_seen": "2026-10-29T02:44:03.608907+00:00",
     "last_seen": "2026-10-29T02:53:24.949933+00:00",
-    "move_in_period": "2027-08"
+    "move_in_period": "2027-08",
+    "cross_posted_sources": [
+      "Boston Pads"
+    ]
   },
   {
     "id": "bp-8175441",
@@ -43132,7 +42609,7 @@
     "fee_details": "No Fee",
     "address": "Somerville - Tufts, Somerville, MA",
     "first_seen": "2026-10-29T03:04:39.795020+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00",
+    "last_seen": "2026-10-29T05:19:21.844187+00:00",
     "move_in_period": "2027-06"
   },
   {
@@ -43160,7 +42637,7 @@
     "fee_badge": "No Broker Fee",
     "fee_details": "Direct lease with building management. Zero broker fee.",
     "first_seen": "2026-10-29T03:36:39.833632+00:00",
-    "last_seen": "2026-10-29T04:06:23.870331+00:00",
+    "last_seen": "2026-10-29T05:19:21.844187+00:00",
     "move_in_period": "unspecified"
   },
   {
@@ -43188,7 +42665,7 @@
     "fee_badge": "No Broker Fee",
     "fee_details": "Direct lease with building management. Zero broker fee.",
     "first_seen": "2026-10-29T03:36:39.833632+00:00",
-    "last_seen": "2026-10-29T04:06:23.870331+00:00",
+    "last_seen": "2026-10-29T05:19:21.844187+00:00",
     "move_in_period": "unspecified"
   },
   {
@@ -43273,7 +42750,7 @@
     "fee_details": "No Fee",
     "address": "South End, Boston, MA",
     "first_seen": "2026-10-29T03:04:39.795020+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00",
+    "last_seen": "2026-10-29T05:19:21.844187+00:00",
     "move_in_period": "immediate"
   },
   {
@@ -43302,7 +42779,7 @@
     "fee_details": "No Fee",
     "address": "Somerville - East Somerville, Somerville, MA",
     "first_seen": "2026-10-29T03:27:18.360570+00:00",
-    "last_seen": "2026-10-29T03:47:29.273970+00:00",
+    "last_seen": "2026-10-29T05:19:21.844187+00:00",
     "move_in_period": "immediate"
   },
   {
@@ -43323,7 +42800,8 @@
     "rental_type": "entire_unit",
     "rental_type_label": "Condo / Apt",
     "images": [
-      "https://m.bostonpads.com/media/v2/listings/unit/photos/09-26/1790182146-screenshot-2026-09-23-124716.jpg"
+      "https://m.bostonpads.com/media/v2/listings/unit/photos/09-26/1790182146-screenshot-2026-09-23-124716.jpg",
+      "https://m.bostonpads.com/media/v2/listings/ad/photos/09-26/1790182146-screenshot-2026-09-23-124716.jpg"
     ],
     "description": "Verified Medford - Tufts rental. Features: Laundry: Unit, A/C: Central, Dishwasher included, Pets: NO PETS, Hot water included. Available: 08-28-2027.",
     "has_broker_fee": false,
@@ -43381,7 +42859,8 @@
     "rental_type": "entire_unit",
     "rental_type_label": "Condo / Apt",
     "images": [
-      "https://m.bostonpads.com/media/v2/listings/unit/photos/10-26/1792177811-img-3228.jpeg"
+      "https://m.bostonpads.com/media/v2/listings/unit/photos/10-26/1792177811-img-3228.jpeg",
+      "https://m.bostonpads.com/media/v2/listings/ad/photos/10-26/1792177811-img-3228.jpeg"
     ],
     "description": "Verified Medford - Tufts rental. Features: Laundry: Unit, Free, Dishwasher included, Hot water included. Available: 06-01-2027.",
     "has_broker_fee": false,
@@ -43390,7 +42869,10 @@
     "address": "Medford - Tufts, Medford, MA",
     "first_seen": "2026-10-29T03:27:18.360570+00:00",
     "last_seen": "2026-10-29T03:47:29.273970+00:00",
-    "move_in_period": "2027-06"
+    "move_in_period": "2027-06",
+    "cross_posted_sources": [
+      "Boston Pads"
+    ]
   },
   {
     "id": "bp-8176996",
@@ -43591,7 +43073,7 @@
     "fee_badge": "No Broker Fee",
     "fee_details": "Direct lease with building management. Zero broker fee.",
     "first_seen": "2026-10-29T03:36:39.833632+00:00",
-    "last_seen": "2026-10-29T04:06:23.870331+00:00",
+    "last_seen": "2026-10-29T05:19:21.844187+00:00",
     "move_in_period": "unspecified"
   },
   {
@@ -43676,14 +43158,18 @@
     "rental_type": "entire_unit",
     "rental_type_label": "Condo / Apt",
     "images": [
-      "https://m.bostonpads.com/media/v2/listings/ad/photos/01-22/1643149610-2.JPG"
+      "https://m.bostonpads.com/media/v2/listings/ad/photos/01-22/1643149610-2.JPG",
+      "https://m.bostonpads.com/media/v2/listings/unit/photos/01-22/1643149610-2.JPG"
     ],
     "description": "Verified Allston rental. Features: Laundry: Basement, Dishwasher included, Hot water included. Available: 09-01-2027.",
     "has_broker_fee": false,
     "fee_badge": "No Broker Fee",
     "fee_details": "No Fee",
     "address": "Allston, Boston, MA",
-    "move_in_period": "2027-09"
+    "move_in_period": "2027-09",
+    "cross_posted_sources": [
+      "Boston Pads"
+    ]
   },
   {
     "id": "bp-8177458",
@@ -43790,7 +43276,8 @@
     "rental_type": "entire_unit",
     "rental_type_label": "Condo / Apt",
     "images": [
-      "https://m.bostonpads.com/media/v2/listings/unit/photos/08-23/1692925447-621b4223-f629-46f4-b7d6-a9ab3bd0a74d.jpeg"
+      "https://m.bostonpads.com/media/v2/listings/unit/photos/08-23/1692925447-621b4223-f629-46f4-b7d6-a9ab3bd0a74d.jpeg",
+      "https://m.bostonpads.com/media/v2/listings/ad/photos/08-23/1692925447-621b4223-f629-46f4-b7d6-a9ab3bd0a74d.jpeg"
     ],
     "description": "Verified Somerville - Tufts rental. Features: Laundry: Common Area, Pets: NO PETS, Hot water included. Available: 06-01-2027.",
     "has_broker_fee": false,
@@ -43848,33 +43335,7 @@
     "rental_type": "entire_unit",
     "rental_type_label": "Condo / Apt",
     "images": [
-      "https://m.bostonpads.com/media/v2/listings/ad/photos/06-22/1654147750-da3032f0-e304-4db1-abd2-67e18ade45ee.jpeg"
-    ],
-    "description": "Verified Medford - Tufts rental. Features: Laundry: Common Area, Dishwasher included, Hot water included. Available: 06-01-2027.",
-    "has_broker_fee": false,
-    "fee_badge": "No Broker Fee",
-    "fee_details": "No Fee",
-    "address": "Medford - Tufts, Medford, MA",
-    "move_in_period": "2027-06"
-  },
-  {
-    "id": "bp-6136219",
-    "source": "bostonpads",
-    "source_label": "Boston Pads",
-    "title": "5 Bed Apartment in Medford - Tufts",
-    "price": 6400,
-    "city": "Medford",
-    "neighborhood": "Medford - Tufts",
-    "url": "https://bostonpads.com/boston-apartments/?ad_id=6136219",
-    "lat": 42.409742,
-    "lng": -71.11193100000001,
-    "bedrooms": 5,
-    "bathrooms": 1.0,
-    "sqft": null,
-    "availability": "Available Jun 1, 2027",
-    "rental_type": "entire_unit",
-    "rental_type_label": "Condo / Apt",
-    "images": [
+      "https://m.bostonpads.com/media/v2/listings/ad/photos/06-22/1654147750-da3032f0-e304-4db1-abd2-67e18ade45ee.jpeg",
       "https://m.bostonpads.com/media/v2/listings/ad/photos/10-22/1665364749-fcfa4c06-cb12-460d-90e0-87c4e3512a5b.jpeg"
     ],
     "description": "Verified Medford - Tufts rental. Features: Laundry: Common Area, Dishwasher included, Hot water included. Available: 06-01-2027.",
@@ -43912,7 +43373,7 @@
     "fee_details": "No Fee",
     "address": "Brookline - Chestnut Hill, Brookline, MA",
     "first_seen": "2026-10-29T02:44:03.608907+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00",
+    "last_seen": "2026-10-29T05:19:21.844187+00:00",
     "move_in_period": "2027-07"
   },
   {
@@ -43998,7 +43459,7 @@
     "fee_badge": "No Broker Fee",
     "fee_details": "Direct lease with building management. Zero broker fee.",
     "first_seen": "2026-10-29T03:36:39.833632+00:00",
-    "last_seen": "2026-10-29T04:06:23.870331+00:00",
+    "last_seen": "2026-10-29T05:19:21.844187+00:00",
     "move_in_period": "unspecified"
   },
   {
@@ -44106,7 +43567,8 @@
     "rental_type": "entire_unit",
     "rental_type_label": "Condo / Apt",
     "images": [
-      "https://m.bostonpads.com/media/v2/listings/ad/photos/11-24/1730471411-img-5752.jpeg"
+      "https://m.bostonpads.com/media/v2/listings/ad/photos/11-24/1730471411-img-5752.jpeg",
+      "https://m.bostonpads.com/media/v2/listings/unit/photos/11-24/1730471411-img-5752.jpeg"
     ],
     "description": "Verified Somerville - Tufts rental. Features: Laundry: Unit, Pets: NO PETS, Hot water included. Available: 06-01-2027.",
     "has_broker_fee": false,
@@ -44115,7 +43577,10 @@
     "address": "Somerville - Tufts, Somerville, MA",
     "first_seen": "2026-10-29T03:04:39.795020+00:00",
     "last_seen": "2026-10-29T03:07:20.979519+00:00",
-    "move_in_period": "2027-06"
+    "move_in_period": "2027-06",
+    "cross_posted_sources": [
+      "Boston Pads"
+    ]
   },
   {
     "id": "bp-8177977",
@@ -44142,33 +43607,10 @@
     "fee_badge": "No Broker Fee",
     "fee_details": "No Fee",
     "address": "North End, Boston, MA",
-    "move_in_period": "2026-12"
-  },
-  {
-    "id": "bp-8177805",
-    "source": "bostonpads",
-    "source_label": "Boston Pads",
-    "title": "3 Bed Apartment in North End",
-    "price": 6900,
-    "neighborhood": "North End",
-    "url": "https://bostonpads.com/boston-apartments/?ad_id=8177805",
-    "lat": 42.364599500000004,
-    "lng": -71.05258470000001,
-    "bedrooms": 3,
-    "bathrooms": 2.0,
-    "sqft": null,
-    "availability": "Available Dec 1, 2026",
-    "rental_type": "entire_unit",
-    "rental_type_label": "Entire Place",
-    "images": [
-      "https://m.bostonpads.com/media/v2/listings/unit/photos/03-22/1648737410-56782285.jpg"
-    ],
-    "description": "Verified Boston rental in North End. Features: Laundry: Basement, Pets: NO PETS, Hot water included. Available: 12-01-2026.",
-    "has_broker_fee": false,
-    "fee_badge": "No Broker Fee",
-    "fee_details": "No Fee",
-    "address": "North End, Boston, MA",
-    "move_in_period": "2026-12"
+    "move_in_period": "2026-12",
+    "cross_posted_sources": [
+      "Boston Pads"
+    ]
   },
   {
     "id": "bp-8159728",
@@ -44188,7 +43630,8 @@
     "rental_type": "entire_unit",
     "rental_type_label": "Condo / Apt",
     "images": [
-      "https://m.bostonpads.com/media/v2/listings/ad/photos/10-22/1665491553-16d04a77-dde9-47bc-ba0e-620bc2e6f469.jpeg"
+      "https://m.bostonpads.com/media/v2/listings/ad/photos/10-22/1665491553-16d04a77-dde9-47bc-ba0e-620bc2e6f469.jpeg",
+      "https://m.bostonpads.com/media/v2/listings/unit/photos/10-22/1665491553-16d04a77-dde9-47bc-ba0e-620bc2e6f469.jpeg"
     ],
     "description": "Verified Medford - Tufts rental. Features: Laundry: Basement, Dishwasher included, Pets: NO PETS, Hot water included. Available: 06-01-2027.",
     "has_broker_fee": false,
@@ -44197,7 +43640,10 @@
     "address": "Medford - Tufts, Medford, MA",
     "first_seen": "2026-10-29T02:44:03.608907+00:00",
     "last_seen": "2026-10-29T02:53:24.949933+00:00",
-    "move_in_period": "2027-06"
+    "move_in_period": "2027-06",
+    "cross_posted_sources": [
+      "Boston Pads"
+    ]
   },
   {
     "id": "bp-8168737",
@@ -44217,7 +43663,8 @@
     "rental_type": "entire_unit",
     "rental_type_label": "Condo / Apt",
     "images": [
-      "https://m.bostonpads.com/media/v2/listings/unit/photos/01-24/1706224832-img-3424.JPEG"
+      "https://m.bostonpads.com/media/v2/listings/unit/photos/01-24/1706224832-img-3424.JPEG",
+      "https://m.bostonpads.com/media/v2/listings/ad/photos/01-24/1706224832-img-3424.JPEG"
     ],
     "description": "Verified Brookline - Washington Square rental. Features: Laundry: Unit, A/C: Central, Dishwasher included, Hot water included. Available: Now.",
     "has_broker_fee": false,
@@ -44226,7 +43673,10 @@
     "address": "Brookline - Washington Square, Brookline, MA",
     "first_seen": "2026-10-29T02:44:03.608907+00:00",
     "last_seen": "2026-10-29T03:47:29.273970+00:00",
-    "move_in_period": "immediate"
+    "move_in_period": "immediate",
+    "cross_posted_sources": [
+      "Boston Pads"
+    ]
   },
   {
     "id": "bp-8177007",
@@ -44255,7 +43705,10 @@
     "address": "Somerville - Magoun/Ball Square, Somerville, MA",
     "first_seen": "2026-10-29T03:04:39.795020+00:00",
     "last_seen": "2026-10-29T03:07:20.979519+00:00",
-    "move_in_period": "immediate"
+    "move_in_period": "immediate",
+    "cross_posted_sources": [
+      "Boston Pads"
+    ]
   },
   {
     "id": "bp-8177008",
@@ -44485,7 +43938,7 @@
     "fee_badge": "No Broker Fee",
     "fee_details": "Direct lease with building management. Zero broker fee.",
     "first_seen": "2026-10-29T03:36:39.833632+00:00",
-    "last_seen": "2026-10-29T04:06:23.870331+00:00",
+    "last_seen": "2026-10-29T05:19:21.844187+00:00",
     "move_in_period": "unspecified"
   },
   {
@@ -44514,7 +43967,7 @@
     "fee_details": "No Fee",
     "address": "Somerville - West Somerville/ Teele Square, Somerville, MA",
     "first_seen": "2026-10-29T03:04:39.795020+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00",
+    "last_seen": "2026-10-29T05:19:21.844187+00:00",
     "move_in_period": "2027-06"
   },
   {
@@ -44680,7 +44133,8 @@
     "rental_type": "entire_unit",
     "rental_type_label": "Condo / Apt",
     "images": [
-      "https://m.bostonpads.com/media/v2/listings/ad/photos/10-26/1792177663-img-3180.jpeg"
+      "https://m.bostonpads.com/media/v2/listings/ad/photos/10-26/1792177663-img-3180.jpeg",
+      "https://m.bostonpads.com/media/v2/listings/unit/photos/10-26/1792177663-img-3180.jpeg"
     ],
     "description": "Verified Somerville - Tufts rental. Features: Laundry: Unit, Dishwasher included, Hot water included. Available: 06-01-2027.",
     "has_broker_fee": false,
@@ -44689,36 +44143,10 @@
     "address": "Somerville - Tufts, Somerville, MA",
     "first_seen": "2026-10-29T03:04:39.795020+00:00",
     "last_seen": "2026-10-29T03:07:20.979519+00:00",
-    "move_in_period": "2027-06"
-  },
-  {
-    "id": "bp-8178023",
-    "source": "bostonpads",
-    "source_label": "Boston Pads",
-    "title": "5 Bed Apartment in Somerville - Tufts",
-    "price": 8000,
-    "city": "Somerville",
-    "neighborhood": "Somerville - Tufts",
-    "url": "https://bostonpads.com/boston-apartments/?ad_id=8178023",
-    "lat": 42.402761,
-    "lng": -71.114794,
-    "bedrooms": 5,
-    "bathrooms": 2.0,
-    "sqft": null,
-    "availability": "Available Jun 1, 2027",
-    "rental_type": "entire_unit",
-    "rental_type_label": "Condo / Apt",
-    "images": [
-      "https://m.bostonpads.com/media/v2/listings/unit/photos/10-26/1792177663-img-3180.jpeg"
-    ],
-    "description": "Verified Somerville - Tufts rental. Features: Laundry: Unit, Dishwasher included, Hot water included. Available: 06-01-2027.",
-    "has_broker_fee": false,
-    "fee_badge": "No Broker Fee",
-    "fee_details": "No Fee",
-    "address": "Somerville - Tufts, Somerville, MA",
-    "first_seen": "2026-10-29T02:44:03.608907+00:00",
-    "last_seen": "2026-10-29T02:53:24.949933+00:00",
-    "move_in_period": "2027-06"
+    "move_in_period": "2027-06",
+    "cross_posted_sources": [
+      "Boston Pads"
+    ]
   },
   {
     "id": "bp-8178201",
@@ -44796,7 +44224,8 @@
     "rental_type": "entire_unit",
     "rental_type_label": "Condo / Apt",
     "images": [
-      "https://m.bostonpads.com/media/v2/listings/unit/photos/10-21/1633900273-244762473-1011159686122558-7273397291545303152-n.jpg"
+      "https://m.bostonpads.com/media/v2/listings/unit/photos/10-21/1633900273-244762473-1011159686122558-7273397291545303152-n.jpg",
+      "https://m.bostonpads.com/media/v2/listings/ad/photos/10-21/1633900273-244762473-1011159686122558-7273397291545303152-n.jpg"
     ],
     "description": "Verified Somerville - Tufts rental. Features: Laundry: Free, Dishwasher included, Hot water included. Available: 06-01-2027.",
     "has_broker_fee": false,
@@ -44924,35 +44353,6 @@
     "move_in_period": "2027-06"
   },
   {
-    "id": "bp-8168732",
-    "source": "bostonpads",
-    "source_label": "Boston Pads",
-    "title": "4 Bed Apartment in Brookline - Brookline Hills",
-    "price": 9000,
-    "city": "Brookline",
-    "neighborhood": "Brookline - Brookline Hills",
-    "url": "https://bostonpads.com/boston-apartments/?ad_id=8168732",
-    "lat": 42.3323644,
-    "lng": -71.13088619999999,
-    "bedrooms": 4,
-    "bathrooms": 3.5,
-    "sqft": null,
-    "availability": "Available Now",
-    "rental_type": "entire_unit",
-    "rental_type_label": "Condo / Apt",
-    "images": [
-      "https://m.bostonpads.com/media/v2/listings/unit/photos/07-26/1783709189-d05213b2-f389-403e-a9d0-10c5c337294f.jpg"
-    ],
-    "description": "Verified Brookline - Brookline Hills rental. Features: Laundry: Unit, A/C: Central, Dishwasher included, Pets: NO PETS, Hot water included. Available: Now.",
-    "has_broker_fee": false,
-    "fee_badge": "No Broker Fee",
-    "fee_details": "No Fee",
-    "address": "Brookline - Brookline Hills, Brookline, MA",
-    "first_seen": "2026-10-29T02:44:03.608907+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00",
-    "move_in_period": "immediate"
-  },
-  {
     "id": "bp-8177680",
     "source": "bostonpads",
     "source_label": "Boston Pads",
@@ -45028,7 +44428,8 @@
     "rental_type": "entire_unit",
     "rental_type_label": "Condo / Apt",
     "images": [
-      "https://m.bostonpads.com/media/v2/listings/ad/photos/01-22/1642016011-3911b0f3-12ab-40ce-bae1-db86fa41c3e2.jpeg"
+      "https://m.bostonpads.com/media/v2/listings/ad/photos/01-22/1642016011-3911b0f3-12ab-40ce-bae1-db86fa41c3e2.jpeg",
+      "https://m.bostonpads.com/media/v2/listings/unit/photos/01-22/1642016011-3911b0f3-12ab-40ce-bae1-db86fa41c3e2.jpeg"
     ],
     "description": "Verified Cambridge - Harvard Square rental. Features: Laundry: Unit, Dishwasher included, Pets: Cat OK, Negotiable, Hot water included. Available: Now.",
     "has_broker_fee": false,
@@ -45037,36 +44438,10 @@
     "address": "Cambridge - Harvard Square, Cambridge, MA",
     "first_seen": "2026-10-29T03:04:39.795020+00:00",
     "last_seen": "2026-10-29T03:47:29.273970+00:00",
-    "move_in_period": "immediate"
-  },
-  {
-    "id": "bp-8176924",
-    "source": "bostonpads",
-    "source_label": "Boston Pads",
-    "title": "8 Bed Apartment in Cambridge - Harvard Square",
-    "price": 13000,
-    "city": "Cambridge",
-    "neighborhood": "Cambridge - Harvard Square",
-    "url": "https://bostonpads.com/boston-apartments/?ad_id=8176924",
-    "lat": 42.374266999999996,
-    "lng": -71.125911,
-    "bedrooms": 8,
-    "bathrooms": 3.5,
-    "sqft": null,
-    "availability": "Available Now",
-    "rental_type": "entire_unit",
-    "rental_type_label": "Condo / Apt",
-    "images": [
-      "https://m.bostonpads.com/media/v2/listings/unit/photos/01-22/1642016011-3911b0f3-12ab-40ce-bae1-db86fa41c3e2.jpeg"
-    ],
-    "description": "Verified Cambridge - Harvard Square rental. Features: Laundry: Unit, Dishwasher included, Pets: Cat OK, Negotiable, Hot water included. Available: Now.",
-    "has_broker_fee": false,
-    "fee_badge": "No Broker Fee",
-    "fee_details": "No Fee",
-    "address": "Cambridge - Harvard Square, Cambridge, MA",
-    "first_seen": "2026-10-29T02:44:03.608907+00:00",
-    "last_seen": "2026-10-29T02:53:24.949933+00:00",
-    "move_in_period": "immediate"
+    "move_in_period": "immediate",
+    "cross_posted_sources": [
+      "Boston Pads"
+    ]
   },
   {
     "id": "bp-8178019",

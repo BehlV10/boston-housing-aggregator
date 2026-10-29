@@ -172,6 +172,20 @@ export default function ListingModal({ listing, onClose }) {
             </div>
           )}
 
+          {/* Cross-Posted Sources Banner */}
+          {listing.cross_posted_sources && listing.cross_posted_sources.length > 1 && (
+            <div className="p-3.5 rounded-2xl mb-6 bg-purple-50 text-purple-900 border border-purple-100 flex items-center justify-between text-xs">
+              <span className="font-semibold">Also discovered on other platforms:</span>
+              <div className="flex gap-1.5 flex-wrap">
+                {listing.cross_posted_sources.filter(s => s !== listing.source_label).map((s, idx) => (
+                  <span key={idx} className="px-2 py-0.5 rounded-md bg-white border border-purple-200 font-bold text-purple-800 shadow-xs">
+                    {s}
+                  </span>
+                ))}
+              </div>
+            </div>
+          )}
+
           {/* Description */}
           <div>
             <h3 className="font-bold text-gray-900 text-sm mb-2">Description</h3>

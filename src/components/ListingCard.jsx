@@ -29,6 +29,8 @@ export default function ListingCard({ listing, isSelected, onSelect, onOpenDetai
         return 'bg-rose-50 text-rose-700 border-rose-200';
       case 'reddit':
         return 'bg-orange-50 text-orange-700 border-orange-200';
+      case 'reit_direct':
+        return 'bg-emerald-50 text-emerald-800 border-emerald-300';
       default:
         return 'bg-purple-50 text-purple-700 border-purple-200';
     }
@@ -112,6 +114,11 @@ export default function ListingCard({ listing, isSelected, onSelect, onOpenDetai
           <span className={`px-2.5 py-1 rounded-lg text-xs font-bold uppercase tracking-wider border shadow-sm ${getSourceBadgeColor(listing.source)}`}>
             {listing.source_label}
           </span>
+          {listing.cross_posted_sources && listing.cross_posted_sources.length > 1 && (
+            <span className="px-2 py-0.5 rounded-md text-[10px] font-bold bg-white/95 text-purple-800 border border-purple-200 shadow-sm backdrop-blur-sm">
+              +{listing.cross_posted_sources.length - 1} other source{listing.cross_posted_sources.length > 2 ? 's' : ''}
+            </span>
+          )}
           {listing.rental_type === 'sublet' ? (
             <span className="flex items-center gap-1 px-2 py-0.5 rounded-md text-[10px] font-bold bg-amber-500 text-white shadow-sm">
               <Repeat className="w-3 h-3" />
