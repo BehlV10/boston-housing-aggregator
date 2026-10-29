@@ -19,6 +19,8 @@ export default function ListingCard({ listing, isSelected, onSelect, onOpenDetai
     switch (source) {
       case 'zillow':
         return 'bg-blue-50 text-blue-700 border-blue-200';
+      case 'apartments_com':
+        return 'bg-emerald-50 text-emerald-800 border-emerald-200';
       case 'facebook':
         return 'bg-indigo-50 text-indigo-700 border-indigo-200';
       case 'bostonpads':

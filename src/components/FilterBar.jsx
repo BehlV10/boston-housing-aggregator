@@ -163,6 +163,7 @@ export default function FilterBar({ filters, setFilters, totalCount, filteredCou
             <option value="bostonpads">Boston Pads</option>
             <option value="reddit">Reddit</option>
             <option value="zillow">Zillow</option>
+            <option value="apartments_com">Apartments.com</option>
             <option value="facebook">FB Mkt</option>
             <option value="redfin">Redfin</option>
           </select>
