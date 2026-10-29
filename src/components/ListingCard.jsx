@@ -133,10 +133,15 @@ export default function ListingCard({ listing, isSelected, onSelect, onOpenDetai
       <div className="p-4 flex-1 flex flex-col justify-between">
         <div>
           {/* Price and Neighborhood */}
-          <div className="flex items-baseline justify-between mb-1.5">
-            <div className="text-2xl font-extrabold text-gray-900 tracking-tight">
-              ${listing.price?.toLocaleString()}
-              <span className="text-xs font-normal text-gray-500 ml-1">/month</span>
+          <div className="flex items-baseline justify-between mb-1.5 flex-wrap gap-1">
+            <div className="text-2xl font-extrabold text-gray-900 tracking-tight flex items-baseline gap-1.5 flex-wrap">
+              <span>${listing.price?.toLocaleString()}</span>
+              <span className="text-xs font-normal text-gray-500">/month</span>
+              {listing.original_rate_note && (
+                <span className="text-[11px] font-semibold text-boston-brick bg-boston-brick/10 border border-boston-brick/20 px-1.5 py-0.5 rounded" title="Converted to monthly rent for accurate comparison">
+                  {listing.original_rate_note}
+                </span>
+              )}
             </div>
           </div>
 

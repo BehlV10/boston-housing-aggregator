@@ -51,6 +51,70 @@ def clean_price(price_str):
     return int(clean) if clean else 0
 
 
+def normalize_listing_price(price, title, body):
+    """
+    Detects whether a listing is priced weekly, daily, or monthly.
+    If weekly (e.g. $260/week), converts to true monthly rent ($260 * 4.333 = $1,127/month)
+    and attaches an explanatory original_rate_note (e.g. '$260/week ($1,127/mo)').
+    If daily/hotel, converts to monthly ($95/day -> $2,850/mo) or filters invalid rates (< $500/mo).
+    """
+    full_text = f"{title} {body}".lower()
+
+    # 1. Look for explicit monthly price mentioned in the text (supporting commas like $2,900/mo)
+    monthly_m = re.search(
+        r'\$([0-9]{1,2},[0-9]{3}|[0-9]{3,5})\s*(?:/\s*mo|per\s*month|a\s*month|/month)',
+        full_text,
+        re.I
+    )
+    if not monthly_m:
+        monthly_m = re.search(
+            r'monthly\s*:?\s*\$?([0-9]{1,2},[0-9]{3}|[0-9]{3,5})',
+            full_text,
+            re.I
+        )
+    if monthly_m:
+        val = int(monthly_m.group(1).replace(',', ''))
+        if 550 <= val <= 15000:
+            if price != val and price < 600:
+                return val, f"${price}/week"
+            return val, None
+
+    # 2. Check for explicit weekly indicators
+    weekly_patterns = [
+        r'\b(?:per\s+week|a\s+week|/\s*week|/\s*wk|weekly|pagos\s+semanales|week\s+to\s+week)\b',
+        r'rooms?\s+start\s+at\s+\$?([0-9]{2,4})\s*(?:per\s+week|a\s+week|weekly)?',
+        r'rent\s+is\s+paid\s+weekly',
+    ]
+    is_weekly = any(re.search(pat, full_text) for pat in weekly_patterns)
+
+    # In Greater Boston, single rooms typically range $700-$1,600/month.
+    # A price of $120-$550 with sober house, room, or weekly rental is 100% weekly!
+    if is_weekly or (120 <= price <= 550 and any(w in full_text for w in ['sober house', 'room', 'lodging', 'weekly', 'semanal'])):
+        if 120 <= price <= 600:
+            monthly = round(price * 4.333)
+            return monthly, f"${price}/week"
+
+        wk_m = re.search(r'\$?([0-9]{2,4})\s*(?:/\s*week|/\s*wk|per\s*week|a\s*week|weekly)', full_text)
+        if wk_m:
+            wk_val = int(wk_m.group(1))
+            if 100 <= wk_val <= 600:
+                monthly = round(wk_val * 4.333)
+                return monthly, f"${wk_val}/week"
+
+    # 3. Check for daily / nightly rates (short term lodging)
+    daily_patterns = [r'\b(?:per\s+night|/\s*night|nightly|per\s+day|daily)\b']
+    if any(re.search(pat, full_text) for pat in daily_patterns) and price < 200:
+        wk_m = re.search(r'\$?([0-9]{2,4})\s*(?:weekly|per\s+week)', full_text)
+        if wk_m:
+            wk_val = int(wk_m.group(1))
+            monthly = round(wk_val * 4.333)
+            return monthly, f"${wk_val}/week"
+        monthly = round(price * 30)
+        return monthly, f"${price}/day"
+
+    return price, None
+
+
 def normalize_availability(text):
     if not text:
         return 'Contact Lister'
@@ -247,8 +311,16 @@ def fetch_craigslist_detail_page(listing, existing_cache=None):
                 default_type=listing.get('rental_type', 'entire_unit')
             )
 
-            return {
+            # Normalize price if weekly/daily
+            norm_price, rate_note = normalize_listing_price(
+                listing.get('price', 0),
+                listing['title'],
+                body
+            )
+
+            res = {
                 **listing,
+                'price': norm_price,
                 'first_seen': now_iso,
                 'last_seen': now_iso,
                 'bedrooms': beds,
@@ -265,6 +337,9 @@ def fetch_craigslist_detail_page(listing, existing_cache=None):
                 'fee_badge': fee_info['fee_badge'],
                 'fee_details': fee_info['fee_details'],
             }
+            if rate_note:
+                res['original_rate_note'] = rate_note
+            return res
     except Exception as e:
         fee_info = analyze_fees(listing['title'], '')
         rental_type, rental_label = classify_rental_type(
@@ -974,46 +1049,57 @@ REDDIT_SEEKING_KEYWORDS = [
 def scrape_reddit_boston_housing(existing_cache=None):
     """
     Scrapes rental listings from Reddit's r/bostonhousing community.
-    Uses public RSS feed with automatic rate-limit backoff and header optimization.
-    Extracts prices, bedrooms, neighborhoods, availability, and broker fee status.
+    Queries targeted offering & sublet search feeds to pull historical posts up to 2-3 weeks back,
+    as well as recent subreddit posts. Normalizes weekly rates to standard monthly rent.
     """
-    print("\n--- Scraping Reddit r/bostonhousing ---")
-    url = 'https://www.reddit.com/r/bostonhousing/.rss'
-    req = urllib.request.Request(
-        url,
-        headers={
-            'User-Agent': (
-                'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) '
-                'AppleWebKit/537.36 (KHTML, like Gecko) '
-                'Chrome/123.0.0.0 Safari/537.36'
-            ),
-            'Accept': 'application/rss+xml, application/xml, text/xml, */*'
-        }
-    )
+    print("\n--- Scraping Reddit r/bostonhousing (Current + Historical Search) ---")
+    urls = [
+        'https://www.reddit.com/r/bostonhousing/search/.rss?q=flair%3AOffering+OR+sublet+OR+room+OR+takeover&restrict_sr=1&sort=new',
+        'https://www.reddit.com/r/bostonhousing/.rss'
+    ]
+    headers = {
+        'User-Agent': (
+            'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) '
+            'AppleWebKit/537.36 (KHTML, like Gecko) '
+            'Chrome/123.0.0.0 Safari/537.36'
+        ),
+        'Accept': 'application/rss+xml, application/xml, text/xml, */*'
+    }
 
-    xml_data = None
-    for attempt in range(2):
-        try:
-            with urllib.request.urlopen(req, timeout=10) as resp:
-                xml_data = resp.read()
-                break
-        except urllib.error.HTTPError as e:
-            print(f"Reddit RSS attempt {attempt + 1} returned HTTP {e.code}")
-            if e.code == 429:
-                reset_wait = int(e.headers.get('x-ratelimit-reset', 10))
-                if attempt == 0 and reset_wait <= 15:
-                    print(f"Waiting {reset_wait + 2}s for Reddit rate limit reset...")
-                    time.sleep(reset_wait + 2)
+    combined_entries = {}
+    ns = {'atom': 'http://www.w3.org/2005/Atom'}
+
+    for feed_url in urls:
+        for attempt in range(2):
+            try:
+                req = urllib.request.Request(feed_url, headers=headers)
+                with urllib.request.urlopen(req, timeout=10) as resp:
+                    xml_data = resp.read()
+                    root = ET.fromstring(xml_data)
+                    for entry in root.findall('atom:entry', ns):
+                        link_el = entry.find('atom:link', ns)
+                        href = link_el.attrib.get('href', '') if link_el is not None else ''
+                        if href and href not in combined_entries:
+                            combined_entries[href] = entry
+                    break
+            except urllib.error.HTTPError as e:
+                if e.code == 429:
+                    reset_wait = int(e.headers.get('x-ratelimit-reset', 5))
+                    if attempt == 0 and reset_wait <= 15:
+                        print(f"Waiting {reset_wait + 2}s for Reddit rate limit reset...")
+                        time.sleep(reset_wait + 2)
+                    else:
+                        break
                 else:
                     break
-            else:
+            except Exception as e:
+                print(f"Reddit feed notice for {feed_url}: {e}")
                 break
-        except Exception as e:
-            print(f"Reddit RSS fetch notice: {e}")
-            break
 
-    if not xml_data:
-        # Re-use cached reddit items if available
+    now_iso = datetime.now(timezone.utc).isoformat()
+    listings = []
+
+    if not combined_entries:
         if existing_cache:
             cached_reddit = [item for item in existing_cache.values() if item.get('source') == 'reddit']
             if cached_reddit:
@@ -1021,27 +1107,13 @@ def scrape_reddit_boston_housing(existing_cache=None):
                 return cached_reddit
         return []
 
-    try:
-        root = ET.fromstring(xml_data)
-    except Exception as e:
-        print("Error parsing Reddit XML:", e)
-        return []
-
-    ns = {'atom': 'http://www.w3.org/2005/Atom'}
-    entries = root.findall('atom:entry', ns)
-
-    now_iso = datetime.now(timezone.utc).isoformat()
-    listings = []
-
-    for entry in entries:
+    for link, entry in combined_entries.items():
         title_el = entry.find('atom:title', ns)
-        link_el = entry.find('atom:link', ns)
         content_el = entry.find('atom:content', ns)
         updated_el = entry.find('atom:updated', ns)
 
         raw_title = title_el.text if title_el is not None and title_el.text else ''
         title = html_parser.unescape(raw_title).strip()
-        link = link_el.attrib.get('href', '') if link_el is not None else ''
         content_html = content_el.text if content_el is not None and content_el.text else ''
         body = html_parser.unescape(re.sub(r'<[^>]+>', ' ', content_html)).strip()
         updated = updated_el.text if updated_el is not None and updated_el.text else now_iso
@@ -1052,11 +1124,14 @@ def scrape_reddit_boston_housing(existing_cache=None):
             continue
 
         # Extract price from title or body
-        price_m = re.search(r'\$([0-9]{1,2},[0-9]{3}|[0-9]{3,5})', f"{title} {body}")
+        price_m = re.search(r'\$([0-9]{1,2},[0-9]{3}|[0-9]{2,5})', f"{title} {body}")
         if not price_m:
             continue
-        price = int(price_m.group(1).replace(',', ''))
-        if price < 400 or price > 15000:
+        raw_price = int(price_m.group(1).replace(',', ''))
+        
+        # Normalize weekly or daily rates to standard monthly rent
+        norm_price, rate_note = normalize_listing_price(raw_price, title, body)
+        if norm_price < 500 or norm_price > 15000:
             continue
 
         # Extract post ID
@@ -1091,7 +1166,7 @@ def scrape_reddit_boston_housing(existing_cache=None):
 
         # Rental type classification
         rental_type, rental_type_label = classify_rental_type(
-            title, body, price=price, bedrooms=bedrooms
+            title, body, price=norm_price, bedrooms=bedrooms
         )
 
         # Broker fee analysis
@@ -1144,10 +1219,10 @@ def scrape_reddit_boston_housing(existing_cache=None):
         if len(clean_desc) > 500:
             clean_desc = clean_desc[:500] + '...'
 
-        listings.append({
+        item_dict = {
             'id': post_id,
             'title': title,
-            'price': price,
+            'price': norm_price,
             'address': address,
             'neighborhood': address,
             'lat': lat,
@@ -1168,7 +1243,11 @@ def scrape_reddit_boston_housing(existing_cache=None):
             'fee_details': fee_details,
             'first_seen': updated or now_iso,
             'last_seen': now_iso
-        })
+        }
+        if rate_note:
+            item_dict['original_rate_note'] = rate_note
+
+        listings.append(item_dict)
 
     print(f"Successfully scraped {len(listings)} listings from Reddit r/bostonhousing.")
     return listings
@@ -1286,14 +1365,26 @@ def main():
             'last_seen': now_iso
         }
 
-    all_listings = list(existing_map.values())
-    
-    # Filter out invalid entries
-    all_listings = [
-        item for item in all_listings 
-        if item.get('price', 0) > 0 and item.get('lat') and item.get('lng')
-    ]
-    
+    # Normalize all listings (converting weekly/daily rates to monthly, filtering out placeholders)
+    cleaned_listings = []
+    for item in existing_map.values():
+        p = item.get('price', 0)
+        t = item.get('title', '')
+        d = item.get('description', '')
+        norm_price, rate_note = normalize_listing_price(p, t, d)
+
+        # Exclude voucher placeholders ($1) or invalid non-residential entries (< $500/mo)
+        if norm_price < 500:
+            continue
+
+        item['price'] = norm_price
+        if rate_note:
+            item['original_rate_note'] = rate_note
+
+        if item.get('lat') and item.get('lng'):
+            cleaned_listings.append(item)
+
+    all_listings = cleaned_listings
     all_listings.sort(key=lambda x: x.get('price', 0))
 
     no_fee_count = sum(1 for x in all_listings if x.get('has_broker_fee') is False)

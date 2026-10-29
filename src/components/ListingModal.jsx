@@ -95,9 +95,14 @@ export default function ListingModal({ listing, onClose }) {
         <div className="p-6 md:p-8 flex-1">
           <div className="flex flex-col md:flex-row md:items-baseline justify-between gap-2 mb-4">
             <div>
-              <div className="text-3xl font-extrabold text-gray-900">
-                ${listing.price?.toLocaleString()}
-                <span className="text-sm font-normal text-gray-500 ml-1">/ month</span>
+              <div className="text-3xl font-extrabold text-gray-900 flex items-baseline gap-2 flex-wrap">
+                <span>${listing.price?.toLocaleString()}</span>
+                <span className="text-sm font-normal text-gray-500">/ month</span>
+                {listing.original_rate_note && (
+                  <span className="text-xs font-semibold text-boston-brick bg-boston-brick/10 border border-boston-brick/20 px-2 py-0.5 rounded-lg" title="Converted to monthly rent for comparison">
+                    {listing.original_rate_note}
+                  </span>
+                )}
               </div>
               <h2 className="text-xl font-bold text-gray-900 mt-1">{listing.title}</h2>
               <div className="flex items-center text-sm text-gray-500 gap-1.5 mt-1">
