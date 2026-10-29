@@ -173,7 +173,7 @@ def classify_rental_type(title, body, price=0, bedrooms=1, default_type='entire_
     return 'entire_unit', 'Condo / Apt'
 
 
-def analyze_fees(title, body, explicit_fee_text=None):
+def analyze_fees(title, body, explicit_fee_text=None, rental_type=None):
     if explicit_fee_text:
         low = explicit_fee_text.lower()
         if 'no fee' in low or 'zero fee' in low or '0' in low:
@@ -229,6 +229,15 @@ def analyze_fees(title, body, explicit_fee_text=None):
                 'fee_badge': 'Broker Fee',
                 'fee_details': f"Broker fee mentioned ('{match.group(0)}')"
             }
+
+    # Peer-to-peer room rentals and sublets in Greater Boston virtually never have broker fees
+    if rental_type in ['room', 'sublet']:
+        sub_type = 'Direct Roommate Share' if rental_type == 'room' else 'Direct Tenant Sublet'
+        return {
+            'has_broker_fee': False,
+            'fee_badge': 'No Broker Fee',
+            'fee_details': f'{sub_type} (No Broker Fee)'
+        }
             
     return {
         'has_broker_fee': None,
@@ -1726,6 +1735,23 @@ def main():
         item['price'] = norm_price
         if rate_note:
             item['original_rate_note'] = rate_note
+
+        # Smart fee classification for peer-to-peer room shares & sublets
+        if item.get('has_broker_fee') is None:
+            rtype = item.get('rental_type')
+            comb = f"{t} {d}".lower()
+            fee_match = any(re.search(pat, comb) for pat in [
+                r'\bbroker\s+fee\b', r'\bfee\s+applies\b', r'\b1\s+month\s+fee\b', r'\btenants?\s+pays?\s+fee\b', r'\bbrokerage\b'
+            ])
+            if fee_match:
+                item['has_broker_fee'] = True
+                item['fee_badge'] = 'Broker Fee'
+                item['fee_details'] = 'Broker fee applies'
+            elif rtype in ['room', 'sublet']:
+                sub_type = 'Direct Roommate Share' if rtype == 'room' else 'Direct Tenant Sublet'
+                item['has_broker_fee'] = False
+                item['fee_badge'] = 'No Broker Fee'
+                item['fee_details'] = f'{sub_type} (No Broker Fee)'
 
         if item.get('lat') and item.get('lng'):
             cleaned_listings.append(item)
