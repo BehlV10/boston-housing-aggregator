@@ -1,20 +1,33 @@
 {
   "city": "Greater Boston, MA",
-  "last_updated": "2026-10-29T03:53:02.462219+00:00",
-  "total_listings": 1522,
-  "no_fee_count": 1271,
+  "last_updated": "2026-10-29T04:04:37.935798+00:00",
+  "total_listings": 1523,
+  "no_fee_count": 1272,
   "fee_count": 5,
   "unknown_fee_count": 246,
   "entire_count": 993,
-  "room_count": 303,
+  "room_count": 304,
   "sublet_count": 226,
   "sources": {
-    "craigslist": 800,
+    "craigslist": 801,
     "reddit": 19,
     "facebook": 3,
     "bostonpads": 567,
     "zillow": 126,
     "apartments_com": 5,
     "redfin": 2
+  },
+  "move_in_periods": {
+    "immediate": 1052,
+    "2026-12": 63,
+    "2027-01": 59,
+    "flexible": 6,
+    "2026-11": 114,
+    "2027-02": 4,
+    "unspecified": 126,
+    "2027-09": 29,
+    "2027-05": 3,
+    "2027-06": 62,
+    "2027-08": 5
   }
 }

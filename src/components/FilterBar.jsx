@@ -25,7 +25,7 @@ export default function FilterBar({ filters, setFilters, totalCount, filteredCou
       source: 'all',
       bedrooms: 'all',
       rentalType: 'all',
-      availableNow: false,
+      moveInDate: 'all',
       maxPrice: 6000,
     });
   };
@@ -36,7 +36,7 @@ export default function FilterBar({ filters, setFilters, totalCount, filteredCou
     filters.source !== 'all' ||
     filters.bedrooms !== 'all' ||
     filters.rentalType !== 'all' ||
-    filters.availableNow ||
+    (filters.moveInDate && filters.moveInDate !== 'all') ||
     filters.maxPrice < 6000;
 
   return (
@@ -55,7 +55,7 @@ export default function FilterBar({ filters, setFilters, totalCount, filteredCou
         </div>
 
         {/* Place Type: All | Full Condo / Apt | Single Room | Sublet */}
-        <div className="md:col-span-4 flex items-center bg-gray-100 p-1 rounded-xl">
+        <div className="md:col-span-3 flex items-center bg-gray-100 p-1 rounded-xl">
           <button
             onClick={() => handleRentalTypeChange('all')}
             className={`flex-1 py-1.5 text-xs font-semibold rounded-lg transition-all ${
@@ -75,7 +75,7 @@ export default function FilterBar({ filters, setFilters, totalCount, filteredCou
             }`}
           >
             <Home className="w-3.5 h-3.5" />
-            Condo/Apt
+            Condo
           </button>
           <button
             onClick={() => handleRentalTypeChange('room')}
@@ -102,7 +102,7 @@ export default function FilterBar({ filters, setFilters, totalCount, filteredCou
         </div>
 
         {/* Fee Filter Buttons */}
-        <div className="md:col-span-3 flex items-center bg-gray-100 p-1 rounded-xl">
+        <div className="md:col-span-2 flex items-center bg-gray-100 p-1 rounded-xl">
           <button
             onClick={() => handleFeeChange('all')}
             className={`flex-1 py-1.5 text-xs font-semibold rounded-lg transition-all ${
@@ -132,8 +132,27 @@ export default function FilterBar({ filters, setFilters, totalCount, filteredCou
                 : 'text-gray-600 hover:text-blue-700'
             }`}
           >
-            Broker Fee
+            Fee
           </button>
+        </div>
+
+        {/* Move-in Date Dropdown */}
+        <div className="md:col-span-2 col-span-6">
+          <select
+            value={filters.moveInDate || 'all'}
+            onChange={(e) => setFilters((prev) => ({ ...prev, moveInDate: e.target.value }))}
+            className="w-full py-2 px-1.5 bg-gray-50 border border-gray-200 rounded-xl text-xs font-semibold text-gray-700 focus:outline-none focus:ring-2 focus:ring-boston-brick"
+          >
+            <option value="all">Move-in: Any Date</option>
+            <option value="immediate">Available Now (Immediate)</option>
+            <option value="2026-11">Nov 2026</option>
+            <option value="2026-12">Dec 2026</option>
+            <option value="2027-01">Jan 2027 (Spring Cycle)</option>
+            <option value="2027-02">Feb 2027</option>
+            <option value="2027-06">Jun 2027 (Summer Cycle)</option>
+            <option value="2027-09">Sep 2027 (Fall Cycle)</option>
+            <option value="flexible">Flexible / Month-to-Month</option>
+          </select>
         </div>
 
         {/* Bedroom Select */}

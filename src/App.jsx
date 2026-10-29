@@ -20,8 +20,8 @@ export default function App() {
     fee: 'all', // 'all' | 'no-fee' | 'fee'
     source: 'all', // 'all' | 'craigslist' | 'zillow' | 'facebook' | 'bostonpads' | 'redfin'
     bedrooms: 'all',
-    rentalType: 'all', // 'all' | 'entire_unit' | 'room'
-    availableNow: false,
+    rentalType: 'all', // 'all' | 'entire_unit' | 'room' | 'sublet'
+    moveInDate: 'all', // 'all' | 'immediate' | '2026-11' | '2026-12' | '2027-01' | '2027-06' | '2027-09' | 'flexible'
     maxPrice: 6000,
   });
 
@@ -120,9 +120,11 @@ export default function App() {
           }
         }
 
-        // Available Now filter
-        if (filters.availableNow && item.availability !== 'Available Now') {
-          return false;
+        // Move-in Period filter
+        if (filters.moveInDate && filters.moveInDate !== 'all') {
+          if (item.move_in_period !== filters.moveInDate) {
+            return false;
+          }
         }
 
         // Rental Type filter (Entire Unit vs Single Room)

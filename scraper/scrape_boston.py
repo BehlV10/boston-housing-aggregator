@@ -127,6 +127,68 @@ def normalize_availability(text):
     return f"Available {clean.title()}"
 
 
+def normalize_move_in_date(raw_avail, title, desc, rtype):
+    """
+    Standardizes raw availability strings and extracts move-in dates from text
+    into human-friendly labels (e.g. 'Available Jan 1, 2027') and machine-friendly
+    period keys (e.g. '2027-01', 'immediate', 'flexible').
+    """
+    clean_d = re.sub(r'Visit original Craigslist posting.*', '', desc or '', flags=re.I)
+    comb = f"{title or ''} {clean_d}".lower()
+
+    # 1. First check explicit dates in raw_avail if already set and not 'Contact Lister'
+    if raw_avail and str(raw_avail).strip().lower() not in ['contact lister', 'missing', 'none']:
+        low_av = str(raw_avail).lower()
+        if any(w in low_av for w in ['now', 'immediate', 'today', 'asap', 'ready']):
+            return 'Available Now', 'immediate'
+        if '01-01' in low_av or '01-02' in low_av or 'jan 1' in low_av or 'jan 2' in low_av or 'jan 1st' in low_av:
+            return 'Available Jan 1, 2027', '2027-01'
+        if 'jan 20' in low_av:
+            return 'Available Jan 20, 2027', '2027-01'
+        if '11-01' in low_av or '11-05' in low_av or 'nov 1' in low_av or 'nov 15' in low_av or 'nov 14' in low_av:
+            return 'Available Nov 1, 2026', '2026-11'
+        if '12-01' in low_av or '12-02' in low_av or 'dec 1' in low_av or 'dec 20' in low_av:
+            return 'Available Dec 1, 2026', '2026-12'
+        if '06-01' in low_av or 'jun 1' in low_av:
+            return 'Available Jun 1, 2027', '2027-06'
+        if '09-01' in low_av or 'sep 1' in low_av or 'sept 1' in low_av:
+            return 'Available Sep 1, 2027', '2027-09'
+        if '08-01' in low_av or 'aug 1' in low_av:
+            return 'Available Aug 1, 2027', '2027-08'
+        if '02-01' in low_av or 'feb 1' in low_av:
+            return 'Available Feb 1, 2027', '2027-02'
+        if 'oct 3' in low_av or 'oct 2' in low_av:
+            return 'Available Now', 'immediate'
+
+    # 2. Extract from title & description text
+    text_date_patterns = [
+        (r'\b(1/1|01/01|jan(?:uary)?\s*(?:1st|1|\b)|1-1|spring\s*(?:sublet|semester)?)\b', 'Available Jan 1, 2027', '2027-01'),
+        (r'\b(12/1|12/01|dec(?:ember)?\s*(?:1st|1|\b)|12-1|mid[\s-]dec(?:ember)?)\b', 'Available Dec 1, 2026', '2026-12'),
+        (r'\b(11/1|11/01|nov(?:ember)?\s*(?:1st|1|\b)|11-1|mid[\s-]nov(?:ember)?)\b', 'Available Nov 1, 2026', '2026-11'),
+        (r'\b(2/1|02/01|feb(?:ruary)?\s*(?:1st|1|\b))\b', 'Available Feb 1, 2027', '2027-02'),
+        (r'\b(3/1|03/01|mar(?:ch)?\s*(?:1st|1|\b))\b', 'Available Mar 1, 2027', '2027-03'),
+        (r'\b(4/1|04/01|apr(?:il)?\s*(?:1st|1|\b))\b', 'Available Apr 1, 2027', '2027-04'),
+        (r'\b(5/1|05/01|may\s*(?:1st|1|\b))\b', 'Available May 1, 2027', '2027-05'),
+        (r'\b(6/1|06/01|jun(?:e)?\s*(?:1st|1|\b)|summer\s*(?:sublet|lease)?)\b', 'Available Jun 1, 2027', '2027-06'),
+        (r'\b(7/1|07/01|jul(?:y)?\s*(?:1st|1|\b))\b', 'Available Jul 1, 2027', '2027-07'),
+        (r'\b(8/1|08/01|aug(?:ust)?\s*(?:1st|1|\b))\b', 'Available Aug 1, 2027', '2027-08'),
+        (r'\b(9/1|09/01|sep(?:t(?:ember)?)?\s*(?:1st|1|\b)|fall\s*(?:cycle|semester)?)\b', 'Available Sep 1, 2027', '2027-09'),
+        (r'\b(now|immediate(?:ly)?|asap|today|move[\s-]in\s*ready|ready\s*for\s*move)\b', 'Available Now', 'immediate'),
+        (r'\b(month\s*to\s*month|flexible\s*lease|flexible\s*move)\b', 'Flexible / Month-to-Month', 'flexible'),
+    ]
+
+    for pat, label, period in text_date_patterns:
+        if re.search(pat, comb, re.I):
+            return label, period
+
+    # 3. Market reality:
+    # Active single rooms and sublets with no future dates in Boston are immediate vacancies
+    if rtype in ['room', 'sublet']:
+        return 'Available Now', 'immediate'
+
+    return 'Contact Lister', 'unspecified'
+
+
 SUBLET_PATTERNS = [
     r'\bsublet\b',
     r'\bsublease\b',
@@ -1796,6 +1858,16 @@ def main():
                 item['fee_badge'] = 'No Broker Fee'
                 item['fee_details'] = f'{sub_type} (No Broker Fee)'
 
+        # Smart move-in date and period normalization
+        norm_avail, move_in_period = normalize_move_in_date(
+            item.get('availability'),
+            t,
+            d,
+            item.get('rental_type')
+        )
+        item['availability'] = norm_avail
+        item['move_in_period'] = move_in_period
+
         if item.get('lat') and item.get('lng'):
             cleaned_listings.append(item)
 
@@ -1811,9 +1883,12 @@ def main():
     entire_count = sum(1 for x in all_listings if x.get('rental_type') == 'entire_unit')
 
     sources_count = {}
+    move_in_counts = {}
     for item in all_listings:
         s = item.get('source', 'unknown')
         sources_count[s] = sources_count.get(s, 0) + 1
+        mip = item.get('move_in_period', 'unspecified')
+        move_in_counts[mip] = move_in_counts.get(mip, 0) + 1
 
     metadata = {
         'city': 'Greater Boston, MA',
@@ -1825,7 +1900,8 @@ def main():
         'entire_count': entire_count,
         'room_count': room_count,
         'sublet_count': sublet_count,
-        'sources': sources_count
+        'sources': sources_count,
+        'move_in_periods': move_in_counts
     }
 
     with open(OUTPUT_FILE, 'w', encoding='utf-8') as f:
