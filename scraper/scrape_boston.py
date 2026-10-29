@@ -1006,6 +1006,150 @@ def scrape_boston_pads(per_city_limit=45):
     return pads_listings
 
 
+def scrape_boston_apartments(existing_cache=None):
+    """
+    Scrapes live apartment listings from BostonApartments.com across Greater Boston
+    (Cambridge, Somerville, Brookline, Allston, Brighton, Fenway, Back Bay, South End, etc.).
+    Captures independent local brokerages (YouGotListings network) and mom-and-pop landlords.
+    """
+    print("Scraping BostonApartments.com across Greater Boston...")
+    headers = {
+        'User-Agent': (
+            'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) '
+            'AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36'
+        ),
+        'Referer': 'https://bostonapartments.com/search.php?type=1',
+        'X-Requested-With': 'XMLHttpRequest'
+    }
+
+    targets = [
+        ("Cambridge", {"locgrp": "81,411,412,413,414,415,416,417,442,418,441,419,420,421,8755,443,422,423,445,424,425,426"}),
+        ("Somerville", {"locgrp": "427,428,429,430,431,432,433,434,435,436,437,438,439,440,444,8770"}),
+        ("Brookline", {"locgrp": "461,462,463,464,465,466,467,468,469,470,471,472,473,474,475,476,477,478,479,480"}),
+        ("Allston", {"loc": "34"}),
+        ("Brighton", {"loc": "41"}),
+        ("Fenway", {"loc": "48"}),
+        ("Back Bay", {"loc": "35"}),
+        ("South End", {"loc": "63"}),
+        ("North End", {"loc": "57"}),
+        ("Beacon Hill", {"loc": "37"}),
+        ("Mission Hill", {"loc": "56"}),
+        ("South Boston", {"loc": "62"}),
+        ("Jamaica Plain", {"loc": "52"}),
+        ("Dorchester", {"loc": "45"}),
+    ]
+
+    listings = []
+    seen_ids = set()
+
+    for area_name, loc_param in targets:
+        params = {
+            "n": 0, "cli": 0, "type": 1, "grid": 1, "rooms": "", "minprice": 0, "maxprice": 0,
+            "available": "", "nofee": "", "feeneg": "", "luxury": "", "MLS": "", "pets": "", "sortprice": 1
+        }
+        params.update(loc_param)
+        url = "https://bostonapartments.com/getlistings.php?" + urllib.parse.urlencode(params)
+        try:
+            req = urllib.request.Request(url, headers=headers)
+            with urllib.request.urlopen(req, timeout=10) as resp:
+                data = resp.read().decode("utf-8", errors="ignore")
+        except Exception as e:
+            print(f"  Warning: failed to fetch BostonApartments for {area_name}: {e}")
+            continue
+
+        cards = data.split('<a href="listing.php?ad=')
+        added_for_area = 0
+
+        for c in cards[1:]:
+            ad_m = re.match(r'^(\d+)', c)
+            if not ad_m:
+                continue
+            raw_id = ad_m.group(1).strip()
+            ad_id = f"ba-{raw_id}"
+            if ad_id in seen_ids:
+                continue
+            seen_ids.add(ad_id)
+
+            price_m = re.search(r'\$([\d,]+)', c)
+            price = int(price_m.group(1).replace(',', '')) if price_m else 0
+            if price < 500 or price > 15000:
+                continue
+
+            img_m = re.search(r"background:url\(['\"]?([^'\")]+)", c)
+            img = ("https://bostonapartments.com/" + img_m.group(1)) if img_m else None
+            images = [img] if img else []
+
+            town_m = re.search(r'<strong>(.*?)</strong>', c)
+            town = html_parser.unescape(town_m.group(1).strip()) if town_m else area_name
+
+            addr_m = re.search(r'<div style="font-size:12px; color:#555; margin:1px 0 3px;">\s*(.*?)\s*</div>', c, re.DOTALL)
+            addr = html_parser.unescape(addr_m.group(1).strip()) if addr_m else f"{town}, MA"
+
+            bed_m = re.search(r'(\d+)\s*bedroom', c, re.I)
+            beds = int(bed_m.group(1)) if bed_m else (0 if 'studio' in c.lower() else 1)
+
+            bath_m = re.search(r'([\d\.]+)\s*bath', c, re.I)
+            baths = float(bath_m.group(1)) if bath_m else 1.0
+
+            agency_m = re.search(r'<div style="font-size:0\.8em; color:#286090; font-weight:bold;[^>]*>\s*(.*?)\s*</div>', c, re.DOTALL)
+            agency = html_parser.unescape(agency_m.group(1).strip()) if agency_m else "Direct Landlord / Local Agency"
+
+            is_no_fee = 'no fee' in c.lower()
+
+            # Coordinates lookup using REDDIT_NEIGHBORHOOD_COORDS with slight deterministic jitter based on ad_id
+            lat_c, lng_c = 42.3601, -71.0589
+            matched_coord = False
+            for key, (k_lat, k_lng, _) in REDDIT_NEIGHBORHOOD_COORDS.items():
+                if key in town.lower() or key in area_name.lower():
+                    lat_c, lng_c = k_lat, k_lng
+                    matched_coord = True
+                    break
+
+            # Deterministic small jitter based on ad_id hash so markers don't overlap exactly
+            jitter_seed = int(raw_id[-4:]) if raw_id[-4:].isdigit() else 1234
+            j_lat = ((jitter_seed % 100) - 50) * 0.00018
+            j_lng = (((jitter_seed // 100) % 100) - 50) * 0.00018
+            final_lat = round(lat_c + j_lat, 6)
+            final_lng = round(lng_c + j_lng, 6)
+
+            title = f"{beds} Bed {baths} Bath Apartment in {town}"
+            desc = f"Apartment in {town}. Address: {addr}. Beds: {beds}, Baths: {baths}. Agency: {agency}. Listed on BostonApartments.com."
+
+            norm_avail, move_in_period = normalize_move_in_date('Available Now', title, desc, 'entire_unit')
+
+            listings.append({
+                'id': ad_id,
+                'source': 'bostonapartments',
+                'source_label': 'BostonApartments',
+                'title': title,
+                'price': price,
+                'city': area_name,
+                'neighborhood': town,
+                'url': f"https://bostonapartments.com/listing.php?ad={raw_id}",
+                'lat': final_lat,
+                'lng': final_lng,
+                'bedrooms': beds,
+                'bathrooms': baths,
+                'sqft': None,
+                'availability': norm_avail,
+                'move_in_period': move_in_period,
+                'rental_type': 'entire_unit' if beds > 0 else 'room',
+                'rental_type_label': 'Condo / Apt' if beds > 0 else 'Studio / Apt',
+                'images': images,
+                'description': desc,
+                'has_broker_fee': not is_no_fee,
+                'fee_badge': 'No Broker Fee' if is_no_fee else 'Broker Fee',
+                'fee_details': f'Direct Landlord / Landlord-Paid Fee ({agency})' if is_no_fee else f'Listed by {agency}',
+                'address': addr
+            })
+            added_for_area += 1
+
+        print(f"  -> Added {added_for_area} listings from {area_name}")
+
+    print(f"Discovered {len(listings)} listings across Greater Boston on BostonApartments.com.")
+    return listings
+
+
 def scrape_zillow_boston(existing_cache=None):
     """
     Scrapes live rental listings from Zillow across Boston, Cambridge, and Somerville
@@ -2164,6 +2308,13 @@ def main():
     except Exception as e:
         print("Warning: Zillow scrape encountered error:", e)
 
+    # 7. Scrape BostonApartments.com across Greater Boston
+    boston_apts_listings = []
+    try:
+        boston_apts_listings = scrape_boston_apartments(existing_cache=existing_map)
+    except Exception as e:
+        print("Warning: BostonApartments scrape encountered error:", e)
+
     # Merge Craigslist Apartments
     for item in craigslist_listings:
         existing = existing_map.get(item['id'], {})
@@ -2196,6 +2347,16 @@ def main():
 
     # Merge Boston Pads
     for item in boston_pads_listings:
+        existing = existing_map.get(item['id'], {})
+        existing_map[item['id']] = {
+            **existing,
+            **item,
+            'first_seen': existing.get('first_seen', item.get('first_seen', now_iso)),
+            'last_seen': now_iso
+        }
+
+    # Merge BostonApartments.com
+    for item in boston_apts_listings:
         existing = existing_map.get(item['id'], {})
         existing_map[item['id']] = {
             **existing,

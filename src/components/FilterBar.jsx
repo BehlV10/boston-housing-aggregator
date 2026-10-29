@@ -180,6 +180,7 @@ export default function FilterBar({ filters, setFilters, totalCount, filteredCou
             <option value="all">Source: All</option>
             <option value="craigslist">Craigslist</option>
             <option value="bostonpads">Boston Pads</option>
+            <option value="bostonapartments">BostonApartments</option>
             <option value="reddit">Reddit</option>
             <option value="zillow">Zillow</option>
             <option value="apartments_com">Apartments.com</option>
