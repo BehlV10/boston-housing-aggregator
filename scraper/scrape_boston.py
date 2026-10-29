@@ -365,11 +365,21 @@ def fetch_craigslist_detail_page(listing, existing_cache=None):
         }
 
 
-def scrape_craigslist_boston(limit=100, existing_cache=None):
-    print("Scraping Craigslist Boston Apartments (boston.craigslist.org/search/apa)...")
+def is_greater_boston_coord(lat, lng):
+    if not lat or not lng:
+        return False
+    try:
+        return 42.15 <= float(lat) <= 42.55 and -71.35 <= float(lng) <= -70.90
+    except (ValueError, TypeError):
+        return False
+
+
+def scrape_craigslist_boston(limit=750, existing_cache=None):
+    print("Scraping Craigslist Boston Apartments (multi-page apa)...")
     search_urls = [
-        "https://boston.craigslist.org/search/apa",
-        "https://boston.craigslist.org/search/apa?s=120"
+        "https://boston.craigslist.org/search/apa?s=0",
+        "https://boston.craigslist.org/search/apa?s=360",
+        "https://boston.craigslist.org/search/apa?s=720"
     ]
     
     schema_map = {}
@@ -414,9 +424,10 @@ def scrape_craigslist_boston(limit=100, existing_cache=None):
 
     print(f"Discovered {len(matches)} apartment listings across pages on Craigslist Boston.")
     
+    now_iso = datetime.now(timezone.utc).isoformat()
     raw_listings = []
     seen_urls = set()
-    for idx, (post_url, title, price_str, location) in enumerate(matches[:limit]):
+    for idx, (post_url, title, price_str, location) in enumerate(matches):
         if post_url in seen_urls:
             continue
         seen_urls.add(post_url)
@@ -426,10 +437,11 @@ def scrape_craigslist_boston(limit=100, existing_cache=None):
         
         lat = schema_info.get('lat')
         lng = schema_info.get('lng')
-        if not lat or not lng:
-            lat = 42.3601 + ((idx % 10) - 5) * 0.008
-            lng = -71.0589 + ((idx % 7) - 3) * 0.008
-            
+        
+        # Filter to Greater Boston geographic boundary
+        if not is_greater_boston_coord(lat, lng):
+            continue
+
         raw_listings.append({
             'id': f"cl-{re.sub(r'[^a-zA-Z0-9]', '', post_url)[-16:]}",
             'source': 'craigslist',
@@ -440,65 +452,108 @@ def scrape_craigslist_boston(limit=100, existing_cache=None):
             'url': post_url.strip(),
             'lat': float(lat),
             'lng': float(lng),
-            'bedrooms': schema_info.get('bedrooms', 1),
-            'bathrooms': schema_info.get('bathrooms', 1),
+            'bedrooms': schema_info.get('bedrooms', 1) or 1,
+            'bathrooms': schema_info.get('bathrooms', 1) or 1,
             'rental_type': 'entire_unit',
             'rental_type_label': 'Condo / Apt',
             'sqft': None,
             'address': clean_loc
         })
+        if len(raw_listings) >= limit:
+            break
 
-    cached_count = sum(1 for r in raw_listings if existing_cache and r['id'] in existing_cache)
-    print(f"Detail processing: {cached_count} cached (0 HTTP calls), {len(raw_listings) - cached_count} new to fetch...")
+    cached_listings = []
+    new_to_fetch = []
+    new_basic = []
+
+    for r in raw_listings:
+        if existing_cache and r['id'] in existing_cache:
+            cached_listings.append(r)
+        elif len(new_to_fetch) < 40:
+            new_to_fetch.append(r)
+        else:
+            p = r.get('price', 0)
+            t = r.get('title', '')
+            norm_p, rate_note = normalize_listing_price(p, t, '')
+            item = {
+                **r,
+                'price': norm_p,
+                'first_seen': now_iso,
+                'last_seen': now_iso,
+                'images': [
+                    'https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80'
+                ],
+                'description': f"{r['title']}. Location: {r['neighborhood']}. Visit original Craigslist posting for photos and contact info.",
+                'has_broker_fee': None,
+                'fee_badge': 'Fee Unspecified',
+                'fee_details': 'Contact lister for fee status',
+                'availability': 'Contact Lister',
+            }
+            if rate_note:
+                item['original_rate_note'] = rate_note
+            new_basic.append(item)
+
+    print(f"Detail processing: {len(cached_listings)} cached (0 HTTP calls), {len(new_to_fetch)} deep-fetching, {len(new_basic)} indexed from search...")
     fetcher = lambda l: fetch_craigslist_detail_page(l, existing_cache)
     with ThreadPoolExecutor(max_workers=8) as executor:
-        detailed_listings = list(executor.map(fetcher, raw_listings))
+        detailed_listings = list(executor.map(fetcher, cached_listings + new_to_fetch))
 
-    return detailed_listings
+    return detailed_listings + new_basic
 
 
-def scrape_craigslist_rooms_boston(limit=40, existing_cache=None):
-    print("Scraping Craigslist Boston Rooms & Shares (boston.craigslist.org/search/roo)...")
-    url = "https://boston.craigslist.org/search/roo"
-    req = urllib.request.Request(url, headers=HEADERS)
+def scrape_craigslist_rooms_boston(limit=450, existing_cache=None):
+    print("Scraping Craigslist Boston Rooms & Shares (multi-page roo)...")
+    search_urls = [
+        "https://boston.craigslist.org/search/roo?s=0",
+        "https://boston.craigslist.org/search/roo?s=360"
+    ]
     
-    with urllib.request.urlopen(req, timeout=15) as resp:
-        html = resp.read().decode('utf-8', errors='ignore')
-        
     schema_map = {}
-    ld_match = re.search(r'<script\b[^>]*id="ld_searchpage_results"[^>]*>(.*?)</script>', html, re.DOTALL)
-    if ld_match:
-        try:
-            data = json.loads(ld_match.group(1))
-            items = data.get('itemListElement', [])
-            for item_wrap in items:
-                pos = str(item_wrap.get('position', ''))
-                it = item_wrap.get('item', {})
-                schema_map[pos] = {
-                    'lat': it.get('latitude'),
-                    'lng': it.get('longitude'),
-                    'bedrooms': 1,
-                    'bathrooms': 1,
-                    'locality': it.get('address', {}).get('addressLocality', 'Boston')
-                }
-        except Exception:
-            pass
-
-    pattern = (
-        r'<li class="cl-static-search-result"[^>]*>\s*'
-        r'<a href="([^"]+)">\s*'
-        r'<div class="title">([^<]+)</div>\s*'
-        r'<div class="details">\s*'
-        r'<div class="price">([^<]+)</div>\s*'
-        r'<div class="location">\s*([^<]+)</div>'
-    )
+    matches = []
     
-    matches = re.findall(pattern, html)
+    for page_idx, url in enumerate(search_urls):
+        try:
+            req = urllib.request.Request(url, headers=HEADERS)
+            with urllib.request.urlopen(req, timeout=12) as resp:
+                html = resp.read().decode('utf-8', errors='ignore')
+                
+            ld_match = re.search(r'<script\b[^>]*id="ld_searchpage_results"[^>]*>(.*?)</script>', html, re.DOTALL)
+            if ld_match:
+                try:
+                    data = json.loads(ld_match.group(1))
+                    items = data.get('itemListElement', [])
+                    for item_wrap in items:
+                        pos = str(len(schema_map))
+                        it = item_wrap.get('item', {})
+                        schema_map[pos] = {
+                            'lat': it.get('latitude'),
+                            'lng': it.get('longitude'),
+                            'bedrooms': 1,
+                            'bathrooms': 1,
+                            'locality': it.get('address', {}).get('addressLocality', 'Boston')
+                        }
+                except Exception:
+                    pass
+
+            pattern = (
+                r'<li class="cl-static-search-result"[^>]*>\s*'
+                r'<a href="([^"]+)">\s*'
+                r'<div class="title">([^<]+)</div>\s*'
+                r'<div class="details">\s*'
+                r'<div class="price">([^<]+)</div>\s*'
+                r'<div class="location">\s*([^<]+)</div>'
+            )
+            page_matches = re.findall(pattern, html)
+            matches.extend(page_matches)
+        except Exception as e:
+            print(f"Error fetching Craigslist roo page {page_idx + 1}:", e)
+
     print(f"Discovered {len(matches)} rooms on Craigslist Boston.")
     
+    now_iso = datetime.now(timezone.utc).isoformat()
     raw_listings = []
     seen_urls = set()
-    for idx, (post_url, title, price_str, location) in enumerate(matches[:limit]):
+    for idx, (post_url, title, price_str, location) in enumerate(matches):
         if post_url in seen_urls:
             continue
         seen_urls.add(post_url)
@@ -508,9 +563,8 @@ def scrape_craigslist_rooms_boston(limit=40, existing_cache=None):
         
         lat = schema_info.get('lat')
         lng = schema_info.get('lng')
-        if not lat or not lng:
-            lat = 42.3601 + ((idx % 10) - 5) * 0.008
-            lng = -71.0589 + ((idx % 7) - 3) * 0.008
+        if not is_greater_boston_coord(lat, lng):
+            continue
             
         raw_listings.append({
             'id': f"cl-roo-{re.sub(r'[^a-zA-Z0-9]', '', post_url)[-16:]}",
@@ -529,56 +583,101 @@ def scrape_craigslist_rooms_boston(limit=40, existing_cache=None):
             'sqft': None,
             'address': clean_loc
         })
+        if len(raw_listings) >= limit:
+            break
 
+    cached_listings = []
+    new_to_fetch = []
+    new_basic = []
+
+    for r in raw_listings:
+        if existing_cache and r['id'] in existing_cache:
+            cached_listings.append(r)
+        elif len(new_to_fetch) < 30:
+            new_to_fetch.append(r)
+        else:
+            p = r.get('price', 0)
+            t = r.get('title', '')
+            norm_p, rate_note = normalize_listing_price(p, t, '')
+            item = {
+                **r,
+                'price': norm_p,
+                'first_seen': now_iso,
+                'last_seen': now_iso,
+                'images': [
+                    'https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80'
+                ],
+                'description': f"{r['title']}. Location: {r['neighborhood']}. Visit original Craigslist posting for details and contact.",
+                'has_broker_fee': None,
+                'fee_badge': 'Fee Unspecified',
+                'fee_details': 'Contact lister for fee status',
+                'availability': 'Contact Lister',
+            }
+            if rate_note:
+                item['original_rate_note'] = rate_note
+            new_basic.append(item)
+
+    print(f"Detail processing: {len(cached_listings)} cached (0 HTTP calls), {len(new_to_fetch)} deep-fetching, {len(new_basic)} indexed from search...")
     fetcher = lambda l: fetch_craigslist_detail_page(l, existing_cache)
-    with ThreadPoolExecutor(max_workers=6) as executor:
-        detailed_listings = list(executor.map(fetcher, raw_listings))
+    with ThreadPoolExecutor(max_workers=8) as executor:
+        detailed_listings = list(executor.map(fetcher, cached_listings + new_to_fetch))
 
-    return detailed_listings
+    return detailed_listings + new_basic
 
 
-def scrape_craigslist_sublets_boston(limit=40, existing_cache=None):
-    print("Scraping Craigslist Boston Sublets & Temporary (boston.craigslist.org/search/sub)...")
-    url = "https://boston.craigslist.org/search/sub"
-    req = urllib.request.Request(url, headers=HEADERS)
+def scrape_craigslist_sublets_boston(limit=350, existing_cache=None):
+    print("Scraping Craigslist Boston Sublets & Temporary (multi-page sub)...")
+    search_urls = [
+        "https://boston.craigslist.org/search/sub?s=0",
+        "https://boston.craigslist.org/search/sub?s=360"
+    ]
     
-    with urllib.request.urlopen(req, timeout=15) as resp:
-        html = resp.read().decode('utf-8', errors='ignore')
-        
     schema_map = {}
-    ld_match = re.search(r'<script\b[^>]*id="ld_searchpage_results"[^>]*>(.*?)</script>', html, re.DOTALL)
-    if ld_match:
-        try:
-            data = json.loads(ld_match.group(1))
-            items = data.get('itemListElement', [])
-            for item_wrap in items:
-                pos = str(item_wrap.get('position', ''))
-                it = item_wrap.get('item', {})
-                schema_map[pos] = {
-                    'lat': it.get('latitude'),
-                    'lng': it.get('longitude'),
-                    'bedrooms': it.get('numberOfBedrooms', 1),
-                    'bathrooms': it.get('numberOfBathroomsTotal', 1),
-                    'locality': it.get('address', {}).get('addressLocality', 'Boston')
-                }
-        except Exception:
-            pass
-
-    pattern = (
-        r'<li class="cl-static-search-result"[^>]*>\s*'
-        r'<a href="([^"]+)">\s*'
-        r'<div class="title">([^<]+)</div>\s*'
-        r'<div class="details">\s*'
-        r'<div class="price">([^<]+)</div>\s*'
-        r'<div class="location">\s*([^<]+)</div>'
-    )
+    matches = []
     
-    matches = re.findall(pattern, html)
+    for page_idx, url in enumerate(search_urls):
+        try:
+            req = urllib.request.Request(url, headers=HEADERS)
+            with urllib.request.urlopen(req, timeout=12) as resp:
+                html = resp.read().decode('utf-8', errors='ignore')
+                
+            ld_match = re.search(r'<script\b[^>]*id="ld_searchpage_results"[^>]*>(.*?)</script>', html, re.DOTALL)
+            if ld_match:
+                try:
+                    data = json.loads(ld_match.group(1))
+                    items = data.get('itemListElement', [])
+                    for item_wrap in items:
+                        pos = str(len(schema_map))
+                        it = item_wrap.get('item', {})
+                        schema_map[pos] = {
+                            'lat': it.get('latitude'),
+                            'lng': it.get('longitude'),
+                            'bedrooms': it.get('numberOfBedrooms', 1),
+                            'bathrooms': it.get('numberOfBathroomsTotal', 1),
+                            'locality': it.get('address', {}).get('addressLocality', 'Boston')
+                        }
+                except Exception:
+                    pass
+
+            pattern = (
+                r'<li class="cl-static-search-result"[^>]*>\s*'
+                r'<a href="([^"]+)">\s*'
+                r'<div class="title">([^<]+)</div>\s*'
+                r'<div class="details">\s*'
+                r'<div class="price">([^<]+)</div>\s*'
+                r'<div class="location">\s*([^<]+)</div>'
+            )
+            page_matches = re.findall(pattern, html)
+            matches.extend(page_matches)
+        except Exception as e:
+            print(f"Error fetching Craigslist sub page {page_idx + 1}:", e)
+
     print(f"Discovered {len(matches)} sublets on Craigslist Boston.")
     
+    now_iso = datetime.now(timezone.utc).isoformat()
     raw_listings = []
     seen_urls = set()
-    for idx, (post_url, title, price_str, location) in enumerate(matches[:limit]):
+    for idx, (post_url, title, price_str, location) in enumerate(matches):
         if post_url in seen_urls:
             continue
         seen_urls.add(post_url)
@@ -588,9 +687,8 @@ def scrape_craigslist_sublets_boston(limit=40, existing_cache=None):
         
         lat = schema_info.get('lat')
         lng = schema_info.get('lng')
-        if not lat or not lng:
-            lat = 42.3601 + ((idx % 10) - 5) * 0.008
-            lng = -71.0589 + ((idx % 7) - 3) * 0.008
+        if not is_greater_boston_coord(lat, lng):
+            continue
             
         raw_listings.append({
             'id': f"cl-sub-{re.sub(r'[^a-zA-Z0-9]', '', post_url)[-16:]}",
@@ -602,19 +700,53 @@ def scrape_craigslist_sublets_boston(limit=40, existing_cache=None):
             'url': post_url.strip(),
             'lat': float(lat),
             'lng': float(lng),
-            'bedrooms': schema_info.get('bedrooms', 1),
-            'bathrooms': schema_info.get('bathrooms', 1),
+            'bedrooms': schema_info.get('bedrooms', 1) or 1,
+            'bathrooms': schema_info.get('bathrooms', 1) or 1,
             'rental_type': 'sublet',
             'rental_type_label': 'Sublet',
             'sqft': None,
             'address': clean_loc
         })
+        if len(raw_listings) >= limit:
+            break
 
+    cached_listings = []
+    new_to_fetch = []
+    new_basic = []
+
+    for r in raw_listings:
+        if existing_cache and r['id'] in existing_cache:
+            cached_listings.append(r)
+        elif len(new_to_fetch) < 25:
+            new_to_fetch.append(r)
+        else:
+            p = r.get('price', 0)
+            t = r.get('title', '')
+            norm_p, rate_note = normalize_listing_price(p, t, '')
+            item = {
+                **r,
+                'price': norm_p,
+                'first_seen': now_iso,
+                'last_seen': now_iso,
+                'images': [
+                    'https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80'
+                ],
+                'description': f"{r['title']}. Location: {r['neighborhood']}. Visit original Craigslist posting for photos and contact info.",
+                'has_broker_fee': None,
+                'fee_badge': 'Fee Unspecified',
+                'fee_details': 'Contact lister for fee status',
+                'availability': 'Contact Lister',
+            }
+            if rate_note:
+                item['original_rate_note'] = rate_note
+            new_basic.append(item)
+
+    print(f"Detail processing: {len(cached_listings)} cached (0 HTTP calls), {len(new_to_fetch)} deep-fetching, {len(new_basic)} indexed from search...")
     fetcher = lambda l: fetch_craigslist_detail_page(l, existing_cache)
-    with ThreadPoolExecutor(max_workers=6) as executor:
-        detailed_listings = list(executor.map(fetcher, raw_listings))
+    with ThreadPoolExecutor(max_workers=8) as executor:
+        detailed_listings = list(executor.map(fetcher, cached_listings + new_to_fetch))
 
-    return detailed_listings
+    return detailed_listings + new_basic
 
 
 def scrape_boston_pads(per_city_limit=45):
@@ -1287,21 +1419,21 @@ def main():
     # 1. Scrape Craigslist Boston Apartments (with cache hit bypass)
     craigslist_listings = []
     try:
-        craigslist_listings = scrape_craigslist_boston(limit=100, existing_cache=existing_map)
+        craigslist_listings = scrape_craigslist_boston(limit=750, existing_cache=existing_map)
     except Exception as e:
         print("Warning: Live Craigslist scrape encountered error:", e)
 
     # 2. Scrape Craigslist Boston Rooms & Shares
     craigslist_rooms = []
     try:
-        craigslist_rooms = scrape_craigslist_rooms_boston(limit=40, existing_cache=existing_map)
+        craigslist_rooms = scrape_craigslist_rooms_boston(limit=450, existing_cache=existing_map)
     except Exception as e:
         print("Warning: Craigslist Rooms scrape encountered error:", e)
 
     # 3. Scrape Craigslist Boston Sublets & Temporary
     craigslist_sublets = []
     try:
-        craigslist_sublets = scrape_craigslist_sublets_boston(limit=40, existing_cache=existing_map)
+        craigslist_sublets = scrape_craigslist_sublets_boston(limit=350, existing_cache=existing_map)
     except Exception as e:
         print("Warning: Craigslist Sublets scrape encountered error:", e)
 
