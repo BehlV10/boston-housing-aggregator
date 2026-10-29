@@ -48,9 +48,13 @@ export default function App() {
         // Ignore localStorage error
       }
 
-      // 2. Fetch fresh listings from server (SWR pattern)
+      // 2. Fetch fresh listings from server (SWR pattern with cache-busting)
       try {
-        const listingsRes = await fetch('./data/listings.json');
+        const cacheBuster = `?t=${Date.now()}`;
+        const listingsRes = await fetch(`./data/listings.json${cacheBuster}`, {
+          cache: 'no-cache',
+          headers: { 'Pragma': 'no-cache', 'Cache-Control': 'no-cache' }
+        });
         if (listingsRes.ok) {
           const data = await listingsRes.json();
           setListings(data);
@@ -59,7 +63,10 @@ export default function App() {
           } catch (e) {}
         }
 
-        const metaRes = await fetch('./data/metadata.json');
+        const metaRes = await fetch(`./data/metadata.json${cacheBuster}`, {
+          cache: 'no-cache',
+          headers: { 'Pragma': 'no-cache', 'Cache-Control': 'no-cache' }
+        });
         if (metaRes.ok) {
           const meta = await metaRes.json();
           setMetadata(meta);
