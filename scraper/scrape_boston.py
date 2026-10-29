@@ -1181,16 +1181,22 @@ def scrape_reddit_boston_housing(existing_cache=None):
             fee_badge = fee_analysis['fee_badge']
             fee_details = fee_analysis['fee_details']
 
-        # Extract images from content
-        img_urls = re.findall(
-            r'href=[\'\"](https://i\.redd\.it/[^\'\"]+|https://preview\.redd\.it/[^\'\"]+|https://i\.imgur\.com/[^\'\"]+)[\'\"]',
+        # Extract images from content and convert preview.redd.it thumbnails to full high-res i.redd.it URLs
+        raw_matches = re.findall(
+            r'(?:https://preview\.redd\.it/|https://i\.redd\.it/)([a-zA-Z0-9_\-]+)\.(jpg|jpeg|png|webp)',
             content_html
         )
-        if not img_urls:
-            img_urls = re.findall(
-                r'src=[\'\"](https://i\.redd\.it/[^\'\"]+|https://preview\.redd\.it/[^\'\"]+|https://i\.imgur\.com/[^\'\"]+)[\'\"]',
-                content_html
-            )
+        img_urls = []
+        for img_id, ext in raw_matches:
+            full_img_url = f'https://i.redd.it/{img_id}.{ext}'
+            if full_img_url not in img_urls:
+                img_urls.append(full_img_url)
+
+        # Also search for imgur links
+        imgur_matches = re.findall(r'(https://i\.imgur\.com/[a-zA-Z0-9_\-]+\.(?:jpg|jpeg|png))', content_html)
+        for u in imgur_matches:
+            if u not in img_urls:
+                img_urls.append(u)
 
         if not img_urls:
             img_urls = [
@@ -1200,7 +1206,7 @@ def scrape_reddit_boston_housing(existing_cache=None):
         # Availability
         avail_m = re.search(
             r'\b(?:available|avail\.?|start(?:ing)?|move[\s-]in(?:\s*date)?)\s*(?:is|on|from|for)?\s*:?\s*'
-            r'(\d{1,2}/\d{1,2}(?:/\d{2,4})?|(?:now|immediately|jan(?:uary)?|feb(?:ruary)?|mar(?:ch)?|apr(?:il)?|may|june?|july?|aug(?:ust)?|sep(?:t(?:ember)?)?|oct(?:ober)?|nov(?:ember)?|dec(?:ember)?)(?:\s*\d{1,2})?)',
+            r'(\d{1,2}/\d{1,2}(?:/\d{2,4})?|(?:now|immediately|jan(?:uary)?|feb(?:ruary)?|mar(?:ch)?|apr(?:il)?|may|june?|july?|aug(?:ust)?|sep(?:t(?:ember)?)?|oct(?:ober)?|nov(?:ember)?|dec(?:ember)?)(?:\s*\d{1,2}(?:st|nd|rd|th)?)?)',
             full_text,
             re.I
         )
@@ -1208,11 +1214,19 @@ def scrape_reddit_boston_housing(existing_cache=None):
             raw_avail = avail_m.group(1).strip()
             availability = normalize_availability(raw_avail)
         else:
-            avail_m2 = re.search(r'(\d{1,2}/\d{1,2})\s*(?:start|move[\s-]in)', full_text, re.I)
+            avail_m2 = re.search(
+                r'\b(jan(?:uary)?|feb(?:ruary)?|mar(?:ch)?|apr(?:il)?|may|june?|july?|aug(?:ust)?|sep(?:t(?:ember)?)?|oct(?:ober)?|nov(?:ember)?|dec(?:ember)?)\s*(\d{1,2}(?:st|nd|rd|th)?)\s*(?:move[\s-]in|start)?',
+                full_text,
+                re.I
+            )
             if avail_m2:
-                availability = f"Available {avail_m2.group(1)}"
+                availability = f"Available {avail_m2.group(1).title()[:3]} {avail_m2.group(2)}"
             else:
-                availability = 'Contact Lister'
+                avail_m3 = re.search(r'(\d{1,2}/\d{1,2})\s*(?:start|move[\s-]in)', full_text, re.I)
+                if avail_m3:
+                    availability = f"Available {avail_m3.group(1)}"
+                else:
+                    availability = 'Contact Lister'
 
         # Truncate description cleanly
         clean_desc = re.sub(r'\s+', ' ', body).strip()
