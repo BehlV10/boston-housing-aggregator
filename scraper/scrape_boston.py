@@ -25,6 +25,7 @@ import re
 import sys
 import time
 import urllib.request
+import xml.etree.ElementTree as ET
 from concurrent.futures import ThreadPoolExecutor
 from datetime import datetime, timezone
 
@@ -915,6 +916,264 @@ def get_additional_boston_aggregations():
     ]
 
 
+REDDIT_NEIGHBORHOOD_COORDS = {
+    'cambridge': (42.3736, -71.1097, 'Cambridge, MA'),
+    'somerville': (42.3876, -71.0995, 'Somerville, MA'),
+    'davis square': (42.3967, -71.1225, 'Davis Sq, Somerville, MA'),
+    'davis sq': (42.3967, -71.1225, 'Davis Sq, Somerville, MA'),
+    'union square': (42.3797, -71.0963, 'Union Sq, Somerville, MA'),
+    'union sq': (42.3797, -71.0963, 'Union Sq, Somerville, MA'),
+    'porter square': (42.3892, -71.1192, 'Porter Sq, Cambridge, MA'),
+    'porter sq': (42.3892, -71.1192, 'Porter Sq, Cambridge, MA'),
+    'harvard square': (42.3736, -71.1190, 'Harvard Sq, Cambridge, MA'),
+    'harvard sq': (42.3736, -71.1190, 'Harvard Sq, Cambridge, MA'),
+    'central square': (42.3653, -71.1033, 'Central Sq, Cambridge, MA'),
+    'central sq': (42.3653, -71.1033, 'Central Sq, Cambridge, MA'),
+    'kendall square': (42.3625, -71.0862, 'Kendall Sq, Cambridge, MA'),
+    'kendall sq': (42.3625, -71.0862, 'Kendall Sq, Cambridge, MA'),
+    'allston': (42.3539, -71.1337, 'Allston, Boston, MA'),
+    'brighton': (42.3464, -71.1578, 'Brighton, Boston, MA'),
+    'brookline': (42.3418, -71.1218, 'Brookline, MA'),
+    'coolidge corner': (42.3424, -71.1212, 'Coolidge Corner, Brookline, MA'),
+    'back bay': (42.3503, -71.0810, 'Back Bay, Boston, MA'),
+    'south end': (42.3424, -71.0701, 'South End, Boston, MA'),
+    'north end': (42.3647, -71.0542, 'North End, Boston, MA'),
+    'beacon hill': (42.3588, -71.0707, 'Beacon Hill, Boston, MA'),
+    'south boston': (42.3334, -71.0495, 'South Boston, MA'),
+    'southie': (42.3334, -71.0495, 'South Boston, MA'),
+    'fenway': (42.3429, -71.0998, 'Fenway, Boston, MA'),
+    'kenmore': (42.3487, -71.0956, 'Kenmore, Boston, MA'),
+    'mission hill': (42.3317, -71.1042, 'Mission Hill, Boston, MA'),
+    'jamaica plain': (42.3097, -71.1151, 'Jamaica Plain, Boston, MA'),
+    'jp': (42.3097, -71.1151, 'Jamaica Plain, Boston, MA'),
+    'dorchester': (42.3016, -71.0676, 'Dorchester, Boston, MA'),
+    'east boston': (42.3702, -71.0389, 'East Boston, MA'),
+    'charlestown': (42.3782, -71.0602, 'Charlestown, Boston, MA'),
+    'roxbury': (42.3152, -71.0878, 'Roxbury, Boston, MA'),
+    'medford': (42.4184, -71.1062, 'Medford, MA'),
+    'malden': (42.4298, -71.0662, 'Malden, MA'),
+    'quincy': (42.2529, -71.0023, 'Quincy, MA'),
+}
+
+REDDIT_SEEKING_KEYWORDS = [
+    r'\[looking for\]',
+    r'\[seeking\]',
+    r'\[iso\]',
+    r'\[wanted\]',
+    r'\blooking for\b',
+    r'\bseeking\b',
+    r'\bneed a room\b',
+    r'\bscam, right\b',
+    r'\brules\b',
+    r'\bdiscussion\b',
+    r'\brant\b',
+    r'\badvice\b',
+]
+
+
+def scrape_reddit_boston_housing(existing_cache=None):
+    """
+    Scrapes rental listings from Reddit's r/bostonhousing community.
+    Uses public RSS feed with automatic rate-limit backoff and header optimization.
+    Extracts prices, bedrooms, neighborhoods, availability, and broker fee status.
+    """
+    print("\n--- Scraping Reddit r/bostonhousing ---")
+    url = 'https://www.reddit.com/r/bostonhousing/.rss'
+    req = urllib.request.Request(
+        url,
+        headers={
+            'User-Agent': (
+                'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) '
+                'AppleWebKit/537.36 (KHTML, like Gecko) '
+                'Chrome/123.0.0.0 Safari/537.36'
+            ),
+            'Accept': 'application/rss+xml, application/xml, text/xml, */*'
+        }
+    )
+
+    xml_data = None
+    for attempt in range(2):
+        try:
+            with urllib.request.urlopen(req, timeout=10) as resp:
+                xml_data = resp.read()
+                break
+        except urllib.error.HTTPError as e:
+            print(f"Reddit RSS attempt {attempt + 1} returned HTTP {e.code}")
+            if e.code == 429:
+                reset_wait = int(e.headers.get('x-ratelimit-reset', 10))
+                if attempt == 0 and reset_wait <= 15:
+                    print(f"Waiting {reset_wait + 2}s for Reddit rate limit reset...")
+                    time.sleep(reset_wait + 2)
+                else:
+                    break
+            else:
+                break
+        except Exception as e:
+            print(f"Reddit RSS fetch notice: {e}")
+            break
+
+    if not xml_data:
+        # Re-use cached reddit items if available
+        if existing_cache:
+            cached_reddit = [item for item in existing_cache.values() if item.get('source') == 'reddit']
+            if cached_reddit:
+                print(f"Preserving {len(cached_reddit)} existing cached Reddit listings.")
+                return cached_reddit
+        return []
+
+    try:
+        root = ET.fromstring(xml_data)
+    except Exception as e:
+        print("Error parsing Reddit XML:", e)
+        return []
+
+    ns = {'atom': 'http://www.w3.org/2005/Atom'}
+    entries = root.findall('atom:entry', ns)
+
+    now_iso = datetime.now(timezone.utc).isoformat()
+    listings = []
+
+    for entry in entries:
+        title_el = entry.find('atom:title', ns)
+        link_el = entry.find('atom:link', ns)
+        content_el = entry.find('atom:content', ns)
+        updated_el = entry.find('atom:updated', ns)
+
+        raw_title = title_el.text if title_el is not None and title_el.text else ''
+        title = html_parser.unescape(raw_title).strip()
+        link = link_el.attrib.get('href', '') if link_el is not None else ''
+        content_html = content_el.text if content_el is not None and content_el.text else ''
+        body = html_parser.unescape(re.sub(r'<[^>]+>', ' ', content_html)).strip()
+        updated = updated_el.text if updated_el is not None and updated_el.text else now_iso
+
+        # Filter out "Looking for" / "Seeking" / discussion posts
+        title_lower = title.lower()
+        if any(re.search(pat, title_lower) for pat in REDDIT_SEEKING_KEYWORDS):
+            continue
+
+        # Extract price from title or body
+        price_m = re.search(r'\$([0-9]{1,2},[0-9]{3}|[0-9]{3,5})', f"{title} {body}")
+        if not price_m:
+            continue
+        price = int(price_m.group(1).replace(',', ''))
+        if price < 400 or price > 15000:
+            continue
+
+        # Extract post ID
+        id_match = re.search(r'/comments/([a-z0-9]+)/', link)
+        post_id = f"reddit_{id_match.group(1)}" if id_match else f"reddit_{abs(hash(link))}"
+
+        # Match neighborhood from coordinates dictionary
+        full_text = f"{title} {body}"
+        matched_loc = None
+        for key, (lat_c, lng_c, loc_name) in REDDIT_NEIGHBORHOOD_COORDS.items():
+            if re.search(r'\b' + re.escape(key) + r'\b', full_text, re.I):
+                matched_loc = (lat_c, lng_c, loc_name)
+                break
+
+        if matched_loc:
+            base_lat, base_lng, address = matched_loc
+        else:
+            base_lat, base_lng, address = 42.3601, -71.0589, 'Greater Boston, MA'
+
+        # Jitter coordinates deterministically so map pins in same neighborhood don't stack
+        h = abs(hash(post_id))
+        jitter_lat = ((h % 200) - 100) * 0.00008
+        jitter_lng = (((h // 200) % 200) - 100) * 0.00008
+        lat = round(base_lat + jitter_lat, 6)
+        lng = round(base_lng + jitter_lng, 6)
+
+        # Bedrooms & Bathrooms
+        bed_m = re.search(r'(\d+)\s*(?:bed|bd|bdr|bedroom)', full_text, re.I)
+        bath_m = re.search(r'(\d+(?:\.\d+)?)\s*(?:ba|bath|bathroom)', full_text, re.I)
+        bedrooms = int(bed_m.group(1)) if bed_m else (0 if 'studio' in full_text.lower() else 1)
+        bathrooms = float(bath_m.group(1)) if bath_m else 1.0
+
+        # Rental type classification
+        rental_type, rental_type_label = classify_rental_type(
+            title, body, price=price, bedrooms=bedrooms
+        )
+
+        # Broker fee analysis
+        fee_analysis = analyze_fees(title, body)
+        if fee_analysis['has_broker_fee'] is None:
+            # Default for Reddit peer-to-peer housing is No Broker Fee
+            has_fee = False
+            fee_badge = 'No Broker Fee'
+            fee_details = 'Direct community listing on Reddit (No Broker Fee).'
+        else:
+            has_fee = fee_analysis['has_broker_fee']
+            fee_badge = fee_analysis['fee_badge']
+            fee_details = fee_analysis['fee_details']
+
+        # Extract images from content
+        img_urls = re.findall(
+            r'href=[\'\"](https://i\.redd\.it/[^\'\"]+|https://preview\.redd\.it/[^\'\"]+|https://i\.imgur\.com/[^\'\"]+)[\'\"]',
+            content_html
+        )
+        if not img_urls:
+            img_urls = re.findall(
+                r'src=[\'\"](https://i\.redd\.it/[^\'\"]+|https://preview\.redd\.it/[^\'\"]+|https://i\.imgur\.com/[^\'\"]+)[\'\"]',
+                content_html
+            )
+
+        if not img_urls:
+            img_urls = [
+                'https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80'
+            ]
+
+        # Availability
+        avail_m = re.search(
+            r'\b(?:available|avail\.?|start(?:ing)?|move[\s-]in(?:\s*date)?)\s*(?:is|on|from|for)?\s*:?\s*'
+            r'(\d{1,2}/\d{1,2}(?:/\d{2,4})?|(?:now|immediately|jan(?:uary)?|feb(?:ruary)?|mar(?:ch)?|apr(?:il)?|may|june?|july?|aug(?:ust)?|sep(?:t(?:ember)?)?|oct(?:ober)?|nov(?:ember)?|dec(?:ember)?)(?:\s*\d{1,2})?)',
+            full_text,
+            re.I
+        )
+        if avail_m:
+            raw_avail = avail_m.group(1).strip()
+            availability = normalize_availability(raw_avail)
+        else:
+            avail_m2 = re.search(r'(\d{1,2}/\d{1,2})\s*(?:start|move[\s-]in)', full_text, re.I)
+            if avail_m2:
+                availability = f"Available {avail_m2.group(1)}"
+            else:
+                availability = 'Contact Lister'
+
+        # Truncate description cleanly
+        clean_desc = re.sub(r'\s+', ' ', body).strip()
+        if len(clean_desc) > 500:
+            clean_desc = clean_desc[:500] + '...'
+
+        listings.append({
+            'id': post_id,
+            'title': title,
+            'price': price,
+            'address': address,
+            'neighborhood': address,
+            'lat': lat,
+            'lng': lng,
+            'url': link,
+            'source': 'reddit',
+            'source_label': 'Reddit',
+            'bedrooms': bedrooms,
+            'bathrooms': bathrooms,
+            'sqft': 0,
+            'availability': availability,
+            'rental_type': rental_type,
+            'rental_type_label': rental_type_label,
+            'images': img_urls[:6],
+            'description': clean_desc,
+            'has_broker_fee': has_fee,
+            'fee_badge': fee_badge,
+            'fee_details': fee_details,
+            'first_seen': updated or now_iso,
+            'last_seen': now_iso
+        })
+
+    print(f"Successfully scraped {len(listings)} listings from Reddit r/bostonhousing.")
+    return listings
+
+
 def main():
     os.makedirs(OUTPUT_DIR, exist_ok=True)
     
@@ -960,6 +1219,13 @@ def main():
     except Exception as e:
         print("Warning: Boston Pads scrape encountered error:", e)
 
+    # 5. Scrape Reddit r/bostonhousing
+    reddit_listings = []
+    try:
+        reddit_listings = scrape_reddit_boston_housing(existing_cache=existing_map)
+    except Exception as e:
+        print("Warning: Reddit scrape encountered error:", e)
+
     # Merge Craigslist Apartments
     for item in craigslist_listings:
         existing = existing_map.get(item['id'], {})
@@ -992,6 +1258,16 @@ def main():
 
     # Merge Boston Pads
     for item in boston_pads_listings:
+        existing = existing_map.get(item['id'], {})
+        existing_map[item['id']] = {
+            **existing,
+            **item,
+            'first_seen': existing.get('first_seen', item.get('first_seen', now_iso)),
+            'last_seen': now_iso
+        }
+
+    # Merge Reddit r/bostonhousing
+    for item in reddit_listings:
         existing = existing_map.get(item['id'], {})
         existing_map[item['id']] = {
             **existing,

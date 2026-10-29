@@ -25,6 +25,8 @@ export default function ListingCard({ listing, isSelected, onSelect, onOpenDetai
         return 'bg-teal-50 text-teal-800 border-teal-200';
       case 'redfin':
         return 'bg-rose-50 text-rose-700 border-rose-200';
+      case 'reddit':
+        return 'bg-orange-50 text-orange-700 border-orange-200';
       default:
         return 'bg-purple-50 text-purple-700 border-purple-200';
     }

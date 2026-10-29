@@ -161,6 +161,7 @@ export default function FilterBar({ filters, setFilters, totalCount, filteredCou
             <option value="all">Source: All</option>
             <option value="craigslist">Craigslist</option>
             <option value="bostonpads">Boston Pads</option>
+            <option value="reddit">Reddit</option>
             <option value="zillow">Zillow</option>
             <option value="facebook">FB Mkt</option>
             <option value="redfin">Redfin</option>
