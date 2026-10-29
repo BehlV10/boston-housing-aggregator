@@ -31,6 +31,8 @@ export default function ListingCard({ listing, isSelected, onSelect, onOpenDetai
         return 'bg-orange-50 text-orange-700 border-orange-200';
       case 'reit_direct':
         return 'bg-emerald-50 text-emerald-800 border-emerald-300';
+      case 'community':
+        return 'bg-amber-50 text-amber-900 border-amber-300 font-bold';
       default:
         return 'bg-purple-50 text-purple-700 border-purple-200';
     }

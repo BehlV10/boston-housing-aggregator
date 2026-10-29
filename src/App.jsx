@@ -1,11 +1,13 @@
 import React, { useState, useEffect, useMemo } from 'react';
-import { Home, Map as MapIcon, List as ListIcon, RefreshCw, Sparkles, Building2, ExternalLink } from 'lucide-react';
+import { Home, Map as MapIcon, List as ListIcon, RefreshCw, Sparkles, Building2, ExternalLink, Share2 } from 'lucide-react';
 import MapView from './components/MapView';
 import ListingCard from './components/ListingCard';
 import FilterBar from './components/FilterBar';
 import ListingModal from './components/ListingModal';
+import CrossListHub from './components/CrossListHub';
 
 export default function App() {
+  const [activeTab, setActiveTab] = useState('browse'); // 'browse' | 'cross-list'
   const [listings, setListings] = useState([]);
   const [metadata, setMetadata] = useState(null);
   const [loading, setLoading] = useState(true);
@@ -30,14 +32,25 @@ export default function App() {
   // Load aggregated listings (Instant localStorage cache + background network fetch)
   useEffect(() => {
     async function loadData() {
+      const getCommunityListings = () => {
+        try {
+          const raw = localStorage.getItem('boston_community_listings');
+          return raw ? JSON.parse(raw) : [];
+        } catch (e) {
+          return [];
+        }
+      };
+
       // 1. Instant Cache Load from localStorage for 0ms startup
       try {
         const cachedListings = localStorage.getItem('boston_housing_cache');
         const cachedMeta = localStorage.getItem('boston_housing_meta');
+        const community = getCommunityListings();
+
         if (cachedListings) {
           const parsed = JSON.parse(cachedListings);
           if (Array.isArray(parsed) && parsed.length > 0) {
-            setListings(parsed);
+            setListings([...community, ...parsed.filter(p => !community.some(c => c.id === p.id))]);
             setLoading(false);
           }
         }
@@ -57,7 +70,8 @@ export default function App() {
         });
         if (listingsRes.ok) {
           const data = await listingsRes.json();
-          setListings(data);
+          const community = getCommunityListings();
+          setListings([...community, ...data.filter(p => !community.some(c => c.id === p.id))]);
           try {
             localStorage.setItem('boston_housing_cache', JSON.stringify(data));
           } catch (e) {}
@@ -82,6 +96,23 @@ export default function App() {
     }
     loadData();
   }, []);
+
+  const handleAddCommunityListing = (newListing) => {
+    setListings((prev) => {
+      const filtered = prev.filter((l) => l.id !== newListing.id);
+      const updated = [newListing, ...filtered];
+      try {
+        const saved = JSON.parse(localStorage.getItem('boston_community_listings') || '[]');
+        const updatedSaved = [newListing, ...saved.filter((l) => l.id !== newListing.id)];
+        localStorage.setItem('boston_community_listings', JSON.stringify(updatedSaved));
+      } catch (e) {}
+      return updated;
+    });
+    // Seamlessly transition to Browse view and open preview
+    setActiveTab('browse');
+    setSelectedListing(newListing);
+    setModalListing(newListing);
+  };
 
   // Reset pagination when filters or sort change
   useEffect(() => {
@@ -182,8 +213,37 @@ export default function App() {
           </div>
 
           <div className="flex items-center gap-3">
+            {/* Top Navigation Tabs */}
+            <nav className="flex items-center gap-1 bg-gray-100 p-1 rounded-2xl border border-gray-200">
+              <button
+                onClick={() => setActiveTab('browse')}
+                className={`px-3 py-1.5 rounded-xl text-xs font-bold transition-all flex items-center gap-1.5 ${
+                  activeTab === 'browse'
+                    ? 'bg-white shadow-xs text-boston-brick'
+                    : 'text-gray-600 hover:text-gray-900'
+                }`}
+              >
+                <Home className="w-3.5 h-3.5" />
+                <span>Browse</span>
+              </button>
+              <button
+                onClick={() => setActiveTab('cross-list')}
+                className={`px-3 py-1.5 rounded-xl text-xs font-bold transition-all flex items-center gap-1.5 ${
+                  activeTab === 'cross-list'
+                    ? 'bg-white shadow-xs text-boston-brick'
+                    : 'text-gray-600 hover:text-gray-900'
+                }`}
+              >
+                <Share2 className="w-3.5 h-3.5 text-boston-brick" />
+                <span>List a Room</span>
+                <span className="hidden sm:inline-block px-1.5 py-0.5 rounded-md text-[10px] font-extrabold bg-boston-brick/10 text-boston-brick">
+                  Cross-Poster
+                </span>
+              </button>
+            </nav>
+
             {metadata && (
-              <div className="hidden lg:flex items-center gap-2.5 text-xs text-gray-600 bg-gray-100 py-1.5 px-3.5 rounded-full border border-gray-200">
+              <div className="hidden xl:flex items-center gap-2.5 text-xs text-gray-600 bg-gray-100 py-1.5 px-3.5 rounded-full border border-gray-200">
                 <span className="flex items-center gap-1.5">
                   <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
                   <span className="font-semibold text-emerald-700">{metadata.no_fee_count} No-Fee</span>
@@ -198,30 +258,35 @@ export default function App() {
             )}
 
             {/* Mobile View Toggle */}
-            <div className="flex md:hidden bg-gray-100 p-1 rounded-xl">
-              <button
-                onClick={() => setViewMode('map')}
-                className={`p-1.5 rounded-lg text-xs font-semibold ${
-                  viewMode === 'map' ? 'bg-white shadow-sm text-boston-brick' : 'text-gray-600'
-                }`}
-              >
-                <MapIcon className="w-4 h-4" />
-              </button>
-              <button
-                onClick={() => setViewMode('list')}
-                className={`p-1.5 rounded-lg text-xs font-semibold ${
-                  viewMode === 'list' ? 'bg-white shadow-sm text-boston-brick' : 'text-gray-600'
-                }`}
-              >
-                <ListIcon className="w-4 h-4" />
-              </button>
-            </div>
+            {activeTab === 'browse' && (
+              <div className="flex md:hidden bg-gray-100 p-1 rounded-xl">
+                <button
+                  onClick={() => setViewMode('map')}
+                  className={`p-1.5 rounded-lg text-xs font-semibold ${
+                    viewMode === 'map' ? 'bg-white shadow-sm text-boston-brick' : 'text-gray-600'
+                  }`}
+                >
+                  <MapIcon className="w-4 h-4" />
+                </button>
+                <button
+                  onClick={() => setViewMode('list')}
+                  className={`p-1.5 rounded-lg text-xs font-semibold ${
+                    viewMode === 'list' ? 'bg-white shadow-sm text-boston-brick' : 'text-gray-600'
+                  }`}
+                >
+                  <ListIcon className="w-4 h-4" />
+                </button>
+              </div>
+            )}
           </div>
         </div>
       </header>
 
       {/* Main Content Area */}
-      <main className="flex-1 max-w-7xl w-full mx-auto p-4 sm:p-6 lg:p-8 flex flex-col">
+      {activeTab === 'cross-list' ? (
+        <CrossListHub onAddCommunityListing={handleAddCommunityListing} />
+      ) : (
+        <main className="flex-1 max-w-7xl w-full mx-auto p-4 sm:p-6 lg:p-8 flex flex-col">
         {/* Filter Controls */}
         <FilterBar
           filters={filters}
@@ -338,6 +403,7 @@ export default function App() {
           </div>
         )}
       </main>
+      )}
 
       {/* Listing Details Modal */}
       {modalListing && (
