@@ -136,44 +136,82 @@ def normalize_move_in_date(raw_avail, title, desc, rtype):
     clean_d = re.sub(r'Visit original Craigslist posting.*', '', desc or '', flags=re.I)
     comb = f"{title or ''} {clean_d}".lower()
 
-    # 1. First check explicit dates in raw_avail if already set and not 'Contact Lister'
-    if raw_avail and str(raw_avail).strip().lower() not in ['contact lister', 'missing', 'none']:
-        low_av = str(raw_avail).lower()
-        if any(w in low_av for w in ['now', 'immediate', 'today', 'asap', 'ready']):
-            return 'Available Now', 'immediate'
-        if '01-01' in low_av or '01-02' in low_av or 'jan 1' in low_av or 'jan 2' in low_av or 'jan 1st' in low_av:
-            return 'Available Jan 1, 2027', '2027-01'
-        if 'jan 20' in low_av:
-            return 'Available Jan 20, 2027', '2027-01'
-        if '11-01' in low_av or '11-05' in low_av or 'nov 1' in low_av or 'nov 15' in low_av or 'nov 14' in low_av:
-            return 'Available Nov 1, 2026', '2026-11'
-        if '12-01' in low_av or '12-02' in low_av or 'dec 1' in low_av or 'dec 20' in low_av:
-            return 'Available Dec 1, 2026', '2026-12'
-        if '06-01' in low_av or 'jun 1' in low_av:
-            return 'Available Jun 1, 2027', '2027-06'
-        if '09-01' in low_av or 'sep 1' in low_av or 'sept 1' in low_av:
-            return 'Available Sep 1, 2027', '2027-09'
-        if '08-01' in low_av or 'aug 1' in low_av:
-            return 'Available Aug 1, 2027', '2027-08'
-        if '02-01' in low_av or 'feb 1' in low_av:
-            return 'Available Feb 1, 2027', '2027-02'
-        if 'oct 3' in low_av or 'oct 2' in low_av:
-            return 'Available Now', 'immediate'
+    # 1. Priority 0: Explicit immediate availability in the title takes priority over text mentions
+    t_low = (title or '').lower()
+    if re.search(r'\b(avail(?:able)?\s+now|avail\.?\s*now|immediate(?:ly)?|ready\s+now|move[\s-]in\s+ready)\b', t_low):
+        return 'Available Now', 'immediate'
 
-    # 2. Extract from title & description text
+    # 2. Check explicit structured date in raw_avail (from MLS/BostonPads APIs or metadata)
+    if raw_avail and str(raw_avail).strip().lower() not in ['contact lister', 'missing', 'none']:
+        # If it's already a formatted string from a previous run, don't blindly re-lock if description says otherwise
+        low_av = str(raw_avail).lower()
+        if not low_av.startswith('available ') or any(f in low_av for f in ['01-01', '01-02', '11-01', '12-01', '06-01', '09-01']):
+            if any(w in low_av for w in ['now', 'immediate', 'today', 'asap', 'ready']):
+                return 'Available Now', 'immediate'
+            if '01-01' in low_av or '01-02' in low_av or 'jan 1' in low_av or 'jan 2' in low_av or 'jan 1st' in low_av:
+                return 'Available Jan 1, 2027', '2027-01'
+            if 'jan 20' in low_av:
+                return 'Available Jan 20, 2027', '2027-01'
+            if '11-01' in low_av or '11-05' in low_av or 'nov 1' in low_av or 'nov 15' in low_av or 'nov 14' in low_av:
+                return 'Available Nov 1, 2026', '2026-11'
+            if '12-01' in low_av or '12-02' in low_av or 'dec 1' in low_av or 'dec 20' in low_av:
+                return 'Available Dec 1, 2026', '2026-12'
+            if '06-01' in low_av or 'jun 1' in low_av:
+                return 'Available Jun 1, 2027', '2027-06'
+            if '09-01' in low_av or 'sep 1' in low_av or 'sept 1' in low_av:
+                return 'Available Sep 1, 2027', '2027-09'
+            if '08-01' in low_av or 'aug 1' in low_av:
+                return 'Available Aug 1, 2027', '2027-08'
+            if '02-01' in low_av or 'feb 1' in low_av:
+                return 'Available Feb 1, 2027', '2027-02'
+            if 'oct 3' in low_av or 'oct 2' in low_av:
+                return 'Available Now', 'immediate'
+
+    # 3. Extract from title & description text with precise date matching
     text_date_patterns = [
-        (r'\b(1/1|01/01|jan(?:uary)?\s*(?:1st|1|\b)|1-1|spring\s*(?:sublet|semester)?)\b', 'Available Jan 1, 2027', '2027-01'),
-        (r'\b(12/1|12/01|dec(?:ember)?\s*(?:1st|1|\b)|12-1|mid[\s-]dec(?:ember)?)\b', 'Available Dec 1, 2026', '2026-12'),
-        (r'\b(11/1|11/01|nov(?:ember)?\s*(?:1st|1|\b)|11-1|mid[\s-]nov(?:ember)?)\b', 'Available Nov 1, 2026', '2026-11'),
-        (r'\b(2/1|02/01|feb(?:ruary)?\s*(?:1st|1|\b))\b', 'Available Feb 1, 2027', '2027-02'),
-        (r'\b(3/1|03/01|mar(?:ch)?\s*(?:1st|1|\b))\b', 'Available Mar 1, 2027', '2027-03'),
-        (r'\b(4/1|04/01|apr(?:il)?\s*(?:1st|1|\b))\b', 'Available Apr 1, 2027', '2027-04'),
-        (r'\b(5/1|05/01|may\s*(?:1st|1|\b))\b', 'Available May 1, 2027', '2027-05'),
-        (r'\b(6/1|06/01|jun(?:e)?\s*(?:1st|1|\b)|summer\s*(?:sublet|lease)?)\b', 'Available Jun 1, 2027', '2027-06'),
-        (r'\b(7/1|07/01|jul(?:y)?\s*(?:1st|1|\b))\b', 'Available Jul 1, 2027', '2027-07'),
-        (r'\b(8/1|08/01|aug(?:ust)?\s*(?:1st|1|\b))\b', 'Available Aug 1, 2027', '2027-08'),
-        (r'\b(9/1|09/01|sep(?:t(?:ember)?)?\s*(?:1st|1|\b)|fall\s*(?:cycle|semester)?)\b', 'Available Sep 1, 2027', '2027-09'),
-        (r'\b(now|immediate(?:ly)?|asap|today|move[\s-]in\s*ready|ready\s*for\s*move)\b', 'Available Now', 'immediate'),
+        # Explicit Available Now in body
+        (r'\b(avail(?:able)?\s+now|immediate(?:ly)?\s+available|move[\s-]in\s+ready|ready\s+for\s+move[\s-]in|ready\s+for\s+immediate)\b', 'Available Now', 'immediate'),
+
+        # January 1 / Spring Semester (Disallowing 'Spring Hill', '1-1' apartment layouts, etc.)
+        (r'\b(?:(?:0?1/0?1|0?1-0?1)(?:/(?:20)?27)?|jan(?:uary)?\s*(?:0?1st|0?1\b|first)|spring\s+(?:semester|sublet|sublease|term|lease))\b', 'Available Jan 1, 2027', '2027-01'),
+
+        # December 1
+        (r'\b(?:(?:12/0?1|12-0?1)(?:/(?:20)?26)?|dec(?:ember)?\s*(?:0?1st|0?1\b|first)|mid[\s-]dec(?:ember)?)\b', 'Available Dec 1, 2026', '2026-12'),
+
+        # November 1
+        (r'\b(?:(?:11/0?1|11-0?1)(?:/(?:20)?26)?|nov(?:ember)?\s*(?:0?1st|0?1\b|first)|mid[\s-]nov(?:ember)?)\b', 'Available Nov 1, 2026', '2026-11'),
+
+        # February 1
+        (r'\b(?:(?:0?2/0?1|0?2-0?1)(?:/(?:20)?27)?|feb(?:ruary)?\s*(?:0?1st|0?1\b|first))\b', 'Available Feb 1, 2027', '2027-02'),
+
+        # March 1
+        (r'\b(?:(?:0?3/0?1|0?3-0?1)(?:/(?:20)?27)?|mar(?:ch)?\s*(?:0?1st|0?1\b|first))\b', 'Available Mar 1, 2027', '2027-03'),
+
+        # April 1
+        (r'\b(?:(?:0?4/0?1|0?4-0?1)(?:/(?:20)?27)?|apr(?:il)?\s*(?:0?1st|0?1\b|first))\b', 'Available Apr 1, 2027', '2027-04'),
+
+        # May 1
+        (r'\b(?:(?:0?5/0?1|0?5-0?1)(?:/(?:20)?27)?|may\s*(?:0?1st|0?1\b|first))\b', 'Available May 1, 2027', '2027-05'),
+
+        # June 1 / Summer
+        (r'\b(?:(?:0?6/0?1|0?6-0?1)(?:/(?:20)?27)?|jun(?:e)?\s*(?:0?1st|0?1\b|first)|summer\s+(?:sublet|sublease|lease|term))\b', 'Available Jun 1, 2027', '2027-06'),
+
+        # July 1
+        (r'\b(?:(?:0?7/0?1|0?7-0?1)(?:/(?:20)?27)?|jul(?:y)?\s*(?:0?1st|0?1\b|first))\b', 'Available Jul 1, 2027', '2027-07'),
+
+        # August 1
+        (r'\b(?:(?:0?8/0?1|0?8-0?1)(?:/(?:20)?27)?|aug(?:ust)?\s*(?:0?1st|0?1\b|first))\b', 'Available Aug 1, 2027', '2027-08'),
+
+        # September 1 / Fall Cycle
+        (r'\b(?:(?:0?9/0?1|0?9-0?1)(?:/(?:20)?27)?|sep(?:t(?:ember)?)?\s*(?:0?1st|0?1\b|first)|fall\s+(?:cycle|semester))\b', 'Available Sep 1, 2027', '2027-09'),
+
+        # General month move-ins if explicitly indicated
+        (r'\b(?:available\s+in\s+jan(?:uary)?|jan(?:uary)?\s+(?:move[\s-]in|start))\b', 'Available Jan 1, 2027', '2027-01'),
+        (r'\b(?:available\s+in\s+feb(?:ruary)?|feb(?:ruary)?\s+(?:move[\s-]in|start))\b', 'Available Feb 1, 2027', '2027-02'),
+        (r'\b(?:available\s+in\s+dec(?:ember)?|dec(?:ember)?\s+(?:move[\s-]in|start))\b', 'Available Dec 1, 2026', '2026-12'),
+
+        # General now/immediate indicators
+        (r'\b(now|immediate(?:ly)?|asap|today)\b', 'Available Now', 'immediate'),
         (r'\b(month\s*to\s*month|flexible\s*lease|flexible\s*move)\b', 'Flexible / Month-to-Month', 'flexible'),
     ]
 
@@ -181,7 +219,7 @@ def normalize_move_in_date(raw_avail, title, desc, rtype):
         if re.search(pat, comb, re.I):
             return label, period
 
-    # 3. Market reality:
+    # 4. Market reality:
     # Active single rooms and sublets with no future dates in Boston are immediate vacancies
     if rtype in ['room', 'sublet']:
         return 'Available Now', 'immediate'
