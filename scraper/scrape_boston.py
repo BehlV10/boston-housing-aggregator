@@ -172,7 +172,21 @@ def analyze_fees(title, body, explicit_fee_text=None):
     }
 
 
-def fetch_craigslist_detail_page(listing):
+def fetch_craigslist_detail_page(listing, existing_cache=None):
+    listing_id = listing['id']
+    now_iso = datetime.now(timezone.utc).isoformat()
+
+    # 1. Cache hit: if already scraped previously, reuse all rich details!
+    if existing_cache and listing_id in existing_cache:
+        cached = existing_cache[listing_id]
+        if cached.get('images') and len(cached['images']) > 0 and cached.get('description'):
+            return {
+                **cached,
+                'price': listing.get('price') or cached.get('price'),
+                'last_seen': now_iso,
+                'first_seen': cached.get('first_seen', now_iso)
+            }
+
     url = listing['url']
     try:
         req = urllib.request.Request(url, headers=HEADERS)
@@ -234,6 +248,8 @@ def fetch_craigslist_detail_page(listing):
 
             return {
                 **listing,
+                'first_seen': now_iso,
+                'last_seen': now_iso,
                 'bedrooms': beds,
                 'bathrooms': baths,
                 'sqft': sqft,
@@ -259,6 +275,8 @@ def fetch_craigslist_detail_page(listing):
         )
         return {
             **listing,
+            'first_seen': now_iso,
+            'last_seen': now_iso,
             'rental_type': rental_type,
             'rental_type_label': rental_label,
             'images': [
@@ -271,7 +289,7 @@ def fetch_craigslist_detail_page(listing):
         }
 
 
-def scrape_craigslist_boston(limit=75):
+def scrape_craigslist_boston(limit=100, existing_cache=None):
     print("Scraping Craigslist Boston Apartments (boston.craigslist.org/search/apa)...")
     search_urls = [
         "https://boston.craigslist.org/search/apa",
@@ -354,14 +372,16 @@ def scrape_craigslist_boston(limit=75):
             'address': clean_loc
         })
 
-    print(f"Fetching detail pages for top {len(raw_listings)} Craigslist apartments with ThreadPoolExecutor...")
+    cached_count = sum(1 for r in raw_listings if existing_cache and r['id'] in existing_cache)
+    print(f"Detail processing: {cached_count} cached (0 HTTP calls), {len(raw_listings) - cached_count} new to fetch...")
+    fetcher = lambda l: fetch_craigslist_detail_page(l, existing_cache)
     with ThreadPoolExecutor(max_workers=8) as executor:
-        detailed_listings = list(executor.map(fetch_craigslist_detail_page, raw_listings))
+        detailed_listings = list(executor.map(fetcher, raw_listings))
 
     return detailed_listings
 
 
-def scrape_craigslist_rooms_boston(limit=35):
+def scrape_craigslist_rooms_boston(limit=40, existing_cache=None):
     print("Scraping Craigslist Boston Rooms & Shares (boston.craigslist.org/search/roo)...")
     url = "https://boston.craigslist.org/search/roo"
     req = urllib.request.Request(url, headers=HEADERS)
@@ -434,13 +454,14 @@ def scrape_craigslist_rooms_boston(limit=35):
             'address': clean_loc
         })
 
+    fetcher = lambda l: fetch_craigslist_detail_page(l, existing_cache)
     with ThreadPoolExecutor(max_workers=6) as executor:
-        detailed_listings = list(executor.map(fetch_craigslist_detail_page, raw_listings))
+        detailed_listings = list(executor.map(fetcher, raw_listings))
 
     return detailed_listings
 
 
-def scrape_craigslist_sublets_boston(limit=35):
+def scrape_craigslist_sublets_boston(limit=40, existing_cache=None):
     print("Scraping Craigslist Boston Sublets & Temporary (boston.craigslist.org/search/sub)...")
     url = "https://boston.craigslist.org/search/sub"
     req = urllib.request.Request(url, headers=HEADERS)
@@ -513,8 +534,9 @@ def scrape_craigslist_sublets_boston(limit=35):
             'address': clean_loc
         })
 
+    fetcher = lambda l: fetch_craigslist_detail_page(l, existing_cache)
     with ThreadPoolExecutor(max_workers=6) as executor:
-        detailed_listings = list(executor.map(fetch_craigslist_detail_page, raw_listings))
+        detailed_listings = list(executor.map(fetcher, raw_listings))
 
     return detailed_listings
 
@@ -896,35 +918,7 @@ def get_additional_boston_aggregations():
 def main():
     os.makedirs(OUTPUT_DIR, exist_ok=True)
     
-    # 1. Scrape Craigslist Boston Apartments
-    craigslist_listings = []
-    try:
-        craigslist_listings = scrape_craigslist_boston(limit=75)
-    except Exception as e:
-        print("Warning: Live Craigslist scrape encountered error:", e)
-
-    # 2. Scrape Craigslist Boston Rooms & Shares
-    craigslist_rooms = []
-    try:
-        craigslist_rooms = scrape_craigslist_rooms_boston(limit=35)
-    except Exception as e:
-        print("Warning: Craigslist Rooms scrape encountered error:", e)
-
-    # 3. Scrape Craigslist Boston Sublets & Temporary
-    craigslist_sublets = []
-    try:
-        craigslist_sublets = scrape_craigslist_sublets_boston(limit=35)
-    except Exception as e:
-        print("Warning: Craigslist Sublets scrape encountered error:", e)
-
-    # 4. Scrape Boston Pads across Greater Boston
-    boston_pads_listings = []
-    try:
-        boston_pads_listings = scrape_boston_pads(per_city_limit=35)
-    except Exception as e:
-        print("Warning: Boston Pads scrape encountered error:", e)
-
-    # Load existing if available to preserve history
+    # Load existing historical database first to enable caching and incremental growth
     existing_map = {}
     if os.path.exists(OUTPUT_FILE):
         try:
@@ -932,28 +926,89 @@ def main():
                 old_data = json.load(f)
                 for item in old_data:
                     existing_map[item['id']] = item
-        except Exception:
-            pass
+            print(f"Loaded {len(existing_map)} previously cached historical listings.")
+        except Exception as e:
+            print("Notice: Starting new listings archive:", e)
+
+    now_iso = datetime.now(timezone.utc).isoformat()
+
+    # 1. Scrape Craigslist Boston Apartments (with cache hit bypass)
+    craigslist_listings = []
+    try:
+        craigslist_listings = scrape_craigslist_boston(limit=100, existing_cache=existing_map)
+    except Exception as e:
+        print("Warning: Live Craigslist scrape encountered error:", e)
+
+    # 2. Scrape Craigslist Boston Rooms & Shares
+    craigslist_rooms = []
+    try:
+        craigslist_rooms = scrape_craigslist_rooms_boston(limit=40, existing_cache=existing_map)
+    except Exception as e:
+        print("Warning: Craigslist Rooms scrape encountered error:", e)
+
+    # 3. Scrape Craigslist Boston Sublets & Temporary
+    craigslist_sublets = []
+    try:
+        craigslist_sublets = scrape_craigslist_sublets_boston(limit=40, existing_cache=existing_map)
+    except Exception as e:
+        print("Warning: Craigslist Sublets scrape encountered error:", e)
+
+    # 4. Scrape Boston Pads across Greater Boston
+    boston_pads_listings = []
+    try:
+        boston_pads_listings = scrape_boston_pads(per_city_limit=45)
+    except Exception as e:
+        print("Warning: Boston Pads scrape encountered error:", e)
 
     # Merge Craigslist Apartments
     for item in craigslist_listings:
-        existing_map[item['id']] = item
+        existing = existing_map.get(item['id'], {})
+        existing_map[item['id']] = {
+            **existing,
+            **item,
+            'first_seen': existing.get('first_seen', item.get('first_seen', now_iso)),
+            'last_seen': now_iso
+        }
 
     # Merge Craigslist Rooms
     for item in craigslist_rooms:
-        existing_map[item['id']] = item
+        existing = existing_map.get(item['id'], {})
+        existing_map[item['id']] = {
+            **existing,
+            **item,
+            'first_seen': existing.get('first_seen', item.get('first_seen', now_iso)),
+            'last_seen': now_iso
+        }
 
     # Merge Craigslist Sublets
     for item in craigslist_sublets:
-        existing_map[item['id']] = item
+        existing = existing_map.get(item['id'], {})
+        existing_map[item['id']] = {
+            **existing,
+            **item,
+            'first_seen': existing.get('first_seen', item.get('first_seen', now_iso)),
+            'last_seen': now_iso
+        }
 
     # Merge Boston Pads
     for item in boston_pads_listings:
-        existing_map[item['id']] = item
+        existing = existing_map.get(item['id'], {})
+        existing_map[item['id']] = {
+            **existing,
+            **item,
+            'first_seen': existing.get('first_seen', item.get('first_seen', now_iso)),
+            'last_seen': now_iso
+        }
 
     # Merge Redfin, Zillow & FB Marketplace
     for item in get_additional_boston_aggregations():
-        existing_map[item['id']] = item
+        existing = existing_map.get(item['id'], {})
+        existing_map[item['id']] = {
+            **existing,
+            **item,
+            'first_seen': existing.get('first_seen', now_iso),
+            'last_seen': now_iso
+        }
 
     all_listings = list(existing_map.values())
     

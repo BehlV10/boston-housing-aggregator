@@ -25,22 +25,47 @@ export default function App() {
     maxPrice: 6000,
   });
 
-  // Load aggregated listings
+  const [visibleCount, setVisibleCount] = useState(24);
+
+  // Load aggregated listings (Instant localStorage cache + background network fetch)
   useEffect(() => {
     async function loadData() {
+      // 1. Instant Cache Load from localStorage for 0ms startup
       try {
-        setLoading(true);
-        // Using relative path for GitHub Pages compatibility
+        const cachedListings = localStorage.getItem('boston_housing_cache');
+        const cachedMeta = localStorage.getItem('boston_housing_meta');
+        if (cachedListings) {
+          const parsed = JSON.parse(cachedListings);
+          if (Array.isArray(parsed) && parsed.length > 0) {
+            setListings(parsed);
+            setLoading(false);
+          }
+        }
+        if (cachedMeta) {
+          setMetadata(JSON.parse(cachedMeta));
+        }
+      } catch (e) {
+        // Ignore localStorage error
+      }
+
+      // 2. Fetch fresh listings from server (SWR pattern)
+      try {
         const listingsRes = await fetch('./data/listings.json');
         if (listingsRes.ok) {
           const data = await listingsRes.json();
           setListings(data);
+          try {
+            localStorage.setItem('boston_housing_cache', JSON.stringify(data));
+          } catch (e) {}
         }
 
         const metaRes = await fetch('./data/metadata.json');
         if (metaRes.ok) {
           const meta = await metaRes.json();
           setMetadata(meta);
+          try {
+            localStorage.setItem('boston_housing_meta', JSON.stringify(meta));
+          } catch (e) {}
         }
       } catch (err) {
         console.error('Failed to load listings data:', err);
@@ -50,6 +75,11 @@ export default function App() {
     }
     loadData();
   }, []);
+
+  // Reset pagination when filters or sort change
+  useEffect(() => {
+    setVisibleCount(24);
+  }, [filters, sortBy]);
 
   // Filter & Sort Logic
   const filteredListings = useMemo(() => {
@@ -105,11 +135,20 @@ export default function App() {
         return true;
       })
       .sort((a, b) => {
+        if (sortBy === 'newest') {
+          const dateA = a.first_seen ? new Date(a.first_seen).getTime() : 0;
+          const dateB = b.first_seen ? new Date(b.first_seen).getTime() : 0;
+          return dateB - dateA;
+        }
         if (sortBy === 'price-asc') return (a.price || 0) - (b.price || 0);
         if (sortBy === 'price-desc') return (b.price || 0) - (a.price || 0);
         return 0;
       });
   }, [listings, filters, sortBy]);
+
+  const displayedListings = useMemo(() => {
+    return filteredListings.slice(0, visibleCount);
+  }, [filteredListings, visibleCount]);
 
   return (
     <div className="min-h-screen flex flex-col bg-gray-50 text-gray-900">
@@ -201,11 +240,17 @@ export default function App() {
                 selectedListing={selectedListing}
                 onSelectListing={(listing) => {
                   setSelectedListing(listing);
-                  // Scroll card into view if needed
-                  const el = document.getElementById(`card-${listing.id}`);
-                  if (el) {
-                    el.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+                  // Ensure card is in the visible batch
+                  const idx = filteredListings.findIndex((l) => l.id === listing.id);
+                  if (idx >= visibleCount) {
+                    setVisibleCount(idx + 12);
                   }
+                  setTimeout(() => {
+                    const el = document.getElementById(`card-${listing.id}`);
+                    if (el) {
+                      el.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+                    }
+                  }, 50);
                 }}
               />
             </div>
@@ -226,6 +271,7 @@ export default function App() {
                     onChange={(e) => setSortBy(e.target.value)}
                     className="bg-transparent font-bold text-gray-800 focus:outline-none cursor-pointer"
                   >
+                    <option value="newest">Newest Added</option>
                     <option value="price-asc">Price: Low to High</option>
                     <option value="price-desc">Price: High to Low</option>
                   </select>
@@ -242,6 +288,8 @@ export default function App() {
                         fee: 'all',
                         source: 'all',
                         bedrooms: 'all',
+                        rentalType: 'all',
+                        availableNow: false,
                         maxPrice: 6000,
                       })
                     }
@@ -251,16 +299,31 @@ export default function App() {
                   </button>
                 </div>
               ) : (
-                filteredListings.map((listing) => (
-                  <div id={`card-${listing.id}`} key={listing.id}>
-                    <ListingCard
-                      listing={listing}
-                      isSelected={selectedListing?.id === listing.id}
-                      onSelect={(item) => setSelectedListing(item)}
-                      onOpenDetails={(item) => setModalListing(item)}
-                    />
-                  </div>
-                ))
+                <>
+                  {displayedListings.map((listing) => (
+                    <div id={`card-${listing.id}`} key={listing.id}>
+                      <ListingCard
+                        listing={listing}
+                        isSelected={selectedListing?.id === listing.id}
+                        onSelect={(item) => setSelectedListing(item)}
+                        onOpenDetails={(item) => setModalListing(item)}
+                      />
+                    </div>
+                  ))}
+
+                  {/* Incremental Load More Button */}
+                  {visibleCount < filteredListings.length && (
+                    <button
+                      onClick={() => setVisibleCount((prev) => prev + 24)}
+                      className="w-full py-3.5 bg-white border border-gray-200 hover:border-boston-brick text-gray-800 hover:text-boston-brick font-bold rounded-2xl shadow-xs transition-all flex items-center justify-center gap-2 text-xs"
+                    >
+                      <span>Load 24 More Listings</span>
+                      <span className="text-gray-400 font-normal">
+                        (Showing {displayedListings.length} of {filteredListings.length})
+                      </span>
+                    </button>
+                  )}
+                </>
               )}
             </div>
           </div>
