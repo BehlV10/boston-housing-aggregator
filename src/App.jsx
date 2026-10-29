@@ -12,7 +12,7 @@ export default function App() {
   const [selectedListing, setSelectedListing] = useState(null);
   const [modalListing, setModalListing] = useState(null);
   const [viewMode, setViewMode] = useState('split'); // 'split' on desktop, 'map' or 'list' on mobile
-  const [sortBy, setSortBy] = useState('price-asc');
+  const [sortBy, setSortBy] = useState('newest');
 
   // Filters state
   const [filters, setFilters] = useState({
