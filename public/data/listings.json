@@ -48,7 +48,7 @@
     "sqft": null,
     "address": "Malden, MA",
     "first_seen": "2026-10-29T02:44:09.693010+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00",
+    "last_seen": "2026-10-29T03:09:21.693534+00:00",
     "availability": "Available Now",
     "images": [
       "https://images.craigslist.org/00X0X_iSsnRsYyo2D_0jm0ew_600x450.jpg",
@@ -78,7 +78,7 @@
     "sqft": null,
     "address": "Boston",
     "first_seen": "2026-10-29T02:44:10.421252+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00",
+    "last_seen": "2026-10-29T03:09:21.693534+00:00",
     "availability": "Contact Lister",
     "images": [
       "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80"
@@ -94,8 +94,8 @@
     "price": 600,
     "address": "Union Sq, Somerville, MA",
     "neighborhood": "Union Sq, Somerville, MA",
-    "lat": 42.3869,
-    "lng": -71.09926,
+    "lat": 42.37226,
+    "lng": -71.09382,
     "url": "https://www.reddit.com/r/bostonhousing/comments/1xfk0wx/union_sq_room_for_rent/",
     "source": "reddit",
     "source_label": "Reddit",
@@ -113,7 +113,7 @@
     "fee_badge": "No Broker Fee",
     "fee_details": "Direct community listing on Reddit (No Broker Fee).",
     "first_seen": "2026-10-26T01:42:42+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "cl-roo-ySWdadzd99JmWEjp",
@@ -157,7 +157,7 @@
     "sqft": null,
     "address": "Allston",
     "first_seen": "2026-10-29T02:44:09.391012+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00",
+    "last_seen": "2026-10-29T03:09:21.693534+00:00",
     "availability": "Available Nov 30",
     "images": [
       "https://images.craigslist.org/00L0L_hhDAjQpbXSn_0cN07c_600x450.jpg"
@@ -173,8 +173,8 @@
     "price": 660,
     "address": "Greater Boston, MA",
     "neighborhood": "Greater Boston, MA",
-    "lat": 42.36434,
-    "lng": -71.05866,
+    "lat": 42.36314,
+    "lng": -71.06626,
     "url": "https://www.reddit.com/r/bostonhousing/comments/1xgetae/private_room_near_northeastern_university_for_650/",
     "source": "reddit",
     "source_label": "Reddit",
@@ -192,7 +192,7 @@
     "fee_badge": "No Broker Fee",
     "fee_details": "Direct community listing on Reddit (No Broker Fee).",
     "first_seen": "2026-10-27T01:01:24+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "cl-roo-asQ92FLuCw36HZsT",
@@ -211,7 +211,7 @@
     "sqft": null,
     "address": "Boston",
     "first_seen": "2026-10-29T02:44:10.635149+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00",
+    "last_seen": "2026-10-29T03:09:21.693534+00:00",
     "availability": "Contact Lister",
     "images": [
       "https://images.craigslist.org/00T0T_5eidlfcKj0g_0CI0t2_600x450.jpg",
@@ -319,7 +319,7 @@
     "has_broker_fee": null,
     "fee_badge": "Fee Unspecified",
     "fee_details": "Contact lister for fee status",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00",
+    "last_seen": "2026-10-29T03:09:21.693534+00:00",
     "first_seen": "2026-10-29T02:44:12.174148+00:00"
   },
   {
@@ -368,7 +368,7 @@
     "sqft": null,
     "address": "Hyde Park Roslindale Quincy Milton West Roxbury Boston",
     "first_seen": "2026-10-29T02:44:10.936686+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00",
+    "last_seen": "2026-10-29T03:09:21.693534+00:00",
     "availability": "Contact Lister",
     "images": [
       "https://images.craigslist.org/00606_ghgDj5qBeMS_0t20CI_600x450.jpg",
@@ -434,7 +434,7 @@
     "has_broker_fee": null,
     "fee_badge": "Fee Unspecified",
     "fee_details": "Contact lister for fee status",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00",
+    "last_seen": "2026-10-29T03:09:21.693534+00:00",
     "first_seen": "2026-10-29T02:44:12.174075+00:00"
   },
   {
@@ -454,7 +454,7 @@
     "sqft": null,
     "address": "Brighton",
     "first_seen": "2026-10-29T02:44:10.120975+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00",
+    "last_seen": "2026-10-29T03:09:21.693534+00:00",
     "availability": "Available Nov 18",
     "images": [
       "https://images.craigslist.org/00808_9CECYRhWeXD_09c07g_600x450.jpg"
@@ -481,7 +481,7 @@
     "sqft": null,
     "address": "FRAMINGHAM",
     "first_seen": "2026-10-29T02:44:10.725099+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00",
+    "last_seen": "2026-10-29T03:09:21.693534+00:00",
     "availability": "Contact Lister",
     "images": [
       "https://images.craigslist.org/00J0J_jtitKCP6HEa_0ak06S_600x450.jpg"
@@ -522,7 +522,7 @@
     "has_broker_fee": null,
     "fee_badge": "Fee Unspecified",
     "fee_details": "Contact lister for fee status",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00",
+    "last_seen": "2026-10-29T03:09:21.693534+00:00",
     "first_seen": "2026-10-29T02:44:12.174092+00:00"
   },
   {
@@ -598,7 +598,7 @@
     "sqft": null,
     "address": "South End",
     "first_seen": "2026-10-29T02:44:09.664176+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00",
+    "last_seen": "2026-10-29T03:09:21.693534+00:00",
     "availability": "Available Oct 31",
     "images": [
       "https://images.craigslist.org/00x0x_il8ex4DRxLg_0hK0dj_600x450.jpg"
@@ -777,7 +777,7 @@
     "sqft": null,
     "address": "Waltham",
     "first_seen": "2026-10-29T02:44:09.949210+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00",
+    "last_seen": "2026-10-29T03:09:21.693534+00:00",
     "availability": "Contact Lister",
     "images": [
       "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80"
@@ -804,7 +804,7 @@
     "sqft": 2000,
     "address": "natick",
     "first_seen": "2026-10-29T02:44:10.139544+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00",
+    "last_seen": "2026-10-29T03:09:21.693534+00:00",
     "availability": "Available Now",
     "images": [
       "https://images.craigslist.org/00V0V_2UyJUP9kJAh_05r07g_600x450.jpg",
@@ -834,7 +834,7 @@
     "sqft": 956,
     "address": "Roxbury Crossing",
     "first_seen": "2026-10-29T02:44:11.944163+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00",
+    "last_seen": "2026-10-29T03:09:21.693534+00:00",
     "availability": "Available Now",
     "images": [
       "https://images.craigslist.org/00U0U_7gjulYpsOnt_0t20CI_600x450.jpg",
@@ -854,8 +854,8 @@
     "price": 900,
     "address": "Dorchester, Boston, MA",
     "neighborhood": "Dorchester, Boston, MA",
-    "lat": 42.30792,
-    "lng": -71.07024,
+    "lat": 42.30856,
+    "lng": -71.07488,
     "url": "https://www.reddit.com/r/bostonhousing/comments/1xgem1b/room_for_rent_large_room_in_dorchester_ma_900month/",
     "source": "reddit",
     "source_label": "Reddit",
@@ -873,7 +873,7 @@
     "fee_badge": "No Broker Fee",
     "fee_details": "Direct community listing on Reddit (No Broker Fee).",
     "first_seen": "2026-10-27T00:52:29+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "cl-roo-N6qAotc3utiD7BeF",
@@ -892,7 +892,7 @@
     "sqft": null,
     "address": "Boston",
     "first_seen": "2026-10-29T02:44:09.944608+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00",
+    "last_seen": "2026-10-29T03:09:21.693534+00:00",
     "availability": "Contact Lister",
     "images": [
       "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80"
@@ -908,8 +908,8 @@
     "price": 925,
     "address": "Medford, MA",
     "neighborhood": "Medford, MA",
-    "lat": 42.41224,
-    "lng": -71.10428,
+    "lat": 42.426,
+    "lng": -71.1014,
     "url": "https://www.reddit.com/r/bostonhousing/comments/1xh7nq9/lease_takeover_in_medfordtufts_area/",
     "source": "reddit",
     "source_label": "Reddit",
@@ -927,7 +927,7 @@
     "fee_badge": "No Broker Fee",
     "fee_details": "Direct community listing on Reddit (No Broker Fee).",
     "first_seen": "2026-10-27T23:00:47+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "cl-roo-xd9BRvfVv9myJinj",
@@ -1069,7 +1069,7 @@
     "sqft": null,
     "address": "Dorchester",
     "first_seen": "2026-10-29T02:44:09.385251+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00",
+    "last_seen": "2026-10-29T03:09:21.693534+00:00",
     "availability": "Contact Lister",
     "images": [
       "https://images.craigslist.org/00h0h_4UWuloEWl86_0t20CI_600x450.jpg",
@@ -1135,7 +1135,7 @@
     "sqft": null,
     "address": "ROXBURY",
     "first_seen": "2026-10-29T02:44:09.647278+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00",
+    "last_seen": "2026-10-29T03:09:21.693534+00:00",
     "availability": "Contact Lister",
     "images": [
       "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80"
@@ -1173,7 +1173,7 @@
     "has_broker_fee": null,
     "fee_badge": "Fee Unspecified",
     "fee_details": "Contact lister for fee status",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00",
+    "last_seen": "2026-10-29T03:09:21.693534+00:00",
     "first_seen": "2026-10-29T02:44:12.174111+00:00"
   },
   {
@@ -1193,7 +1193,7 @@
     "sqft": null,
     "address": "Dorchester",
     "first_seen": "2026-10-29T02:44:10.376354+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00",
+    "last_seen": "2026-10-29T03:09:21.693534+00:00",
     "availability": "Contact Lister",
     "images": [
       "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80"
@@ -1220,7 +1220,7 @@
     "sqft": null,
     "address": "Somerville",
     "first_seen": "2026-10-29T02:44:10.474796+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00",
+    "last_seen": "2026-10-29T03:09:21.693534+00:00",
     "availability": "Available Now",
     "images": [
       "https://images.craigslist.org/00s0s_3SqTbN5QUCq_09G07g_600x450.jpg",
@@ -1279,7 +1279,7 @@
     "sqft": null,
     "address": "Hyde Park Roslindale Quincy Milton West Roxbury Boston",
     "first_seen": "2026-10-29T02:44:10.926512+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00",
+    "last_seen": "2026-10-29T03:09:21.693534+00:00",
     "availability": "Contact Lister",
     "images": [
       "https://images.craigslist.org/00j0j_f7XG0LF1ZFI_0CI0t2_600x450.jpg",
@@ -1313,7 +1313,7 @@
     "sqft": null,
     "address": "Roxbury",
     "first_seen": "2026-10-29T02:44:10.683795+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00",
+    "last_seen": "2026-10-29T03:09:21.693534+00:00",
     "availability": "Available Jan 1",
     "images": [
       "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80"
@@ -1340,7 +1340,7 @@
     "sqft": null,
     "address": "Roxbury",
     "first_seen": "2026-10-29T02:44:10.685554+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00",
+    "last_seen": "2026-10-29T03:09:21.693534+00:00",
     "availability": "Contact Lister",
     "images": [
       "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80"
@@ -1430,7 +1430,7 @@
     "has_broker_fee": null,
     "fee_badge": "Fee Unspecified",
     "fee_details": "Contact lister for fee status",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00",
+    "last_seen": "2026-10-29T03:09:21.693534+00:00",
     "first_seen": "2026-10-29T02:44:12.174083+00:00"
   },
   {
@@ -1450,7 +1450,7 @@
     "sqft": null,
     "address": "Hyde Park",
     "first_seen": "2026-10-29T02:44:09.387998+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00",
+    "last_seen": "2026-10-29T03:09:21.693534+00:00",
     "availability": "Available Now",
     "images": [
       "https://images.craigslist.org/00h0h_dxgbCLwGmDr_0t20CI_600x450.jpg",
@@ -1484,7 +1484,7 @@
     "sqft": null,
     "address": "everett",
     "first_seen": "2026-10-29T02:44:10.157416+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00",
+    "last_seen": "2026-10-29T03:09:21.693534+00:00",
     "availability": "Available Oct 31",
     "images": [
       "https://images.craigslist.org/00Q0Q_e6POngIi07T_0js0pm_600x450.jpg",
@@ -1518,7 +1518,7 @@
     "sqft": null,
     "address": "Waltham",
     "first_seen": "2026-10-29T02:44:10.439138+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00",
+    "last_seen": "2026-10-29T03:09:21.693534+00:00",
     "availability": "Available Now",
     "images": [
       "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80"
@@ -1545,7 +1545,7 @@
     "sqft": null,
     "address": "Somerville",
     "first_seen": "2026-10-29T02:44:10.217546+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00",
+    "last_seen": "2026-10-29T03:09:21.693534+00:00",
     "availability": "Contact Lister",
     "images": [
       "https://images.craigslist.org/00505_7No0obaOOzl_0CI0t2_600x450.jpg",
@@ -1615,7 +1615,7 @@
     "has_broker_fee": null,
     "fee_badge": "Fee Unspecified",
     "fee_details": "Contact lister for fee status",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00",
+    "last_seen": "2026-10-29T03:09:21.693534+00:00",
     "first_seen": "2026-10-29T02:44:12.174116+00:00"
   },
   {
@@ -1778,7 +1778,7 @@
     "sqft": null,
     "address": "Allston",
     "first_seen": "2026-10-29T02:44:10.368972+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00",
+    "last_seen": "2026-10-29T03:09:21.693534+00:00",
     "availability": "Available Jan 1",
     "images": [
       "https://images.craigslist.org/00S0S_ikI92G7R17D_0CI0t2_600x450.jpg",
@@ -1812,7 +1812,7 @@
     "sqft": null,
     "address": "Jamaica Plain",
     "first_seen": "2026-10-29T02:44:10.448822+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00",
+    "last_seen": "2026-10-29T03:09:21.693534+00:00",
     "availability": "Available Now",
     "images": [
       "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80"
@@ -1828,7 +1828,7 @@
     "price": 1100,
     "address": "Allston, Boston, MA",
     "neighborhood": "Allston, Boston, MA",
-    "lat": 42.34998,
+    "lat": 42.3503,
     "lng": -71.12978,
     "url": "https://www.reddit.com/r/bostonhousing/comments/1xgq0uy/1100mo_furnished_private_room_in_allston_dec/",
     "source": "reddit",
@@ -1847,7 +1847,7 @@
     "fee_badge": "No Broker Fee",
     "fee_details": "Direct community listing on Reddit (No Broker Fee).",
     "first_seen": "2026-10-27T11:30:55+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "cl-sub-aKFD6FHJGrQ6mt6s",
@@ -1866,7 +1866,7 @@
     "sqft": null,
     "address": "Near Harvard Square",
     "first_seen": "2026-10-29T03:06:20.822400+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00",
+    "last_seen": "2026-10-29T03:09:21.693534+00:00",
     "availability": "Available Now",
     "images": [
       "https://images.craigslist.org/00t0t_3G8rYlq1aeV_0pO0CI_600x450.jpg",
@@ -1915,7 +1915,7 @@
     "has_broker_fee": null,
     "fee_badge": "Fee Unspecified",
     "fee_details": "Contact lister for fee status",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00",
+    "last_seen": "2026-10-29T03:09:21.693534+00:00",
     "first_seen": "2026-10-29T02:44:12.167098+00:00"
   },
   {
@@ -1935,7 +1935,7 @@
     "sqft": 1400,
     "address": "Brighton",
     "first_seen": "2026-10-29T02:44:10.640262+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00",
+    "last_seen": "2026-10-29T03:09:21.693534+00:00",
     "availability": "Available Nov 1",
     "images": [
       "https://images.craigslist.org/00z0z_9XOnv5sJvGb_0gw0b1_600x450.jpg",
@@ -2027,7 +2027,7 @@
     "sqft": 936,
     "address": "Jamaica Plain",
     "first_seen": "2026-10-29T02:44:06.326767+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00",
+    "last_seen": "2026-10-29T03:09:21.693534+00:00",
     "availability": "Contact Lister",
     "images": [
       "https://images.craigslist.org/00o0o_dbBzsanEenk_0fn08R_600x450.jpg",
@@ -2139,7 +2139,7 @@
     "has_broker_fee": null,
     "fee_badge": "Fee Unspecified",
     "fee_details": "Contact lister for fee status",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00",
+    "last_seen": "2026-10-29T03:09:21.693534+00:00",
     "first_seen": "2026-10-29T02:44:12.174128+00:00"
   },
   {
@@ -2159,7 +2159,7 @@
     "sqft": null,
     "address": "Chelsea, Cary Square",
     "first_seen": "2026-10-29T02:44:09.675245+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00",
+    "last_seen": "2026-10-29T03:09:21.693534+00:00",
     "availability": "Contact Lister",
     "images": [
       "https://images.craigslist.org/00M0M_gPj3dRGprZF_0t20CI_600x450.jpg",
@@ -2193,7 +2193,7 @@
     "sqft": null,
     "address": "Dracut/Methuen Line",
     "first_seen": "2026-10-29T02:44:09.923362+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00",
+    "last_seen": "2026-10-29T03:09:21.693534+00:00",
     "availability": "Contact Lister",
     "images": [
       "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80"
@@ -2220,7 +2220,7 @@
     "sqft": null,
     "address": "metro west",
     "first_seen": "2026-10-29T02:44:10.185255+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00",
+    "last_seen": "2026-10-29T03:09:21.693534+00:00",
     "availability": "Available Now",
     "images": [
       "https://images.craigslist.org/00k0k_gKtuixCVaLd_0CI0t2_600x450.jpg",
@@ -2254,7 +2254,7 @@
     "sqft": null,
     "address": "Medford",
     "first_seen": "2026-10-29T02:44:10.899825+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00",
+    "last_seen": "2026-10-29T03:09:21.693534+00:00",
     "availability": "Available Oct 30",
     "images": [
       "https://images.craigslist.org/00I0I_ikfo7ccz5qL_0aH0ew_600x450.jpg",
@@ -2288,7 +2288,7 @@
     "sqft": null,
     "address": "Medford",
     "first_seen": "2026-10-29T02:44:11.938497+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00",
+    "last_seen": "2026-10-29T03:09:21.693534+00:00",
     "availability": "Available Oct 30",
     "images": [
       "https://images.craigslist.org/00I0I_ikfo7ccz5qL_0aH0ew_600x450.jpg",
@@ -2336,7 +2336,7 @@
     "has_broker_fee": null,
     "fee_badge": "Fee Unspecified",
     "fee_details": "Contact lister for fee status",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00",
+    "last_seen": "2026-10-29T03:09:21.693534+00:00",
     "first_seen": "2026-10-29T02:44:12.167079+00:00"
   },
   {
@@ -2356,7 +2356,7 @@
     "sqft": 1200,
     "address": "Allston",
     "first_seen": "2026-10-29T02:44:10.189624+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00",
+    "last_seen": "2026-10-29T03:09:21.693534+00:00",
     "availability": "Available Nov 1",
     "images": [
       "https://images.craigslist.org/01616_aAkYVSDqFN3_0nm0hw_600x450.jpg",
@@ -2390,7 +2390,7 @@
     "sqft": null,
     "address": "boston/cambridge/brookline",
     "first_seen": "2026-10-29T02:44:09.638450+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00",
+    "last_seen": "2026-10-29T03:09:21.693534+00:00",
     "availability": "Contact Lister",
     "images": [
       "https://images.craigslist.org/00d0d_g8ttk8B5BHQ_0CI0t2_600x450.jpg",
@@ -2424,7 +2424,7 @@
     "sqft": 1400,
     "address": "boston/cambridge/brookline",
     "first_seen": "2026-10-29T02:44:09.382085+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00",
+    "last_seen": "2026-10-29T03:09:21.693534+00:00",
     "availability": "Contact Lister",
     "images": [
       "https://images.craigslist.org/00r0r_5H6eq2RrHRC_0gs09f_600x450.jpg",
@@ -2483,7 +2483,7 @@
     "sqft": null,
     "address": "Bedford",
     "first_seen": "2026-10-29T02:44:10.645860+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00",
+    "last_seen": "2026-10-29T03:09:21.693534+00:00",
     "availability": "Contact Lister",
     "images": [
       "https://images.craigslist.org/00U0U_hfy4wjLZZKr_0t20CI_600x450.jpg",
@@ -2619,7 +2619,7 @@
     "has_broker_fee": null,
     "fee_badge": "Fee Unspecified",
     "fee_details": "Contact lister for fee status",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00",
+    "last_seen": "2026-10-29T03:09:21.693534+00:00",
     "first_seen": "2026-10-29T02:44:12.174185+00:00"
   },
   {
@@ -2647,7 +2647,7 @@
     "fee_details": "Roommate share. Zero fees or application costs.",
     "address": "Mass Ave & Garden St, Cambridge, MA 02138",
     "first_seen": "2026-10-29T02:44:03.608907+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "cl-roo-NMjcTpVdKDyxz3j8",
@@ -2666,7 +2666,7 @@
     "sqft": null,
     "address": "Brighton",
     "first_seen": "2026-10-29T02:44:09.680794+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00",
+    "last_seen": "2026-10-29T03:09:21.693534+00:00",
     "availability": "Available Now",
     "images": [
       "https://images.craigslist.org/01212_eqT9fArNIll_09G07g_600x450.jpg",
@@ -2732,7 +2732,7 @@
     "sqft": null,
     "address": "SOMERVILLE/CAMBRIDGE",
     "first_seen": "2026-10-29T02:44:11.947262+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00",
+    "last_seen": "2026-10-29T03:09:21.693534+00:00",
     "availability": "Contact Lister",
     "images": [
       "https://images.craigslist.org/00a0a_gPCOChs8385_0t20CI_600x450.jpg",
@@ -2780,7 +2780,7 @@
     "has_broker_fee": null,
     "fee_badge": "Fee Unspecified",
     "fee_details": "Contact lister for fee status",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00",
+    "last_seen": "2026-10-29T03:09:21.693534+00:00",
     "first_seen": "2026-10-29T02:44:12.167142+00:00"
   },
   {
@@ -2809,7 +2809,7 @@
     "has_broker_fee": null,
     "fee_badge": "Fee Unspecified",
     "fee_details": "Contact lister for fee status",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00",
+    "last_seen": "2026-10-29T03:09:21.693534+00:00",
     "first_seen": "2026-10-29T02:44:12.174134+00:00"
   },
   {
@@ -2902,7 +2902,7 @@
     "has_broker_fee": null,
     "fee_badge": "Fee Unspecified",
     "fee_details": "Contact lister for fee status",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00",
+    "last_seen": "2026-10-29T03:09:21.693534+00:00",
     "first_seen": "2026-10-29T02:44:12.174162+00:00",
     "original_rate_note": "$335/week"
   },
@@ -2923,7 +2923,7 @@
     "sqft": null,
     "address": "boston/cambridge/brookline",
     "first_seen": "2026-10-29T02:44:08.170386+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00",
+    "last_seen": "2026-10-29T03:09:21.693534+00:00",
     "availability": "Contact Lister",
     "images": [
       "https://images.craigslist.org/00A0A_2Kq8Ee6fEmP_0co08g_600x450.jpg",
@@ -2966,7 +2966,7 @@
     "fee_details": "Broker fee applies",
     "address": "SOMERVILLE, Somerville, MA",
     "first_seen": "2026-10-29T02:44:03.608907+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "cl-roo-7twRsfj9XsrPSHpX",
@@ -3045,7 +3045,7 @@
     "has_broker_fee": null,
     "fee_badge": "Fee Unspecified",
     "fee_details": "Contact lister for fee status",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00",
+    "last_seen": "2026-10-29T03:09:21.693534+00:00",
     "first_seen": "2026-10-29T02:44:12.167106+00:00"
   },
   {
@@ -3077,7 +3077,7 @@
     "has_broker_fee": null,
     "fee_badge": "Fee Unspecified",
     "fee_details": "Contact lister for fee status",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00",
+    "last_seen": "2026-10-29T03:09:21.693534+00:00",
     "first_seen": "2026-10-29T02:44:12.174156+00:00"
   },
   {
@@ -3111,7 +3111,7 @@
     "has_broker_fee": null,
     "fee_badge": "Fee Unspecified",
     "fee_details": "Contact lister for fee status",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00",
+    "last_seen": "2026-10-29T03:09:21.693534+00:00",
     "first_seen": "2026-10-29T02:44:12.174173+00:00"
   },
   {
@@ -3163,7 +3163,7 @@
     "sqft": null,
     "address": "boston/cambridge/brookline",
     "first_seen": "2026-10-29T02:44:07.603747+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00",
+    "last_seen": "2026-10-29T03:09:21.693534+00:00",
     "availability": "Contact Lister",
     "images": [
       "https://images.craigslist.org/00Q0Q_kSgvXCWUENY_0t20CI_600x450.jpg",
@@ -3197,7 +3197,7 @@
     "sqft": null,
     "address": "north shore",
     "first_seen": "2026-10-29T02:44:07.088040+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00",
+    "last_seen": "2026-10-29T03:09:21.693534+00:00",
     "availability": "Available Now",
     "images": [
       "https://images.craigslist.org/00r0r_gELT6ClGTEk_0lM0t2_600x450.jpg",
@@ -3231,7 +3231,7 @@
     "sqft": null,
     "address": "boston/cambridge/brookline",
     "first_seen": "2026-10-29T02:44:07.703742+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00",
+    "last_seen": "2026-10-29T03:09:21.693534+00:00",
     "availability": "Available Now",
     "images": [
       "https://images.craigslist.org/00r0r_gELT6ClGTEk_0lM0t2_600x450.jpg",
@@ -3265,7 +3265,7 @@
     "sqft": 1300,
     "address": "cambridge",
     "first_seen": "2026-10-29T02:44:09.382215+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00",
+    "last_seen": "2026-10-29T03:09:21.693534+00:00",
     "availability": "Available Now",
     "images": [
       "https://images.craigslist.org/00A0A_8bsFIvXogHg_0nm0hw_600x450.jpg",
@@ -3308,7 +3308,7 @@
     "fee_details": "No Fee",
     "address": "Medford - Medford Square, Medford, MA",
     "first_seen": "2026-10-29T02:44:03.608907+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "cl-pXpgNWWHWjRLX59Q",
@@ -3327,7 +3327,7 @@
     "sqft": null,
     "address": "north shore",
     "first_seen": "2026-10-29T02:44:06.555608+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00",
+    "last_seen": "2026-10-29T03:09:21.693534+00:00",
     "availability": "Available Now",
     "images": [
       "https://images.craigslist.org/00y0y_hcxiLYJx8XO_03S05a_600x450.jpg",
@@ -3361,7 +3361,7 @@
     "sqft": null,
     "address": "north shore",
     "first_seen": "2026-10-29T02:44:06.615767+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00",
+    "last_seen": "2026-10-29T03:09:21.693534+00:00",
     "availability": "Available Now",
     "images": [
       "https://images.craigslist.org/00y0y_hcxiLYJx8XO_03S05a_600x450.jpg",
@@ -3395,7 +3395,7 @@
     "sqft": null,
     "address": "north shore",
     "first_seen": "2026-10-29T02:44:06.912921+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00",
+    "last_seen": "2026-10-29T03:09:21.693534+00:00",
     "availability": "Available Now",
     "images": [
       "https://images.craigslist.org/00d0d_3KLlWs1Jvpr_03S05a_600x450.jpg",
@@ -3429,7 +3429,7 @@
     "sqft": null,
     "address": "north shore",
     "first_seen": "2026-10-29T02:44:06.947873+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00",
+    "last_seen": "2026-10-29T03:09:21.693534+00:00",
     "availability": "Available Now",
     "images": [
       "https://images.craigslist.org/00d0d_3KLlWs1Jvpr_03S05a_600x450.jpg",
@@ -3463,7 +3463,7 @@
     "sqft": null,
     "address": "boston/cambridge/brookline",
     "first_seen": "2026-10-29T02:44:07.251866+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00",
+    "last_seen": "2026-10-29T03:09:21.693534+00:00",
     "availability": "Available Now",
     "images": [
       "https://images.craigslist.org/00e0e_clfedmhLpGz_0CI0pO_600x450.jpg",
@@ -3497,7 +3497,7 @@
     "sqft": null,
     "address": "boston/cambridge/brookline",
     "first_seen": "2026-10-29T02:44:07.361423+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00",
+    "last_seen": "2026-10-29T03:09:21.693534+00:00",
     "availability": "Available Now",
     "images": [
       "https://images.craigslist.org/00y0y_hcxiLYJx8XO_03S05a_600x450.jpg",
@@ -3531,7 +3531,7 @@
     "sqft": null,
     "address": "boston/cambridge/brookline",
     "first_seen": "2026-10-29T02:44:07.625486+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00",
+    "last_seen": "2026-10-29T03:09:21.693534+00:00",
     "availability": "Available Now",
     "images": [
       "https://images.craigslist.org/00z0z_gRvty3tlkfO_03S05a_600x450.jpg",
@@ -3565,7 +3565,7 @@
     "sqft": null,
     "address": "boston/cambridge/brookline",
     "first_seen": "2026-10-29T02:44:07.684893+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00",
+    "last_seen": "2026-10-29T03:09:21.693534+00:00",
     "availability": "Available Now",
     "images": [
       "https://images.craigslist.org/00d0d_3KLlWs1Jvpr_03S05a_600x450.jpg",
@@ -3599,7 +3599,7 @@
     "sqft": null,
     "address": "boston/cambridge/brookline",
     "first_seen": "2026-10-29T02:44:07.883959+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00",
+    "last_seen": "2026-10-29T03:09:21.693534+00:00",
     "availability": "Contact Lister",
     "images": [
       "https://images.craigslist.org/00U0U_5UR8fqUij4U_0fu0bC_600x450.jpg",
@@ -3643,7 +3643,7 @@
     "has_broker_fee": null,
     "fee_badge": "Fee Unspecified",
     "fee_details": "Contact lister for fee status",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00",
+    "last_seen": "2026-10-29T03:09:21.693534+00:00",
     "first_seen": "2026-10-29T02:44:12.167157+00:00"
   },
   {
@@ -3663,7 +3663,7 @@
     "sqft": null,
     "address": "Cambridge",
     "first_seen": "2026-10-29T02:44:09.393929+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00",
+    "last_seen": "2026-10-29T03:09:21.693534+00:00",
     "availability": "Available Now",
     "images": [
       "https://images.craigslist.org/01414_igk2E1dHz9l_0gw0co_600x450.jpg",
@@ -3697,7 +3697,7 @@
     "sqft": 436,
     "address": "Framingham",
     "first_seen": "2026-10-29T02:44:05.433048+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00",
+    "last_seen": "2026-10-29T03:09:21.693534+00:00",
     "availability": "Contact Lister",
     "images": [
       "https://images.craigslist.org/00C0C_l10aqO96Pdq_0jm0aD_600x450.jpg",
@@ -3745,7 +3745,7 @@
     "has_broker_fee": null,
     "fee_badge": "Fee Unspecified",
     "fee_details": "Contact lister for fee status",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00",
+    "last_seen": "2026-10-29T03:09:21.693534+00:00",
     "first_seen": "2026-10-29T02:44:12.174191+00:00",
     "original_rate_note": "$375/week"
   },
@@ -3766,7 +3766,7 @@
     "sqft": null,
     "address": "north shore",
     "first_seen": "2026-10-29T02:44:07.976900+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00",
+    "last_seen": "2026-10-29T03:09:21.693534+00:00",
     "availability": "Contact Lister",
     "images": [
       "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80"
@@ -3793,7 +3793,7 @@
     "sqft": null,
     "address": "boston/cambridge/brookline",
     "first_seen": "2026-10-29T02:44:08.179995+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00",
+    "last_seen": "2026-10-29T03:09:21.693534+00:00",
     "availability": "Available Now",
     "images": [
       "https://images.craigslist.org/01515_8c2BE8fJhAa_0CI0pO_600x450.jpg",
@@ -3827,7 +3827,7 @@
     "sqft": null,
     "address": "Melrose",
     "first_seen": "2026-10-29T02:44:08.126046+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00",
+    "last_seen": "2026-10-29T03:09:21.693534+00:00",
     "availability": "Available Dec 1",
     "images": [
       "https://images.craigslist.org/00V0V_kj7bKbJv7Vr_0gw09i_600x450.jpg",
@@ -3861,7 +3861,7 @@
     "sqft": null,
     "address": "boston/cambridge/brookline",
     "first_seen": "2026-10-29T02:44:07.890171+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00",
+    "last_seen": "2026-10-29T03:09:21.693534+00:00",
     "availability": "Contact Lister",
     "images": [
       "https://images.craigslist.org/00303_4poZr8WrQF5_0fu0bC_600x450.jpg",
@@ -3936,7 +3936,7 @@
     "fee_details": "No Fee",
     "address": "Brookline - Longwood Area, Brookline, MA",
     "first_seen": "2026-10-29T02:44:03.608907+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "cl-WC7N8Swvqnqi8ELh",
@@ -3992,7 +3992,7 @@
     "has_broker_fee": null,
     "fee_badge": "Fee Unspecified",
     "fee_details": "Contact lister for fee status",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00",
+    "last_seen": "2026-10-29T03:09:21.693534+00:00",
     "first_seen": "2026-10-29T02:44:12.174064+00:00"
   },
   {
@@ -4012,7 +4012,7 @@
     "sqft": null,
     "address": "Downtown North Andover",
     "first_seen": "2026-10-29T02:44:07.351325+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00",
+    "last_seen": "2026-10-29T03:09:21.693534+00:00",
     "availability": "Contact Lister",
     "images": [
       "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80"
@@ -4048,7 +4048,7 @@
     "fee_details": "No Fee",
     "address": "Medford - Medford Square, Medford, MA",
     "first_seen": "2026-10-29T02:44:03.608907+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "cl-sub-xTCFMwwAeiMPUBBd",
@@ -4081,7 +4081,7 @@
     "has_broker_fee": null,
     "fee_badge": "Fee Unspecified",
     "fee_details": "Contact lister for fee status",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00",
+    "last_seen": "2026-10-29T03:09:21.693534+00:00",
     "first_seen": "2026-10-29T02:44:12.174122+00:00"
   },
   {
@@ -4170,7 +4170,7 @@
     "fee_details": "No Fee",
     "address": "Allston, Boston, MA",
     "first_seen": "2026-10-29T03:04:39.795020+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "bp-8173256",
@@ -4198,7 +4198,7 @@
     "fee_details": "No Fee",
     "address": "Medford - Medford Square, Medford, MA",
     "first_seen": "2026-10-29T02:44:03.608907+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "bp-8177351",
@@ -4226,7 +4226,7 @@
     "fee_details": "No Fee",
     "address": "Medford - Medford Square, Medford, MA",
     "first_seen": "2026-10-29T02:44:03.608907+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "cl-phbR3VYdwk5mkzug",
@@ -4286,7 +4286,7 @@
     "fee_details": "No Fee",
     "address": "Brookline - Boston University, Brookline, MA",
     "first_seen": "2026-10-29T02:44:03.608907+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "cl-aT3Z1TgfrDKgqXik",
@@ -4305,7 +4305,7 @@
     "sqft": null,
     "address": "north shore",
     "first_seen": "2026-10-29T02:44:06.610722+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00",
+    "last_seen": "2026-10-29T03:09:21.693534+00:00",
     "availability": "Available Now",
     "images": [
       "https://images.craigslist.org/00b0b_2EcrvPIre9F_0CI0pO_600x450.jpg",
@@ -4339,7 +4339,7 @@
     "sqft": null,
     "address": "north shore",
     "first_seen": "2026-10-29T02:44:06.627337+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00",
+    "last_seen": "2026-10-29T03:09:21.693534+00:00",
     "availability": "Available Now",
     "images": [
       "https://images.craigslist.org/00b0b_2EcrvPIre9F_0CI0pO_600x450.jpg",
@@ -4373,7 +4373,7 @@
     "sqft": null,
     "address": "north shore",
     "first_seen": "2026-10-29T02:44:06.686195+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00",
+    "last_seen": "2026-10-29T03:09:21.693534+00:00",
     "availability": "Available Now",
     "images": [
       "https://images.craigslist.org/00505_cUtcL9rh8TM_0CI0pO_600x450.jpg",
@@ -4407,7 +4407,7 @@
     "sqft": null,
     "address": "north shore",
     "first_seen": "2026-10-29T02:44:06.841241+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00",
+    "last_seen": "2026-10-29T03:09:21.693534+00:00",
     "availability": "Available Now",
     "images": [
       "https://images.craigslist.org/00b0b_2EcrvPIre9F_0CI0pO_600x450.jpg",
@@ -4441,7 +4441,7 @@
     "sqft": null,
     "address": "boston/cambridge/brookline",
     "first_seen": "2026-10-29T02:44:07.198353+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00",
+    "last_seen": "2026-10-29T03:09:21.693534+00:00",
     "availability": "Available Now",
     "images": [
       "https://images.craigslist.org/00b0b_2EcrvPIre9F_0CI0pO_600x450.jpg",
@@ -4475,7 +4475,7 @@
     "sqft": null,
     "address": "boston/cambridge/brookline",
     "first_seen": "2026-10-29T02:44:07.316432+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00",
+    "last_seen": "2026-10-29T03:09:21.693534+00:00",
     "availability": "Available Now",
     "images": [
       "https://images.craigslist.org/00b0b_2EcrvPIre9F_0CI0pO_600x450.jpg",
@@ -4509,7 +4509,7 @@
     "sqft": null,
     "address": "boston/cambridge/brookline",
     "first_seen": "2026-10-29T02:44:07.423293+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00",
+    "last_seen": "2026-10-29T03:09:21.693534+00:00",
     "availability": "Available Now",
     "images": [
       "https://images.craigslist.org/00b0b_2EcrvPIre9F_0CI0pO_600x450.jpg",
@@ -4543,7 +4543,7 @@
     "sqft": null,
     "address": "boston/cambridge/brookline",
     "first_seen": "2026-10-29T02:44:07.586220+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00",
+    "last_seen": "2026-10-29T03:09:21.693534+00:00",
     "availability": "Available Now",
     "images": [
       "https://images.craigslist.org/00505_cUtcL9rh8TM_0CI0pO_600x450.jpg",
@@ -4615,7 +4615,7 @@
     "fee_details": "No Fee",
     "address": "Allston, Boston, MA",
     "first_seen": "2026-10-29T02:44:03.608907+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "bp-8177354",
@@ -4660,7 +4660,7 @@
     "sqft": null,
     "address": "boston/cambridge/brookline",
     "first_seen": "2026-10-29T02:44:07.459916+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00",
+    "last_seen": "2026-10-29T03:09:21.693534+00:00",
     "availability": "Contact Lister",
     "images": [
       "https://images.craigslist.org/00n0n_hRMq0u1Eskq_0lM0t2_600x450.jpg",
@@ -4703,7 +4703,7 @@
     "fee_details": "No Fee",
     "address": "Medford - Medford Square, Medford, MA",
     "first_seen": "2026-10-29T02:44:03.608907+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "bp-8178037",
@@ -4756,7 +4756,7 @@
     "fee_details": "No Fee",
     "address": "Cambridge - Mt. Auburn/Brattle/ Fresh Pond, Cambridge, MA",
     "first_seen": "2026-10-29T02:44:03.608907+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "cl-LMh16fkGmGNnpFq5",
@@ -4775,7 +4775,7 @@
     "sqft": null,
     "address": "Saugus",
     "first_seen": "2026-10-29T02:44:07.173011+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00",
+    "last_seen": "2026-10-29T03:09:21.693534+00:00",
     "availability": "Contact Lister",
     "images": [
       "https://images.craigslist.org/01212_9vCuvtoXow2_0iA0ww_600x450.jpg",
@@ -4818,7 +4818,7 @@
     "has_broker_fee": null,
     "fee_badge": "Fee Unspecified",
     "fee_details": "Contact lister for fee status",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00",
+    "last_seen": "2026-10-29T03:09:21.693534+00:00",
     "first_seen": "2026-10-29T02:44:12.167162+00:00"
   },
   {
@@ -4838,7 +4838,7 @@
     "sqft": null,
     "address": "Kendall Square",
     "first_seen": "2026-10-29T02:44:11.932799+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00",
+    "last_seen": "2026-10-29T03:09:21.693534+00:00",
     "availability": "Available Now",
     "images": [
       "https://images.craigslist.org/00g0g_8Dp6rejQL6K_08y06q_600x450.jpg",
@@ -4878,7 +4878,7 @@
     "fee_details": "No Fee",
     "address": "Brighton - Cleveland Circle, Boston, MA",
     "first_seen": "2026-10-29T02:44:03.608907+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "cl-wz7JVbz6zZvvhv1J",
@@ -4911,7 +4911,7 @@
     "has_broker_fee": null,
     "fee_badge": "Fee Unspecified",
     "fee_details": "Contact lister for fee status",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00",
+    "last_seen": "2026-10-29T03:09:21.693534+00:00",
     "first_seen": "2026-10-29T02:44:08.225112+00:00"
   },
   {
@@ -4966,7 +4966,7 @@
     "fee_details": "No Fee",
     "address": "Northeastern/Symphony, Boston, MA",
     "first_seen": "2026-10-29T03:04:39.795020+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "bp-8173609",
@@ -4994,7 +4994,7 @@
     "fee_details": "No Fee",
     "address": "Cambridge - Central Square/Cambridgeport, Cambridge, MA",
     "first_seen": "2026-10-29T03:04:39.795020+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "bp-8043523",
@@ -5022,7 +5022,7 @@
     "fee_details": "No Fee",
     "address": "Brookline - Washington Square, Brookline, MA",
     "first_seen": "2026-10-29T02:44:03.608907+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "bp-8172090",
@@ -5132,7 +5132,7 @@
     "fee_details": "No Fee",
     "address": "Brighton - Brighton Center, Boston, MA",
     "first_seen": "2026-10-29T03:04:39.795020+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "reddit_1xhuauh",
@@ -5140,8 +5140,8 @@
     "price": 2040,
     "address": "South Boston, MA",
     "neighborhood": "South Boston, MA",
-    "lat": 42.33532,
-    "lng": -71.04734,
+    "lat": 42.33852,
+    "lng": -71.04246,
     "url": "https://www.reddit.com/r/bostonhousing/comments/1xhuauh/master_bedroom_private_room_private_bathroom_walk/",
     "source": "reddit",
     "source_label": "Reddit",
@@ -5159,7 +5159,7 @@
     "fee_badge": "No Broker Fee",
     "fee_details": "Owner pays fee or no broker fee required",
     "first_seen": "2026-10-28T17:18:27+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "bp-8177740",
@@ -5187,7 +5187,7 @@
     "fee_details": "No Fee",
     "address": "Cambridge - Davis Square, Cambridge, MA",
     "first_seen": "2026-10-29T02:44:03.608907+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "bp-8177741",
@@ -5215,7 +5215,7 @@
     "fee_details": "No Fee",
     "address": "Cambridge - Davis Square, Cambridge, MA",
     "first_seen": "2026-10-29T02:44:03.608907+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "cl-JM1MKN6wpSRdedSx",
@@ -5234,7 +5234,7 @@
     "sqft": 730,
     "address": "Franklin",
     "first_seen": "2026-10-29T02:44:05.452184+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00",
+    "last_seen": "2026-10-29T03:09:21.693534+00:00",
     "availability": "Contact Lister",
     "images": [
       "https://images.craigslist.org/01717_7PlqC3bNYvY_0jm0cV_600x450.jpg",
@@ -5273,7 +5273,7 @@
     "fee_details": "No Fee",
     "address": "Brighton- Washington St./ Allston St., Boston, MA",
     "first_seen": "2026-10-29T03:04:39.795020+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "cl-9Mzf17nvozHwQqL8",
@@ -5292,7 +5292,7 @@
     "sqft": 800,
     "address": "Brockton",
     "first_seen": "2026-10-29T02:44:06.061998+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00",
+    "last_seen": "2026-10-29T03:09:21.693534+00:00",
     "availability": "Available Now",
     "images": [
       "https://images.craigslist.org/00W0W_la3ah4LIhK8_0CI0pO_600x450.jpg",
@@ -5326,7 +5326,7 @@
     "sqft": null,
     "address": "north shore",
     "first_seen": "2026-10-29T02:44:07.904622+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00",
+    "last_seen": "2026-10-29T03:09:21.693534+00:00",
     "availability": "Available Now",
     "images": [
       "https://images.craigslist.org/00h0h_8LLb5LOppyX_0lM0t2_600x450.jpg",
@@ -5528,7 +5528,7 @@
     "has_broker_fee": null,
     "fee_badge": "Fee Unspecified",
     "fee_details": "Contact lister for fee status",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00",
+    "last_seen": "2026-10-29T03:09:21.693534+00:00",
     "first_seen": "2026-10-29T02:44:12.174099+00:00"
   },
   {
@@ -5562,7 +5562,7 @@
     "has_broker_fee": null,
     "fee_badge": "Fee Unspecified",
     "fee_details": "Contact lister for fee status",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00",
+    "last_seen": "2026-10-29T03:09:21.693534+00:00",
     "first_seen": "2026-10-29T02:44:12.174105+00:00"
   },
   {
@@ -5591,7 +5591,7 @@
     "fee_details": "No Fee",
     "address": "Brighton - Cleveland Circle, Boston, MA",
     "first_seen": "2026-10-29T02:44:03.608907+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "bp-8171313",
@@ -5619,7 +5619,7 @@
     "fee_details": "No Fee",
     "address": "Brighton- Washington St./ Allston St., Boston, MA",
     "first_seen": "2026-10-29T02:44:03.608907+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "cl-2bo3VAwLkkaKeKBb",
@@ -5638,7 +5638,7 @@
     "sqft": 800,
     "address": "Quincy",
     "first_seen": "2026-10-29T02:44:05.175073+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00",
+    "last_seen": "2026-10-29T03:09:21.693534+00:00",
     "availability": "Contact Lister",
     "images": [
       "https://images.craigslist.org/00g0g_iuK5otRkxjl_0hq0d4_600x450.jpg",
@@ -5666,7 +5666,7 @@
     "sqft": null,
     "address": "north shore",
     "first_seen": "2026-10-29T02:44:06.877730+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00",
+    "last_seen": "2026-10-29T03:09:21.693534+00:00",
     "availability": "Available Now",
     "images": [
       "https://images.craigslist.org/01414_hk0tA2MHeNx_0CI0pO_600x450.jpg",
@@ -5700,7 +5700,7 @@
     "sqft": null,
     "address": "north shore",
     "first_seen": "2026-10-29T02:44:06.904573+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00",
+    "last_seen": "2026-10-29T03:09:21.693534+00:00",
     "availability": "Available Now",
     "images": [
       "https://images.craigslist.org/01414_hk0tA2MHeNx_0CI0pO_600x450.jpg",
@@ -5734,7 +5734,7 @@
     "sqft": null,
     "address": "boston/cambridge/brookline",
     "first_seen": "2026-10-29T02:44:07.592084+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00",
+    "last_seen": "2026-10-29T03:09:21.693534+00:00",
     "availability": "Available Now",
     "images": [
       "https://images.craigslist.org/01414_hk0tA2MHeNx_0CI0pO_600x450.jpg",
@@ -5768,7 +5768,7 @@
     "sqft": null,
     "address": "boston/cambridge/brookline",
     "first_seen": "2026-10-29T02:44:07.597606+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00",
+    "last_seen": "2026-10-29T03:09:21.693534+00:00",
     "availability": "Available Now",
     "images": [
       "https://images.craigslist.org/01616_3KhZuTz2zdN_0CI0pO_600x450.jpg",
@@ -5802,7 +5802,7 @@
     "sqft": null,
     "address": "boston/cambridge/brookline",
     "first_seen": "2026-10-29T02:44:08.160542+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00",
+    "last_seen": "2026-10-29T03:09:21.693534+00:00",
     "availability": "Available Now",
     "images": [
       "https://images.craigslist.org/00h0h_8LLb5LOppyX_0lM0t2_600x450.jpg",
@@ -5864,7 +5864,7 @@
     "sqft": 500,
     "address": "boston/cambridge/brookline",
     "first_seen": "2026-10-29T02:44:08.153233+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00",
+    "last_seen": "2026-10-29T03:09:21.693534+00:00",
     "availability": "Contact Lister",
     "images": [
       "https://images.craigslist.org/01515_6vZ9fTUw9RA_07K0ak_600x450.jpg",
@@ -5906,7 +5906,7 @@
     "has_broker_fee": null,
     "fee_badge": "Fee Unspecified",
     "fee_details": "Contact lister for fee status",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00",
+    "last_seen": "2026-10-29T03:09:21.693534+00:00",
     "first_seen": "2026-10-29T02:44:12.174143+00:00"
   },
   {
@@ -5999,7 +5999,7 @@
     "fee_details": "No Fee",
     "address": "Dorchester/South Boston Border, Boston, MA",
     "first_seen": "2026-10-29T02:44:03.608907+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "bp-8130432",
@@ -6083,7 +6083,7 @@
     "has_broker_fee": null,
     "fee_badge": "Fee Unspecified",
     "fee_details": "Contact lister for fee status",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00",
+    "last_seen": "2026-10-29T03:09:21.693534+00:00",
     "first_seen": "2026-10-29T02:44:12.167178+00:00"
   },
   {
@@ -6117,7 +6117,7 @@
     "has_broker_fee": null,
     "fee_badge": "Fee Unspecified",
     "fee_details": "Contact lister for fee status",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00",
+    "last_seen": "2026-10-29T03:09:21.693534+00:00",
     "first_seen": "2026-10-29T02:44:12.174167+00:00"
   },
   {
@@ -6172,7 +6172,7 @@
     "fee_details": "No Fee",
     "address": "Cambridge - Davis Square, Cambridge, MA",
     "first_seen": "2026-10-29T02:44:03.608907+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "bp-8178014",
@@ -6282,7 +6282,7 @@
     "fee_details": "No Fee",
     "address": "Medford - Wellington, Medford, MA",
     "first_seen": "2026-10-29T02:44:03.608907+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "cl-vFLhCQV37dXwX4hR",
@@ -6301,7 +6301,7 @@
     "sqft": null,
     "address": "Somerville \\ Teele Sq. \\ Tufts",
     "first_seen": "2026-10-29T02:44:06.093909+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00",
+    "last_seen": "2026-10-29T03:09:21.693534+00:00",
     "availability": "Available Now",
     "images": [
       "https://images.craigslist.org/00w0w_3h3gvas3MGr_0x20oM_600x450.jpg",
@@ -6344,7 +6344,7 @@
     "fee_details": "No Fee",
     "address": "Allston, Boston, MA",
     "first_seen": "2026-10-29T02:44:03.608907+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "bp-8157788",
@@ -6400,7 +6400,7 @@
     "fee_details": "No Fee",
     "address": "Brookline - Brookline Village, Boston, MA",
     "first_seen": "2026-10-29T03:04:39.795020+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "cl-3UXm5Rb3VTVBmVzn",
@@ -6419,7 +6419,7 @@
     "sqft": 850,
     "address": "Norwood",
     "first_seen": "2026-10-29T02:44:05.460034+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00",
+    "last_seen": "2026-10-29T03:09:21.693534+00:00",
     "availability": "Contact Lister",
     "images": [
       "https://images.craigslist.org/00t0t_5VuBteMxOKA_0fk0ad_600x450.jpg",
@@ -6488,7 +6488,7 @@
     "fee_details": "No Fee",
     "address": "Brighton - Cleveland Circle, Boston, MA",
     "first_seen": "2026-10-29T02:44:03.608907+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "cl-ksCs97EbHzgtxGpJ",
@@ -6507,7 +6507,7 @@
     "sqft": null,
     "address": "north shore",
     "first_seen": "2026-10-29T02:44:06.532229+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00",
+    "last_seen": "2026-10-29T03:09:21.693534+00:00",
     "availability": "Available Now",
     "images": [
       "https://images.craigslist.org/00S0S_gb0UxQ9rwSX_0uY0kE_600x450.jpg",
@@ -6541,7 +6541,7 @@
     "sqft": null,
     "address": "north shore",
     "first_seen": "2026-10-29T02:44:06.759949+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00",
+    "last_seen": "2026-10-29T03:09:21.693534+00:00",
     "availability": "Available Now",
     "images": [
       "https://images.craigslist.org/00S0S_gb0UxQ9rwSX_0uY0kE_600x450.jpg",
@@ -6575,7 +6575,7 @@
     "sqft": 900,
     "address": "Stoneham Center",
     "first_seen": "2026-10-29T02:44:07.066057+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00",
+    "last_seen": "2026-10-29T03:09:21.693534+00:00",
     "availability": "Available Oct 31",
     "images": [
       "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80"
@@ -6602,7 +6602,7 @@
     "sqft": null,
     "address": "boston/cambridge/brookline",
     "first_seen": "2026-10-29T02:44:07.163960+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00",
+    "last_seen": "2026-10-29T03:09:21.693534+00:00",
     "availability": "Available Now",
     "images": [
       "https://images.craigslist.org/00S0S_gb0UxQ9rwSX_0uY0kE_600x450.jpg",
@@ -6636,7 +6636,7 @@
     "sqft": null,
     "address": "boston/cambridge/brookline",
     "first_seen": "2026-10-29T02:44:07.343233+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00",
+    "last_seen": "2026-10-29T03:09:21.693534+00:00",
     "availability": "Available Now",
     "images": [
       "https://images.craigslist.org/00S0S_gb0UxQ9rwSX_0uY0kE_600x450.jpg",
@@ -6679,7 +6679,7 @@
     "fee_details": "No Fee",
     "address": "Allston, Boston, MA",
     "first_seen": "2026-10-29T02:44:03.608907+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "bp-8177183",
@@ -6737,7 +6737,7 @@
     "has_broker_fee": null,
     "fee_badge": "Fee Unspecified",
     "fee_details": "Contact lister for fee status",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00",
+    "last_seen": "2026-10-29T03:09:21.693534+00:00",
     "first_seen": "2026-10-29T02:44:08.225127+00:00"
   },
   {
@@ -6757,7 +6757,7 @@
     "sqft": null,
     "address": "boston/cambridge/brookline",
     "first_seen": "2026-10-29T02:44:06.474987+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00",
+    "last_seen": "2026-10-29T03:09:21.693534+00:00",
     "availability": "Available Now",
     "images": [
       "https://images.craigslist.org/00N0N_jV0Ilbyved0_0x20oM_600x450.jpg",
@@ -6791,7 +6791,7 @@
     "sqft": null,
     "address": "Chelsea",
     "first_seen": "2026-10-29T02:44:06.613156+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00",
+    "last_seen": "2026-10-29T03:09:21.693534+00:00",
     "availability": "Available Now",
     "images": [
       "https://images.craigslist.org/00s0s_dX8xTxkuCrW_0x20oM_600x450.jpg",
@@ -6955,7 +6955,7 @@
     "fee_details": "No Fee",
     "address": "Cambridge - Davis Square, Cambridge, MA",
     "first_seen": "2026-10-29T02:44:03.608907+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "bp-8151399",
@@ -6983,7 +6983,7 @@
     "fee_details": "No Fee",
     "address": "Medford - Wellington, Medford, MA",
     "first_seen": "2026-10-29T02:44:03.608907+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "cl-r3ZTXy5A4bwCwtZW",
@@ -7002,7 +7002,7 @@
     "sqft": null,
     "address": "Saugus",
     "first_seen": "2026-10-29T02:44:06.265902+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00",
+    "last_seen": "2026-10-29T03:09:21.693534+00:00",
     "availability": "Available Now",
     "images": [
       "https://images.craigslist.org/00K0K_1jQdjsErwKA_0hq0aW_600x450.jpg",
@@ -7043,7 +7043,7 @@
     "fee_details": "No Fee",
     "address": "Allston, Boston, MA",
     "first_seen": "2026-10-29T02:44:03.608907+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "bp-8177138",
@@ -7071,7 +7071,7 @@
     "fee_details": "No Fee",
     "address": "Brighton - Cleveland Circle, Boston, MA",
     "first_seen": "2026-10-29T02:44:03.608907+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "reddit_1xhs5zz",
@@ -7079,8 +7079,8 @@
     "price": 2300,
     "address": "North End, Boston, MA",
     "neighborhood": "North End, Boston, MA",
-    "lat": 42.35838,
-    "lng": -71.055,
+    "lat": 42.37118,
+    "lng": -71.05108,
     "url": "https://www.reddit.com/r/bostonhousing/comments/1xhs5zz/1_bed1_bath_north_end_apartment_2300month_no_fee/",
     "source": "reddit",
     "source_label": "Reddit",
@@ -7098,7 +7098,7 @@
     "fee_badge": "No Broker Fee",
     "fee_details": "Owner pays fee or no broker fee required",
     "first_seen": "2026-10-28T16:02:47+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "bp-8176931",
@@ -7126,7 +7126,7 @@
     "fee_details": "No Fee",
     "address": "Somerville - Porter Square, Somerville, MA",
     "first_seen": "2026-10-29T03:04:39.795020+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "cl-6rfxtTVu2apoRZxa",
@@ -7145,7 +7145,7 @@
     "sqft": null,
     "address": "Cambridge",
     "first_seen": "2026-10-29T02:44:05.696376+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00",
+    "last_seen": "2026-10-29T03:09:21.693534+00:00",
     "availability": "Available Now",
     "images": [
       "https://images.craigslist.org/00k0k_GuE9ZNgRGy_0hq0bC_600x450.jpg",
@@ -7185,7 +7185,7 @@
     "fee_details": "No Fee",
     "address": "Allston, Boston, MA",
     "first_seen": "2026-10-29T02:44:03.608907+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "cl-4YXN7QCmFRx2roQY",
@@ -7276,7 +7276,7 @@
     "has_broker_fee": false,
     "fee_badge": "No Broker Fee",
     "fee_details": "Owner pays fee or no broker fee required",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00",
+    "last_seen": "2026-10-29T03:09:21.693534+00:00",
     "first_seen": "2026-10-29T02:44:08.225135+00:00"
   },
   {
@@ -7296,7 +7296,7 @@
     "sqft": null,
     "address": "Cambridge \\ Porter Sq. \\ Davis Sq.",
     "first_seen": "2026-10-29T02:44:06.368123+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00",
+    "last_seen": "2026-10-29T03:09:21.693534+00:00",
     "availability": "Available Now",
     "images": [
       "https://images.craigslist.org/00x0x_kJYGagSOfxi_0x20m4_600x450.jpg",
@@ -7339,7 +7339,7 @@
     "fee_details": "No Fee",
     "address": "Brighton- Washington St./ Allston St., Boston, MA",
     "first_seen": "2026-10-29T03:04:39.795020+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "cl-qEo1jDK8YXxu8jai",
@@ -7422,7 +7422,7 @@
     "address": "Dorchester/South Boston Border, Boston, MA",
     "city": "Boston",
     "first_seen": "2026-10-29T02:44:03.608907+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "bp-8177748",
@@ -7450,7 +7450,7 @@
     "fee_details": "No Fee",
     "address": "Cambridge - Harvard Square, Cambridge, MA",
     "first_seen": "2026-10-29T02:44:03.608907+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "bp-8177743",
@@ -7478,7 +7478,7 @@
     "fee_details": "No Fee",
     "address": "Allston/Brighton Border, Boston, MA",
     "first_seen": "2026-10-29T03:04:39.795020+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "bp-8169873",
@@ -7523,7 +7523,7 @@
     "sqft": null,
     "address": "Jamaica Plain",
     "first_seen": "2026-10-29T02:44:05.166467+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00",
+    "last_seen": "2026-10-29T03:09:21.693534+00:00",
     "availability": "Available Dec 1",
     "images": [
       "https://images.craigslist.org/00O0O_iHBPgVDvt2i_0CI0t2_600x450.jpg",
@@ -7594,7 +7594,7 @@
     "fee_details": "No Fee",
     "address": "Roxbury, Boston, MA",
     "first_seen": "2026-10-29T02:44:03.608907+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "bp-8177737",
@@ -7622,7 +7622,7 @@
     "fee_details": "No Fee",
     "address": "Brighton- Washington St./ Allston St., Boston, MA",
     "first_seen": "2026-10-29T02:44:03.608907+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "bp-4316469",
@@ -7650,7 +7650,7 @@
     "fee_details": "No Fee",
     "address": "Brighton- Washington St./ Allston St., Boston, MA",
     "first_seen": "2026-10-29T02:44:03.608907+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "reddit_1xgxb8r",
@@ -7658,8 +7658,8 @@
     "price": 2400,
     "address": "Allston, Boston, MA",
     "neighborhood": "Allston, Boston, MA",
-    "lat": 42.36006,
-    "lng": -71.13474,
+    "lat": 42.3475,
+    "lng": -71.1409,
     "url": "https://www.reddit.com/r/bostonhousing/comments/1xgxb8r/lease_takeover_in_allston_near_bu_1_br_2400_month/",
     "source": "reddit",
     "source_label": "Reddit",
@@ -7677,7 +7677,7 @@
     "fee_badge": "No Broker Fee",
     "fee_details": "Direct community listing on Reddit (No Broker Fee).",
     "first_seen": "2026-10-27T16:30:55+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "bp-8177230",
@@ -7705,7 +7705,7 @@
     "fee_details": "No Fee",
     "address": "Cambridge - Central Square/Cambridgeport, Cambridge, MA",
     "first_seen": "2026-10-29T03:04:39.795020+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "bp-8177736",
@@ -7733,7 +7733,7 @@
     "fee_details": "No Fee",
     "address": "Brighton- Washington St./ Allston St., Boston, MA",
     "first_seen": "2026-10-29T03:04:39.795020+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "bp-8159189",
@@ -7761,7 +7761,7 @@
     "fee_details": "No Fee",
     "address": "Allston/Brighton Border, Boston, MA",
     "first_seen": "2026-10-29T02:44:03.608907+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "cl-sub-v5XvcYSHzYpsr9Gv",
@@ -7794,7 +7794,7 @@
     "has_broker_fee": null,
     "fee_badge": "Fee Unspecified",
     "fee_details": "Contact lister for fee status",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00",
+    "last_seen": "2026-10-29T03:09:21.693534+00:00",
     "first_seen": "2026-10-29T02:44:12.174048+00:00"
   },
   {
@@ -7823,7 +7823,7 @@
     "fee_details": "No Fee",
     "address": "Cambridge - Mt. Auburn/Brattle/ Fresh Pond, Cambridge, MA",
     "first_seen": "2026-10-29T02:44:03.608907+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "cl-YmAgqbnvQFv7uhsP",
@@ -7842,7 +7842,7 @@
     "sqft": 814,
     "address": "south shore",
     "first_seen": "2026-10-29T02:44:05.470063+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00",
+    "last_seen": "2026-10-29T03:09:21.693534+00:00",
     "availability": "Contact Lister",
     "images": [
       "https://images.craigslist.org/00101_7b9rSluN52G_0fk0ac_600x450.jpg",
@@ -7873,7 +7873,7 @@
     "sqft": 800,
     "address": "Stoughton",
     "first_seen": "2026-10-29T02:44:05.160431+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00",
+    "last_seen": "2026-10-29T03:09:21.693534+00:00",
     "availability": "Available Nov 1",
     "images": [
       "https://images.craigslist.org/00e0e_jswpSxizr3H_0CI0t2_600x450.jpg",
@@ -7916,7 +7916,7 @@
     "fee_details": "No Fee",
     "address": "Chinatown, Boston, MA",
     "first_seen": "2026-10-29T03:04:39.795020+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "cl-a3HuEsgE13riAyrE",
@@ -7935,7 +7935,7 @@
     "sqft": null,
     "address": "north shore",
     "first_seen": "2026-10-29T02:44:07.928784+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00",
+    "last_seen": "2026-10-29T03:09:21.693534+00:00",
     "availability": "Contact Lister",
     "images": [
       "https://images.craigslist.org/00303_1Hr0bqiQjeK_042039_600x450.jpg",
@@ -8169,7 +8169,7 @@
     "address": "Roxbury, Boston, MA",
     "city": "Boston",
     "first_seen": "2026-10-29T02:44:03.608907+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "bp-8172143",
@@ -8197,7 +8197,7 @@
     "fee_details": "No Fee",
     "address": "Allston, Boston, MA",
     "first_seen": "2026-10-29T03:04:39.795020+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "bp-8164598",
@@ -8258,7 +8258,7 @@
     "has_broker_fee": null,
     "fee_badge": "Fee Unspecified",
     "fee_details": "Contact lister for fee status",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00",
+    "last_seen": "2026-10-29T03:09:21.693534+00:00",
     "first_seen": "2026-10-29T02:44:08.225141+00:00"
   },
   {
@@ -8292,7 +8292,7 @@
     "has_broker_fee": null,
     "fee_badge": "Fee Unspecified",
     "fee_details": "Contact lister for fee status",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00",
+    "last_seen": "2026-10-29T03:09:21.693534+00:00",
     "first_seen": "2026-10-29T02:44:12.167151+00:00"
   },
   {
@@ -8321,7 +8321,7 @@
     "fee_details": "No Fee",
     "address": "Brookline - Boston University, Boston, MA",
     "first_seen": "2026-10-29T02:44:03.608907+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "bp-8177150",
@@ -8377,7 +8377,7 @@
     "fee_details": "No Fee",
     "address": "Brighton - Cleveland Circle, Boston, MA",
     "first_seen": "2026-10-29T02:44:03.608907+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "cl-DyGk2pdcXQjaZVPW",
@@ -8396,7 +8396,7 @@
     "sqft": 624,
     "address": "Jamaica Plain",
     "first_seen": "2026-10-29T02:44:06.321080+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00",
+    "last_seen": "2026-10-29T03:09:21.693534+00:00",
     "availability": "Contact Lister",
     "images": [
       "https://images.craigslist.org/00o0o_dbBzsanEenk_0fn08R_600x450.jpg",
@@ -8430,7 +8430,7 @@
     "sqft": null,
     "address": "Brockton",
     "first_seen": "2026-10-29T02:44:09.877595+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00",
+    "last_seen": "2026-10-29T03:09:21.693534+00:00",
     "availability": "Contact Lister",
     "images": [
       "https://images.craigslist.org/00H0H_c2WWAoZkFNz_0pO0bV_600x450.jpg",
@@ -8593,15 +8593,15 @@
     "price": 2500,
     "address": "Greater Boston, MA",
     "neighborhood": "Greater Boston, MA",
-    "lat": 42.35866,
-    "lng": -71.06626,
+    "lat": 42.36754,
+    "lng": -71.05938,
     "url": "https://www.reddit.com/r/bostonhousing/comments/1xguvo5/studio_sublet_lease_takeover_at_the_nines_in/",
     "source": "reddit",
     "source_label": "Reddit",
     "bedrooms": 0,
     "bathrooms": 1.0,
     "sqft": 0,
-    "availability": "Contact Lister",
+    "availability": "Available Jan 20",
     "rental_type": "sublet",
     "rental_type_label": "Sublet",
     "images": [
@@ -8612,7 +8612,7 @@
     "fee_badge": "No Broker Fee",
     "fee_details": "Direct community listing on Reddit (No Broker Fee).",
     "first_seen": "2026-10-27T15:01:13+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "bp-8177232",
@@ -8640,7 +8640,7 @@
     "fee_details": "No Fee",
     "address": "Cambridge - Central Square/Cambridgeport, Cambridge, MA",
     "first_seen": "2026-10-29T03:04:39.795020+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "bp-8176935",
@@ -8668,7 +8668,7 @@
     "fee_details": "No Fee",
     "address": "Somerville - Porter Square, Somerville, MA",
     "first_seen": "2026-10-29T03:04:39.795020+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "bp-8173793",
@@ -8696,7 +8696,7 @@
     "fee_details": "No Fee",
     "address": "Roxbury, Boston, MA",
     "first_seen": "2026-10-29T03:04:39.795020+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "bp-8012832",
@@ -8724,7 +8724,7 @@
     "address": "North End, Boston, MA",
     "city": "Boston",
     "first_seen": "2026-10-29T03:04:39.795020+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "bp-8176595",
@@ -8806,7 +8806,7 @@
     "fee_details": "No Fee",
     "address": "Allston, Boston, MA",
     "first_seen": "2026-10-29T02:44:03.608907+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "cl-NF12tZ271XP59reC",
@@ -8891,7 +8891,7 @@
     "fee_details": "No Fee",
     "address": "Brighton - Cleveland Circle, Boston, MA",
     "first_seen": "2026-10-29T02:44:03.608907+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "bp-8165546",
@@ -8919,7 +8919,7 @@
     "fee_details": "No Fee",
     "address": "Fort Hill, Boston, MA",
     "first_seen": "2026-10-29T02:44:03.608907+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "bp-8161579",
@@ -8947,7 +8947,7 @@
     "fee_details": "No Fee",
     "address": "Allston, Boston, MA",
     "first_seen": "2026-10-29T02:44:03.608907+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "cl-FZpgT3QyKKfyfsze",
@@ -8966,7 +8966,7 @@
     "sqft": 1100,
     "address": "Jamaica Plain",
     "first_seen": "2026-10-29T02:44:05.178148+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00",
+    "last_seen": "2026-10-29T03:09:21.693534+00:00",
     "availability": "Contact Lister",
     "images": [
       "https://images.craigslist.org/00t0t_bxr5F4lTNm3_0nM0i8_600x450.jpg",
@@ -9006,7 +9006,7 @@
     "fee_details": "No Fee",
     "address": "Somerville - Spring Hill, Somerville, MA",
     "first_seen": "2026-10-29T03:04:39.795020+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "bp-8177843",
@@ -9034,7 +9034,7 @@
     "fee_details": "No Fee",
     "address": "Brighton - Cleveland Circle, Boston, MA",
     "first_seen": "2026-10-29T03:04:39.795020+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "cl-njeZKthod47zQF74",
@@ -9094,7 +9094,7 @@
     "fee_details": "No Fee",
     "address": "Somerville - Davis Square, Somerville, MA",
     "first_seen": "2026-10-29T02:44:03.608907+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "cl-GRAidrib2vWk6Vm6",
@@ -9216,7 +9216,7 @@
     "has_broker_fee": null,
     "fee_badge": "Fee Unspecified",
     "fee_details": "Contact lister for fee status",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00",
+    "last_seen": "2026-10-29T03:09:21.693534+00:00",
     "first_seen": "2026-10-29T02:44:08.225090+00:00"
   },
   {
@@ -9225,8 +9225,8 @@
     "price": 2600,
     "address": "Greater Boston, MA",
     "neighborhood": "Greater Boston, MA",
-    "lat": 42.36242,
-    "lng": -71.06026,
+    "lat": 42.3525,
+    "lng": -71.06538,
     "url": "https://www.reddit.com/r/bostonhousing/comments/1xg2a0w/available_studio_apartment_lease_takeover_on/",
     "source": "reddit",
     "source_label": "Reddit",
@@ -9244,7 +9244,7 @@
     "fee_badge": "No Broker Fee",
     "fee_details": "Direct community listing on Reddit (No Broker Fee).",
     "first_seen": "2026-10-26T16:49:49+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "cl-JdvApYcrFpbMQsAG",
@@ -9364,7 +9364,7 @@
     "fee_details": "No broker fee promo for leases beginning this month",
     "address": "Park Dr, Boston, MA 02215",
     "first_seen": "2026-10-29T02:44:03.608907+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "cl-kwzFCUmojwKtLpgH",
@@ -9424,7 +9424,7 @@
     "fee_details": "No Fee",
     "address": "Cambridge - Harvard Square, Cambridge, MA",
     "first_seen": "2026-10-29T02:44:03.608907+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "bp-4515286",
@@ -9469,7 +9469,7 @@
     "sqft": 800,
     "address": "Malden \\ Malden Center",
     "first_seen": "2026-10-29T02:44:06.198361+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00",
+    "last_seen": "2026-10-29T03:09:21.693534+00:00",
     "availability": "Contact Lister",
     "images": [
       "https://images.craigslist.org/00N0N_jhyBy8gnugs_0x20oM_600x450.jpg",
@@ -9540,7 +9540,7 @@
     "fee_details": "No Fee",
     "address": "Brighton - Boston College, Boston, MA",
     "first_seen": "2026-10-29T02:44:03.608907+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "bp-8177136",
@@ -9568,7 +9568,7 @@
     "fee_details": "No Fee",
     "address": "Brighton - Brighton Center, Boston, MA",
     "first_seen": "2026-10-29T03:04:39.795020+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "cl-ijjJcgTGD5PNKv1w",
@@ -9656,7 +9656,7 @@
     "fee_details": "No Fee",
     "address": "Cambridge - Harvard Square, Cambridge, MA",
     "first_seen": "2026-10-29T02:44:03.608907+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "bp-8177763",
@@ -9684,7 +9684,7 @@
     "fee_details": "No Fee",
     "address": "Cambridge - Harvard Square, Cambridge, MA",
     "first_seen": "2026-10-29T03:04:39.795020+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "bp-8177764",
@@ -9712,7 +9712,7 @@
     "fee_details": "No Fee",
     "address": "Cambridge - Harvard Square, Cambridge, MA",
     "first_seen": "2026-10-29T02:44:03.608907+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "bp-8173750",
@@ -9740,7 +9740,7 @@
     "fee_details": "No Fee",
     "address": "Brookline - Washington Square, Brookline, MA",
     "first_seen": "2026-10-29T03:04:39.795020+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "fb-boston-03",
@@ -9767,7 +9767,7 @@
     "fee_details": "Direct tenant sublet. Zero broker fee.",
     "address": "Main St, Cambridge, MA 02142",
     "first_seen": "2026-10-29T02:44:03.608907+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "bp-6082012",
@@ -9851,7 +9851,7 @@
     "fee_details": "No Fee",
     "address": "Cambridge - Harvard Square, Cambridge, MA",
     "first_seen": "2026-10-29T03:04:39.795020+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "bp-8170008",
@@ -9927,7 +9927,7 @@
     "sqft": null,
     "address": "Jamaica Plain",
     "first_seen": "2026-10-29T02:44:08.217098+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00",
+    "last_seen": "2026-10-29T03:09:21.693534+00:00",
     "availability": "Available Nov 1",
     "images": [
       "https://images.craigslist.org/00707_kakv91z2DoG_0x20oL_600x450.jpg",
@@ -10065,7 +10065,7 @@
     "address": "Dorchester/South Boston Border, Boston, MA",
     "city": "Boston",
     "first_seen": "2026-10-29T02:44:03.608907+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "bp-8177797",
@@ -10093,7 +10093,7 @@
     "fee_details": "No Fee",
     "address": "Dorchester - Uphams Corner, Boston, MA",
     "first_seen": "2026-10-29T02:44:03.608907+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "bp-8178003",
@@ -10180,7 +10180,7 @@
     "has_broker_fee": false,
     "fee_badge": "No Broker Fee",
     "fee_details": "Owner pays fee or no broker fee required",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00",
+    "last_seen": "2026-10-29T03:09:21.693534+00:00",
     "first_seen": "2026-10-29T02:44:08.225150+00:00"
   },
   {
@@ -10207,7 +10207,7 @@
     "has_broker_fee": null,
     "fee_badge": "Fee Unspecified",
     "fee_details": "Contact lister for fee status",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00",
+    "last_seen": "2026-10-29T03:09:21.693534+00:00",
     "first_seen": "2026-10-29T02:44:12.167135+00:00"
   },
   {
@@ -10227,7 +10227,7 @@
     "sqft": null,
     "address": "Roslindale",
     "first_seen": "2026-10-29T02:44:05.160667+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00",
+    "last_seen": "2026-10-29T03:09:21.693534+00:00",
     "availability": "Contact Lister",
     "images": [
       "https://images.craigslist.org/00N0N_jT9G7THhuwc_0t20t2_600x450.jpg",
@@ -10261,7 +10261,7 @@
     "sqft": null,
     "address": "Manomet",
     "first_seen": "2026-10-29T02:44:05.163565+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00",
+    "last_seen": "2026-10-29T03:09:21.693534+00:00",
     "availability": "Contact Lister",
     "images": [
       "https://images.craigslist.org/00Y0Y_jj0UxEU3tQN_0dm0bD_600x450.jpg",
@@ -10301,7 +10301,7 @@
     "fee_details": "No Fee",
     "address": "Dorchester/South Boston Border, Boston, MA",
     "first_seen": "2026-10-29T02:44:03.608907+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "cl-QH8sixtNiADXx93k",
@@ -10320,7 +10320,7 @@
     "sqft": 1063,
     "address": "Tewksbury",
     "first_seen": "2026-10-29T02:44:05.484404+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00",
+    "last_seen": "2026-10-29T03:09:21.693534+00:00",
     "availability": "Contact Lister",
     "images": [
       "https://images.craigslist.org/00v0v_lvMMFGA7rB7_0jm0cU_600x450.jpg",
@@ -10342,8 +10342,8 @@
     "price": 2725,
     "address": "Brighton, Boston, MA",
     "neighborhood": "Brighton, Boston, MA",
-    "lat": 42.34336,
-    "lng": -71.1598,
+    "lat": 42.34232,
+    "lng": -71.15388,
     "url": "https://www.reddit.com/r/bostonhousing/comments/1xg0nub/lease_takeover_partially_furnished/",
     "source": "reddit",
     "source_label": "Reddit",
@@ -10361,7 +10361,7 @@
     "fee_badge": "No Broker Fee",
     "fee_details": "Direct community listing on Reddit (No Broker Fee).",
     "first_seen": "2026-10-26T15:52:13+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "bp-8117287",
@@ -10389,7 +10389,7 @@
     "address": "Roxbury, Boston, MA",
     "city": "Boston",
     "first_seen": "2026-10-29T03:04:39.795020+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "zw-boston-04",
@@ -10416,7 +10416,7 @@
     "fee_details": "Sublease with landlord approval. No fee.",
     "address": "Somerville Ave, Somerville, MA 02143",
     "first_seen": "2026-10-29T02:44:03.608907+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "cl-uKpcH7vL2CAcmnaA",
@@ -10435,7 +10435,7 @@
     "sqft": null,
     "address": "boston/cambridge/brookline",
     "first_seen": "2026-10-29T02:44:07.878149+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00",
+    "last_seen": "2026-10-29T03:09:21.693534+00:00",
     "availability": "Contact Lister",
     "images": [
       "https://images.craigslist.org/00f0f_9dOxLat7Cke_0lM0t2_600x450.jpg",
@@ -10469,7 +10469,7 @@
     "sqft": 9999,
     "address": "boston/cambridge/brookline",
     "first_seen": "2026-10-29T02:44:07.917712+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00",
+    "last_seen": "2026-10-29T03:09:21.693534+00:00",
     "availability": "Contact Lister",
     "images": [
       "https://images.craigslist.org/00k0k_eurU9ScVm4z_0lM0t2_600x450.jpg",
@@ -10503,7 +10503,7 @@
     "sqft": null,
     "address": "north shore",
     "first_seen": "2026-10-29T02:44:07.993701+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00",
+    "last_seen": "2026-10-29T03:09:21.693534+00:00",
     "availability": "Contact Lister",
     "images": [
       "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80"
@@ -10539,7 +10539,7 @@
     "fee_details": "No Fee",
     "address": "Allston, Boston, MA",
     "first_seen": "2026-10-29T02:44:03.608907+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "bp-4316482",
@@ -10567,7 +10567,7 @@
     "fee_details": "No Fee",
     "address": "Brighton - Cleveland Circle, Boston, MA",
     "first_seen": "2026-10-29T03:04:39.795020+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "cl-vjT9ZpKVz1wWQJjL",
@@ -10586,7 +10586,7 @@
     "sqft": null,
     "address": "Wayland",
     "first_seen": "2026-10-29T02:44:05.175281+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00",
+    "last_seen": "2026-10-29T03:09:21.693534+00:00",
     "availability": "Available Now",
     "images": [
       "https://images.craigslist.org/00K0K_cbWk8HYekxn_0hq0bJ_600x450.jpg",
@@ -10629,7 +10629,7 @@
     "fee_details": "No Fee",
     "address": "Brighton - Cleveland Circle, Boston, MA",
     "first_seen": "2026-10-29T02:44:03.608907+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "cl-preTWnPZkQ4gJ4o8",
@@ -10689,7 +10689,7 @@
     "fee_details": "No Fee",
     "address": "Brookline - Brookline Village, Brookline, MA",
     "first_seen": "2026-10-29T02:44:03.608907+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "cl-5eH7SnLtnJNYqmxM",
@@ -10809,7 +10809,7 @@
     "fee_details": "No Fee",
     "address": "Cambridge - Porter Square, Cambridge, MA",
     "first_seen": "2026-10-29T03:04:39.795020+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "bp-8092590",
@@ -10837,7 +10837,7 @@
     "fee_details": "No Fee",
     "address": "Brookline - Boston University, Boston, MA",
     "first_seen": "2026-10-29T02:44:03.608907+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "bp-8043582",
@@ -10865,7 +10865,7 @@
     "fee_details": "No Fee",
     "address": "Brookline - Boston University, Boston, MA",
     "first_seen": "2026-10-29T02:44:03.608907+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "bp-8178077",
@@ -10893,7 +10893,7 @@
     "fee_details": "No Fee",
     "address": "Brookline - Brookline Hills, Brookline, MA",
     "first_seen": "2026-10-29T02:44:03.608907+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "bp-8158948",
@@ -10921,7 +10921,7 @@
     "fee_details": "No Fee",
     "address": "Allston, Boston, MA",
     "first_seen": "2026-10-29T02:44:03.608907+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "cl-t7R3PT5i7Wiew8Bd",
@@ -10940,7 +10940,7 @@
     "sqft": 1000,
     "address": "Newton - ville near Charles River.",
     "first_seen": "2026-10-29T02:44:07.056824+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00",
+    "last_seen": "2026-10-29T03:09:21.693534+00:00",
     "availability": "Available Nov 6",
     "images": [
       "https://images.craigslist.org/00R0R_gjNjMkAdy5_07K0ak_600x450.jpg",
@@ -11011,7 +11011,7 @@
     "fee_details": "No Fee",
     "address": "Somerville - Spring Hill, Somerville, MA",
     "first_seen": "2026-10-29T02:44:03.608907+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "bp-71670",
@@ -11039,7 +11039,7 @@
     "fee_details": "No Fee",
     "address": "Allston, Boston, MA",
     "first_seen": "2026-10-29T02:44:03.608907+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "bp-8178082",
@@ -11067,7 +11067,7 @@
     "fee_details": "No Fee",
     "address": "Brookline - Brookline Hills, Brookline, MA",
     "first_seen": "2026-10-29T02:44:03.608907+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "bp-52375",
@@ -11095,7 +11095,7 @@
     "fee_details": "No Fee",
     "address": "Allston, Boston, MA",
     "first_seen": "2026-10-29T02:44:03.608907+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "bp-4454178",
@@ -11131,8 +11131,8 @@
     "price": 2800,
     "address": "East Boston, MA",
     "neighborhood": "East Boston, MA",
-    "lat": 42.37644,
-    "lng": -71.03402,
+    "lat": 42.36844,
+    "lng": -71.03626,
     "url": "https://www.reddit.com/r/bostonhousing/comments/1xfyiqm/east_boston_sublet_2_bedroom_1_bathroom/",
     "source": "reddit",
     "source_label": "Reddit",
@@ -11150,7 +11150,7 @@
     "fee_badge": "No Broker Fee",
     "fee_details": "Direct community listing on Reddit (No Broker Fee).",
     "first_seen": "2026-10-26T14:33:50+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "bp-8174967",
@@ -11178,7 +11178,7 @@
     "fee_details": "No Fee",
     "address": "Brighton - Cleveland Circle, Boston, MA",
     "first_seen": "2026-10-29T02:44:03.608907+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "bp-8102306",
@@ -11231,7 +11231,7 @@
     "fee_details": "No Fee",
     "address": "Brighton - Cleveland Circle, Boston, MA",
     "first_seen": "2026-10-29T02:44:03.608907+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "bp-8161555",
@@ -11259,7 +11259,7 @@
     "fee_details": "No Fee",
     "address": "Allston, Boston, MA",
     "first_seen": "2026-10-29T02:44:03.608907+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "bp-8174965",
@@ -11287,7 +11287,7 @@
     "fee_details": "No Fee",
     "address": "Brighton - Cleveland Circle, Boston, MA",
     "first_seen": "2026-10-29T02:44:03.608907+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "bp-8174964",
@@ -11315,7 +11315,7 @@
     "fee_details": "No Fee",
     "address": "Brighton - Boston College, Boston, MA",
     "first_seen": "2026-10-29T02:44:03.608907+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "cl-LeDjBoSML4TnH8CR",
@@ -11334,7 +11334,7 @@
     "sqft": 885,
     "address": "Waltham",
     "first_seen": "2026-10-29T02:44:06.314661+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00",
+    "last_seen": "2026-10-29T03:09:21.693534+00:00",
     "availability": "Available Now",
     "images": [
       "https://images.craigslist.org/00g0g_fYHpboGaLoG_0ae0ag_600x450.jpg",
@@ -11380,7 +11380,7 @@
     "has_broker_fee": null,
     "fee_badge": "Fee Unspecified",
     "fee_details": "Contact lister for fee status",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00",
+    "last_seen": "2026-10-29T03:09:21.693534+00:00",
     "first_seen": "2026-10-29T02:44:12.174200+00:00",
     "original_rate_note": "$95/day"
   },
@@ -11442,7 +11442,7 @@
     "fee_details": "No Fee",
     "address": "Brighton - Boston College, Boston, MA",
     "first_seen": "2026-10-29T02:44:03.608907+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "bp-8159298",
@@ -11524,7 +11524,7 @@
     "fee_details": "No Fee",
     "address": "Allston, Boston, MA",
     "first_seen": "2026-10-29T02:44:03.608907+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "bp-8068149",
@@ -11552,7 +11552,7 @@
     "fee_details": "No Fee",
     "address": "Brighton - Cleveland Circle, Boston, MA",
     "first_seen": "2026-10-29T03:04:39.795020+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "bp-8017674",
@@ -11605,7 +11605,7 @@
     "fee_details": "No Fee",
     "address": "Medford - Wellington, Medford, MA",
     "first_seen": "2026-10-29T02:44:03.608907+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "cl-RVihXxbJBTREZtEs",
@@ -11624,7 +11624,7 @@
     "sqft": 1141,
     "address": "Foxborough",
     "first_seen": "2026-10-29T02:44:05.478688+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00",
+    "last_seen": "2026-10-29T03:09:21.693534+00:00",
     "availability": "Contact Lister",
     "images": [
       "https://images.craigslist.org/00X0X_4E7Y50ZOduX_0jm0d0_600x450.jpg",
@@ -11658,7 +11658,7 @@
     "sqft": null,
     "address": "Arlington Center",
     "first_seen": "2026-10-29T02:44:06.804908+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00",
+    "last_seen": "2026-10-29T03:09:21.693534+00:00",
     "availability": "Available Nov 1",
     "images": [
       "https://images.craigslist.org/00606_isMItPNeXkv_1761u8_600x450.jpg",
@@ -11770,8 +11770,8 @@
     "price": 2900,
     "address": "Beacon Hill, Boston, MA",
     "neighborhood": "Beacon Hill, Boston, MA",
-    "lat": 42.36368,
-    "lng": -71.0691,
+    "lat": 42.36624,
+    "lng": -71.07046,
     "url": "https://www.reddit.com/r/bostonhousing/comments/1xfl0y1/beacon_hill_1_bed_1_ba_2900_month_decjan_movein/",
     "source": "reddit",
     "source_label": "Reddit",
@@ -11789,7 +11789,7 @@
     "fee_badge": "No Broker Fee",
     "fee_details": "Direct community listing on Reddit (No Broker Fee).",
     "first_seen": "2026-10-26T02:31:47+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "bp-8178006",
@@ -11869,7 +11869,7 @@
     "fee_details": "Owner pays full broker fee for 12-month lease",
     "address": "College Ave, Somerville, MA 02144",
     "first_seen": "2026-10-29T02:44:03.608907+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "bp-8164207",
@@ -11922,7 +11922,7 @@
     "fee_details": "No Fee",
     "address": "Brighton - Oak Square, Boston, MA",
     "first_seen": "2026-10-29T02:44:03.608907+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "bp-8177997",
@@ -12004,7 +12004,7 @@
     "fee_details": "No Fee",
     "address": "Somerville - Union Square, Somerville, MA",
     "first_seen": "2026-10-29T02:44:03.608907+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "bp-8176391",
@@ -12058,7 +12058,7 @@
     "fee_details": "No Fee",
     "address": "Allston, Boston, MA",
     "first_seen": "2026-10-29T02:44:03.608907+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "bp-8176579",
@@ -12086,7 +12086,7 @@
     "fee_details": "No Fee",
     "address": "Brighton - Cleveland Circle, Boston, MA",
     "first_seen": "2026-10-29T02:44:03.608907+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "bp-8177310",
@@ -12114,7 +12114,7 @@
     "fee_details": "No Fee",
     "address": "Brookline - Chestnut Hill, Boston, MA",
     "first_seen": "2026-10-29T03:04:39.795020+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "bp-8103289",
@@ -12142,7 +12142,7 @@
     "fee_details": "No Fee",
     "address": "Dorchester - Grove Hall, Boston, MA",
     "first_seen": "2026-10-29T03:04:39.795020+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "cl-u7pEbe7JSUB2Wmdz",
@@ -12161,7 +12161,7 @@
     "sqft": 1108,
     "address": "Waltham",
     "first_seen": "2026-10-29T02:44:05.762426+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00",
+    "last_seen": "2026-10-29T03:09:21.693534+00:00",
     "availability": "Contact Lister",
     "images": [
       "https://images.craigslist.org/00u0u_lWM46bFTuzY_0fk0ad_600x450.jpg",
@@ -12195,7 +12195,7 @@
     "sqft": 1276,
     "address": "Braintree",
     "first_seen": "2026-10-29T02:44:05.464468+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00",
+    "last_seen": "2026-10-29T03:09:21.693534+00:00",
     "availability": "Contact Lister",
     "images": [
       "https://images.craigslist.org/00Z0Z_df6KT8dV5vZ_0jm0cU_600x450.jpg",
@@ -12348,7 +12348,7 @@
     "fee_details": "No Fee",
     "address": "Allston, Boston, MA",
     "first_seen": "2026-10-29T02:44:03.608907+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "bp-8178214",
@@ -12376,7 +12376,7 @@
     "fee_details": "No Fee",
     "address": "Allston, Boston, MA",
     "first_seen": "2026-10-29T02:44:03.608907+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "bp-617627",
@@ -12404,7 +12404,7 @@
     "fee_details": "No Fee",
     "address": "Allston, Boston, MA",
     "first_seen": "2026-10-29T02:44:03.608907+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "bp-8176578",
@@ -12432,7 +12432,7 @@
     "fee_details": "No Fee",
     "address": "Brighton - Oak Square, Boston, MA",
     "first_seen": "2026-10-29T03:04:39.795020+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "reddit_1xfxgr1",
@@ -12440,15 +12440,15 @@
     "price": 2955,
     "address": "North End, Boston, MA",
     "neighborhood": "North End, Boston, MA",
-    "lat": 42.36694,
-    "lng": -71.05788,
+    "lat": 42.36094,
+    "lng": -71.06044,
     "url": "https://www.reddit.com/r/bostonhousing/comments/1xfxgr1/sweet_studio_apartment_for_rent_in_west_end_101/",
     "source": "reddit",
     "source_label": "Reddit",
     "bedrooms": 0,
     "bathrooms": 1.0,
     "sqft": 0,
-    "availability": "Available Jan 1",
+    "availability": "Available Jan 1St",
     "rental_type": "entire_unit",
     "rental_type_label": "Condo / Apt",
     "images": [
@@ -12459,7 +12459,7 @@
     "fee_badge": "No Broker Fee",
     "fee_details": "Direct community listing on Reddit (No Broker Fee).",
     "first_seen": "2026-10-26T13:54:05+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "reddit_1xfxfkw",
@@ -12467,15 +12467,15 @@
     "price": 2955,
     "address": "North End, Boston, MA",
     "neighborhood": "North End, Boston, MA",
-    "lat": 42.3667,
-    "lng": -71.049,
+    "lat": 42.36534,
+    "lng": -71.05988,
     "url": "https://www.reddit.com/r/bostonhousing/comments/1xfxfkw/sweet_studio_apartment_for_rent_in_west_end_101/",
     "source": "reddit",
     "source_label": "Reddit",
     "bedrooms": 0,
     "bathrooms": 1.0,
     "sqft": 0,
-    "availability": "Available Jan 1",
+    "availability": "Available Jan 1St",
     "rental_type": "entire_unit",
     "rental_type_label": "Condo / Apt",
     "images": [
@@ -12486,7 +12486,7 @@
     "fee_badge": "No Broker Fee",
     "fee_details": "Direct community listing on Reddit (No Broker Fee).",
     "first_seen": "2026-10-26T13:52:49+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "bp-8128632",
@@ -12514,7 +12514,7 @@
     "fee_details": "No Fee",
     "address": "Allston, Boston, MA",
     "first_seen": "2026-10-29T02:44:03.608907+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "reddit_1xfzzwo",
@@ -12522,15 +12522,15 @@
     "price": 2990,
     "address": "Cambridge, MA",
     "neighborhood": "Cambridge, MA",
-    "lat": 42.36632,
-    "lng": -71.10274,
+    "lat": 42.38104,
+    "lng": -71.10762,
     "url": "https://www.reddit.com/r/bostonhousing/comments/1xfzzwo/2990mo_1br1ba_730_sq_ft_north_cambridge_lease/",
     "source": "reddit",
     "source_label": "Reddit",
     "bedrooms": 1,
     "bathrooms": 1.0,
     "sqft": 0,
-    "availability": "Contact Lister",
+    "availability": "Available Dec 20",
     "rental_type": "entire_unit",
     "rental_type_label": "Condo / Apt",
     "images": [
@@ -12541,7 +12541,7 @@
     "fee_badge": "No Broker Fee",
     "fee_details": "Direct community listing on Reddit (No Broker Fee).",
     "first_seen": "2026-10-26T15:28:21+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "bp-8177174",
@@ -12597,7 +12597,7 @@
     "fee_details": "No Fee",
     "address": "Somerville - Medford - Wellington, Somerville, MA",
     "first_seen": "2026-10-29T03:04:39.795020+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "cl-GSDn3ZKoBMUaCXST",
@@ -12689,7 +12689,7 @@
     "address": "Roxbury, Boston, MA",
     "city": "Boston",
     "first_seen": "2026-10-29T03:04:39.795020+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "bp-8177993",
@@ -12717,7 +12717,7 @@
     "address": "Back Bay, Boston, MA",
     "city": "Boston",
     "first_seen": "2026-10-29T03:04:39.795020+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "bp-8160025",
@@ -12745,7 +12745,7 @@
     "fee_details": "No Fee",
     "address": "Roxbury, Boston, MA",
     "first_seen": "2026-10-29T02:44:03.608907+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "bp-8160026",
@@ -12773,7 +12773,7 @@
     "fee_details": "No Fee",
     "address": "Roxbury, Boston, MA",
     "first_seen": "2026-10-29T02:44:03.608907+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "cl-AkAsx4rVyaApM7mi",
@@ -12833,7 +12833,7 @@
     "fee_details": "No Fee",
     "address": "Cambridge - Harvard Square, Cambridge, MA",
     "first_seen": "2026-10-29T02:44:03.608907+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "bp-8128467",
@@ -12930,7 +12930,7 @@
     "sqft": null,
     "address": "Harvard Square",
     "first_seen": "2026-10-29T02:44:07.640624+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00",
+    "last_seen": "2026-10-29T03:09:21.693534+00:00",
     "availability": "Available Dec 1",
     "images": [
       "https://images.craigslist.org/00J0J_46aKN6IVpxv_0CI0t2_600x450.jpg",
@@ -12973,7 +12973,7 @@
     "fee_details": "No Fee",
     "address": "Cambridge - East Cambridge, Cambridge, MA",
     "first_seen": "2026-10-29T02:44:03.608907+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "bp-8177292",
@@ -13085,7 +13085,7 @@
     "fee_details": "No Fee",
     "address": "Medford - Medford Square, Medford, MA",
     "first_seen": "2026-10-29T02:44:03.608907+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "reddit_1xg37rw",
@@ -13093,8 +13093,8 @@
     "price": 3000,
     "address": "Jamaica Plain, Boston, MA",
     "neighborhood": "Jamaica Plain, Boston, MA",
-    "lat": 42.30554,
-    "lng": -71.12302,
+    "lat": 42.30186,
+    "lng": -71.11246,
     "url": "https://www.reddit.com/r/bostonhousing/comments/1xg37rw/2br1b_1100_sqft_3000mo_jamaica_plain_lease/",
     "source": "reddit",
     "source_label": "Reddit",
@@ -13112,7 +13112,7 @@
     "fee_badge": "No Broker Fee",
     "fee_details": "Direct community listing on Reddit (No Broker Fee).",
     "first_seen": "2026-10-26T17:23:51+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "bp-8138351",
@@ -13140,7 +13140,7 @@
     "fee_details": "No Fee",
     "address": "Cambridge - East Cambridge, Cambridge, MA",
     "first_seen": "2026-10-29T03:04:39.795020+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "bp-8176947",
@@ -13168,7 +13168,7 @@
     "fee_details": "No Fee",
     "address": "Somerville - West Somerville/ Teele Square, Somerville, MA",
     "first_seen": "2026-10-29T03:04:39.795020+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "bp-8178199",
@@ -13196,7 +13196,7 @@
     "fee_details": "No Fee",
     "address": "Beacon Hill, Boston, MA",
     "first_seen": "2026-10-29T03:04:39.795020+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "cl-6GgyFBuY2ehHGvGS",
@@ -13215,7 +13215,7 @@
     "sqft": 498,
     "address": "345 Harrison Ave.",
     "first_seen": "2026-10-29T02:44:05.775041+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00",
+    "last_seen": "2026-10-29T03:09:21.693534+00:00",
     "availability": "Contact Lister",
     "images": [
       "https://images.craigslist.org/01313_dSZfTmGYzMY_0fk0ad_600x450.jpg",
@@ -13258,7 +13258,7 @@
     "fee_details": "No Fee",
     "address": "Allston, Boston, MA",
     "first_seen": "2026-10-29T02:44:03.608907+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "cl-sAaLhsAGvvmac6At",
@@ -13277,7 +13277,7 @@
     "sqft": 1529,
     "address": "Peabody, MA",
     "first_seen": "2026-10-29T02:44:05.780149+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00",
+    "last_seen": "2026-10-29T03:09:21.693534+00:00",
     "availability": "Contact Lister",
     "images": [
       "https://images.craigslist.org/00S0S_8dTWU1qDU6S_0fk0ad_600x450.jpg",
@@ -13398,7 +13398,7 @@
     "fee_details": "No Fee",
     "address": "Somerville - Union Square, Somerville, MA",
     "first_seen": "2026-10-29T03:04:39.795020+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "bp-8177132",
@@ -13454,7 +13454,7 @@
     "fee_details": "No Fee",
     "address": "Brighton - Oak Square, Boston, MA",
     "first_seen": "2026-10-29T03:04:39.795020+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "cl-934Qi7ZpRSYY2AVp",
@@ -13473,7 +13473,7 @@
     "sqft": 1250,
     "address": "Quincy",
     "first_seen": "2026-10-29T02:44:06.056268+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00",
+    "last_seen": "2026-10-29T03:09:21.693534+00:00",
     "availability": "Available Nov 15",
     "images": [
       "https://images.craigslist.org/00i0i_k9I4nJ7pLl0_0lM0t2_600x450.jpg",
@@ -13516,7 +13516,7 @@
     "fee_details": "No Fee",
     "address": "Cambridge - Mt. Auburn/Brattle/ Fresh Pond, Cambridge, MA",
     "first_seen": "2026-10-29T02:44:03.608907+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "bp-8177240",
@@ -13544,7 +13544,7 @@
     "fee_details": "No Fee",
     "address": "Cambridge - Harvard Square, Cambridge, MA",
     "first_seen": "2026-10-29T02:44:03.608907+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "bp-8177234",
@@ -13628,7 +13628,7 @@
     "fee_details": "No Fee",
     "address": "Brookline - Cleveland Circle, Brookline, MA",
     "first_seen": "2026-10-29T02:44:03.608907+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "cl-8fJTjCYCPNetUGdB",
@@ -13688,7 +13688,7 @@
     "fee_details": "Direct from building management. No broker fee + 1 month free special.",
     "address": "50 Northern Ave, Boston, MA 02210",
     "first_seen": "2026-10-29T02:44:03.608907+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "bp-8177169",
@@ -13716,7 +13716,7 @@
     "fee_details": "No Fee",
     "address": "Somerville - Magoun/Ball Square, Somerville, MA",
     "first_seen": "2026-10-29T02:44:03.608907+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "bp-8177154",
@@ -13744,7 +13744,7 @@
     "fee_details": "No Fee",
     "address": "Cambridge - Porter Square, Cambridge, MA",
     "first_seen": "2026-10-29T02:44:03.608907+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "bp-8177159",
@@ -13827,7 +13827,7 @@
     "fee_details": "No Fee",
     "address": "Jamaica Plain - Hyde Square, Boston, MA",
     "first_seen": "2026-10-29T02:44:03.608907+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "bp-8176576",
@@ -13855,7 +13855,7 @@
     "fee_details": "No Fee",
     "address": "Brighton - Brighton Center, Boston, MA",
     "first_seen": "2026-10-29T02:44:03.608907+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "cl-tModr5VK8kcJ52jx",
@@ -13920,7 +13920,7 @@
     "has_broker_fee": null,
     "fee_badge": "Fee Unspecified",
     "fee_details": "Contact lister for fee status",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00",
+    "last_seen": "2026-10-29T03:09:21.693534+00:00",
     "first_seen": "2026-10-29T02:44:08.225168+00:00"
   },
   {
@@ -13979,7 +13979,7 @@
     "has_broker_fee": false,
     "fee_badge": "No Broker Fee",
     "fee_details": "Owner pays fee or no broker fee required",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00",
+    "last_seen": "2026-10-29T03:09:21.693534+00:00",
     "first_seen": "2026-10-29T02:44:08.225158+00:00"
   },
   {
@@ -14013,7 +14013,7 @@
     "has_broker_fee": false,
     "fee_badge": "No Broker Fee",
     "fee_details": "Owner pays fee or no broker fee required",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00",
+    "last_seen": "2026-10-29T03:09:21.693534+00:00",
     "first_seen": "2026-10-29T02:44:12.174179+00:00"
   },
   {
@@ -14070,7 +14070,7 @@
     "fee_details": "No Fee",
     "address": "Brookline - Coolidge Corner, Brookline, MA",
     "first_seen": "2026-10-29T03:04:39.795020+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "bp-8177988",
@@ -14098,7 +14098,7 @@
     "fee_details": "No Fee",
     "address": "Brookline - Coolidge Corner, Brookline, MA",
     "first_seen": "2026-10-29T03:04:39.795020+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "bp-8167611",
@@ -14154,7 +14154,7 @@
     "fee_details": "No Fee",
     "address": "Brookline - Boston University, Brookline, MA",
     "first_seen": "2026-10-29T02:44:03.608907+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "bp-8177251",
@@ -14182,7 +14182,7 @@
     "fee_details": "No Fee",
     "address": "Allston, Boston, MA",
     "first_seen": "2026-10-29T02:44:03.608907+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "bp-8157790",
@@ -14210,7 +14210,7 @@
     "fee_details": "No Fee",
     "address": "Brighton- Washington St./ Allston St., Boston, MA",
     "first_seen": "2026-10-29T02:44:03.608907+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "bp-8176826",
@@ -14238,7 +14238,7 @@
     "fee_details": "No Fee",
     "address": "Medford - Magoun Square, Medford, MA",
     "first_seen": "2026-10-29T03:04:39.795020+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "cl-XBbnQka9wuPVswPD",
@@ -14257,7 +14257,7 @@
     "sqft": 1200,
     "address": "Newton - Auburndale Area",
     "first_seen": "2026-10-29T02:44:06.340403+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00",
+    "last_seen": "2026-10-29T03:09:21.693534+00:00",
     "availability": "Available Nov 1",
     "images": [
       "https://images.craigslist.org/00H0H_919mMmZaBcl_07K0ak_600x450.jpg",
@@ -14384,7 +14384,7 @@
     "fee_details": "No Fee",
     "address": "Somerville - West Somerville/ Teele Square, Somerville, MA",
     "first_seen": "2026-10-29T03:04:39.795020+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "reddit_1xh2bvv",
@@ -14392,8 +14392,8 @@
     "price": 3245,
     "address": "Greater Boston, MA",
     "neighborhood": "Greater Boston, MA",
-    "lat": 42.36474,
-    "lng": -71.06506,
+    "lat": 42.35978,
+    "lng": -71.05978,
     "url": "https://www.reddit.com/r/bostonhousing/comments/1xh2bvv/lease_takeover_burlington_ma_prime_location/",
     "source": "reddit",
     "source_label": "Reddit",
@@ -14411,7 +14411,7 @@
     "fee_badge": "No Broker Fee",
     "fee_details": "Direct community listing on Reddit (No Broker Fee).",
     "first_seen": "2026-10-27T19:33:26+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "bp-8176570",
@@ -14465,7 +14465,7 @@
     "fee_details": "No Fee",
     "address": "Brighton - Brighton Center, Boston, MA",
     "first_seen": "2026-10-29T02:44:03.608907+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "bp-8177411",
@@ -14493,7 +14493,7 @@
     "address": "Jamaica Plain - Jackson Square, Boston, MA",
     "city": "Boston",
     "first_seen": "2026-10-29T02:44:03.608907+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "cl-MT7gd8LZ1A6MAVzJ",
@@ -14546,7 +14546,7 @@
     "fee_details": "No Fee",
     "address": "Brighton- Washington St./ Allston St., Boston, MA",
     "first_seen": "2026-10-29T02:44:03.608907+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "rf-boston-01",
@@ -14574,7 +14574,7 @@
     "fee_details": "Direct lease with building management. Zero broker fee.",
     "address": "540 Harrison Ave, Boston, MA 02118",
     "first_seen": "2026-10-29T02:44:03.608907+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "cl-UZL9KcivvSB7akcb",
@@ -14607,7 +14607,7 @@
     "has_broker_fee": false,
     "fee_badge": "No Broker Fee",
     "fee_details": "Owner pays fee or no broker fee required",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00",
+    "last_seen": "2026-10-29T03:09:21.693534+00:00",
     "first_seen": "2026-10-29T02:44:08.225174+00:00"
   },
   {
@@ -14713,7 +14713,7 @@
     "fee_details": "No Fee",
     "address": "Brookline - Boston University, Brookline, MA",
     "first_seen": "2026-10-29T02:44:03.608907+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "bp-8177286",
@@ -14819,7 +14819,7 @@
     "fee_details": "No Fee",
     "address": "Medford - Tufts, Medford, MA",
     "first_seen": "2026-10-29T02:44:03.608907+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "bp-8177237",
@@ -14903,7 +14903,7 @@
     "fee_details": "No Fee",
     "address": "Brookline - Boston University, Brookline, MA",
     "first_seen": "2026-10-29T02:44:03.608907+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "bp-8032414",
@@ -14931,7 +14931,7 @@
     "fee_details": "No Fee",
     "address": "Brighton - Brighton Center, Boston, MA",
     "first_seen": "2026-10-29T02:44:03.608907+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "bp-47124",
@@ -14959,7 +14959,7 @@
     "fee_details": "No Fee",
     "address": "Brighton - Brighton Center, Boston, MA",
     "first_seen": "2026-10-29T02:44:03.608907+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "bp-8157785",
@@ -15015,7 +15015,7 @@
     "fee_details": "No Fee",
     "address": "Brighton - Brighton Center, Boston, MA",
     "first_seen": "2026-10-29T02:44:03.608907+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "cl-CF5H3QUxaEUS7s5e",
@@ -15034,7 +15034,7 @@
     "sqft": 1526,
     "address": "Woburn",
     "first_seen": "2026-10-29T02:44:05.750496+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00",
+    "last_seen": "2026-10-29T03:09:21.693534+00:00",
     "availability": "Contact Lister",
     "images": [
       "https://images.craigslist.org/00z0z_baJbTo5FkJm_0jm0dq_600x450.jpg",
@@ -15134,7 +15134,7 @@
     "fee_details": "No Fee",
     "address": "Medford - Tufts, Medford, MA",
     "first_seen": "2026-10-29T03:04:39.795020+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "bp-8171381",
@@ -15181,7 +15181,7 @@
     "sqft": 1420,
     "address": "Braintree",
     "first_seen": "2026-10-29T02:44:05.731900+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00",
+    "last_seen": "2026-10-29T03:09:21.693534+00:00",
     "availability": "Contact Lister",
     "images": [
       "https://images.craigslist.org/00t0t_2HDyCLvPfip_0jm0br_600x450.jpg",
@@ -15280,7 +15280,7 @@
     "fee_details": "No Fee",
     "address": "North End, Boston, MA",
     "first_seen": "2026-10-29T03:04:39.795020+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "bp-8155056",
@@ -15308,7 +15308,7 @@
     "fee_details": "No Fee",
     "address": "Brookline - Boston University, Boston, MA",
     "first_seen": "2026-10-29T03:04:39.795020+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "bp-8092582",
@@ -15336,7 +15336,7 @@
     "fee_details": "No Fee",
     "address": "Brookline - Boston University, Boston, MA",
     "first_seen": "2026-10-29T03:04:39.795020+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "bp-8176564",
@@ -15364,7 +15364,7 @@
     "fee_details": "No Fee",
     "address": "Brighton- Washington St./ Allston St., Boston, MA",
     "first_seen": "2026-10-29T02:44:03.608907+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "bp-8177146",
@@ -15446,7 +15446,7 @@
     "fee_details": "No Fee",
     "address": "Dorchester - Grove Hall, Boston, MA",
     "first_seen": "2026-10-29T02:44:03.608907+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "bp-8178097",
@@ -15474,7 +15474,7 @@
     "fee_details": "No Fee",
     "address": "Brighton - Brighton Center, Boston, MA",
     "first_seen": "2026-10-29T02:44:03.608907+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "bp-8173098",
@@ -15586,7 +15586,7 @@
     "fee_details": "No Fee",
     "address": "Somerville - Tufts, Somerville, MA",
     "first_seen": "2026-10-29T03:04:39.795020+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "fb-boston-02",
@@ -15613,7 +15613,7 @@
     "fee_details": "One month broker fee co-brokered",
     "address": "Harvard Ave & Commonwealth Ave, Allston, MA 02134",
     "first_seen": "2026-10-29T02:44:03.608907+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "bp-8145090",
@@ -15641,7 +15641,7 @@
     "fee_details": "No Fee",
     "address": "Cambridge - East Cambridge, Cambridge, MA",
     "first_seen": "2026-10-29T03:04:39.795020+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "bp-8177985",
@@ -15775,7 +15775,7 @@
     "fee_details": "No Fee",
     "address": "Brookline - Longwood Area, Brookline, MA",
     "first_seen": "2026-10-29T02:44:03.608907+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "bp-8178108",
@@ -15803,7 +15803,7 @@
     "fee_details": "No Fee",
     "address": "Allston, Boston, MA",
     "first_seen": "2026-10-29T02:44:03.608907+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "cl-sQDNYEoV2NDbS8sm",
@@ -15914,7 +15914,7 @@
     "fee_details": "No Fee",
     "address": "Cambridge - Harvard Square, Cambridge, MA",
     "first_seen": "2026-10-29T02:44:03.608907+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "bp-8130916",
@@ -15968,7 +15968,7 @@
     "fee_details": "No Fee",
     "address": "Somerville - Magoun/Ball Square, Somerville, MA",
     "first_seen": "2026-10-29T03:04:39.795020+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "bp-8177160",
@@ -16080,7 +16080,7 @@
     "fee_details": "No Fee",
     "address": "Medford - Medford Square, Medford, MA",
     "first_seen": "2026-10-29T02:44:03.608907+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "bp-8172347",
@@ -16108,7 +16108,7 @@
     "fee_details": "No Fee",
     "address": "Somerville - Davis Square, Somerville, MA",
     "first_seen": "2026-10-29T03:04:39.795020+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "bp-8172348",
@@ -16136,7 +16136,7 @@
     "fee_details": "No Fee",
     "address": "Somerville - East Somerville, Somerville, MA",
     "first_seen": "2026-10-29T03:04:39.795020+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "bp-8170293",
@@ -16189,7 +16189,7 @@
     "fee_details": "No Fee",
     "address": "Cambridge - East Cambridge, Cambridge, MA",
     "first_seen": "2026-10-29T03:04:39.795020+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "bp-8157172",
@@ -16293,7 +16293,7 @@
     "fee_details": "No Fee",
     "address": "Medford - Tufts, Medford, MA",
     "first_seen": "2026-10-29T02:44:03.608907+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "cl-fivJLuV1o9sAx7CE",
@@ -16312,7 +16312,7 @@
     "sqft": 500,
     "address": "Boston",
     "first_seen": "2026-10-29T02:44:06.328995+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00",
+    "last_seen": "2026-10-29T03:09:21.693534+00:00",
     "availability": "Available Nov 1",
     "images": [
       "https://images.craigslist.org/00u0u_jNVDvYb7Q0l_0t20CI_600x450.jpg",
@@ -16355,7 +16355,7 @@
     "fee_details": "No Fee",
     "address": "Somerville - Spring Hill, Somerville, MA",
     "first_seen": "2026-10-29T02:44:03.608907+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "bp-8178227",
@@ -16383,7 +16383,7 @@
     "fee_details": "No Fee",
     "address": "Allston, Boston, MA",
     "first_seen": "2026-10-29T02:44:03.608907+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "bp-8178230",
@@ -16411,7 +16411,7 @@
     "fee_details": "No Fee",
     "address": "Brookline - Boston University, Brookline, MA",
     "first_seen": "2026-10-29T02:44:03.608907+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "bp-8178229",
@@ -16439,7 +16439,7 @@
     "fee_details": "No Fee",
     "address": "Brookline - Boston University, Brookline, MA",
     "first_seen": "2026-10-29T02:44:03.608907+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "bp-8178170",
@@ -16467,7 +16467,7 @@
     "fee_details": "No Fee",
     "address": "Allston, Boston, MA",
     "first_seen": "2026-10-29T02:44:03.608907+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "bp-8178228",
@@ -16495,7 +16495,7 @@
     "fee_details": "No Fee",
     "address": "Allston, Boston, MA",
     "first_seen": "2026-10-29T02:44:03.608907+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "bp-8177968",
@@ -16540,7 +16540,7 @@
     "sqft": 1588,
     "address": "Needham",
     "first_seen": "2026-10-29T02:44:05.767559+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00",
+    "last_seen": "2026-10-29T03:09:21.693534+00:00",
     "availability": "Contact Lister",
     "images": [
       "https://images.craigslist.org/00Q0Q_aNoIAxdkDoZ_0fb0ad_600x450.jpg",
@@ -16662,7 +16662,7 @@
     "fee_details": "No Fee",
     "address": "Brookline - Boston University, Brookline, MA",
     "first_seen": "2026-10-29T02:44:03.608907+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "bp-8177195",
@@ -16800,7 +16800,7 @@
     "fee_details": "No Fee",
     "address": "Brookline - Boston University, Brookline, MA",
     "first_seen": "2026-10-29T03:04:39.795020+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "cl-4m9ULpBi9pW9qCJe",
@@ -16819,7 +16819,7 @@
     "sqft": 1227,
     "address": "Concord",
     "first_seen": "2026-10-29T02:44:06.035303+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00",
+    "last_seen": "2026-10-29T03:09:21.693534+00:00",
     "availability": "Contact Lister",
     "images": [
       "https://images.craigslist.org/00w0w_6BRDvqU3hNP_0jm0aD_600x450.jpg",
@@ -16859,7 +16859,7 @@
     "fee_details": "No Fee",
     "address": "Brighton - North Brighton, Boston, MA",
     "first_seen": "2026-10-29T02:44:03.608907+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "bp-8012858",
@@ -16912,7 +16912,7 @@
     "fee_details": "No Fee",
     "address": "Cambridge - Kendall Square, Cambridge, MA",
     "first_seen": "2026-10-29T03:04:39.795020+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "bp-8176968",
@@ -17024,7 +17024,7 @@
     "fee_details": "No Fee",
     "address": "Brookline - Chestnut Hill, Brookline, MA",
     "first_seen": "2026-10-29T02:44:03.608907+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "cl-Sg5WvxgL4SfTT4Lt",
@@ -17077,7 +17077,7 @@
     "fee_details": "Standard 1-month broker fee due at signing",
     "address": "248 Commonwealth Ave, Boston, MA 02116",
     "first_seen": "2026-10-29T02:44:03.608907+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "bp-8012860",
@@ -17212,7 +17212,7 @@
     "fee_details": "No Fee",
     "address": "Brookline - Boston University, Brookline, MA",
     "first_seen": "2026-10-29T02:44:03.608907+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "bp-4458868",
@@ -17240,7 +17240,7 @@
     "fee_details": "No Fee",
     "address": "Dorchester - Savin Hill, Boston, MA",
     "first_seen": "2026-10-29T02:44:03.608907+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "bp-4454402",
@@ -17296,7 +17296,7 @@
     "fee_details": "No Fee",
     "address": "Cambridge - Harvard Square, Cambridge, MA",
     "first_seen": "2026-10-29T03:04:39.795020+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "bp-8177295",
@@ -17324,7 +17324,7 @@
     "fee_details": "No Fee",
     "address": "Cambridge - Harvard Square, Cambridge, MA",
     "first_seen": "2026-10-29T03:04:39.795020+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "bp-8167513",
@@ -17352,7 +17352,7 @@
     "fee_details": "No Fee",
     "address": "Brookline - Boston University, Brookline, MA",
     "first_seen": "2026-10-29T03:04:39.795020+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "bp-4452420",
@@ -17380,7 +17380,7 @@
     "fee_details": "No Fee",
     "address": "Medford - Tufts, Medford, MA",
     "first_seen": "2026-10-29T03:04:39.795020+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "bp-3810374",
@@ -17464,7 +17464,7 @@
     "fee_details": "No Fee",
     "address": "Medford - Tufts, Medford, MA",
     "first_seen": "2026-10-29T03:04:39.795020+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "bp-8177178",
@@ -17492,7 +17492,7 @@
     "fee_details": "No Fee",
     "address": "Medford - Tufts, Medford, MA",
     "first_seen": "2026-10-29T02:44:03.608907+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "bp-8177120",
@@ -17520,7 +17520,7 @@
     "fee_details": "No Fee",
     "address": "Medford - Tufts, Medford, MA",
     "first_seen": "2026-10-29T03:04:39.795020+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "bp-8176828",
@@ -17602,7 +17602,7 @@
     "fee_details": "No Fee",
     "address": "Medford - Magoun Square, Medford, MA",
     "first_seen": "2026-10-29T02:44:03.608907+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "bp-4452395",
@@ -17658,7 +17658,7 @@
     "fee_details": "No Fee",
     "address": "Somerville - Spring Hill, Somerville, MA",
     "first_seen": "2026-10-29T03:04:39.795020+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "bp-8177316",
@@ -17686,7 +17686,7 @@
     "fee_details": "No Fee",
     "address": "Brookline - Brookline Village, Brookline, MA",
     "first_seen": "2026-10-29T03:04:39.795020+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "bp-8177198",
@@ -17714,7 +17714,7 @@
     "fee_details": "No Fee",
     "address": "Medford - Tufts, Medford, MA",
     "first_seen": "2026-10-29T02:44:03.608907+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "bp-8171345",
@@ -17768,7 +17768,7 @@
     "fee_details": "No Fee",
     "address": "Allston, Boston, MA",
     "first_seen": "2026-10-29T02:44:03.608907+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "bp-4116388",
@@ -17796,7 +17796,7 @@
     "fee_details": "No Fee",
     "address": "Somerville - Winter Hill, Somerville, MA",
     "first_seen": "2026-10-29T03:04:39.795020+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "bp-8175259",
@@ -17850,7 +17850,7 @@
     "fee_details": "No Fee",
     "address": "Cambridge - Central Square/Cambridgeport, Cambridge, MA",
     "first_seen": "2026-10-29T02:44:03.608907+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "bp-8173096",
@@ -17960,7 +17960,7 @@
     "fee_details": "No Fee",
     "address": "Cambridge - Central Square/Cambridgeport, Cambridge, MA",
     "first_seen": "2026-10-29T03:04:39.795020+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "bp-4531489",
@@ -17988,7 +17988,7 @@
     "fee_details": "No Fee",
     "address": "Cambridge - Central Square/Cambridgeport, Cambridge, MA",
     "first_seen": "2026-10-29T03:04:39.795020+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "cl-og8v4gqjsKF8TYtc",
@@ -18007,7 +18007,7 @@
     "sqft": 990,
     "address": "Waltham",
     "first_seen": "2026-10-29T02:44:05.450499+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00",
+    "last_seen": "2026-10-29T03:09:21.693534+00:00",
     "availability": "Contact Lister",
     "images": [
       "https://images.craigslist.org/00K0K_cRYQgF0A3o4_0jm0cU_600x450.jpg",
@@ -18295,7 +18295,7 @@
     "has_broker_fee": false,
     "fee_badge": "No Broker Fee",
     "fee_details": "Owner pays fee or no broker fee required",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00",
+    "last_seen": "2026-10-29T03:09:21.693534+00:00",
     "first_seen": "2026-10-29T02:44:12.167114+00:00"
   },
   {
@@ -18324,7 +18324,7 @@
     "fee_details": "No Fee",
     "address": "Cambridge - Lechmere, Cambridge, MA",
     "first_seen": "2026-10-29T02:44:03.608907+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "bp-8177979",
@@ -18380,7 +18380,7 @@
     "fee_details": "No Fee",
     "address": "Somerville - Tufts, Somerville, MA",
     "first_seen": "2026-10-29T03:04:39.795020+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "bp-8157106",
@@ -18462,7 +18462,7 @@
     "fee_details": "No Fee",
     "address": "Dorchester - Savin Hill, Boston, MA",
     "first_seen": "2026-10-29T02:44:03.608907+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "bp-8177266",
@@ -18490,7 +18490,7 @@
     "fee_details": "No Fee",
     "address": "Medford - Medford Square, Medford, MA",
     "first_seen": "2026-10-29T02:44:03.608907+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "bp-8177315",
@@ -18518,7 +18518,7 @@
     "fee_details": "No Fee",
     "address": "Brookline - Cleveland Circle, Brookline, MA",
     "first_seen": "2026-10-29T03:04:39.795020+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "bp-8176902",
@@ -18546,7 +18546,7 @@
     "fee_details": "No Fee",
     "address": "Cambridge - Porter Square, Cambridge, MA",
     "first_seen": "2026-10-29T03:04:39.795020+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "bp-8178039",
@@ -18602,7 +18602,7 @@
     "fee_details": "No Fee",
     "address": "Somerville - Tufts, Somerville, MA",
     "first_seen": "2026-10-29T03:04:39.795020+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "bp-8177143",
@@ -18736,7 +18736,7 @@
     "fee_details": "No Fee",
     "address": "Somerville - Tufts, Somerville, MA",
     "first_seen": "2026-10-29T02:44:03.608907+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "bp-8169532",
@@ -18764,7 +18764,7 @@
     "fee_details": "No Fee",
     "address": "Somerville - East Somerville, Somerville, MA",
     "first_seen": "2026-10-29T02:44:03.608907+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "bp-8166372",
@@ -18792,7 +18792,7 @@
     "fee_details": "No Fee",
     "address": "Medford - Tufts, Palmer, MA",
     "first_seen": "2026-10-29T02:44:03.608907+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "bp-8178181",
@@ -18848,7 +18848,7 @@
     "fee_details": "No Fee",
     "address": "Brighton - Cleveland Circle, Boston, MA",
     "first_seen": "2026-10-29T02:44:03.608907+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "bp-8159274",
@@ -18902,7 +18902,7 @@
     "fee_details": "No Fee",
     "address": "Medford - Tufts, Medford, MA",
     "first_seen": "2026-10-29T02:44:03.608907+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "bp-8177322",
@@ -18930,7 +18930,7 @@
     "fee_details": "No Fee",
     "address": "Brookline - Boston University, Brookline, MA",
     "first_seen": "2026-10-29T03:04:39.795020+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "bp-8159612",
@@ -19009,7 +19009,7 @@
     "fee_details": "No Fee",
     "address": "Medford - Tufts, Medford, MA",
     "first_seen": "2026-10-29T02:44:03.608907+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "bp-3744840",
@@ -19037,7 +19037,7 @@
     "fee_details": "No Fee",
     "address": "Cambridge - East Cambridge, Cambridge, MA",
     "first_seen": "2026-10-29T02:44:03.608907+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "bp-8178193",
@@ -19065,7 +19065,7 @@
     "fee_details": "No Fee",
     "address": "Allston, Boston, MA",
     "first_seen": "2026-10-29T02:44:03.608907+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "bp-8174003",
@@ -19093,7 +19093,7 @@
     "fee_details": "No Fee",
     "address": "Medford - Tufts, Medford, MA",
     "first_seen": "2026-10-29T02:44:03.608907+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "bp-8178192",
@@ -19121,7 +19121,7 @@
     "fee_details": "No Fee",
     "address": "Allston, Boston, MA",
     "first_seen": "2026-10-29T03:04:39.795020+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "bp-8178063",
@@ -19149,7 +19149,7 @@
     "fee_details": "No Fee",
     "address": "Allston, Boston, MA",
     "first_seen": "2026-10-29T02:44:03.608907+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "bp-8178034",
@@ -19257,7 +19257,7 @@
     "fee_details": "No Fee",
     "address": "Cambridge - Inman Square, Cambridge, MA",
     "first_seen": "2026-10-29T03:04:39.795020+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "bp-8176907",
@@ -19285,7 +19285,7 @@
     "fee_details": "No Fee",
     "address": "Cambridge - Inman Square, Cambridge, MA",
     "first_seen": "2026-10-29T03:04:39.795020+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "bp-8125692",
@@ -19341,7 +19341,7 @@
     "fee_details": "No Fee",
     "address": "Cambridge - East Cambridge, Cambridge, MA",
     "first_seen": "2026-10-29T03:04:39.795020+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "bp-4454199",
@@ -19395,7 +19395,7 @@
     "fee_details": "No Fee",
     "address": "Brighton - Cleveland Circle, Boston, MA",
     "first_seen": "2026-10-29T02:44:03.608907+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "cl-1ncJbrdDg5DYQTLe",
@@ -19455,7 +19455,7 @@
     "fee_details": "No Fee",
     "address": "South End, Boston, MA",
     "first_seen": "2026-10-29T03:04:39.795020+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "bp-8139558",
@@ -19526,7 +19526,7 @@
     "sqft": null,
     "address": "Brockton",
     "first_seen": "2026-10-29T02:44:09.913517+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00",
+    "last_seen": "2026-10-29T03:09:21.693534+00:00",
     "availability": "Contact Lister",
     "images": [
       "https://images.craigslist.org/00J0J_iCkDRWJJ3cO_0pO0bV_600x450.jpg",
@@ -19597,7 +19597,7 @@
     "fee_details": "No Fee",
     "address": "Somerville - Magoun/Ball Square, Somerville, MA",
     "first_seen": "2026-10-29T02:44:03.608907+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "bp-8173419",
@@ -19625,7 +19625,7 @@
     "fee_details": "No Fee",
     "address": "Somerville - Spring Hill, Somerville, MA",
     "first_seen": "2026-10-29T02:44:03.608907+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "bp-8178095",
@@ -19653,7 +19653,7 @@
     "fee_details": "No Fee",
     "address": "Allston, Boston, MA",
     "first_seen": "2026-10-29T02:44:03.608907+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "bp-8178209",
@@ -19681,7 +19681,7 @@
     "fee_details": "No Fee",
     "address": "Allston, Boston, MA",
     "first_seen": "2026-10-29T02:44:03.608907+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "bp-8178211",
@@ -19709,7 +19709,7 @@
     "fee_details": "No Fee",
     "address": "Allston, Boston, MA",
     "first_seen": "2026-10-29T02:44:03.608907+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "bp-8178213",
@@ -19737,7 +19737,7 @@
     "fee_details": "No Fee",
     "address": "Allston, Boston, MA",
     "first_seen": "2026-10-29T02:44:03.608907+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "bp-4319040",
@@ -19765,7 +19765,7 @@
     "fee_details": "No Fee",
     "address": "Cambridge - Harvard Square, Cambridge, MA",
     "first_seen": "2026-10-29T03:04:39.795020+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "bp-8177323",
@@ -19793,7 +19793,7 @@
     "fee_details": "No Fee",
     "address": "Brookline - Cleveland Circle, Brookline, MA",
     "first_seen": "2026-10-29T03:04:39.795020+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "bp-8177617",
@@ -19849,7 +19849,7 @@
     "fee_details": "No Fee",
     "address": "Brighton - Cleveland Circle, Boston, MA",
     "first_seen": "2026-10-29T03:04:39.795020+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "bp-5774793",
@@ -19929,7 +19929,7 @@
     "fee_details": "No Fee",
     "address": "Medford - Tufts, Medford, MA",
     "first_seen": "2026-10-29T02:44:03.608907+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "bp-8178030",
@@ -19985,7 +19985,7 @@
     "fee_details": "No Fee",
     "address": "Allston, Boston, MA",
     "first_seen": "2026-10-29T02:44:03.608907+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "bp-8178208",
@@ -20013,7 +20013,7 @@
     "fee_details": "No Fee",
     "address": "Allston, Boston, MA",
     "first_seen": "2026-10-29T02:44:03.608907+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "bp-8177342",
@@ -20041,7 +20041,7 @@
     "fee_details": "No Fee",
     "address": "Brookline - Boston University, Brookline, MA",
     "first_seen": "2026-10-29T02:44:03.608907+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "bp-8154186",
@@ -20069,7 +20069,7 @@
     "fee_details": "No Fee",
     "address": "Brookline - Coolidge Corner, Brookline, MA",
     "first_seen": "2026-10-29T02:44:03.608907+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "bp-8176910",
@@ -20097,7 +20097,7 @@
     "fee_details": "No Fee",
     "address": "Cambridge - Harvard Square, Cambridge, MA",
     "first_seen": "2026-10-29T03:04:39.795020+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "bp-8178179",
@@ -20125,7 +20125,7 @@
     "fee_details": "No Fee",
     "address": "Allston, Boston, MA",
     "first_seen": "2026-10-29T02:44:03.608907+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "cl-c1teBug2z6cEthaG",
@@ -20144,7 +20144,7 @@
     "sqft": 765,
     "address": "Boston",
     "first_seen": "2026-10-29T02:44:05.955732+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00",
+    "last_seen": "2026-10-29T03:09:21.693534+00:00",
     "availability": "Contact Lister",
     "images": [
       "https://images.craigslist.org/00P0P_33YfQo3Rlf_0fk0ad_600x450.jpg",
@@ -20187,7 +20187,7 @@
     "fee_details": "No Fee",
     "address": "Cambridge - Kendall Square, Cambridge, MA",
     "first_seen": "2026-10-29T02:44:03.608907+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "bp-8169117",
@@ -20295,7 +20295,7 @@
     "fee_details": "No Fee",
     "address": "Somerville - Porter Square, Somerville, MA",
     "first_seen": "2026-10-29T02:44:03.608907+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "bp-8178028",
@@ -20351,7 +20351,7 @@
     "fee_details": "No Fee",
     "address": "Allston, Boston, MA",
     "first_seen": "2026-10-29T02:44:03.608907+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "bp-8098134",
@@ -20379,7 +20379,7 @@
     "fee_details": "No Fee",
     "address": "Somerville - Porter Square, Somerville, MA",
     "first_seen": "2026-10-29T02:44:03.608907+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "cl-9eLgpi84uxP9hgKs",
@@ -20439,7 +20439,7 @@
     "fee_details": "No Fee",
     "address": "Allston, Boston, MA",
     "first_seen": "2026-10-29T02:44:03.608907+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "bp-8163258",
@@ -20467,7 +20467,7 @@
     "fee_details": "No Fee",
     "address": "Medford - Tufts, Medford, MA",
     "first_seen": "2026-10-29T02:44:03.608907+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "bp-8172422",
@@ -20521,7 +20521,7 @@
     "fee_details": "No Fee",
     "address": "Medford - Tufts, Medford, MA",
     "first_seen": "2026-10-29T02:44:03.608907+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "bp-8171349",
@@ -20549,7 +20549,7 @@
     "fee_details": "No Fee",
     "address": "Brighton - North Brighton, Boston, MA",
     "first_seen": "2026-10-29T02:44:03.608907+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "bp-8171352",
@@ -20577,7 +20577,7 @@
     "fee_details": "No Fee",
     "address": "Brighton - North Brighton, Boston, MA",
     "first_seen": "2026-10-29T02:44:03.608907+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "bp-8175329",
@@ -20633,7 +20633,7 @@
     "fee_details": "No Fee",
     "address": "Cambridge - Harvard Square, Cambridge, MA",
     "first_seen": "2026-10-29T03:04:39.795020+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "bp-4445900",
@@ -20661,7 +20661,7 @@
     "fee_details": "No Fee",
     "address": "Brookline - Cleveland Circle, Brookline, MA",
     "first_seen": "2026-10-29T02:44:03.608907+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "bp-8175942",
@@ -20689,7 +20689,7 @@
     "fee_details": "No Fee",
     "address": "Fenway/Kenmore, Boston, MA",
     "first_seen": "2026-10-29T02:44:03.608907+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "bp-8141498",
@@ -20717,7 +20717,7 @@
     "fee_details": "No Fee",
     "address": "Cambridge - Central Square/Cambridgeport, Cambridge, MA",
     "first_seen": "2026-10-29T03:04:39.795020+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "cl-jTMXnKdUtqR7ghJb",
@@ -20827,7 +20827,7 @@
     "fee_details": "No Fee",
     "address": "South End, Boston, MA",
     "first_seen": "2026-10-29T02:44:03.608907+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "bp-8141499",
@@ -20855,7 +20855,7 @@
     "fee_details": "No Fee",
     "address": "Cambridge - Central Square/Cambridgeport, Cambridge, MA",
     "first_seen": "2026-10-29T03:04:39.795020+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "bp-8177959",
@@ -20908,7 +20908,7 @@
     "fee_details": "No Fee",
     "address": "Somerville - Tufts, Somerville, MA",
     "first_seen": "2026-10-29T02:44:03.608907+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "bp-8159788",
@@ -20962,7 +20962,7 @@
     "fee_details": "No Fee",
     "address": "Somerville - Tufts, Somerville, MA",
     "first_seen": "2026-10-29T02:44:03.608907+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "bp-8173715",
@@ -20990,7 +20990,7 @@
     "fee_details": "No Fee",
     "address": "Somerville - Tufts, Somerville, MA",
     "first_seen": "2026-10-29T02:44:03.608907+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "bp-8175608",
@@ -21018,7 +21018,7 @@
     "fee_details": "No Fee",
     "address": "Allston, Boston, MA",
     "first_seen": "2026-10-29T02:44:03.608907+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "bp-8177202",
@@ -21046,7 +21046,7 @@
     "fee_details": "No Fee",
     "address": "Medford - Tufts, Medford, MA",
     "first_seen": "2026-10-29T02:44:03.608907+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "bp-8160185",
@@ -21074,7 +21074,7 @@
     "fee_details": "No Fee",
     "address": "Brookline - Boston University, Brookline, MA",
     "first_seen": "2026-10-29T02:44:03.608907+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "bp-8159790",
@@ -21102,7 +21102,7 @@
     "fee_details": "No Fee",
     "address": "Somerville - Tufts, Somerville, MA",
     "first_seen": "2026-10-29T02:44:03.608907+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "bp-4225203",
@@ -21130,7 +21130,7 @@
     "fee_details": "No Fee",
     "address": "Mission Hill, Roxbury Crossing, MA",
     "first_seen": "2026-10-29T03:04:39.795020+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "bp-4452437",
@@ -21212,7 +21212,7 @@
     "fee_details": "No Fee",
     "address": "Medford - Tufts, Medford, MA",
     "first_seen": "2026-10-29T02:44:03.608907+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "bp-8161396",
@@ -21240,7 +21240,7 @@
     "fee_details": "No Fee",
     "address": "Somerville - Tufts, Somerville, MA",
     "first_seen": "2026-10-29T03:04:39.795020+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "bp-8178065",
@@ -21345,7 +21345,7 @@
     "fee_details": "No Fee",
     "address": "Somerville - Spring Hill, Somerville, MA",
     "first_seen": "2026-10-29T03:04:39.795020+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "cl-8mvFmScrtKBASeFG",
@@ -21364,7 +21364,7 @@
     "sqft": 581,
     "address": "Back Bay",
     "first_seen": "2026-10-29T02:44:05.172032+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00",
+    "last_seen": "2026-10-29T03:09:21.693534+00:00",
     "availability": "Available Jan 1",
     "images": [
       "https://images.craigslist.org/00T0T_9dg2JMGUNTH_0dW0iA_600x450.jpg",
@@ -21407,7 +21407,7 @@
     "fee_details": "No Fee",
     "address": "Brookline - Cleveland Circle, Brookline, MA",
     "first_seen": "2026-10-29T02:44:03.608907+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "bp-8174005",
@@ -21435,7 +21435,7 @@
     "fee_details": "No Fee",
     "address": "Medford - Tufts, Medford, MA",
     "first_seen": "2026-10-29T02:44:03.608907+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "bp-8173071",
@@ -21463,7 +21463,7 @@
     "fee_details": "No Fee",
     "address": "Somerville - Tufts, Somerville, MA",
     "first_seen": "2026-10-29T02:44:03.608907+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "bp-8173084",
@@ -21519,7 +21519,7 @@
     "fee_details": "No Fee",
     "address": "Medford - Tufts, Medford, MA",
     "first_seen": "2026-10-29T02:44:03.608907+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "bp-3820482",
@@ -21547,7 +21547,7 @@
     "fee_details": "No Fee",
     "address": "Somerville - Tufts, Somerville, MA",
     "first_seen": "2026-10-29T03:04:39.795020+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "bp-8177958",
@@ -21575,7 +21575,7 @@
     "address": "South End, Boston, MA",
     "city": "Boston",
     "first_seen": "2026-10-29T03:04:39.795020+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "bp-8014458",
@@ -21629,7 +21629,7 @@
     "fee_details": "No Fee",
     "address": "South End, Boston, MA",
     "first_seen": "2026-10-29T03:04:39.795020+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "bp-8177161",
@@ -21685,7 +21685,7 @@
     "fee_details": "No Fee",
     "address": "Medford - Tufts, Medford, MA",
     "first_seen": "2026-10-29T03:04:39.795020+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "bp-8177201",
@@ -21739,7 +21739,7 @@
     "fee_details": "No Fee",
     "address": "Medford - Tufts, Medford, MA",
     "first_seen": "2026-10-29T02:44:03.608907+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "bp-8170465",
@@ -21767,7 +21767,7 @@
     "fee_details": "No Fee",
     "address": "Medford - Tufts, Medford, MA",
     "first_seen": "2026-10-29T02:44:03.608907+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "bp-8176919",
@@ -21823,7 +21823,7 @@
     "fee_details": "No Fee",
     "address": "Somerville - Tufts, Somerville, MA",
     "first_seen": "2026-10-29T02:44:03.608907+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "bp-8173610",
@@ -21879,7 +21879,7 @@
     "fee_details": "No Fee",
     "address": "Medford - Tufts, Medford, MA",
     "first_seen": "2026-10-29T03:04:39.795020+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "bp-8177450",
@@ -21926,7 +21926,7 @@
     "sqft": 1174,
     "address": "Boston",
     "first_seen": "2026-10-29T02:44:05.756892+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00",
+    "last_seen": "2026-10-29T03:09:21.693534+00:00",
     "availability": "Contact Lister",
     "images": [
       "https://images.craigslist.org/01717_eFLrFlFsJnA_0fi0ad_600x450.jpg",
@@ -21995,7 +21995,7 @@
     "fee_details": "No Fee",
     "address": "Somerville - Tufts, Somerville, MA",
     "first_seen": "2026-10-29T03:04:39.795020+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "bp-8060894",
@@ -22023,7 +22023,7 @@
     "fee_details": "No Fee",
     "address": "Brookline - Coolidge Corner, Brookline, MA",
     "first_seen": "2026-10-29T02:44:03.608907+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "bp-8178200",
@@ -22051,7 +22051,7 @@
     "fee_details": "No Fee",
     "address": "Allston, Boston, MA",
     "first_seen": "2026-10-29T02:44:03.608907+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "bp-8176515",
@@ -22107,7 +22107,7 @@
     "fee_details": "No Fee",
     "address": "Somerville - Tufts, Somerville, MA",
     "first_seen": "2026-10-29T03:04:39.795020+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "bp-8170436",
@@ -22161,7 +22161,7 @@
     "fee_details": "No Fee",
     "address": "Medford - Tufts, Medford, MA",
     "first_seen": "2026-10-29T02:44:03.608907+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "bp-4454421",
@@ -22189,7 +22189,7 @@
     "fee_details": "No Fee",
     "address": "Brookline - Chestnut Hill, Brookline, MA",
     "first_seen": "2026-10-29T02:44:03.608907+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "bp-8171475",
@@ -22217,7 +22217,7 @@
     "fee_details": "No Fee",
     "address": "Medford - Tufts, Medford, MA",
     "first_seen": "2026-10-29T02:44:03.608907+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "bp-8177004",
@@ -22245,7 +22245,7 @@
     "fee_details": "No Fee",
     "address": "Somerville - Porter Square, Somerville, MA",
     "first_seen": "2026-10-29T03:04:39.795020+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "bp-8143771",
@@ -22299,7 +22299,7 @@
     "fee_details": "No Fee",
     "address": "Medford - Tufts, Medford, MA",
     "first_seen": "2026-10-29T02:44:03.608907+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "bp-6136227",
@@ -22327,7 +22327,7 @@
     "fee_details": "No Fee",
     "address": "Somerville - Tufts, Somerville, MA",
     "first_seen": "2026-10-29T03:04:39.795020+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "bp-8177977",
@@ -22462,7 +22462,7 @@
     "fee_details": "No Fee",
     "address": "Somerville - Magoun/Ball Square, Somerville, MA",
     "first_seen": "2026-10-29T03:04:39.795020+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "bp-8177008",
@@ -22490,7 +22490,7 @@
     "fee_details": "No Fee",
     "address": "Somerville - Tufts, Somerville, MA",
     "first_seen": "2026-10-29T03:04:39.795020+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "bp-8034912",
@@ -22518,7 +22518,7 @@
     "fee_details": "No Fee",
     "address": "Brookline - Washington Square, Brookline, MA",
     "first_seen": "2026-10-29T03:04:39.795020+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "bp-8168457",
@@ -22546,7 +22546,7 @@
     "fee_details": "No Fee",
     "address": "Medford - Tufts, Medford, MA",
     "first_seen": "2026-10-29T03:04:39.795020+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "bp-6136217",
@@ -22574,7 +22574,7 @@
     "fee_details": "No Fee",
     "address": "Medford - Tufts, Medford, MA",
     "first_seen": "2026-10-29T02:44:03.608907+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "bp-8178026",
@@ -22602,7 +22602,7 @@
     "fee_details": "No Fee",
     "address": "Somerville - West Somerville/ Teele Square, Somerville, MA",
     "first_seen": "2026-10-29T03:04:39.795020+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "bp-8177975",
@@ -22630,7 +22630,7 @@
     "fee_details": "No Fee",
     "address": "Brookline - Boston University, Brookline, MA",
     "first_seen": "2026-10-29T02:44:03.608907+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "bp-8169287",
@@ -22658,7 +22658,7 @@
     "fee_details": "No Fee",
     "address": "Somerville - Tufts, Somerville, MA",
     "first_seen": "2026-10-29T02:44:03.608907+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "bp-8169274",
@@ -22686,7 +22686,7 @@
     "fee_details": "No Fee",
     "address": "Cambridge - Kendall Square, Cambridge, MA",
     "first_seen": "2026-10-29T02:44:03.608907+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "bp-5452485",
@@ -22714,7 +22714,7 @@
     "fee_details": "No Fee",
     "address": "Medford - Tufts, Medford, MA",
     "first_seen": "2026-10-29T02:44:03.608907+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "bp-8159740",
@@ -22742,7 +22742,7 @@
     "fee_details": "No Fee",
     "address": "Somerville - Tufts, Somerville, MA",
     "first_seen": "2026-10-29T03:04:39.795020+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "bp-8178023",
@@ -22854,7 +22854,7 @@
     "fee_details": "No Fee",
     "address": "Brookline - Brookline Hills, Brookline, MA",
     "first_seen": "2026-10-29T02:44:03.608907+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "bp-8177973",
@@ -22908,7 +22908,7 @@
     "fee_details": "No Fee",
     "address": "Medford - Tufts, Medford, MA",
     "first_seen": "2026-10-29T02:44:03.608907+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "bp-8168732",
@@ -22936,7 +22936,7 @@
     "fee_details": "No Fee",
     "address": "Brookline - Brookline Hills, Brookline, MA",
     "first_seen": "2026-10-29T02:44:03.608907+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "bp-8177680",
@@ -22964,7 +22964,7 @@
     "fee_details": "No Fee",
     "address": "Brookline - Coolidge Corner, Brookline, MA",
     "first_seen": "2026-10-29T02:44:03.608907+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "bp-8167889",
@@ -22992,7 +22992,7 @@
     "fee_details": "No Fee",
     "address": "Downtown, Boston, MA",
     "first_seen": "2026-10-29T02:44:03.608907+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "bp-4069870",
@@ -23020,7 +23020,7 @@
     "fee_details": "No Fee",
     "address": "Cambridge - Harvard Square, Cambridge, MA",
     "first_seen": "2026-10-29T03:04:39.795020+00:00",
-    "last_seen": "2026-10-29T03:07:20.979519+00:00"
+    "last_seen": "2026-10-29T03:09:21.693534+00:00"
   },
   {
     "id": "bp-8176924",
