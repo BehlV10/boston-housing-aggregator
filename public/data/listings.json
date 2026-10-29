@@ -7452,7 +7452,7 @@
     "has_broker_fee": false,
     "fee_badge": "No Broker Fee",
     "fee_details": "Direct Tenant Sublet (No Broker Fee)",
-    "availability": "Flexible / Month-to-Month",
+    "availability": "Flexible Move-In",
     "move_in_period": "flexible"
   },
   {
@@ -16834,7 +16834,7 @@
     "has_broker_fee": false,
     "fee_badge": "No Broker Fee",
     "fee_details": "Direct Roommate Share (No Broker Fee)",
-    "move_in_period": "flexible"
+    "move_in_period": "2026-11"
   },
   {
     "id": "cl-3UXm5Rb3VTVBmVzn",
@@ -18976,7 +18976,7 @@
     "bedrooms": 1,
     "bathrooms": 1.0,
     "sqft": 0,
-    "availability": "Contact Lister",
+    "availability": "Available Jan 1, 2027",
     "rental_type": "entire_unit",
     "rental_type_label": "Condo / Apt",
     "images": [
@@ -29554,7 +29554,7 @@
     "bedrooms": 1,
     "bathrooms": 1.0,
     "sqft": 0,
-    "availability": "Flexible / Month-to-Month",
+    "availability": "Flexible Move-In",
     "rental_type": "entire_unit",
     "rental_type_label": "Condo / Apt",
     "images": [
@@ -37118,7 +37118,7 @@
     "has_broker_fee": null,
     "fee_badge": "Fee Unspecified",
     "fee_details": "Contact lister for fee status",
-    "availability": "Flexible / Month-to-Month",
+    "availability": "Flexible Move-In",
     "move_in_period": "flexible"
   },
   {

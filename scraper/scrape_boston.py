@@ -142,31 +142,37 @@ def normalize_move_in_date(raw_avail, title, desc, rtype):
     if re.search(r'\b(avail(?:able)?\s+now|avail\.?\s*now|immediate(?:ly)?|ready\s+now|move[\s-]in\s+ready)\b', t_low):
         return 'Available Now', 'immediate'
 
-    # 2. Check explicit structured date in raw_avail (from MLS/BostonPads APIs or metadata)
+    # 2. Check explicit structured date in raw_avail (from Craigslist attributes, MLS/BostonPads APIs, etc.)
     if raw_avail and str(raw_avail).strip().lower() not in ['contact lister', 'missing', 'none']:
-        # If it's already a formatted string from a previous run, don't blindly re-lock if description says otherwise
         low_av = str(raw_avail).lower()
-        if not low_av.startswith('available ') or any(f in low_av for f in ['01-01', '01-02', '11-01', '12-01', '06-01', '09-01']):
-            if any(w in low_av for w in ['now', 'immediate', 'today', 'asap', 'ready']):
-                return 'Available Now', 'immediate'
-            if '01-01' in low_av or '01-02' in low_av or 'jan 1' in low_av or 'jan 2' in low_av or 'jan 1st' in low_av:
-                return 'Available Jan 1, 2027', '2027-01'
-            if 'jan 20' in low_av:
-                return 'Available Jan 20, 2027', '2027-01'
-            if '11-01' in low_av or '11-05' in low_av or 'nov 1' in low_av or 'nov 15' in low_av or 'nov 14' in low_av:
-                return 'Available Nov 1, 2026', '2026-11'
-            if '12-01' in low_av or '12-02' in low_av or 'dec 1' in low_av or 'dec 20' in low_av:
-                return 'Available Dec 1, 2026', '2026-12'
-            if '06-01' in low_av or 'jun 1' in low_av:
-                return 'Available Jun 1, 2027', '2027-06'
-            if '09-01' in low_av or 'sep 1' in low_av or 'sept 1' in low_av:
-                return 'Available Sep 1, 2027', '2027-09'
-            if '08-01' in low_av or 'aug 1' in low_av:
-                return 'Available Aug 1, 2027', '2027-08'
-            if '02-01' in low_av or 'feb 1' in low_av:
-                return 'Available Feb 1, 2027', '2027-02'
-            if 'oct 3' in low_av or 'oct 2' in low_av:
-                return 'Available Now', 'immediate'
+        if any(w in low_av for w in ['now', 'immediate', 'today', 'asap', 'ready']):
+            return 'Available Now', 'immediate'
+        if any(p in low_av for p in ['01-01', '01-02', 'jan 1', 'jan 2', 'jan 1st', 'january 1', 'january 1st']):
+            return 'Available Jan 1, 2027', '2027-01'
+        if any(p in low_av for p in ['jan 20', 'january 20']):
+            return 'Available Jan 20, 2027', '2027-01'
+        if any(p in low_av for p in ['11-01', '11-05', 'nov 1', 'nov 15', 'nov 14', 'november 1', 'november 1st', 'nov 1st']):
+            return 'Available Nov 1, 2026', '2026-11'
+        if any(p in low_av for p in ['12-01', '12-02', 'dec 1', 'dec 15', 'dec 20', 'december 1', 'december 1st', 'dec 1st']):
+            return 'Available Dec 1, 2026', '2026-12'
+        if any(p in low_av for p in ['02-01', 'feb 1', 'february 1']):
+            return 'Available Feb 1, 2027', '2027-02'
+        if any(p in low_av for p in ['03-01', 'mar 1', 'march 1']):
+            return 'Available Mar 1, 2027', '2027-03'
+        if any(p in low_av for p in ['04-01', 'apr 1', 'april 1']):
+            return 'Available Apr 1, 2027', '2027-04'
+        if any(p in low_av for p in ['05-01', 'may 1']):
+            return 'Available May 1, 2027', '2027-05'
+        if any(p in low_av for p in ['06-01', 'jun 1', 'june 1']):
+            return 'Available Jun 1, 2027', '2027-06'
+        if any(p in low_av for p in ['07-01', 'jul 1', 'july 1']):
+            return 'Available Jul 1, 2027', '2027-07'
+        if any(p in low_av for p in ['08-01', 'aug 1', 'august 1']):
+            return 'Available Aug 1, 2027', '2027-08'
+        if any(p in low_av for p in ['09-01', 'sep 1', 'sept 1', 'september 1']):
+            return 'Available Sep 1, 2027', '2027-09'
+        if any(p in low_av for p in ['oct 3', 'oct 2']):
+            return 'Available Now', 'immediate'
 
     # 3. Extract from title & description text with precise date matching
     text_date_patterns = [
@@ -206,14 +212,17 @@ def normalize_move_in_date(raw_avail, title, desc, rtype):
         # September 1 / Fall Cycle
         (r'\b(?:(?:0?9/0?1|0?9-0?1)(?:/(?:20)?27)?|sep(?:t(?:ember)?)?\s*(?:0?1st|0?1\b|first)|fall\s+(?:cycle|semester))\b', 'Available Sep 1, 2027', '2027-09'),
 
-        # General month move-ins if explicitly indicated
-        (r'\b(?:available\s+in\s+jan(?:uary)?|jan(?:uary)?\s+(?:move[\s-]in|start))\b', 'Available Jan 1, 2027', '2027-01'),
-        (r'\b(?:available\s+in\s+feb(?:ruary)?|feb(?:ruary)?\s+(?:move[\s-]in|start))\b', 'Available Feb 1, 2027', '2027-02'),
-        (r'\b(?:available\s+in\s+dec(?:ember)?|dec(?:ember)?\s+(?:move[\s-]in|start))\b', 'Available Dec 1, 2026', '2026-12'),
+        # Month move-in mentions (e.g. "move-in date: Nov or Dec", "available Nov", "move in Nov")
+        (r'\b(?:move[\s-]in(?:\s*date)?|available|start(?:ing)?)\s*:?\s*(?:in\s+)?nov(?:ember)?\b', 'Available Nov 1, 2026', '2026-11'),
+        (r'\b(?:move[\s-]in(?:\s*date)?|available|start(?:ing)?)\s*:?\s*(?:in\s+)?dec(?:ember)?\b', 'Available Dec 1, 2026', '2026-12'),
+        (r'\b(?:move[\s-]in(?:\s*date)?|available|start(?:ing)?)\s*:?\s*(?:in\s+)?jan(?:uary)?\b', 'Available Jan 1, 2027', '2027-01'),
+        (r'\b(?:move[\s-]in(?:\s*date)?|available|start(?:ing)?)\s*:?\s*(?:in\s+)?feb(?:ruary)?\b', 'Available Feb 1, 2027', '2027-02'),
 
         # General now/immediate indicators
         (r'\b(now|immediate(?:ly)?|asap|today)\b', 'Available Now', 'immediate'),
-        (r'\b(month\s*to\s*month|flexible\s*lease|flexible\s*move)\b', 'Flexible / Month-to-Month', 'flexible'),
+        # Genuine flexible / month-to-month tenancies
+        (r'\b(month[\s-]to[\s-]month|flexible\s*lease|mtm|30[\s-]day\s+notice)\b', 'Flexible / Month-to-Month', 'flexible'),
+        (r'\bflexible\s*move[\s-]in\b', 'Flexible Move-In', 'flexible'),
     ]
 
     for pat, label, period in text_date_patterns:
@@ -403,7 +412,9 @@ def fetch_craigslist_detail_page(listing, existing_cache=None):
                 baths = float(bb_m.group(2))
             # Availability date
             avail_text = None
-            avail_m = re.search(r'class="attr[^"]*available[^"]*">([^<]+)</span>', html, re.I)
+            avail_m = re.search(r'<span[^>]*class="attr[^"]*"[^>]*>\s*available\s+([^<]+)</span>', html, re.I)
+            if not avail_m:
+                avail_m = re.search(r'class="attr[^"]*available[^"]*">([^<]+)</span>', html, re.I)
             if avail_m:
                 avail_text = avail_m.group(1).strip()
             else:
