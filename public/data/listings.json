@@ -561,7 +561,7 @@
     "address": "Boston",
     "first_seen": "2026-10-29T02:44:10.635149+00:00",
     "last_seen": "2026-10-29T05:26:11.376814+00:00",
-    "availability": "Flexible / Month-to-Month",
+    "availability": "Flexible Move-In",
     "images": [
       "https://images.craigslist.org/00T0T_5eidlfcKj0g_0CI0t2_600x450.jpg",
       "https://images.craigslist.org/00y0y_2PfdzoFBkRL_0CI0t2_600x450.jpg",
@@ -16820,7 +16820,7 @@
     "address": "Cambridge",
     "first_seen": "2026-10-29T04:18:37.695836+00:00",
     "last_seen": "2026-10-29T05:26:11.376814+00:00",
-    "availability": "Flexible / Month-to-Month",
+    "availability": "Available Nov 1, 2026",
     "images": [
       "https://images.craigslist.org/00U0U_jQoc8iVxygm_0cU09G_600x450.jpg",
       "https://images.craigslist.org/00v0v_7alGAvMf9zf_0lM0t2_600x450.jpg",
@@ -18988,7 +18988,7 @@
     "fee_details": "Direct community listing on Reddit (No Broker Fee).",
     "first_seen": "2026-10-27T16:30:55+00:00",
     "last_seen": "2026-10-29T05:26:11.376814+00:00",
-    "move_in_period": "unspecified"
+    "move_in_period": "2027-01"
   },
   {
     "id": "bp-8177230",
