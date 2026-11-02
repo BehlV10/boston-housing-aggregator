@@ -254,9 +254,6 @@ export default function App() {
                 <h1 className={`text-lg font-extrabold tracking-tight ${isDark ? 'text-white' : 'text-gray-900'}`}>
                   Greater Boston Rentals Hub
                 </h1>
-                <span className="hidden sm:inline-block px-2 py-0.5 rounded-full text-[10px] font-bold bg-boston-gold/20 text-yellow-500 uppercase tracking-wider">
-                  Aggregator MVP
-                </span>
               </div>
               <p className={`text-xs ${isDark ? 'text-slate-400' : 'text-gray-500'}`}>
                 Boston &bull; Cambridge &bull; Somerville &bull; Brookline &bull; Allston
@@ -588,12 +585,10 @@ export default function App() {
       >
         <div className="max-w-7xl mx-auto px-4 flex flex-col sm:flex-row items-center justify-between gap-3">
           <div>
-            &copy; {new Date().getFullYear()} Boston Rentals Aggregator &bull; Open Source Flat-File Architecture
+            &copy; {new Date().getFullYear()} Greater Boston Rentals Hub
           </div>
-          <div className="flex items-center gap-4">
-            <span className="opacity-70">Deployed on GitHub Pages</span>
-            <span>&bull;</span>
-            <span className="opacity-70">Updated via GitHub Actions</span>
+          <div className="flex items-center gap-4 opacity-75">
+            <span>Boston &bull; Cambridge &bull; Somerville &bull; Brookline &bull; Allston</span>
           </div>
         </div>
       </footer>

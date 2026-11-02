@@ -173,3 +173,13 @@
 .theme-light .leaflet-popup-tip {
   background: #ffffff;
 }
+
+/* Theme dark-mode map tiles using high-performance CSS filter on OpenStreetMap (Zero API key / zero watermark) */
+.theme-midnight .leaflet-tile-pane {
+  filter: invert(100%) hue-rotate(180deg) brightness(95%) contrast(90%);
+}
+
+.theme-warm .leaflet-tile-pane {
+  filter: sepia(18%) contrast(97%) brightness(98%);
+}
+

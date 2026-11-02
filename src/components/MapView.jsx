@@ -4,21 +4,6 @@ import L from 'leaflet';
 import Supercluster from 'supercluster';
 import { ExternalLink, Bed, Bath, ShieldCheck, DollarSign, Maximize2, Calendar } from 'lucide-react';
 
-const TILE_CONFIG = {
-  midnight: {
-    url: 'https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png',
-    attribution: '&copy; <a href="https://carto.com/">CARTO</a> &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
-  },
-  warm: {
-    url: 'https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png',
-    attribution: '&copy; <a href="https://carto.com/">CARTO</a> &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
-  },
-  light: {
-    url: 'https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png',
-    attribution: '&copy; <a href="https://carto.com/">CARTO</a> &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
-  }
-};
-
 // Subcomponent to gently pan to selected listing WITHOUT zooming or resizing the map
 function MapUpdater({ selectedListing }) {
   const map = useMap();
@@ -351,7 +336,6 @@ function ListingMarker({
 export default function MapView({ listings, selectedListing, onSelectListing, theme = 'midnight' }) {
   // Center between Boston, Cambridge, Somerville, and Brookline
   const bostonCenter = [42.368, -71.095];
-  const tileConfig = TILE_CONFIG[theme] || TILE_CONFIG.midnight;
 
   const isDark = theme === 'midnight';
   const isWarm = theme === 'warm';
@@ -372,11 +356,10 @@ export default function MapView({ listings, selectedListing, onSelectListing, th
       >
         <MapUpdater selectedListing={selectedListing} />
 
-        {/* Dynamic Basemap Tile Layer */}
+        {/* 100% Free Open-Source OpenStreetMap Tiles (Zero API Key, Zero Watermarks) */}
         <TileLayer
-          key={tileConfig.url}
-          attribution={tileConfig.attribution}
-          url={tileConfig.url}
+          attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+          url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
           maxZoom={19}
         />
 
