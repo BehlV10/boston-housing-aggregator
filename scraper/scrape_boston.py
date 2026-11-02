@@ -133,48 +133,94 @@ def normalize_move_in_date(raw_avail, title, desc, rtype):
     Standardizes raw availability strings and extracts move-in dates from text
     into human-friendly labels (e.g. 'Available Jan 1, 2027') and machine-friendly
     period keys (e.g. '2027-01', 'immediate', 'flexible').
+    Returns: (label, primary_period, periods_list)
     """
     clean_d = re.sub(r'Visit original Craigslist posting.*', '', desc or '', flags=re.I)
     comb = f"{title or ''} {clean_d}".lower()
 
+    def make_single(lbl, period):
+        p_list = [period]
+        if period != 'flexible' and re.search(r'\b(flex|flexible|flexibility|negotiable)\b', comb, re.I):
+            p_list.append('flexible')
+        return lbl, period, p_list
+
+    def make_multi(lbl, primary, periods):
+        p_list = list(periods)
+        if re.search(r'\b(flex|flexible|flexibility|negotiable)\b', comb, re.I):
+            if 'flexible' not in p_list:
+                p_list.append('flexible')
+        return lbl, primary, p_list
+
     # 1. Priority 0: Explicit immediate availability in the title takes priority over text mentions
     t_low = (title or '').lower()
     if re.search(r'\b(avail(?:able)?\s+now|avail\.?\s*now|immediate(?:ly)?|ready\s+now|move[\s-]in\s+ready)\b', t_low):
-        return 'Available Now', 'immediate'
+        return make_single('Available Now', 'immediate')
 
-    # 2. Check explicit structured date in raw_avail (from Craigslist attributes, MLS/BostonPads APIs, etc.)
+    # 2. Priority 1: Multi-month move-in patterns (e.g. "Dec/Jan Move-In", "Nov or Dec", "Jan/Feb")
+    # Must be evaluated before single-month patterns so both months are captured!
+    multi_patterns = [
+        # Dec / Jan (or late Dec / early Jan)
+        (r'\b(?:dec(?:ember)?\s*(?:0?1st|0?1\b)?\s*(?:/|or|–|-|to|\s+and\s+)\s*(?:early\s+)?jan(?:uary)?|late\s+dec(?:ember)?\s*(?:/|or|to|\s+and\s+)\s*(?:early\s+)?jan(?:uary)?)\b',
+         'Available Dec 2026 / Jan 2027', '2026-12', ['2026-12', '2027-01']),
+
+        # Nov / Dec (or late Nov / early Dec)
+        (r'\b(?:nov(?:ember)?\s*(?:0?1st|0?1\b)?\s*(?:/|or|–|-|to|\s+and\s+)\s*(?:early\s+)?dec(?:ember)?|late\s+nov(?:ember)?\s*(?:/|or|to|\s+and\s+)\s*(?:early\s+)?dec(?:ember)?)\b',
+         'Available Nov / Dec 2026', '2026-11', ['2026-11', '2026-12']),
+
+        # Jan / Feb
+        (r'\b(?:jan(?:uary)?\s*(?:0?1st|0?1\b)?\s*(?:/|or|–|-|to|\s+and\s+)\s*(?:early\s+)?feb(?:ruary)?)\b',
+         'Available Jan / Feb 2027', '2027-01', ['2027-01', '2027-02']),
+
+        # Aug / Sep
+        (r'\b(?:aug(?:ust)?\s*(?:0?1st|0?1\b)?\s*(?:/|or|–|-|to|\s+and\s+)\s*(?:early\s+)?sep(?:t(?:ember)?)?)\b',
+         'Available Aug / Sep 2027', '2027-09', ['2027-08', '2027-09']),
+
+        # May / Jun
+        (r'\b(?:may\s*(?:0?1st|0?1\b)?\s*(?:/|or|–|-|to|\s+and\s+)\s*(?:early\s+)?jun(?:e)?)\b',
+         'Available May / Jun 2027', '2027-05', ['2027-05', '2027-06']),
+
+        # Jun / Jul
+        (r'\b(?:jun(?:e)?\s*(?:0?1st|0?1\b)?\s*(?:/|or|–|-|to|\s+and\s+)\s*(?:early\s+)?jul(?:y)?)\b',
+         'Available Jun / Jul 2027', '2027-06', ['2027-06', '2027-07']),
+    ]
+
+    for pat, label, primary, periods in multi_patterns:
+        if re.search(pat, comb, re.I):
+            return make_multi(label, primary, periods)
+
+    # 3. Check explicit structured date in raw_avail (from Craigslist attributes, MLS/BostonPads APIs, etc.)
     if raw_avail and str(raw_avail).strip().lower() not in ['contact lister', 'missing', 'none']:
         low_av = str(raw_avail).lower()
         if any(w in low_av for w in ['now', 'immediate', 'today', 'asap', 'ready']):
-            return 'Available Now', 'immediate'
+            return make_single('Available Now', 'immediate')
         if any(p in low_av for p in ['01-01', '01-02', 'jan 1', 'jan 2', 'jan 1st', 'january 1', 'january 1st']):
-            return 'Available Jan 1, 2027', '2027-01'
+            return make_single('Available Jan 1, 2027', '2027-01')
         if any(p in low_av for p in ['jan 20', 'january 20']):
-            return 'Available Jan 20, 2027', '2027-01'
+            return make_single('Available Jan 20, 2027', '2027-01')
         if any(p in low_av for p in ['11-01', '11-05', 'nov 1', 'nov 15', 'nov 14', 'november 1', 'november 1st', 'nov 1st']):
-            return 'Available Nov 1, 2026', '2026-11'
+            return make_single('Available Nov 1, 2026', '2026-11')
         if any(p in low_av for p in ['12-01', '12-02', 'dec 1', 'dec 15', 'dec 20', 'december 1', 'december 1st', 'dec 1st']):
-            return 'Available Dec 1, 2026', '2026-12'
+            return make_single('Available Dec 1, 2026', '2026-12')
         if any(p in low_av for p in ['02-01', 'feb 1', 'february 1']):
-            return 'Available Feb 1, 2027', '2027-02'
+            return make_single('Available Feb 1, 2027', '2027-02')
         if any(p in low_av for p in ['03-01', 'mar 1', 'march 1']):
-            return 'Available Mar 1, 2027', '2027-03'
+            return make_single('Available Mar 1, 2027', '2027-03')
         if any(p in low_av for p in ['04-01', 'apr 1', 'april 1']):
-            return 'Available Apr 1, 2027', '2027-04'
+            return make_single('Available Apr 1, 2027', '2027-04')
         if any(p in low_av for p in ['05-01', 'may 1']):
-            return 'Available May 1, 2027', '2027-05'
+            return make_single('Available May 1, 2027', '2027-05')
         if any(p in low_av for p in ['06-01', 'jun 1', 'june 1']):
-            return 'Available Jun 1, 2027', '2027-06'
+            return make_single('Available Jun 1, 2027', '2027-06')
         if any(p in low_av for p in ['07-01', 'jul 1', 'july 1']):
-            return 'Available Jul 1, 2027', '2027-07'
+            return make_single('Available Jul 1, 2027', '2027-07')
         if any(p in low_av for p in ['08-01', 'aug 1', 'august 1']):
-            return 'Available Aug 1, 2027', '2027-08'
+            return make_single('Available Aug 1, 2027', '2027-08')
         if any(p in low_av for p in ['09-01', 'sep 1', 'sept 1', 'september 1']):
-            return 'Available Sep 1, 2027', '2027-09'
+            return make_single('Available Sep 1, 2027', '2027-09')
         if any(p in low_av for p in ['oct 3', 'oct 2']):
-            return 'Available Now', 'immediate'
+            return make_single('Available Now', 'immediate')
 
-    # 3. Extract from title & description text with precise date matching
+    # 4. Extract from title & description text with precise date matching
     text_date_patterns = [
         # Explicit Available Now in body
         (r'\b(avail(?:able)?\s+now|immediate(?:ly)?\s+available|move[\s-]in\s+ready|ready\s+for\s+move[\s-]in|ready\s+for\s+immediate)\b', 'Available Now', 'immediate'),
@@ -227,14 +273,14 @@ def normalize_move_in_date(raw_avail, title, desc, rtype):
 
     for pat, label, period in text_date_patterns:
         if re.search(pat, comb, re.I):
-            return label, period
+            return make_single(label, period)
 
-    # 4. Market reality:
+    # 5. Market reality:
     # Active single rooms and sublets with no future dates in Boston are immediate vacancies
     if rtype in ['room', 'sublet']:
-        return 'Available Now', 'immediate'
+        return make_single('Available Now', 'immediate')
 
-    return 'Contact Lister', 'unspecified'
+    return make_single('Contact Lister', 'unspecified')
 
 
 SUBLET_PATTERNS = [
@@ -1115,7 +1161,7 @@ def scrape_boston_apartments(existing_cache=None):
             title = f"{beds} Bed {baths} Bath Apartment in {town}"
             desc = f"Apartment in {town}. Address: {addr}. Beds: {beds}, Baths: {baths}. Agency: {agency}. Listed on BostonApartments.com."
 
-            norm_avail, move_in_period = normalize_move_in_date('Available Now', title, desc, 'entire_unit')
+            norm_avail, move_in_period, move_in_periods = normalize_move_in_date('Available Now', title, desc, 'entire_unit')
 
             listings.append({
                 'id': ad_id,
@@ -1133,6 +1179,7 @@ def scrape_boston_apartments(existing_cache=None):
                 'sqft': None,
                 'availability': norm_avail,
                 'move_in_period': move_in_period,
+                'move_in_periods': move_in_periods,
                 'rental_type': 'entire_unit' if beds > 0 else 'room',
                 'rental_type_label': 'Condo / Apt' if beds > 0 else 'Studio / Apt',
                 'images': images,
@@ -2455,7 +2502,7 @@ def main():
                 item['fee_details'] = f'{sub_type} (No Broker Fee)'
 
         # Smart move-in date and period normalization
-        norm_avail, move_in_period = normalize_move_in_date(
+        norm_avail, move_in_period, move_in_periods = normalize_move_in_date(
             item.get('availability'),
             t,
             d,
@@ -2463,6 +2510,7 @@ def main():
         )
         item['availability'] = norm_avail
         item['move_in_period'] = move_in_period
+        item['move_in_periods'] = move_in_periods
 
         if item.get('lat') and item.get('lng'):
             cleaned_listings.append(item)
@@ -2484,8 +2532,9 @@ def main():
     for item in all_listings:
         s = item.get('source', 'unknown')
         sources_count[s] = sources_count.get(s, 0) + 1
-        mip = item.get('move_in_period', 'unspecified')
-        move_in_counts[mip] = move_in_counts.get(mip, 0) + 1
+        periods = item.get('move_in_periods') or ([item.get('move_in_period')] if item.get('move_in_period') else ['unspecified'])
+        for p in periods:
+            move_in_counts[p] = move_in_counts.get(p, 0) + 1
 
     metadata = {
         'city': 'Greater Boston, MA',

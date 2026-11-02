@@ -229,6 +229,7 @@ ${formData.description}
         last_seen: new Date().toISOString(),
         availability: formattedDateTag,
         move_in_period: formData.moveInDate ? formData.moveInDate.substring(0, 7) : 'immediate',
+        move_in_periods: formData.moveInDate ? [formData.moveInDate.substring(0, 7)] : ['immediate'],
         has_broker_fee: false,
         fee_badge: 'No Broker Fee',
         fee_details: 'Direct Roommate Listing (0% Broker Fee)',

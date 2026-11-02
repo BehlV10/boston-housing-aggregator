@@ -153,7 +153,10 @@ export default function App() {
 
         // Move-in Period filter
         if (filters.moveInDate && filters.moveInDate !== 'all') {
-          if (item.move_in_period !== filters.moveInDate) {
+          const periods = Array.isArray(item.move_in_periods) && item.move_in_periods.length > 0
+            ? item.move_in_periods
+            : (item.move_in_period ? [item.move_in_period] : []);
+          if (!periods.includes(filters.moveInDate)) {
             return false;
           }
         }
