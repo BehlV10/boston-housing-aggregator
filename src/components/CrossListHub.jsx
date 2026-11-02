@@ -21,7 +21,9 @@ import {
   RefreshCw
 } from 'lucide-react';
 
-export default function CrossListHub({ onAddCommunityListing }) {
+export default function CrossListHub({ onAddCommunityListing, theme = 'midnight' }) {
+  const isDark = theme === 'midnight';
+  const isWarm = theme === 'warm';
   const [activePlatform, setActivePlatform] = useState('reddit');
   const [copiedField, setCopiedField] = useState(null);
   const [isSavedLocally, setIsSavedLocally] = useState(false);
@@ -269,14 +271,20 @@ ${formData.description}
       {/* Main Grid: Left = Form, Right = Syndication Hub */}
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
         {/* Left Column: Input Form (7 cols) */}
-        <div className="lg:col-span-7 bg-white rounded-3xl border border-gray-200 p-6 sm:p-7 shadow-xs">
-          <div className="flex items-center justify-between pb-4 mb-5 border-b border-gray-100">
+        <div className={`lg:col-span-7 rounded-3xl border p-6 sm:p-7 shadow-xs ${
+          isDark
+            ? 'bg-[#131C31] border-slate-800 text-slate-100'
+            : isWarm
+            ? 'bg-[#FCFBF8] border-[#E3DFD5] text-stone-900'
+            : 'bg-white border-gray-200 text-gray-900'
+        }`}>
+          <div className={`flex items-center justify-between pb-4 mb-5 border-b ${isDark ? 'border-slate-800' : 'border-gray-100'}`}>
             <div>
-              <h3 className="font-bold text-gray-900 text-base flex items-center gap-2">
+              <h3 className={`font-bold text-base flex items-center gap-2 ${isDark ? 'text-white' : 'text-gray-900'}`}>
                 <Building2 className="w-5 h-5 text-boston-brick" />
                 <span>Room & Apartment Details</span>
               </h3>
-              <p className="text-xs text-gray-500 mt-0.5">Enter details once to generate all listings</p>
+              <p className={`text-xs mt-0.5 ${isDark ? 'text-slate-400' : 'text-gray-500'}`}>Enter details once to generate all listings</p>
             </div>
             <button
               type="button"
@@ -576,12 +584,16 @@ ${formData.description}
         {/* Right Column: Platform Syndication Hub (5 cols) */}
         <div className="lg:col-span-5 flex flex-col gap-5 sticky top-24">
           {/* Platform Tab Buttons */}
-          <div className="bg-white p-1.5 rounded-2xl border border-gray-200 shadow-xs flex items-center gap-1">
+          <div className={`p-1.5 rounded-2xl border shadow-xs flex items-center gap-1 ${
+            isDark ? 'bg-[#131C31] border-slate-800' : isWarm ? 'bg-[#FAF8F5] border-[#E2DDD2]' : 'bg-white border-gray-200'
+          }`}>
             <button
               onClick={() => setActivePlatform('reddit')}
               className={`flex-1 py-2 rounded-xl text-xs font-extrabold transition-all flex items-center justify-center gap-1.5 ${
                 activePlatform === 'reddit'
                   ? 'bg-orange-500 text-white shadow-sm'
+                  : isDark
+                  ? 'text-slate-400 hover:text-white hover:bg-slate-800'
                   : 'text-gray-600 hover:text-gray-900 hover:bg-gray-50'
               }`}
             >
@@ -593,6 +605,8 @@ ${formData.description}
               className={`flex-1 py-2 rounded-xl text-xs font-extrabold transition-all flex items-center justify-center gap-1.5 ${
                 activePlatform === 'craigslist'
                   ? 'bg-purple-700 text-white shadow-sm'
+                  : isDark
+                  ? 'text-slate-400 hover:text-white hover:bg-slate-800'
                   : 'text-gray-600 hover:text-gray-900 hover:bg-gray-50'
               }`}
             >
@@ -603,6 +617,8 @@ ${formData.description}
               className={`flex-1 py-2 rounded-xl text-xs font-extrabold transition-all flex items-center justify-center gap-1.5 ${
                 activePlatform === 'facebook'
                   ? 'bg-blue-600 text-white shadow-sm'
+                  : isDark
+                  ? 'text-slate-400 hover:text-white hover:bg-slate-800'
                   : 'text-gray-600 hover:text-gray-900 hover:bg-gray-50'
               }`}
             >
@@ -612,14 +628,20 @@ ${formData.description}
 
           {/* ACTIVE PLATFORM 1: REDDIT */}
           {activePlatform === 'reddit' && (
-            <div className="bg-white rounded-3xl border border-gray-200 p-6 shadow-xs flex flex-col gap-4">
+            <div className={`rounded-3xl border p-6 shadow-xs flex flex-col gap-4 ${
+              isDark
+                ? 'bg-[#131C31] border-slate-800 text-slate-100'
+                : isWarm
+                ? 'bg-[#FCFBF8] border-[#E3DFD5] text-stone-900'
+                : 'bg-white border-gray-200 text-gray-900'
+            }`}>
               <div className="flex items-center justify-between">
                 <div className="flex items-center gap-2">
                   <div className="w-7 h-7 rounded-lg bg-orange-100 text-orange-600 flex items-center justify-center font-bold text-xs">
                     r/
                   </div>
                   <div>
-                    <h4 className="font-bold text-sm text-gray-900">Reddit r/bostonhousing</h4>
+                    <h4 className={`font-bold text-sm ${isDark ? 'text-white' : 'text-gray-900'}`}>Reddit r/bostonhousing</h4>
                     <p className="text-[11px] text-gray-500">Auto-formatted markdown with pre-filled submit link</p>
                   </div>
                 </div>
@@ -681,14 +703,20 @@ ${formData.description}
 
           {/* ACTIVE PLATFORM 2: CRAIGSLIST */}
           {activePlatform === 'craigslist' && (
-            <div className="bg-white rounded-3xl border border-gray-200 p-6 shadow-xs flex flex-col gap-4">
+            <div className={`rounded-3xl border p-6 shadow-xs flex flex-col gap-4 ${
+              isDark
+                ? 'bg-[#131C31] border-slate-800 text-slate-100'
+                : isWarm
+                ? 'bg-[#FCFBF8] border-[#E3DFD5] text-stone-900'
+                : 'bg-white border-gray-200 text-gray-900'
+            }`}>
               <div className="flex items-center justify-between">
                 <div className="flex items-center gap-2">
                   <div className="w-7 h-7 rounded-lg bg-purple-100 text-purple-700 flex items-center justify-center font-bold text-xs">
                     CL
                   </div>
                   <div>
-                    <h4 className="font-bold text-sm text-gray-900">Craigslist Boston</h4>
+                    <h4 className={`font-bold text-sm ${isDark ? 'text-white' : 'text-gray-900'}`}>Craigslist Boston</h4>
                     <p className="text-[11px] text-gray-500">Rooms & Shares / Sublets / Apts for Rent</p>
                   </div>
                 </div>
@@ -773,14 +801,20 @@ ${formData.description}
 
           {/* ACTIVE PLATFORM 3: FACEBOOK */}
           {activePlatform === 'facebook' && (
-            <div className="bg-white rounded-3xl border border-gray-200 p-6 shadow-xs flex flex-col gap-4">
+            <div className={`rounded-3xl border p-6 shadow-xs flex flex-col gap-4 ${
+              isDark
+                ? 'bg-[#131C31] border-slate-800 text-slate-100'
+                : isWarm
+                ? 'bg-[#FCFBF8] border-[#E3DFD5] text-stone-900'
+                : 'bg-white border-gray-200 text-gray-900'
+            }`}>
               <div className="flex items-center justify-between">
                 <div className="flex items-center gap-2">
                   <div className="w-7 h-7 rounded-lg bg-blue-100 text-blue-600 flex items-center justify-center font-bold text-xs">
                     f
                   </div>
                   <div>
-                    <h4 className="font-bold text-sm text-gray-900">Facebook Marketplace & Groups</h4>
+                    <h4 className={`font-bold text-sm ${isDark ? 'text-white' : 'text-gray-900'}`}>Facebook Marketplace & Groups</h4>
                     <p className="text-[11px] text-gray-500">Emoji-structured mobile format for maximum DMs</p>
                   </div>
                 </div>

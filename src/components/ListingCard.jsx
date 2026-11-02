@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { ChevronLeft, ChevronRight, Bed, Bath, MapPin, ExternalLink, ShieldCheck, AlertCircle, Maximize2, Calendar, Home, DoorClosed, Repeat } from 'lucide-react';
 
-export default function ListingCard({ listing, isSelected, onSelect, onOpenDetails }) {
+export default function ListingCard({ listing, isSelected, onSelect, onOpenDetails, theme = 'midnight' }) {
   const [currentImgIndex, setCurrentImgIndex] = useState(0);
   const images = listing.images && listing.images.length > 0 ? listing.images : [];
 
@@ -15,7 +15,34 @@ export default function ListingCard({ listing, isSelected, onSelect, onOpenDetai
     setCurrentImgIndex((prev) => (prev === images.length - 1 ? 0 : prev + 1));
   };
 
+  const isDark = theme === 'midnight';
+  const isWarm = theme === 'warm';
+
   const getSourceBadgeColor = (source) => {
+    if (isDark) {
+      switch (source) {
+        case 'zillow':
+          return 'bg-blue-950/80 text-blue-300 border-blue-800';
+        case 'apartments_com':
+          return 'bg-emerald-950/80 text-emerald-300 border-emerald-800';
+        case 'facebook':
+          return 'bg-indigo-950/80 text-indigo-300 border-indigo-800';
+        case 'bostonpads':
+          return 'bg-teal-950/80 text-teal-300 border-teal-800';
+        case 'redfin':
+          return 'bg-rose-950/80 text-rose-300 border-rose-800';
+        case 'reddit':
+          return 'bg-orange-950/80 text-orange-300 border-orange-800';
+        case 'reit_direct':
+          return 'bg-emerald-950/80 text-emerald-300 border-emerald-700';
+        case 'bostonapartments':
+          return 'bg-sky-950/80 text-sky-300 border-sky-800';
+        case 'community':
+          return 'bg-amber-950/80 text-amber-300 border-amber-700';
+        default:
+          return 'bg-purple-950/80 text-purple-300 border-purple-800';
+      }
+    }
     switch (source) {
       case 'zillow':
         return 'bg-blue-50 text-blue-700 border-blue-200';
@@ -40,17 +67,31 @@ export default function ListingCard({ listing, isSelected, onSelect, onOpenDetai
     }
   };
 
+  const cardBorderClass = isSelected
+    ? isDark
+      ? 'border-rose-500 ring-2 ring-rose-500/50 shadow-lg shadow-rose-950/50'
+      : isWarm
+      ? 'border-boston-brick ring-2 ring-boston-brick shadow-md'
+      : 'border-boston-brick ring-2 ring-boston-brick shadow-md'
+    : isDark
+    ? 'border-slate-800 hover:border-slate-700 hover:shadow-lg hover:shadow-slate-950/60'
+    : isWarm
+    ? 'border-[#E3DFD5] hover:border-[#D5CFC3] hover:shadow-md'
+    : 'border-gray-200 hover:border-gray-300 hover:shadow-md';
+
+  const cardBgClass = isDark
+    ? 'bg-[#131C31]'
+    : isWarm
+    ? 'bg-[#FCFBF8]'
+    : 'bg-white';
+
   return (
     <div
       onClick={() => onSelect(listing)}
-      className={`group bg-white rounded-2xl overflow-hidden border transition-all duration-200 cursor-pointer flex flex-col ${
-        isSelected
-          ? 'border-boston-brick ring-2 ring-boston-brick shadow-lg'
-          : 'border-gray-200 hover:border-gray-300 hover:shadow-md'
-      }`}
+      className={`group ${cardBgClass} rounded-2xl overflow-hidden border transition-all duration-200 cursor-pointer flex flex-col ${cardBorderClass}`}
     >
       {/* Image Gallery */}
-      <div className="relative h-48 w-full bg-gray-100 overflow-hidden">
+      <div className="relative h-48 w-full bg-slate-900 overflow-hidden">
         {images.length > 0 ? (
           <img
             src={images[currentImgIndex]}
@@ -59,7 +100,7 @@ export default function ListingCard({ listing, isSelected, onSelect, onOpenDetai
             loading="lazy"
           />
         ) : (
-          <div className="w-full h-full flex items-center justify-center text-gray-400">
+          <div className="w-full h-full flex items-center justify-center text-slate-500 text-xs">
             No Image Available
           </div>
         )}
@@ -70,18 +111,18 @@ export default function ListingCard({ listing, isSelected, onSelect, onOpenDetai
             <button
               onClick={handlePrevImg}
               aria-label="Previous image"
-              className="absolute left-2 top-1/2 -translate-y-1/2 p-1.5 rounded-full bg-black/50 hover:bg-black/75 text-white opacity-0 group-hover:opacity-100 transition-opacity"
+              className="absolute left-2 top-1/2 -translate-y-1/2 p-1.5 rounded-full bg-black/60 hover:bg-black/85 text-white opacity-0 group-hover:opacity-100 transition-opacity backdrop-blur-xs"
             >
               <ChevronLeft className="w-4 h-4" />
             </button>
             <button
               onClick={handleNextImg}
               aria-label="Next image"
-              className="absolute right-2 top-1/2 -translate-y-1/2 p-1.5 rounded-full bg-black/50 hover:bg-black/75 text-white opacity-0 group-hover:opacity-100 transition-opacity"
+              className="absolute right-2 top-1/2 -translate-y-1/2 p-1.5 rounded-full bg-black/60 hover:bg-black/85 text-white opacity-0 group-hover:opacity-100 transition-opacity backdrop-blur-xs"
             >
               <ChevronRight className="w-4 h-4" />
             </button>
-            <div className="absolute bottom-2 right-2 px-2 py-0.5 rounded-md bg-black/60 text-[10px] font-medium text-white">
+            <div className="absolute bottom-2 right-2 px-2 py-0.5 rounded-md bg-black/70 text-[10px] font-medium text-white backdrop-blur-xs">
               {currentImgIndex + 1}/{images.length}
             </div>
           </>
@@ -100,13 +141,17 @@ export default function ListingCard({ listing, isSelected, onSelect, onOpenDetai
               BROKER FEE
             </span>
           ) : (
-            <span className="px-2.5 py-1 rounded-full text-xs font-medium bg-gray-800/80 backdrop-blur-sm text-gray-200 shadow-md">
+            <span className="px-2.5 py-1 rounded-full text-xs font-medium bg-gray-900/80 backdrop-blur-sm text-gray-200 shadow-md">
               Fee Unspecified
             </span>
           )}
 
           {listing.availability && listing.availability !== 'Contact Lister' && (
-            <span className="flex items-center gap-1 px-2.5 py-0.5 rounded-full text-[11px] font-bold bg-white/95 text-gray-800 shadow-md backdrop-blur-sm border border-gray-100">
+            <span className={`flex items-center gap-1 px-2.5 py-0.5 rounded-full text-[11px] font-bold shadow-md backdrop-blur-sm border ${
+              isDark
+                ? 'bg-slate-900/90 text-slate-100 border-slate-700'
+                : 'bg-white/95 text-gray-800 border-gray-100'
+            }`}>
               <Calendar className="w-3 h-3 text-boston-brick" />
               {listing.availability}
             </span>
@@ -115,11 +160,15 @@ export default function ListingCard({ listing, isSelected, onSelect, onOpenDetai
 
         {/* Source & Type Badge */}
         <div className="absolute top-3 right-3 flex flex-col gap-1 items-end">
-          <span className={`px-2.5 py-1 rounded-lg text-xs font-bold uppercase tracking-wider border shadow-sm ${getSourceBadgeColor(listing.source)}`}>
+          <span className={`px-2.5 py-1 rounded-lg text-xs font-bold uppercase tracking-wider border shadow-sm backdrop-blur-sm ${getSourceBadgeColor(listing.source)}`}>
             {listing.source_label}
           </span>
           {listing.cross_posted_sources && listing.cross_posted_sources.length > 1 && (
-            <span className="px-2 py-0.5 rounded-md text-[10px] font-bold bg-white/95 text-purple-800 border border-purple-200 shadow-sm backdrop-blur-sm">
+            <span className={`px-2 py-0.5 rounded-md text-[10px] font-bold shadow-sm backdrop-blur-sm border ${
+              isDark
+                ? 'bg-purple-950/90 text-purple-300 border-purple-800'
+                : 'bg-white/95 text-purple-800 border-purple-200'
+            }`}>
               +{listing.cross_posted_sources.length - 1} other source{listing.cross_posted_sources.length > 2 ? 's' : ''}
             </span>
           )}
@@ -147,44 +196,64 @@ export default function ListingCard({ listing, isSelected, onSelect, onOpenDetai
         <div>
           {/* Price and Neighborhood */}
           <div className="flex items-baseline justify-between mb-1.5 flex-wrap gap-1">
-            <div className="text-2xl font-extrabold text-gray-900 tracking-tight flex items-baseline gap-1.5 flex-wrap">
+            <div className={`text-2xl font-extrabold tracking-tight flex items-baseline gap-1.5 flex-wrap ${
+              isDark ? 'text-white' : isWarm ? 'text-stone-900' : 'text-gray-900'
+            }`}>
               <span>${listing.price?.toLocaleString()}</span>
-              <span className="text-xs font-normal text-gray-500">/month</span>
+              <span className={`text-xs font-normal ${isDark ? 'text-slate-400' : 'text-gray-500'}`}>/month</span>
               {listing.original_rate_note && (
-                <span className="text-[11px] font-semibold text-boston-brick bg-boston-brick/10 border border-boston-brick/20 px-1.5 py-0.5 rounded" title="Converted to monthly rent for accurate comparison">
+                <span className={`text-[11px] font-semibold px-1.5 py-0.5 rounded border ${
+                  isDark
+                    ? 'text-rose-400 bg-rose-950/40 border-rose-800/50'
+                    : 'text-boston-brick bg-boston-brick/10 border-boston-brick/20'
+                }`} title="Converted to monthly rent for accurate comparison">
                   {listing.original_rate_note}
                 </span>
               )}
             </div>
           </div>
 
-          <h3 className="font-semibold text-gray-900 text-sm line-clamp-1 mb-1 group-hover:text-boston-brick transition-colors">
+          <h3 className={`font-semibold text-sm line-clamp-1 mb-1 transition-colors ${
+            isDark
+              ? 'text-slate-100 group-hover:text-rose-400'
+              : isWarm
+              ? 'text-stone-900 group-hover:text-boston-brick'
+              : 'text-gray-900 group-hover:text-boston-brick'
+          }`}>
             {listing.title}
           </h3>
 
-          <div className="flex items-center text-xs text-gray-500 gap-1 mb-3">
-            <MapPin className="w-3.5 h-3.5 text-gray-400 shrink-0" />
+          <div className={`flex items-center text-xs gap-1 mb-3 ${isDark ? 'text-slate-400' : 'text-gray-500'}`}>
+            <MapPin className="w-3.5 h-3.5 opacity-60 shrink-0" />
             <span className="line-clamp-1">{listing.neighborhood || listing.address}</span>
           </div>
 
           {/* Details specs */}
-          <div className="flex items-center gap-3 text-xs font-medium text-gray-700 py-2 border-y border-gray-100 mb-3 flex-wrap">
+          <div className={`flex items-center gap-3 text-xs font-medium py-2 border-y mb-3 flex-wrap ${
+            isDark
+              ? 'text-slate-300 border-slate-800/80'
+              : isWarm
+              ? 'text-stone-700 border-[#EFECE4]'
+              : 'text-gray-700 border-gray-100'
+          }`}>
             <div className="flex items-center gap-1.5">
-              <Bed className="w-4 h-4 text-gray-400" />
+              <Bed className="w-4 h-4 opacity-60" />
               <span>{listing.bedrooms === 0 ? 'Studio' : `${listing.bedrooms} Bed`}</span>
             </div>
             <div className="flex items-center gap-1.5">
-              <Bath className="w-4 h-4 text-gray-400" />
+              <Bath className="w-4 h-4 opacity-60" />
               <span>{listing.bathrooms} Bath</span>
             </div>
             {listing.sqft && (
-              <div className="flex items-center gap-1.5 font-semibold text-gray-800">
-                <Maximize2 className="w-3.5 h-3.5 text-gray-400" />
+              <div className="flex items-center gap-1.5 font-semibold">
+                <Maximize2 className="w-3.5 h-3.5 opacity-60" />
                 <span>{listing.sqft.toLocaleString()} sq ft</span>
               </div>
             )}
             {listing.fee_details && !listing.sqft && (
-              <div className="text-[11px] text-gray-500 line-clamp-1 italic ml-auto max-w-[130px]">
+              <div className={`text-[11px] line-clamp-1 italic ml-auto max-w-[130px] ${
+                isDark ? 'text-slate-500' : 'text-gray-500'
+              }`}>
                 {listing.fee_details}
               </div>
             )}
@@ -198,7 +267,13 @@ export default function ListingCard({ listing, isSelected, onSelect, onOpenDetai
               e.stopPropagation();
               onOpenDetails(listing);
             }}
-            className="flex-1 py-2 px-3 bg-gray-100 hover:bg-gray-200 text-gray-800 rounded-xl text-xs font-semibold transition-colors"
+            className={`flex-1 py-2 px-3 rounded-xl text-xs font-semibold transition-colors ${
+              isDark
+                ? 'bg-slate-800 hover:bg-slate-700 text-slate-200'
+                : isWarm
+                ? 'bg-[#EFECE4] hover:bg-[#E5E0D5] text-stone-800'
+                : 'bg-gray-100 hover:bg-gray-200 text-gray-800'
+            }`}
           >
             Details
           </button>
@@ -207,7 +282,11 @@ export default function ListingCard({ listing, isSelected, onSelect, onOpenDetai
             target="_blank"
             rel="noopener noreferrer"
             onClick={(e) => e.stopPropagation()}
-            className="py-2 px-3 bg-boston-brick/10 hover:bg-boston-brick text-boston-brick hover:text-white rounded-xl text-xs font-semibold flex items-center justify-center gap-1 transition-all"
+            className={`py-2 px-3 rounded-xl text-xs font-semibold flex items-center justify-center gap-1 transition-all ${
+              isDark
+                ? 'bg-rose-500/10 hover:bg-rose-600 text-rose-400 hover:text-white'
+                : 'bg-boston-brick/10 hover:bg-boston-brick text-boston-brick hover:text-white'
+            }`}
             title={`Open listing on ${listing.source_label}`}
           >
             <span>Original</span>

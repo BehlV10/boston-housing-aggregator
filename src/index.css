@@ -8,6 +8,7 @@
   height: 100%;
   z-index: 10;
   font-family: inherit;
+  background-color: transparent !important;
 }
 
 /* Custom Marker Styling */
@@ -15,12 +16,12 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 4px 8px;
+  padding: 3px 8px;
   border-radius: 9999px;
   font-weight: 700;
-  font-size: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
-  transition: all 0.2s ease-in-out;
+  font-size: 11px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.35);
+  transition: all 0.18s ease;
   cursor: pointer;
   white-space: nowrap;
 }
@@ -33,35 +34,96 @@
 .price-marker-no-fee {
   background-color: #059669;
   color: white;
-  border: 2px solid #ffffff;
+  border: 1.5px solid #ffffff;
 }
 
 .price-marker-fee {
   background-color: #2563eb;
   color: white;
-  border: 2px solid #ffffff;
+  border: 1.5px solid #ffffff;
 }
 
 .price-marker-unknown {
-  background-color: #4b5563;
+  background-color: #475569;
   color: white;
-  border: 2px solid #ffffff;
+  border: 1.5px solid #ffffff;
 }
 
 .price-marker-selected {
   background-color: #e11d48 !important;
   color: white !important;
-  transform: scale(1.2);
-  border: 3px solid #ffffff;
-  box-shadow: 0 0 0 3px #e11d48;
+  transform: scale(1.22);
+  border: 2px solid #ffffff !important;
+  box-shadow: 0 0 0 3px #e11d48, 0 6px 16px rgba(225, 29, 72, 0.5) !important;
+  z-index: 1000 !important;
+}
+
+/* Cluster Marker Styling */
+.cluster-marker-wrapper {
+  background: transparent;
+  border: none;
+}
+
+.cluster-badge {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9999px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
+  font-family: inherit;
+  cursor: pointer;
+  transition: transform 0.2s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.2s ease;
+  user-select: none;
+}
+
+.cluster-badge:hover {
+  transform: scale(1.12);
+  z-index: 1000 !important;
+}
+
+.cluster-dark {
+  background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+  color: #f8fafc;
+  border: 2px solid #38bdf8;
+  box-shadow: 0 0 16px rgba(56, 189, 248, 0.35), 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+.cluster-warm {
+  background: linear-gradient(135deg, #8B263E 0%, #68192c 100%);
+  color: #ffffff;
+  border: 2px solid #F7F5EE;
+  box-shadow: 0 4px 14px rgba(139, 38, 62, 0.45);
+}
+
+.cluster-light {
+  background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 100%);
+  color: #ffffff;
+  border: 2px solid #ffffff;
+  box-shadow: 0 4px 14px rgba(37, 99, 235, 0.35);
+}
+
+.cluster-count {
+  font-weight: 800;
+  font-size: 13px;
+  line-height: 1;
+}
+
+.cluster-label {
+  font-size: 9px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  opacity: 0.85;
+  font-weight: 600;
+  margin-top: 1px;
 }
 
 /* Leaflet Popup customization */
 .leaflet-popup-content-wrapper {
   padding: 0;
   overflow: hidden;
-  border-radius: 12px;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  border-radius: 14px;
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.35);
 }
 
 .leaflet-popup-content {
@@ -73,7 +135,7 @@
   top: 8px;
   right: 8px;
   color: white;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.6);
   border-radius: 50%;
   width: 24px;
   height: 24px;
@@ -81,4 +143,33 @@
   align-items: center;
   justify-content: center;
   text-shadow: none;
+  backdrop-filter: blur(4px);
+}
+
+/* Theme popup backgrounds */
+.theme-midnight .leaflet-popup-content-wrapper {
+  background: #0f172a;
+  color: #f8fafc;
+  border: 1px solid #334155;
+}
+.theme-midnight .leaflet-popup-tip {
+  background: #0f172a;
+}
+
+.theme-warm .leaflet-popup-content-wrapper {
+  background: #FCFBF8;
+  color: #1c1917;
+  border: 1px solid #e7e2d7;
+}
+.theme-warm .leaflet-popup-tip {
+  background: #FCFBF8;
+}
+
+.theme-light .leaflet-popup-content-wrapper {
+  background: #ffffff;
+  color: #0f172a;
+  border: 1px solid #e2e8f0;
+}
+.theme-light .leaflet-popup-tip {
+  background: #ffffff;
 }

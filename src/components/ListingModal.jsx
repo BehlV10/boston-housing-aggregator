@@ -1,29 +1,46 @@
 import React, { useState } from 'react';
 import { X, ExternalLink, Bed, Bath, MapPin, ShieldCheck, AlertCircle, Calendar, Maximize2 } from 'lucide-react';
 
-export default function ListingModal({ listing, onClose }) {
+export default function ListingModal({ listing, onClose, theme = 'midnight' }) {
   if (!listing) return null;
 
   const [activeImage, setActiveImage] = useState(
     listing.images && listing.images.length > 0 ? listing.images[0] : null
   );
 
+  const isDark = theme === 'midnight';
+  const isWarm = theme === 'warm';
+
+  const modalBg = isDark
+    ? 'bg-[#0F172A] border border-slate-800 text-slate-100 shadow-2xl shadow-slate-950/80'
+    : isWarm
+    ? 'bg-[#FCFBF8] border border-[#E3DFD5] text-stone-900 shadow-2xl'
+    : 'bg-white text-gray-900 shadow-2xl';
+
+  const cardInset = isDark
+    ? 'bg-[#131C31] border border-slate-800/80 text-slate-200'
+    : isWarm
+    ? 'bg-[#F7F5EE] border border-[#EFECE4] text-stone-800'
+    : 'bg-gray-50 border border-gray-100 text-gray-800';
+
+  const divider = isDark ? 'border-slate-800' : isWarm ? 'border-[#EFECE4]' : 'border-gray-100';
+
   return (
-    <div className="fixed inset-0 z-[1000] flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm animate-fade-in">
+    <div className="fixed inset-0 z-[1000] flex items-center justify-center p-4 bg-black/75 backdrop-blur-sm animate-fade-in">
       <div
-        className="relative bg-white rounded-3xl max-w-3xl w-full max-h-[90vh] overflow-y-auto shadow-2xl flex flex-col"
+        className={`relative rounded-3xl max-w-3xl w-full max-h-[90vh] overflow-y-auto flex flex-col ${modalBg}`}
         onClick={(e) => e.stopPropagation()}
       >
         {/* Header / Close */}
         <button
           onClick={onClose}
-          className="absolute top-4 right-4 z-20 p-2 rounded-full bg-black/50 hover:bg-black/75 text-white transition-colors"
+          className="absolute top-4 right-4 z-20 p-2 rounded-full bg-black/60 hover:bg-black/85 text-white transition-colors backdrop-blur-xs"
         >
           <X className="w-5 h-5" />
         </button>
 
         {/* Gallery Hero */}
-        <div className="relative h-80 sm:h-96 md:h-[440px] w-full bg-gray-900 overflow-hidden">
+        <div className="relative h-80 sm:h-96 md:h-[440px] w-full bg-gray-950 overflow-hidden">
           {activeImage ? (
             <img
               src={activeImage}
@@ -31,13 +48,13 @@ export default function ListingModal({ listing, onClose }) {
               className="w-full h-full object-cover"
             />
           ) : (
-            <div className="w-full h-full flex items-center justify-center text-gray-400">
+            <div className="w-full h-full flex items-center justify-center text-slate-500">
               No Photos Available
             </div>
           )}
 
           {/* Badges on Hero */}
-          <div className="absolute bottom-4 left-4 flex gap-2">
+          <div className="absolute bottom-4 left-4 flex gap-2 flex-wrap">
             {listing.has_broker_fee === false ? (
               <span className="flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold bg-emerald-600 text-white shadow-lg">
                 <ShieldCheck className="w-4 h-4" />
@@ -49,7 +66,7 @@ export default function ListingModal({ listing, onClose }) {
                 BROKER FEE
               </span>
             ) : (
-              <span className="px-3 py-1 rounded-full text-xs font-medium bg-gray-800/80 text-white">
+              <span className="px-3 py-1 rounded-full text-xs font-medium bg-gray-900/80 text-white backdrop-blur-sm">
                 Fee Unspecified
               </span>
             )}
@@ -76,13 +93,15 @@ export default function ListingModal({ listing, onClose }) {
 
         {/* Thumbnail Strip */}
         {listing.images && listing.images.length > 1 && (
-          <div className="flex gap-2 p-3 bg-gray-50 border-b border-gray-100 overflow-x-auto">
+          <div className={`flex gap-2 p-3 border-b overflow-x-auto ${cardInset}`}>
             {listing.images.map((img, i) => (
               <button
                 key={i}
                 onClick={() => setActiveImage(img)}
                 className={`relative w-20 h-14 rounded-lg overflow-hidden shrink-0 border-2 transition-all ${
-                  activeImage === img ? 'border-boston-brick scale-105' : 'border-transparent opacity-70 hover:opacity-100'
+                  activeImage === img
+                    ? 'border-rose-500 scale-105 shadow-md'
+                    : 'border-transparent opacity-60 hover:opacity-100'
                 }`}
               >
                 <img src={img} alt={`Thumbnail ${i}`} className="w-full h-full object-cover" />
@@ -95,18 +114,24 @@ export default function ListingModal({ listing, onClose }) {
         <div className="p-6 md:p-8 flex-1">
           <div className="flex flex-col md:flex-row md:items-baseline justify-between gap-2 mb-4">
             <div>
-              <div className="text-3xl font-extrabold text-gray-900 flex items-baseline gap-2 flex-wrap">
+              <div className={`text-3xl font-extrabold flex items-baseline gap-2 flex-wrap ${
+                isDark ? 'text-white' : 'text-gray-900'
+              }`}>
                 <span>${listing.price?.toLocaleString()}</span>
-                <span className="text-sm font-normal text-gray-500">/ month</span>
+                <span className={`text-sm font-normal ${isDark ? 'text-slate-400' : 'text-gray-500'}`}>/ month</span>
                 {listing.original_rate_note && (
-                  <span className="text-xs font-semibold text-boston-brick bg-boston-brick/10 border border-boston-brick/20 px-2 py-0.5 rounded-lg" title="Converted to monthly rent for comparison">
+                  <span className={`text-xs font-semibold px-2 py-0.5 rounded-lg border ${
+                    isDark
+                      ? 'text-rose-400 bg-rose-950/40 border-rose-800/50'
+                      : 'text-boston-brick bg-boston-brick/10 border-boston-brick/20'
+                  }`} title="Converted to monthly rent for comparison">
                     {listing.original_rate_note}
                   </span>
                 )}
               </div>
-              <h2 className="text-xl font-bold text-gray-900 mt-1">{listing.title}</h2>
-              <div className="flex items-center text-sm text-gray-500 gap-1.5 mt-1">
-                <MapPin className="w-4 h-4 text-gray-400" />
+              <h2 className={`text-xl font-bold mt-1 ${isDark ? 'text-slate-100' : 'text-gray-900'}`}>{listing.title}</h2>
+              <div className={`flex items-center text-sm gap-1.5 mt-1 ${isDark ? 'text-slate-400' : 'text-gray-500'}`}>
+                <MapPin className="w-4 h-4 opacity-60" />
                 <span>{listing.address || listing.neighborhood || 'Boston, MA'}</span>
               </div>
             </div>
@@ -115,7 +140,7 @@ export default function ListingModal({ listing, onClose }) {
               href={listing.url}
               target="_blank"
               rel="noopener noreferrer"
-              className="py-3 px-6 bg-boston-brick hover:bg-red-900 text-white rounded-2xl text-sm font-bold flex items-center justify-center gap-2 transition-all shadow-md shrink-0"
+              className="py-3 px-6 bg-boston-brick hover:bg-rose-900 text-white rounded-2xl text-sm font-bold flex items-center justify-center gap-2 transition-all shadow-md shrink-0"
             >
               <span>View on {listing.source_label}</span>
               <ExternalLink className="w-4 h-4" />
@@ -123,31 +148,31 @@ export default function ListingModal({ listing, onClose }) {
           </div>
 
           {/* Quick Specs */}
-          <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 py-4 border-y border-gray-100 my-4 text-center">
-            <div className="p-3 bg-gray-50 rounded-2xl">
-              <div className="text-xs text-gray-500 mb-1">Bedrooms</div>
-              <div className="text-lg font-bold text-gray-800 flex items-center justify-center gap-1.5">
-                <Bed className="w-4 h-4 text-gray-400" />
+          <div className={`grid grid-cols-2 sm:grid-cols-4 gap-3 py-4 border-y my-4 text-center ${divider}`}>
+            <div className={`p-3 rounded-2xl ${cardInset}`}>
+              <div className={`text-xs mb-1 ${isDark ? 'text-slate-400' : 'text-gray-500'}`}>Bedrooms</div>
+              <div className={`text-lg font-bold flex items-center justify-center gap-1.5 ${isDark ? 'text-white' : 'text-gray-800'}`}>
+                <Bed className="w-4 h-4 opacity-60" />
                 {listing.bedrooms === 0 ? 'Studio' : `${listing.bedrooms} Bed`}
               </div>
             </div>
-            <div className="p-3 bg-gray-50 rounded-2xl">
-              <div className="text-xs text-gray-500 mb-1">Bathrooms</div>
-              <div className="text-lg font-bold text-gray-800 flex items-center justify-center gap-1.5">
-                <Bath className="w-4 h-4 text-gray-400" />
+            <div className={`p-3 rounded-2xl ${cardInset}`}>
+              <div className={`text-xs mb-1 ${isDark ? 'text-slate-400' : 'text-gray-500'}`}>Bathrooms</div>
+              <div className={`text-lg font-bold flex items-center justify-center gap-1.5 ${isDark ? 'text-white' : 'text-gray-800'}`}>
+                <Bath className="w-4 h-4 opacity-60" />
                 {listing.bathrooms} Bath
               </div>
             </div>
-            <div className="p-3 bg-gray-50 rounded-2xl">
-              <div className="text-xs text-gray-500 mb-1">Living Area</div>
-              <div className="text-lg font-bold text-gray-800 flex items-center justify-center gap-1.5">
-                <Maximize2 className="w-4 h-4 text-gray-400" />
+            <div className={`p-3 rounded-2xl ${cardInset}`}>
+              <div className={`text-xs mb-1 ${isDark ? 'text-slate-400' : 'text-gray-500'}`}>Living Area</div>
+              <div className={`text-lg font-bold flex items-center justify-center gap-1.5 ${isDark ? 'text-white' : 'text-gray-800'}`}>
+                <Maximize2 className="w-4 h-4 opacity-60" />
                 {listing.sqft ? `${listing.sqft.toLocaleString()} sq ft` : 'Unspecified'}
               </div>
             </div>
-            <div className="p-3 bg-gray-50 rounded-2xl">
-              <div className="text-xs text-gray-500 mb-1">Fee Policy</div>
-              <div className="text-sm font-bold text-gray-800 line-clamp-1 mt-1">
+            <div className={`p-3 rounded-2xl ${cardInset}`}>
+              <div className={`text-xs mb-1 ${isDark ? 'text-slate-400' : 'text-gray-500'}`}>Fee Policy</div>
+              <div className={`text-sm font-bold line-clamp-1 mt-1 ${isDark ? 'text-white' : 'text-gray-800'}`}>
                 {listing.fee_badge}
               </div>
             </div>
@@ -155,15 +180,19 @@ export default function ListingModal({ listing, onClose }) {
 
           {/* Fee Insight Box */}
           {listing.fee_details && (
-            <div className={`p-4 rounded-2xl mb-6 text-sm flex items-start gap-3 ${
+            <div className={`p-4 rounded-2xl mb-6 text-sm flex items-start gap-3 border ${
               listing.has_broker_fee === false
-                ? 'bg-emerald-50 text-emerald-900 border border-emerald-100'
-                : 'bg-blue-50 text-blue-900 border border-blue-100'
+                ? isDark
+                  ? 'bg-emerald-950/40 text-emerald-300 border-emerald-800/60'
+                  : 'bg-emerald-50 text-emerald-900 border-emerald-100'
+                : isDark
+                ? 'bg-blue-950/40 text-blue-300 border-blue-800/60'
+                : 'bg-blue-50 text-blue-900 border-blue-100'
             }`}>
               {listing.has_broker_fee === false ? (
-                <ShieldCheck className="w-5 h-5 text-emerald-600 shrink-0 mt-0.5" />
+                <ShieldCheck className="w-5 h-5 text-emerald-500 shrink-0 mt-0.5" />
               ) : (
-                <AlertCircle className="w-5 h-5 text-blue-600 shrink-0 mt-0.5" />
+                <AlertCircle className="w-5 h-5 text-blue-500 shrink-0 mt-0.5" />
               )}
               <div>
                 <div className="font-bold">Broker Fee Information</div>
@@ -174,11 +203,19 @@ export default function ListingModal({ listing, onClose }) {
 
           {/* Cross-Posted Sources Banner */}
           {listing.cross_posted_sources && listing.cross_posted_sources.length > 1 && (
-            <div className="p-3.5 rounded-2xl mb-6 bg-purple-50 text-purple-900 border border-purple-100 flex items-center justify-between text-xs">
+            <div className={`p-3.5 rounded-2xl mb-6 border flex items-center justify-between text-xs ${
+              isDark
+                ? 'bg-purple-950/40 text-purple-300 border-purple-800/60'
+                : 'bg-purple-50 text-purple-900 border-purple-100'
+            }`}>
               <span className="font-semibold">Also discovered on other platforms:</span>
               <div className="flex gap-1.5 flex-wrap">
                 {listing.cross_posted_sources.filter(s => s !== listing.source_label).map((s, idx) => (
-                  <span key={idx} className="px-2 py-0.5 rounded-md bg-white border border-purple-200 font-bold text-purple-800 shadow-xs">
+                  <span key={idx} className={`px-2 py-0.5 rounded-md font-bold shadow-xs border ${
+                    isDark
+                      ? 'bg-purple-900/60 border-purple-700 text-purple-200'
+                      : 'bg-white border-purple-200 text-purple-800'
+                  }`}>
                     {s}
                   </span>
                 ))}
@@ -188,8 +225,12 @@ export default function ListingModal({ listing, onClose }) {
 
           {/* Description */}
           <div>
-            <h3 className="font-bold text-gray-900 text-sm mb-2">Description</h3>
-            <p className="text-sm text-gray-600 leading-relaxed whitespace-pre-line bg-gray-50/70 p-4 rounded-2xl border border-gray-100">
+            <h3 className={`font-bold text-sm mb-2 ${isDark ? 'text-white' : 'text-gray-900'}`}>Description</h3>
+            <p className={`text-sm leading-relaxed whitespace-pre-line p-4 rounded-2xl border ${
+              isDark
+                ? 'text-slate-300 bg-slate-900/60 border-slate-800'
+                : 'text-gray-600 bg-gray-50/70 border-gray-100'
+            }`}>
               {listing.description || 'No description provided in original post.'}
             </p>
           </div>
