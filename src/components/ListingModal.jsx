@@ -26,21 +26,24 @@ export default function ListingModal({ listing, onClose, theme = 'midnight' }) {
   const divider = isDark ? 'border-slate-800' : isWarm ? 'border-[#EFECE4]' : 'border-gray-100';
 
   return (
-    <div className="fixed inset-0 z-[1000] flex items-center justify-center p-4 bg-black/75 backdrop-blur-sm animate-fade-in">
+    <div className="fixed inset-0 z-[1000] flex items-end sm:items-center justify-center p-0 sm:p-4 bg-black/80 backdrop-blur-sm animate-fade-in">
       <div
-        className={`relative rounded-3xl max-w-3xl w-full max-h-[90vh] overflow-y-auto flex flex-col ${modalBg}`}
+        className={`relative rounded-t-3xl sm:rounded-3xl max-w-3xl w-full max-h-[92vh] sm:max-h-[90vh] overflow-y-auto flex flex-col ${modalBg}`}
         onClick={(e) => e.stopPropagation()}
       >
+        {/* Mobile Drag Indicator */}
+        <div className="w-12 h-1 bg-white/40 rounded-full mx-auto mt-2.5 sm:hidden shrink-0" />
+
         {/* Header / Close */}
         <button
           onClick={onClose}
-          className="absolute top-4 right-4 z-20 p-2 rounded-full bg-black/60 hover:bg-black/85 text-white transition-colors backdrop-blur-xs"
+          className="absolute top-3 right-3 sm:top-4 sm:right-4 z-20 p-2 rounded-full bg-black/60 hover:bg-black/85 text-white transition-colors backdrop-blur-xs"
         >
           <X className="w-5 h-5" />
         </button>
 
         {/* Gallery Hero */}
-        <div className="relative h-80 sm:h-96 md:h-[440px] w-full bg-gray-950 overflow-hidden">
+        <div className="relative h-64 sm:h-96 md:h-[440px] w-full bg-gray-950 overflow-hidden shrink-0 mt-2 sm:mt-0">
           {activeImage ? (
             <img
               src={activeImage}
@@ -234,6 +237,28 @@ export default function ListingModal({ listing, onClose, theme = 'midnight' }) {
               {listing.description || 'No description provided in original post.'}
             </p>
           </div>
+        </div>
+
+        {/* Sticky Mobile Bottom Bar */}
+        <div className={`p-4 border-t sticky bottom-0 z-30 flex items-center justify-between gap-3 sm:hidden backdrop-blur-md shrink-0 ${
+          isDark ? 'bg-slate-900/95 border-slate-800' : isWarm ? 'bg-[#FCFBF8]/95 border-[#E3DFD5]' : 'bg-white/95 border-gray-200'
+        }`}>
+          <div>
+            <div className={`text-xl font-extrabold ${isDark ? 'text-white' : 'text-gray-900'}`}>
+              ${listing.price?.toLocaleString()}
+              <span className="text-xs font-normal opacity-70">/mo</span>
+            </div>
+            <div className="text-[11px] opacity-75">{listing.bedrooms === 0 ? 'Studio' : `${listing.bedrooms} Bed`} &bull; {listing.fee_badge}</div>
+          </div>
+          <a
+            href={listing.url}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="py-2.5 px-4 bg-boston-brick text-white rounded-xl text-xs font-bold flex items-center gap-1.5 shadow-md active:scale-95 transition-all shrink-0"
+          >
+            <span>View on {listing.source_label}</span>
+            <ExternalLink className="w-3.5 h-3.5" />
+          </a>
         </div>
       </div>
     </div>

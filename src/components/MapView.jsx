@@ -372,8 +372,8 @@ export default function MapView({ listings, selectedListing, onSelectListing, th
         />
       </MapContainer>
 
-      {/* Map Legend */}
-      <div className={`absolute bottom-4 right-4 backdrop-blur-md p-3 rounded-xl shadow-xl border z-[400] text-xs flex flex-col gap-1.5 ${
+      {/* Map Legend (Positioned above floating mobile FAB on small screens) */}
+      <div className={`absolute bottom-20 sm:bottom-4 right-3 sm:right-4 backdrop-blur-md p-2.5 sm:p-3 rounded-xl shadow-xl border z-[400] text-xs flex flex-col gap-1 sm:gap-1.5 ${
         isDark
           ? 'bg-slate-900/90 border-slate-700/80 text-slate-200'
           : isWarm

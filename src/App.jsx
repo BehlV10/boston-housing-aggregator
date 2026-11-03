@@ -244,27 +244,26 @@ export default function App() {
             : 'bg-white/90 border-gray-200'
         }`}
       >
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between gap-4">
-          <div className="flex items-center gap-3">
-            <div className="w-10 h-10 rounded-2xl bg-boston-brick flex items-center justify-center text-white shadow-md shadow-boston-brick/30 shrink-0">
+        <div className="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 h-16 flex items-center justify-between gap-2 sm:gap-4">
+          <div className="flex items-center gap-2 sm:gap-3 shrink-0">
+            <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-2xl bg-boston-brick flex items-center justify-center text-white shadow-md shadow-boston-brick/30 shrink-0">
               <Building2 className="w-5 h-5" />
             </div>
             <div>
-              <div className="flex items-center gap-2">
-                <h1 className={`text-lg font-extrabold tracking-tight ${isDark ? 'text-white' : 'text-gray-900'}`}>
-                  Greater Boston Rentals Hub
-                </h1>
-              </div>
-              <p className={`text-xs ${isDark ? 'text-slate-400' : 'text-gray-500'}`}>
-                Boston &bull; Cambridge &bull; Somerville &bull; Brookline &bull; Allston
+              <h1 className={`text-sm sm:text-lg font-extrabold tracking-tight ${isDark ? 'text-white' : 'text-gray-900'}`}>
+                <span className="hidden sm:inline">Greater Boston Rentals Hub</span>
+                <span className="sm:hidden">Boston Rentals</span>
+              </h1>
+              <p className={`text-[10px] sm:text-xs line-clamp-1 ${isDark ? 'text-slate-400' : 'text-gray-500'}`}>
+                Boston &bull; Cambridge &bull; Somerville &bull; Brookline
               </p>
             </div>
           </div>
 
-          <div className="flex items-center gap-2 sm:gap-3">
+          <div className="flex items-center gap-1.5 sm:gap-3">
             {/* Theme Selector Toggle */}
             <div
-              className={`flex items-center p-1 rounded-2xl border text-xs font-semibold ${
+              className={`flex items-center p-0.5 sm:p-1 rounded-2xl border text-xs font-semibold ${
                 isDark
                   ? 'bg-slate-900/90 border-slate-700/80'
                   : isWarm
@@ -274,7 +273,7 @@ export default function App() {
             >
               <button
                 onClick={() => setTheme('midnight')}
-                className={`flex items-center gap-1.5 px-2.5 py-1 rounded-xl transition-all ${
+                className={`flex items-center gap-1.5 p-1.5 sm:px-2.5 sm:py-1 rounded-xl transition-all ${
                   theme === 'midnight'
                     ? 'bg-slate-800 text-sky-400 shadow-xs border border-slate-700'
                     : 'text-slate-400 hover:text-slate-200'
@@ -286,7 +285,7 @@ export default function App() {
               </button>
               <button
                 onClick={() => setTheme('warm')}
-                className={`flex items-center gap-1.5 px-2.5 py-1 rounded-xl transition-all ${
+                className={`flex items-center gap-1.5 p-1.5 sm:px-2.5 sm:py-1 rounded-xl transition-all ${
                   theme === 'warm'
                     ? 'bg-white text-boston-brick shadow-xs border border-stone-200'
                     : isDark
@@ -300,7 +299,7 @@ export default function App() {
               </button>
               <button
                 onClick={() => setTheme('light')}
-                className={`flex items-center gap-1.5 px-2.5 py-1 rounded-xl transition-all ${
+                className={`flex items-center gap-1.5 p-1.5 sm:px-2.5 sm:py-1 rounded-xl transition-all ${
                   theme === 'light'
                     ? 'bg-white text-blue-600 shadow-xs border border-gray-200'
                     : isDark
@@ -316,7 +315,7 @@ export default function App() {
 
             {/* Top Navigation Tabs */}
             <nav
-              className={`flex items-center gap-1 p-1 rounded-2xl border ${
+              className={`flex items-center gap-1 p-0.5 sm:p-1 rounded-2xl border ${
                 isDark
                   ? 'bg-slate-900/90 border-slate-800'
                   : isWarm
@@ -326,7 +325,7 @@ export default function App() {
             >
               <button
                 onClick={() => setActiveTab('browse')}
-                className={`px-3 py-1.5 rounded-xl text-xs font-bold transition-all flex items-center gap-1.5 ${
+                className={`px-2.5 sm:px-3 py-1.5 rounded-xl text-xs font-bold transition-all flex items-center gap-1 sm:gap-1.5 ${
                   activeTab === 'browse'
                     ? isDark
                       ? 'bg-slate-800 text-white shadow-xs'
@@ -341,7 +340,7 @@ export default function App() {
               </button>
               <button
                 onClick={() => setActiveTab('cross-list')}
-                className={`px-3 py-1.5 rounded-xl text-xs font-bold transition-all flex items-center gap-1.5 ${
+                className={`px-2.5 sm:px-3 py-1.5 rounded-xl text-xs font-bold transition-all flex items-center gap-1 sm:gap-1.5 ${
                   activeTab === 'cross-list'
                     ? isDark
                       ? 'bg-slate-800 text-white shadow-xs'
@@ -352,8 +351,9 @@ export default function App() {
                 }`}
               >
                 <Share2 className="w-3.5 h-3.5 text-boston-brick" />
-                <span>List a Room</span>
-                <span className="hidden sm:inline-block px-1.5 py-0.5 rounded-md text-[10px] font-extrabold bg-boston-brick/20 text-rose-400">
+                <span className="hidden sm:inline">List a Room</span>
+                <span className="sm:hidden">List</span>
+                <span className="hidden lg:inline-block px-1.5 py-0.5 rounded-md text-[10px] font-extrabold bg-boston-brick/20 text-rose-400">
                   Cross-Poster
                 </span>
               </button>
@@ -381,44 +381,6 @@ export default function App() {
                 <span className="text-amber-400 font-semibold">{metadata.sublet_count || 0} Sublets</span>
               </div>
             )}
-
-            {/* Mobile View Toggle */}
-            {activeTab === 'browse' && (
-              <div
-                className={`flex md:hidden p-1 rounded-xl ${
-                  isDark ? 'bg-slate-900' : 'bg-gray-100'
-                }`}
-              >
-                <button
-                  onClick={() => setViewMode('map')}
-                  className={`p-1.5 rounded-lg text-xs font-semibold ${
-                    viewMode === 'map'
-                      ? isDark
-                        ? 'bg-slate-800 text-rose-400'
-                        : 'bg-white shadow-xs text-boston-brick'
-                      : isDark
-                      ? 'text-slate-400'
-                      : 'text-gray-600'
-                  }`}
-                >
-                  <MapIcon className="w-4 h-4" />
-                </button>
-                <button
-                  onClick={() => setViewMode('list')}
-                  className={`p-1.5 rounded-lg text-xs font-semibold ${
-                    viewMode === 'list'
-                      ? isDark
-                        ? 'bg-slate-800 text-rose-400'
-                        : 'bg-white shadow-xs text-boston-brick'
-                      : isDark
-                      ? 'text-slate-400'
-                      : 'text-gray-600'
-                  }`}
-                >
-                  <ListIcon className="w-4 h-4" />
-                </button>
-              </div>
-            )}
           </div>
         </div>
       </header>
@@ -427,7 +389,7 @@ export default function App() {
       {activeTab === 'cross-list' ? (
         <CrossListHub onAddCommunityListing={handleAddCommunityListing} theme={theme} />
       ) : (
-        <main className="flex-1 max-w-7xl w-full mx-auto p-4 sm:p-6 lg:p-8 flex flex-col">
+        <main className="flex-1 max-w-7xl w-full mx-auto px-3 sm:px-6 lg:px-8 py-3 sm:py-6 flex flex-col">
           {/* Filter Controls */}
           <FilterBar
             filters={filters}
@@ -444,10 +406,10 @@ export default function App() {
             </div>
           ) : (
             /* Split View Layout */
-            <div className="flex-1 grid grid-cols-1 lg:grid-cols-12 gap-6 min-h-[650px]">
-              {/* Interactive Map (Left Panel, 7 cols on desktop) */}
+            <div className="flex-1 grid grid-cols-1 lg:grid-cols-12 gap-4 lg:gap-6 min-h-[600px]">
+              {/* Interactive Map (Left Panel, 7 cols on desktop, responsive full-height on mobile) */}
               <div
-                className={`lg:col-span-7 h-[500px] lg:h-[720px] lg:sticky lg:top-24 rounded-2xl overflow-hidden ${
+                className={`lg:col-span-7 h-[calc(100vh-210px)] min-h-[440px] lg:h-[720px] lg:sticky lg:top-24 rounded-2xl overflow-hidden ${
                   viewMode === 'list' ? 'hidden lg:block' : 'block'
                 }`}
               >
@@ -472,9 +434,9 @@ export default function App() {
                 />
               </div>
 
-              {/* Listings Grid (Right Panel, 5 cols on desktop) */}
+              {/* Listings Grid (Right Panel, 5 cols on desktop, natural page scroll on mobile) */}
               <div
-                className={`lg:col-span-5 flex flex-col gap-4 overflow-y-auto max-h-[720px] pr-1 ${
+                className={`lg:col-span-5 flex flex-col gap-3 sm:gap-4 overflow-y-auto max-h-none lg:max-h-[720px] pr-1 pb-24 lg:pb-0 ${
                   viewMode === 'map' ? 'hidden lg:flex' : 'flex'
                 }`}
               >
@@ -566,6 +528,34 @@ export default function App() {
             </div>
           )}
         </main>
+      )}
+
+      {/* Floating Mobile Map / List Toggle Button */}
+      {activeTab === 'browse' && !loading && (
+        <div className="fixed bottom-6 left-1/2 -translate-x-1/2 z-40 md:hidden pointer-events-auto">
+          <button
+            onClick={() => setViewMode((prev) => (prev === 'map' ? 'list' : 'map'))}
+            className={`flex items-center gap-2 px-5 py-3 rounded-full text-xs font-extrabold shadow-2xl backdrop-blur-md border transition-all active:scale-95 ${
+              isDark
+                ? 'bg-slate-900/95 text-white border-slate-700 shadow-slate-950/90 hover:bg-slate-800'
+                : isWarm
+                ? 'bg-[#FAF8F5]/95 text-stone-900 border-[#E2DDD2] shadow-stone-900/30 hover:bg-white'
+                : 'bg-gray-900 text-white border-gray-800 shadow-gray-900/40 hover:bg-black'
+            }`}
+          >
+            {viewMode === 'map' ? (
+              <>
+                <ListIcon className="w-4 h-4 text-boston-brick" />
+                <span>View List ({filteredListings.length})</span>
+              </>
+            ) : (
+              <>
+                <MapIcon className="w-4 h-4 text-boston-brick" />
+                <span>View Map</span>
+              </>
+            )}
+          </button>
+        </div>
       )}
 
       {/* Listing Details Modal */}
