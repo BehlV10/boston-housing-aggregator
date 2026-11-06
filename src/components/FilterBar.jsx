@@ -13,7 +13,16 @@ import {
   MapPin 
 } from 'lucide-react';
 
-export default function FilterBar({ filters, setFilters, totalCount, filteredCount, theme = 'midnight' }) {
+export default function FilterBar({ 
+  filters, 
+  setFilters, 
+  totalCount, 
+  filteredCount, 
+  theme = 'midnight',
+  city = 'boston',
+  quickChips = ['Cambridge', 'Somerville', 'Boston', 'Brookline', 'Allston', 'Fenway'],
+  maxPriceLimit = 6000
+}) {
   const [mobileFiltersOpen, setMobileFiltersOpen] = useState(false);
 
   const isDark = theme === 'midnight';
@@ -40,21 +49,23 @@ export default function FilterBar({ filters, setFilters, totalCount, filteredCou
       search: '',
       fee: 'all',
       source: 'all',
+      borough: 'all',
       bedrooms: 'all',
       rentalType: 'all',
       moveInDate: 'all',
       availableNow: false,
-      maxPrice: 6000,
+      maxPrice: maxPriceLimit,
     });
   };
 
   const activeFiltersCount = [
     filters.fee !== 'all',
     filters.source !== 'all',
+    Boolean(filters.borough && filters.borough !== 'all'),
     filters.bedrooms !== 'all',
     filters.rentalType !== 'all',
     Boolean(filters.moveInDate && filters.moveInDate !== 'all'),
-    filters.maxPrice < 6000,
+    filters.maxPrice < maxPriceLimit,
     Boolean(filters.availableNow),
     Boolean(filters.search),
   ].filter(Boolean).length;
@@ -97,7 +108,11 @@ export default function FilterBar({ filters, setFilters, totalCount, filteredCou
           <Search className="w-4 h-4 absolute left-3.5 top-1/2 -translate-y-1/2 opacity-50 pointer-events-none" />
           <input
             type="text"
-            placeholder="Search Cambridge, Somerville, Back Bay..."
+            placeholder={
+              city === 'nyc'
+                ? 'Search Manhattan, Brooklyn, Williamsburg, Astoria, East Village...'
+                : 'Search Cambridge, Somerville, Back Bay, South End...'
+            }
             value={filters.search}
             onChange={(e) => setFilters((prev) => ({ ...prev, search: e.target.value }))}
             className={`w-full pl-9 pr-8 py-2.5 sm:py-2 border rounded-xl text-xs sm:text-sm focus:outline-none focus:ring-2 transition-all ${inputClass}`}
@@ -236,7 +251,7 @@ export default function FilterBar({ filters, setFilters, totalCount, filteredCou
         </button>
 
         {/* Area Quick Chips */}
-        {['Cambridge', 'Somerville', 'Boston', 'Brookline', 'Allston', 'Fenway'].map((area) => {
+        {quickChips.map((area) => {
           const isActive = filters.search.toLowerCase() === area.toLowerCase();
           return (
             <button
@@ -262,7 +277,7 @@ export default function FilterBar({ filters, setFilters, totalCount, filteredCou
       <div className={`${mobileFiltersOpen ? 'block' : 'hidden md:block'} pt-3 mt-2 border-t ${dividerClass} animate-fade-in`}>
         <div className="grid grid-cols-1 md:grid-cols-12 gap-2.5 items-center">
           {/* Place Type Segmented Toggle */}
-          <div className={`md:col-span-4 flex items-center p-1 rounded-xl ${segGroupClass}`}>
+          <div className={`${city === 'nyc' ? 'md:col-span-3' : 'md:col-span-4'} flex items-center p-1 rounded-xl ${segGroupClass}`}>
             <button
               onClick={() => handleRentalTypeChange('all')}
               className={`flex-1 py-1.5 text-xs font-semibold rounded-lg transition-all ${
@@ -309,7 +324,7 @@ export default function FilterBar({ filters, setFilters, totalCount, filteredCou
           </div>
 
           {/* Fee Filter Buttons */}
-          <div className={`md:col-span-3 flex items-center p-1 rounded-xl ${segGroupClass}`}>
+          <div className={`${city === 'nyc' ? 'md:col-span-3' : 'md:col-span-3'} flex items-center p-1 rounded-xl ${segGroupClass}`}>
             <button
               onClick={() => handleFeeChange('all')}
               className={`flex-1 py-1.5 text-xs font-semibold rounded-lg transition-all ${
@@ -346,7 +361,7 @@ export default function FilterBar({ filters, setFilters, totalCount, filteredCou
           </div>
 
           {/* Move-in Date Dropdown */}
-          <div className="md:col-span-3 col-span-12">
+          <div className={`${city === 'nyc' ? 'md:col-span-2' : 'md:col-span-3'} col-span-12`}>
             <select
               value={filters.moveInDate || 'all'}
               onChange={(e) => setFilters((prev) => ({ ...prev, moveInDate: e.target.value }))}
@@ -364,8 +379,23 @@ export default function FilterBar({ filters, setFilters, totalCount, filteredCou
             </select>
           </div>
 
-          {/* Bedrooms & Source in a responsive 2-col on mobile */}
-          <div className="md:col-span-2 col-span-12 grid grid-cols-2 gap-2">
+          {/* Borough & Bedrooms & Source responsive grid */}
+          <div className={`${city === 'nyc' ? 'md:col-span-4' : 'md:col-span-2'} col-span-12 grid ${city === 'nyc' ? 'grid-cols-3' : 'grid-cols-2'} gap-2`}>
+            {city === 'nyc' && (
+              <select
+                value={filters.borough || 'all'}
+                onChange={(e) => setFilters((prev) => ({ ...prev, borough: e.target.value }))}
+                className={`w-full py-2 px-1.5 border rounded-xl text-xs font-semibold focus:outline-none focus:ring-2 cursor-pointer ${inputClass}`}
+              >
+                <option value="all">Borough: All</option>
+                <option value="Manhattan">Manhattan</option>
+                <option value="Brooklyn">Brooklyn</option>
+                <option value="Queens">Queens</option>
+                <option value="Jersey City / Hoboken">JC / Hoboken</option>
+                <option value="Bronx">Bronx</option>
+              </select>
+            )}
+
             <select
               value={filters.bedrooms}
               onChange={(e) => handleBedroomsChange(e.target.value)}
@@ -385,13 +415,17 @@ export default function FilterBar({ filters, setFilters, totalCount, filteredCou
             >
               <option value="all">Source: All</option>
               <option value="craigslist">Craigslist</option>
-              <option value="bostonpads">Boston Pads</option>
-              <option value="bostonapartments">BostonApartments</option>
               <option value="reddit">Reddit</option>
-              <option value="zillow">Zillow</option>
-              <option value="apartments_com">Apartments.com</option>
-              <option value="facebook">FB Mkt</option>
-              <option value="redfin">Redfin</option>
+              {city === 'boston' && (
+                <>
+                  <option value="bostonpads">Boston Pads</option>
+                  <option value="bostonapartments">BostonApartments</option>
+                  <option value="zillow">Zillow</option>
+                  <option value="apartments_com">Apartments.com</option>
+                  <option value="facebook">FB Mkt</option>
+                  <option value="redfin">Redfin</option>
+                </>
+              )}
             </select>
           </div>
         </div>
@@ -404,8 +438,8 @@ export default function FilterBar({ filters, setFilters, totalCount, filteredCou
             </span>
             <input
               type="range"
-              min="1000"
-              max="6000"
+              min="500"
+              max={maxPriceLimit}
               step="100"
               value={filters.maxPrice}
               onChange={(e) => setFilters((prev) => ({ ...prev, maxPrice: Number(e.target.value) }))}

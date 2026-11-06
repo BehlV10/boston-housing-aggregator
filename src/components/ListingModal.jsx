@@ -135,7 +135,9 @@ export default function ListingModal({ listing, onClose, theme = 'midnight' }) {
               <h2 className={`text-xl font-bold mt-1 ${isDark ? 'text-slate-100' : 'text-gray-900'}`}>{listing.title}</h2>
               <div className={`flex items-center text-sm gap-1.5 mt-1 ${isDark ? 'text-slate-400' : 'text-gray-500'}`}>
                 <MapPin className="w-4 h-4 opacity-60" />
-                <span>{listing.address || listing.neighborhood || 'Boston, MA'}</span>
+                <span>
+                  {listing.address || (listing.borough && listing.neighborhood ? `${listing.neighborhood}, ${listing.borough}` : listing.neighborhood) || 'Location Available'}
+                </span>
               </div>
             </div>
 

@@ -6,8 +6,51 @@ import FilterBar from './components/FilterBar';
 import ListingModal from './components/ListingModal';
 import CrossListHub from './components/CrossListHub';
 
+export const CITIES = {
+  nyc: {
+    id: 'nyc',
+    name: 'New York City',
+    shortName: 'NYC',
+    tagline: 'Manhattan • Brooklyn • Queens • JC/Hoboken • Bronx',
+    icon: '🗽',
+    dataPath: './data/nyc_listings.json',
+    metaPath: './data/nyc_metadata.json',
+    cacheKey: 'nyc_housing_cache',
+    metaCacheKey: 'nyc_housing_meta',
+    communityKey: 'nyc_community_listings',
+    center: [40.730, -73.960],
+    defaultZoom: 11,
+    maxPriceDefault: 8000,
+    quickChips: ['Manhattan', 'Brooklyn', 'Queens', 'JC / Hoboken', 'Williamsburg', 'Astoria', 'East Village', 'Bushwick'],
+  },
+  boston: {
+    id: 'boston',
+    name: 'Greater Boston',
+    shortName: 'Boston',
+    tagline: 'Boston • Cambridge • Somerville • Brookline',
+    icon: '🦞',
+    dataPath: './data/listings.json',
+    metaPath: './data/metadata.json',
+    cacheKey: 'boston_housing_cache',
+    metaCacheKey: 'boston_housing_meta',
+    communityKey: 'boston_community_listings',
+    center: [42.368, -71.095],
+    defaultZoom: 12,
+    maxPriceDefault: 6000,
+    quickChips: ['Cambridge', 'Somerville', 'Boston', 'Brookline', 'Allston', 'Fenway'],
+  }
+};
+
 export default function App() {
   const [activeTab, setActiveTab] = useState('browse'); // 'browse' | 'cross-list'
+
+  // Selected City: 'nyc' | 'boston' (defaults to NYC as requested by user)
+  const [city, setCity] = useState(() => {
+    return localStorage.getItem('housing_city') || 'nyc';
+  });
+
+  const currentCityConfig = CITIES[city] || CITIES.nyc;
+
   const [listings, setListings] = useState([]);
   const [metadata, setMetadata] = useState(null);
   const [loading, setLoading] = useState(true);
@@ -34,6 +77,12 @@ export default function App() {
     } antialiased font-['Plus_Jakarta_Sans',sans-serif]`;
   }, [theme]);
 
+  useEffect(() => {
+    try {
+      localStorage.setItem('housing_city', city);
+    } catch (e) {}
+  }, [city]);
+
   const isDark = theme === 'midnight';
   const isWarm = theme === 'warm';
 
@@ -41,22 +90,26 @@ export default function App() {
   const [filters, setFilters] = useState({
     search: '',
     fee: 'all', // 'all' | 'no-fee' | 'fee'
-    source: 'all', // 'all' | 'craigslist' | 'zillow' | 'facebook' | 'bostonpads' | 'redfin'
+    source: 'all',
+    borough: 'all',
     bedrooms: 'all',
     rentalType: 'all', // 'all' | 'entire_unit' | 'room' | 'sublet'
-    moveInDate: 'all', // 'all' | 'immediate' | '2026-11' | '2026-12' | '2027-01' | '2027-06' | '2027-09' | 'flexible'
-    maxPrice: 6000,
+    moveInDate: 'all',
+    maxPrice: currentCityConfig.maxPriceDefault,
     availableNow: false,
   });
 
   const [visibleCount, setVisibleCount] = useState(24);
 
-  // Load aggregated listings (Instant localStorage cache + background network fetch)
+  // Load aggregated listings whenever city changes
   useEffect(() => {
     async function loadData() {
+      setLoading(true);
+      const conf = CITIES[city] || CITIES.nyc;
+
       const getCommunityListings = () => {
         try {
-          const raw = localStorage.getItem('boston_community_listings');
+          const raw = localStorage.getItem(conf.communityKey);
           return raw ? JSON.parse(raw) : [];
         } catch (e) {
           return [];
@@ -65,8 +118,8 @@ export default function App() {
 
       // 1. Instant Cache Load from localStorage for 0ms startup
       try {
-        const cachedListings = localStorage.getItem('boston_housing_cache');
-        const cachedMeta = localStorage.getItem('boston_housing_meta');
+        const cachedListings = localStorage.getItem(conf.cacheKey);
+        const cachedMeta = localStorage.getItem(conf.metaCacheKey);
         const community = getCommunityListings();
 
         if (cachedListings) {
@@ -86,7 +139,7 @@ export default function App() {
       // 2. Fetch fresh listings from server (SWR pattern with cache-busting)
       try {
         const cacheBuster = `?t=${Date.now()}`;
-        const listingsRes = await fetch(`./data/listings.json${cacheBuster}`, {
+        const listingsRes = await fetch(`${conf.dataPath}${cacheBuster}`, {
           cache: 'no-cache',
           headers: { Pragma: 'no-cache', 'Cache-Control': 'no-cache' }
         });
@@ -95,11 +148,11 @@ export default function App() {
           const community = getCommunityListings();
           setListings([...community, ...data.filter((p) => !community.some((c) => c.id === p.id))]);
           try {
-            localStorage.setItem('boston_housing_cache', JSON.stringify(data));
+            localStorage.setItem(conf.cacheKey, JSON.stringify(data));
           } catch (e) {}
         }
 
-        const metaRes = await fetch(`./data/metadata.json${cacheBuster}`, {
+        const metaRes = await fetch(`${conf.metaPath}${cacheBuster}`, {
           cache: 'no-cache',
           headers: { Pragma: 'no-cache', 'Cache-Control': 'no-cache' }
         });
@@ -107,7 +160,7 @@ export default function App() {
           const meta = await metaRes.json();
           setMetadata(meta);
           try {
-            localStorage.setItem('boston_housing_meta', JSON.stringify(meta));
+            localStorage.setItem(conf.metaCacheKey, JSON.stringify(meta));
           } catch (e) {}
         }
       } catch (err) {
@@ -117,20 +170,39 @@ export default function App() {
       }
     }
     loadData();
-  }, []);
+  }, [city]);
+
+  const handleCityChange = (newCity) => {
+    if (newCity === city) return;
+    setCity(newCity);
+    setSelectedListing(null);
+    setModalListing(null);
+    const conf = CITIES[newCity] || CITIES.nyc;
+    setFilters({
+      search: '',
+      fee: 'all',
+      source: 'all',
+      borough: 'all',
+      bedrooms: 'all',
+      rentalType: 'all',
+      moveInDate: 'all',
+      availableNow: false,
+      maxPrice: conf.maxPriceDefault,
+    });
+  };
 
   const handleAddCommunityListing = (newListing) => {
+    const conf = CITIES[city] || CITIES.nyc;
     setListings((prev) => {
       const filtered = prev.filter((l) => l.id !== newListing.id);
       const updated = [newListing, ...filtered];
       try {
-        const saved = JSON.parse(localStorage.getItem('boston_community_listings') || '[]');
+        const saved = JSON.parse(localStorage.getItem(conf.communityKey) || '[]');
         const updatedSaved = [newListing, ...saved.filter((l) => l.id !== newListing.id)];
-        localStorage.setItem('boston_community_listings', JSON.stringify(updatedSaved));
+        localStorage.setItem(conf.communityKey, JSON.stringify(updatedSaved));
       } catch (e) {}
       return updated;
     });
-    // Seamlessly transition to Browse view and open preview
     setActiveTab('browse');
     setSelectedListing(newListing);
     setModalListing(newListing);
@@ -155,6 +227,11 @@ export default function App() {
           return false;
         }
         if (filters.fee === 'fee' && item.has_broker_fee !== true) {
+          return false;
+        }
+
+        // Borough filter (NYC)
+        if (filters.borough && filters.borough !== 'all' && item.borough !== filters.borough) {
           return false;
         }
 
@@ -204,8 +281,9 @@ export default function App() {
           const query = filters.search.toLowerCase();
           const matchTitle = item.title?.toLowerCase().includes(query);
           const matchNeigh = item.neighborhood?.toLowerCase().includes(query);
+          const matchBorough = item.borough?.toLowerCase().includes(query);
           const matchDesc = item.description?.toLowerCase().includes(query);
-          if (!matchTitle && !matchNeigh && !matchDesc) return false;
+          if (!matchTitle && !matchNeigh && !matchBorough && !matchDesc) return false;
         }
 
         return true;
@@ -251,16 +329,61 @@ export default function App() {
             </div>
             <div>
               <h1 className={`text-sm sm:text-lg font-extrabold tracking-tight ${isDark ? 'text-white' : 'text-gray-900'}`}>
-                <span className="hidden sm:inline">Greater Boston Rentals Hub</span>
-                <span className="sm:hidden">Boston Rentals</span>
+                <span className="hidden sm:inline">{city === 'nyc' ? 'New York City Rentals Hub' : 'Greater Boston Rentals Hub'}</span>
+                <span className="sm:hidden">{city === 'nyc' ? 'NYC Rentals' : 'Boston Rentals'}</span>
               </h1>
               <p className={`text-[10px] sm:text-xs line-clamp-1 ${isDark ? 'text-slate-400' : 'text-gray-500'}`}>
-                Boston &bull; Cambridge &bull; Somerville &bull; Brookline
+                {currentCityConfig.tagline}
               </p>
             </div>
           </div>
 
           <div className="flex items-center gap-1.5 sm:gap-3">
+            {/* City Switcher */}
+            <div
+              className={`flex items-center p-0.5 sm:p-1 rounded-2xl border text-xs font-bold ${
+                isDark
+                  ? 'bg-slate-900/90 border-slate-700/80'
+                  : isWarm
+                  ? 'bg-[#EFECE4] border-[#DDD7C9]'
+                  : 'bg-gray-100 border-gray-200'
+              }`}
+            >
+              <button
+                onClick={() => handleCityChange('nyc')}
+                className={`flex items-center gap-1 px-2 sm:px-2.5 py-1 rounded-xl transition-all ${
+                  city === 'nyc'
+                    ? isDark
+                      ? 'bg-rose-600 text-white shadow-xs'
+                      : 'bg-boston-brick text-white shadow-xs'
+                    : isDark
+                    ? 'text-slate-400 hover:text-slate-200'
+                    : 'text-gray-600 hover:text-gray-900'
+                }`}
+                title="Switch to New York City Rentals"
+              >
+                <span>🗽</span>
+                <span>NYC</span>
+              </button>
+              <button
+                onClick={() => handleCityChange('boston')}
+                className={`flex items-center gap-1 px-2 sm:px-2.5 py-1 rounded-xl transition-all ${
+                  city === 'boston'
+                    ? isDark
+                      ? 'bg-rose-600 text-white shadow-xs'
+                      : 'bg-boston-brick text-white shadow-xs'
+                    : isDark
+                    ? 'text-slate-400 hover:text-slate-200'
+                    : 'text-gray-600 hover:text-gray-900'
+                }`}
+                title="Switch to Greater Boston Rentals"
+              >
+                <span>🦞</span>
+                <span className="hidden sm:inline">Boston</span>
+                <span className="sm:hidden">BOS</span>
+              </button>
+            </div>
+
             {/* Theme Selector Toggle */}
             <div
               className={`flex items-center p-0.5 sm:p-1 rounded-2xl border text-xs font-semibold ${
@@ -371,14 +494,16 @@ export default function App() {
               >
                 <span className="flex items-center gap-1.5">
                   <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
-                  <span className="font-semibold text-emerald-400">{metadata.no_fee_count} No-Fee</span>
+                  <span className="font-semibold text-emerald-400">
+                    {(metadata.no_broker_fee_listings ?? metadata.no_fee_count) || 0} No-Fee
+                  </span>
                 </span>
                 <span className="opacity-30">&bull;</span>
-                <span>{metadata.entire_count || 0} Condos</span>
+                <span>{(metadata.types_summary?.['Condo / Apt'] ?? metadata.entire_count) || 0} Condos</span>
                 <span className="opacity-30">&bull;</span>
-                <span className="text-indigo-400 font-semibold">{metadata.room_count || 0} Rooms</span>
+                <span className="text-indigo-400 font-semibold">{(metadata.types_summary?.['Single Room'] ?? metadata.room_count) || 0} Rooms</span>
                 <span className="opacity-30">&bull;</span>
-                <span className="text-amber-400 font-semibold">{metadata.sublet_count || 0} Sublets</span>
+                <span className="text-amber-400 font-semibold">{(metadata.types_summary?.['Sublet'] ?? metadata.sublet_count) || 0} Sublets</span>
               </div>
             )}
           </div>
@@ -397,12 +522,15 @@ export default function App() {
             totalCount={listings.length}
             filteredCount={filteredListings.length}
             theme={theme}
+            city={city}
+            quickChips={currentCityConfig.quickChips}
+            maxPriceLimit={currentCityConfig.maxPriceDefault}
           />
 
           {loading ? (
             <div className="flex-1 flex flex-col items-center justify-center py-20 text-slate-400">
               <RefreshCw className="w-8 h-8 animate-spin mb-3 text-boston-brick" />
-              <p className="font-semibold text-sm">Loading Boston listings...</p>
+              <p className="font-semibold text-sm">Loading {currentCityConfig.name} listings...</p>
             </div>
           ) : (
             /* Split View Layout */
@@ -431,6 +559,9 @@ export default function App() {
                     }, 50);
                   }}
                   theme={theme}
+                  cityCenter={currentCityConfig.center}
+                  cityZoom={currentCityConfig.defaultZoom}
+                  cityId={city}
                 />
               </div>
 
@@ -476,11 +607,12 @@ export default function App() {
                           search: '',
                           fee: 'all',
                           source: 'all',
+                          borough: 'all',
                           bedrooms: 'all',
                           rentalType: 'all',
                           moveInDate: 'all',
                           availableNow: false,
-                          maxPrice: 6000,
+                          maxPrice: currentCityConfig.maxPriceDefault,
                         })
                       }
                       className={`mt-3 text-xs font-bold hover:underline ${

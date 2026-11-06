@@ -225,7 +225,11 @@ export default function ListingCard({ listing, isSelected, onSelect, onOpenDetai
 
           <div className={`flex items-center text-xs gap-1 mb-3 ${isDark ? 'text-slate-400' : 'text-gray-500'}`}>
             <MapPin className="w-3.5 h-3.5 opacity-60 shrink-0" />
-            <span className="line-clamp-1">{listing.neighborhood || listing.address}</span>
+            <span className="line-clamp-1">
+              {listing.borough && listing.neighborhood && !listing.neighborhood.toLowerCase().includes(listing.borough.toLowerCase())
+                ? `${listing.neighborhood}, ${listing.borough}`
+                : listing.neighborhood || listing.address}
+            </span>
           </div>
 
           {/* Details specs */}

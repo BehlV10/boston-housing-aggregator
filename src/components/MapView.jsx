@@ -333,10 +333,35 @@ function ListingMarker({
   );
 }
 
-export default function MapView({ listings, selectedListing, onSelectListing, theme = 'midnight' }) {
-  // Center between Boston, Cambridge, Somerville, and Brookline
-  const bostonCenter = [42.368, -71.095];
+// Subcomponent that smoothly animates view to the new city when city changes
+function CityViewUpdater({ cityCenter, cityZoom, cityId }) {
+  const map = useMap();
+  const prevCityRef = useRef(cityId);
 
+  useEffect(() => {
+    if (prevCityRef.current !== cityId) {
+      prevCityRef.current = cityId;
+      if (cityCenter) {
+        map.flyTo(cityCenter, cityZoom || 12, {
+          duration: 1.2,
+          easeLinearity: 0.25
+        });
+      }
+    }
+  }, [cityId, cityCenter, cityZoom, map]);
+
+  return null;
+}
+
+export default function MapView({ 
+  listings, 
+  selectedListing, 
+  onSelectListing, 
+  theme = 'midnight',
+  cityCenter = [42.368, -71.095],
+  cityZoom = 12,
+  cityId = 'boston'
+}) {
   const isDark = theme === 'midnight';
   const isWarm = theme === 'warm';
 
@@ -349,11 +374,12 @@ export default function MapView({ listings, selectedListing, onSelectListing, th
         : 'border-gray-200 bg-white'
     }`}>
       <MapContainer
-        center={bostonCenter}
-        zoom={12}
+        center={cityCenter}
+        zoom={cityZoom}
         scrollWheelZoom={true}
         className="w-full h-full"
       >
+        <CityViewUpdater cityCenter={cityCenter} cityZoom={cityZoom} cityId={cityId} />
         <MapUpdater selectedListing={selectedListing} />
 
         {/* 100% Free Open-Source OpenStreetMap Tiles (Zero API Key, Zero Watermarks) */}
