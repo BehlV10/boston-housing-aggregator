@@ -5,6 +5,7 @@ import ListingCard from './components/ListingCard';
 import FilterBar from './components/FilterBar';
 import ListingModal from './components/ListingModal';
 import CrossListHub from './components/CrossListHub';
+import ExternalPortalsBar from './components/ExternalPortalsBar';
 
 export const CITIES = {
   nyc: {
@@ -525,6 +526,13 @@ export default function App() {
             city={city}
             quickChips={currentCityConfig.quickChips}
             maxPriceLimit={currentCityConfig.maxPriceDefault}
+          />
+
+          {/* 1-Click External Portals Launcher (StreetEasy, RentHop, Leasebreak, Roomi, FB Marketplace) */}
+          <ExternalPortalsBar
+            city={city}
+            filters={filters}
+            theme={theme}
           />
 
           {loading ? (

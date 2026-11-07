@@ -783,6 +783,7 @@ def scrape_reddit_nyc_housing(existing_cache=None):
     print("\n--- Scraping NYC Reddit Communities (r/NYCapartments, r/nyu, r/columbia) ---")
     feeds = [
         ('NYCapartments', 'https://www.reddit.com/r/NYCapartments/search/.rss?q=flair%3AOffering+OR+sublet+OR+room+OR+takeover&restrict_sr=1&sort=new'),
+        ('NYCapartments Leasebreak', 'https://www.reddit.com/r/NYCapartments/search/.rss?q=leasebreak+OR+%22lease+takeover%22+OR+%22lease+assignment%22&restrict_sr=1&sort=new'),
         ('NYCapartments', 'https://www.reddit.com/r/NYCapartments/.rss'),
         ('NYU', 'https://www.reddit.com/r/nyu/search/.rss?q=sublet+OR+housing+OR+room&restrict_sr=1&sort=new'),
         ('Columbia', 'https://www.reddit.com/r/columbia/search/.rss?q=sublet+OR+housing+OR+room&restrict_sr=1&sort=new'),
@@ -947,6 +948,188 @@ def scrape_reddit_nyc_housing(existing_cache=None):
     return listings
 
 
+def scrape_zillow_nyc(existing_cache=None):
+    """
+    Scrapes live rental listings from Zillow across NYC:
+    - Manhattan
+    - Brooklyn
+    - Queens
+    - Bronx
+    - Jersey City
+    - Hoboken
+    Extracts verified prices, coordinates, bed/bath counts, floor plans, and high-res photography.
+    """
+    print("\n--- Scraping Zillow NYC (Manhattan, Brooklyn, Queens, Bronx, JC, Hoboken) ---")
+    headers = {
+        'User-Agent': (
+            'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) '
+            'AppleWebKit/537.36 (KHTML, like Gecko) '
+            'Chrome/123.0.0.0 Safari/537.36'
+        ),
+        'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+        'Accept-Language': 'en-US,en;q=0.9',
+    }
+
+    targets = [
+        ('https://www.zillow.com/new-york-ny/rentals/', 'Manhattan', 'Manhattan'),
+        ('https://www.zillow.com/brooklyn-new-york-ny/rentals/', 'Brooklyn', 'Brooklyn'),
+        ('https://www.zillow.com/queens-new-york-ny/rentals/', 'Queens', 'Queens'),
+        ('https://www.zillow.com/bronx-new-york-ny/rentals/', 'Bronx', 'Bronx'),
+        ('https://www.zillow.com/jersey-city-nj/rentals/', 'Jersey City', 'Jersey City / Hoboken'),
+        ('https://www.zillow.com/hoboken-nj/rentals/', 'Hoboken', 'Jersey City / Hoboken'),
+    ]
+
+    all_zillow = []
+    seen_ids = set()
+    now_iso = datetime.now(timezone.utc).isoformat()
+
+    for url, city_label, borough_name in targets:
+        time.sleep(1.0)
+        try:
+            req = urllib.request.Request(url, headers=headers)
+            with urllib.request.urlopen(req, timeout=12) as resp:
+                html = resp.read().decode('utf-8', errors='ignore')
+            m = re.search(r'<script id="__NEXT_DATA__" type="application/json">({.*?})</script>', html)
+            if not m:
+                continue
+            data = json.loads(m.group(1))
+            results = (
+                data.get('props', {})
+                .get('pageProps', {})
+                .get('searchPageState', {})
+                .get('cat1', {})
+                .get('searchResults', {})
+                .get('listResults', [])
+            )
+
+            b_count = 0
+            for item in results:
+                price = 0
+                if item.get('minBaseRent'):
+                    price = int(item['minBaseRent'])
+                elif item.get('unformattedPrice'):
+                    price = int(item['unformattedPrice'])
+                elif item.get('price'):
+                    c = re.sub(r'[^\d]', '', str(item['price']))
+                    if c:
+                        price = int(c)
+                elif item.get('units'):
+                    u_prices = []
+                    for u in item['units']:
+                        if u.get('price'):
+                            c = re.sub(r'[^\d]', '', str(u['price']))
+                            if c:
+                                u_prices.append(int(c))
+                    if u_prices:
+                        price = min(u_prices)
+
+                if price < 500 or price > 25000:
+                    continue
+
+                lat_long = item.get('latLong') or {}
+                lat = lat_long.get('latitude')
+                lng = lat_long.get('longitude')
+                if not lat or not lng or not is_nyc_coord(lat, lng):
+                    continue
+
+                detail = item.get('detailUrl', '')
+                if detail.startswith('/'):
+                    detail = f'https://www.zillow.com{detail}'
+
+                zid = item.get('zpid') or item.get('id') or item.get('lotId') or abs(hash(detail))
+                unique_id = f'zillow_nyc_{zid}'
+                if unique_id in seen_ids:
+                    continue
+                seen_ids.add(unique_id)
+
+                building_name = item.get('buildingName')
+                street_addr = item.get('addressStreet') or item.get('address') or city_label
+                title = building_name or street_addr or f'Rental Community in {city_label}'
+                addr = item.get('address') or f'{street_addr}, {city_label}, NY'
+
+                # Match neighborhood
+                neigh = item.get('addressCity') or city_label
+                for n_key, (n_lat, n_lng, n_name, n_b) in NYC_NEIGHBORHOOD_MAP.items():
+                    if n_key in addr.lower() or n_key in title.lower():
+                        neigh = n_name
+                        borough_name = n_b
+                        break
+
+                beds = item.get('beds')
+                if beds is None and item.get('units'):
+                    b_list = [int(u['beds']) for u in item['units'] if u.get('beds') is not None and str(u.get('beds')).isdigit()]
+                    if b_list:
+                        beds = min(b_list)
+                beds = int(beds) if beds is not None else 1
+
+                baths = item.get('baths')
+                baths = float(baths) if baths is not None else 1.0
+
+                sqft = item.get('area')
+
+                img_src = item.get('imgSrc')
+                carousel = [p.get('url') for p in item.get('carouselPhotosComposable', {}).get('photos', []) if p.get('url')]
+                images = []
+                if img_src:
+                    images.append(img_src)
+                for c in carousel:
+                    if c not in images:
+                        images.append(c)
+                if not images:
+                    images = ['https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=800&q=80']
+
+                unit_summary = ""
+                if item.get('units'):
+                    u_types = []
+                    for u in item['units'][:3]:
+                        b = u.get('beds')
+                        p = u.get('price')
+                        if b is not None and p:
+                            b_str = 'Studio' if str(b) == '0' else f'{b}BR'
+                            u_types.append(f'{b_str} from {p}')
+                    if u_types:
+                        unit_summary = f" Floor plans: {', '.join(u_types)}."
+
+                desc = f"{title} located at {addr}.{unit_summary} Professionally managed rental community. View full floor plans, virtual tours, and schedule a showing directly on Zillow."
+
+                all_zillow.append({
+                    'id': unique_id,
+                    'source': 'zillow',
+                    'source_label': 'Zillow',
+                    'title': title,
+                    'price': price,
+                    'address': addr,
+                    'neighborhood': neigh,
+                    'borough': borough_name,
+                    'lat': round(lat, 6),
+                    'lng': round(lng, 6),
+                    'bedrooms': beds,
+                    'bathrooms': baths,
+                    'sqft': sqft,
+                    'url': detail,
+                    'images': images[:8],
+                    'description': desc,
+                    'rental_type': 'entire_unit',
+                    'rental_type_label': 'Condo / Apt',
+                    'has_broker_fee': False,
+                    'fee_badge': 'No Broker Fee',
+                    'fee_details': 'Direct Management Leasing (No Broker Fee)',
+                    'availability': 'Available Now',
+                    'move_in_period': 'immediate',
+                    'move_in_periods': ['immediate'],
+                    'first_seen': now_iso,
+                    'last_seen': now_iso,
+                })
+                b_count += 1
+
+            print(f"  [{city_label}]: collected {b_count} Zillow listings")
+        except Exception as e:
+            print(f"  Error fetching Zillow {city_label}:", e)
+
+    print(f"Total live Zillow NYC listings extracted: {len(all_zillow)}")
+    return all_zillow
+
+
 def deduplicate_listings(items):
     """
     Deduplicates cross-posted listings across sources by distance, price, and specs.
@@ -1063,8 +1246,11 @@ def main():
     # 4. Reddit NYC Housing
     reddit_listings = scrape_reddit_nyc_housing(existing_cache=existing_cache)
 
+    # 5. Zillow NYC (Manhattan, Brooklyn, Queens, Bronx, Jersey City, Hoboken)
+    zillow_listings = scrape_zillow_nyc(existing_cache=existing_cache)
+
     # Combine all
-    all_listings = cl_apts + cl_rooms + cl_sublets + reddit_listings
+    all_listings = cl_apts + cl_rooms + cl_sublets + reddit_listings + zillow_listings
 
     # Deduplicate
     final_listings = deduplicate_listings(all_listings)

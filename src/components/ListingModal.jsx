@@ -239,6 +239,35 @@ export default function ListingModal({ listing, onClose, theme = 'midnight' }) {
               {listing.description || 'No description provided in original post.'}
             </p>
           </div>
+
+          {/* Quick Lookup Links */}
+          <div className="mt-4 pt-3 border-t border-slate-700/30 flex items-center gap-2 flex-wrap text-xs">
+            <span className={`font-semibold ${isDark ? 'text-slate-400' : 'text-gray-500'}`}>Verify Location:</span>
+            {listing.lat && listing.lng && (
+              <a
+                href={`https://www.google.com/maps/search/?api=1&query=${listing.lat},${listing.lng}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={`flex items-center gap-1 px-2.5 py-1 rounded-lg border font-semibold transition-all ${
+                  isDark ? 'bg-slate-800 border-slate-700 text-slate-200 hover:text-white' : 'bg-gray-100 border-gray-200 text-gray-700 hover:text-black'
+                }`}
+              >
+                <span>Google Maps / Street View</span>
+                <ExternalLink className="w-3 h-3 opacity-60" />
+              </a>
+            )}
+            <a
+              href={`https://streeteasy.com/search?q=${encodeURIComponent(listing.address || listing.title)}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={`flex items-center gap-1 px-2.5 py-1 rounded-lg border font-semibold transition-all ${
+                isDark ? 'bg-slate-800 border-slate-700 text-sky-400 hover:text-sky-300' : 'bg-sky-50 border-sky-200 text-sky-700 hover:text-sky-900'
+              }`}
+            >
+              <span>Look up on StreetEasy</span>
+              <ExternalLink className="w-3 h-3 opacity-60" />
+            </a>
+          </div>
         </div>
 
         {/* Sticky Mobile Bottom Bar */}

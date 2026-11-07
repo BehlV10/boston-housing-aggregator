@@ -414,13 +414,13 @@ export default function FilterBar({
               className={`w-full py-2 px-1.5 border rounded-xl text-xs font-semibold focus:outline-none focus:ring-2 cursor-pointer ${inputClass}`}
             >
               <option value="all">Source: All</option>
+              <option value="zillow">Zillow</option>
               <option value="craigslist">Craigslist</option>
               <option value="reddit">Reddit</option>
               {city === 'boston' && (
                 <>
                   <option value="bostonpads">Boston Pads</option>
                   <option value="bostonapartments">BostonApartments</option>
-                  <option value="zillow">Zillow</option>
                   <option value="apartments_com">Apartments.com</option>
                   <option value="facebook">FB Mkt</option>
                   <option value="redfin">Redfin</option>
