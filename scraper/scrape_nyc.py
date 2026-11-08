@@ -649,6 +649,7 @@ def scrape_craigslist_nyc_section(section='apa', section_label='Apartments', def
         ('que', 'Queens'),
         ('jys', 'Jersey City / Hoboken'),
         ('brx', 'Bronx'),
+        ('stn', 'Staten Island'),
     ]
 
     pattern = (
@@ -663,87 +664,90 @@ def scrape_craigslist_nyc_section(section='apa', section_label='Apartments', def
     all_raw = []
     seen_urls = set()
 
-    print(f"\n--- Scraping Craigslist NYC {section_label} ({section}) across 5 Boroughs/Areas ---")
+    print(f"\n--- Scraping Craigslist NYC {section_label} ({section}) across 6 Boroughs/Areas ---")
 
     for b_code, b_name in boroughs:
-        url = f"https://newyork.craigslist.org/search/{b_code}/{section}?s=0"
-        try:
-            req = urllib.request.Request(url, headers=HEADERS)
-            with urllib.request.urlopen(req, timeout=12) as resp:
-                html = resp.read().decode('utf-8', errors='ignore')
+        b_count = 0
+        for offset in [0, 120]:
+            if b_count >= per_borough_limit:
+                break
+            url = f"https://newyork.craigslist.org/search/{b_code}/{section}?s={offset}"
+            try:
+                req = urllib.request.Request(url, headers=HEADERS)
+                with urllib.request.urlopen(req, timeout=12) as resp:
+                    html = resp.read().decode('utf-8', errors='ignore')
 
-            schema_map = {}
-            ld_match = re.search(r'<script\b[^>]*id="ld_searchpage_results"[^>]*>(.*?)</script>', html, re.DOTALL)
-            if ld_match:
-                try:
-                    data = json.loads(ld_match.group(1))
-                    for idx_item, item_wrap in enumerate(data.get('itemListElement', [])):
-                        it = item_wrap.get('item', {})
-                        schema_map[str(idx_item)] = {
-                            'lat': it.get('latitude'),
-                            'lng': it.get('longitude'),
-                            'bedrooms': it.get('numberOfBedrooms'),
-                            'bathrooms': it.get('numberOfBathroomsTotal'),
-                            'locality': it.get('address', {}).get('addressLocality', b_name)
-                        }
-                except Exception:
-                    pass
+                schema_map = {}
+                ld_match = re.search(r'<script\b[^>]*id="ld_searchpage_results"[^>]*>(.*?)</script>', html, re.DOTALL)
+                if ld_match:
+                    try:
+                        data = json.loads(ld_match.group(1))
+                        for idx_item, item_wrap in enumerate(data.get('itemListElement', [])):
+                            it = item_wrap.get('item', {})
+                            schema_map[str(idx_item)] = {
+                                'lat': it.get('latitude'),
+                                'lng': it.get('longitude'),
+                                'bedrooms': it.get('numberOfBedrooms'),
+                                'bathrooms': it.get('numberOfBathroomsTotal'),
+                                'locality': it.get('address', {}).get('addressLocality', b_name)
+                            }
+                    except Exception:
+                        pass
 
-            matches = re.findall(pattern, html)
-            b_count = 0
-            for idx, (post_url, title, price_str, location) in enumerate(matches):
-                if post_url in seen_urls:
-                    continue
-                seen_urls.add(post_url)
+                matches = re.findall(pattern, html)
+                for idx, (post_url, title, price_str, location) in enumerate(matches):
+                    if post_url in seen_urls:
+                        continue
+                    seen_urls.add(post_url)
 
-                clean_title = html_parser.unescape(title.strip())
-                clean_loc = html_parser.unescape(location.strip())
-                price = clean_price(price_str)
-                if price <= 0:
-                    continue
+                    clean_title = html_parser.unescape(title.strip())
+                    clean_loc = html_parser.unescape(location.strip())
+                    price = clean_price(price_str)
+                    if price <= 0:
+                        continue
 
-                schema_info = schema_map.get(str(idx), {})
-                lat = schema_info.get('lat')
-                lng = schema_info.get('lng')
+                    schema_info = schema_map.get(str(idx), {})
+                    lat = schema_info.get('lat')
+                    lng = schema_info.get('lng')
 
-                if lat and lng and is_nyc_coord(lat, lng):
-                    final_lat = float(lat)
-                    final_lng = float(lng)
-                    final_neighborhood = clean_loc or b_name
-                    final_borough = b_name
-                else:
-                    final_lat, final_lng, final_neighborhood, final_borough = geocode_nyc_location(
-                        clean_loc, clean_title, b_code
-                    )
+                    if lat and lng and is_nyc_coord(lat, lng):
+                        final_lat = float(lat)
+                        final_lng = float(lng)
+                        final_neighborhood = clean_loc or b_name
+                        final_borough = b_name
+                    else:
+                        final_lat, final_lng, final_neighborhood, final_borough = geocode_nyc_location(
+                            clean_loc, clean_title, b_code
+                        )
 
-                listing_id = f"cl-nyc-{re.sub(r'[^a-zA-Z0-9]', '', post_url)[-14:]}"
+                    listing_id = f"cl-nyc-{re.sub(r'[^a-zA-Z0-9]', '', post_url)[-14:]}"
 
-                all_raw.append({
-                    'id': listing_id,
-                    'source': 'craigslist',
-                    'source_label': 'Craigslist',
-                    'title': clean_title,
-                    'price': price,
-                    'neighborhood': final_neighborhood,
-                    'borough': final_borough,
-                    'url': post_url.strip(),
-                    'lat': final_lat,
-                    'lng': final_lng,
-                    'bedrooms': schema_info.get('bedrooms', 1) or 1,
-                    'bathrooms': schema_info.get('bathrooms', 1) or 1,
-                    'rental_type': default_type,
-                    'rental_type_label': default_label,
-                    'sqft': None,
-                    'address': f"{final_neighborhood}, {final_borough}, NY",
-                })
-                b_count += 1
-                if b_count >= per_borough_limit:
-                    break
+                    all_raw.append({
+                        'id': listing_id,
+                        'source': 'craigslist',
+                        'source_label': 'Craigslist',
+                        'title': clean_title,
+                        'price': price,
+                        'neighborhood': final_neighborhood,
+                        'borough': final_borough,
+                        'url': post_url.strip(),
+                        'lat': final_lat,
+                        'lng': final_lng,
+                        'bedrooms': schema_info.get('bedrooms', 1) or 1,
+                        'bathrooms': schema_info.get('bathrooms', 1) or 1,
+                        'rental_type': default_type,
+                        'rental_type_label': default_label,
+                        'sqft': None,
+                        'address': f"{final_neighborhood}, {final_borough}, NY",
+                    })
+                    b_count += 1
+                    if b_count >= per_borough_limit:
+                        break
+            except Exception as e:
+                print(f"  Error fetching {b_name} {section} s={offset}:", e)
+            time.sleep(0.5)
 
-            print(f"  [{b_name}]: collected {b_count} listings")
-        except Exception as e:
-            print(f"  Error fetching {b_name} {section}:", e)
-        time.sleep(0.8)
+        print(f"  [{b_name}]: collected {b_count} listings")
 
     # Process details in batches
     cached_listings = []
@@ -753,7 +757,7 @@ def scrape_craigslist_nyc_section(section='apa', section_label='Apartments', def
     for r in all_raw:
         if existing_cache and r['id'] in existing_cache:
             cached_listings.append(r)
-        elif len(new_to_fetch) < 45:
+        elif len(new_to_fetch) < 80:
             new_to_fetch.append(r)
         else:
             p = r.get('price', 0)
@@ -1230,13 +1234,13 @@ def main():
         except Exception as e:
             print("Could not load existing NYC cache:", e)
 
-    # 1. Craigslist NYC Apartments (apa) across 5 boroughs
+    # 1. Craigslist NYC Apartments (apa) across 6 boroughs/areas
     cl_apts = scrape_craigslist_nyc_section(
         section='apa',
         section_label='Apartments',
         default_type='entire_unit',
         default_label='Condo / Apt',
-        per_borough_limit=45,
+        per_borough_limit=100,
         existing_cache=existing_cache
     )
 
@@ -1246,7 +1250,7 @@ def main():
         section_label='Rooms & Shares',
         default_type='room',
         default_label='Single Room',
-        per_borough_limit=30,
+        per_borough_limit=65,
         existing_cache=existing_cache
     )
 
@@ -1256,7 +1260,7 @@ def main():
         section_label='Sublets & Temporary',
         default_type='sublet',
         default_label='Sublet',
-        per_borough_limit=30,
+        per_borough_limit=45,
         existing_cache=existing_cache
     )
 

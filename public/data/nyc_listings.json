@@ -477,7 +477,13 @@
       "flexible"
     ],
     "images": [
-      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=800&q=80"
+      "https://images.craigslist.org/00D0D_5yZXQMGKRdQ_0kE0bB_600x450.jpg",
+      "https://images.craigslist.org/00y0y_iuCKJYY5ate_0jm0cU_600x450.jpg",
+      "https://images.craigslist.org/00i0i_e10kapRcFnX_0jm0cU_600x450.jpg",
+      "https://images.craigslist.org/00e0e_1Rp99k60lPL_0jm0cU_600x450.jpg",
+      "https://images.craigslist.org/01414_7dZfimGrbyM_0jm0cU_600x450.jpg",
+      "https://images.craigslist.org/00M0M_fdCGrJWyQ8H_0kE0dL_600x450.jpg",
+      "https://images.craigslist.org/01010_adloeGeZ77t_0kE0dL_600x450.jpg"
     ],
     "description": "Private furnished immaculate small studio on ground floor with private entrance and private bath in fantastic location. Looking for ONE clean quiet working person. January 4, 2027 to April 30, 2027. Possibly flexible dates. Air conditioned. Utilities and internet included. Microwave, refrigerator and toaster oven only. $1,750 /30 days. Deposit required. Excellent credit, employment and income required. No smoking. No pets. No drugs. No car. No parking.Walk or bike to train. Discount with full prepayment. Full time students welcome.",
     "has_broker_fee": false,
@@ -529,7 +535,7 @@
     "lat": 40.7320996396195,
     "lng": -74.0659974874848,
     "bedrooms": 1,
-    "bathrooms": 1,
+    "bathrooms": 1.0,
     "rental_type": "sublet",
     "rental_type_label": "Sublet",
     "sqft": null,
@@ -1028,7 +1034,8 @@
     "availability": "Available Dec 1, 2026",
     "move_in_period": "2026-12",
     "move_in_periods": [
-      "2026-12"
+      "2026-12",
+      "flexible"
     ],
     "images": [
       "https://images.craigslist.org/00u0u_jdrfwHbx6HD_0eE0ww_600x450.jpg",
@@ -7510,15 +7517,123 @@
       "immediate"
     ],
     "images": [
-      "https://images.craigslist.org/00606_lydIAw6h5Pi_0lM0CI_600x450.jpg",
-      "https://images.craigslist.org/00707_5ngPXGAtbzi_0jl0cU_600x450.jpg",
-      "https://images.craigslist.org/00303_g9jTf1fPxJu_09i06Y_600x450.jpg",
-      "https://images.craigslist.org/00g0g_9YrcHPmQv24_0cU08B_600x450.jpg",
-      "https://images.craigslist.org/00e0e_a6XdLvQv8UD_0jm0e2_600x450.jpg",
-      "https://images.craigslist.org/00C0C_jWKiTGU1ZSt_0CI0pO_600x450.jpg",
-      "https://images.craigslist.org/00101_1Mh5ue7eNUZ_0CI0pO_600x450.jpg"
+      "https://images.craigslist.org/01717_9EqorefDVTe_07K05O_600x450.jpg",
+      "https://images.craigslist.org/00m0m_aeGNo03Y88l_07K05O_600x450.jpg",
+      "https://images.craigslist.org/01313_7OsTrlJaYaN_07K05O_600x450.jpg",
+      "https://images.craigslist.org/00202_cGSppofuZ5b_02H042_600x450.jpg"
     ],
-    "description": "Hey everyone, We are looking for a clean, reliable, and like-minded professional to take over the premium Master Suite in a beautiful, modern high-rise right along the waterfront. You’ll be sharing the space with working professionals who value a quiet, clean, and productive home environment during the week. Your space is the largest bedroom in the layout, featuring spectacular views of the city, a completely private en-suite bathroom attached to the room, and a massive walk-in closet. It offers total privacy and an upscale feel. The rest of the apartment features expansive windows with natura...",
+    "description": "Fully furnished, all utilities included. Fully equipped kitchen. $100/night. $500/week. No lease or application. All Credit cards accepted.",
+    "has_broker_fee": false,
+    "fee_badge": "No Broker Fee",
+    "fee_details": "Direct Room / Sublet (No Broker Fee)",
+    "original_rate_note": "$500/week"
+  },
+  {
+    "id": "cl-nyc-UvdXexSfbr34z9",
+    "source": "craigslist",
+    "source_label": "Craigslist",
+    "title": "COZY FULLY FURNISHED ROOM",
+    "price": 1200,
+    "neighborhood": "Sunnyside",
+    "borough": "Queens",
+    "url": "https://www.craigslist.org/view/d/sunnyside-cozy-fully-furnished-room/5CG8kGwgUvdXexSfbr34z9",
+    "lat": 40.7436017673561,
+    "lng": -73.9216006639637,
+    "bedrooms": 0,
+    "bathrooms": 1.0,
+    "rental_type": "room",
+    "rental_type_label": "Single Room",
+    "sqft": null,
+    "address": "Sunnyside, Queens, NY",
+    "first_seen": "2026-11-08T11:21:12-0500",
+    "last_seen": "2026-11-08T20:22:00.967161+00:00",
+    "availability": "Available Nov 1, 2026",
+    "move_in_period": "2026-11",
+    "move_in_periods": [
+      "2026-11"
+    ],
+    "images": [
+      "https://images.craigslist.org/00808_7S2ceckL7TG_0t20CI_600x450.jpg",
+      "https://images.craigslist.org/00M0M_3clE8GAUvXr_0t20CI_600x450.jpg",
+      "https://images.craigslist.org/00l0l_c0WexUaPcPt_0t20CI_600x450.jpg",
+      "https://images.craigslist.org/00a0a_3tlLQIkWJWD_0t20CI_600x450.jpg",
+      "https://images.craigslist.org/01010_lGgTbYAJLZG_0t20CI_600x450.jpg",
+      "https://images.craigslist.org/00S0S_f6JQECIkb62_0t20CI_600x450.jpg",
+      "https://images.craigslist.org/00A0A_inRs2a7b0cq_0t20CI_600x450.jpg",
+      "https://images.craigslist.org/01010_22lzekV5uIm_0t20CI_600x450.jpg"
+    ],
+    "description": "This is a really comfortable furnished room, located in one of the better area of Sunnyside, very good neighborhood. You can calling or texting me anytime for more information. Thanks, show contact info No pets, no smoking, no visitors. Good place for good people 🤗",
+    "has_broker_fee": false,
+    "fee_badge": "No Broker Fee",
+    "fee_details": "Direct Room / Sublet (No Broker Fee)"
+  },
+  {
+    "id": "cl-nyc-m2muZHteUhfCRo",
+    "source": "craigslist",
+    "source_label": "Craigslist",
+    "title": "PRIVATE ROOM FOR RENT IN JAMAICA",
+    "price": 800,
+    "neighborhood": "Jamaica",
+    "borough": "Queens",
+    "url": "https://www.craigslist.org/view/d/jamaica-private-room-for-rent-in-jamaica/py2bSbnJm2muZHteUhfCRo",
+    "lat": 40.7118994395954,
+    "lng": -73.7944017416203,
+    "bedrooms": 1,
+    "bathrooms": 0.0,
+    "rental_type": "room",
+    "rental_type_label": "Single Room",
+    "sqft": null,
+    "address": "Jamaica, Queens, NY",
+    "first_seen": "2026-11-08T12:11:07-0500",
+    "last_seen": "2026-11-08T20:22:00.949468+00:00",
+    "availability": "Available Nov 1, 2026",
+    "move_in_period": "2026-11",
+    "move_in_periods": [
+      "2026-11"
+    ],
+    "images": [
+      "https://images.craigslist.org/00Q0Q_iKdBm8cSeJ5_0gl0t2_600x450.jpg"
+    ],
+    "description": "Room without attached bathroom 800 Room with attached bathroom 1000 171 st between hillside Ave and Jamaica ave Walk to F train and buses Looking for working person Proof of income required show contact info",
+    "has_broker_fee": false,
+    "fee_badge": "No Broker Fee",
+    "fee_details": "Direct Room / Sublet (No Broker Fee)"
+  },
+  {
+    "id": "cl-nyc-fD2ATMcpbVMYRb",
+    "source": "craigslist",
+    "source_label": "Craigslist",
+    "title": "3 stops from midtown Manhtn,large cozy nicely furnsd share,no fee/all",
+    "price": 1365,
+    "neighborhood": "Sunnyside",
+    "borough": "Queens",
+    "url": "https://www.craigslist.org/view/d/sunnyside-stops-from-midtown/45zMgK6mfD2ATMcpbVMYRb",
+    "lat": 40.7437003160969,
+    "lng": -73.9233355801673,
+    "bedrooms": 1,
+    "bathrooms": 1,
+    "rental_type": "room",
+    "rental_type_label": "Single Room",
+    "sqft": 650,
+    "address": "Sunnyside, Queens, NY",
+    "first_seen": "2026-11-08T12:40:19-0500",
+    "last_seen": "2026-11-08T20:22:00.930982+00:00",
+    "availability": "Available Now",
+    "move_in_period": "immediate",
+    "move_in_periods": [
+      "immediate"
+    ],
+    "images": [
+      "https://images.craigslist.org/00000_k5A25XYEljU_0fR0k1_600x450.jpg",
+      "https://images.craigslist.org/00r0r_aDRO76obdYr_0fP0my_600x450.jpg",
+      "https://images.craigslist.org/00r0r_5S8R15xZEyT_0hq0nh_600x450.jpg",
+      "https://images.craigslist.org/00707_gxgFOd7BCBc_0gQ0nE_600x450.jpg",
+      "https://images.craigslist.org/00y0y_5ekJLewvWDm_0hm0nR_600x450.jpg",
+      "https://images.craigslist.org/00i0i_dLeOUHbkvgO_0h90mV_600x450.jpg",
+      "https://images.craigslist.org/00909_juoseigUjg4_0hq0n2_600x450.jpg",
+      "https://images.craigslist.org/00n0n_fqMt9ZzG6Dn_0g30mK_600x450.jpg"
+    ],
+    "description": "Large, cozy, clean, nicely and fully furnished one bedroom to share- you get your own bedroom, bathroom to saver in the middle of a long hallway, large eat in kitchen. Shared with a very friendly, refined, well educated European lady. Great neighborhood, 15 min and 3 stops from midtown Manhattan, near subway/ bus, restaurants and stores. Available 11/15 monthly and all inclusive/ no fee.",
     "has_broker_fee": false,
     "fee_badge": "No Broker Fee",
     "fee_details": "No Broker Fee (Direct / Owner Pays)"
@@ -7557,18 +7672,18 @@
     "original_rate_note": "$335/week"
   },
   {
-    "id": "cl-nyc-qk2eQxFH1cxL9K",
+    "id": "cl-nyc-Q5cemUepzH9jkr",
     "source": "craigslist",
     "source_label": "Craigslist",
-    "title": "Furnished Room in Quiet Private House",
-    "price": 1400,
-    "neighborhood": "NEXT TO ST BARNABAS HOSPITAL",
-    "borough": "Jersey City / Hoboken",
-    "url": "https://www.craigslist.org/view/d/bronx-furnished-room-in-quiet-private/vwwqxv4Kqk2eQxFH1cxL9K",
-    "lat": 40.8507127894033,
-    "lng": -73.8940751985293,
-    "bedrooms": 0,
-    "bathrooms": 2.0,
+    "title": "$500 Spacious room",
+    "price": 2166,
+    "neighborhood": "brooklyn",
+    "borough": "Brooklyn",
+    "url": "https://www.craigslist.org/view/d/brooklyn-500-spacious-room/wXQmAUEPQ5cemUepzH9jkr",
+    "lat": 40.6628003943021,
+    "lng": -73.9545973033835,
+    "bedrooms": 1,
+    "bathrooms": 1,
     "rental_type": "room",
     "rental_type_label": "Single Room",
     "sqft": null,
@@ -7581,19 +7696,17 @@
       "immediate"
     ],
     "images": [
-      "https://images.craigslist.org/00g0g_2ni6VyJOfLt_12w0Mo_600x450.jpg",
-      "https://images.craigslist.org/00S0S_gMRvRgKsPfL_12w0Mo_600x450.jpg",
-      "https://images.craigslist.org/00j0j_9kssCzVehNC_12w0Mo_600x450.jpg",
-      "https://images.craigslist.org/00k0k_4e4oc4YY0xe_0Mo12w_600x450.jpg",
-      "https://images.craigslist.org/00x0x_i6PS29IwB0v_0aT0ew_600x450.jpg",
-      "https://images.craigslist.org/00l0l_6N1WoAevdEe_0aT0ew_600x450.jpg",
-      "https://images.craigslist.org/01313_djJt30hrCe1_0jm0ew_600x450.jpg",
-      "https://images.craigslist.org/00P0P_4fksWDkGGba_0jm0ew_600x450.jpg"
+      "https://images.craigslist.org/01414_8NOoYf9Tk2E_0aT0ew_600x450.jpg",
+      "https://images.craigslist.org/00101_9Q0av2OIioY_0aT0ew_600x450.jpg",
+      "https://images.craigslist.org/00Q0Q_7CXWd4I5iwn_0aT0ew_600x450.jpg",
+      "https://images.craigslist.org/00i0i_7jHzCgWDG0Q_0aT0ew_600x450.jpg",
+      "https://images.craigslist.org/00C0C_fbBwy6pGxO9_0aT0ew_600x450.jpg"
     ],
-    "description": "Must have: State ID/Passport, Social Security Card/EIN, Paystub/bank statement and/or stipend if you are a student. Must have 1 month rent + 1 month security = $2,800.00 Secure, clean, quiet, perfect environment for studying. FIOS QUANTUM GIGABIT Ultra Hi-Speed WI-FI internet included.",
+    "description": "Spacious room available in crown heights. 2-5 train. Walking distance to prospect park and botanical gardens. Utilities and WiFi included",
     "has_broker_fee": false,
     "fee_badge": "No Broker Fee",
-    "fee_details": "Direct Room / Sublet (No Broker Fee)"
+    "fee_details": "Direct Room / Sublet (No Broker Fee)",
+    "original_rate_note": "$500/week"
   },
   {
     "id": "cl-nyc-MtCnLZPNYQby6e",
@@ -7740,15 +7853,15 @@
     "id": "cl-nyc-7tA7pgkqFPtvS2",
     "source": "craigslist",
     "source_label": "Craigslist",
-    "title": "Cozy Furnished Room for Rent in Rego Park – Female Preferred",
-    "price": 930,
-    "neighborhood": "Rego Park",
-    "borough": "Queens",
-    "url": "https://www.craigslist.org/view/d/rego-park-cozy-furnished-room-for-rent/kyzz9NxC7tA7pgkqFPtvS2",
-    "lat": 40.727800164325,
-    "lng": -73.8601973500206,
+    "title": "1br - Separate Room In a 1-Bedroom Apartment",
+    "price": 750,
+    "neighborhood": "Ocean ave, Brooklyn, NY",
+    "borough": "Brooklyn",
+    "url": "https://www.craigslist.org/view/d/brooklyn-1br-separate-room-in-1-bedroom/q6LzULB1cFj2gTDVb3pyg9",
+    "lat": 40.6224991159526,
+    "lng": -73.9649993521535,
     "bedrooms": 1,
-    "bathrooms": 1,
+    "bathrooms": 1.0,
     "rental_type": "room",
     "rental_type_label": "Single Room",
     "sqft": null,
@@ -7763,22 +7876,22 @@
     "images": [
       "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=800&q=80"
     ],
-    "description": "A clean, comfortable, and cozy furnished room is available in a safe and convenient area of Rego Park. The room is newly painted and furnished with a bed and closet. The apartment is very clean and well maintained, with a shared bathroom, kitchen, and living room. The living room includes a dining table, sofa, and large TV, and laundry is available in the building. The apartment is approximately a 7-minute walk to the subway, with easy access to the R and M trains at 67th Avenue station. Austin Street is about a 10-minute walk away, with theaters, restaurants, supermarkets, shops, and other co...",
+    "description": "Separate big room for rent in a 1-bedroom apartment in Midwood, Brooklyn at Ocean sve &amp; Avenue J (near Avenue J station on Q/B train line) . Drop me a line, (with your number). Lets have a phone call to talk about other details, and maybe schedule a time for you to come see the place.",
     "has_broker_fee": false,
     "fee_badge": "No Broker Fee",
     "fee_details": "Direct Room / Sublet (No Broker Fee)"
   },
   {
-    "id": "cl-nyc-m2pC8ThfbarxgD",
+    "id": "cl-nyc-utGhvKvr374L86",
     "source": "craigslist",
     "source_label": "Craigslist",
-    "title": "Unfurnished Room,Wood Floors,Garage,Walk To LIRR*Hablo Español",
-    "price": 1000,
-    "neighborhood": "Flushing",
-    "borough": "Queens",
-    "url": "https://www.craigslist.org/view/d/flushing-unfurnished-roomwood/jM1ED8Qsm2pC8ThfbarxgD",
-    "lat": 40.7605985603477,
-    "lng": -73.7967995699928,
+    "title": "Share bedroom",
+    "price": 650,
+    "neighborhood": "Sunset park",
+    "borough": "Brooklyn",
+    "url": "https://www.craigslist.org/view/d/brooklyn-share-bedroom/1NgpA9n7utGhvKvr374L86",
+    "lat": 40.6411998854269,
+    "lng": -74.0133025590695,
     "bedrooms": 1,
     "bathrooms": 1,
     "rental_type": "room",
@@ -7827,26 +7940,92 @@
       "immediate"
     ],
     "images": [
-      "https://images.craigslist.org/00A0A_kuTUwMp1B2k_0pO0jm_600x450.jpg",
-      "https://images.craigslist.org/00707_hUWTdf55DiJ_0pN0jn_600x450.jpg",
-      "https://images.craigslist.org/00j0j_6puhbJ1FoiK_0pN0jn_600x450.jpg"
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=800&q=80"
     ],
-    "description": "1st Floor Fully Furnished Room Wifi Included Central Air/Heat Backyard Use Share Kitchen And Bathroom Location :…57 Avenue…Near Long Island Expwy.Buses And Shops Call Real Estate Agent show contact info *Si Habla Español Llameme Y Le Explico Los Detalles",
+    "description": "650 a month gas water heater included Gay friendly. Male only. Nude friendly Not looking for sex. Please text show contact info . No call. If u not interested don't text or call.",
     "has_broker_fee": false,
     "fee_badge": "No Broker Fee",
     "fee_details": "Direct Room / Sublet (No Broker Fee)"
   },
   {
-    "id": "cl-nyc-qSYoYfW9GgS7Wz",
+    "id": "cl-nyc-7GVYCAw4VJzaUt",
     "source": "craigslist",
     "source_label": "Craigslist",
-    "title": "For rent large sunny furnished room buses close to forest hills",
-    "price": 700,
-    "neighborhood": "Kew garden",
-    "borough": "Queens",
-    "url": "https://www.craigslist.org/view/d/flushing-for-rent-large-sunny-furnished/6YBsRomcqSYoYfW9GgS7Wz",
-    "lat": 40.7280012725111,
-    "lng": -73.8195030226236,
+    "title": "Living room",
+    "price": 750,
+    "neighborhood": "Sunset park",
+    "borough": "Brooklyn",
+    "url": "https://www.craigslist.org/view/d/brooklyn-living-room/33nFm2Sq7GVYCAw4VJzaUt",
+    "lat": 40.6411998854269,
+    "lng": -74.0133025590695,
+    "bedrooms": 2,
+    "bathrooms": 1.0,
+    "rental_type": "room",
+    "rental_type_label": "Single Room",
+    "sqft": null,
+    "address": "Sunset park, Brooklyn, NY",
+    "first_seen": "2026-10-22T21:40:49-0400",
+    "last_seen": "2026-11-08T20:21:59.974261+00:00",
+    "availability": "Available Now",
+    "move_in_period": "immediate",
+    "move_in_periods": [
+      "immediate"
+    ],
+    "images": [
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=800&q=80"
+    ],
+    "description": "R train 2 block way Shopping on 5ave Male only Light,gas,water&amp;heater included.",
+    "has_broker_fee": false,
+    "fee_badge": "No Broker Fee",
+    "fee_details": "Direct Room / Sublet (No Broker Fee)"
+  },
+  {
+    "id": "cl-nyc-TTGZa7dTyekQFL",
+    "source": "craigslist",
+    "source_label": "Craigslist",
+    "title": "Williamsburg next to L train",
+    "price": 2400,
+    "neighborhood": "brooklyn",
+    "borough": "Brooklyn",
+    "url": "https://www.craigslist.org/view/d/brooklyn-williamsburg-next-to-train/hgov7x3PTTGZa7dTyekQFL",
+    "lat": 40.7094981734762,
+    "lng": -73.9562978421194,
+    "bedrooms": 2,
+    "bathrooms": 1.0,
+    "rental_type": "room",
+    "rental_type_label": "Single Room",
+    "sqft": null,
+    "address": "brooklyn, Brooklyn, NY",
+    "first_seen": "2026-10-19T17:02:31-0400",
+    "last_seen": "2026-11-08T20:21:59.907505+00:00",
+    "availability": "Available Nov 1, 2026",
+    "move_in_period": "2026-11",
+    "move_in_periods": [
+      "2026-11"
+    ],
+    "images": [
+      "https://images.craigslist.org/00p0p_8LcwJIOJtno_0CI0t2_600x450.jpg",
+      "https://images.craigslist.org/00z0z_hlry75eDTFs_0CI0t2_600x450.jpg",
+      "https://images.craigslist.org/00m0m_ahogFaRDIoU_0CI0t2_600x450.jpg",
+      "https://images.craigslist.org/00x0x_3G8lFrYav3O_0CI0t2_600x450.jpg",
+      "https://images.craigslist.org/00K0K_nlEVT4g4rN_0CI0t2_600x450.jpg"
+    ],
+    "description": "Hey everyone! I have a room opening up in a 2-bedroom, 1-bathroom apartment located in Williamsburg. Details: • Rent: $2,400 / month (WiFi and utilities). • Availability: November 15, 2026 • No broker fee. Additional storage space available. The Space: The bedroom gets good light and comes with a queen bed, comfortable setup, a desk area if you work from home, AC, and heating. The apartment has a nice modern kitchen and a full bathroom with a bathtub. The Neighborhood: Convenient access to local grocery stores, gyms, coffee shops just a short walk to the ferry, which is easily one of the best ...",
+    "has_broker_fee": false,
+    "fee_badge": "No Broker Fee",
+    "fee_details": "No Broker Fee (Direct / Owner Pays)"
+  },
+  {
+    "id": "cl-nyc-7XQHaLHfMdMc92",
+    "source": "craigslist",
+    "source_label": "Craigslist",
+    "title": "Fully furnished spacious room private bath utilities included",
+    "price": 730,
+    "neighborhood": "Metro Tech Downtown/Fort Green/Brooklyn Heights",
+    "borough": "Brooklyn",
+    "url": "https://www.craigslist.org/view/d/brooklyn-fully-furnished-spacious-room/nxELdJKL7XQHaLHfMdMc92",
+    "lat": 40.692955736016,
+    "lng": -73.9817606594914,
     "bedrooms": 2,
     "bathrooms": 2.0,
     "rental_type": "room",
@@ -7862,16 +8041,18 @@
       "flexible"
     ],
     "images": [
-      "https://images.craigslist.org/00z0z_1af1figkolE_0CI0t2_600x450.jpg",
-      "https://images.craigslist.org/00C0C_jIPlfgkAwVn_0CI0t2_600x450.jpg"
+      "https://images.craigslist.org/00S0S_dePFGlD4S2j_09G07g_600x450.jpg",
+      "https://images.craigslist.org/00y0y_8jE7WtpRYHw_0t20CI_600x450.jpg",
+      "https://images.craigslist.org/00101_4noOvyBG5Th_0t20CI_600x450.jpg",
+      "https://images.craigslist.org/00G0G_bjfZq8aKlff_0CI0m9_600x450.jpg"
     ],
-    "description": "For rent large room in furnished 2 room in garden apt has all. bed tv. Ac .and share kitchen .close to 2 supermarket and store. close to forest hills -e-f-v-n- train stop at queens. buses at corner to train station .and buses to nyc city. Kennedy and LaGuardia airport .I am looking for one female .I can rent the room for long term or short term. the rent is $700 included all ac and utility. send me more info about yourself .and how long you need the Room .i am flexible with date. let Me know when you need the room thank you.",
+    "description": "AVAILABLE FROM DECEMBER 22ND . LOCATION: Manhattan, West Side, near Columbia University. Morningside Park neighborhood. Not far from Central Park. 5 min walk to the A B C D express trains station. 10min walking distance to the 1 and the 2 trains. about a 10min ride to midtown Manhattan Time Square area/ Bryant Park. Metro North Uptown station... PLEASE READ IN FULL BEFORE MESSAGING. IT WILL SAVE TIME FOR BOTH OF US if you could include some basic information about yourself with: 1) Age: ______ 2) Gender: ______ 3) Move in dates : Start date:______ End Date: _____ 4) DAYS AND TIME AVAILABLE for...",
     "has_broker_fee": false,
     "fee_badge": "No Broker Fee",
     "fee_details": "Direct Room / Sublet (No Broker Fee)"
   },
   {
-    "id": "cl-nyc-3R5S4Hm9wXjuT3",
+    "id": "cl-nyc-V69h3eXLbdBa3H",
     "source": "craigslist",
     "source_label": "Craigslist",
     "title": "Looking For Male Roommate",
@@ -7913,14 +8094,14 @@
     "id": "cl-nyc-gqbWXnYmTuorz2",
     "source": "craigslist",
     "source_label": "Craigslist",
-    "title": "looking for 1 single roommate",
-    "price": 950,
-    "neighborhood": "Brooklyn-18th av",
-    "borough": "Brooklyn",
-    "url": "https://www.craigslist.org/view/d/brooklyn-looking-for-single-roommate/sGnb47M3gqbWXnYmTuorz2",
-    "lat": 40.6209996854028,
-    "lng": -73.9869997855698,
-    "bedrooms": 2,
+    "title": "Room - starting in December",
+    "price": 1800,
+    "neighborhood": "Midtown East",
+    "borough": "Manhattan",
+    "url": "https://www.craigslist.org/view/d/new-york-room-starting-in-december/uFSbHni7eXQi21fwEWRFw2",
+    "lat": 40.7545057271547,
+    "lng": -73.9656960688324,
+    "bedrooms": 1,
     "bathrooms": 1,
     "rental_type": "room",
     "rental_type_label": "Single Room",
@@ -7934,15 +8115,13 @@
       "immediate"
     ],
     "images": [
-      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=800&q=80"
+      "https://images.craigslist.org/00n0n_62Um0pruTag_0ak07K_600x450.jpg",
+      "https://images.craigslist.org/00N0N_hdoZQmphHJV_0ak07K_600x450.jpg"
     ],
-    "description": "Looking for 1 single roommate for a move in on January 5th is a 2 big rooms apt shared kitchen and bath , am giving my self more time to find a good fit roomy please email me for more info if you serious thank you .",
+    "description": "Location, location, location. Furnished. How long would you like to stay? No smoking.",
     "has_broker_fee": false,
     "fee_badge": "No Broker Fee",
-    "fee_details": "Direct Room / Sublet (No Broker Fee)",
-    "cross_posted_sources": [
-      "Craigslist"
-    ]
+    "fee_details": "Direct Room / Sublet (No Broker Fee)"
   },
   {
     "id": "cl-nyc-BYktepwUn1KXm3",
@@ -8274,13 +8453,152 @@
     "id": "cl-nyc-nf3uMz38zmh9xB",
     "source": "craigslist",
     "source_label": "Craigslist",
-    "title": "Spacious 64 West 70th Street in prime Upper West Side location.",
-    "price": 1250,
+    "title": "Multiple 2 Bedroom/1 Bath Roommate Shares for Dec,1 Year Lease",
+    "price": 2571,
+    "neighborhood": "East Village",
+    "borough": "Manhattan",
+    "url": "https://www.craigslist.org/view/d/new-york-multiple-bedroom-bath-roommate/c7PGh5pBPnZN5u3uu5HYKJ",
+    "lat": 40.7307434485185,
+    "lng": -73.9813034391709,
+    "bedrooms": 2,
+    "bathrooms": 1,
+    "rental_type": "room",
+    "rental_type_label": "Single Room",
+    "sqft": null,
+    "address": "East Village, Manhattan, NY",
+    "first_seen": "2026-10-21T08:28:57-0400",
+    "last_seen": "2026-11-08T20:21:59.146615+00:00",
+    "availability": "Available Dec 1, 2026",
+    "move_in_period": "2026-12",
+    "move_in_periods": [
+      "2026-12"
+    ],
+    "images": [
+      "https://images.craigslist.org/00t0t_jajfTGcmnyJ_0gO0a2_600x450.jpg",
+      "https://images.craigslist.org/00707_388VfPXclPu_0aZ0bd_600x450.jpg",
+      "https://images.craigslist.org/00O0O_1gx4Zs0nYfD_0gw0aQ_600x450.jpg",
+      "https://images.craigslist.org/00M0M_5VN1fH3JrhS_0fu0ak_600x450.jpg",
+      "https://images.craigslist.org/00a0a_faPeBfSBeTW_0cU06p_600x450.jpg"
+    ],
+    "description": "Multiple, Unfurnished 2 Bed/1 Bath roommate shares available for 1 YR Lease Nov. or Dec lease start dates -You have roommates already? The entire apartment is available starting in the $5,300's All Roommates will sign one lease together for 1 YR, No Short-term 2 bedroom/1 bath 800 sq ft *Room starting pricing in the $2,500's plus $200.00 more for the larger BR All rooms fit King/Queen Beds, Hardwood flooring, Microwave/Dishwasher ✨Property Highlights: Elevator/Laundry Building Free bike storage Sunday Farmer's Market 2 gyms on-site Free outside running track Sports courts/green spaces Tenant E...",
+    "has_broker_fee": false,
+    "fee_badge": "No Broker Fee",
+    "fee_details": "Direct Room / Sublet (No Broker Fee)"
+  },
+  {
+    "id": "cl-nyc-LE2DJqybLGog5R",
+    "source": "craigslist",
+    "source_label": "Craigslist",
+    "title": "Spacious One-Bedroom Apartment",
+    "price": 1050,
+    "neighborhood": "Upper East Side",
+    "borough": "Manhattan",
+    "url": "https://www.craigslist.org/view/d/new-york-spacious-one-bedroom-apartment/sZkPXXRYLE2DJqybLGog5R",
+    "lat": 40.7726535923566,
+    "lng": -73.9555535699435,
+    "bedrooms": 1,
+    "bathrooms": 1.0,
+    "rental_type": "room",
+    "rental_type_label": "Single Room",
+    "sqft": null,
+    "address": "Upper East Side, Manhattan, NY",
+    "first_seen": "2026-10-21T15:08:42-0400",
+    "last_seen": "2026-11-08T20:21:59.136097+00:00",
+    "availability": "Available Nov 1, 2026",
+    "move_in_period": "2026-11",
+    "move_in_periods": [
+      "2026-11"
+    ],
+    "images": [
+      "https://images.craigslist.org/01313_7MpiYlAiPEe_08k06f_600x450.jpg"
+    ],
+    "description": "Enjoy generous living space in this beautifully maintained, fully private one-bedroom apartment. The home features an expansive living room layout complete with a dedicated dining area, offering plenty of space for relaxing and entertaining. Large, sunlit private bedroom comfortably fitting a queen bed with extra storage space. Expansive living room area featuring a dedicated dining space. Fully equipped kitchen complete with full-size appliances and a dishwasher. Ample closet and storage space throughout the apartment interior. Modern full bathroom with updated fixtures. High-speed internet a...",
+    "has_broker_fee": false,
+    "fee_badge": "No Broker Fee",
+    "fee_details": "Direct Room / Sublet (No Broker Fee)"
+  },
+  {
+    "id": "cl-nyc-2iV5da581eRmrh",
+    "source": "craigslist",
+    "source_label": "Craigslist",
+    "title": "Extra Large Furnished Bedroom",
+    "price": 1100,
+    "neighborhood": "Chelsea",
+    "borough": "Manhattan",
+    "url": "https://www.craigslist.org/view/d/new-york-extra-large-furnished-bedroom/dqBL7BNz2iV5da581eRmrh",
+    "lat": 40.7452060491824,
+    "lng": -74.0022651001046,
+    "bedrooms": 1,
+    "bathrooms": 1.0,
+    "rental_type": "room",
+    "rental_type_label": "Single Room",
+    "sqft": null,
+    "address": "Chelsea, Manhattan, NY",
+    "first_seen": "2026-10-21T15:11:12-0400",
+    "last_seen": "2026-11-08T20:21:59.133683+00:00",
+    "availability": "Available Nov 1, 2026",
+    "move_in_period": "2026-11",
+    "move_in_periods": [
+      "2026-11"
+    ],
+    "images": [
+      "https://images.craigslist.org/00808_i03X4OIzIEn_09G07g_600x450.jpg"
+    ],
+    "description": "Enjoy generous living space in this extra-large, fully furnished private bedroom set within a well-maintained apartment. The room is thoughtfully fitted with a king-sized bed, a bureau, end tables with reading lamps, a comfortable club chair with a accent table, and a compact desk for work or study. All essential utilities (electricity, heat) and high-speed internet included. Full shared access to kitchen and bathroom facilities. Prime, highly walkable location within short distance of local markets, cafes, and dining options. Excellent access to major public transportation routes for quick co...",
+    "has_broker_fee": false,
+    "fee_badge": "No Broker Fee",
+    "fee_details": "Direct Room / Sublet (No Broker Fee)"
+  },
+  {
+    "id": "cl-nyc-omk1ko71qFfy9A",
+    "source": "craigslist",
+    "source_label": "Craigslist",
+    "title": "Multiple 3 Bedroom/1 Bath Roommate Shares for December,1 year lease",
+    "price": 2400,
+    "neighborhood": "East Village",
+    "borough": "Manhattan",
+    "url": "https://www.craigslist.org/view/d/new-york-multiple-bedroom-bath-roommate/piAQmmsVomk1ko71qFfy9A",
+    "lat": 40.7307434485185,
+    "lng": -73.9813034391709,
+    "bedrooms": 3,
+    "bathrooms": 1,
+    "rental_type": "room",
+    "rental_type_label": "Single Room",
+    "sqft": null,
+    "address": "East Village, Manhattan, NY",
+    "first_seen": "2026-10-21T08:27:54-0400",
+    "last_seen": "2026-11-08T20:21:59.087869+00:00",
+    "availability": "Available Nov / Dec 2026",
+    "move_in_period": "2026-11",
+    "move_in_periods": [
+      "2026-11",
+      "2026-12"
+    ],
+    "images": [
+      "https://images.craigslist.org/01313_4eDSU1jCZ2B_0lv0eJ_600x450.jpg",
+      "https://images.craigslist.org/01414_5oZ2o0VlaGu_0cU09G_600x450.jpg",
+      "https://images.craigslist.org/00X0X_54QISMNndDc_0cU09G_600x450.jpg",
+      "https://images.craigslist.org/00Z0Z_a7J0Trquh9m_0cU09G_600x450.jpg",
+      "https://images.craigslist.org/00X0X_3DiYgRL79FZ_07q0bb_600x450.jpg",
+      "https://images.craigslist.org/01515_lEqgGXSd8HK_07K0ak_600x450.jpg",
+      "https://images.craigslist.org/01414_2uARgiv5FBk_0cz05a_600x450.jpg"
+    ],
+    "description": "Multiple, Unfurnished 3 Bed/1 Bath roommate shares available for 1 YR Lease for November or December Lease Start Date -You have roommates already? The entire apartment is available starting in the $7,500's All Roommates will sign one lease together for 1 YR, No Short-term 3 bedroom/1 bath 970 sq ft *Room starting pricing in the $2,400's plus $200.00 more for the larger BR All rooms fit King/Queen Beds, Hardwood flooring, Microwave/Dishwasher ✨Property Highlights: Elevator/Laundry Building Free bike storage Sunday Farmer's Market 2 gyms on-site Free outside running track Sports courts/green spa...",
+    "has_broker_fee": false,
+    "fee_badge": "No Broker Fee",
+    "fee_details": "Direct Room / Sublet (No Broker Fee)"
+  },
+  {
+    "id": "cl-nyc-B1YTFbvNMHKwWN",
+    "source": "craigslist",
+    "source_label": "Craigslist",
+    "title": "1BR/1BA Pink Leaf Quilt,  Mirror Trio, Family + Pet Friendly",
+    "price": 800,
     "neighborhood": "Upper West Side",
     "borough": "Manhattan",
-    "url": "https://www.craigslist.org/view/d/new-york-spacious-64-west-70th-street/ihjkDNk1nf3uMz38zmh9xB",
-    "lat": 40.7863994228189,
-    "lng": -73.9763989204449,
+    "url": "https://www.craigslist.org/view/d/new-york-1br-1ba-pink-leaf-quilt-mirror/dmcQTX1rB1YTFbvNMHKwWN",
+    "lat": 40.7858052655854,
+    "lng": -73.9726701111143,
     "bedrooms": 1,
     "bathrooms": 1.0,
     "rental_type": "room",
@@ -8295,22 +8613,77 @@
       "immediate"
     ],
     "images": [
-      "https://images.craigslist.org/00R0R_3ckwH0T2GaK_08B06s_600x450.jpg",
-      "https://images.craigslist.org/00P0P_34xwdLinxME_08B06s_600x450.jpg",
-      "https://images.craigslist.org/00D0D_cORvPQHsVhw_08B06s_600x450.jpg",
-      "https://images.craigslist.org/01313_7zreWKKQLn9_08B06s_600x450.jpg",
-      "https://images.craigslist.org/00G0G_arO7vPviq5H_08B06s_600x450.jpg",
-      "https://images.craigslist.org/00404_cu6uZT8n6R1_08B06s_600x450.jpg",
-      "https://images.craigslist.org/00s0s_eOFYPrRdyj_08B06s_600x450.jpg",
-      "https://images.craigslist.org/00X0X_2ICnSqnWKnV_08B06s_600x450.jpg"
+      "https://images.craigslist.org/00e0e_1jCRzhDAa6i_0aT08a_600x450.jpg"
     ],
-    "description": "Spacious one bedroom in prime Upper West Side location. Unit features a large living room with additional dining space! Bedroom easily fits a queen bed with plenty of room to spare. The kitchen is equipped with full size appliances including a dishwasher.",
+    "description": "1BR; enclosed sleep area with solid panel entry. This is not a studio or open loft. Warm cream walls, pale tile floor. Bed with blush tropical-leaf quilt and gray base. White bolster cushion. Two checkered daisy pillows. Light wood and white headboard with small ledge holding blue rolled towel. Window with sheer white curtains and mauve drapes. Three square mirrors, black leaf decal, crimson heart wall charm. Petite canvas with rose and amber motif. Hardwood bed guard. Children and pets welcome. Unshared personal private bathroom designated strictly for the resident. Key Features 1BR; enclosed...",
+    "has_broker_fee": false,
+    "fee_badge": "No Broker Fee",
+    "fee_details": "Direct Room / Sublet (No Broker Fee)"
+  },
+  {
+    "id": "cl-nyc-sX78m5My6zKkK1",
+    "source": "craigslist",
+    "source_label": "Craigslist",
+    "title": "Apt by 110th/Lex 6train All Bill+5G inc! Free Escooter",
+    "price": 1950,
+    "neighborhood": "Upper East Side",
+    "borough": "Manhattan",
+    "url": "https://www.craigslist.org/view/d/new-york-apt-by-110th-lex-6train-all/bJDyMNtAsX78m5My6zKkK1",
+    "lat": 40.7917989770799,
+    "lng": -73.944700030431,
+    "bedrooms": 1,
+    "bathrooms": 1.0,
+    "rental_type": "room",
+    "rental_type_label": "Single Room",
+    "sqft": 400,
+    "address": "Upper East Side, Manhattan, NY",
+    "first_seen": "2026-10-14T08:54:36-0400",
+    "last_seen": "2026-11-08T20:21:58.929477+00:00",
+    "availability": "Available Now",
+    "move_in_period": "immediate",
+    "move_in_periods": [
+      "immediate"
+    ],
+    "images": [
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=800&q=80"
+    ],
+    "description": "Peaceful quiet 2nd bedroom in 2 bed apt Semi private bathroom. No elevator; short staircase. Lots sunlight + window a/c Bathroom has full 5ft tub, shower head, lots hot water. Seek 6-month min plz; month to month ok on lease. No home office worker; pref college student/office employed tenant. No credit ran, No 40x rent No broker 1st + deposit req. Can talk with my current tenant college student leaving Nov 01 2nd bedroom tenant is gone weekends leaves Fri AM Mon AM. #student #college #dorm #china #chinese #mandarin #cantonese",
+    "has_broker_fee": false,
+    "fee_badge": "No Broker Fee",
+    "fee_details": "Direct Room / Sublet (No Broker Fee)"
+  },
+  {
+    "id": "cl-nyc-97mCuhb1nEPk8t",
+    "source": "craigslist",
+    "source_label": "Craigslist",
+    "title": "scam alert \"BEDROOM FOR RENT UP TOWN NYC / COUPLES WELCOME\" scam alert",
+    "price": 1300,
+    "neighborhood": "Inwood / Wash Hts",
+    "borough": "Manhattan",
+    "url": "https://www.craigslist.org/view/d/new-york-scam-alert-bedroom-for-rent-up/3azuPbms97mCuhb1nEPk8t",
+    "lat": 40.8495989594496,
+    "lng": -73.9356026065604,
+    "bedrooms": 1,
+    "bathrooms": 1,
+    "rental_type": "room",
+    "rental_type_label": "Single Room",
+    "sqft": null,
+    "address": "Inwood / Wash Hts, Manhattan, NY",
+    "first_seen": "2026-11-05T19:49:02-0500",
+    "last_seen": "2026-11-08T20:21:58.921085+00:00",
+    "availability": "Available Now",
+    "move_in_period": "immediate",
+    "move_in_periods": [
+      "immediate"
+    ],
+    "images": [
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=800&q=80"
+    ],
+    "description": "It's scammer Jorge L. Correa, 58, who resides at 20 Bogardus Place, Apt 3E. He'll claim that people pay him to find them co-tenants for their extra bedrooms. He'll show you an apartment and ask for a deposit. If you give him a deposit, you will never get a key --- and never get your money back. Look him up. You've been warned.",
     "has_broker_fee": false,
     "fee_badge": "No Broker Fee",
     "fee_details": "Direct Room / Sublet (No Broker Fee)",
-    "cross_posted_sources": [
-      "Craigslist"
-    ]
+    "original_rate_note": "$300/week"
   },
   {
     "id": "cl-nyc-JjnnzBBsMsFdbb",
@@ -8572,13 +8945,13 @@
     "id": "cl-nyc-nFpTwcBYM2yLpq",
     "source": "craigslist",
     "source_label": "Craigslist",
-    "title": "**Weekly**Private Furnished Room Available",
-    "price": 1213,
-    "neighborhood": "Inwood / Wash Hts",
+    "title": "International Visitors/Students......",
+    "price": 1,
+    "neighborhood": "Upper West Side",
     "borough": "Manhattan",
-    "url": "https://www.craigslist.org/view/d/new-york-weeklyprivate-furnished-room/3JrjMoQYnFpTwcBYM2yLpq",
-    "lat": 40.8381993911583,
-    "lng": -73.9420025451316,
+    "url": "https://www.craigslist.org/view/d/new-york-international-visitors-students/xma9LRdBvDQeiq9KMzxP9K",
+    "lat": 40.7863994228189,
+    "lng": -73.9763989204449,
     "bedrooms": 2,
     "bathrooms": 1.0,
     "rental_type": "room",
@@ -8623,26 +8996,25 @@
     "availability": "Available Now",
     "move_in_period": "immediate",
     "move_in_periods": [
-      "immediate"
+      "flexible"
     ],
     "images": [
-      "https://images.craigslist.org/00909_51WA3expFj7_0kI0qx_600x450.jpg",
-      "https://images.craigslist.org/00p0p_bE0Zb8YXkaK_0gL0lM_600x450.jpg",
-      "https://images.craigslist.org/00q0q_ji3ToBBfQ6r_0kI0py_600x450.jpg"
+      "https://images.craigslist.org/00I0I_eaH520qBbwD_0jm0cU_600x450.jpg",
+      "https://images.craigslist.org/00e0e_iXLTKRWt9bh_0jm0cU_600x450.jpg",
+      "https://images.craigslist.org/00r0r_jHLCHmj6wk_0jm0cU_600x450.jpg"
     ],
-    "description": "Private furnished room with everything included. $300 a week single person.",
+    "description": "Fall/ Winter housing is available!!!!Move in before No deposit or money required!!!~Do you need a free place in Manhattan? Fully Furnished Room in New Condo! You can move in with no money at all. Please describe your situation and what you are looking for. No judgement zone here. *Immediate move in is available in fully furnished room in Doorman Building. 24 hour service. Near trains/Buses A/D/C/1/3 *This is a great opportunity for someone that is looking for a furnished room in exchange for light house- keeping, cleaning, etc.. I am offering free/reduced furnished room in Manhattan for someon...",
     "has_broker_fee": false,
     "fee_badge": "No Broker Fee",
-    "fee_details": "Direct Room / Sublet (No Broker Fee)",
-    "original_rate_note": "$300/week"
+    "fee_details": "Direct Room / Sublet (No Broker Fee)"
   },
   {
-    "id": "cl-nyc-o75aaXdc2SiVUg",
+    "id": "cl-nyc-bCWuxnCkn6WDeP",
     "source": "craigslist",
     "source_label": "Craigslist",
-    "title": "HUGE FURNISHED ROOM RENT /WONT LAST! ONLY",
-    "price": 1083,
-    "neighborhood": "Inwood / Wash Hts",
+    "title": "Impeccable Furnished Rooms with Private Yard on Striver Row",
+    "price": 15000,
+    "neighborhood": "manhattan",
     "borough": "Manhattan",
     "url": "https://www.craigslist.org/view/d/new-york-huge-furnished-room-rent-wont/mt2e3Aw6o75aaXdc2SiVUg",
     "lat": 40.8661998386048,
@@ -8731,12 +9103,58 @@
     "availability": "Available Nov 1, 2026",
     "move_in_period": "2026-11",
     "move_in_periods": [
-      "2026-11"
+      "flexible"
     ],
     "images": [
-      "https://images.craigslist.org/01010_4zGUhSWaICs_0Cz0t2_600x450.jpg"
+      "https://images.craigslist.org/00202_2tVhjebBBXk_05r07g_600x450.jpg",
+      "https://images.craigslist.org/00u0u_43jAD02OAWC_09G07f_600x450.jpg",
+      "https://images.craigslist.org/00909_c1FJoECc0OU_09G07f_600x450.jpg",
+      "https://images.craigslist.org/00E0E_1k5CNrtBWb3_09G07f_600x450.jpg",
+      "https://images.craigslist.org/00L0L_kFzi7vSDmEY_05r07g_600x450.jpg",
+      "https://images.craigslist.org/00m0m_e7zwDyjM7k3_09G07f_600x450.jpg",
+      "https://images.craigslist.org/00O0O_aMIciTtZ3c2_09G07f_600x450.jpg",
+      "https://images.craigslist.org/00O0O_cBuVMRdjGeY_09G07f_600x450.jpg"
     ],
-    "description": "Room available in Upper Manhattan Kitchen has a Washer Dryer Utilities &amp; and a dedicated WiFi Router 20 minutes to Central Park /59th Street Available for One Year Move-in with first month plus Security About me: Business owner / Workaholic Call or text Richard for details «show contact info»",
+    "description": "LOVE WHERE YOU LIVE! Rare Gem on Historic Strivers Row. Impeccable Large Modern Apartment with Private Garden! Beautifully renovated, furnished garden-level duplex in a historic 3-bedroom-plus Townhouse on iconic Strivers Row. This is a rare opportunity to live on one of Manhattan’s most stunning and sought after blocks. LOCATION.. LOCATION... LOCATION... LOCATION Rooms are fully furnished, very private, quiet, and ideal for graduate students, visiting academics, professionals, visiting faculty, medical staff, or creatives. Perfect location for City College, Harlem Hospital, or Columbia The me...",
+    "has_broker_fee": false,
+    "fee_badge": "No Broker Fee",
+    "fee_details": "Direct Room / Sublet (No Broker Fee)"
+  },
+  {
+    "id": "cl-nyc-5sunmUsHdoNPGG",
+    "source": "craigslist",
+    "source_label": "Craigslist",
+    "title": "Impeccable Furnished Rooms with Private Yard You Need to visit",
+    "price": 15000,
+    "neighborhood": "manhattan",
+    "borough": "Manhattan",
+    "url": "https://www.craigslist.org/view/d/new-york-impeccable-furnished-rooms/jnyRTMSu5sunmUsHdoNPGG",
+    "lat": 40.8190070238958,
+    "lng": -73.9465237550927,
+    "bedrooms": 3,
+    "bathrooms": 1.0,
+    "rental_type": "room",
+    "rental_type_label": "Single Room",
+    "sqft": null,
+    "address": "manhattan, Manhattan, NY",
+    "first_seen": "2026-10-27T09:30:24-0400",
+    "last_seen": "2026-11-08T20:21:58.721108+00:00",
+    "availability": "Flexible / Month-to-Month",
+    "move_in_period": "flexible",
+    "move_in_periods": [
+      "flexible"
+    ],
+    "images": [
+      "https://images.craigslist.org/00202_2tVhjebBBXk_05r07g_600x450.jpg",
+      "https://images.craigslist.org/00u0u_43jAD02OAWC_09G07f_600x450.jpg",
+      "https://images.craigslist.org/00909_c1FJoECc0OU_09G07f_600x450.jpg",
+      "https://images.craigslist.org/00E0E_1k5CNrtBWb3_09G07f_600x450.jpg",
+      "https://images.craigslist.org/00L0L_kFzi7vSDmEY_05r07g_600x450.jpg",
+      "https://images.craigslist.org/00m0m_e7zwDyjM7k3_09G07f_600x450.jpg",
+      "https://images.craigslist.org/00O0O_aMIciTtZ3c2_09G07f_600x450.jpg",
+      "https://images.craigslist.org/00O0O_cBuVMRdjGeY_09G07f_600x450.jpg"
+    ],
+    "description": "LOVE WHERE YOU LIVE! Rare Gem on Historic Strivers Row. Impeccable Large Modern Apartment with Private Garden! Beautifully renovated, furnished garden-level duplex in a historic 3-bedroom-plus Townhouse on iconic Strivers Row. This is a rare opportunity to live on one of Manhattan’s most stunning and sought after blocks. LOCATION.. LOCATION... LOCATION... LOCATION Rooms are fully furnished, very private, quiet, and ideal for graduate students, visiting academics, professionals, visiting faculty, medical staff, or creatives. Perfect location for City College, Harlem Hospital, or Columbia The me...",
     "has_broker_fee": false,
     "fee_badge": "No Broker Fee",
     "fee_details": "Direct Room / Sublet (No Broker Fee)"
@@ -9789,7 +10207,10 @@
     "first_seen": "2026-11-08T20:11:07.392678+00:00",
     "last_seen": "2026-11-08T20:11:07.392680+00:00",
     "images": [
-      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=800&q=80"
+      "https://images.craigslist.org/00k0k_b6I6A7keKcH_0kI0r9_600x450.jpg",
+      "https://images.craigslist.org/00606_c4xC4JwW722_0kI0rm_600x450.jpg",
+      "https://images.craigslist.org/00u0u_6EVEnuyHZqH_0hw0nm_600x450.jpg",
+      "https://images.craigslist.org/00808_5SEa7cABU9v_0hw0nm_600x450.jpg"
     ],
     "description": "!!!!!!!!!!!SMALL ROOM FOR RENT ... CLOSE TO ALL. Location: SOUTH RICHMOND HILL, Queens. Visit original Craigslist posting for photos and contact.",
     "has_broker_fee": false,

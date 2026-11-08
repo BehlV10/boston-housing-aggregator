@@ -1,11 +1,12 @@
 import React, { useState, useEffect, useMemo } from 'react';
-import { Home, Map as MapIcon, List as ListIcon, RefreshCw, Sparkles, Building2, ExternalLink, Share2, Moon, Sun, Landmark } from 'lucide-react';
+import { Home, Map as MapIcon, List as ListIcon, RefreshCw, Sparkles, Building2, ExternalLink, Share2, Moon, Sun, Landmark, Bell } from 'lucide-react';
 import MapView from './components/MapView';
 import ListingCard from './components/ListingCard';
 import FilterBar from './components/FilterBar';
 import ListingModal from './components/ListingModal';
 import CrossListHub from './components/CrossListHub';
 import ExternalPortalsBar from './components/ExternalPortalsBar';
+import HousingAlertsModal from './components/HousingAlertsModal';
 
 export const CITIES = {
   nyc: {
@@ -57,6 +58,7 @@ export default function App() {
   const [loading, setLoading] = useState(true);
   const [selectedListing, setSelectedListing] = useState(null);
   const [modalListing, setModalListing] = useState(null);
+  const [alertsModalOpen, setAlertsModalOpen] = useState(false);
   const [viewMode, setViewMode] = useState('split'); // 'split' on desktop, 'map' or 'list' on mobile
   const [sortBy, setSortBy] = useState('newest');
 
@@ -498,6 +500,21 @@ export default function App() {
               </button>
             </nav>
 
+            {/* Housing Alerts Trigger Button */}
+            <button
+              onClick={() => setAlertsModalOpen(true)}
+              className={`flex items-center gap-1.5 px-2.5 sm:px-3 py-1.5 rounded-2xl border text-xs font-bold transition-all shadow-xs ${
+                isDark
+                  ? 'bg-amber-950/40 hover:bg-amber-900/50 text-amber-300 border-amber-800/60'
+                  : 'bg-amber-50 hover:bg-amber-100 text-amber-800 border-amber-200'
+              }`}
+              title="Set up instant notifications for listings matching your criteria"
+            >
+              <Bell className="w-3.5 h-3.5 text-amber-400 animate-pulse" />
+              <span className="hidden sm:inline">Get Alerts</span>
+              <span className="sm:hidden">Alerts</span>
+            </button>
+
             {metadata && (
               <div
                 className={`hidden xl:flex items-center gap-2.5 text-xs py-1.5 px-3.5 rounded-full border ${
@@ -717,6 +734,15 @@ export default function App() {
       {modalListing && (
         <ListingModal listing={modalListing} onClose={() => setModalListing(null)} theme={theme} />
       )}
+
+      {/* Housing Alerts & Notifications Modal */}
+      <HousingAlertsModal
+        isOpen={alertsModalOpen}
+        onClose={() => setAlertsModalOpen(false)}
+        filters={filters}
+        city={city}
+        theme={theme}
+      />
 
       {/* Footer */}
       <footer
