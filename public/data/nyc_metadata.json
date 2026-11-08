@@ -1,24 +1,24 @@
 {
-  "last_updated": "2026-11-07T21:14:23.267363+00:00",
+  "last_updated": "2026-11-08T03:20:26.533310+00:00",
   "city": "New York City",
   "city_id": "nyc",
-  "total_listings": 504,
-  "no_broker_fee_listings": 318,
+  "total_listings": 502,
+  "no_broker_fee_listings": 315,
   "sources_summary": {
     "Reddit (r/NYCapartments)": 12,
-    "Craigslist": 492
+    "Craigslist": 490
   },
   "boroughs_summary": {
-    "Manhattan": 113,
-    "Brooklyn": 145,
-    "Queens": 103,
-    "Jersey City / Hoboken": 68,
-    "Bronx": 75
+    "Brooklyn": 138,
+    "Queens": 104,
+    "Jersey City / Hoboken": 74,
+    "Manhattan": 112,
+    "Bronx": 74
   },
   "types_summary": {
-    "Sublet": 145,
-    "Condo / Apt": 205,
-    "Single Room": 154
+    "Condo / Apt": 208,
+    "Sublet": 144,
+    "Single Room": 150
   },
-  "elapsed_seconds": 30.5
+  "elapsed_seconds": 32.04
 }
