@@ -96,6 +96,7 @@ export default function App() {
     bedrooms: 'all',
     rentalType: 'all', // 'all' | 'entire_unit' | 'room' | 'sublet'
     moveInDate: 'all',
+    postedWithin: 'all', // 'all' | '1d' | '3d' | '7d' | '14d'
     maxPrice: currentCityConfig.maxPriceDefault,
     availableNow: false,
   });
@@ -187,6 +188,7 @@ export default function App() {
       bedrooms: 'all',
       rentalType: 'all',
       moveInDate: 'all',
+      postedWithin: 'all',
       availableNow: false,
       maxPrice: conf.maxPriceDefault,
     });
@@ -275,6 +277,19 @@ export default function App() {
         // Rental Type filter (Entire Unit vs Single Room)
         if (filters.rentalType !== 'all' && item.rental_type !== filters.rentalType) {
           return false;
+        }
+
+        // Recency / Posted date filter (e.g., past 24h, 3 days, 1 week, 2 weeks)
+        if (filters.postedWithin && filters.postedWithin !== 'all') {
+          const dateStr = item.first_seen || item.last_seen;
+          if (!dateStr) return false;
+          const postTime = new Date(dateStr).getTime();
+          if (isNaN(postTime)) return false;
+          const diffHours = (Date.now() - postTime) / (1000 * 60 * 60);
+          if (filters.postedWithin === '1d' && diffHours > 24) return false;
+          if (filters.postedWithin === '3d' && diffHours > 72) return false;
+          if (filters.postedWithin === '7d' && diffHours > 168) return false;
+          if (filters.postedWithin === '14d' && diffHours > 336) return false;
         }
 
         // Text search

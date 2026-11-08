@@ -10,7 +10,9 @@ import {
   Repeat, 
   X, 
   Check, 
-  MapPin 
+  MapPin,
+  Clock,
+  Sparkles
 } from 'lucide-react';
 
 export default function FilterBar({ 
@@ -53,6 +55,7 @@ export default function FilterBar({
       bedrooms: 'all',
       rentalType: 'all',
       moveInDate: 'all',
+      postedWithin: 'all',
       availableNow: false,
       maxPrice: maxPriceLimit,
     });
@@ -65,6 +68,7 @@ export default function FilterBar({
     filters.bedrooms !== 'all',
     filters.rentalType !== 'all',
     Boolean(filters.moveInDate && filters.moveInDate !== 'all'),
+    Boolean(filters.postedWithin && filters.postedWithin !== 'all'),
     filters.maxPrice < maxPriceLimit,
     Boolean(filters.availableNow),
     Boolean(filters.search),
@@ -250,6 +254,48 @@ export default function FilterBar({
           <span>Move-In Now</span>
         </button>
 
+        {/* Fresh / Past Week Recency Chip */}
+        <button
+          onClick={() =>
+            setFilters((prev) => ({
+              ...prev,
+              postedWithin: prev.postedWithin === '7d' ? 'all' : '7d'
+            }))
+          }
+          className={`flex items-center gap-1.5 px-3 py-1.5 rounded-xl font-bold whitespace-nowrap shrink-0 transition-all border ${
+            filters.postedWithin === '7d'
+              ? 'bg-amber-600 text-white border-amber-500 shadow-xs'
+              : isDark
+              ? 'bg-slate-900/80 text-amber-400 border-slate-800 hover:bg-slate-800'
+              : 'bg-amber-50 text-amber-800 border-amber-200 hover:bg-amber-100'
+          }`}
+          title="Filter to listings posted within the last 7 days (past week)"
+        >
+          <Clock className="w-3.5 h-3.5" />
+          <span>Past Week</span>
+        </button>
+
+        {/* New / Past 24h Chip */}
+        <button
+          onClick={() =>
+            setFilters((prev) => ({
+              ...prev,
+              postedWithin: prev.postedWithin === '1d' ? 'all' : '1d'
+            }))
+          }
+          className={`flex items-center gap-1.5 px-3 py-1.5 rounded-xl font-bold whitespace-nowrap shrink-0 transition-all border ${
+            filters.postedWithin === '1d'
+              ? 'bg-emerald-600 text-white border-emerald-500 shadow-xs'
+              : isDark
+              ? 'bg-slate-900/80 text-emerald-400 border-slate-800 hover:bg-slate-800'
+              : 'bg-emerald-50 text-emerald-800 border-emerald-200 hover:bg-emerald-100'
+          }`}
+          title="Filter to listings posted in the past 24 hours"
+        >
+          <Sparkles className="w-3.5 h-3.5" />
+          <span>New (&lt;24h)</span>
+        </button>
+
         {/* Area Quick Chips */}
         {quickChips.map((area) => {
           const isActive = filters.search.toLowerCase() === area.toLowerCase();
@@ -324,63 +370,80 @@ export default function FilterBar({
           </div>
 
           {/* Fee Filter Buttons */}
-          <div className={`${city === 'nyc' ? 'md:col-span-3' : 'md:col-span-3'} flex items-center p-1 rounded-xl ${segGroupClass}`}>
-            <button
-              onClick={() => handleFeeChange('all')}
-              className={`flex-1 py-1.5 text-xs font-semibold rounded-lg transition-all ${
-                filters.fee === 'all' ? segActiveWhite : segInactiveClass
-              }`}
-            >
-              All Fees
-            </button>
-            <button
-              onClick={() => handleFeeChange('no-fee')}
-              className={`flex-1 py-1.5 text-xs font-semibold rounded-lg flex items-center justify-center gap-1 transition-all ${
-                filters.fee === 'no-fee'
-                  ? 'bg-emerald-600 text-white shadow-sm'
-                  : isDark
-                  ? 'text-emerald-400'
-                  : 'text-gray-600'
-              }`}
-            >
-              <ShieldCheck className="w-3.5 h-3.5" />
-              No Fee
-            </button>
-            <button
-              onClick={() => handleFeeChange('fee')}
-              className={`flex-1 py-1.5 text-xs font-semibold rounded-lg transition-all ${
-                filters.fee === 'fee'
-                  ? 'bg-blue-600 text-white shadow-sm'
-                  : isDark
-                  ? 'text-blue-400'
-                  : 'text-gray-600'
-              }`}
-            >
-              Fee
-            </button>
+          <div className="md:col-span-2 flex items-center p-1 rounded-xl">
+            <div className={`w-full flex items-center p-1 rounded-xl ${segGroupClass}`}>
+              <button
+                onClick={() => handleFeeChange('all')}
+                className={`flex-1 py-1.5 text-xs font-semibold rounded-lg transition-all ${
+                  filters.fee === 'all' ? segActiveWhite : segInactiveClass
+                }`}
+              >
+                All Fees
+              </button>
+              <button
+                onClick={() => handleFeeChange('no-fee')}
+                className={`flex-1 py-1.5 text-xs font-semibold rounded-lg flex items-center justify-center gap-1 transition-all ${
+                  filters.fee === 'no-fee'
+                    ? 'bg-emerald-600 text-white shadow-sm'
+                    : isDark
+                    ? 'text-emerald-400'
+                    : 'text-gray-600'
+                }`}
+              >
+                <ShieldCheck className="w-3.5 h-3.5" />
+                No Fee
+              </button>
+              <button
+                onClick={() => handleFeeChange('fee')}
+                className={`flex-1 py-1.5 text-xs font-semibold rounded-lg transition-all ${
+                  filters.fee === 'fee'
+                    ? 'bg-blue-600 text-white shadow-sm'
+                    : isDark
+                    ? 'text-blue-400'
+                    : 'text-gray-600'
+                }`}
+              >
+                Fee
+              </button>
+            </div>
           </div>
 
           {/* Move-in Date Dropdown */}
-          <div className={`${city === 'nyc' ? 'md:col-span-2' : 'md:col-span-3'} col-span-12`}>
+          <div className="md:col-span-2 col-span-12">
             <select
               value={filters.moveInDate || 'all'}
               onChange={(e) => setFilters((prev) => ({ ...prev, moveInDate: e.target.value }))}
               className={`w-full py-2 px-2 border rounded-xl text-xs font-semibold focus:outline-none focus:ring-2 cursor-pointer ${inputClass}`}
             >
               <option value="all">Move-in: Any Month</option>
-              <option value="immediate">Available Now (Immediate)</option>
+              <option value="immediate">Available Now</option>
               <option value="2026-11">Nov 2026</option>
               <option value="2026-12">Dec 2026</option>
-              <option value="2027-01">Jan 2027 (Spring Cycle)</option>
+              <option value="2027-01">Jan 2027 (Spring)</option>
               <option value="2027-02">Feb 2027</option>
-              <option value="2027-06">Jun 2027 (Summer Cycle)</option>
-              <option value="2027-09">Sep 2027 (Fall Cycle)</option>
-              <option value="flexible">Flexible / Month-to-Month</option>
+              <option value="2027-06">Jun 2027 (Summer)</option>
+              <option value="2027-09">Sep 2027 (Fall)</option>
+              <option value="flexible">Flexible</option>
+            </select>
+          </div>
+
+          {/* Posted Recency Dropdown */}
+          <div className="md:col-span-2 col-span-12">
+            <select
+              value={filters.postedWithin || 'all'}
+              onChange={(e) => setFilters((prev) => ({ ...prev, postedWithin: e.target.value }))}
+              className={`w-full py-2 px-2 border rounded-xl text-xs font-semibold focus:outline-none focus:ring-2 cursor-pointer ${inputClass}`}
+            >
+              <option value="all">Posted: Anytime</option>
+              <option value="1d">Posted: Past 24h</option>
+              <option value="3d">Posted: Past 3 Days</option>
+              <option value="7d">Posted: Past Week (&lt;7d)</option>
+              <option value="14d">Posted: Past 2 Weeks (&lt;14d)</option>
             </select>
           </div>
 
           {/* Borough & Bedrooms & Source responsive grid */}
-          <div className={`${city === 'nyc' ? 'md:col-span-4' : 'md:col-span-2'} col-span-12 grid ${city === 'nyc' ? 'grid-cols-3' : 'grid-cols-2'} gap-2`}>
+          <div className="md:col-span-3 col-span-12 grid grid-cols-2 sm:grid-cols-3 gap-1.5">
             {city === 'nyc' && (
               <select
                 value={filters.borough || 'all'}

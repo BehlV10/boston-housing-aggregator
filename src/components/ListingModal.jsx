@@ -1,9 +1,11 @@
 import React, { useState } from 'react';
-import { X, ExternalLink, Bed, Bath, MapPin, ShieldCheck, AlertCircle, Calendar, Maximize2 } from 'lucide-react';
+import { X, ExternalLink, Bed, Bath, MapPin, ShieldCheck, AlertCircle, Calendar, Maximize2, Clock, Sparkles } from 'lucide-react';
+import { getRecencyMeta } from '../utils/dateUtils';
 
 export default function ListingModal({ listing, onClose, theme = 'midnight' }) {
   if (!listing) return null;
 
+  const recency = getRecencyMeta(listing.first_seen || listing.last_seen);
   const [activeImage, setActiveImage] = useState(
     listing.images && listing.images.length > 0 ? listing.images[0] : null
   );
@@ -153,7 +155,7 @@ export default function ListingModal({ listing, onClose, theme = 'midnight' }) {
           </div>
 
           {/* Quick Specs */}
-          <div className={`grid grid-cols-2 sm:grid-cols-4 gap-3 py-4 border-y my-4 text-center ${divider}`}>
+          <div className={`grid grid-cols-2 sm:grid-cols-5 gap-2.5 py-4 border-y my-4 text-center ${divider}`}>
             <div className={`p-3 rounded-2xl ${cardInset}`}>
               <div className={`text-xs mb-1 ${isDark ? 'text-slate-400' : 'text-gray-500'}`}>Bedrooms</div>
               <div className={`text-lg font-bold flex items-center justify-center gap-1.5 ${isDark ? 'text-white' : 'text-gray-800'}`}>
@@ -181,7 +183,34 @@ export default function ListingModal({ listing, onClose, theme = 'midnight' }) {
                 {listing.fee_badge}
               </div>
             </div>
+            <div className={`p-3 rounded-2xl ${cardInset}`}>
+              <div className={`text-xs mb-1 ${isDark ? 'text-slate-400' : 'text-gray-500'}`}>Posted</div>
+              <div className={`text-sm font-bold flex items-center justify-center gap-1 mt-1 ${
+                recency.isNew
+                  ? 'text-emerald-400'
+                  : recency.isOutdated
+                  ? 'text-amber-400'
+                  : isDark ? 'text-white' : 'text-gray-800'
+              }`} title={recency.formattedDate ? `First seen: ${recency.formattedDate}` : undefined}>
+                {recency.isNew ? <Sparkles className="w-3.5 h-3.5" /> : <Clock className="w-3.5 h-3.5 opacity-60" />}
+                <span>{recency.label}</span>
+              </div>
+            </div>
           </div>
+
+          {/* Outdated Advisory Warning if older than 2 weeks */}
+          {recency.isOutdated && (
+            <div className={`p-3.5 rounded-2xl mb-4 text-xs flex items-center gap-2.5 border ${
+              isDark
+                ? 'bg-amber-950/30 text-amber-300 border-amber-800/50'
+                : 'bg-amber-50 text-amber-900 border-amber-200'
+            }`}>
+              <Clock className="w-4 h-4 text-amber-500 shrink-0" />
+              <span>
+                <strong>Freshness Note:</strong> This listing was posted over 2 weeks ago ({recency.label}). Rental market listings this old may already be leased; contact the lister to confirm availability.
+              </span>
+            </div>
+          )}
 
           {/* Fee Insight Box */}
           {listing.fee_details && (

@@ -1,9 +1,27 @@
 import React, { useState } from 'react';
-import { ChevronLeft, ChevronRight, Bed, Bath, MapPin, ExternalLink, ShieldCheck, AlertCircle, Maximize2, Calendar, Home, DoorClosed, Repeat } from 'lucide-react';
+import { 
+  ChevronLeft, 
+  ChevronRight, 
+  Bed, 
+  Bath, 
+  MapPin, 
+  ExternalLink, 
+  ShieldCheck, 
+  AlertCircle, 
+  Maximize2, 
+  Calendar, 
+  Home, 
+  DoorClosed, 
+  Repeat,
+  Clock,
+  Sparkles
+} from 'lucide-react';
+import { getRecencyMeta } from '../utils/dateUtils';
 
 export default function ListingCard({ listing, isSelected, onSelect, onOpenDetails, theme = 'midnight' }) {
   const [currentImgIndex, setCurrentImgIndex] = useState(0);
   const images = listing.images && listing.images.length > 0 ? listing.images : [];
+  const recency = getRecencyMeta(listing.first_seen || listing.last_seen);
 
   const handlePrevImg = (e) => {
     e.stopPropagation();
@@ -189,6 +207,26 @@ export default function ListingCard({ listing, isSelected, onSelect, onOpenDetai
             </span>
           )}
         </div>
+
+        {/* Recency Time Badge on Image */}
+        <div className="absolute bottom-2 left-2.5 z-10 flex items-center gap-1.5">
+          {recency.isNew ? (
+            <span className="flex items-center gap-1 px-2 py-0.5 rounded-md text-[10px] font-bold bg-emerald-600/95 text-white backdrop-blur-xs shadow-md">
+              <Sparkles className="w-2.5 h-2.5" />
+              New ({recency.label})
+            </span>
+          ) : recency.isOutdated ? (
+            <span className="flex items-center gap-1 px-2 py-0.5 rounded-md text-[10px] font-medium bg-amber-950/85 text-amber-300 border border-amber-700/60 backdrop-blur-xs shadow-md">
+              <Clock className="w-2.5 h-2.5" />
+              {recency.label} (Older post)
+            </span>
+          ) : (
+            <span className="flex items-center gap-1 px-2 py-0.5 rounded-md text-[10px] font-semibold bg-black/70 text-slate-200 backdrop-blur-xs shadow-md">
+              <Clock className="w-2.5 h-2.5" />
+              {recency.label}
+            </span>
+          )}
+        </div>
       </div>
 
       {/* Content */}
@@ -255,12 +293,22 @@ export default function ListingCard({ listing, isSelected, onSelect, onOpenDetai
               </div>
             )}
             {listing.fee_details && !listing.sqft && (
-              <div className={`text-[11px] line-clamp-1 italic ml-auto max-w-[130px] ${
+              <div className={`text-[11px] line-clamp-1 italic max-w-[130px] ${
                 isDark ? 'text-slate-500' : 'text-gray-500'
               }`}>
                 {listing.fee_details}
               </div>
             )}
+            <div className={`flex items-center gap-1 text-[11px] font-medium ml-auto ${
+              recency.isNew
+                ? 'text-emerald-500 font-bold'
+                : recency.isOutdated
+                ? 'text-amber-500'
+                : isDark ? 'text-slate-400' : 'text-gray-500'
+            }`}>
+              <Clock className="w-3 h-3 opacity-70" />
+              <span>{recency.label}</span>
+            </div>
           </div>
         </div>
 

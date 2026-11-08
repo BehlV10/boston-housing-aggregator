@@ -485,10 +485,27 @@ def fetch_craigslist_detail_page(listing, existing_cache=None):
                 body
             )
 
+            # Extract actual posted timestamp from Craigslist HTML
+            posted_iso = now_iso
+            posted_m = re.search(r'<time[^>]*class="[^"]*timeago[^"]*"[^>]*datetime="([^"]+)"', html, re.I)
+            if not posted_m:
+                posted_m = re.search(r'<time[^>]*datetime="([^"]+)"', html, re.I)
+            if posted_m:
+                raw_time = posted_m.group(1).strip()
+                try:
+                    dt = datetime.fromisoformat(raw_time)
+                    posted_iso = dt.isoformat()
+                except Exception:
+                    posted_iso = raw_time
+
+            first_seen_ts = posted_iso
+            if existing_cache and listing['id'] in existing_cache:
+                first_seen_ts = existing_cache[listing['id']].get('first_seen') or posted_iso
+
             res = {
                 **listing,
                 'price': norm_price,
-                'first_seen': now_iso,
+                'first_seen': first_seen_ts,
                 'last_seen': now_iso,
                 'bedrooms': beds,
                 'bathrooms': baths,
