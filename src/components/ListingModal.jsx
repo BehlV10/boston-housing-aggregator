@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { X, ExternalLink, Bed, Bath, MapPin, ShieldCheck, AlertCircle, Calendar, Maximize2, Clock, Sparkles } from 'lucide-react';
+import { X, ExternalLink, Bed, Bath, MapPin, ShieldCheck, AlertCircle, Calendar, Maximize2, Clock, Sparkles, Camera } from 'lucide-react';
 import { getRecencyMeta } from '../utils/dateUtils';
 
 export default function ListingModal({ listing, onClose, theme = 'midnight' }) {
@@ -50,11 +50,16 @@ export default function ListingModal({ listing, onClose, theme = 'midnight' }) {
             <img
               src={activeImage}
               alt={listing.title}
+              referrerPolicy="no-referrer"
               className="w-full h-full object-cover"
             />
           ) : (
-            <div className="w-full h-full flex items-center justify-center text-slate-500">
-              No Photos Available
+            <div className="w-full h-full flex flex-col items-center justify-center text-slate-400 gap-2 p-6 text-center bg-slate-900/90">
+              <Camera className="w-10 h-10 opacity-30 mb-1" />
+              <div className="text-sm sm:text-base font-bold text-slate-200">No Photos Uploaded by Lister</div>
+              <div className="text-xs text-slate-400 max-w-sm">
+                This listing was posted with a text-only description. You can contact the lister or view the original post for details.
+              </div>
             </div>
           )}
 
@@ -109,7 +114,7 @@ export default function ListingModal({ listing, onClose, theme = 'midnight' }) {
                     : 'border-transparent opacity-60 hover:opacity-100'
                 }`}
               >
-                <img src={img} alt={`Thumbnail ${i}`} className="w-full h-full object-cover" />
+                <img src={img} alt={`Thumbnail ${i}`} referrerPolicy="no-referrer" className="w-full h-full object-cover" />
               </button>
             ))}
           </div>

@@ -409,7 +409,7 @@ def fetch_craigslist_detail_page(listing, existing_cache=None):
     # 1. Cache hit: if already scraped previously, reuse all rich details!
     if existing_cache and listing_id in existing_cache:
         cached = existing_cache[listing_id]
-        if cached.get('images') and len(cached['images']) > 0 and cached.get('description'):
+        if cached.get('images') and len(cached['images']) > 0 and 'unsplash' not in cached['images'][0] and cached.get('description'):
             return {
                 **cached,
                 'price': listing.get('price') or cached.get('price'),
@@ -513,9 +513,8 @@ def fetch_craigslist_detail_page(listing, existing_cache=None):
                 'availability': availability,
                 'rental_type': rental_type,
                 'rental_type_label': rental_label,
-                'images': images[:8] if images else [
-                    'https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80'
-                ],
+                'images': images[:8] if images else [],
+                'has_photos': bool(images),
                 'description': body[:600] + ('...' if len(body) > 600 else ''),
                 'has_broker_fee': fee_info['has_broker_fee'],
                 'fee_badge': fee_info['fee_badge'],
@@ -539,9 +538,8 @@ def fetch_craigslist_detail_page(listing, existing_cache=None):
             'last_seen': now_iso,
             'rental_type': rental_type,
             'rental_type_label': rental_label,
-            'images': [
-                'https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80'
-            ],
+            'images': [],
+            'has_photos': False,
             'description': 'View original Craigslist posting for full description and photos.',
             'has_broker_fee': fee_info['has_broker_fee'],
             'fee_badge': fee_info['fee_badge'],
@@ -648,41 +646,21 @@ def scrape_craigslist_boston(limit=750, existing_cache=None):
 
     cached_listings = []
     new_to_fetch = []
-    new_basic = []
 
     for r in raw_listings:
         if existing_cache and r['id'] in existing_cache:
-            cached_listings.append(r)
-        elif len(new_to_fetch) < 40:
-            new_to_fetch.append(r)
-        else:
-            p = r.get('price', 0)
-            t = r.get('title', '')
-            norm_p, rate_note = normalize_listing_price(p, t, '')
-            item = {
-                **r,
-                'price': norm_p,
-                'first_seen': now_iso,
-                'last_seen': now_iso,
-                'images': [
-                    'https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80'
-                ],
-                'description': f"{r['title']}. Location: {r['neighborhood']}. Visit original Craigslist posting for photos and contact info.",
-                'has_broker_fee': None,
-                'fee_badge': 'Fee Unspecified',
-                'fee_details': 'Contact lister for fee status',
-                'availability': 'Contact Lister',
-            }
-            if rate_note:
-                item['original_rate_note'] = rate_note
-            new_basic.append(item)
+            c = existing_cache[r['id']]
+            if c.get('images') and len(c['images']) > 0 and 'unsplash' not in c['images'][0]:
+                cached_listings.append(r)
+                continue
+        new_to_fetch.append(r)
 
-    print(f"Detail processing: {len(cached_listings)} cached (0 HTTP calls), {len(new_to_fetch)} deep-fetching, {len(new_basic)} indexed from search...")
+    print(f"Detail processing: {len(cached_listings)} cached with photos, {len(new_to_fetch)} deep fetching real photos...")
     fetcher = lambda l: fetch_craigslist_detail_page(l, existing_cache)
-    with ThreadPoolExecutor(max_workers=8) as executor:
+    with ThreadPoolExecutor(max_workers=18) as executor:
         detailed_listings = list(executor.map(fetcher, cached_listings + new_to_fetch))
 
-    return detailed_listings + new_basic
+    return detailed_listings
 
 
 def scrape_craigslist_rooms_boston(limit=450, existing_cache=None):
@@ -772,41 +750,21 @@ def scrape_craigslist_rooms_boston(limit=450, existing_cache=None):
 
     cached_listings = []
     new_to_fetch = []
-    new_basic = []
 
     for r in raw_listings:
         if existing_cache and r['id'] in existing_cache:
-            cached_listings.append(r)
-        elif len(new_to_fetch) < 30:
-            new_to_fetch.append(r)
-        else:
-            p = r.get('price', 0)
-            t = r.get('title', '')
-            norm_p, rate_note = normalize_listing_price(p, t, '')
-            item = {
-                **r,
-                'price': norm_p,
-                'first_seen': now_iso,
-                'last_seen': now_iso,
-                'images': [
-                    'https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80'
-                ],
-                'description': f"{r['title']}. Location: {r['neighborhood']}. Visit original Craigslist posting for details and contact.",
-                'has_broker_fee': None,
-                'fee_badge': 'Fee Unspecified',
-                'fee_details': 'Contact lister for fee status',
-                'availability': 'Contact Lister',
-            }
-            if rate_note:
-                item['original_rate_note'] = rate_note
-            new_basic.append(item)
+            c = existing_cache[r['id']]
+            if c.get('images') and len(c['images']) > 0 and 'unsplash' not in c['images'][0]:
+                cached_listings.append(r)
+                continue
+        new_to_fetch.append(r)
 
-    print(f"Detail processing: {len(cached_listings)} cached (0 HTTP calls), {len(new_to_fetch)} deep-fetching, {len(new_basic)} indexed from search...")
+    print(f"Detail processing: {len(cached_listings)} cached with photos, {len(new_to_fetch)} deep fetching real photos...")
     fetcher = lambda l: fetch_craigslist_detail_page(l, existing_cache)
-    with ThreadPoolExecutor(max_workers=8) as executor:
+    with ThreadPoolExecutor(max_workers=18) as executor:
         detailed_listings = list(executor.map(fetcher, cached_listings + new_to_fetch))
 
-    return detailed_listings + new_basic
+    return detailed_listings
 
 
 def scrape_craigslist_sublets_boston(limit=350, existing_cache=None):
@@ -896,41 +854,21 @@ def scrape_craigslist_sublets_boston(limit=350, existing_cache=None):
 
     cached_listings = []
     new_to_fetch = []
-    new_basic = []
 
     for r in raw_listings:
         if existing_cache and r['id'] in existing_cache:
-            cached_listings.append(r)
-        elif len(new_to_fetch) < 25:
-            new_to_fetch.append(r)
-        else:
-            p = r.get('price', 0)
-            t = r.get('title', '')
-            norm_p, rate_note = normalize_listing_price(p, t, '')
-            item = {
-                **r,
-                'price': norm_p,
-                'first_seen': now_iso,
-                'last_seen': now_iso,
-                'images': [
-                    'https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80'
-                ],
-                'description': f"{r['title']}. Location: {r['neighborhood']}. Visit original Craigslist posting for photos and contact info.",
-                'has_broker_fee': None,
-                'fee_badge': 'Fee Unspecified',
-                'fee_details': 'Contact lister for fee status',
-                'availability': 'Contact Lister',
-            }
-            if rate_note:
-                item['original_rate_note'] = rate_note
-            new_basic.append(item)
+            c = existing_cache[r['id']]
+            if c.get('images') and len(c['images']) > 0 and 'unsplash' not in c['images'][0]:
+                cached_listings.append(r)
+                continue
+        new_to_fetch.append(r)
 
-    print(f"Detail processing: {len(cached_listings)} cached (0 HTTP calls), {len(new_to_fetch)} deep-fetching, {len(new_basic)} indexed from search...")
+    print(f"Detail processing: {len(cached_listings)} cached with photos, {len(new_to_fetch)} deep fetching real photos...")
     fetcher = lambda l: fetch_craigslist_detail_page(l, existing_cache)
-    with ThreadPoolExecutor(max_workers=8) as executor:
+    with ThreadPoolExecutor(max_workers=18) as executor:
         detailed_listings = list(executor.map(fetcher, cached_listings + new_to_fetch))
 
-    return detailed_listings + new_basic
+    return detailed_listings
 
 
 def scrape_boston_pads(per_city_limit=45):

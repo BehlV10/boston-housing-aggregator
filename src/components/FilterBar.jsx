@@ -12,7 +12,8 @@ import {
   Check, 
   MapPin,
   Clock,
-  Sparkles
+  Sparkles,
+  Camera
 } from 'lucide-react';
 
 export default function FilterBar({ 
@@ -56,6 +57,7 @@ export default function FilterBar({
       rentalType: 'all',
       moveInDate: 'all',
       postedWithin: 'all',
+      photosOnly: false,
       availableNow: false,
       maxPrice: maxPriceLimit,
     });
@@ -69,6 +71,7 @@ export default function FilterBar({
     filters.rentalType !== 'all',
     Boolean(filters.moveInDate && filters.moveInDate !== 'all'),
     Boolean(filters.postedWithin && filters.postedWithin !== 'all'),
+    Boolean(filters.photosOnly),
     filters.maxPrice < maxPriceLimit,
     Boolean(filters.availableNow),
     Boolean(filters.search),
@@ -294,6 +297,22 @@ export default function FilterBar({
         >
           <Sparkles className="w-3.5 h-3.5" />
           <span>New (&lt;24h)</span>
+        </button>
+
+        {/* Photos Only Filter Chip */}
+        <button
+          onClick={() => setFilters((prev) => ({ ...prev, photosOnly: !prev.photosOnly }))}
+          className={`flex items-center gap-1.5 px-3 py-1.5 rounded-xl font-bold whitespace-nowrap shrink-0 transition-all border ${
+            filters.photosOnly
+              ? 'bg-sky-600 text-white border-sky-500 shadow-xs'
+              : isDark
+              ? 'bg-slate-900/80 text-sky-400 border-slate-800 hover:bg-slate-800'
+              : 'bg-sky-50 text-sky-800 border-sky-200 hover:bg-sky-100'
+          }`}
+          title="Filter to listings with real photos only"
+        >
+          <Camera className="w-3.5 h-3.5" />
+          <span>Photos Only</span>
         </button>
 
         {/* Area Quick Chips */}

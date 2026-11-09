@@ -14,12 +14,14 @@ import {
   DoorClosed, 
   Repeat,
   Clock,
-  Sparkles
+  Sparkles,
+  Camera
 } from 'lucide-react';
 import { getRecencyMeta } from '../utils/dateUtils';
 
 export default function ListingCard({ listing, isSelected, onSelect, onOpenDetails, theme = 'midnight' }) {
   const [currentImgIndex, setCurrentImgIndex] = useState(0);
+  const [imgError, setImgError] = useState(false);
   const images = listing.images && listing.images.length > 0 ? listing.images : [];
   const recency = getRecencyMeta(listing.first_seen || listing.last_seen);
 
@@ -110,16 +112,20 @@ export default function ListingCard({ listing, isSelected, onSelect, onOpenDetai
     >
       {/* Image Gallery */}
       <div className="relative h-48 w-full bg-slate-900 overflow-hidden">
-        {images.length > 0 ? (
+        {images.length > 0 && !imgError ? (
           <img
             src={images[currentImgIndex]}
             alt={listing.title}
+            referrerPolicy="no-referrer"
+            onError={() => setImgError(true)}
             className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
             loading="lazy"
           />
         ) : (
-          <div className="w-full h-full flex items-center justify-center text-slate-500 text-xs">
-            No Image Available
+          <div className="w-full h-full flex flex-col items-center justify-center bg-slate-900/95 text-slate-400 gap-1.5 p-4 text-center">
+            <Camera className="w-7 h-7 opacity-30 mb-0.5" />
+            <span className="text-xs font-bold text-slate-300">No Photos Uploaded</span>
+            <span className="text-[10px] text-slate-500">Lister provided text-only description</span>
           </div>
         )}
 

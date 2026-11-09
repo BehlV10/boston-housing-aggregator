@@ -596,9 +596,8 @@ def fetch_craigslist_detail_page(listing, existing_cache=None):
                 'move_in_periods': periods_list,
                 'rental_type': rental_type,
                 'rental_type_label': rental_label,
-                'images': images[:8] if images else [
-                    'https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=800&q=80'
-                ],
+                'images': images[:8] if images else [],
+                'has_photos': bool(images),
                 'description': body[:600] + ('...' if len(body) > 600 else ''),
                 'has_broker_fee': fee_info['has_broker_fee'],
                 'fee_badge': fee_info['fee_badge'],
@@ -624,9 +623,8 @@ def fetch_craigslist_detail_page(listing, existing_cache=None):
             'availability': move_label,
             'move_in_period': primary_period,
             'move_in_periods': periods_list,
-            'images': [
-                'https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=800&q=80'
-            ],
+            'images': [],
+            'has_photos': False,
             'description': 'View original Craigslist posting for full description and photos.',
             'has_broker_fee': fee_info['has_broker_fee'],
             'fee_badge': fee_info['fee_badge'],
@@ -749,50 +747,25 @@ def scrape_craigslist_nyc_section(section='apa', section_label='Apartments', def
 
         print(f"  [{b_name}]: collected {b_count} listings")
 
-    # Process details in batches
+    # Process details in parallel
     cached_listings = []
     new_to_fetch = []
-    new_basic = []
 
     for r in all_raw:
         if existing_cache and r['id'] in existing_cache:
-            cached_listings.append(r)
-        elif len(new_to_fetch) < 80:
-            new_to_fetch.append(r)
-        else:
-            p = r.get('price', 0)
-            t = r.get('title', '')
-            norm_p, rate_note = normalize_listing_price(p, t, '')
-            move_label, primary_period, periods_list = normalize_move_in_date(
-                None, t, '', default_type
-            )
-            fee_info = analyze_fees(t, '', rental_type=default_type)
-            item = {
-                **r,
-                'price': norm_p,
-                'first_seen': datetime.now(timezone.utc).isoformat(),
-                'last_seen': datetime.now(timezone.utc).isoformat(),
-                'images': [
-                    'https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=800&q=80'
-                ],
-                'description': f"{r['title']}. Location: {r['neighborhood']}, {r['borough']}. Visit original Craigslist posting for photos and contact.",
-                'has_broker_fee': fee_info['has_broker_fee'],
-                'fee_badge': fee_info['fee_badge'],
-                'fee_details': fee_info['fee_details'],
-                'availability': move_label,
-                'move_in_period': primary_period,
-                'move_in_periods': periods_list,
-            }
-            if rate_note:
-                item['original_rate_note'] = rate_note
-            new_basic.append(item)
+            c = existing_cache[r['id']]
+            # Only consider genuinely cached if it already has real photos
+            if c.get('images') and len(c['images']) > 0 and 'unsplash' not in c['images'][0]:
+                cached_listings.append(r)
+                continue
+        new_to_fetch.append(r)
 
-    print(f"  Detail extraction: {len(cached_listings)} cached, {len(new_to_fetch)} deep fetching, {len(new_basic)} quick indexed...")
+    print(f"  Detail extraction: {len(cached_listings)} cached with photos, {len(new_to_fetch)} deep fetching real photos...")
     fetcher = lambda l: fetch_craigslist_detail_page(l, existing_cache)
-    with ThreadPoolExecutor(max_workers=8) as executor:
+    with ThreadPoolExecutor(max_workers=18) as executor:
         detailed_listings = list(executor.map(fetcher, cached_listings + new_to_fetch))
 
-    return detailed_listings + new_basic
+    return detailed_listings
 
 
 def scrape_reddit_nyc_housing(existing_cache=None):
@@ -917,12 +890,9 @@ def scrape_reddit_nyc_housing(existing_cache=None):
         lat, lng, neighborhood, borough = geocode_nyc_location(clean_desc, title)
 
         # Image extraction from Reddit preview
-        img_urls = re.findall(r'(https://preview\.redd\.it/[^"\s\?]+|https://i\.redd\.it/[^"\s\?]+)', raw_html)
+        unescaped_html = html_parser.unescape(raw_html)
+        img_urls = re.findall(r'(https://preview\.redd\.it/[^"\s\?]+|https://i\.redd\.it/[^"\s\?]+)', unescaped_html)
         images = list(dict.fromkeys(img_urls))
-        if not images:
-            images = [
-                'https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=800&q=80'
-            ]
 
         post_id_match = re.search(r'/comments/([a-zA-Z0-9]+)/', href)
         post_id = post_id_match.group(1) if post_id_match else f"{hash(href)}"

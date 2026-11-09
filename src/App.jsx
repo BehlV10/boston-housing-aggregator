@@ -99,6 +99,7 @@ export default function App() {
     rentalType: 'all', // 'all' | 'entire_unit' | 'room' | 'sublet'
     moveInDate: 'all',
     postedWithin: 'all', // 'all' | '1d' | '3d' | '7d' | '14d'
+    photosOnly: false,
     maxPrice: currentCityConfig.maxPriceDefault,
     availableNow: false,
   });
@@ -191,6 +192,7 @@ export default function App() {
       rentalType: 'all',
       moveInDate: 'all',
       postedWithin: 'all',
+      photosOnly: false,
       availableNow: false,
       maxPrice: conf.maxPriceDefault,
     });
@@ -292,6 +294,11 @@ export default function App() {
           if (filters.postedWithin === '3d' && diffHours > 72) return false;
           if (filters.postedWithin === '7d' && diffHours > 168) return false;
           if (filters.postedWithin === '14d' && diffHours > 336) return false;
+        }
+
+        // Photos Only filter
+        if (filters.photosOnly && (!item.images || item.images.length === 0)) {
+          return false;
         }
 
         // Text search
