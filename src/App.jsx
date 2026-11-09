@@ -1,8 +1,26 @@
 import React, { useState, useEffect, useMemo } from 'react';
-import { Home, Map as MapIcon, List as ListIcon, RefreshCw, Sparkles, Building2, ExternalLink, Share2, Moon, Sun, Landmark, Bell } from 'lucide-react';
+import {
+  Home,
+  Map as MapIcon,
+  List as ListIcon,
+  RefreshCw,
+  Sparkles,
+  Building2,
+  ExternalLink,
+  Share2,
+  Moon,
+  Sun,
+  Landmark,
+  Bell,
+  SlidersHorizontal,
+  PanelLeft,
+  X,
+  Search,
+  RotateCcw
+} from 'lucide-react';
 import MapView from './components/MapView';
 import ListingCard from './components/ListingCard';
-import FilterBar from './components/FilterBar';
+import FilterSidebar from './components/FilterSidebar';
 import ListingModal from './components/ListingModal';
 import CrossListHub from './components/CrossListHub';
 import ExternalPortalsBar from './components/ExternalPortalsBar';
@@ -197,6 +215,72 @@ export default function App() {
       maxPrice: conf.maxPriceDefault,
     });
   };
+
+  const [sidebarOpen, setSidebarOpen] = useState(true);
+  const [mobileDrawerOpen, setMobileDrawerOpen] = useState(false);
+
+  const handleReset = () => {
+    const conf = CITIES[city] || CITIES.nyc;
+    setFilters({
+      search: '',
+      fee: 'all',
+      source: 'all',
+      borough: 'all',
+      bedrooms: 'all',
+      rentalType: 'all',
+      moveInDate: 'all',
+      postedWithin: 'all',
+      photosOnly: false,
+      availableNow: false,
+      maxPrice: conf.maxPriceDefault,
+    });
+  };
+
+  const activeChips = useMemo(() => {
+    const list = [];
+    const conf = CITIES[city] || CITIES.nyc;
+    if (filters.search) {
+      list.push({ key: 'search', label: `"${filters.search}"`, clear: () => setFilters((p) => ({ ...p, search: '' })) });
+    }
+    if (filters.maxPrice < conf.maxPriceDefault) {
+      list.push({ key: 'maxPrice', label: `Max $${filters.maxPrice.toLocaleString()}`, clear: () => setFilters((p) => ({ ...p, maxPrice: conf.maxPriceDefault })) });
+    }
+    if (filters.fee === 'no-fee') {
+      list.push({ key: 'fee', label: 'No Broker Fee', clear: () => setFilters((p) => ({ ...p, fee: 'all' })) });
+    } else if (filters.fee === 'fee') {
+      list.push({ key: 'fee', label: 'Fee Required', clear: () => setFilters((p) => ({ ...p, fee: 'all' })) });
+    }
+    if (filters.rentalType === 'entire_unit') {
+      list.push({ key: 'rentalType', label: 'Condos Only', clear: () => setFilters((p) => ({ ...p, rentalType: 'all' })) });
+    } else if (filters.rentalType === 'room') {
+      list.push({ key: 'rentalType', label: 'Rooms Only', clear: () => setFilters((p) => ({ ...p, rentalType: 'all' })) });
+    } else if (filters.rentalType === 'sublet') {
+      list.push({ key: 'rentalType', label: 'Sublets Only', clear: () => setFilters((p) => ({ ...p, rentalType: 'all' })) });
+    }
+    if (filters.bedrooms !== 'all') {
+      list.push({ key: 'bedrooms', label: filters.bedrooms === '0' ? 'Studio' : `${filters.bedrooms} Bed`, clear: () => setFilters((p) => ({ ...p, bedrooms: 'all' })) });
+    }
+    if (filters.borough && filters.borough !== 'all') {
+      list.push({ key: 'borough', label: filters.borough, clear: () => setFilters((p) => ({ ...p, borough: 'all' })) });
+    }
+    if (filters.photosOnly) {
+      list.push({ key: 'photosOnly', label: '📷 Photos Only', clear: () => setFilters((p) => ({ ...p, photosOnly: false })) });
+    }
+    if (filters.availableNow) {
+      list.push({ key: 'availableNow', label: '⚡ Move-In Now', clear: () => setFilters((p) => ({ ...p, availableNow: false })) });
+    }
+    if (filters.postedWithin && filters.postedWithin !== 'all') {
+      const labels = { '1d': 'Past 24h', '3d': 'Past 3 Days', '7d': 'Past Week', '14d': 'Past 2 Weeks' };
+      list.push({ key: 'postedWithin', label: `Posted: ${labels[filters.postedWithin] || filters.postedWithin}`, clear: () => setFilters((p) => ({ ...p, postedWithin: 'all' })) });
+    }
+    if (filters.moveInDate && filters.moveInDate !== 'all') {
+      list.push({ key: 'moveInDate', label: `Move-in: ${filters.moveInDate}`, clear: () => setFilters((p) => ({ ...p, moveInDate: 'all' })) });
+    }
+    if (filters.source && filters.source !== 'all') {
+      list.push({ key: 'source', label: `Source: ${filters.source}`, clear: () => setFilters((p) => ({ ...p, source: 'all' })) });
+    }
+    return list;
+  }, [filters, city]);
 
   const handleAddCommunityListing = (newListing) => {
     const conf = CITIES[city] || CITIES.nyc;
@@ -554,25 +638,155 @@ export default function App() {
       {activeTab === 'cross-list' ? (
         <CrossListHub onAddCommunityListing={handleAddCommunityListing} theme={theme} />
       ) : (
-        <main className="flex-1 max-w-7xl w-full mx-auto px-3 sm:px-6 lg:px-8 py-3 sm:py-6 flex flex-col">
-          {/* Filter Controls */}
-          <FilterBar
-            filters={filters}
-            setFilters={setFilters}
-            totalCount={listings.length}
-            filteredCount={filteredListings.length}
-            theme={theme}
-            city={city}
-            quickChips={currentCityConfig.quickChips}
-            maxPriceLimit={currentCityConfig.maxPriceDefault}
-          />
+        <main className="flex-1 max-w-[1720px] w-full mx-auto px-3 sm:px-4 lg:px-6 py-2.5 sm:py-4 flex flex-col">
+          <div className="flex-1 flex flex-col lg:flex-row gap-4 lg:gap-6 min-h-0 items-start">
+            {/* Left Filter Sidebar */}
+            <FilterSidebar
+              filters={filters}
+              setFilters={setFilters}
+              totalCount={listings.length}
+              filteredCount={filteredListings.length}
+              theme={theme}
+              city={city}
+              quickChips={currentCityConfig.quickChips}
+              maxPriceLimit={currentCityConfig.maxPriceDefault}
+              isOpen={sidebarOpen}
+              onToggleOpen={() => setSidebarOpen((prev) => !prev)}
+              mobileOpen={mobileDrawerOpen}
+              onCloseMobile={() => setMobileDrawerOpen(false)}
+            />
 
-          {/* 1-Click External Portals Launcher (StreetEasy, RentHop, Leasebreak, Roomi, FB Marketplace) */}
-          <ExternalPortalsBar
-            city={city}
-            filters={filters}
-            theme={theme}
-          />
+            {/* Right Main Content Area (Top bar + Split Map/Listings) */}
+            <div className="flex-1 min-w-0 w-full flex flex-col gap-3">
+              {/* Mobile Compact Search & Filter Opener Bar (< lg) */}
+              <div className="lg:hidden flex items-center gap-2">
+                <div className="relative flex-1">
+                  <Search className="w-3.5 h-3.5 absolute left-3 top-1/2 -translate-y-1/2 opacity-50" />
+                  <input
+                    type="text"
+                    placeholder={`Search ${currentCityConfig.name}...`}
+                    value={filters.search}
+                    onChange={(e) => setFilters((p) => ({ ...p, search: e.target.value }))}
+                    className={`w-full pl-8 pr-7 py-2 border rounded-xl text-xs focus:outline-none focus:ring-2 ${
+                      isDark
+                        ? 'bg-[#11192C] border-slate-700/80 text-white'
+                        : isWarm
+                        ? 'bg-white border-[#DDD7C9] text-stone-900'
+                        : 'bg-white border-gray-200 text-gray-900'
+                    }`}
+                  />
+                  {filters.search && (
+                    <button
+                      onClick={() => setFilters((p) => ({ ...p, search: '' }))}
+                      className="absolute right-2 top-1/2 -translate-y-1/2 p-0.5 text-slate-400 hover:text-white"
+                    >
+                      <X className="w-3.5 h-3.5" />
+                    </button>
+                  )}
+                </div>
+
+                <button
+                  onClick={() => setMobileDrawerOpen(true)}
+                  className={`flex items-center gap-1.5 px-3 py-2 rounded-xl border text-xs font-bold transition-all shrink-0 ${
+                    activeChips.length > 0
+                      ? 'bg-boston-brick text-white border-boston-brick shadow-xs'
+                      : isDark
+                      ? 'bg-[#11192C] border-slate-700 text-slate-200'
+                      : 'bg-white border-gray-200 text-gray-700'
+                  }`}
+                >
+                  <SlidersHorizontal className="w-3.5 h-3.5" />
+                  <span>Filters</span>
+                  {activeChips.length > 0 && (
+                    <span className="w-4 h-4 rounded-full bg-white text-boston-brick text-[10px] flex items-center justify-center font-bold">
+                      {activeChips.length}
+                    </span>
+                  )}
+                </button>
+              </div>
+
+              {/* Active Filter Chips & Collapse Trigger */}
+              <div className="flex items-center justify-between gap-2 flex-wrap min-h-[30px]">
+                <div className="flex items-center gap-1.5 flex-wrap flex-1">
+                  {!sidebarOpen && (
+                    <button
+                      onClick={() => setSidebarOpen(true)}
+                      className={`hidden lg:flex items-center gap-1.5 px-2.5 py-1 rounded-xl border text-xs font-bold shadow-xs transition-all ${
+                        isDark
+                          ? 'bg-[#11192C] border-slate-700 text-slate-200 hover:bg-slate-800'
+                          : 'bg-white border-gray-200 text-gray-700 hover:bg-gray-50'
+                      }`}
+                      title="Open filters sidebar"
+                    >
+                      <PanelLeft className="w-3.5 h-3.5 text-boston-brick" />
+                      <span>Show Filters</span>
+                      {activeChips.length > 0 && (
+                        <span className="px-1.5 py-0.2 rounded-full bg-boston-brick text-white text-[10px] font-bold">
+                          {activeChips.length}
+                        </span>
+                      )}
+                    </button>
+                  )}
+
+                  {activeChips.map((chip) => (
+                    <button
+                      key={chip.key}
+                      onClick={chip.clear}
+                      className={`group flex items-center gap-1 px-2.5 py-0.5 rounded-lg text-[11px] font-semibold border transition-all ${
+                        isDark
+                          ? 'bg-slate-800/90 hover:bg-rose-950/50 text-slate-200 hover:text-rose-300 border-slate-700 hover:border-rose-800'
+                          : 'bg-gray-100 hover:bg-rose-50 text-gray-700 hover:text-boston-brick border-gray-200 hover:border-rose-200'
+                      }`}
+                      title="Click to remove filter"
+                    >
+                      <span>{chip.label}</span>
+                      <X className="w-3 h-3 opacity-60 group-hover:opacity-100" />
+                    </button>
+                  ))}
+
+                  {activeChips.length > 0 && (
+                    <button
+                      onClick={handleReset}
+                      className={`text-[11px] font-bold hover:underline px-1 py-0.5 ${
+                        isDark ? 'text-rose-400' : 'text-boston-brick'
+                      }`}
+                    >
+                      Reset All
+                    </button>
+                  )}
+                </div>
+
+                {/* Right side: Results count & Sort dropdown */}
+                <div className={`flex items-center gap-2 text-xs font-medium ml-auto ${
+                  isDark ? 'text-slate-400' : 'text-gray-500'
+                }`}>
+                  <span className="hidden sm:inline">
+                    <strong className={isDark ? 'text-white' : 'text-gray-900'}>{filteredListings.length}</strong> apartments found
+                  </span>
+                  <span className="hidden sm:inline opacity-30">•</span>
+                  <div className="flex items-center gap-1">
+                    <span>Sort:</span>
+                    <select
+                      value={sortBy}
+                      onChange={(e) => setSortBy(e.target.value)}
+                      className={`bg-transparent font-bold focus:outline-none cursor-pointer ${
+                        isDark ? 'text-white' : isWarm ? 'text-stone-900' : 'text-gray-800'
+                      }`}
+                    >
+                      <option value="newest" className={isDark ? 'bg-slate-900 text-white' : ''}>Newest Added</option>
+                      <option value="price-asc" className={isDark ? 'bg-slate-900 text-white' : ''}>Price: Low to High</option>
+                      <option value="price-desc" className={isDark ? 'bg-slate-900 text-white' : ''}>Price: High to Low</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+
+              {/* 1-Click External Portals Launcher */}
+              <ExternalPortalsBar
+                city={city}
+                filters={filters}
+                theme={theme}
+              />
 
           {loading ? (
             <div className="flex-1 flex flex-col items-center justify-center py-20 text-slate-400">
@@ -584,7 +798,7 @@ export default function App() {
             <div className="flex-1 grid grid-cols-1 lg:grid-cols-12 gap-4 lg:gap-6 min-h-[600px]">
               {/* Interactive Map (Left Panel, 7 cols on desktop, responsive full-height on mobile) */}
               <div
-                className={`lg:col-span-7 h-[calc(100vh-210px)] min-h-[440px] lg:h-[720px] lg:sticky lg:top-24 rounded-2xl overflow-hidden ${
+                className={`lg:col-span-7 h-[calc(100vh-230px)] min-h-[440px] lg:h-[calc(100vh-160px)] lg:sticky lg:top-20 rounded-2xl overflow-hidden ${
                   viewMode === 'list' ? 'hidden lg:block' : 'block'
                 }`}
               >
@@ -614,7 +828,7 @@ export default function App() {
 
               {/* Listings Grid (Right Panel, 5 cols on desktop, natural page scroll on mobile) */}
               <div
-                className={`lg:col-span-5 flex flex-col gap-3 sm:gap-4 overflow-y-auto max-h-none lg:max-h-[720px] pr-1 pb-24 lg:pb-0 ${
+                className={`lg:col-span-5 flex flex-col gap-3 sm:gap-4 overflow-y-auto max-h-none lg:max-h-[calc(100vh-160px)] pr-1 pb-24 lg:pb-4 ${
                   viewMode === 'map' ? 'hidden lg:flex' : 'flex'
                 }`}
               >
@@ -706,6 +920,8 @@ export default function App() {
               </div>
             </div>
           )}
+            </div>
+          </div>
         </main>
       )}
 
