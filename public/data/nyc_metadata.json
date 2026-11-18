@@ -1,24 +1,24 @@
 {
-  "last_updated": "2026-11-17T15:11:11.656400+00:00",
+  "last_updated": "2026-11-18T00:13:36.076426+00:00",
   "city": "New York City",
   "city_id": "nyc",
-  "total_listings": 1069,
-  "no_broker_fee_listings": 642,
+  "total_listings": 1084,
+  "no_broker_fee_listings": 627,
   "sources_summary": {
-    "Craigslist": 1069
+    "Craigslist": 1084
   },
   "boroughs_summary": {
-    "Bronx": 79,
-    "Jersey City / Hoboken": 250,
-    "Queens": 202,
-    "Brooklyn": 243,
-    "Manhattan": 221,
-    "Staten Island": 74
+    "Staten Island": 75,
+    "Bronx": 81,
+    "Jersey City / Hoboken": 235,
+    "Queens": 203,
+    "Brooklyn": 265,
+    "Manhattan": 225
   },
   "types_summary": {
-    "Sublet": 193,
-    "Single Room": 356,
+    "Sublet": 202,
+    "Single Room": 362,
     "Condo / Apt": 520
   },
-  "elapsed_seconds": 38.45
+  "elapsed_seconds": 43.1
 }
